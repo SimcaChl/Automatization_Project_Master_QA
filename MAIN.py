@@ -145,8 +145,8 @@ def test_SearchDetail():
 
 
     except NoSuchElementException:
-        url = driver.current_url + url
-        msg = "Problem s terminy a ceny na detailu hotelu "
+        url = driver.current_url
+        msg = "Problem s terminy a ceny na detailu hotelu " + url
         sendEmail(msg)
 
     driver.quit()
@@ -212,6 +212,7 @@ def test_LM():
         try:
             zajezdyLMsingle = driver.find_element_by_xpath("//*[@class='page-tour']")
             zajezdyLMall = driver.find_elements_by_xpath("//*[@class='page-tour']")
+            wait.until(EC.visibility_of(zajezdyLMsingle))
             if zajezdyLMsingle.is_displayed():
                 for WebElement in zajezdyLMall:
                     jdouvidet = WebElement.is_displayed()
@@ -356,6 +357,7 @@ def test_FM():
         try:
             zajezdyFMsingle = driver.find_element_by_xpath("//*[@class='page-tour']")
             zajezdyFMall = driver.find_elements_by_xpath("//*[@class='page-tour']")
+            wait.until(EC.visibility_of(zajezdyFMsingle))
             if zajezdyFMsingle.is_displayed():
                 for WebElement in zajezdyFMall:
                     jdouvidet = WebElement.is_displayed()
