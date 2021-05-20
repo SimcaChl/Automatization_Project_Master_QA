@@ -3,7 +3,6 @@ from FUNCTIONS import *
 
 ##serach deatil posledni a jediny bude mit driver.quit
 def test_SearchDetail():
-    wait = WebDriverWait(driver, 25)
     driver.get(URL)
 
     driver.maximize_window()
