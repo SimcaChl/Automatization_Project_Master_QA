@@ -375,6 +375,7 @@ def test_FM():
 
         try:
             rozbal = driver.find_element_by_xpath("//*[@class='page-tour-cell page-tour-control']")
+            wait.until(EC.visibility_of(rozbal))
             driver.execute_script("arguments[0].click();", rozbal)
             time.sleep(2)
 
