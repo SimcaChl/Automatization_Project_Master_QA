@@ -11,7 +11,7 @@ URL_lm = URL+"/last-minute"
 URL_fm = URL+"/first-minute"
 URL_stat = URL+"/recko"
 ##driver = webdriver.Ie(executable_path=r"C:\Users\KDK\Desktop\IEdriver\IEDriverServer.exe")
-driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver90.exe")
+driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver91.exe")
 ##driver = webdriver.Chrome(executable_path=r"C:\Users\KADOUN\Desktop\Selenium setup\chromedriver89.exe") ##office location
 wait = WebDriverWait(driver, 150000)
 
