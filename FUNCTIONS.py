@@ -18,3 +18,11 @@ def sendEmail(msg):
     server.sendmail(fromx, to, msg.as_string())
     server.quit()
 
+def acceptConsent():
+    def expand_shadow_element(element):
+        shadow_root = driver.execute_script('return arguments[0].shadowRoot', element)
+        return shadow_root
+
+    outer = expand_shadow_element(driver.find_element_by_css_selector("div#usercentrics-root"))
+    inner = outer.find_element_by_css_selector("button[data-testid='uc-accept-all-button']")
+    inner.click()
