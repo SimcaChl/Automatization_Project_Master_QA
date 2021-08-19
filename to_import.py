@@ -5,6 +5,8 @@ URL_faq = URL+"/faq"
 URL_stat = URL+"/recko"
 URL_lm = URL+"/last-minute"
 URL_fm = URL+"/first-minute"
+URL_fmExotika = URL+"/first-minute/exotika-zima"
+
 
 caps=[{
       'os_version': 'Big Sur',
