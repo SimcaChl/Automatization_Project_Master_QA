@@ -15,6 +15,7 @@ def test_Detail(desired_cap):
         command_executor=comandExecutor,
         desired_capabilities=desired_cap)
     driver.get(URL_detail)
+    driver.maximize_window()
     time.sleep(2.5)
     acceptConsent(driver)
     wait = WebDriverWait(driver, 150000)
