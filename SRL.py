@@ -5,12 +5,14 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from to_import_secret import sendEmail, comandExecutor
-from to_import import acceptConsent, URL, URL_detail, caps
-
-driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver92.exe")
+from to_import import acceptConsent, URL, caps
 
 
-def test_SRL():
+
+def test_SRL(desired_cap):
+    driver = webdriver.Remote(
+        command_executor=comandExecutor,
+        desired_capabilities=desired_cap)
     driver.get(URL)
     wait = WebDriverWait(driver, 150000)
     driver.maximize_window()
@@ -98,4 +100,5 @@ def test_SRL():
 
     driver.quit()
 
-test_SRL()
+for cap in caps:
+        Thread(target=test_SRL, args=(cap,)).start()
