@@ -32,12 +32,14 @@ def test_SRL():
     time.sleep(3)
 
     try:
-        hotelySingle = driver.find_element_by_xpath("//*[@class='f_searchResult-content-item']")        ##
-        hotelyAll = driver.find_elements_by_xpath("//*[@class='f_searchResult-content-item']")
+        hotelySingle = driver.find_element_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")        ##
+        hotelyAll = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
         wait.until(EC.visibility_of(hotelySingle))
+        print(hotelyAll)
         if hotelySingle.is_displayed():
             for WebElement in hotelyAll:
                 jdouvidet = WebElement.is_displayed()
+                print(jdouvidet)
                 if jdouvidet == True:
                     pass
 
