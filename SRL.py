@@ -35,11 +35,11 @@ def test_SRL():
         hotelySingle = driver.find_element_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")        ##
         hotelyAll = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
         wait.until(EC.visibility_of(hotelySingle))
-        print(hotelyAll)
+        ##print(hotelyAll)
         if hotelySingle.is_displayed():
             for WebElement in hotelyAll:
                 jdouvidet = WebElement.is_displayed()
-                print(jdouvidet)
+                ##print(jdouvidet)
                 if jdouvidet == True:
                     pass
 
@@ -54,12 +54,14 @@ def test_SRL():
 
 
     try:
-        fotkyAll = driver.find_elements_by_xpath("//*[@class='f_tileGallery']")         ##
-        fotkaSingle = driver.find_element_by_xpath("//*[@class='f_tileGallery']")
+        fotkyAll = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_tileGallery']")         ##
+        fotkaSingle = driver.find_element_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_tileGallery']")
         wait.until(EC.visibility_of(fotkaSingle))
+        ##print(fotkaSingle)
         if fotkaSingle.is_displayed():
             for WebElement in fotkyAll:
                 jdouvidet = WebElement.is_displayed()
+                ##print(jdouvidet)
                 if jdouvidet == True:
                     pass
                 else:
@@ -74,8 +76,8 @@ def test_SRL():
 
 
     try:
-        cenaAll = driver.find_elements_by_xpath("//*[@class='f_tile-priceDetail']")     ##
-        cenaSingle = driver.find_element_by_xpath("//*[@class='f_tile-priceDetail']")
+        cenaAll = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_price']")     ##
+        cenaSingle = driver.find_element_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_price']")
         wait.until(EC.visibility_of(cenaSingle))
         if cenaSingle.is_displayed():
             for WebElement in cenaAll:
