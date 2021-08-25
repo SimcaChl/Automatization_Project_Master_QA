@@ -9,10 +9,7 @@ from to_import import acceptConsent, URL, caps
 
 
 
-def test_SRL(desired_cap):
-    driver = webdriver.Remote(
-        command_executor=comandExecutor,
-        desired_capabilities=desired_cap)
+def proklikNaSRLzHP(driver):
     driver.get(URL)
     wait = WebDriverWait(driver, 150000)
     driver.maximize_window()
@@ -30,8 +27,14 @@ def test_SRL(desired_cap):
         msg = " Problem HP-Nej. nabidka - nenasel se LM zajezd" + url
         sendEmail(msg)
 
+    time.sleep(2)
 
-    time.sleep(3)
+def test_SRL(desired_cap):
+    driver = webdriver.Remote(
+        command_executor=comandExecutor,
+        desired_capabilities=desired_cap)
+    wait = WebDriverWait(driver, 150000)
+    proklikNaSRLzHP(driver)
 
     try:
         hotelySingle = driver.find_element_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")        ##

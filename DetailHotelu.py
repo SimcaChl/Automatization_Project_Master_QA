@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from to_import_secret import sendEmail, comandExecutor
-from to_import import acceptConsent, URL, URL_detail, caps
+from to_import import acceptConsent, URL_detail, caps, closePopupBanner
 
 ##there is new SRL rn so gotta prepare that, for now I created this test just for the detail of hotel it self, hard url
 
@@ -40,6 +40,8 @@ def test_Detail(desired_cap):
         url = driver.current_url
         msg = "Problem se sedivkou na detailu hotelu " + url
         sendEmail(msg)
+
+    closePopupBanner(driver)
 
     try:
         terminyCeny = driver.find_element_by_xpath("//*[@id='terminyaceny-tab']")

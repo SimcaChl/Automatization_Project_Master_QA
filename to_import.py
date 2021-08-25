@@ -1,4 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 URL = "https://www.fischer.cz"
 URL_faq = URL+"/faq"
@@ -27,5 +29,15 @@ def acceptConsent(driver):
         outer = expand_shadow_element(driver.find_element_by_css_selector("div#usercentrics-root"))
         inner = outer.find_element_by_css_selector("button[data-testid='uc-accept-all-button']")
         inner.click()
+    except NoSuchElementException:
+        pass
+
+def closePopupBanner(driver):
+    try:
+        wait = WebDriverWait(driver, 150000)
+        bannerClose = driver.find_element_by_xpath('//*[@class="close"]')
+        wait.until(EC.visibility_of(bannerClose))
+        bannerClose.click()
+
     except NoSuchElementException:
         pass
