@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from to_import_secret import sendEmail, comandExecutor
 from to_import import acceptConsent, URL, URL_stat, caps, closePopupBanner
+from SRL_test import test_SRL
 
 
 driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver92.exe")
@@ -19,15 +20,10 @@ acceptConsent(driver)
 time.sleep(2.5)
 closePopupBanner(driver)
 
-##bannerSingle = driver.find_element_by_xpath("//*[@class='f_teaser-item']")
-##urlbaneru = bannerSingle.get_attribute("href")
-
-
 banneryAll = driver.find_elements_by_xpath("//*[@class='f_teaser-item']/a")
 print(banneryAll)
 print(len(banneryAll))
 x=0
-##bannerLink = driver.find_element_by_xpath('//*[@class="f_teaser-item"]/a')
 for WebElement in banneryAll:
     bannerHref = banneryAll[x].get_attribute("href")
     print(bannerHref)
@@ -38,12 +34,17 @@ for WebElement in banneryAll:
     driver.get(bannerHref)
 
     driver.switch_to.window(driver.window_handles[0])
-    ##time.sleep(3)
+    time.sleep(0.5)
 
-##driver.execute_script("window.open('');")
+tabsCount = len(driver.window_handles)
+driver.current_url
+driver.switch_to.window(driver.window_handles[0])
+driver.close()
 
-##for _ in banneryAll:
-  ##  bannerSingle = driver.find_element_by_xpath("//*[@class='f_teaser-item']")
-    ##driver.execute_script("window.open(bannerSingle);")
 
+
+
+
+print(tabsCount)
+time.sleep(10)
 

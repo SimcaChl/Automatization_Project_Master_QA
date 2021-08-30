@@ -35,9 +35,10 @@ def acceptConsent(driver):
 def closePopupBanner(driver):
     try:
         wait = WebDriverWait(driver, 150000)
-        bannerClose = driver.find_element_by_xpath('//*[@class="close"]')
+        bannerClose = driver.find_element_by_xpath('//*[@class="exponea-close"]')
         wait.until(EC.visibility_of(bannerClose))
-        bannerClose.click()
+        driver.execute_script("arguments[0].click();", bannerClose)
+        ##bannerClose.click()
 
     except NoSuchElementException:
         pass
