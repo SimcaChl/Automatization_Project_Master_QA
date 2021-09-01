@@ -39,8 +39,22 @@ for WebElement in banneryAll:
 tabsCount = len(driver.window_handles)
 driver.current_url
 driver.switch_to.window(driver.window_handles[0])
-driver.close()
 
+
+srlURL = URL+"/vysledky-vyhledavani?d="
+tabsCount = len(driver.window_handles)
+while tabsCount > 0:
+    tabsCount = tabsCount - 1       ##
+    driver.switch_to.window(driver.window_handles[tabsCount])
+    currentURL = driver.current_url
+    time.sleep(3)
+    print(currentURL)
+    if srlURL in currentURL:
+        print("je to klasik SRL")
+        test_SRL(driver)
+
+    else:
+        print("neni tosrl")
 
 
 

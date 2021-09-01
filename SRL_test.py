@@ -33,7 +33,7 @@ def test_SRL(driver):
         ##command_executor=comandExecutor,
        ## desired_capabilities=desired_cap)
     wait = WebDriverWait(driver, 150000)
-    proklikNaSRLzHP(driver)
+    ##proklikNaSRLzHP(driver)
 
     try:
         hotelySingle = driver.find_element_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")        ##
@@ -100,4 +100,4 @@ def test_SRL(driver):
         sendEmail(msg)
 
 
-    driver.quit()
+    ##driver.quit()
