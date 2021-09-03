@@ -42,7 +42,10 @@ driver.switch_to.window(driver.window_handles[0])
 
 
 srlURL = URL+"/vysledky-vyhledavani?d="
+groupURL = URL+"/vysledky-vyhledavani?tt="
 tabsCount = len(driver.window_handles)
+
+
 while tabsCount > 0:
     tabsCount = tabsCount - 1       ##
     driver.switch_to.window(driver.window_handles[tabsCount])
@@ -53,8 +56,9 @@ while tabsCount > 0:
         print("je to klasik SRL")
         test_SRL(driver)
 
-    else:
-        print("neni tosrl")
+    if groupURL in currentURL:
+        print("je to group search")
+
 
 
 
