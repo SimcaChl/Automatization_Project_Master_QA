@@ -9,7 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from to_import_secret import sendEmail, comandExecutor
 from to_import import acceptConsent, URL, URL_stat, caps, closePopupBanner
 from SRL_test import test_SRL
-
+from close_exponea_banner import closeExponeaBanner
+from group_search import groupsearch_test
 
 driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver92.exe")
 wait = WebDriverWait(driver, 150000)
@@ -18,7 +19,7 @@ driver.maximize_window()
 time.sleep(1.5)
 acceptConsent(driver)
 time.sleep(2.5)
-closePopupBanner(driver)
+closeExponeaBanner(driver)
 
 banneryAll = driver.find_elements_by_xpath("//*[@class='f_teaser-item']/a")
 print(banneryAll)
@@ -58,6 +59,7 @@ while tabsCount > 0:
 
     if groupURL in currentURL:
         print("je to group search")
+        groupsearch_test(driver)
 
 
 
