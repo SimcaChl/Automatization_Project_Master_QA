@@ -25,6 +25,64 @@ acceptConsent(driver)
 time.sleep(2.5)
 closeExponeaBanner(driver)
 
+
+
+banneryAll = driver.find_elements_by_xpath("//*[@class='f_teaser-item']/a")
+##print(banneryAll)
+##print(len(banneryAll))
+x=0
+for WebElement in banneryAll:
+    bannerHref = banneryAll[x].get_attribute("href")
+    ##print(bannerHref)
+    x=x+1
+    ##print(x)
+    driver.execute_script("window.open("");")
+    driver.switch_to.window(driver.window_handles[x])
+    driver.get(bannerHref)
+
+    driver.switch_to.window(driver.window_handles[0])
+    time.sleep(0.5)
+
+
+tabsCount = len(driver.window_handles)
+driver.current_url
+driver.switch_to.window(driver.window_handles[0])
+
+
+srlURL = URL+"/vysledky-vyhledavani?d="
+groupURL = URL+"/vysledky-vyhledavani?tt="
+tabsCount = len(driver.window_handles)
+
+banneryOdkazySRL = []
+while tabsCount > 0:
+    tabsCount = tabsCount - 1       ##
+    driver.switch_to.window(driver.window_handles[tabsCount])
+    currentURL = driver.current_url
+    time.sleep(3)
+    ##print(currentURL)
+    if srlURL in currentURL:
+        print("je to klasik SRL")
+        currentURLtrueSRL = driver.current_url
+        banneryOdkazySRL.append(currentURLtrueSRL)
+        test_SRL(driver)
+
+
+    if groupURL in currentURL:
+        print("je to group search")
+        groupsearch_test(driver)
+
+print(banneryOdkazySRL)
+tabsCount = len(driver.window_handles)
+print(tabsCount)
+while tabsCount > 1:
+    tabsCount = tabsCount - 1
+    driver.switch_to.window(driver.window_handles[tabsCount])
+    driver.close()
+
+z=0
+time.sleep(2)
+driver.switch_to.window(driver.window_handles[0])
+
 kolikVasBude = driver.find_element_by_xpath('//*[@class="f_button f_button--filter"]//*[@class="f_button-content f_icon f_icon--crowd"]')
 kolikVasBude.click()
 pridatPokoj = driver.find_element_by_xpath('//*[@class="f_anchor f_icon f_icon--plus"]')
@@ -37,52 +95,20 @@ potvrditAvyhledat.click()
 
 time.sleep(1)
 driver.get(URL)
+time.sleep(3)
 
-banneryAll = driver.find_elements_by_xpath("//*[@class='f_teaser-item']/a")
-print(banneryAll)
-print(len(banneryAll))
-x=0
-for WebElement in banneryAll:
-    bannerHref = banneryAll[x].get_attribute("href")
-    print(bannerHref)
-    x=x+1
-    print(x)
-    driver.execute_script("window.open("");")
-    driver.switch_to.window(driver.window_handles[x])
-    driver.get(bannerHref)
+for _ in banneryOdkazySRL:
+    time.sleep(4)
+    driver.get(banneryOdkazySRL[z])
+    SRLtestV2(driver)
+    time.sleep(1)
+    tabsCount = len(driver.window_handles)
+    while tabsCount > 1:
+        tabsCount = tabsCount - 1
+        driver.switch_to.window(driver.window_handles[tabsCount])
+        driver.close()
 
-    driver.switch_to.window(driver.window_handles[0])
-    time.sleep(0.5)
-
-tabsCount = len(driver.window_handles)
-driver.current_url
-driver.switch_to.window(driver.window_handles[0])
-
-
-srlURL = URL+"/vysledky-vyhledavani?d="
-groupURL = URL+"/vysledky-vyhledavani?tt="
-tabsCount = len(driver.window_handles)
-
-
-while tabsCount > 0:
-    tabsCount = tabsCount - 1       ##
-    driver.switch_to.window(driver.window_handles[tabsCount])
-    currentURL = driver.current_url
-    time.sleep(3)
-    print(currentURL)
-    if srlURL in currentURL:
-        print("je to klasik SRL")
-        test_SRL(driver)
-        SRLtestV2(driver)
-
-    if groupURL in currentURL:
-        print("je to group search")
-        groupsearch_test(driver)
-
-
-
-
-
-print(tabsCount)
+    driver.switch_to.window(driver.window_handles[0]) ##this has to happen if it doesnt selenium returns error no such window even though there is only one tab active, silly selenium kek
+    z=z+1
 time.sleep(10)
 

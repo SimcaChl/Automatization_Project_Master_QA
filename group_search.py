@@ -21,40 +21,44 @@ def groupsearch_test(driver):
 
     try:
         for WebElement in teaserItems:
-            print(len(teaserItems))
+            ##print(len(teaserItems))
             jdouvidet = WebElement.is_displayed()
-            print(jdouvidet)
+            ##print(jdouvidet)
             if jdouvidet == True:
-                print(jdouvidet)
-                print(WebElement)
+                ##print(jdouvidet)
+                ##print(WebElement)
                 pass
 
             else:
-                print("Else")
+                pass
+                ##print("Else")
                 ##emailfunciton
 
     except NoSuchElementException:
-            print("no such")
+            pass
+            ##print("no such")
             ##email fnction
 
     srlItems = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]")
     try:
         for WebElement in srlItems:
-            print(len(srlItems))
+            ##print(len(srlItems))
             jdouvidet = WebElement.is_displayed()
-            print(jdouvidet)
+            ##print(jdouvidet)
             if jdouvidet == True:
-                print(jdouvidet)
-                print(WebElement)
+                ##print(jdouvidet)
+                ##print(WebElement)
                 pass
 
             else:
-                print("Else")
+                pass
+                ##print("Else")
                 ##emailfunciton
 
 
     except NoSuchElementException:
-        print("no such")
+        pass
+        ##print("no such")
         ##email fnction
 
 

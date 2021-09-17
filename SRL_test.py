@@ -46,7 +46,7 @@ def test_SRL(driver):
                 ##print(jdouvidet)
                 if jdouvidet == True:
                     pass
-                    print("hotely jdou videt")
+                    ##print("hotely jdou videt")
 
                 else:
                     url = driver.current_url
@@ -69,7 +69,7 @@ def test_SRL(driver):
                 ##print(jdouvidet)
                 if jdouvidet == True:
                     pass
-                    print("fotky jdou videt")
+                    ##print("fotky jdou videt")
                 else:
                     url = driver.current_url
                     msg = " Problem s fotkami hotelu v searchi " + url
@@ -90,7 +90,7 @@ def test_SRL(driver):
                 jdouvidet = WebElement.is_displayed()
                 if jdouvidet == True:
                     pass
-                    print("ceny jdou videt")
+                    ##print("ceny jdou videt")
                 else:
                     url = driver.current_url
                     msg = " Problem s cenami hotelu v searchi " +url

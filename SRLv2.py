@@ -107,7 +107,7 @@ def SRLtestV2(driver):
         else:
             print("cena adult nesedi srl vs detail")
 
-        driver.switch_to.window(driver.window_handles[-1])   ##this gotta be adjusted based on what test is executed
+        driver.switch_to.window(driver.window_handles[0])   ##this gotta be adjusted based on what test is executed
         ##for daily test needs to be set on 1 so it gets on the SRL
 
         x = x +1
