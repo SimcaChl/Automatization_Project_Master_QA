@@ -13,6 +13,8 @@ from close_exponea_banner import closeExponeaBanner
 from group_search import groupsearch_test
 from SRLv2 import SRLtestV2
 
+##udelat list ze vsech banneru href a pak na ne volat znova vsechny ty srlv2 testy
+
 
 driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver92.exe")
 wait = WebDriverWait(driver, 150000)
@@ -23,7 +25,18 @@ acceptConsent(driver)
 time.sleep(2.5)
 closeExponeaBanner(driver)
 
+kolikVasBude = driver.find_element_by_xpath('//*[@class="f_button f_button--filter"]//*[@class="f_button-content f_icon f_icon--crowd"]')
+kolikVasBude.click()
+pridatPokoj = driver.find_element_by_xpath('//*[@class="f_anchor f_icon f_icon--plus"]')
 
+wait.until(EC.visibility_of(pridatPokoj))
+pridatPokoj.click()
+
+potvrditAvyhledat = driver.find_element_by_xpath("//span[contains(text(),'Potvrdit a vyhledat')]")
+potvrditAvyhledat.click()
+
+time.sleep(1)
+driver.get(URL)
 
 banneryAll = driver.find_elements_by_xpath("//*[@class='f_teaser-item']/a")
 print(banneryAll)

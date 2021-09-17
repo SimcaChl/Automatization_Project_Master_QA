@@ -2,8 +2,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-URL = "https://www.fischer.cz"
-##URL = "https://www.eximtours.cz"
+##URL = "https://www.fischer.cz"
+URL = "https://www.eximtours.cz"
 URL_faq = URL+"/faq"
 URL_stat = URL+"/recko"
 URL_lm = URL+"/last-minute"
