@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from to_import_secret import sendEmail, comandExecutor
-from to_import import acceptConsent, URL, URL_stat, caps, closePopupBanner
+from to_import import acceptConsent, URL, URL_stat, caps
 from SRL_test import test_SRL
 driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver92.exe")
 wait = WebDriverWait(driver, 150000)

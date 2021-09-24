@@ -7,9 +7,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from to_import_secret import sendEmail, comandExecutor
-from to_import import acceptConsent, URL, URL_stat, caps, closePopupBanner, URL_covidInfo
+from to_import import acceptConsent, URL, URL_stat, caps, URL_covidInfo, closeExponeaBanner
 from SRL_test import test_SRL
-from close_exponea_banner import closeExponeaBanner
+
 from group_search import groupsearch_test
 
 driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver92.exe")

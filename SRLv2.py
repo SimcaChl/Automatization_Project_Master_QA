@@ -1,14 +1,10 @@
-from to_import import acceptConsent, URL, URL_stat, caps, closePopupBanner, URL_groupsearch
+from to_import import acceptConsent, URL, URL_stat, caps, URL_groupsearch, closeExponeaBanner
 import time
-from selenium.common.exceptions import NoSuchElementException
-from threading import Thread
-from selenium import webdriver
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
-from close_exponea_banner import closeExponeaBanner
+
+
 ##driver = webdriver.Chrome(executable_path=r"C:\Users\KADOUN\Desktop\Selenium setup\chromedriver93.exe")
 ##driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver92.exe")
 ##URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?d=627|974|596|712|684|955&tt=1&to=4305|4309|2682|4308|4312&dd=2021-08-07&rd=2021-10-07&nn=7|8|9&m=5&ri=4&ac1=2"

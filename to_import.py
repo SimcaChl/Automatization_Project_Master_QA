@@ -1,6 +1,7 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import time
 
 URL = "https://www.fischer.cz"
 ##URL = "https://www.eximtours.cz"
@@ -36,13 +37,18 @@ def acceptConsent(driver):
     except NoSuchElementException:
         pass
 
-def closePopupBanner(driver):
+def closeExponeaBanner(driver):
+    time.sleep(1.5)
+    wait = WebDriverWait(driver, 150000)
+    driver.maximize_window()
     try:
-        wait = WebDriverWait(driver, 150000)
-        bannerClose = driver.find_element_by_xpath('//*[@class="exponea-close"]')
-        wait.until(EC.visibility_of(bannerClose))
-        driver.execute_script("arguments[0].click();", bannerClose)
-        ##bannerClose.click()
+        exponeaBanner = driver.find_element_by_xpath("//*[@class='exponea-popup-banner']")
+        if exponeaBanner.is_displayed():
+
+            wait.until(EC.visibility_of(exponeaBanner))
+            exponeaCrossAndBanner = driver.find_element_by_xpath("//*[@class='exponea-popup-banner']//*[@class='exponea-close']")
+            exponeaCrossAndBanner.click()
+            time.sleep(2)
 
     except NoSuchElementException:
-        pass
+        print( "nenasle se exponea banner")
