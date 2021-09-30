@@ -3,10 +3,11 @@ import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
+from selenium import webdriver
 
 
-##driver = webdriver.Chrome(executable_path=r"C:\Users\KADOUN\Desktop\Selenium setup\chromedriver93.exe")
-##driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver92.exe")
+##driver = webdriver.Chrome(executable_path=r"C:\Users\KADOUN\Desktop\Selenium setup\chromedriver94.exe")
+##driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver94.exe")
 ##URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?d=627|974|596|712|684|955&tt=1&to=4305|4309|2682|4308|4312&dd=2021-08-07&rd=2021-10-07&nn=7|8|9&m=5&ri=4&ac1=2"
 ##URL_SRL = "https://www.eximtours.cz/vysledky-vyhledavani?tt=0&ac1=2&dd=2021-08-27&rd=2021-09-26&nn=7&d=63720|63719&pf=0&pt=900000"
 
@@ -21,7 +22,10 @@ def SRLtestV2(driver):
     acceptConsent(driver)
     time.sleep(2)
     closeExponeaBanner(driver)
-    while x < 20:
+
+    hotelyAllKarty = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+    for WebElement in hotelyAllKarty:
+
         terminZajezdu = driver.find_elements_by_xpath("//*[@class='f_tile f_tile--searchResultTour']//*[@class='f_list-item']")
         terminZajezduSingle = driver.find_element_by_xpath("//*[@class='f_tile f_tile--searchResultTour']//*[@class='f_list-item']")
 
