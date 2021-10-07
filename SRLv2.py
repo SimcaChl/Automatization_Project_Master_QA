@@ -1,4 +1,5 @@
 from to_import import acceptConsent, URL, URL_stat, caps, URL_groupsearch, closeExponeaBanner
+from to_import_secret import sendEmail
 import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -7,15 +8,15 @@ from selenium import webdriver
 
 
 ##driver = webdriver.Chrome(executable_path=r"C:\Users\KADOUN\Desktop\Selenium setup\chromedriver94.exe")
-##driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver94.exe")
-##URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?d=627|974|596|712|684|955&tt=1&to=4305|4309|2682|4308|4312&dd=2021-08-07&rd=2021-10-07&nn=7|8|9&m=5&ri=4&ac1=2"
+driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver94.exe")
+URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?qf=109_0_50|386_1_0|108_1_0&sortby=PriceTotal&sa=2138|1949|2730&tt=1&to=4312&dd=2021-12-01&rd=2021-12-31&nn=7|8|9&ac1=2&m=5"
 ##URL_SRL = "https://www.eximtours.cz/vysledky-vyhledavani?tt=0&ac1=2&dd=2021-08-27&rd=2021-09-26&nn=7&d=63720|63719&pf=0&pt=900000"
 
 def SRLtestV2(driver):
     x=0         ##variable for taking the first hotel, starting at 0
     windowHandle = 1  ##variable for handling windows, gotta start on 1
 
-    ##driver.get(URL_SRL)
+    driver.get(URL_SRL)
     wait = WebDriverWait(driver, 150000)
 
     time.sleep(2)
@@ -23,7 +24,14 @@ def SRLtestV2(driver):
     time.sleep(2)
     closeExponeaBanner(driver)
 
-    hotelyAllKarty = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+    try:
+        hotelyAllKarty = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+
+    except NoSuchElementException:
+        url = driver.current_url
+        msg = " Problem SRL hotelyAllKarty" + url
+        sendEmail(msg)
+
     for WebElement in hotelyAllKarty:
 
         terminZajezdu = driver.find_elements_by_xpath("//*[@class='f_tile f_tile--searchResultTour']//*[@class='f_list-item']")
@@ -115,4 +123,4 @@ def SRLtestV2(driver):
         windowHandle = windowHandle + 1
         print(windowHandle)
 
-##SRLtestV2(driver)
+SRLtestV2(driver)
