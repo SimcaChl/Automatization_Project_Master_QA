@@ -112,7 +112,7 @@ closeExponeaBanner(driver)
 zobrazitNaMape = driver.find_element_by_xpath("//*[@class='f_bar-item f_bar-map']")
 zobrazitNaMape.click()
 
-time.sleep(5)
+time.sleep(5)##try except na kolecko, pokud ok tak click, nenajde tak pokracovat dal
 koleckoCislo = driver.find_element_by_xpath("//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']")
 koleckoCislo.click()
 time.sleep(5)

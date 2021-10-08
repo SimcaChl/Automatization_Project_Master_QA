@@ -12,7 +12,7 @@ from SRL_test import test_SRL
 
 from group_search import groupsearch_test
 
-driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver92.exe")
+driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver94.exe")
 wait = WebDriverWait(driver, 150000)
 
 
