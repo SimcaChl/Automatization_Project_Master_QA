@@ -136,6 +136,47 @@ def SRL_map():
     hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
     hotelBubble.click()
     ##end at detail hotelu
+#SRL_map()
+
+def SRL_filtr_strava():
+    driver.get(URL_SRL)
+    time.sleep(2)
+    acceptConsent(driver)
+    time.sleep(2)
+    closeExponeaBanner(driver)
+    time.sleep(2)
+
+    stravaMenu = driver.find_element_by_xpath("//*[@class='f_menu-item']//*[contains(text(), 'Strava')]")
+    stravaMenu.click()
+    time.sleep(1)
+
+    allinclusiveMenu = driver.find_element_by_xpath("//*[@value='5']")          ##papani v menu ma vzdy vlastni value, 5=all inclusive
+    allinclusiveMenu.click()
+
+    potvrditMenu = driver.find_element_by_xpath("//*[@class='f_menu-item']//*[@class='f_button f_button--common f_button_set--smallest']")
+    potvrditMenu.click()
+    time.sleep(2)       ##potvrzeno chvilak casu na relload
 
 
-SRL_map()
+    stravaZajezdu = driver.find_elements_by_xpath("//*[@class='f_list-item f_icon f_icon--cutlery']")
+    x=0
+    stravaZajezduList = []
+    for WebElement in stravaZajezdu:
+        stravaZajezduString = stravaZajezdu[x].text
+        stravaZajezduList.append(stravaZajezduString)
+        x=x+1
+
+    y=0
+    for _ in stravaZajezduList:
+        if stravaZajezduList[y] == "All inclusive":
+            print("ok")
+            y=y+1
+
+        else:
+            print("stravy nesedi k filtru")
+            y = y + 1
+    print(stravaZajezduList)
+
+
+SRL_filtr_strava()
+
