@@ -138,7 +138,7 @@ def SRL_map():
     ##end at detail hotelu
 #SRL_map()
 
-def SRL_filtr_strava():
+def SRL_filtr_strava():     ##jen na allinclusive, muzu si pohrat pozdeji for now enough
     driver.get(URL_SRL)
     time.sleep(2)
     acceptConsent(driver)
@@ -176,7 +176,5 @@ def SRL_filtr_strava():
             print("stravy nesedi k filtru")
             y = y + 1
     print(stravaZajezduList)
-
-
-SRL_filtr_strava()
+##SRL_filtr_strava()
 
