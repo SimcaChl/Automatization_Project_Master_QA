@@ -103,38 +103,39 @@ def SRL_sort_most_expensive():      ##the same only difference 1)click on nejdra
 ##SRL_sort_cheapest()
 ##SRL_sort_most_expensive()
 
+def SRL_map():
+    driver.get(URL_SRL)
+    time.sleep(5)
+    acceptConsent(driver)
+    time.sleep(2)
+    closeExponeaBanner(driver)
+    zobrazitNaMape = driver.find_element_by_xpath("//*[@class='f_bar-item f_bar-map']")
+    zobrazitNaMape.click()
 
-driver.get(URL_SRL)
-time.sleep(5)
-acceptConsent(driver)
-time.sleep(2)
-closeExponeaBanner(driver)
-zobrazitNaMape = driver.find_element_by_xpath("//*[@class='f_bar-item f_bar-map']")
-zobrazitNaMape.click()
+    time.sleep(5)##try except na kolecko, pokud ok tak click, nenajde tak pokracovat dal
+    koleckoCislo = driver.find_element_by_xpath("//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']")
+    koleckoCislo.click()
+    time.sleep(5)
 
-time.sleep(5)##try except na kolecko, pokud ok tak click, nenajde tak pokracovat dal
-koleckoCislo = driver.find_element_by_xpath("//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']")
-koleckoCislo.click()
-time.sleep(5)
+    actualHotelPin = driver.find_element_by_xpath("//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
+    ##actualHotelPin.click()
+    driver.execute_script("arguments[0].click();", actualHotelPin)          ##at this point im at detail hotelu na mapě
 
-actualHotelPin = driver.find_element_by_xpath("//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
-##actualHotelPin.click()
-driver.execute_script("arguments[0].click();", actualHotelPin)          ##at this point im at detail hotelu na mapě
+    try:
+        imgMissing = driver.find_element_by_xpath("//*[@class='f_image f_image--missing']")         ##when theres no photo on the detail on map theres actually class that says it is missing
+        if imgMissing.is_displayed():                                                               ##so if I dont find this class = good
+            hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
+            msg = "V mape v bublibně hotelu se nezobrazuje fotka hotelu " + hotelBubble.text
+            sendEmail(msg)
 
-try:
-    imgMissing = driver.find_element_by_xpath("//*[@class='f_image f_image--missing']")         ##when theres no photo on the detail on map theres actually class that says it is missing
-    if imgMissing.is_displayed():                                                               ##so if I dont find this class = good
-        hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
-        msg = "V mape v bublibně hotelu se nezobrazuje fotka hotelu " + hotelBubble.text
-        sendEmail(msg)
+    except NoSuchElementException:
+        print("actually OK")
 
-except NoSuchElementException:
-    print("actually OK")
+    time.sleep(2)
 
-time.sleep(2)
-
-hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
-hotelBubble.click()
+    hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
+    hotelBubble.click()
+    ##end at detail hotelu
 
 
-
+SRL_map()

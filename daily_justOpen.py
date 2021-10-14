@@ -11,7 +11,7 @@ from to_import import acceptConsent, URL, URL_stat, caps, closeExponeaBanner
 from SRL_test import test_SRL
 
 from group_search import groupsearch_test
-from SRLv2 import SRLtestV2
+
 
 ##udelat list ze vsech banneru href a pak na ne volat znova vsechny ty srlv2 testy
 
