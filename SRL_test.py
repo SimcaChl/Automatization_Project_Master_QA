@@ -9,6 +9,7 @@ from to_import import acceptConsent, URL, caps, closeExponeaBanner
 
 
 def proklikNaSRLzHP(driver):
+
     driver.get(URL)
     wait = WebDriverWait(driver, 150000)
     driver.maximize_window()
@@ -27,11 +28,14 @@ def proklikNaSRLzHP(driver):
         sendEmail(msg)
 
     time.sleep(2)
+driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver94.exe")
+def SRL_test(driver):
 
-def test_SRL(driver):
     ##driver = webdriver.Remote(
         ##command_executor=comandExecutor,
        ## desired_capabilities=desired_cap)
+
+    driver.get("https://www.eximtours.cz/vysledky-vyhledavani?d=64419|64420|64425&tt=1&dd=2021-10-15&rd=2021-12-15&nn=7|8|9&ka1=9&kc1=1&ac1=2")
     wait = WebDriverWait(driver, 150000)
     ##proklikNaSRLzHP(driver)
 
@@ -104,3 +108,5 @@ def test_SRL(driver):
 
 
     ##driver.quit()
+
+SRL_test(driver)
