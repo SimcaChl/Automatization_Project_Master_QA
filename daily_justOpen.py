@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from to_import_secret import sendEmail, comandExecutor
 from to_import import acceptConsent, URL, URL_stat, caps, closeExponeaBanner
-from SRL_test import test_SRL
+from SRL_test import SRL_test
 
 from group_search import groupsearch_test
 
@@ -64,7 +64,7 @@ while tabsCount > 0:
         print("je to klasik SRL")
         currentURLtrueSRL = driver.current_url
         banneryOdkazySRL.append(currentURLtrueSRL)
-        test_SRL(driver)
+        SRL_test(driver)
 
 
     if groupURL in currentURL:
