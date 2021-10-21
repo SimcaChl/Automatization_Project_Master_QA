@@ -8,7 +8,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from to_import_secret import sendEmail, comandExecutor
 from to_import import acceptConsent, URL, URL_stat, caps, URL_covidInfo, closeExponeaBanner
-from SRL_test import test_SRL
 
 from group_search import groupsearch_test
 
