@@ -169,7 +169,8 @@ def SRL_filtr_strava():     ##jen na allinclusive, muzu si pohrat pozdeji for no
 
     y=0
     for _ in stravaZajezduList:
-        if stravaZajezduList[y] == "All inclusive":
+        if "All inclusive" in stravaZajezduList[y]:
+        ##if stravaZajezduList[y] == "All inclusive":
             print("ok")
             y=y+1
 
