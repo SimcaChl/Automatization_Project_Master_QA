@@ -40,11 +40,12 @@ except ElementClickInterceptedException:
 time.sleep(5)
 koleckoCislo[0].click()
 
+time.sleep(3)
 actualHotelPin = driver.find_element_by_xpath("//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
-    ##actualHotelPin.click()
+##actualHotelPin.click()
 driver.execute_script("arguments[0].click();", actualHotelPin)
 
 time.sleep(2)
 
-hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
+hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content']")
 hotelBubble.click()
