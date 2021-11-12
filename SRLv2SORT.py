@@ -10,8 +10,8 @@ driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\
 ##sorted by nejlevnejsi
 ##URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?qf=109_0_50|386_1_0|108_1_0&sortby=PriceTotal&sa=2138|1949|2730&tt=1&to=4312&dd=2021-12-01&rd=2021-12-31&nn=7|8|9&ac1=2&m=5"
 ##not sorted
-URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?d=826|623|741|735|618|619|624|973|993|595|972|648|746|1126|1129|1124|1128|1059|1118|1119|1121|625|1127|1125|861|1115|1132|1120|709|711|1117|603|1116|1130|1131|614|1123|1093|1198|1114|1122|620&tt=1&dd=2021-10-07&rd=2021-12-07&nn=7|8|9&ac1=2"
-
+#URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?d=826|623|741|735|618|619|624|973|993|595|972|648|746|1126|1129|1124|1128|1059|1118|1119|1121|625|1127|1125|861|1115|1132|1120|709|711|1117|603|1116|1130|1131|614|1123|1093|1198|1114|1122|620&tt=1&dd=2021-10-07&rd=2021-12-07&nn=7|8|9&ac1=2"
+URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?d=826|623|741|735|618|619|624|973|993|595|972|648|620|746|1126|1129|1124|1128|1059|1118|1119|1121|625|1127|1125|861|1115|1132|1120|709|711|1117|603|1116|1130|1131|614|1123|1093|1198|1114|1122&tt=1&to=298|874|892|983|1091|1293|1956|2397|2563|3352&dd=2021-11-12&rd=2022-01-12&nn=7|8|9&ac1=2"
 def SRL_sort_cheapest():
 
     driver.get(URL_SRL)
@@ -113,8 +113,9 @@ def SRL_map():
     zobrazitNaMape = driver.find_element_by_xpath("//*[@class='f_bar-item f_bar-map']")
     zobrazitNaMape.click()
 
-    time.sleep(5)##try except na kolecko, pokud ok tak click, nenajde tak pokracovat dal
+    time.sleep(7)##try except na kolecko, pokud ok tak click, nenajde tak pokracovat dal
     koleckoCislo = driver.find_element_by_xpath("//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']")
+    wait.until(EC.element_to_be_clickable(koleckoCislo))
     koleckoCislo.click()
     time.sleep(5)
 
@@ -137,7 +138,7 @@ def SRL_map():
     hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
     hotelBubble.click()
     ##end at detail hotelu
-#SRL_map()
+SRL_map()
 
 def SRL_filtr_strava():     ##jen na allinclusive, muzu si pohrat pozdeji for now enough
     driver.get(URL_SRL)

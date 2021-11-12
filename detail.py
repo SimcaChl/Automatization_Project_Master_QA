@@ -16,13 +16,7 @@ URL_dx = "https://www.fischer.cz/hotely/recko/kreta/sissi/bella-vista-sissi-reck
 URL_statik = "https://www.fischer.cz/recko/samos/pythagorion/maritsa-bay?DS=1&GIATA=17012&D=826|623|741|735|618|619|624|973|993|595|972|648|746|1126|1129|1124|1128|1059|1118|1119|1121|625|1127|1125|861|1115|1132|1120|709|711|1117|603|1116|1130|1131|614|1123|1093|1198|1114|1122|620&HID=65254&MT=2&DI=47&RT=15&NN=7&RD=2022-08-30&DD=2022-08-23&DP=4312&MNN=7|8|9&TT=1&PID=SMMAR&DPR=Fischer&TTM=1&DF=2022-08-23|2022-09-23&ERM=0&NNM=7|8|9&ac1=2&kc1=0&ic1=0"
 wait = WebDriverWait(driver, 150000)
 
-driver.get(URL_detail_exim)
-time.sleep(2)
-acceptConsent(driver)
 
-time.sleep(1)
-closeExponeaBanner(driver)
-time.sleep(1)
 def omlouvamese_paragraph(driver):
     time.sleep(1)
     try:
@@ -234,8 +228,34 @@ def detail_terminy_filtr_airport(driver):
                 sendEmail(msg)
                 y=y+2
 
-detail_terminy_filtr_airport(driver)
-driver.get(URL_detail_exim)
-detail_terminy_filtr_meal(driver)
-driver.get(URL_detail_exim)
-detail_fotka(driver)
+def detail_map_check(driver):
+    driver.get(URL_statik)
+    time.sleep(5)
+    acceptConsent(driver)
+    time.sleep(2)
+    closeExponeaBanner(driver)
+
+
+    time.sleep(7)  ##try except na kolecko, pokud ok tak click, nenajde tak pokracovat dal
+    #koleckoCislo = driver.find_element_by_xpath(
+       # "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']")
+    #wait.until(EC.element_to_be_clickable(koleckoCislo))
+    #koleckoCislo.click()
+
+    try:
+        actualHotelPin = driver.find_element_by_xpath(
+            "//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
+        ##actualHotelPin.click()
+        driver.execute_script("arguments[0].click();", actualHotelPin)
+        print("SUCCESS detail_map_check")
+    except NoSuchElementException:
+        url = driver.current_url
+        msg = "Nenasli se mapa v /stat " + url
+        print("FAIL detail_map_check")
+#detail_terminy_filtr_airport(driver)
+#driver.get(URL_detail_exim)
+#detail_terminy_filtr_meal(driver)
+#driver.get(URL_detail_exim)
+#detail_fotka(driver)
+
+detail_map_check(driver)
