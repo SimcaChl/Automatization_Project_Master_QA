@@ -16,7 +16,7 @@ from group_search import groupsearch_test
 ##udelat list ze vsech banneru href a pak na ne volat znova vsechny ty srlv2 testy
 
 
-driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver94.exe")
+driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver96.exe")
 wait = WebDriverWait(driver, 150000)
 driver.get(URL)
 driver.maximize_window()

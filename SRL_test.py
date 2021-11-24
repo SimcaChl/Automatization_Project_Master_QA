@@ -28,7 +28,7 @@ def proklikNaSRLzHP(driver):
         sendEmail(msg)
 
     time.sleep(2)
-driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver94.exe")
+driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver96.exe")
 def SRL_test(driver):
 
     ##driver = webdriver.Remote(
