@@ -8,10 +8,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from to_import_secret import sendEmail, comandExecutor
 from to_import import acceptConsent, URL, URL_stat, caps, URL_covidInfo, closeExponeaBanner
-
+from pyshadow.main import Shadow
 from group_search import groupsearch_test
 
-driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver94.exe")
+driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver96.exe")
 wait = WebDriverWait(driver, 150000)
 
 
@@ -22,7 +22,12 @@ def covidInfo_test(driver):
 
     driver.get(URL_covidInfo)
     time.sleep(1)
-    acceptConsent(driver)
+    #acceptConsent(driver)
+    shadow = Shadow(driver)
+    shadow.find_element("div#usercentrics-root")
+    #btnAccept = shadow.find_element("button[data-testid='uc-accept-all-button']")
+    shadow.find_element("button[data-testid='uc-accept-all-button']").click()
+    #btnAccept.click()
     time.sleep(1)
     closeExponeaBanner(driver)
 

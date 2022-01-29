@@ -1,4 +1,4 @@
-from to_import import acceptConsent, URL, URL_stat, caps, URL_groupsearch, closeExponeaBanner
+from to_import import acceptConsent2, URL, URL_stat, caps, URL_groupsearch, closeExponeaBanner
 from to_import_secret import sendEmail
 import time
 from selenium.webdriver.support.ui import WebDriverWait
@@ -8,7 +8,7 @@ from selenium import webdriver
 
 
 ##driver = webdriver.Chrome(executable_path=r"C:\Users\KADOUN\Desktop\Selenium setup\chromedriver94.exe")
-driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver94.exe")
+driver = webdriver.Chrome(executable_path=r"C:\Users\KDK\Desktop\Selenium setup\chromedriver96.exe")
 URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?qf=109_0_50|386_1_0|108_1_0&sortby=PriceTotal&sa=2138|1949|2730&tt=1&to=4312&dd=2021-12-01&rd=2021-12-31&nn=7|8|9&ac1=2&m=5"
 ##URL_SRL = "https://www.eximtours.cz/vysledky-vyhledavani?tt=0&ac1=2&dd=2021-08-27&rd=2021-09-26&nn=7&d=63720|63719&pf=0&pt=900000"
 
@@ -20,7 +20,7 @@ def SRLtestV2(driver):
     wait = WebDriverWait(driver, 150000)
 
     time.sleep(2)
-    acceptConsent(driver)
+    acceptConsent2(driver)
     time.sleep(2)
     closeExponeaBanner(driver)
 

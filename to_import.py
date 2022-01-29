@@ -29,10 +29,13 @@ caps=[{
 def acceptConsent(driver):
     def expand_shadow_element(element):
         shadow_root = driver.execute_script('return arguments[0].shadowRoot', element)
+        print(shadow_root)
         return shadow_root
     try:
-        outer = expand_shadow_element(driver.find_element_by_css_selector("div#usercentrics-root"))
-        inner = outer.find_element_by_css_selector("button[data-testid='uc-accept-all-button']")
+        #outer = expand_shadow_element(driver.find_element_by_css_selector("div#usercentrics-root"))
+        outer = expand_shadow_element(driver.find_element_by_xpath("//*[@id='usercentrics-root']"))
+        #inner = outer.find_element_by_css_selector("button[data-testid='uc-accept-all-button']")
+        inner = outer.find_element_by_xpath("//*[@class='sc-gsTEea kueOTd']")
         inner.click()
     except NoSuchElementException:
         pass
@@ -52,3 +55,10 @@ def closeExponeaBanner(driver):
 
     except NoSuchElementException:
         print( "nenasle se exponea banner")
+
+
+def acceptConsent2(driver):
+    time.sleep(2)
+    element = driver.execute_script(
+        """return document.querySelector('#usercentrics-root').shadowRoot.querySelector("button[data-testid='uc-accept-all-button']")""")
+    element.click()
