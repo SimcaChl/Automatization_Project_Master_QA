@@ -51,6 +51,7 @@ class TestDetail_C(unittest.TestCase):
 
         try:
             image = self.driver.find_element_by_xpath("/html/body/img")
+            assert image.is_displayed() == True
             if image.is_displayed():
                 print("its ok")
         except NoSuchElementException:
