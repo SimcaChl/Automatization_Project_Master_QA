@@ -8,20 +8,13 @@ from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 from selenium.webdriver.common.keys import Keys
+import requests
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("https://www.fischer.cz/hledani-vysledky?q=zanzibar")
-
 acceptConsent(driver)
-
 vysledkyHlavniGrid = driver.find_elements_by_xpath("//*[@class='grd-col grd-col--9 grd-col--md-12 f_fulltextResults-main']")
-
-print(vysledkyHlavniGrid)
-print(vysledkyHlavniGrid[0].get_attribute("href"))
-
-
 linksToCheckList = []
-
 vysledkyDlazdiceHotelu = driver.find_elements_by_xpath("//*[@class='f_tileGrid-item']/a")
 x=0
 for _ in vysledkyDlazdiceHotelu:
@@ -30,4 +23,21 @@ for _ in vysledkyDlazdiceHotelu:
     x=x+1
 
 
+vysledkyTextItems = driver.find_elements_by_xpath("//*[@class='f_fulltextResults-item']/a")
+z=0
+for _ in vysledkyTextItems:
+
+    linksToCheckList.append(vysledkyTextItems[0].text)
+    z=z+1
+
 print(linksToCheckList)
+
+print(len(linksToCheckList))
+responseList = []
+y=0
+for _ in linksToCheckList:
+    response = requests.get(linksToCheckList[y])
+    print(response)
+    print(bool(response=="<Response [200]>"))
+    print(bool(response == 200))
+    y=y+1
