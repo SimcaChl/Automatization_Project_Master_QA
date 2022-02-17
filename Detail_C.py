@@ -4,7 +4,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 from to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail
 import time
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
