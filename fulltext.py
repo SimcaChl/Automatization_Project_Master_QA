@@ -37,7 +37,6 @@ responseList = []
 y=0
 for _ in linksToCheckList:
     response = requests.get(linksToCheckList[y])
-    print(response)
-    print(bool(response=="<Response [200]>"))
-    print(bool(response == 200))
+    print(response.status_code)
+    print(response.status_code==200)
     y=y+1
