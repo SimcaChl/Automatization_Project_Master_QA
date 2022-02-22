@@ -18,6 +18,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
 from email.mime.text import MIMEText
+from to_import_secret import emailPass
 
 def sendEmail(msg):
   fromx = 'alertserverproblem@gmail.com'
@@ -30,7 +31,7 @@ def sendEmail(msg):
   server = smtplib.SMTP('smtp.gmail.com:587')
   server.starttls()
   server.ehlo()
-  server.login("alertserverproblem@gmail.com", "mamradckfischer")
+  server.login("alertserverproblem@gmail.com", emailPass)
   server.sendmail(fromx, to, msg.as_string())
   server.quit()
 
