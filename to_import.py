@@ -16,12 +16,15 @@ URL_covidInfo = URL+"covid-info"
 URL_kluby = URL+"dovolena-animacni-kluby"
 URL_fmExotika = URL+"first-minute/exotika-zima"
 URL_faq = URL+"faq"
+URL_lm = URL+"last-minute"
+URL_stat = URL+"spanelsko"
 import time
 from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
 from email.mime.text import MIMEText
 from to_import_secret import emailPass
+
 
 def sendEmail(msg):
   fromx = 'alertserverproblem@gmail.com'
@@ -52,6 +55,8 @@ def acceptConsent(driver):
     element.click()
   except TimeoutException:
     pass
+  except NoSuchElementException:
+    return
 
 def closeExponeaBanner(driver):
     time.sleep(1.5)
