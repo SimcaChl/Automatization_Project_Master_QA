@@ -14,6 +14,7 @@ class TestPobocky_D(unittest.TestCase):
 
 
     def test_pobocky_D(self):
+
         self.driver.get(URL_pobocky)
         acceptConsent(self.driver)
         self.driver.maximize_window()
@@ -51,3 +52,4 @@ class TestPobocky_D(unittest.TestCase):
             print("basic info ")
             assert basicInfoDisplay == True
             a=a+1
+
