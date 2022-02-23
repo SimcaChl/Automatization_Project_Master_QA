@@ -1,8 +1,11 @@
 from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_kluby
+from to_import import acceptConsent, closeExponeaBanner, URL_kluby, sendEmail
 from selenium import webdriver
-import pyautogui as p
 import unittest
+import pyautogui as p
+p.FAILSAFE = False
+
+
 
 class TestDetskeKluby_D(unittest.TestCase):
     def setup_method(self, method):
@@ -25,12 +28,7 @@ class TestDetskeKluby_D(unittest.TestCase):
             a=a+1
             assert benefitItemDisplay == True
             print("benefit item")
-
-
-
         p.press("pagedown", presses=3)
-
-
         gridContainer = self.driver.find_elements_by_xpath("//*[@class='grd-container']")
         b=0
         for _ in gridContainer:
@@ -38,10 +36,7 @@ class TestDetskeKluby_D(unittest.TestCase):
             assert  gridContainerDisplay == True
             b=b+1
             print ("grind container")
-
         p.press("pagedown", presses=2)
-
-
         tileImg = self.driver.find_elements_by_xpath("//*[@class='f_tile-image']")
         c=0
         for _ in tileImg:
@@ -49,4 +44,3 @@ class TestDetskeKluby_D(unittest.TestCase):
             assert tileImgDisplay == True
             c=c+1
             print("tile img")
-
