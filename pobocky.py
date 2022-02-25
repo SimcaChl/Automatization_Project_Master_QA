@@ -5,11 +5,11 @@ from selenium import webdriver
 import unittest
 
 class TestPobocky_D(unittest.TestCase):
-    def setup_method(self, method):
+    def setUp(self):
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
         self.vars = {}
 
-    def teardown_method(self, method):
+    def tearDown(self):
         self.driver.quit()
 
 

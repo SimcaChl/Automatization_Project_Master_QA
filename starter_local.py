@@ -1,14 +1,5 @@
 import unittest
-from pobocky import TestPobocky_D
-
-
-
-
-#from threading import Thread
-#Thread(target=TestPoznavacky_D(unittest.TestCase))
-
-#class TestAll(unittest.TestCase):
-#    TestPobocky_D(unittest.TestCase)
+from pobocky import *
 
 
 def suite():
@@ -18,5 +9,6 @@ def suite():
     return suite
 
 if __name__ == '__main__':
+
     runner = unittest.TextTestRunner()
     runner.run(suite())
