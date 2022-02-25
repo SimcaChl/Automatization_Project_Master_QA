@@ -12,9 +12,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 query = "Mirage bay"
 URL_FT_results = URL+"/hledani-vysledky?q="
 
-queryStat = ["Zanzibar", "Řecko"]
-queryHotely = ["Mirage bay"]
-queryList = queryStat+queryHotely
+querySDO = ["Zanzibar", "Řecko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Maledivy", "Dubaj", "Mallorca", "Bulharsko",  ]
+queryCommon = ["pojištění", "Funtazie",  ]
+queryHotely = ["Mirage bay", "mitsis", "Prima life", "Prima life makadi", "Pegasos"]
+queryList = querySDO+queryCommon+queryHotely
 class TestFulltext(unittest.TestCase):
     def setup_method(self, method):
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
