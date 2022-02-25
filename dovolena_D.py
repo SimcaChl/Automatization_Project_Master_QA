@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, closeExponeaBanner, URL_covidInfo, sendEmail, URL
+from to_import import acceptConsent, closeExponeaBanner, URL_covidInfo, sendEmail, URL,  setUp, tearDown
 import time
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
@@ -14,12 +14,11 @@ import requests
 
 class TestDovolena_D(unittest.TestCase):
 
-    def setup_method(self, method):
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        self.vars = {}
+    def setUp(self):
+        setUp(self)
 
-    def teardown_method(self, method):
-        self.driver.quit()
+    def tearDown(self):
+        tearDown(self)
 
     def test_dovolena_D(self):
         wait = WebDriverWait(self.driver, 150000)

@@ -2,24 +2,21 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException,
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail
+from to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown
 import time
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
 
 class Test_SRL_complex(unittest.TestCase):
-    def setup_method(self, method):
+    def setUp(self):
+        setUp(self)
 
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
+    def tearDown(self):
+        tearDown(self)
 
-        self.vars = {}
 
-    def teardown_method(self, method):
-
-        self.driver.quit()
     def test_SRL_sort_cheapest(self):
 
         self.driver.get(URL_SRL)

@@ -2,7 +2,7 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException,
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, URL
+from to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, URL, setUp, tearDown
 import time
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC, wait
@@ -17,13 +17,11 @@ queryCommon = ["pojištění", "Funtazie", "parkování", "covid" ]
 queryHotely = ["Mirage bay", "mitsis", "Prima life", "Prima life makadi", "Pegasos", "Pickalbatros", "Titanic", ]
 queryList = querySDO+queryCommon+queryHotely
 class TestFulltext(unittest.TestCase):
-    def setup_method(self, method):
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        self.vars = {}
+    def setUp(self):
+        setUp(self)
 
-
-    def teardown_method(self, method):
-        self.driver.quit()
+    def tearDown(self):
+        tearDown(self)
 
     def test_fulltext_naseptavac(self):
         poziceQueryItem = 0
@@ -80,9 +78,17 @@ class TestFulltext(unittest.TestCase):
             print(len(linksToCheckList))
             assert len(linksToCheckList) > 0        ## check if there are any result, length > 0
             y = 0
-            for _ in linksToCheckList:
-                response = requests.get(linksToCheckList[y])
-                print(response.status_code)
-                print(response.status_code == 200)
-                assert response.status_code == 200
-                y = y + 1
+            #for _ in linksToCheckList:
+            if len(linksToCheckList) > 5:
+                for i in range(5):
+                    response = requests.get(linksToCheckList[y])
+                    print(response.status_code)
+                    print(response.status_code == 200)
+                    assert response.status_code == 200
+                    y = y + 1
+            else:
+                for _ in linksToCheckList:
+                    print(response.status_code)
+                    print(response.status_code == 200)
+                    assert response.status_code == 200
+                    y = y + 1

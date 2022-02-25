@@ -2,19 +2,18 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException,
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, closeExponeaBanner, URL_covidInfo, sendEmail, URL, URL_faq, URL_lm, URL_stat, URL_SRL
+from to_import import acceptConsent, closeExponeaBanner, URL_covidInfo, sendEmail, URL, URL_faq, URL_lm, URL_stat, URL_SRL, setUp, tearDown
 import time
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
 class TestSRL_D(unittest.TestCase):
-    def setup_method(self, method):
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        self.vars = {}
+    def setUp(self):
+        setUp(self)
 
-    def teardown_method(self, method):
-        self.driver.quit()
+    def tearDown(self):
+        tearDown(self)
 
     def test_SRL_D(self):
         wait = WebDriverWait(self.driver, 150000)
@@ -44,6 +43,7 @@ class TestSRL_D(unittest.TestCase):
             url = self.driver.current_url
             msg = "Problem s hotely v searchi - hotelCard " + url
             sendEmail(msg)
+
 
         try:
             fotkyAll = self.driver.find_elements_by_xpath(

@@ -1,16 +1,14 @@
 from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_pobocky
+from to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_pobocky, setUp, tearDown
 import time
-from selenium import webdriver
 import unittest
 
 class TestPobocky_D(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        self.vars = {}
+        setUp(self)
 
     def tearDown(self):
-        self.driver.quit()
+        tearDown(self)
 
 
     def test_pobocky_D(self):

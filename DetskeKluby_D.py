@@ -1,5 +1,5 @@
 from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, closeExponeaBanner, URL_kluby, sendEmail
+from to_import import acceptConsent, closeExponeaBanner, URL_kluby, sendEmail,  setUp, tearDown
 from selenium import webdriver
 import unittest
 import pyautogui as p
@@ -8,13 +8,11 @@ p.FAILSAFE = False
 
 
 class TestDetskeKluby_D(unittest.TestCase):
-    def setup_method(self, method):
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
+    def setUp(self):
+        setUp(self)
 
-        self.vars = {}
-
-    def teardown_method(self, method):
-        self.driver.quit()
+    def tearDown(self):
+        tearDown(self)
 
 
     def test_kluby_D(self):
