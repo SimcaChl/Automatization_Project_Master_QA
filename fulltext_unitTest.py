@@ -9,9 +9,12 @@ from selenium.webdriver.support import expected_conditions as EC, wait
 import unittest
 import requests
 from selenium.webdriver.support.wait import WebDriverWait
-query = "Zanzibar"
+query = "Mirage bay"
 URL_FT_results = URL+"/hledani-vysledky?q="
-queryList = ["Zanzibar", "Mirage bay"]
+
+queryStat = ["Zanzibar", "Řecko"]
+queryHotely = ["Mirage bay"]
+queryList = queryStat+queryHotely
 class TestFulltext(unittest.TestCase):
     def setup_method(self, method):
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -22,31 +25,39 @@ class TestFulltext(unittest.TestCase):
         self.driver.quit()
 
     def test_fulltext_naseptavac(self):
-        self.driver.get(URL)
-        self.driver.maximize_window()
-        acceptConsent(self.driver)
+        poziceQueryItem = 0
+        for _ in queryList:
+            self.driver.get(URL)
+            self.driver.maximize_window()
+            if poziceQueryItem==0:
+                acceptConsent(self.driver)
+            else:
+                pass
 
-        FTlupa = self.driver.find_element_by_xpath("//*[@class='f_anchor f_icon f_icon--magnifier']")
-        FTlupa.click()
 
-        inputBox = self.driver.find_element_by_xpath("//*[@class='f_input-item j_input']")
-        inputBox.send_keys(query)
-        time.sleep(2)
-        # inputBox.send_keys(Keys.ENTER)
 
-        prvniItem = self.driver.find_elements_by_xpath("//*[@class='f_item']")
-        prvniItem[0].click()
+            FTlupa = self.driver.find_element_by_xpath("//*[@class='f_anchor f_icon f_icon--magnifier']")
+            FTlupa.click()
 
-        currentUrl = self.driver.current_url
-        assert currentUrl != URL
+            inputBox = self.driver.find_element_by_xpath("//*[@class='f_input-item j_input']")
+            inputBox.send_keys(queryList[poziceQueryItem])
+            time.sleep(2)
+            # inputBox.send_keys(Keys.ENTER)
+            poziceQueryItem = poziceQueryItem+1
+
+            prvniItem = self.driver.find_elements_by_xpath("//*[@class='f_item']")
+            prvniItem[0].click()
+
+            currentUrl = self.driver.current_url
+            assert currentUrl != URL
 
 
     def test_fulltext_results_status_check(self):
-        a=0
+        poziceQueryItem=0
         for _ in queryList:
             driver = self.driver
-            driver.get(URL_FT_results+queryList[a])
-            if a==0:
+            driver.get(URL_FT_results+queryList[poziceQueryItem])
+            if poziceQueryItem==0:
                 acceptConsent(driver)
             else:
                 pass
@@ -64,9 +75,9 @@ class TestFulltext(unittest.TestCase):
                 z = z + 1
 
             print(linksToCheckList)
-            a=a+1
+            poziceQueryItem=poziceQueryItem+1
             print(len(linksToCheckList))
-            assert len(linksToCheckList) > 0
+            assert len(linksToCheckList) > 0        ## check if there are any result, length > 0
             y = 0
             for _ in linksToCheckList:
                 response = requests.get(linksToCheckList[y])

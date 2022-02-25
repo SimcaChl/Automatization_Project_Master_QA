@@ -1,7 +1,8 @@
 from poznavacky import TestPoznavacky_D
 from threading import Thread
+from to_import_secret import comandExecutor
 
-comandExecutor = 'https://alexandrhavlicek1:srQ2pcqFrkx2JFpXMLBX@hub-cloud.browserstack.com/wd/hub'
+
 from to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_poznavacky_zazitky
 cap=[{
       'os_version': 'Big Sur',
