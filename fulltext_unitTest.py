@@ -12,9 +12,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 query = "Mirage bay"
 URL_FT_results = URL+"/hledani-vysledky?q="
 
-querySDO = ["Zanzibar", "Řecko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Maledivy", "Dubaj", "Mallorca", "Bulharsko", "Chorvatsko",  ]
-queryCommon = ["pojištění", "Funtazie", "parkování", "covid" ]
-queryHotely = ["Mirage bay", "mitsis", "Prima life", "Prima life makadi", "Pegasos", "Pickalbatros", "Titanic", ]
+querySDO = ["Zanzibar", "Řecko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Maledivy", "Dubaj", "Mallorca", "Bulharsko", "Chorvatsko", "Kefalonia", "Attika" ]
+queryCommon = ["pojištění",  "parkování", "covid", "Funtazie" ]
+queryHotely = ["Mirage bay", "mitsis", "Prima life", "Prima life makadi", "Pegasos", "Pickalbatros", "Titanic", "mirage", "Domes Aulüs", "Bay & Mare",  "A for Art",
+               "Porto Skala 7", "Costa Azzurra", "La Cite", "Naftilos", "Stefanos", "Magnolia",  "White Gold", "King Tut Resort", "Blue Waters",
+               "Primasol", "Doubletree"]
 queryList = querySDO+queryCommon+queryHotely
 class TestFulltext(unittest.TestCase):
     def setUp(self):
@@ -42,13 +44,27 @@ class TestFulltext(unittest.TestCase):
             inputBox.send_keys(queryList[poziceQueryItem])
             time.sleep(2)
             # inputBox.send_keys(Keys.ENTER)
+            print(queryList[poziceQueryItem].upper())
             poziceQueryItem = poziceQueryItem+1
 
-            prvniItem = self.driver.find_elements_by_xpath("//*[@class='f_item']")
-            prvniItem[0].click()
 
-            currentUrl = self.driver.current_url
-            assert currentUrl != URL
+            #if self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']").isDisplayed()==True:
+            #if hotelDlazdice != 0:
+            try:
+                    hotelDlazdice = self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']")
+                    hotelDlazdice.click()
+                    currentUrl = self.driver.current_url
+                    assert currentUrl != URL
+            except NoSuchElementException:
+                prvniItem = self.driver.find_elements_by_xpath("//*[@class='f_item']")
+                prvniItem[0].click()
+
+                currentUrl = self.driver.current_url
+                assert currentUrl != URL
+            #else:
+
+
+
 
 
     def test_fulltext_results_status_check(self):
@@ -60,6 +76,7 @@ class TestFulltext(unittest.TestCase):
                 acceptConsent(driver)
             else:
                 pass
+            print(queryList[poziceQueryItem].upper())
             linksToCheckList = []
             vysledkyDlazdiceHotelu = driver.find_elements_by_xpath("//*[@class='f_tileGrid-item']/a")
             x = 0
@@ -73,22 +90,22 @@ class TestFulltext(unittest.TestCase):
                 linksToCheckList.append(vysledkyTextItems[0].text)
                 z = z + 1
 
-            print(linksToCheckList)
+            #print(linksToCheckList)
             poziceQueryItem=poziceQueryItem+1
-            print(len(linksToCheckList))
+            #print(len(linksToCheckList))
             assert len(linksToCheckList) > 0        ## check if there are any result, length > 0
             y = 0
             #for _ in linksToCheckList:
             if len(linksToCheckList) > 5:
                 for i in range(5):
                     response = requests.get(linksToCheckList[y])
-                    print(response.status_code)
-                    print(response.status_code == 200)
+                    #print(response.status_code)
+                    #print(response.status_code == 200)
                     assert response.status_code == 200
                     y = y + 1
             else:
                 for _ in linksToCheckList:
-                    print(response.status_code)
-                    print(response.status_code == 200)
+                    #print(response.status_code)
+                    #print(response.status_code == 200)
                     assert response.status_code == 200
                     y = y + 1
