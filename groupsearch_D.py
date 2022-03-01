@@ -1,11 +1,7 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
-from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
 from to_import import acceptConsent, URL_groupsearch, setUp, tearDown
 import unittest
-
-
 
 class Test_Groupsearch_D(unittest.TestCase):
     def setUp(self):

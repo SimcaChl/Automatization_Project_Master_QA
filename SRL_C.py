@@ -1,15 +1,13 @@
 from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
 from to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown
 import time
-from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
 
-class Test_SRL_complex(unittest.TestCase):
+class Test_SRL_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
 
@@ -245,6 +243,51 @@ class Test_SRL_complex(unittest.TestCase):
             msg = "Problem s terminSedivkaSingle " + url
             sendEmail(msg)
 
+    def test_SRL_filtr_strava(self):
+        driver = self.driver
+        driver.get(URL_SRL)
+        time.sleep(2)
+        acceptConsent(driver)
+        time.sleep(2)
+        closeExponeaBanner(driver)
+        time.sleep(2)
+
+        stravaMenu = driver.find_element_by_xpath("//*[@class='f_menu-item']//*[contains(text(), 'Strava')]")
+        stravaMenu.click()
+        time.sleep(2)
+
+        allinclusiveMenu = driver.find_element_by_xpath(
+            "//*[@class='f_menu-item-content f_menu-item-content--sub'] //*[@class='f_input-label'] //*[contains(text(), 'All inclusive')]")  ##papani v menu ma vzdy vlastni value, 5=all inclusive
+        allinclusiveMenu.click()
+
+        potvrditMenu = driver.find_element_by_xpath(
+            "//*[@class='f_menu-item']//*[@class='f_button f_button--common f_button_set--smallest']")
+        potvrditMenu.click()
+        time.sleep(2)  ##potvrzeno chvilak casu na relload
+
+        stravaZajezdu = driver.find_elements_by_xpath("//*[@class='f_list-item f_icon f_icon--cutlery']")
+        x = 0
+        stravaZajezduList = []
+        for WebElement in stravaZajezdu:
+            stravaZajezduString = stravaZajezdu[x].text
+            stravaZajezduList.append(stravaZajezduString)
+            x = x + 1
+
+        y = 0
+        stringInclusve = "All inclusive"
+        for _ in stravaZajezduList:
+            ##if stravaZajezduList[y] == "All inclusive":
+            assert "All inclusive" in stravaZajezduList[y]
+            if "All inclusive" in stravaZajezduList[y]:
+                print("ok")
+                y = y + 1
+
+            else:
+                print("stravy nesedi k filtru")
+                y = y + 1
+        print(stravaZajezduList)
+        driver.quit()
+
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
         windowHandle = 1  ##variable for handling windows, gotta start on 1
@@ -372,47 +415,3 @@ class Test_SRL_complex(unittest.TestCase):
             print(x)
             windowHandle = windowHandle + 1
             print(windowHandle)
-    def test_SRL_filtr_strava(self):
-        driver = self.driver
-        driver.get(URL_SRL)
-        time.sleep(2)
-        acceptConsent(driver)
-        time.sleep(2)
-        closeExponeaBanner(driver)
-        time.sleep(2)
-
-        stravaMenu = driver.find_element_by_xpath("//*[@class='f_menu-item']//*[contains(text(), 'Strava')]")
-        stravaMenu.click()
-        time.sleep(2)
-
-        allinclusiveMenu = driver.find_element_by_xpath(
-            "//*[@class='f_menu-item-content f_menu-item-content--sub'] //*[@class='f_input-label'] //*[contains(text(), 'All inclusive')]")  ##papani v menu ma vzdy vlastni value, 5=all inclusive
-        allinclusiveMenu.click()
-
-        potvrditMenu = driver.find_element_by_xpath(
-            "//*[@class='f_menu-item']//*[@class='f_button f_button--common f_button_set--smallest']")
-        potvrditMenu.click()
-        time.sleep(2)  ##potvrzeno chvilak casu na relload
-
-        stravaZajezdu = driver.find_elements_by_xpath("//*[@class='f_list-item f_icon f_icon--cutlery']")
-        x = 0
-        stravaZajezduList = []
-        for WebElement in stravaZajezdu:
-            stravaZajezduString = stravaZajezdu[x].text
-            stravaZajezduList.append(stravaZajezduString)
-            x = x + 1
-
-        y = 0
-        stringInclusve = "All inclusive"
-        for _ in stravaZajezduList:
-            ##if stravaZajezduList[y] == "All inclusive":
-            assert "All inclusive" in stravaZajezduList[y]
-            if "All inclusive" in stravaZajezduList[y]:
-                print("ok")
-                y = y + 1
-
-            else:
-                print("stravy nesedi k filtru")
-                y = y + 1
-        print(stravaZajezduList)
-        driver.quit()

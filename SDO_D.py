@@ -1,11 +1,6 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, closeExponeaBanner, URL_covidInfo, sendEmail, URL, URL_faq, URL_lm, URL_stat, setUp, tearDown
+from selenium.common.exceptions import NoSuchElementException
+from to_import import acceptConsent, sendEmail, URL_stat, setUp, tearDown
 import time
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
 class TestSDO_D(unittest.TestCase):

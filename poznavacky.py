@@ -1,31 +1,13 @@
-import pytest
 import time
-import json
-from selenium import webdriver
+from to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_poznavacky_zazitky, setUp, tearDown
+import unittest
 
-from to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_poznavacky_zazitky
-from threading import Thread
-from to_import_secret import comandExecutor
-desired_cap = {
-"os" : "Windows",
-"os_version" : "11",
-"browser" : "Edge",
-"browser_version" : "latest",
-"browserstack.local" : "false",
-"browserstack.selenium_version" : "3.5.2"
-}
+class TestPoznavacky_D(unittest.TestCase):
+    def setUp(self):
+        setUp(self)
 
-
-class TestPoznavacky_D():
-
-    def setup_method(self, method):
-        #self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        self.driver = webdriver.Remote(
-        command_executor=comandExecutor,desired_capabilities=desired_cap )
-        self.vars = {}
-
-    def teardown_method(self, method):
-        self.driver.quit()
+    def tearDown(self):
+        tearDown(self)
 
     def test_poznavacky_okruzni_D(self):
             self.driver.get(URL_poznavacky)
@@ -163,5 +145,3 @@ class TestPoznavacky_D():
             assert gridBigDisplayed == True
             a = a + 1
             print("big grid ture")
-
-Thread(target=TestPoznavacky_D, args=(desired_cap,)).start()
