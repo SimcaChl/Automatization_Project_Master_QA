@@ -15144,3 +15144,338 @@ JavaScript error: https://www.fischer.cz/bundles/fischer/web?v=B_pIQNeCExRI9SGdR
 JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
 JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
 JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+1646157379878	Marionette	INFO	Stopped listening on port 52118
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Reply_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_FailedAsyncOpen) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_FailedAsyncOpen) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PBrowserBridge::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PBrowserBridge::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PBrowserBridge::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PBrowserBridge::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PBrowserBridge::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646157382219	geckodriver	INFO	Listening on 127.0.0.1:52334
+1646157385261	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofilelctPhy"
+1646157385675	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofilelctPhy\\search.json.mozlz4", (void 0)))
+1646157388420	Marionette	INFO	Listening on port 52343
+1646157388454	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_NotifyProcessPriorityChanged) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_NotifyProcessPriorityChanged) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_NotifyProcessPriorityChanged) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_NotifyProcessPriorityChanged) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_NotifyProcessPriorityChanged) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_NotifyProcessPriorityChanged) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function

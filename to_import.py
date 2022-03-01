@@ -35,10 +35,10 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 def setUp(self):
-  #self.driver = webdriver.Chrome(ChromeDriverManager().install())
+  self.driver = webdriver.Chrome(ChromeDriverManager().install())
   #self.driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
   #self.driver = webdriver.Opera(executable_path=OperaDriverManager().install())
-  self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+  #self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 
 def tearDown(self):
   self.driver.quit()

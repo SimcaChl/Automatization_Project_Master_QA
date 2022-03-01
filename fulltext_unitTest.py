@@ -27,7 +27,7 @@ class TestFulltext(unittest.TestCase):
         tearDown(self)
 
     def test_fulltext_naseptavac(self):
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 13)
         poziceQueryItem = 0
         for _ in queryList:
             self.driver.get(URL)
@@ -66,6 +66,8 @@ class TestFulltext(unittest.TestCase):
 
                 currentUrl = self.driver.current_url
                 assert currentUrl != URL
+                response = requests.get(currentUrl)
+                assert response.status_code == 200
             #else:
 
 
@@ -73,7 +75,7 @@ class TestFulltext(unittest.TestCase):
 
 
     def test_fulltext_results_status_check(self):
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 13)
         poziceQueryItem=0
         for _ in queryList:
             driver = self.driver
@@ -94,7 +96,9 @@ class TestFulltext(unittest.TestCase):
             except NoSuchElementException:
                 pass
             vysledkyTextItems = driver.find_elements_by_xpath("//*[@class='f_fulltextResults-item']/a")
-            wait.until(EC.visibility_of(vysledkyTextItems[0]))
+            vysledkyTextItemsSingle = driver.find_element_by_xpath("//*[@class='f_fulltextResults-item']/a")
+            #wait.until(EC.visibility_of(vysledkyTextItems[0]))
+            wait.until(EC.visibility_of(vysledkyTextItemsSingle))
             z = 0
             for _ in vysledkyTextItems:
                     linksToCheckList.append(vysledkyTextItems[0].text)
@@ -109,9 +113,10 @@ class TestFulltext(unittest.TestCase):
             if len(linksToCheckList) > 5:
                 for i in range(5):
                     response = requests.get(linksToCheckList[y])
+                    assert response.status_code == 200
                     #print(response.status_code)
                     #print(response.status_code == 200)
-                    assert response.status_code == 200
+
                     y = y + 1
             else:
                 for _ in linksToCheckList:
