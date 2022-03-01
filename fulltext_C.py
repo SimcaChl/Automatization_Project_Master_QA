@@ -1,11 +1,6 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, URL, setUp, tearDown
+from selenium.common.exceptions import NoSuchElementException
+from to_import import acceptConsent, URL, setUp, tearDown
 import time
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC, wait
 import unittest
 import requests
 from selenium.webdriver.support.wait import WebDriverWait
@@ -19,7 +14,7 @@ queryHotely = ["Mirage bay", "mitsis", "Prima life", "Prima life makadi", "Pegas
                "Porto Skala 7", "Costa Azzurra", "La Cite", "Naftilos", "Stefanos", "Magnolia",  "White Gold", "King Tut Resort", "Blue Waters",
                "Primasol", "Doubletree"]
 queryList = querySDO+queryCommon+queryHotely
-class TestFulltext(unittest.TestCase):
+class Test_Fulltext_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
 
@@ -69,10 +64,6 @@ class TestFulltext(unittest.TestCase):
                 response = requests.get(currentUrl)
                 assert response.status_code == 200
             #else:
-
-
-
-
 
     def test_fulltext_results_status_check(self):
         wait = WebDriverWait(self.driver, 13)

@@ -1,17 +1,12 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
-from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
 from to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, setUp, tearDown
 import time
-from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
 
-#URL_detail = "https://www.fischer.cz/recko/lefkada/agios-nikitas/olive-tree-ct?DS=1&D=826|1225|623|741|735|618|619|624|973|993|595|972|648|620|746|1126|1129|1124|1128|1059|1118|1119|1121|625|1127|1125|861|1115|1132|1120|709|711|1117|603|1116|1130|1131|614|1123|1093|1198|1114|1122&HID=628177&MT=1&DI=49&RT=15&NN=7&RD=2022-08-18&DD=2022-08-11&DP=2682&TO=4312|4305|2682|4308&MNN=7|8|9|10|11|12|13&TT=1&PID=LFOLISO&DPR=Fischer&TTM=1&TOM=4312|4305|2682|4308&DF=2022-08-11|2022-09-11&ERM=0&NNM=7|8|9|10|11|12|13&ac1=3&kc1=0&ic1=0"
-#URL_detail = "https://www.fischer.cz/recko/lefkada/agios-nikitas/olive-tree-ct?DS=1&D=826|1225|623|741|735|618|619|624|973|993|595|972|648|620|746|1126|1129|1124|1128|1059|1118|1119|1121|625|1127|1125|861|1115|1132|1120|709|711|1117|603|1116|1130|1131|614|1123|1093|1198|1114|1122&HID=628177&MT=1&DI=49&RT=15&NN=7&RD=2022-08-18&DD=2022-08-11&DP=4305&TO=4305&MNN=7|8|9|10|11&TT=1&PID=LFOLISO&DPR=Fischer&TTM=1&DF=2022-08-11|2022-09-11&ERM=0&NNM=7|8|9|10|11&ac1=2&kc1=0&ic1=0#/terminy"
-class TestDetail_C(unittest.TestCase):
+class TestDetailHotelu_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
 

@@ -1,12 +1,7 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
-from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, closeExponeaBanner, URL_covidInfo, sendEmail, URL,  setUp, tearDown
+from to_import import acceptConsent,  URL,  setUp, tearDown
 import time
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
 import unittest
 from selenium.webdriver import ActionChains
 import requests

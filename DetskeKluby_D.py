@@ -1,6 +1,4 @@
-from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, closeExponeaBanner, URL_kluby, sendEmail,  setUp, tearDown
-from selenium import webdriver
+from to_import import acceptConsent, URL_kluby, setUp, tearDown
 import unittest
 import pyautogui as p
 p.FAILSAFE = False
