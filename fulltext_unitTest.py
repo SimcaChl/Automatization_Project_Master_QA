@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC, wait
 import unittest
 import requests
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 query = "Mirage bay"
 URL_FT_results = URL+"/hledani-vysledky?q="
 
@@ -26,6 +27,7 @@ class TestFulltext(unittest.TestCase):
         tearDown(self)
 
     def test_fulltext_naseptavac(self):
+        wait = WebDriverWait(self.driver, 10)
         poziceQueryItem = 0
         for _ in queryList:
             self.driver.get(URL)
@@ -41,7 +43,8 @@ class TestFulltext(unittest.TestCase):
             FTlupa.click()
 
             inputBox = self.driver.find_element_by_xpath("//*[@class='f_input-item j_input']")
-            inputBox.send_keys(queryList[poziceQueryItem])
+            #inputBox.send_keys(queryList[poziceQueryItem])
+            wait.until(EC.visibility_of(inputBox)).send_keys(queryList[poziceQueryItem])
             time.sleep(2)
             # inputBox.send_keys(Keys.ENTER)
             print(queryList[poziceQueryItem].upper())
@@ -52,12 +55,14 @@ class TestFulltext(unittest.TestCase):
             #if hotelDlazdice != 0:
             try:
                     hotelDlazdice = self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']")
-                    hotelDlazdice.click()
+                    wait.until(EC.visibility_of(hotelDlazdice)).click()
+                    #hotelDlazdice.click()
                     currentUrl = self.driver.current_url
                     assert currentUrl != URL
             except NoSuchElementException:
                 prvniItem = self.driver.find_elements_by_xpath("//*[@class='f_item']")
-                prvniItem[0].click()
+                wait.until(EC.visibility_of(prvniItem[0])).click()
+                #prvniItem[0].click()
 
                 currentUrl = self.driver.current_url
                 assert currentUrl != URL
@@ -68,6 +73,7 @@ class TestFulltext(unittest.TestCase):
 
 
     def test_fulltext_results_status_check(self):
+        wait = WebDriverWait(self.driver, 10)
         poziceQueryItem=0
         for _ in queryList:
             driver = self.driver
@@ -79,12 +85,14 @@ class TestFulltext(unittest.TestCase):
             print(queryList[poziceQueryItem].upper())
             linksToCheckList = []
             vysledkyDlazdiceHotelu = driver.find_elements_by_xpath("//*[@class='f_tileGrid-item']/a")
+            wait.until(EC.visibility_of(vysledkyDlazdiceHotelu[0]))
             x = 0
             for _ in vysledkyDlazdiceHotelu:
                 linksToCheckList.append(vysledkyDlazdiceHotelu[x].get_attribute("href"))
                 x = x + 1
 
             vysledkyTextItems = driver.find_elements_by_xpath("//*[@class='f_fulltextResults-item']/a")
+            wait.until(EC.visibility_of(vysledkyTextItems[0]))
             z = 0
             for _ in vysledkyTextItems:
                 linksToCheckList.append(vysledkyTextItems[0].text)
