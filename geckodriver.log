@@ -14724,3 +14724,423 @@ JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreac
 
 ###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
 
+1646156600460	geckodriver	INFO	Listening on 127.0.0.1:59657
+1646156603496	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofileEeFpsQ"
+1646156604154	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofileEeFpsQ\\search.json.mozlz4", (void 0)))
+1646156607018	Marionette	INFO	Listening on port 59666
+1646156607173	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+1646156615106	Marionette	INFO	Stopped listening on port 59666
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1646156766455	geckodriver	INFO	Listening on 127.0.0.1:59860
+1646156769506	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofilebpoPV4"
+1646156770020	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofilebpoPV4\\search.json.mozlz4", (void 0)))
+1646156772792	Marionette	INFO	Listening on port 59870
+1646156773198	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+1646156779040	Marionette	INFO	Stopped listening on port 59870
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+1646157095541	geckodriver	INFO	Listening on 127.0.0.1:51213
+1646157098608	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofileVv3n7m"
+1646157099028	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofileVv3n7m\\search.json.mozlz4", (void 0)))
+1646157101583	Marionette	INFO	Listening on port 51222
+1646157101806	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+1646157109373	Marionette	INFO	Stopped listening on port 51222
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_RemoveDynEntriesFromActiveSessionHistoryEntry) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_SynchronizeLayoutHistoryState) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PBrowserBridge::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646157179691	geckodriver	INFO	Listening on 127.0.0.1:51446
+1646157182782	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofileDcQyQM"
+1646157183185	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofileDcQyQM\\search.json.mozlz4", (void 0)))
+1646157185136	Marionette	INFO	Listening on port 51455
+1646157185454	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+1646157300031	Marionette	INFO	Stopped listening on port 51455
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1646157336199	geckodriver	INFO	Listening on 127.0.0.1:52109
+1646157339253	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofilegqspRa"
+1646157339653	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KDK\\AppData\\Local\\Temp\\rust_mozprofilegqspRa\\search.json.mozlz4", (void 0)))
+1646157342114	Marionette	INFO	Listening on port 52118
+1646157342429	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: https://www.fischer.cz/bundles/fischer/web?v=B_pIQNeCExRI9SGdRYY2szfaqb7z_uIiHSJtdRlv3u01, line 141: TypeError: o is undefined
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 596: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript warning: https://a.plerdy.com/public/js/click/main.js, line 1: unreachable code after return statement
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DiscardWindowContext) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://www.fischer.cz/bundles/fischer/web?v=B_pIQNeCExRI9SGdRYY2szfaqb7z_uIiHSJtdRlv3u01, line 141: TypeError: o is undefined
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://api.exponea.com/js/exponea.min.js, line 23: TypeError: i.join is not a function

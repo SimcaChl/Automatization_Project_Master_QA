@@ -84,19 +84,21 @@ class TestFulltext(unittest.TestCase):
                 pass
             print(queryList[poziceQueryItem].upper())
             linksToCheckList = []
-            vysledkyDlazdiceHotelu = driver.find_elements_by_xpath("//*[@class='f_tileGrid-item']/a")
-            wait.until(EC.visibility_of(vysledkyDlazdiceHotelu[0]))
-            x = 0
-            for _ in vysledkyDlazdiceHotelu:
-                linksToCheckList.append(vysledkyDlazdiceHotelu[x].get_attribute("href"))
-                x = x + 1
-
+            try:
+                vysledkyDlazdiceHotelu = driver.find_elements_by_xpath("//*[@class='f_tileGrid-item']/a")
+               # wait.until(EC.visibility_of(vysledkyDlazdiceHotelu[0]))
+                x = 0
+                for _ in vysledkyDlazdiceHotelu:
+                    linksToCheckList.append(vysledkyDlazdiceHotelu[x].get_attribute("href"))
+                    x = x + 1
+            except NoSuchElementException:
+                pass
             vysledkyTextItems = driver.find_elements_by_xpath("//*[@class='f_fulltextResults-item']/a")
             wait.until(EC.visibility_of(vysledkyTextItems[0]))
             z = 0
             for _ in vysledkyTextItems:
-                linksToCheckList.append(vysledkyTextItems[0].text)
-                z = z + 1
+                    linksToCheckList.append(vysledkyTextItems[0].text)
+                    z = z + 1
 
             #print(linksToCheckList)
             poziceQueryItem=poziceQueryItem+1
