@@ -23,6 +23,9 @@ class TestDetailHotelu_D(unittest.TestCase):
         wait = WebDriverWait(self.driver, 150000)
         try:
             detailFotka = self.driver.find_element_by_xpath("//*[@id='gallery01Trigger']")
+            #detailFotka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-content grd-col grd-col--9 grd-col--lg-8 grd-col--slg-12']")
+            #detailFotka = self.driver.find_element_by_xpath("//*[@id='divHotelDetailWrapper']")
+
             wait.until(EC.visibility_of(detailFotka))
             print (detailFotka.is_displayed)
 
@@ -32,8 +35,9 @@ class TestDetailHotelu_D(unittest.TestCase):
             url = self.driver.current_url
             msg = "Problem s fotkami na detailu hotelu " + url
             sendEmail(msg)
+        #detailFotka = self.driver.find_element_by_xpath("//*[@id='gallery01Trigger']")
 
-        assert detailFotka.is_displayed == True
+        assert detailFotka.is_displayed() == True
 
         try:
             sedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary js-detailSummary']")
@@ -68,7 +72,7 @@ class TestDetailHotelu_D(unittest.TestCase):
             terminySingle = self.driver.find_element_by_xpath("//*[@data-hotel]")
             wait.until(EC.visibility_of(terminySingle))
 
-            terminySingle.is_displayed == True
+            assert terminySingle.is_displayed() == True
             if terminySingle.is_displayed():
                 pass
             else:

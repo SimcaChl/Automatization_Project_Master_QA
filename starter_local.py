@@ -1,4 +1,3 @@
-
 from CovidInfo_D import *
 from pobocky import *
 from Detail_D import *
@@ -14,7 +13,6 @@ from poznavacky import *
 from SDO_D import *
 from SRL_C import *
 from SRL_D import *
-
 import HtmlTestRunner
 
 def suite():
