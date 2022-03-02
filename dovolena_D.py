@@ -49,13 +49,6 @@ class TestDovolena_D(unittest.TestCase):
                     print(href_value + " Error:", e)
                     pass
                 assert response.status_code == 200
-                ActionChains(self.driver) \
-                    .key_down(Keys.CONTROL) \
-                    .click(all_links_within_popup[x]) \
-                    .key_up(Keys.CONTROL) \
-                    .perform()
-
-                x = x + 1
 
             time.sleep(1)
         else:

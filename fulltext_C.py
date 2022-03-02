@@ -22,21 +22,19 @@ class Test_Fulltext_C(unittest.TestCase):
         tearDown(self)
 
     def test_fulltext_naseptavac(self):
-        wait = WebDriverWait(self.driver, 13)
+        wait = WebDriverWait(self.driver, 25)
         poziceQueryItem = 0
         for _ in queryList:
             self.driver.get(URL)
-            self.driver.maximize_window()
+
             if poziceQueryItem==0:
                 acceptConsent(self.driver)
+                self.driver.maximize_window()
             else:
                 pass
 
-
-
             FTlupa = self.driver.find_element_by_xpath("//*[@class='f_anchor f_icon f_icon--magnifier']")
             FTlupa.click()
-
             inputBox = self.driver.find_element_by_xpath("//*[@class='f_input-item j_input']")
             #inputBox.send_keys(queryList[poziceQueryItem])
             wait.until(EC.visibility_of(inputBox)).send_keys(queryList[poziceQueryItem])
@@ -48,12 +46,20 @@ class Test_Fulltext_C(unittest.TestCase):
 
             #if self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']").isDisplayed()==True:
             #if hotelDlazdice != 0:
+
             try:
+                wait.until(EC.visibility_of(self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']")))
+                try:
+
                     hotelDlazdice = self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']")
-                    wait.until(EC.visibility_of(hotelDlazdice)).click()
+                    #wait.until(EC.visibility_of(hotelDlazdice)).click()
+                    hotelDlazdice.click()
                     #hotelDlazdice.click()
                     currentUrl = self.driver.current_url
                     assert currentUrl != URL
+                except NoSuchElementException:
+                    pass
+
             except NoSuchElementException:
                 prvniItem = self.driver.find_elements_by_xpath("//*[@class='f_item']")
                 wait.until(EC.visibility_of(prvniItem[0])).click()
