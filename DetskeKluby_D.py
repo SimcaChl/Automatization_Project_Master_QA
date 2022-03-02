@@ -18,6 +18,7 @@ class TestDetskeKluby_D(unittest.TestCase):
         acceptConsent(self.driver)
         self.driver.maximize_window()
         benefitItem = self.driver.find_elements_by_xpath("//*[@class='f_benefit-item splide__slide']")
+        assert benefitItem[0].is_displayed() == True
         a=0
         for _ in benefitItem:
             benefitItemDisplay = benefitItem[a].is_displayed()
@@ -27,6 +28,7 @@ class TestDetskeKluby_D(unittest.TestCase):
         p.press("pagedown", presses=3)
         gridContainer = self.driver.find_elements_by_xpath("//*[@class='grd-container']")
         b=0
+        assert gridContainer[0].is_displayed() == True
         for _ in gridContainer:
             gridContainerDisplay = gridContainer[b].is_displayed()
             assert  gridContainerDisplay == True
@@ -35,6 +37,7 @@ class TestDetskeKluby_D(unittest.TestCase):
         p.press("pagedown", presses=2)
         tileImg = self.driver.find_elements_by_xpath("//*[@class='f_tile-image']")
         c=0
+        assert tileImg[0].is_displayed() == True
         for _ in tileImg:
             tileImgDisplay = tileImg[c].is_displayed()
             assert tileImgDisplay == True

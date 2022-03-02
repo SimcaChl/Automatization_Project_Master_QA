@@ -5,9 +5,6 @@ import unittest
 import requests
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-query = "Mirage bay"
-
-
 querySDO = ["Zanzibar", "Řecko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Maledivy", "Dubaj", "Mallorca", "Bulharsko", "Chorvatsko", "Kefalonia", "Attika" ]
 queryCommon = ["pojištění",  "parkování", "covid", "Funtazie" ]
 queryHotely = ["Mirage bay", "mitsis", "Prima life", "Prima life makadi", "Pegasos", "Pickalbatros", "Titanic", "mirage", "Domes Aulüs", "Bay & Mare",  "A for Art",
@@ -51,7 +48,8 @@ class Test_Fulltext_C(unittest.TestCase):
                 wait.until(EC.visibility_of(self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']")))
                 try:
 
-                    hotelDlazdice = self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']")
+                    #hotelDlazdice = self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']")
+                    hotelDlazdice = self.driver.find_element_by_xpath("//*[@class='f_tile f_tile--tour']")  ##work around na EW
                     #wait.until(EC.visibility_of(hotelDlazdice)).click()
                     hotelDlazdice.click()
                     #hotelDlazdice.click()
