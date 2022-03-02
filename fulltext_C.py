@@ -1,12 +1,12 @@
 from selenium.common.exceptions import NoSuchElementException
-from to_import import acceptConsent, URL, setUp, tearDown
+from to_import import acceptConsent, URL, setUp, tearDown, URL_FT_results
 import time
 import unittest
 import requests
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 query = "Mirage bay"
-URL_FT_results = URL+"/hledani-vysledky?q="
+
 
 querySDO = ["Zanzibar", "Řecko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Maledivy", "Dubaj", "Mallorca", "Bulharsko", "Chorvatsko", "Kefalonia", "Attika" ]
 queryCommon = ["pojištění",  "parkování", "covid", "Funtazie" ]
@@ -79,6 +79,7 @@ class Test_Fulltext_C(unittest.TestCase):
             driver.get(URL_FT_results+queryList[poziceQueryItem])
             if poziceQueryItem==0:
                 acceptConsent(driver)
+                self.driver.maximize_window()
             else:
                 pass
             print(queryList[poziceQueryItem].upper())
