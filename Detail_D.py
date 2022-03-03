@@ -72,7 +72,7 @@ class TestDetailHotelu_D(unittest.TestCase):
             terminySingle = self.driver.find_element_by_xpath("//*[@data-hotel]")
             wait.until(EC.visibility_of(terminySingle))
 
-            assert terminySingle.is_displayed() == True
+
             if terminySingle.is_displayed():
                 pass
             else:
@@ -86,3 +86,4 @@ class TestDetailHotelu_D(unittest.TestCase):
             msg = "Problem s terminy a ceny na detailu hotelu " + url
             sendEmail(msg)
 
+        assert terminySingle.is_displayed() == True

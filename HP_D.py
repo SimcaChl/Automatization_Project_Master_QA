@@ -19,9 +19,10 @@ class TestHP_D(unittest.TestCase):
         self.driver.maximize_window()
         time.sleep(2.5)
         acceptConsent(self.driver)
+        bannerSingle = self.driver.find_element_by_xpath("//*[@class='f_tile f_tile--teaserDestination']")
         try:
-            bannerSingle = self.driver.find_element_by_xpath("//*[@class='f_teaser-item']")
-            bannerAll = self.driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
+            bannerSingle = self.driver.find_element_by_xpath("//*[@class='f_tile f_tile--teaserDestination']")
+            bannerAll = self.driver.find_elements_by_xpath("//*[@class='f_tile f_tile--teaserDestination']")
             wait.until(EC.visibility_of(bannerSingle))
             if bannerSingle.is_displayed():
                 for WebElement in bannerAll:
@@ -38,12 +39,12 @@ class TestHP_D(unittest.TestCase):
             url = self.driver.current_url
             msg = "Problem na HP s bannery " + url
             sendEmail(msg)
-
+        assert bannerSingle.is_displayed() == True
         time.sleep(1.5)
 
         try:
-            nejnabidkyLMsingle = self.driver.find_element_by_xpath("//*[@class='fshr-lm-table-item-content']")
-            nejnabidkyLMall = self.driver.find_elements_by_xpath("//*[@class='fshr-lm-table-item-content']")
+            nejnabidkyLMsingle = self.driver.find_element_by_xpath("//*[@class='f_tourTable-tour']")
+            nejnabidkyLMall = self.driver.find_elements_by_xpath("//*[@class='f_tourTable-tour']")
             wait.until(EC.visibility_of(nejnabidkyLMsingle))
             if nejnabidkyLMsingle.is_displayed():
                 for WebElement in nejnabidkyLMall:
@@ -62,23 +63,5 @@ class TestHP_D(unittest.TestCase):
             msg = "Problem na HP s nej. nabidky LM " + url
             sendEmail(msg)
 
-        self.driver.get(URL_faq)
-
-        try:
-            faqSingle = self.driver.find_element_by_xpath("//*[@class='f_faq-item']")
-            faqAll = self.driver.find_elements_by_xpath("//*[@class='f_faq-item']")
-            if faqSingle.is_displayed():
-                for WebElement in faqAll:
-                    jdouvidet = WebElement.is_displayed()
-                    assert jdouvidet==True
-                    if jdouvidet == True:
-                        pass
-            else:
-                url = self.driver.current_url
-                msg = "Problem FAQ " + url
-                sendEmail(msg)
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "Problem FAQ " + url
-            sendEmail(msg)
+        nejnabidkyLMsingle = self.driver.find_element_by_xpath("//*[@class='f_tourTable-tour']")
+        assert nejnabidkyLMsingle.is_displayed() == True

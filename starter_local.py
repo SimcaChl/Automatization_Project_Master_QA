@@ -7,7 +7,7 @@ from dovolena_D import *
 from FM_D import *
 from fulltext_C import *
 from groupsearch_D import *
-from HP_FAQ_D import *
+from HP_D import *
 from LM_D import *
 from poznavacky import *
 from SDO_D import *

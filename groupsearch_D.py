@@ -37,6 +37,8 @@ class Test_Groupsearch_D(unittest.TestCase):
             ##print("no such")
             ##email fnction
 
+        assert teaserItems[0].is_displayed() == True
+
         srlItems = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]")
         try:
             for WebElement in srlItems:
@@ -57,3 +59,5 @@ class Test_Groupsearch_D(unittest.TestCase):
         except NoSuchElementException:
             pass
             print("no such")
+
+        assert srlItems[0].is_displayed() == True
