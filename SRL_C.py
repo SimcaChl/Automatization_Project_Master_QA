@@ -1,4 +1,5 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException, \
+    StaleElementReferenceException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown
@@ -6,7 +7,7 @@ import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
-
+hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -27,11 +28,11 @@ class Test_SRL_C(unittest.TestCase):
         cenaZajezduAllList = []                     ##one list that takes prices from the srl
         cenaZajezduAllListSorted = []               ##second list takes the values too, then sorts it low to high
         time.sleep(2)
-        sortByCheapest = self.driver.find_element_by_xpath("//*[contains(text(), 'od nejlevnějšího')]")
+        sortByCheapest = self.driver.find_element_by_xpath("//*[@class='f_tabBar-text' and contains(text(), 'od nejlevnějšího')]")
         wait.until(EC.visibility_of(sortByCheapest))
         sortByCheapest.click()
 
-        hotelyKarty = self.driver.find_element_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+        hotelyKarty = self.driver.find_element_by_xpath(hotelyKartyXpath)
         wait.until(EC.visibility_of(hotelyKarty))
         time.sleep(10)
         x=0
@@ -68,20 +69,21 @@ class Test_SRL_C(unittest.TestCase):
         driver.get(URL_SRL)
         wait = WebDriverWait(driver, 150000)
         time.sleep(2)
+        driver.maximize_window()
         acceptConsent(driver)
         time.sleep(2)
-        closeExponeaBanner(driver)
+        #closeExponeaBanner(driver)
 
         cenaZajezduAllList = []  ##one list that takes prices from the srl
         cenaZajezduAllListSorted = []  ##second list takes the values too, then sorts it low to high
 
-        sortByMostExpensive = driver.find_element_by_xpath("//*[contains(text(), 'od nejdražšího')]")
-        sortByMostExpensive.click()
+        #sortByMostExpensive = driver.find_element_by_xpath("//*[@class='f_tabBar-text' and contains(text(), 'od nejdražšího')]")
+        wait.until(EC.visibility_of(driver.find_element_by_xpath("//*[@class='f_tabBar-text' and contains(text(), 'od nejdražšího')]"))).click()
+        #sortByMostExpensive.click()
 
-        hotelyKarty = driver.find_element_by_xpath(
-            "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+        hotelyKarty = driver.find_element_by_xpath(hotelyKartyXpath)
         wait.until(EC.visibility_of(hotelyKarty))
-        time.sleep(10)
+        time.sleep(3)
         x = 0
         cenaZajezduAll = driver.find_elements_by_xpath("//*[@class='f_tile-priceDetail-content']//*[@class='f_price']")
 
@@ -111,8 +113,8 @@ class Test_SRL_C(unittest.TestCase):
     def test_SRL_map(self):
         driver = self.driver
         driver.get(URL_SRL)
-        wait = WebDriverWait(driver, 15)
-        time.sleep(5)
+        wait = WebDriverWait(driver, 30)
+        driver.maximize_window()
         acceptConsent(driver)
         time.sleep(2)
         closeExponeaBanner(driver)
@@ -138,8 +140,9 @@ class Test_SRL_C(unittest.TestCase):
             pass
 
         try:
-            wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']"))).click()
-
+            #wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']"))).click()
+            largeKolecko = driver.find_elements_by_xpath("//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']")
+            wait.until(EC.visibility_of((largeKolecko[0]))).click()
         except NoSuchElementException:
             print("nenasel se large kolecko")
             pass
@@ -149,15 +152,19 @@ class Test_SRL_C(unittest.TestCase):
         except ElementNotInteractableException:
             print("nenasel se medium kolecko ElementNotInteractableException")
             pass
+        except StaleElementReferenceException:
+            pass
 
         ##Medium kolecko
 
         try:
             mediumKolecko = driver.find_elements_by_xpath("//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']")
-            wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                   "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']"))).click()
+            #wait.until(EC.element_to_be_clickable((By.XPATH,
+             #                                      "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']"))).click()
             #wait.until(EC.element_to_be_clickable((By.XPATH,
                                                   # "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']"))).execute_script("arguments[0].click();", mediumKolecko[1])
+
+            wait.until(EC.visibility_of((mediumKolecko[0]))).click()
         except NoSuchElementException:
             print("nenasel se medium kolecko-NoSuchElementException")
             pass
@@ -168,6 +175,8 @@ class Test_SRL_C(unittest.TestCase):
             print("nenasel se medium kolecko ElementNotInteractableException")
             pass
 
+        except StaleElementReferenceException:
+            pass
         ##small kolecko
 
         try:
@@ -249,21 +258,16 @@ class Test_SRL_C(unittest.TestCase):
         time.sleep(2)
         acceptConsent(driver)
         time.sleep(2)
+        driver.maximize_window()
         closeExponeaBanner(driver)
         time.sleep(2)
-
-        stravaMenu = driver.find_element_by_xpath("//*[@class='f_menu-item']//*[contains(text(), 'Strava')]")
+        wait = WebDriverWait(driver, 30)
+        stravaMenu = driver.find_element_by_xpath("//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]")
         stravaMenu.click()
         time.sleep(2)
 
-        allinclusiveMenu = driver.find_element_by_xpath(
-            "//*[@class='f_menu-item-content f_menu-item-content--sub'] //*[@class='f_input-label'] //*[contains(text(), 'All inclusive')]")  ##papani v menu ma vzdy vlastni value, 5=all inclusive
-        allinclusiveMenu.click()
-
-        potvrditMenu = driver.find_element_by_xpath(
-            "//*[@class='f_menu-item']//*[@class='f_button f_button--common f_button_set--smallest']")
-        potvrditMenu.click()
-        time.sleep(2)  ##potvrzeno chvilak casu na relload
+        wait.until(EC.visibility_of(
+            driver.find_element_by_xpath(hotelyKartyXpath))).click()
 
         stravaZajezdu = driver.find_elements_by_xpath("//*[@class='f_list-item f_icon f_icon--cutlery']")
         x = 0
@@ -295,22 +299,13 @@ class Test_SRL_C(unittest.TestCase):
         #URL_SRL = "https://fischer.web2.dtweb.cz/vysledky-vyhledavani?d=1009|953|1108|592|611|610|612|1010|590|726|609|621|680|622|669|1086|1194|670|978|594|675|683&tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9&ka1=8&kc1=1&ac1=2"
         self.driver.get(URL_SRL)
         wait = WebDriverWait(self.driver, 150000)
-
+        self.driver.maximize_window()
         time.sleep(2)
         acceptConsent(self.driver)
         time.sleep(2)
         closeExponeaBanner(self.driver)
-
-        try:
-            hotelyAllKarty = self.driver.find_elements_by_xpath(
-                "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
-
-            wait.until(EC.visibility_of(hotelyAllKarty[0]))
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = " Problem SRL hotelyAllKarty" + url
-            sendEmail(msg)
-
+        hotelyAllKarty = self.driver.find_elements_by_xpath(hotelyKartyXpath)
+        wait.until(EC.visibility_of(hotelyAllKarty[1]))
         for WebElement in hotelyAllKarty:
 
             print("|||||HOTEL CISLO|||||||" )
@@ -344,7 +339,7 @@ class Test_SRL_C(unittest.TestCase):
             cenaZajezduAdult = self.driver.find_elements_by_xpath(
                 "//*[@class='f_tile-priceDetail-item']//*[@class='f_tile-priceDetail-note'] //*[@class='f_price']")
             cenaZajezduAdultString = cenaZajezduAdult[x].text
-            #print(cenaZajezduAdultString)
+            print(cenaZajezduAdultString)
 
             self.driver.execute_script("window.open("");")
             self.driver.switch_to.window(self.driver.window_handles[windowHandle])
@@ -371,14 +366,13 @@ class Test_SRL_C(unittest.TestCase):
             detailCenaAll = self.driver.find_element_by_xpath("//*[@class='fshr-tooltip-underline js-totalPrice']")
             detailCenaAllString = detailCenaAll.text
             ##print(detailCenaAllString)
-            try:
-                detailCenaAdult = self.driver.find_element_by_xpath(
-                    '//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
-                detailCenaAdultString = detailCenaAdult.text
-                print(detailCenaAdultString)
 
-            except NoSuchElementException:
-                pass
+            detailCenaAdult = self.driver.find_element_by_xpath(
+                    '//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
+            detailCenaAdultString = detailCenaAdult.text
+            print(detailCenaAdultString)
+
+
             assert detailPokojSedivkaString == pokojZajezduString
 
             if detailPokojSedivkaString == pokojZajezduString:
@@ -399,7 +393,7 @@ class Test_SRL_C(unittest.TestCase):
             else:
                 print("ceny all NESEDÍ srl vs detail")
 
-            assert detailCenaAdultString == cenaZajezduAdultString
+            assert detailCenaAdultString.upper() == cenaZajezduAdultString.upper()
 
             if detailCenaAdultString == cenaZajezduAdultString:
                 print(" cena adult sedi srl vs detail")

@@ -22,7 +22,7 @@ def suite():
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_meal"))
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_airport"))
     suite.addTest(TestDetskeKluby_D("test_kluby_D"))
-    suite.addTest(TestFMexotika_D("test_FM_exotika_D"))
+    suite.addTest(TestFM_D("test_FM_D"))
     suite.addTest(Test_Fulltext_C("test_fulltext_naseptavac"))
     suite.addTest(Test_Fulltext_C("test_fulltext_results_status_check"))
     suite.addTest(Test_Groupsearch_D("test_groupsearch_D"))
