@@ -16,6 +16,8 @@ class TestSRL_D(unittest.TestCase):
         self.driver.get(URL_SRL)
         acceptConsent(self.driver)
 
+        hotelySingle = self.driver.find_element_by_xpath(
+            "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
         try:
             hotelySingle = self.driver.find_element_by_xpath(
                 "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")  ##
@@ -40,6 +42,7 @@ class TestSRL_D(unittest.TestCase):
             msg = "Problem s hotely v searchi - hotelCard " + url
             sendEmail(msg)
 
+        assert hotelySingle.is_displayed() == True
 
         try:
             fotkyAll = self.driver.find_elements_by_xpath(
@@ -72,8 +75,10 @@ class TestSRL_D(unittest.TestCase):
                 url = self.driver.current_url
                 msg = " Problem s načítáná fotek v SRL  //*[@class='splide__spinner']" + url
                 sendEmail(msg)
+                assert 1==2
         except NoSuchElementException:
             pass
+
 
         try:
             cenaAll = self.driver.find_elements_by_xpath(
@@ -99,3 +104,5 @@ class TestSRL_D(unittest.TestCase):
             url = self.driver.current_url
             msg = "Problem s cenami hotelu v searchi " + url
             sendEmail(msg)
+
+        assert cenaAll[0].is_displayed() == True

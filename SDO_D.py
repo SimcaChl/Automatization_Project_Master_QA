@@ -36,6 +36,8 @@ class TestSDO_D(unittest.TestCase):
             url = self.driver.current_url
             msg = "Nenasli se destinace v /stat " + url
             sendEmail(msg)
+        assert destinaceAll[0].is_displayed() == True
+
 
         try:
             dlazdiceFotoSingle = driver.find_element_by_xpath("//*[@class='f_tile-image']")
@@ -57,6 +59,8 @@ class TestSDO_D(unittest.TestCase):
             msg = "Nenasli se fotky v dlazdicich v /stat " + url
             sendEmail(msg)
 
+        assert dlazdiceFotoSingle.is_displayed() == True
+
         try:
             mapa = driver.find_element_by_xpath("//*[@id='google-map']")
             assert mapa.is_displayed() == True
@@ -71,3 +75,5 @@ class TestSDO_D(unittest.TestCase):
             url = driver.current_url
             msg = "Nenasli se mapa v /stat " + url
             sendEmail(msg)
+
+        assert mapa.is_displayed() == True

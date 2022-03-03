@@ -33,13 +33,14 @@ class TestLM_D(unittest.TestCase):
                     else:
                         url = self.driver.current_url
                         msg = "Problem s LM  zajezdy se neukazuji " + url
-
                         sendEmail(msg)
+
 
         except NoSuchElementException:
             url = self.driver.current_url
             msg = "Problem s LM  zajezdy se neukazuji " + url
             sendEmail(msg)
+        assert zajezdyLMsingle.is_displayed() == True
 
         try:
             rozbal = self.driver.find_element_by_xpath("//*[@class='page-tour-cell page-tour-control']")
@@ -66,5 +67,7 @@ class TestLM_D(unittest.TestCase):
             url = self.driver.current_url
             msg = "Nenasel se zadny zajezd pri rozbaleni zajezdu v last minute " + url
             sendEmail(msg)
+
+        assert rozbalenyZajezd.is_displayed() == True
 
 
