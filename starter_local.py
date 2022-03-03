@@ -3,7 +3,6 @@ from pobocky import *
 from Detail_D import *
 from Detail_C import *
 from DetskeKluby_D import *
-from dovolena_D import *
 from FM_D import *
 from fulltext_C import *
 from groupsearch_D import *
@@ -23,7 +22,6 @@ def suite():
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_meal"))
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_airport"))
     suite.addTest(TestDetskeKluby_D("test_kluby_D"))
-    suite.addTest(TestDovolena_D("test_dovolena_D"))
     suite.addTest(TestFMexotika_D("test_FM_exotika_D"))
     suite.addTest(Test_Fulltext_C("test_fulltext_naseptavac"))
     suite.addTest(Test_Fulltext_C("test_fulltext_results_status_check"))

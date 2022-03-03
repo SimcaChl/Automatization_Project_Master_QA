@@ -1,33 +1,34 @@
 from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, URL_fmExotika, sendEmail, setUp, tearDown
+from to_import import acceptConsent, URL_FM, sendEmail, setUp, tearDown
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
 
 
-class TestFMexotika_D(unittest.TestCase):
+class TestFM_D(unittest.TestCase):
     def setUp(self):
         setUp(self)
 
     def tearDown(self):
         tearDown(self)
 
-    def test_FM_exotika_D(self):
-        self.driver.get(URL_fmExotika)
+    def test_FM_D(self):
+        self.driver.get(URL_FM)
         wait = WebDriverWait(self.driver, 1500)
         self.driver.maximize_window()
         time.sleep(2)
         acceptConsent(self.driver)
         time.sleep(1.5)
+
+
         try:
-            zajezdyFMsingle = self.driver.find_element_by_xpath("//*[@class='page-tour']")
-            zajezdyFMall = self.driver.find_elements_by_xpath("//*[@class='page-tour']")
-            wait.until(EC.visibility_of(zajezdyFMsingle))
-            if zajezdyFMsingle.is_displayed():
-                for WebElement in zajezdyFMall:
+            bannerItems = self.driver.find_elements_by_xpath("//*[@class='f_tile f_tile--simple']")
+            wait.until(EC.visibility_of(bannerItems[0]))
+            if bannerItems[0].is_displayed():
+                for WebElement in bannerItems:
                     jdouvidet = WebElement.is_displayed()
                     assert jdouvidet == True
                     if jdouvidet == True:
@@ -43,38 +44,150 @@ class TestFMexotika_D(unittest.TestCase):
             msg = "Problem s FM - zajezdy se neukazuji " + url
             sendEmail(msg)
 
-        assert zajezdyFMsingle.is_displayed() == True
+        assert bannerItems[0].is_displayed() == True
+
+        bannerItems[0].click()
+        time.sleep(1.5)
+        assert self.driver.current_url != URL_FM
+        teaserItems = self.driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
 
         try:
-            rozbal = self.driver.find_element_by_xpath("//*[@class='page-tour-cell page-tour-control']")
-            wait.until(EC.visibility_of(rozbal))
-            self.driver.execute_script("arguments[0].click();", rozbal)
-            time.sleep(2)
+            for WebElement in teaserItems:
+                ##print(len(teaserItems))
+                jdouvidet = WebElement.is_displayed()
+                ##print(jdouvidet)
+                if jdouvidet == True:
+                    ##print(jdouvidet)
+                    ##print(WebElement)
+                    pass
+
+                else:
+                    pass
+                    ##print("Else")
+                    ##emailfunciton
+
+        except NoSuchElementException:
+            pass
+            ##print("no such")
+            ##email fnction
+
+        assert teaserItems[0].is_displayed() == True
+
+        wholeGridsAll = self.driver.find_elements_by_xpath(
+            "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
+        wholeGridsSingle = self.driver.find_element_by_xpath(
+            "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
+        try:
+            wait.until(EC.visibility_of(wholeGridsSingle))
+            for WebElement in wholeGridsAll:
+                jdouvidet = WebElement.is_displayed()
+                assert jdouvidet == True
+                if jdouvidet == True:
+                    pass
+                    print("gridy jdou videt")
+                else:
+                    url = self.driver.current_url
+                    msg = " Problem s gridy cocid info wholeGridsAll " + url
+                    sendEmail(msg)
 
         except NoSuchElementException:
             url = self.driver.current_url
-            msg = " Nepodarilo se rozbalit FM zajezd " + url
+            msg = "Problem s gridy covid info wholeGridsAll " + url
             sendEmail(msg)
 
-        try:
-            rozbalenyZajezd = self.driver.find_element_by_xpath("//*[@class='page-tour-hotel-name']")
-            rozbalenyZajezdAll = self.driver.find_elements_by_xpath("//*[@class='page-tour-hotel-name']")
-            wait.until(EC.visibility_of(rozbalenyZajezd))
-            if rozbalenyZajezd.is_displayed():
-                for WebElement in rozbalenyZajezdAll:
-                    jdouvidet = WebElement.is_displayed()
-                    assert jdouvidet == True
-                    if jdouvidet == True:
-                        pass
+        contentItemsAll = self.driver.find_elements_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
+        contentItemsSingle = self.driver.find_element_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
 
-                    else:
-                        url = self.driver.current_url
-                        msg = "Nenasel se zadny zajezd pri rozbaleni zajezdu ve FM " + url
-                        sendEmail(msg)
+        try:
+            wait.until(EC.visibility_of(contentItemsSingle))
+            for WebElement in contentItemsAll:
+                jdouvidet = WebElement.is_displayed()
+                assert jdouvidet == True
+                if jdouvidet == True:
+                    pass
+                    print("content jdou videt")
+                else:
+                    url = self.driver.current_url
+                    msg = " Problem s content vocid info " + url
+                    sendEmail(msg)
 
         except NoSuchElementException:
             url = self.driver.current_url
-            msg = "Nenasel se zadny zajezd pri rozbaleni zajezdu ve FM " + url
+            msg = "Problem s content covid info contentItemsAll " + url
             sendEmail(msg)
 
-        assert rozbalenyZajezd.is_displayed() == True
+
+        self.driver.get(URL_FM)
+        time.sleep(1.5)
+        bannerItemsDiffLocator = self.driver.find_elements_by_xpath("//*[@class='f_tile-footer']")
+        wait.until(EC.visibility_of(bannerItemsDiffLocator[1])).click()
+
+
+        assert self.driver.current_url != URL_FM
+        teaserItems = self.driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
+
+        try:
+            for WebElement in teaserItems:
+                ##print(len(teaserItems))
+                jdouvidet = WebElement.is_displayed()
+                ##print(jdouvidet)
+                if jdouvidet == True:
+                    ##print(jdouvidet)
+                    ##print(WebElement)
+                    pass
+
+                else:
+                    pass
+                    ##print("Else")
+                    ##emailfunciton
+
+        except NoSuchElementException:
+            pass
+            ##print("no such")
+            ##email fnction
+
+        assert teaserItems[0].is_displayed() == True
+
+        wholeGridsAll = self.driver.find_elements_by_xpath(
+            "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
+        wholeGridsSingle = self.driver.find_element_by_xpath(
+            "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
+        try:
+            wait.until(EC.visibility_of(wholeGridsSingle))
+            for WebElement in wholeGridsAll:
+                jdouvidet = WebElement.is_displayed()
+                assert jdouvidet == True
+                if jdouvidet == True:
+                    pass
+                    print("gridy jdou videt")
+                else:
+                    url = self.driver.current_url
+                    msg = " Problem s gridy cocid info wholeGridsAll " + url
+                    sendEmail(msg)
+
+        except NoSuchElementException:
+            url = self.driver.current_url
+            msg = "Problem s gridy covid info wholeGridsAll " + url
+            sendEmail(msg)
+
+        contentItemsAll = self.driver.find_elements_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
+        contentItemsSingle = self.driver.find_element_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
+
+        try:
+            wait.until(EC.visibility_of(contentItemsSingle))
+            for WebElement in contentItemsAll:
+                jdouvidet = WebElement.is_displayed()
+                assert jdouvidet == True
+                if jdouvidet == True:
+                    pass
+                    print("content jdou videt")
+                else:
+                    url = self.driver.current_url
+                    msg = " Problem s content vocid info " + url
+                    sendEmail(msg)
+
+        except NoSuchElementException:
+            url = self.driver.current_url
+            msg = "Problem s content covid info contentItemsAll " + url
+            sendEmail(msg)
+        
