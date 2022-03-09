@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
     #runner = HtmlTestRunner(title='My unit test', open_in_browser=True)
     #runner = HtmlTestRunner.HTMLTestRunner(output='example_dir')        ## this is ??
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='Test report', report_name='report',
-                            open_in_browser=True, description="HTMLTestReport")
-
+    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='EXIM Web Suite test', title='EXIM Web Suite test', report_name='EXIM Web Suite test',
+                            open_in_browser=True, description="EXIM Web Suite testt")
+    ####  pip install HTMLTestRunner-rv
     runner.run(suite())
