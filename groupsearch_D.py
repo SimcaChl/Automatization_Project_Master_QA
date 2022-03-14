@@ -2,6 +2,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from to_import import acceptConsent, URL_groupsearch, setUp, tearDown
 import unittest
+from selenium.webdriver.support import expected_conditions as EC
 
 class Test_Groupsearch_D(unittest.TestCase):
     def setUp(self):
@@ -15,8 +16,9 @@ class Test_Groupsearch_D(unittest.TestCase):
         wait = WebDriverWait(self.driver, 150000)
         self.driver.get(URL_groupsearch)
         acceptConsent(self.driver)
+        #teaserItems = driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
+        wait.until(EC.visibility_of(driver.find_element_by_xpath("//*[@class='f_teaser-item']")))
         teaserItems = driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
-
         try:
             for WebElement in teaserItems:
                 ##print(len(teaserItems))
