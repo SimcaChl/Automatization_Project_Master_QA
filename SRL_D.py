@@ -14,8 +14,10 @@ class TestSRL_D(unittest.TestCase):
     def test_SRL_D(self):
         wait = WebDriverWait(self.driver, 150000)
         self.driver.get(URL_SRL)
+        self.driver.maximize_window()
         acceptConsent(self.driver)
 
+        self.driver.implicitly_wait(100)
         hotelySingle = self.driver.find_element_by_xpath(
             "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
         try:
@@ -45,6 +47,7 @@ class TestSRL_D(unittest.TestCase):
         assert hotelySingle.is_displayed() == True
 
         try:
+            self.driver.implicitly_wait(100)
             fotkyAll = self.driver.find_elements_by_xpath(
                 "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_tileGallery']")  ##
             fotkaSingle = self.driver.find_element_by_xpath(
@@ -81,6 +84,7 @@ class TestSRL_D(unittest.TestCase):
 
 
         try:
+            self.driver.implicitly_wait(100)
             cenaAll = self.driver.find_elements_by_xpath(
                 "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_price']")  ##
             cenaSingle = self.driver.find_element_by_xpath(

@@ -25,6 +25,7 @@ class TestFM_D(unittest.TestCase):
 
 
         try:
+            self.driver.implicitly_wait(100)
             bannerItems = self.driver.find_elements_by_xpath("//*[@class='f_tile f_tile--simple']")
             wait.until(EC.visibility_of(bannerItems[0]))
             if bannerItems[0].is_displayed():
@@ -47,8 +48,9 @@ class TestFM_D(unittest.TestCase):
         assert bannerItems[0].is_displayed() == True
 
         bannerItems[0].click()
-        time.sleep(1.5)
+        #time.sleep(1.5)
         assert self.driver.current_url != URL_FM
+        self.driver.implicitly_wait(100)
         teaserItems = self.driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
 
         try:
@@ -73,6 +75,7 @@ class TestFM_D(unittest.TestCase):
 
         assert teaserItems[0].is_displayed() == True
 
+        self.driver.implicitly_wait(100)
         wholeGridsAll = self.driver.find_elements_by_xpath(
             "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
         wholeGridsSingle = self.driver.find_element_by_xpath(
@@ -95,6 +98,7 @@ class TestFM_D(unittest.TestCase):
             msg = "Problem s gridy covid info wholeGridsAll " + url
             sendEmail(msg)
 
+        self.driver.implicitly_wait(100)
         contentItemsAll = self.driver.find_elements_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
         contentItemsSingle = self.driver.find_element_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
 
@@ -124,6 +128,7 @@ class TestFM_D(unittest.TestCase):
 
 
         assert self.driver.current_url != URL_FM
+        self.driver.implicitly_wait(100)
         teaserItems = self.driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
 
         try:
@@ -148,6 +153,7 @@ class TestFM_D(unittest.TestCase):
 
         assert teaserItems[0].is_displayed() == True
 
+        self.driver.implicitly_wait(100)
         wholeGridsAll = self.driver.find_elements_by_xpath(
             "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
         wholeGridsSingle = self.driver.find_element_by_xpath(
@@ -170,6 +176,7 @@ class TestFM_D(unittest.TestCase):
             msg = "Problem s gridy covid info wholeGridsAll " + url
             sendEmail(msg)
 
+        self.driver.implicitly_wait(100)
         contentItemsAll = self.driver.find_elements_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
         contentItemsSingle = self.driver.find_element_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
 
