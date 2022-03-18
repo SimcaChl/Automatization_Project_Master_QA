@@ -4,6 +4,10 @@ from to_import import acceptConsent, sendEmail, URL_SRL, setUp, tearDown
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
+SRLhotelyKartyXpath = "//*[@class='f_searchResult-content-item']"
+SRLcenyHoteluXpath = "//*[@class='f_price']"
+SRLfotkaHoteluXpath = "//*[@class='f_tileGallery']"
+
 class TestSRL_D(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -18,13 +22,10 @@ class TestSRL_D(unittest.TestCase):
         acceptConsent(self.driver)
 
         self.driver.implicitly_wait(100)
-        hotelySingle = self.driver.find_element_by_xpath(
-            "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+        hotelySingle = self.driver.find_element_by_xpath(SRLhotelyKartyXpath)
         try:
-            hotelySingle = self.driver.find_element_by_xpath(
-                "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")  ##
-            hotelyAll = self.driver.find_elements_by_xpath(
-                "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+            hotelySingle = self.driver.find_element_by_xpath(SRLhotelyKartyXpath)  ##
+            hotelyAll = self.driver.find_elements_by_xpath(SRLhotelyKartyXpath)
             wait.until(EC.visibility_of(hotelySingle))
             ##print(hotelyAll)
             if hotelySingle.is_displayed():
@@ -48,10 +49,8 @@ class TestSRL_D(unittest.TestCase):
 
         try:
             self.driver.implicitly_wait(100)
-            fotkyAll = self.driver.find_elements_by_xpath(
-                "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_tileGallery']")  ##
-            fotkaSingle = self.driver.find_element_by_xpath(
-                "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_tileGallery']")
+            fotkyAll = self.driver.find_elements_by_xpath(SRLfotkaHoteluXpath)  ##
+            fotkaSingle = self.driver.find_element_by_xpath(SRLfotkaHoteluXpath)
             wait.until(EC.visibility_of(fotkaSingle))
             ##print(fotkaSingle)
             if fotkaSingle.is_displayed():
@@ -72,6 +71,7 @@ class TestSRL_D(unittest.TestCase):
             sendEmail(msg)
 
         try:
+            self.driver.implicitly_wait(5) ##5 should be enough to get imgs loaded, if this is located = IMGS still loading = bad
             loadingImgSingle = self.driver.find_element_by_xpath(
                 "//*[@class='splide__spinner']")  ##loading classa obrazku, jestli tam je = not gud
             if loadingImgSingle.is_displayed():
@@ -85,10 +85,8 @@ class TestSRL_D(unittest.TestCase):
 
         try:
             self.driver.implicitly_wait(100)
-            cenaAll = self.driver.find_elements_by_xpath(
-                "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_price']")  ##
-            cenaSingle = self.driver.find_element_by_xpath(
-                "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_price']")
+            cenaAll = self.driver.find_elements_by_xpath(SRLcenyHoteluXpath)  ##
+            cenaSingle = self.driver.find_element_by_xpath(SRLcenyHoteluXpath)
             wait.until(EC.visibility_of(cenaSingle))
             if cenaSingle.is_displayed():
                 for WebElement in cenaAll:
