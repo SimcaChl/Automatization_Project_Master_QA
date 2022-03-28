@@ -35,8 +35,12 @@ from to_import_secret import emailPass
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
+def generalDriverWaitImplicit(driver):
+  driver.implicitly_wait(25)
+
 def setUp(self):
   self.driver = webdriver.Chrome(ChromeDriverManager().install())
+  generalDriverWaitImplicit(self.driver)
   #self.driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
   #self.driver = webdriver.Opera(executable_path=OperaDriverManager().install())
   #self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
@@ -59,7 +63,29 @@ def sendEmail(msg):
   server.sendmail(fromx, to, msg.as_string())
   server.quit()
 
+
 def acceptConsent(driver):
+
+  generalDriverWaitImplicit(driver)
+  # time.sleep(5)
+  try:
+    element = driver.execute_script(
+      """return document.querySelector('#usercentrics-root').shadowRoot.querySelector("button[data-testid='uc-accept-all-button']")""")
+    print(element)
+  except NoSuchElementException:
+    print("NOSUCH")
+  except TimeoutException:
+    pass
+
+  if element != None:
+    element.click()
+
+  else:
+    print("consent pass")
+    pass
+
+
+def acceptConsent5(driver):
   time.sleep(2)
   try:
     element = driver.execute_script(

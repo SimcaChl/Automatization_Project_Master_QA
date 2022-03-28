@@ -21,13 +21,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
-
-
-
-driver.get(URL)
-
-time.sleep(5)
+GeneralDriverImplicitWait
+#time.sleep(5)
 try:
     element = driver.execute_script(
         """return document.querySelector('#usercentrics-root').shadowRoot.querySelector("button[data-testid='uc-accept-all-button']")""")
