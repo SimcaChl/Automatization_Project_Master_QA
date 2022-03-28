@@ -1,13 +1,13 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, URL_groupsearch, setUp, tearDown
+from to_import import acceptConsent, URL_groupsearch, setUp, tearDown, generalDriverWaitImplicit
 import unittest
 from selenium.webdriver.support import expected_conditions as EC
 
 def groupSearch_D(self, driver):
     wait = WebDriverWait(self.driver, 150000)
-    driver.implicitly_wait(100)
-
+    #driver.implicitly_wait(100)
+    generalDriverWaitImplicit(driver)
     wait.until(EC.visibility_of(driver.find_element_by_xpath("//*[@class='f_teaser-item']")))
     teaserItems = driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
     try:
