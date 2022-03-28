@@ -35,8 +35,7 @@ from to_import_secret import emailPass
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-def generalDriverWaitImplicit(driver):
-  driver.implicitly_wait(25)
+
 
 def setUp(self):
   self.driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -63,7 +62,8 @@ def sendEmail(msg):
   server.sendmail(fromx, to, msg.as_string())
   server.quit()
 
-
+def generalDriverWaitImplicit(driver):
+  driver.implicitly_wait(25)
 def acceptConsent(driver):
 
   generalDriverWaitImplicit(driver)
