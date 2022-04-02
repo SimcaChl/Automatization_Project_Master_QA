@@ -2,7 +2,7 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException,
     StaleElementReferenceException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown
+from to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, generalDriverWaitImplicit
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
@@ -78,6 +78,7 @@ class Test_SRL_C(unittest.TestCase):
         cenaZajezduAllListSorted = []  ##second list takes the values too, then sorts it low to high
 
         #sortByMostExpensive = driver.find_element_by_xpath("//*[@class='f_tabBar-text' and contains(text(), 'od nejdražšího')]")
+        generalDriverWaitImplicit(self.driver)
         wait.until(EC.visibility_of(driver.find_element_by_xpath("//*[@class='f_tabBar-text' and contains(text(), 'od nejdražšího')]"))).click()
         #sortByMostExpensive.click()
 
@@ -118,6 +119,7 @@ class Test_SRL_C(unittest.TestCase):
         acceptConsent(driver)
         time.sleep(2)
         closeExponeaBanner(driver)
+        generalDriverWaitImplicit(self.driver)
         zobrazitNaMape = driver.find_element_by_xpath("//*[@class='f_bar-item f_bar-map']")
         zobrazitNaMape.click()
 
