@@ -1,5 +1,5 @@
 from selenium.common.exceptions import NoSuchElementException
-from to_import import acceptConsent, sendEmail, URL_stat, setUp, tearDown
+from to_import import acceptConsent, sendEmail, URL_stat, setUp, tearDown, generalDriverWaitImplicit
 import time
 import unittest
 
@@ -18,6 +18,7 @@ class TestSDO_D(unittest.TestCase):
         acceptConsent(self.driver)
 
         try:
+            generalDriverWaitImplicit(self.driver)
             destinaceAll = self.driver.find_elements_by_xpath("//*[@class='fshr-listTable-content-part']")
             destinaceSingle = self.driver.find_element_by_xpath("//*[@class='fshr-listTable-content-part']")
             if destinaceSingle.is_displayed():
