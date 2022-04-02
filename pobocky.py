@@ -1,5 +1,5 @@
 from webdriver_manager.chrome import ChromeDriverManager
-from to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_pobocky, setUp, tearDown
+from to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_pobocky, setUp, tearDown, generalDriverWaitImplicit
 import time
 import unittest
 
@@ -32,7 +32,7 @@ class TestPobocky_D(unittest.TestCase):
             print("mapa kolecka")
             assert mapaKoleckaDisplayed == True
 
-
+        generalDriverWaitImplicit(self.driver)
         pobockaBoxiky = self.driver.find_elements_by_xpath("//*[@class='f_branch-header f_anchor']")
         x=0
         for _ in pobockaBoxiky:
