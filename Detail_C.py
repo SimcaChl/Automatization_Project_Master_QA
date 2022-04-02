@@ -1,6 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, setUp, tearDown
+from to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, setUp, tearDown, generalDriverWaitImplicit
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
@@ -195,6 +195,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         wait = WebDriverWait(self.driver, 150000)
 
         try:
+            generalDriverWaitImplicit(self.driver)
             terminyCeny = self.driver.find_element_by_xpath("//*[@id='terminyaceny-tab']")
             wait.until(EC.visibility_of(terminyCeny))
             ##terminyCeny.click()

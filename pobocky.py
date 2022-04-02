@@ -33,7 +33,7 @@ class TestPobocky_D(unittest.TestCase):
             assert mapaKoleckaDisplayed == True
 
         generalDriverWaitImplicit(self.driver)
-        pobockaBoxiky = self.driver.find_elements_by_xpath("//*[@class='f_branch-header f_anchor']")
+        pobockaBoxiky = self.driver.find_elements_by_xpath("//*[@class='f_branch-header-item']")
         x=0
         for _ in pobockaBoxiky:
             pobockaBoxikyDisplay = pobockaBoxiky[x].is_displayed()
