@@ -79,6 +79,7 @@ class TestDetailHotelu_C(unittest.TestCase):
             ##terminyCeny.click()
             self.driver.execute_script("arguments[0].click();", terminyCeny)
             try:
+                generalDriverWaitImplicit(self.driver)
                 potvrdit = self.driver.find_element_by_xpath("//*[@data-testid='popup-closeButton']")
 
                 self.driver.execute_script("arguments[0].click();", potvrdit)
@@ -202,6 +203,7 @@ class TestDetailHotelu_C(unittest.TestCase):
             self.driver.execute_script("arguments[0].click();", terminyCeny)
             time.sleep(0.5)
             try:
+                generalDriverWaitImplicit(self.driver)
                 potvrdit = self.driver.find_element_by_xpath("//*[@data-testid='popup-closeButton']")
                 ##wait.until(EC.visibility_of(potvrdit))
                 self.driver.execute_script("arguments[0].click();", potvrdit)

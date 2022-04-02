@@ -43,6 +43,7 @@ class TestPobocky_D(unittest.TestCase):
             x=x+1
 
         assert pobockaBoxiky[0].is_displayed() == True
+        generalDriverWaitImplicit(self.driver)
         basicInfo = self.driver.find_elements_by_xpath("//*[@class='f_branch-basicInfo']")
         a=0
         assert basicInfo[0].is_displayed() == True
