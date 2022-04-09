@@ -1,8 +1,9 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, sendEmail, URL_SRL, setUp, tearDown
+from to_import import acceptConsent, sendEmail, URL_SRL, setUp, tearDown, generalDriverWaitImplicit
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
+import time
 
 SRLhotelyKartyXpath = "//*[@class='f_searchResult-content-item']"
 SRLcenyHoteluXpath = "//*[@class='f_price']"
@@ -17,11 +18,14 @@ class TestSRL_D(unittest.TestCase):
 
     def test_SRL_D(self):
         wait = WebDriverWait(self.driver, 150000)
-        self.driver.get(URL_SRL)
         self.driver.maximize_window()
+        self.driver.get(URL_SRL)
+
+        time.sleep(0.44)
         acceptConsent(self.driver)
 
         self.driver.implicitly_wait(100)
+        generalDriverWaitImplicit(self.driver)
         hotelySingle = self.driver.find_element_by_xpath(SRLhotelyKartyXpath)
         try:
             hotelySingle = self.driver.find_element_by_xpath(SRLhotelyKartyXpath)  ##
@@ -44,7 +48,7 @@ class TestSRL_D(unittest.TestCase):
             url = self.driver.current_url
             msg = "Problem s hotely v searchi - hotelCard " + url
             sendEmail(msg)
-
+        generalDriverWaitImplicit(self.driver)
         assert hotelySingle.is_displayed() == True
 
         try:
@@ -70,17 +74,7 @@ class TestSRL_D(unittest.TestCase):
             msg = " Problem s fotkami hotelu v searchi " + url
             sendEmail(msg)
 
-        try:
-            self.driver.implicitly_wait(5) ##5 should be enough to get imgs loaded, if this is located = IMGS still loading = bad
-            loadingImgSingle = self.driver.find_element_by_xpath(
-                "//*[@class='splide__spinner']")  ##loading classa obrazku, jestli tam je = not gud
-            if loadingImgSingle.is_displayed():
-                url = self.driver.current_url
-                msg = " Problem s načítáná fotek v SRL  //*[@class='splide__spinner']" + url
-                sendEmail(msg)
-                assert 1==2
-        except NoSuchElementException:
-            pass
+
 
 
         try:
@@ -108,3 +102,15 @@ class TestSRL_D(unittest.TestCase):
             sendEmail(msg)
 
         assert cenaAll[0].is_displayed() == True
+
+        try:
+            self.driver.implicitly_wait(5) ##5 should be enough to get imgs loaded, if this is located = IMGS still loading = bad
+            loadingImgSingle = self.driver.find_element_by_xpath(
+                "//*[@class='splide__spinner']")  ##loading classa obrazku, jestli tam je = not gud
+            if loadingImgSingle.is_displayed():
+                url = self.driver.current_url
+                msg = " Problem s načítáná fotek v SRL  //*[@class='splide__spinner']" + url
+                sendEmail(msg)
+                assert 1==2
+        except NoSuchElementException:
+            pass
