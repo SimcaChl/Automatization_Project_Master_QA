@@ -32,17 +32,9 @@ class TestPobocky_D(unittest.TestCase):
             print("mapa kolecka")
             assert mapaKoleckaDisplayed == True
 
-        generalDriverWaitImplicit(self.driver)
-        pobockaBoxiky = self.driver.find_elements_by_xpath("//*[@class='f_branch-header-item']")
-        x=0
-        for _ in pobockaBoxiky:
-            pobockaBoxikyDisplay = pobockaBoxiky[x].is_displayed()
 
-            print("boxiky")
-            assert pobockaBoxikyDisplay == True
-            x=x+1
 
-        assert pobockaBoxiky[0].is_displayed() == True
+
         generalDriverWaitImplicit(self.driver)
         basicInfo = self.driver.find_elements_by_xpath("//*[@class='f_branch-basicInfo']")
         a=0
@@ -54,3 +46,14 @@ class TestPobocky_D(unittest.TestCase):
             assert basicInfoDisplay == True
             a=a+1
 
+        generalDriverWaitImplicit(self.driver)
+        pobockaBoxiky = self.driver.find_elements_by_xpath("//*[@class='f_branch-header-item']")
+        x = 0
+        for _ in pobockaBoxiky:
+            pobockaBoxikyDisplay = pobockaBoxiky[x].is_displayed()
+
+            print("boxiky")
+            assert pobockaBoxikyDisplay == True
+            x = x + 1
+
+        assert pobockaBoxiky[0].is_displayed() == True
