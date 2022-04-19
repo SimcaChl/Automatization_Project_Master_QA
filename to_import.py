@@ -67,6 +67,7 @@ def generalDriverWaitImplicit(driver):
 def acceptConsent(driver):
 
   #generalDriverWaitImplicit(driver)
+
   try:
     generalDriverWaitImplicit(driver)
     element = driver.execute_script(
