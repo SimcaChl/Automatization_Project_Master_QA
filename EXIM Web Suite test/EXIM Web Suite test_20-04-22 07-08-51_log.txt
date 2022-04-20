@@ -1,0 +1,1009 @@
+2022-04-20 07:08:51.552640 : 
+                             
+                             
+2022-04-20 07:08:51.552640 : ====== WebDriver manager ======
+                             
+2022-04-20 07:08:51.576087 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:08:51.576087 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:08:51.715096 : Trying to download new driver from https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_win32.zip
+                             
+2022-04-20 07:08:52.932277 : Driver has been saved in cache [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60]
+                             
+2022-04-20 07:08:58.778415 : <selenium.webdriver.remote.webelement.WebElement (session="73795f70bece5a160ec8e81be8d8e11c", element="4a7ec670-64c3-40a1-9b45-a1934d0c7dfd")>
+2022-04-20 07:09:26.662668 : nenasle se exponea banner
+2022-04-20 07:09:26.729717 : gridy jdou videt
+2022-04-20 07:09:26.737865 : gridy jdou videt
+2022-04-20 07:09:26.745129 : gridy jdou videt
+2022-04-20 07:09:26.753480 : gridy jdou videt
+2022-04-20 07:09:26.760661 : gridy jdou videt
+2022-04-20 07:09:26.768429 : gridy jdou videt
+2022-04-20 07:09:26.775780 : gridy jdou videt
+2022-04-20 07:09:26.782815 : gridy jdou videt
+2022-04-20 07:09:26.791052 : gridy jdou videt
+2022-04-20 07:09:26.798648 : gridy jdou videt
+2022-04-20 07:09:26.806830 : gridy jdou videt
+2022-04-20 07:09:26.814352 : gridy jdou videt
+2022-04-20 07:09:26.821934 : gridy jdou videt
+2022-04-20 07:09:26.829497 : gridy jdou videt
+2022-04-20 07:09:26.837012 : gridy jdou videt
+2022-04-20 07:09:26.844544 : gridy jdou videt
+2022-04-20 07:09:26.852063 : gridy jdou videt
+2022-04-20 07:09:26.859571 : gridy jdou videt
+2022-04-20 07:09:26.867165 : gridy jdou videt
+2022-04-20 07:09:26.874694 : gridy jdou videt
+2022-04-20 07:09:26.882042 : gridy jdou videt
+2022-04-20 07:09:26.889566 : gridy jdou videt
+2022-04-20 07:09:26.897074 : gridy jdou videt
+2022-04-20 07:09:26.904770 : gridy jdou videt
+2022-04-20 07:09:26.912063 : gridy jdou videt
+2022-04-20 07:09:26.919573 : gridy jdou videt
+2022-04-20 07:09:26.927127 : gridy jdou videt
+2022-04-20 07:09:26.934756 : gridy jdou videt
+2022-04-20 07:09:26.942391 : gridy jdou videt
+2022-04-20 07:09:26.949903 : gridy jdou videt
+2022-04-20 07:09:26.957455 : gridy jdou videt
+2022-04-20 07:09:26.965574 : gridy jdou videt
+2022-04-20 07:09:26.972856 : gridy jdou videt
+2022-04-20 07:09:26.980966 : gridy jdou videt
+2022-04-20 07:09:26.988630 : gridy jdou videt
+2022-04-20 07:09:26.996343 : gridy jdou videt
+2022-04-20 07:09:27.040796 : content jdou videt
+2022-04-20 07:09:27.048983 : content jdou videt
+2022-04-20 07:09:27.056336 : content jdou videt
+2022-04-20 07:09:27.063896 : content jdou videt
+2022-04-20 07:09:27.071600 : content jdou videt
+2022-04-20 07:09:27.079602 : content jdou videt
+2022-04-20 07:09:27.087191 : content jdou videt
+2022-04-20 07:09:27.095389 : content jdou videt
+2022-04-20 07:09:27.102423 : content jdou videt
+2022-04-20 07:09:27.110231 : content jdou videt
+2022-04-20 07:09:27.118031 : content jdou videt
+2022-04-20 07:09:27.125773 : content jdou videt
+2022-04-20 07:09:27.133172 : content jdou videt
+2022-04-20 07:09:27.141072 : content jdou videt
+2022-04-20 07:09:27.148764 : content jdou videt
+2022-04-20 07:09:27.156413 : content jdou videt
+2022-04-20 07:09:27.163987 : content jdou videt
+2022-04-20 07:09:27.171727 : content jdou videt
+2022-04-20 07:09:27.179432 : content jdou videt
+2022-04-20 07:09:27.187153 : content jdou videt
+2022-04-20 07:09:27.195298 : content jdou videt
+2022-04-20 07:09:27.202598 : content jdou videt
+2022-04-20 07:09:27.210419 : content jdou videt
+2022-04-20 07:09:27.218219 : content jdou videt
+2022-04-20 07:09:27.227449 : content jdou videt
+2022-04-20 07:09:27.235688 : content jdou videt
+2022-04-20 07:09:27.243856 : content jdou videt
+2022-04-20 07:09:27.250854 : content jdou videt
+2022-04-20 07:09:27.259024 : content jdou videt
+2022-04-20 07:09:27.267095 : content jdou videt
+2022-04-20 07:09:27.274252 : content jdou videt
+2022-04-20 07:09:27.281702 : content jdou videt
+2022-04-20 07:09:27.306916 : content jdou videt
+2022-04-20 07:09:27.350608 : content jdou videt
+2022-04-20 07:09:27.360607 : content jdou videt
+2022-04-20 07:09:27.370716 : content jdou videt
+2022-04-20 07:09:29.600454 : 
+                             
+                             
+2022-04-20 07:09:29.600454 : ====== WebDriver manager ======
+                             
+2022-04-20 07:09:29.636280 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:09:29.636280 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:09:29.703438 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:09:39.382071 : <selenium.webdriver.remote.webelement.WebElement (session="42dc5b50bd65118fcbe9cb06c949e70b", element="f99f9999-bb84-4a41-b9de-585afe5c68b6")>
+2022-04-20 07:09:39.602141 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="42dc5b50bd65118fcbe9cb06c949e70b", element="3c7bb36d-e598-4ccd-be93-d33406cb18e2")>>
+2022-04-20 07:09:42.418069 : 
+                             
+                             
+2022-04-20 07:09:42.418069 : ====== WebDriver manager ======
+                             
+2022-04-20 07:09:42.472698 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:09:42.473679 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:09:42.540405 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:09:46.500303 : None
+2022-04-20 07:09:46.500303 : consent pass
+2022-04-20 07:10:14.186458 : nenasle se exponea banner
+2022-04-20 07:10:14.317995 : its ok
+2022-04-20 07:10:16.508970 : 
+                             
+                             
+2022-04-20 07:10:16.508970 : ====== WebDriver manager ======
+                             
+2022-04-20 07:10:16.565579 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:10:16.565579 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:10:16.638079 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:10:20.820337 : None
+2022-04-20 07:10:20.820337 : consent pass
+2022-04-20 07:10:48.529814 : nenasle se exponea banner
+2022-04-20 07:10:48.973133 : All inclusive
+2022-04-20 07:10:50.720771 : ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+2022-04-20 07:10:52.983780 : 
+                             
+                             
+2022-04-20 07:10:52.983780 : ====== WebDriver manager ======
+                             
+2022-04-20 07:10:53.052180 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:10:53.052180 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:10:53.140485 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:10:57.713782 : <selenium.webdriver.remote.webelement.WebElement (session="c37903c1c431c79de3b724170bc0f8b9", element="05872479-d8e0-4af9-aeb9-831a04518ac5")>
+2022-04-20 07:11:25.617092 : nenasle se exponea banner
+2022-04-20 07:11:31.884845 : 
+                             
+                             
+2022-04-20 07:11:31.884845 : ====== WebDriver manager ======
+                             
+2022-04-20 07:11:31.935743 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:11:31.935743 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:11:32.011392 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:11:35.959550 : <selenium.webdriver.remote.webelement.WebElement (session="4a8a313620b9408996d3200caf446f02", element="3117f382-30cd-4d4f-a721-66c040d8dd65")>
+2022-04-20 07:11:36.486593 : benefit item
+2022-04-20 07:11:36.500589 : benefit item
+2022-04-20 07:11:36.514586 : benefit item
+2022-04-20 07:11:36.663581 : grind container
+2022-04-20 07:11:36.686574 : grind container
+2022-04-20 07:11:36.708568 : grind container
+2022-04-20 07:11:36.721563 : grind container
+2022-04-20 07:11:36.735559 : grind container
+2022-04-20 07:11:36.748554 : grind container
+2022-04-20 07:11:36.755551 : grind container
+2022-04-20 07:11:36.763550 : grind container
+2022-04-20 07:11:36.772546 : grind container
+2022-04-20 07:11:36.780546 : grind container
+2022-04-20 07:11:36.787630 : grind container
+2022-04-20 07:11:36.795627 : grind container
+2022-04-20 07:11:36.802625 : grind container
+2022-04-20 07:11:36.810624 : grind container
+2022-04-20 07:11:36.817620 : grind container
+2022-04-20 07:11:36.825619 : grind container
+2022-04-20 07:11:36.833616 : grind container
+2022-04-20 07:11:36.980007 : tile img
+2022-04-20 07:11:36.988014 : tile img
+2022-04-20 07:11:36.997996 : tile img
+2022-04-20 07:11:37.004994 : tile img
+2022-04-20 07:11:37.015482 : tile img
+2022-04-20 07:11:37.022492 : tile img
+2022-04-20 07:11:37.030187 : tile img
+2022-04-20 07:11:37.037169 : tile img
+2022-04-20 07:11:37.045167 : tile img
+2022-04-20 07:11:37.052183 : tile img
+2022-04-20 07:11:39.275358 : 
+                             
+                             
+2022-04-20 07:11:39.275358 : ====== WebDriver manager ======
+                             
+2022-04-20 07:11:39.296755 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:11:39.296755 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:11:39.353454 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:11:44.960892 : <selenium.webdriver.remote.webelement.WebElement (session="2d3ce854382fb5634705e6c14bf16412", element="4abf76f3-f5f0-4bf7-8b8f-830e892ffa0f")>
+2022-04-20 07:11:48.314485 : gridy jdou videt
+2022-04-20 07:11:48.321443 : gridy jdou videt
+2022-04-20 07:11:48.328625 : gridy jdou videt
+2022-04-20 07:11:48.336728 : gridy jdou videt
+2022-04-20 07:11:48.344725 : gridy jdou videt
+2022-04-20 07:11:48.352848 : gridy jdou videt
+2022-04-20 07:11:48.477752 : content jdou videt
+2022-04-20 07:11:48.484750 : content jdou videt
+2022-04-20 07:11:48.492746 : content jdou videt
+2022-04-20 07:11:48.500744 : content jdou videt
+2022-04-20 07:11:48.508742 : content jdou videt
+2022-04-20 07:11:48.515739 : content jdou videt
+2022-04-20 07:11:52.414831 : gridy jdou videt
+2022-04-20 07:11:52.422832 : gridy jdou videt
+2022-04-20 07:11:52.431015 : gridy jdou videt
+2022-04-20 07:11:52.439185 : gridy jdou videt
+2022-04-20 07:11:52.447281 : gridy jdou videt
+2022-04-20 07:11:52.455431 : gridy jdou videt
+2022-04-20 07:11:52.462412 : gridy jdou videt
+2022-04-20 07:11:52.469502 : gridy jdou videt
+2022-04-20 07:11:52.476620 : gridy jdou videt
+2022-04-20 07:11:52.483619 : gridy jdou videt
+2022-04-20 07:11:52.490756 : gridy jdou videt
+2022-04-20 07:11:52.498878 : gridy jdou videt
+2022-04-20 07:11:52.533056 : content jdou videt
+2022-04-20 07:11:52.540040 : content jdou videt
+2022-04-20 07:11:52.547208 : content jdou videt
+2022-04-20 07:11:52.554801 : content jdou videt
+2022-04-20 07:11:52.561781 : content jdou videt
+2022-04-20 07:11:52.569972 : content jdou videt
+2022-04-20 07:11:52.577186 : content jdou videt
+2022-04-20 07:11:52.585411 : content jdou videt
+2022-04-20 07:11:52.593397 : content jdou videt
+2022-04-20 07:11:52.600527 : content jdou videt
+2022-04-20 07:11:52.607686 : content jdou videt
+2022-04-20 07:11:52.615891 : content jdou videt
+2022-04-20 07:11:54.849111 : 
+                             
+                             
+2022-04-20 07:11:54.849111 : ====== WebDriver manager ======
+                             
+2022-04-20 07:11:54.897276 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:11:54.897276 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:11:54.958454 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:11:58.645585 : <selenium.webdriver.remote.webelement.WebElement (session="39309a316a30f95f157728131068b6f0", element="3bc2e993-063f-493c-8a13-0680cf6ee8d4")>
+2022-04-20 07:12:01.399125 : ZANZIBAR
+2022-04-20 07:12:03.544097 : hote dlazdice klik
+2022-04-20 07:12:06.988399 : ØECKO
+2022-04-20 07:12:32.041067 : first no such ele except
+2022-04-20 07:12:33.475821 : last no such ele except
+2022-04-20 07:12:37.700531 : TURECKO
+2022-04-20 07:12:40.205121 : hote dlazdice klik
+2022-04-20 07:12:44.215579 : EGYPT
+2022-04-20 07:12:46.034758 : hote dlazdice klik
+2022-04-20 07:12:49.412022 : KAPVERDY
+2022-04-20 07:12:51.452516 : hote dlazdice klik
+2022-04-20 07:12:54.870458 : OMAN
+2022-04-20 07:12:56.819087 : hote dlazdice klik
+2022-04-20 07:13:00.245602 : MALEDIVY
+2022-04-20 07:13:02.345127 : hote dlazdice klik
+2022-04-20 07:13:05.682138 : DUBAJ
+2022-04-20 07:13:07.614488 : hote dlazdice klik
+2022-04-20 07:13:10.953713 : MALLORCA
+2022-04-20 07:13:12.878203 : hote dlazdice klik
+2022-04-20 07:13:16.293677 : BULHARSKO
+2022-04-20 07:13:18.244937 : hote dlazdice klik
+2022-04-20 07:13:21.633822 : CHORVATSKO
+2022-04-20 07:13:46.700983 : first no such ele except
+2022-04-20 07:13:48.274067 : last no such ele except
+2022-04-20 07:13:51.999321 : KEFALONIA
+2022-04-20 07:13:53.979090 : hote dlazdice klik
+2022-04-20 07:13:57.515089 : ATTIKA
+2022-04-20 07:13:59.618821 : hote dlazdice klik
+2022-04-20 07:14:03.220928 : POJIŠTÌNÍ
+2022-04-20 07:14:28.365828 : first no such ele except
+2022-04-20 07:14:29.888360 : last no such ele except
+2022-04-20 07:14:33.514732 : PARKOVÁNÍ
+2022-04-20 07:14:58.667958 : first no such ele except
+2022-04-20 07:14:59.729707 : last no such ele except
+2022-04-20 07:15:03.425629 : COVID
+2022-04-20 07:15:28.568079 : first no such ele except
+2022-04-20 07:15:29.947496 : last no such ele except
+2022-04-20 07:15:33.798882 : FUNTAZIE
+2022-04-20 07:15:35.668933 : hote dlazdice klik
+2022-04-20 07:15:39.448210 : MIRAGE BAY
+2022-04-20 07:15:41.573828 : hote dlazdice klik
+2022-04-20 07:15:45.126731 : MITSIS
+2022-04-20 07:15:46.966440 : hote dlazdice klik
+2022-04-20 07:15:52.925025 : PRIMA LIFE
+2022-04-20 07:15:54.960367 : hote dlazdice klik
+2022-04-20 07:15:58.600551 : PRIMA LIFE MAKADI
+2022-04-20 07:16:00.505030 : hote dlazdice klik
+2022-04-20 07:16:04.025673 : PEGASOS
+2022-04-20 07:16:07.237098 : hote dlazdice klik
+2022-04-20 07:16:10.871222 : PICKALBATROS
+2022-04-20 07:16:12.803789 : hote dlazdice klik
+2022-04-20 07:16:16.487512 : TITANIC
+2022-04-20 07:16:18.487149 : hote dlazdice klik
+2022-04-20 07:16:22.111695 : MIRAGE
+2022-04-20 07:16:24.199222 : hote dlazdice klik
+2022-04-20 07:16:27.698409 : DOMES AULÜS
+2022-04-20 07:16:29.779652 : hote dlazdice klik
+2022-04-20 07:16:33.236252 : BAY & MARE
+2022-04-20 07:16:35.065759 : hote dlazdice klik
+2022-04-20 07:16:38.706232 : A FOR ART
+2022-04-20 07:16:41.020743 : hote dlazdice klik
+2022-04-20 07:16:44.705881 : PORTO SKALA 7
+2022-04-20 07:16:47.320441 : hote dlazdice klik
+2022-04-20 07:16:50.987610 : COSTA AZZURRA
+2022-04-20 07:16:53.234271 : hote dlazdice klik
+2022-04-20 07:16:56.860839 : LA CITE
+2022-04-20 07:16:59.214455 : hote dlazdice klik
+2022-04-20 07:17:03.102856 : NAFTILOS
+2022-04-20 07:17:05.115605 : hote dlazdice klik
+2022-04-20 07:17:09.625913 : STEFANOS
+2022-04-20 07:17:34.743413 : first no such ele except
+2022-04-20 07:17:36.598137 : last no such ele except
+2022-04-20 07:17:41.619461 : MAGNOLIA
+2022-04-20 07:17:43.530570 : hote dlazdice klik
+2022-04-20 07:17:47.144103 : WHITE GOLD
+2022-04-20 07:17:49.039327 : hote dlazdice klik
+2022-04-20 07:17:52.649997 : KING TUT RESORT
+2022-04-20 07:17:54.678041 : hote dlazdice klik
+2022-04-20 07:18:04.579284 : BLUE WATERS
+2022-04-20 07:18:11.930448 : hote dlazdice klik
+2022-04-20 07:18:16.280382 : PRIMASOL
+2022-04-20 07:18:20.668976 : hote dlazdice klik
+2022-04-20 07:18:25.837925 : DOUBLETREE
+2022-04-20 07:18:29.640706 : hote dlazdice klik
+2022-04-20 07:18:32.375830 : 
+                             
+                             
+2022-04-20 07:18:32.375830 : ====== WebDriver manager ======
+                             
+2022-04-20 07:18:32.401822 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:18:32.401822 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:18:32.483795 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:18:35.753110 : <selenium.webdriver.remote.webelement.WebElement (session="647fb13214d597e434c293df0580de0c", element="9588e163-3076-4ef0-8a37-2e7498352574")>
+2022-04-20 07:18:36.218928 : ZANZIBAR
+2022-04-20 07:18:39.091170 : ØECKO
+2022-04-20 07:19:09.424059 : TURECKO
+2022-04-20 07:19:13.355610 : EGYPT
+2022-04-20 07:19:18.059400 : KAPVERDY
+2022-04-20 07:19:21.238562 : OMAN
+2022-04-20 07:19:23.897607 : MALEDIVY
+2022-04-20 07:19:27.332454 : DUBAJ
+2022-04-20 07:19:29.635843 : MALLORCA
+2022-04-20 07:19:32.186225 : BULHARSKO
+2022-04-20 07:19:35.892272 : CHORVATSKO
+2022-04-20 07:20:06.027195 : KEFALONIA
+2022-04-20 07:20:10.957672 : ATTIKA
+2022-04-20 07:20:16.298927 : POJIŠTÌNÍ
+2022-04-20 07:20:42.561958 : PARKOVÁNÍ
+2022-04-20 07:21:09.427033 : COVID
+2022-04-20 07:21:35.847868 : FUNTAZIE
+2022-04-20 07:21:38.237488 : MIRAGE BAY
+2022-04-20 07:21:40.525577 : MITSIS
+2022-04-20 07:21:43.351801 : PRIMA LIFE
+2022-04-20 07:21:45.664595 : PRIMA LIFE MAKADI
+2022-04-20 07:21:47.723006 : PEGASOS
+2022-04-20 07:21:48.898027 : PICKALBATROS
+2022-04-20 07:21:51.130576 : TITANIC
+2022-04-20 07:21:53.639346 : MIRAGE
+2022-04-20 07:21:56.205249 : DOMES AULÜS
+2022-04-20 07:21:58.464997 : BAY & MARE
+2022-04-20 07:22:00.554466 : A FOR ART
+2022-04-20 07:22:02.880844 : PORTO SKALA 7
+2022-04-20 07:22:05.028462 : COSTA AZZURRA
+2022-04-20 07:22:07.270782 : LA CITE
+2022-04-20 07:22:09.653726 : NAFTILOS
+2022-04-20 07:22:10.837447 : STEFANOS
+2022-04-20 07:22:37.121181 : MAGNOLIA
+2022-04-20 07:22:39.311854 : WHITE GOLD
+2022-04-20 07:22:41.598671 : KING TUT RESORT
+2022-04-20 07:22:43.806312 : BLUE WATERS
+2022-04-20 07:22:46.193357 : PRIMASOL
+2022-04-20 07:22:48.715190 : DOUBLETREE
+2022-04-20 07:22:56.464685 : 
+                             
+                             
+2022-04-20 07:22:56.464685 : ====== WebDriver manager ======
+                             
+2022-04-20 07:22:56.497675 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:22:56.497675 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:22:56.557247 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:23:01.840659 : None
+2022-04-20 07:23:01.840659 : consent pass
+2022-04-20 07:23:16.240174 : 
+                             
+                             
+2022-04-20 07:23:16.240174 : ====== WebDriver manager ======
+                             
+2022-04-20 07:23:16.297766 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:23:16.298766 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:23:16.369204 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:23:22.634238 : <selenium.webdriver.remote.webelement.WebElement (session="00c3ac2bee3caf7a5dea27d7752db821", element="bb256567-6e82-411c-9ddb-f97c515411b0")>
+2022-04-20 07:23:27.537157 : 
+                             
+                             
+2022-04-20 07:23:27.537157 : ====== WebDriver manager ======
+                             
+2022-04-20 07:23:27.562950 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:23:27.562950 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:23:27.620026 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:23:33.841122 : <selenium.webdriver.remote.webelement.WebElement (session="767fcae62f1282403f7139b62602d005", element="180ec3aa-68a3-4f77-b7f4-585b300e4a11")>
+2022-04-20 07:23:38.954660 : 
+                             
+                             
+2022-04-20 07:23:38.954660 : ====== WebDriver manager ======
+                             
+2022-04-20 07:23:39.010880 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:23:39.010880 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:23:39.104275 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:23:43.670631 : None
+2022-04-20 07:23:43.670631 : consent pass
+2022-04-20 07:23:45.941041 : mapa kolecka
+2022-04-20 07:23:45.949018 : mapa kolecka
+2022-04-20 07:23:45.962035 : mapa kolecka
+2022-04-20 07:23:45.985007 : mapa kolecka
+2022-04-20 07:23:45.996020 : mapa kolecka
+2022-04-20 07:23:46.009002 : mapa kolecka
+2022-04-20 07:23:46.016999 : mapa kolecka
+2022-04-20 07:23:46.027993 : mapa kolecka
+2022-04-20 07:23:46.099979 : basic info 
+2022-04-20 07:23:46.109970 : basic info 
+2022-04-20 07:23:46.117965 : basic info 
+2022-04-20 07:23:46.127961 : basic info 
+2022-04-20 07:23:48.432341 : 
+                             
+                             
+2022-04-20 07:23:48.432341 : ====== WebDriver manager ======
+                             
+2022-04-20 07:23:48.489248 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:23:48.489248 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:23:48.561375 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:23:55.959565 : <selenium.webdriver.remote.webelement.WebElement (session="235d50d28d3daee78812ac0fabdb9678", element="9467b399-5045-4ac7-8d53-b16be0646000")>
+2022-04-20 07:24:35.338204 : [<selenium.webdriver.remote.webelement.WebElement (session="235d50d28d3daee78812ac0fabdb9678", element="f0a2ccf1-69e4-446d-b401-23a5a6fae265")>, <selenium.webdriver.remote.webelement.WebElement (session="235d50d28d3daee78812ac0fabdb9678", element="362fb75c-0c5b-40ca-a124-8dc9a87054bf")>, <selenium.webdriver.remote.webelement.WebElement (session="235d50d28d3daee78812ac0fabdb9678", element="528348a6-7e40-48ef-9e6f-9a6118262f5f")>, <selenium.webdriver.remote.webelement.WebElement (session="235d50d28d3daee78812ac0fabdb9678", element="0844a9f6-6315-4e4f-bbe9-9dde41b42b3f")>, <selenium.webdriver.remote.webelement.WebElement (session="235d50d28d3daee78812ac0fabdb9678", element="68ed38de-646c-49e3-a1a1-ff00816f6ccc")>, <selenium.webdriver.remote.webelement.WebElement (session="235d50d28d3daee78812ac0fabdb9678", element="6244cc5a-7a53-43b2-93d7-c2dcab468ef0")>]
+2022-04-20 07:24:35.364822 : true imgdisplay
+2022-04-20 07:24:35.372810 : true imgdisplay
+2022-04-20 07:24:35.397801 : true imgdisplay
+2022-04-20 07:24:35.411801 : true imgdisplay
+2022-04-20 07:24:35.423793 : true imgdisplay
+2022-04-20 07:24:35.432790 : true imgdisplay
+2022-04-20 07:24:35.460780 : grid true
+2022-04-20 07:24:35.467778 : grid true
+2022-04-20 07:24:35.474866 : grid true
+2022-04-20 07:24:35.481864 : grid true
+2022-04-20 07:24:35.487941 : grid true
+2022-04-20 07:24:35.495030 : grid true
+2022-04-20 07:24:35.523038 : big grid ture
+2022-04-20 07:24:37.755137 : 
+                             
+                             
+2022-04-20 07:24:37.755137 : ====== WebDriver manager ======
+                             
+2022-04-20 07:24:37.786867 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:24:37.786867 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:24:37.852647 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:24:41.472678 : <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="75a8df57-bc0c-4d57-830f-5692ef00831d")>
+2022-04-20 07:24:42.184962 : [<selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="df8b77b1-3a30-49aa-800c-6fa923af6b36")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="e5d1e627-e6d9-40df-814c-204c4bc58bb4")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="04495e1e-6c2d-4ce0-8f07-c93226c5e527")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="0ca31d49-4831-48fc-90d5-19ef92d53536")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="c8fa239d-20a7-45a6-828c-1344102796d9")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="ce5cc7f2-e3e1-4b33-adc2-aeca2e7d6d8c")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="9be43b5b-58d3-4a1e-901b-4ea177fce5ff")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="8c196312-655b-4d9c-b1fa-60d2eb7aa841")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="e5c9fe88-88ea-4c7e-a1fb-80688cde37ba")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="cf7c3e4b-bb32-43f0-b1d0-9cbe547365a3")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="87265460-f1f3-420d-bb86-31dcef661a36")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="bc78a2eb-d5a4-4585-b419-7adf8c152cd6")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="23601659-5199-4882-a3f6-e9acb577091b")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="f78f37f0-bb9d-4361-8111-4894c19482bf")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="39748f7c-9907-4691-bd36-22e0e7ec893f")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="6c54bb9e-d381-4a60-a0da-d85c92070e39")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="67f24384-45ec-440a-8d8f-6bcc3476e998")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="aab78410-3248-4b05-b8b1-3a38ff51e4cc")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="ee11b05a-92ab-4f42-b6a6-2a39b4ffabd5")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="faaacdc3-33a2-410b-9b6f-1beda7bb1e7e")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="2b8862da-946d-43b6-b407-950f0c6d6e26")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="b4052283-6dbb-4819-8d38-1b83db7bf237")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="89ce7026-0e7b-44b2-99b3-5a3866cb8fe7")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="4e77c6f1-34cd-47c1-881e-9cc79b7913aa")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="c9b8240e-3fb9-4da6-acc7-7a29c5264ae9")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="7f6712cf-b8a6-40b1-b552-3c4a4efedc11")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="cde4386e-209e-4518-a7ce-297bd8ec6e50")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="f26d983f-2f21-4f5f-bb9e-f09d417e0fd9")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="b3f63851-2c6c-4054-932a-eae65b839882")>, <selenium.webdriver.remote.webelement.WebElement (session="ddc31d7fb30dc4c829131268bc839453", element="d6428cc1-f2e3-45f0-bf9c-59a5ced617b1")>]
+2022-04-20 07:24:42.281931 : true imgdisplay
+2022-04-20 07:24:42.338914 : true imgdisplay
+2022-04-20 07:24:42.386332 : true imgdisplay
+2022-04-20 07:24:42.401327 : true imgdisplay
+2022-04-20 07:24:42.412324 : true imgdisplay
+2022-04-20 07:24:42.419321 : true imgdisplay
+2022-04-20 07:24:42.431335 : true imgdisplay
+2022-04-20 07:24:42.438315 : true imgdisplay
+2022-04-20 07:24:42.448316 : true imgdisplay
+2022-04-20 07:24:42.456317 : true imgdisplay
+2022-04-20 07:24:42.467305 : true imgdisplay
+2022-04-20 07:24:42.478302 : true imgdisplay
+2022-04-20 07:24:42.486300 : true imgdisplay
+2022-04-20 07:24:42.497297 : true imgdisplay
+2022-04-20 07:24:42.504795 : true imgdisplay
+2022-04-20 07:24:42.514822 : true imgdisplay
+2022-04-20 07:24:42.523388 : true imgdisplay
+2022-04-20 07:24:42.534391 : true imgdisplay
+2022-04-20 07:24:42.544382 : true imgdisplay
+2022-04-20 07:24:42.553381 : true imgdisplay
+2022-04-20 07:24:42.568367 : true imgdisplay
+2022-04-20 07:24:42.580995 : true imgdisplay
+2022-04-20 07:24:42.588624 : true imgdisplay
+2022-04-20 07:24:42.600370 : true imgdisplay
+2022-04-20 07:24:42.610626 : true imgdisplay
+2022-04-20 07:24:42.618969 : true imgdisplay
+2022-04-20 07:24:42.629151 : true imgdisplay
+2022-04-20 07:24:42.637992 : true imgdisplay
+2022-04-20 07:24:42.647082 : true imgdisplay
+2022-04-20 07:24:42.654923 : true imgdisplay
+2022-04-20 07:24:42.694675 : grid true
+2022-04-20 07:24:42.701681 : grid true
+2022-04-20 07:24:42.712674 : grid true
+2022-04-20 07:24:42.720096 : grid true
+2022-04-20 07:24:42.730082 : grid true
+2022-04-20 07:24:42.738079 : grid true
+2022-04-20 07:24:42.747441 : grid true
+2022-04-20 07:24:42.755396 : grid true
+2022-04-20 07:24:42.764406 : grid true
+2022-04-20 07:24:42.772391 : grid true
+2022-04-20 07:24:42.783386 : grid true
+2022-04-20 07:24:42.791384 : grid true
+2022-04-20 07:24:42.800391 : grid true
+2022-04-20 07:24:42.812378 : grid true
+2022-04-20 07:24:42.819382 : grid true
+2022-04-20 07:24:42.828373 : grid true
+2022-04-20 07:24:42.836369 : grid true
+2022-04-20 07:24:42.847366 : grid true
+2022-04-20 07:24:42.855376 : grid true
+2022-04-20 07:24:42.863362 : grid true
+2022-04-20 07:24:42.871370 : grid true
+2022-04-20 07:24:42.879359 : grid true
+2022-04-20 07:24:42.887355 : grid true
+2022-04-20 07:24:42.895351 : grid true
+2022-04-20 07:24:42.903353 : grid true
+2022-04-20 07:24:42.911346 : grid true
+2022-04-20 07:24:42.919354 : grid true
+2022-04-20 07:24:42.928353 : grid true
+2022-04-20 07:24:42.936570 : grid true
+2022-04-20 07:24:42.943558 : grid true
+2022-04-20 07:24:42.973994 : big grid ture
+2022-04-20 07:24:42.981992 : big grid ture
+2022-04-20 07:24:42.989165 : big grid ture
+2022-04-20 07:24:42.996316 : big grid ture
+2022-04-20 07:24:43.004492 : big grid ture
+2022-04-20 07:24:45.239309 : 
+                             
+                             
+2022-04-20 07:24:45.239309 : ====== WebDriver manager ======
+                             
+2022-04-20 07:24:45.292927 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:24:45.292927 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:24:45.370481 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:24:49.174888 : <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="0a2abd3f-3714-4d72-ae09-89cd61dbd3b8")>
+2022-04-20 07:24:55.864282 : [<selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="668af29d-ae09-4139-af14-1325cde3ebb1")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="e32111c5-7d17-4459-9ba9-201bf83b34e0")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="1aa8b821-0b9c-4b0e-afd3-0ede6ac16274")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="38d43af5-1e6e-47b9-8e55-394f581755fe")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="a9031a15-8735-4eca-8e9d-8ea5b75cde42")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="3c812fb5-7a24-4da8-9429-bc0a03501df7")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="2ca7f38f-3d33-453e-a5a4-b8a816739368")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="3c2c2490-5ebe-4576-b05e-46e5cca97ee6")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="19d698d3-5449-4653-9a38-5a57c1ef97e1")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="43b318fe-edc9-4b0a-b3b3-2eb2b118e818")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="c4e690f9-1c34-443f-87eb-6f65a17250b4")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="8431fea1-7a7d-4471-9856-a8df52b97173")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="a4e36631-aced-40e6-ab53-41d46bfeef35")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="9005ed83-823f-4c41-8cc3-493caca43203")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="bdde23d9-49bb-4315-aba0-f7dc2b4178c8")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="eb5cd198-df35-46d6-b8ce-d849b65daa08")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="017824b1-3484-4404-b98a-f791df7edb2e")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="ca099196-5dee-43bd-a50d-d17a5a5f0f7f")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="86eeca35-9544-4ab3-908a-497041a2de9a")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="376c5fd2-7e5e-4ae7-9fd9-acdfb941a091")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="f23bfc31-adc7-403d-b59b-ec12fede0597")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="56e15985-edea-4bc0-8e9a-3ba63c8af2da")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="5544bd3f-0ce2-472a-b165-51d5aa143ffc")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="80ed749c-812b-43c7-b7b1-850b5c079be9")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="3599cab1-dae2-4991-aff9-a1767df7f3aa")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="55011837-3ec4-4f0e-af25-886e9ba45233")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="44364b9c-b147-41f2-9431-e2a798cbc0c2")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="281f763c-b4c5-49db-8c6f-fbc396b0b11c")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="885a32e3-4b13-4837-b3a6-250a5b99b10d")>, <selenium.webdriver.remote.webelement.WebElement (session="5b935df4d611cc8f0ae6061f7246b2fa", element="09221b1d-89cb-4804-a138-bc722e101956")>]
+2022-04-20 07:24:55.886275 : true imgdisplay
+2022-04-20 07:24:55.899270 : true imgdisplay
+2022-04-20 07:24:55.914265 : true imgdisplay
+2022-04-20 07:24:55.927261 : true imgdisplay
+2022-04-20 07:24:55.944263 : true imgdisplay
+2022-04-20 07:24:55.958251 : true imgdisplay
+2022-04-20 07:24:55.968248 : true imgdisplay
+2022-04-20 07:24:55.978245 : true imgdisplay
+2022-04-20 07:24:55.990242 : true imgdisplay
+2022-04-20 07:24:56.007235 : true imgdisplay
+2022-04-20 07:24:56.019231 : true imgdisplay
+2022-04-20 07:24:56.028229 : true imgdisplay
+2022-04-20 07:24:56.036226 : true imgdisplay
+2022-04-20 07:24:56.044223 : true imgdisplay
+2022-04-20 07:24:56.052222 : true imgdisplay
+2022-04-20 07:24:56.061218 : true imgdisplay
+2022-04-20 07:24:56.072215 : true imgdisplay
+2022-04-20 07:24:56.088210 : true imgdisplay
+2022-04-20 07:24:56.097206 : true imgdisplay
+2022-04-20 07:24:56.106204 : true imgdisplay
+2022-04-20 07:24:56.118200 : true imgdisplay
+2022-04-20 07:24:56.127197 : true imgdisplay
+2022-04-20 07:24:56.139194 : true imgdisplay
+2022-04-20 07:24:56.147191 : true imgdisplay
+2022-04-20 07:24:56.156188 : true imgdisplay
+2022-04-20 07:24:56.163186 : true imgdisplay
+2022-04-20 07:24:56.172183 : true imgdisplay
+2022-04-20 07:24:56.182179 : true imgdisplay
+2022-04-20 07:24:56.192176 : true imgdisplay
+2022-04-20 07:24:56.199174 : true imgdisplay
+2022-04-20 07:24:56.229164 : grid true
+2022-04-20 07:24:56.242161 : grid true
+2022-04-20 07:24:56.250158 : grid true
+2022-04-20 07:24:56.260154 : grid true
+2022-04-20 07:24:56.268152 : grid true
+2022-04-20 07:24:56.278149 : grid true
+2022-04-20 07:24:56.285146 : grid true
+2022-04-20 07:24:56.300141 : grid true
+2022-04-20 07:24:56.310139 : grid true
+2022-04-20 07:24:56.317136 : grid true
+2022-04-20 07:24:56.327133 : grid true
+2022-04-20 07:24:56.334130 : grid true
+2022-04-20 07:24:56.343128 : grid true
+2022-04-20 07:24:56.351125 : grid true
+2022-04-20 07:24:56.360201 : grid true
+2022-04-20 07:24:56.367828 : grid true
+2022-04-20 07:24:56.378825 : grid true
+2022-04-20 07:24:56.386822 : grid true
+2022-04-20 07:24:56.396818 : grid true
+2022-04-20 07:24:56.406816 : grid true
+2022-04-20 07:24:56.414813 : grid true
+2022-04-20 07:24:56.425820 : grid true
+2022-04-20 07:24:56.432817 : grid true
+2022-04-20 07:24:56.445805 : grid true
+2022-04-20 07:24:56.454957 : grid true
+2022-04-20 07:24:56.463955 : grid true
+2022-04-20 07:24:56.472951 : grid true
+2022-04-20 07:24:56.481958 : grid true
+2022-04-20 07:24:56.491958 : grid true
+2022-04-20 07:24:56.498943 : grid true
+2022-04-20 07:24:56.532083 : big grid ture
+2022-04-20 07:24:56.543079 : big grid ture
+2022-04-20 07:24:56.550084 : big grid ture
+2022-04-20 07:24:56.560215 : big grid ture
+2022-04-20 07:24:56.568219 : big grid ture
+2022-04-20 07:24:58.713390 : 
+                             
+                             
+2022-04-20 07:24:58.713390 : ====== WebDriver manager ======
+                             
+2022-04-20 07:24:58.739382 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:24:58.739382 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:24:58.800362 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:25:03.640810 : <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="b0153b1f-71ab-4d5c-979f-747336fa5db5")>
+2022-04-20 07:25:04.674480 : [<selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="08b641c5-bace-4313-bdf8-d723888e9ce1")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="1753e39a-fb01-45f6-b566-63620358b8fe")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="970a8b6a-b285-4986-b5b7-633d873afa70")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="b5643bcf-6e40-4879-8ebc-7a40eaf1d2f4")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="70f251cc-9bed-47bd-a911-1bca28c17ec0")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="965e54f5-11a0-4d16-98f1-8c9f7bab01e7")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="6a0fda9b-1f29-4be2-a388-221a3b565542")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="b150fe46-a785-49c6-90f0-8799f9d8e3d3")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="21eed88b-d7e3-48c4-a622-951bd5a521e1")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="d0df7b7d-de17-4a44-8845-b75416e3cbdf")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="284f8ef9-f0ce-4fd8-83b4-011ae69c1d12")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="cb1bab54-eb3f-464d-a8d2-faabbe512229")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="71e0369a-264f-4759-992a-7b101fe92a10")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="92c7d2b3-6089-4cf2-bdce-27a8f8a7af7f")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="f8e522d3-ca9b-4a37-8186-c42057583906")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="85d12263-8b71-48fd-9a4d-f8a6631d5f56")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="42b60342-810a-4f94-a970-a874cb86fbf5")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="ebcdf8e6-e4ce-475c-b1bb-edfdb4662985")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="f106d7e8-0ca3-4016-9ebe-34a7341a5b94")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="a3baaf63-ac74-425f-94a8-11dc7a1666a2")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="b7c3082c-a2b8-43ca-8dc8-c7337ed7d365")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="602d9e09-4842-40cd-98ed-9c550e6af2d0")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="e2cd941f-ede6-41cc-b95a-b77166a3c0f3")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="2e558277-9a65-4727-a802-372dd84c0088")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="62dd1815-d42c-4690-85c7-5c4d80ca663b")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="7fb098d0-d1e2-4118-8b8d-ec4b4599a090")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="60173fd2-d82d-44eb-810c-606178821d01")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="12d61bd3-bfe8-4079-984a-4ce36e82e3b1")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="9ad10540-f735-410b-8501-0eb58444a182")>, <selenium.webdriver.remote.webelement.WebElement (session="e62f8d6dd57f761cc816eff46556eb39", element="d76ea510-acf6-4816-9252-b4ddcdf192ae")>]
+2022-04-20 07:25:04.693473 : true imgdisplay
+2022-04-20 07:25:04.711468 : true imgdisplay
+2022-04-20 07:25:04.734460 : true imgdisplay
+2022-04-20 07:25:04.744457 : true imgdisplay
+2022-04-20 07:25:04.758453 : true imgdisplay
+2022-04-20 07:25:04.773448 : true imgdisplay
+2022-04-20 07:25:04.791442 : true imgdisplay
+2022-04-20 07:25:04.804438 : true imgdisplay
+2022-04-20 07:25:04.812435 : true imgdisplay
+2022-04-20 07:25:04.824431 : true imgdisplay
+2022-04-20 07:25:04.835428 : true imgdisplay
+2022-04-20 07:25:04.842426 : true imgdisplay
+2022-04-20 07:25:04.854422 : true imgdisplay
+2022-04-20 07:25:04.862419 : true imgdisplay
+2022-04-20 07:25:04.872416 : true imgdisplay
+2022-04-20 07:25:04.883412 : true imgdisplay
+2022-04-20 07:25:04.891410 : true imgdisplay
+2022-04-20 07:25:04.909404 : true imgdisplay
+2022-04-20 07:25:04.952390 : true imgdisplay
+2022-04-20 07:25:04.960387 : true imgdisplay
+2022-04-20 07:25:04.970385 : true imgdisplay
+2022-04-20 07:25:04.982381 : true imgdisplay
+2022-04-20 07:25:04.993377 : true imgdisplay
+2022-04-20 07:25:05.009372 : true imgdisplay
+2022-04-20 07:25:05.029366 : true imgdisplay
+2022-04-20 07:25:05.049360 : true imgdisplay
+2022-04-20 07:25:05.189314 : true imgdisplay
+2022-04-20 07:25:05.221304 : true imgdisplay
+2022-04-20 07:25:05.232301 : true imgdisplay
+2022-04-20 07:25:05.242297 : true imgdisplay
+2022-04-20 07:25:05.283284 : grid true
+2022-04-20 07:25:05.292281 : grid true
+2022-04-20 07:25:05.304277 : grid true
+2022-04-20 07:25:05.311275 : grid true
+2022-04-20 07:25:05.319273 : grid true
+2022-04-20 07:25:05.327270 : grid true
+2022-04-20 07:25:05.336267 : grid true
+2022-04-20 07:25:05.345264 : grid true
+2022-04-20 07:25:05.355261 : grid true
+2022-04-20 07:25:05.364258 : grid true
+2022-04-20 07:25:05.371257 : grid true
+2022-04-20 07:25:05.382252 : grid true
+2022-04-20 07:25:05.390249 : grid true
+2022-04-20 07:25:05.398247 : grid true
+2022-04-20 07:25:05.406245 : grid true
+2022-04-20 07:25:05.415242 : grid true
+2022-04-20 07:25:05.422239 : grid true
+2022-04-20 07:25:05.430237 : grid true
+2022-04-20 07:25:05.440234 : grid true
+2022-04-20 07:25:05.452231 : grid true
+2022-04-20 07:25:05.464226 : grid true
+2022-04-20 07:25:05.473223 : grid true
+2022-04-20 07:25:05.492218 : grid true
+2022-04-20 07:25:05.506213 : grid true
+2022-04-20 07:25:05.516209 : grid true
+2022-04-20 07:25:05.525308 : grid true
+2022-04-20 07:25:05.533305 : grid true
+2022-04-20 07:25:05.541438 : grid true
+2022-04-20 07:25:05.551538 : grid true
+2022-04-20 07:25:05.559535 : grid true
+2022-04-20 07:25:05.590524 : big grid ture
+2022-04-20 07:25:05.599521 : big grid ture
+2022-04-20 07:25:05.609519 : big grid ture
+2022-04-20 07:25:05.622515 : big grid ture
+2022-04-20 07:25:05.633511 : big grid ture
+2022-04-20 07:25:07.893959 : 
+                             
+                             
+2022-04-20 07:25:07.893959 : ====== WebDriver manager ======
+                             
+2022-04-20 07:25:07.915967 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:25:07.915967 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:25:07.971683 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:25:16.645953 : <selenium.webdriver.remote.webelement.WebElement (session="dee0586924b6d986de23bc130d1462a9", element="bb0eb598-e168-491f-a4c4-e9d8c77284c1")>
+2022-04-20 07:25:20.001556 : 
+                             
+                             
+2022-04-20 07:25:20.001556 : ====== WebDriver manager ======
+                             
+2022-04-20 07:25:20.021712 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:25:20.021712 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:25:20.079107 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:25:25.477365 : <selenium.webdriver.remote.webelement.WebElement (session="7bf128beda897f00bd8ba80c6b963b16", element="8c7e80c0-3e78-4f7d-97d8-d6eb1533fcde")>
+2022-04-20 07:25:54.296267 : nenasle se exponea banner
+2022-04-20 07:26:06.965427 : Razeni od nejlevnejsiho je OK
+2022-04-20 07:26:06.965427 : [30114, 34908, 35270, 35296, 36803, 37598, 38005, 38462, 39173, 39455, 39518, 39535, 39650, 39722, 39755, 39857, 40091, 40116, 40116, 40459]
+2022-04-20 07:26:06.965427 : [30114, 34908, 35270, 35296, 36803, 37598, 38005, 38462, 39173, 39455, 39518, 39535, 39650, 39722, 39755, 39857, 40091, 40116, 40116, 40459]
+2022-04-20 07:26:09.169962 : 
+                             
+                             
+2022-04-20 07:26:09.169962 : ====== WebDriver manager ======
+                             
+2022-04-20 07:26:09.190956 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:26:09.190956 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:26:09.248937 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:26:17.351779 : <selenium.webdriver.remote.webelement.WebElement (session="37f0b49594433ee0a60f73a0e9cd51a0", element="e5748342-c5b4-4924-86c2-76a918b3123d")>
+2022-04-20 07:26:23.537840 : Razeni od nejdrazshio je OK
+2022-04-20 07:26:23.537840 : [444683, 223075, 216213, 195982, 194359, 176799, 173108, 172070, 168468, 161592, 130322, 127400, 126190, 125453, 123309, 122580, 121760, 120050, 117133, 114356]
+2022-04-20 07:26:23.537840 : [444683, 223075, 216213, 195982, 194359, 176799, 173108, 172070, 168468, 161592, 130322, 127400, 126190, 125453, 123309, 122580, 121760, 120050, 117133, 114356]
+2022-04-20 07:26:25.805806 : 
+                             
+                             
+2022-04-20 07:26:25.805806 : ====== WebDriver manager ======
+                             
+2022-04-20 07:26:25.857575 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:26:25.857575 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:26:25.919616 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:26:31.866032 : <selenium.webdriver.remote.webelement.WebElement (session="acf5601e87e40a92dec8f076d80aa92e", element="9edad7b6-9995-43ed-831e-1efcac4e687e")>
+2022-04-20 07:27:00.633854 : nenasle se exponea banner
+2022-04-20 07:27:34.476583 : nenasel se small kolecko ElementNotInteractableException
+2022-04-20 07:28:02.921723 : actually OK
+2022-04-20 07:29:04.819467 : 
+                             
+                             
+2022-04-20 07:29:04.819467 : ====== WebDriver manager ======
+                             
+2022-04-20 07:29:04.839460 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:29:04.839460 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:29:04.924666 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:29:12.428391 : <selenium.webdriver.remote.webelement.WebElement (session="fbf62a39a09e04f3aec16f94db1f8217", element="ca24236b-6163-4232-8ccc-9fa84ed46cf9")>
+2022-04-20 07:29:41.364754 : nenasle se exponea banner
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ok
+2022-04-20 07:29:48.421199 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-04-20 07:29:58.703962 : 
+                             
+                             
+2022-04-20 07:29:58.703962 : ====== WebDriver manager ======
+                             
+2022-04-20 07:29:58.757591 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:29:58.757591 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:29:58.835758 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:30:06.487044 : <selenium.webdriver.remote.webelement.WebElement (session="1e4d5b6f638c95afc65b55b639c1b4b3", element="467d0804-4551-469c-8ba5-129b7a17f1b9")>
+2022-04-20 07:30:35.219862 : nenasle se exponea banner
+2022-04-20 07:30:35.260697 : |||||HOTEL CISLO|||||||
+2022-04-20 07:30:35.260697 : 1
+2022-04-20 07:30:35.260697 : 1
+2022-04-20 07:30:35.260697 : 1
+2022-04-20 07:30:35.433651 : 15 690 KÈ
+2022-04-20 07:31:04.549090 : nenasle se exponea banner
+2022-04-20 07:31:05.719422 : 15 690 Kè
+2022-04-20 07:31:05.719422 : pokoje sedi srl vs detail
+2022-04-20 07:31:05.719422 : stravy sedi srl vs detail
+2022-04-20 07:31:05.719422 : ceny all sedi srl vs detail
+2022-04-20 07:31:05.719422 : cena adult NESEDÍ srl vs detail
+2022-04-20 07:31:05.733408 : 1
+2022-04-20 07:31:05.733408 : 2
+2022-04-20 07:31:05.733408 : |||||HOTEL CISLO|||||||
+2022-04-20 07:31:05.733408 : 2
+2022-04-20 07:31:05.733408 : 2
+2022-04-20 07:31:05.733408 : 2
+2022-04-20 07:31:05.919429 : 16 860 KÈ
+2022-04-20 07:31:34.903488 : nenasle se exponea banner
+2022-04-20 07:31:36.063966 : 16 860 Kè
+2022-04-20 07:31:36.063966 : pokoje sedi srl vs detail
+2022-04-20 07:31:36.063966 : stravy sedi srl vs detail
+2022-04-20 07:31:36.064970 : ceny all sedi srl vs detail
+2022-04-20 07:31:36.064970 : cena adult NESEDÍ srl vs detail
+2022-04-20 07:31:36.079956 : 2
+2022-04-20 07:31:36.079956 : 3
+2022-04-20 07:31:36.079956 : |||||HOTEL CISLO|||||||
+2022-04-20 07:31:36.079956 : 3
+2022-04-20 07:31:36.079956 : 3
+2022-04-20 07:31:36.079956 : 3
+2022-04-20 07:31:36.258424 : 19 650 KÈ
+2022-04-20 07:32:04.793725 : nenasle se exponea banner
+2022-04-20 07:32:05.926193 : 19 650 Kè
+2022-04-20 07:32:05.926193 : pokoje sedi srl vs detail
+2022-04-20 07:32:05.926193 : stravy sedi srl vs detail
+2022-04-20 07:32:05.926193 : ceny all sedi srl vs detail
+2022-04-20 07:32:05.926193 : cena adult NESEDÍ srl vs detail
+2022-04-20 07:32:05.942190 : 3
+2022-04-20 07:32:05.942190 : 4
+2022-04-20 07:32:05.942190 : |||||HOTEL CISLO|||||||
+2022-04-20 07:32:05.942190 : 4
+2022-04-20 07:32:05.942190 : 4
+2022-04-20 07:32:05.942190 : 4
+2022-04-20 07:32:06.128131 : 20 500 KÈ
+2022-04-20 07:32:35.206112 : nenasle se exponea banner
+2022-04-20 07:32:36.323708 : 20 500 Kè
+2022-04-20 07:32:36.323708 : pokoje sedi srl vs detail
+2022-04-20 07:32:36.323708 : stravy sedi srl vs detail
+2022-04-20 07:32:36.323708 : ceny all sedi srl vs detail
+2022-04-20 07:32:36.323708 : cena adult NESEDÍ srl vs detail
+2022-04-20 07:32:36.338703 : 4
+2022-04-20 07:32:36.338703 : 5
+2022-04-20 07:32:36.338703 : |||||HOTEL CISLO|||||||
+2022-04-20 07:32:36.338703 : 5
+2022-04-20 07:32:36.338703 : 5
+2022-04-20 07:32:36.338703 : 5
+2022-04-20 07:32:36.503651 : 19 490 KÈ
+2022-04-20 07:33:05.780120 : nenasle se exponea banner
+2022-04-20 07:33:06.955244 : 19 490 Kè
+2022-04-20 07:33:06.955244 : pokoje sedi srl vs detail
+2022-04-20 07:33:06.955244 : stravy sedi srl vs detail
+2022-04-20 07:33:06.955244 : ceny all sedi srl vs detail
+2022-04-20 07:33:06.955244 : cena adult NESEDÍ srl vs detail
+2022-04-20 07:33:06.973226 : 5
+2022-04-20 07:33:06.973226 : 6
+2022-04-20 07:33:06.973226 : |||||HOTEL CISLO|||||||
+2022-04-20 07:33:06.973226 : 6
+2022-04-20 07:33:06.973226 : 6
+2022-04-20 07:33:06.973226 : 6
+2022-04-20 07:33:07.154168 : 20 510 KÈ
+2022-04-20 07:33:36.065581 : nenasle se exponea banner
+2022-04-20 07:33:37.224212 : 20 510 Kè
+2022-04-20 07:33:37.224212 : pokoje sedi srl vs detail
+2022-04-20 07:33:37.224212 : stravy sedi srl vs detail
+2022-04-20 07:33:37.224212 : ceny all sedi srl vs detail
+2022-04-20 07:33:37.224212 : cena adult NESEDÍ srl vs detail
+2022-04-20 07:33:37.264198 : 6
+2022-04-20 07:33:37.264198 : 7
+2022-04-20 07:33:37.264198 : |||||HOTEL CISLO|||||||
+2022-04-20 07:33:37.264198 : 7
+2022-04-20 07:33:37.264198 : 7
+2022-04-20 07:33:37.264198 : 7
+2022-04-20 07:33:37.581096 : 21 790 KÈ
+2022-04-20 07:34:06.963044 : nenasle se exponea banner
+2022-04-20 07:34:08.099022 : 21 790 Kè
+2022-04-20 07:34:08.099022 : pokoje sedi srl vs detail
+2022-04-20 07:34:08.099022 : stravy sedi srl vs detail
+2022-04-20 07:34:08.099022 : ceny all sedi srl vs detail
+2022-04-20 07:34:08.099022 : cena adult NESEDÍ srl vs detail
+2022-04-20 07:34:08.119017 : 7
+2022-04-20 07:34:08.119017 : 8
+2022-04-20 07:34:08.119017 : |||||HOTEL CISLO|||||||
+2022-04-20 07:34:08.119017 : 8
+2022-04-20 07:34:08.119017 : 8
+2022-04-20 07:34:08.119017 : 8
+2022-04-20 07:34:08.315460 : 23 330 KÈ
+2022-04-20 07:34:37.431390 : nenasle se exponea banner
+2022-04-20 07:34:38.560778 : 23 330 Kè
+2022-04-20 07:34:38.560778 : pokoje sedi srl vs detail
+2022-04-20 07:34:38.560778 : stravy sedi srl vs detail
+2022-04-20 07:34:38.560778 : ceny all sedi srl vs detail
+2022-04-20 07:34:38.560778 : cena adult NESEDÍ srl vs detail
+2022-04-20 07:34:38.578762 : 8
+2022-04-20 07:34:38.578762 : 9
+2022-04-20 07:34:38.578762 : |||||HOTEL CISLO|||||||
+2022-04-20 07:34:38.578762 : 9
+2022-04-20 07:34:38.578762 : 9
+2022-04-20 07:34:38.578762 : 9
+2022-04-20 07:34:38.732946 : 17 940 KÈ
+2022-04-20 07:34:45.743840 : 
+                             
+                             
+2022-04-20 07:34:45.743840 : ====== WebDriver manager ======
+                             
+2022-04-20 07:34:45.768879 : Current google-chrome version is 100.0.4896
+                             
+2022-04-20 07:34:45.768879 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-20 07:34:45.856750 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-20 07:34:51.965020 : <selenium.webdriver.remote.webelement.WebElement (session="4f923acb3da9faa1056dd182a9a3bfb4", element="115cef56-9781-48eb-969a-d1070d406a9e")>
+2022-04-20 07:34:52.481815 : True
+2022-04-20 07:34:52.489813 : True
+2022-04-20 07:34:52.498810 : True
+2022-04-20 07:34:52.511806 : True
+2022-04-20 07:34:52.519804 : True
+2022-04-20 07:34:52.527800 : True
+2022-04-20 07:34:52.534798 : True
+2022-04-20 07:34:52.542795 : True
+2022-04-20 07:34:52.550793 : True
+2022-04-20 07:34:52.558601 : True
+2022-04-20 07:34:52.565609 : True
+2022-04-20 07:34:52.573616 : True
+2022-04-20 07:34:52.580614 : True
+2022-04-20 07:34:52.588594 : True
+2022-04-20 07:34:52.595592 : True
+2022-04-20 07:34:52.603599 : True
+2022-04-20 07:34:52.610771 : True
+2022-04-20 07:34:52.618767 : True
+2022-04-20 07:34:52.626186 : True
+2022-04-20 07:34:52.634222 : True
+2022-04-20 07:34:52.696963 : True
+2022-04-20 07:34:52.704942 : True
+2022-04-20 07:34:52.712943 : True
+2022-04-20 07:34:52.721461 : True
+2022-04-20 07:34:52.729463 : True
+2022-04-20 07:34:52.737459 : True
+2022-04-20 07:34:52.745469 : True
+2022-04-20 07:34:52.752454 : True
+2022-04-20 07:34:52.761454 : True
+2022-04-20 07:34:52.771458 : True
+2022-04-20 07:34:52.779545 : True
+2022-04-20 07:34:52.788447 : True
+2022-04-20 07:34:52.796679 : True
+2022-04-20 07:34:52.804584 : True
+2022-04-20 07:34:52.812048 : True
+2022-04-20 07:34:52.820587 : True
+2022-04-20 07:34:52.828247 : True
+2022-04-20 07:34:52.836248 : True
+2022-04-20 07:34:52.844796 : True
+2022-04-20 07:34:52.852049 : True
+2022-04-20 07:34:52.908002 : ceny
+2022-04-20 07:34:52.915991 : ceny
+2022-04-20 07:34:52.928987 : ceny
+2022-04-20 07:34:52.946984 : ceny
+2022-04-20 07:34:52.958977 : ceny
+2022-04-20 07:34:52.966975 : ceny
+2022-04-20 07:34:52.975972 : ceny
+2022-04-20 07:34:52.982969 : ceny
+2022-04-20 07:34:52.991967 : ceny
+2022-04-20 07:34:52.998964 : ceny
+2022-04-20 07:34:53.007962 : ceny
+2022-04-20 07:34:53.015963 : ceny
+2022-04-20 07:34:53.025956 : ceny
+2022-04-20 07:34:53.034954 : ceny
+2022-04-20 07:34:53.043950 : ceny
+2022-04-20 07:34:53.051947 : ceny
+2022-04-20 07:34:53.059945 : ceny
+2022-04-20 07:34:53.069178 : ceny
+2022-04-20 07:34:53.077186 : ceny
+2022-04-20 07:34:53.085173 : ceny
+2022-04-20 07:34:53.094171 : ceny
+2022-04-20 07:34:53.102186 : ceny
+2022-04-20 07:34:53.109976 : ceny
+2022-04-20 07:34:53.119970 : ceny
+2022-04-20 07:34:53.127626 : ceny
+2022-04-20 07:34:53.135613 : ceny
+2022-04-20 07:34:53.146627 : ceny
+2022-04-20 07:34:53.154607 : ceny
+2022-04-20 07:34:53.162604 : ceny
+2022-04-20 07:34:53.170601 : ceny
+2022-04-20 07:34:53.179176 : ceny
+2022-04-20 07:34:53.186183 : ceny
+2022-04-20 07:34:53.194539 : ceny
+2022-04-20 07:34:53.202533 : ceny
+2022-04-20 07:34:53.209526 : ceny
+2022-04-20 07:34:53.217533 : ceny
+2022-04-20 07:34:53.225552 : ceny
+2022-04-20 07:34:53.233517 : ceny
+2022-04-20 07:34:53.241060 : ceny
+2022-04-20 07:34:53.250069 : ceny
