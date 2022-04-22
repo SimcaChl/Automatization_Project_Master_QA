@@ -44,8 +44,9 @@ class Test_HP_C(unittest.TestCase):
         wait = WebDriverWait(self.driver, 300)
 
         acceptConsent(self.driver)
+        time.sleep(1)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPkamPojedeteButtonXpath))).click()
-
+        time.sleep(0.3)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath))).click()
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
@@ -117,7 +118,7 @@ class Test_HP_C(unittest.TestCase):
         # self.driver.execute_script("arguments[0].scrollIntoView();", HPkartaHoteluSliderElement)
         # action.move_to_element(HPkartaHoteluSliderElement).click().perform()
         self.driver.implicitly_wait(100)
-        time.sleep(3)
+        time.sleep(6)
         topNabidkaBigHotelCardElement.click()
         time.sleep(2)
         curURL = self.driver.current_url
