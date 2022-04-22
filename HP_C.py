@@ -5,7 +5,6 @@ import unittest
 from selenium.webdriver.support import expected_conditions as EC
 from groupsearch_D import groupSearch_D
 import time
-
 HPvyhledatZajezdyButtonXpath = "//*[contains(text(), 'Vyhledat zájezdy')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam se chystáte?')]"
 HPzlutakReckoDestinaceXpath = "//*[@class='f_input-content'] //*[contains(text(), 'Řecko')]"
@@ -100,3 +99,27 @@ class Test_HP_C(unittest.TestCase):
         print(nejlepsiNabidkyTextList)
         print(nejlepsiNabidkyTextList2)
         assert nejlepsiNabidkyTextList != nejlepsiNabidkyTextList2
+
+    def test_HP_slider_click_detail_hotelu(self):
+        self.driver.get(URL)
+        wait = WebDriverWait(self.driver, 300)
+        self.driver.maximize_window()
+        time.sleep(
+            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+        acceptConsent(self.driver)
+        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPnextArrowXpath))).click()
+        # time.sleep(10)
+        self.driver.implicitly_wait(100)
+        topNabidkaBigHotelCardXpath  = "//*[@class='page-widget js-ajaxPlaceholder--widget fshr-widget f_tileGrid-item f_tileGrid-item--double']"
+        topNabidkaBigHotelCardElement = self.driver.find_element_by_xpath(topNabidkaBigHotelCardXpath)
+
+        self.driver.execute_script("arguments[0].scrollIntoView();", topNabidkaBigHotelCardElement )
+        # self.driver.execute_script("arguments[0].scrollIntoView();", HPkartaHoteluSliderElement)
+        # action.move_to_element(HPkartaHoteluSliderElement).click().perform()
+        self.driver.implicitly_wait(100)
+        time.sleep(3)
+        topNabidkaBigHotelCardElement.click()
+        time.sleep(2)
+        curURL = self.driver.current_url
+
+        assert curURL != URL
