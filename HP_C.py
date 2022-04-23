@@ -5,6 +5,7 @@ import unittest
 from selenium.webdriver.support import expected_conditions as EC
 from groupsearch_D import groupSearch_D
 import time
+from SRL_D import SRL_D
 HPvyhledatZajezdyButtonXpath = "//*[contains(text(), 'Vyhledat zájezdy')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam se chystáte?')]"
 HPzlutakReckoDestinaceXpath = "//*[@class='f_input-content'] //*[contains(text(), 'Řecko')]"
@@ -62,8 +63,8 @@ class Test_HP_C(unittest.TestCase):
 
         time.sleep(1)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
-
-        time.sleep(20)
+        time.sleep(2.789)
+        SRL_D(self, self.driver)
 
     def test_HP_nejlepsi_nabidky_vypis_btn_switch(self):
         self.driver.get(URL)
