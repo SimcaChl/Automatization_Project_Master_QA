@@ -1,7 +1,9 @@
-from FW_Automation_Local_Deploy_PyCharmstarter_local import suite
+#from FW_Automation_Local_Deploy_PyCharm.starter_local import suite
+from Automatization_Project_Master.FW_Automation_Local_Deploy_PyCharm import *
+from Automatization_Project_Master.FW_Automation_Local_Deploy_PyCharm import *
 
 
-
+import unittest
 
 import HtmlTestRunner
 
