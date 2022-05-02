@@ -170,3 +170,31 @@
 2022-05-02 22:02:59.317588 : Razeni od nejdrazshio je OK
 2022-05-02 22:02:59.317588 : [393, 393, 361, 361, 353, 353, 337, 337, 331, 331, 327, 327, 325, 325, 307, 307, 287, 287, 286, 286]
 2022-05-02 22:02:59.317588 : [393, 393, 361, 361, 353, 353, 337, 337, 331, 331, 327, 327, 325, 325, 307, 307, 287, 287, 286, 286]
+2022-05-02 22:03:28.523665 : <selenium.webdriver.remote.webelement.WebElement (session="543f18a78877f50e9ef67f4e1e054cd0b250b1de", element="node-41D879EA-4056-436E-B137-48B9ABC3D01E")>
+2022-05-02 22:03:59.170890 : nenasle se exponea banner
+2022-05-02 22:05:00.165428 : nenasel se large kolecko
+2022-05-02 22:05:26.317328 : nenasel se large kolecko
+2022-05-02 22:05:29.347956 : nenasel se small kolecko ElementNotInteractableException
+2022-05-02 22:06:34.436168 : <selenium.webdriver.remote.webelement.WebElement (session="014e37b24edf66ecef3d10121af1a2febd38c56c", element="node-ABB1424A-1560-42CD-867F-59FD0C2987AD")>
+2022-05-02 22:07:06.784751 : nenasle se exponea banner
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ok
+2022-05-02 22:07:25.598622 : ['All inclusive', 'All inclusive', 'Soft all inclusive', 'Soft all inclusive', 'Soft all inclusive', 'Soft all inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'Soft all inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'Soft all inclusive']

@@ -229,3 +229,11 @@
 2022-05-02 22:02:02.002822 : grid true
 2022-05-02 22:02:02.408692 : grid true
 2022-05-02 22:02:03.202438 : big grid ture
+2022-05-02 22:02:38.283940 : <selenium.webdriver.remote.webelement.WebElement (session="4e3c0bc7f645664eb6323c4aaf11cd3fc5389590", element="node-E07211DA-481B-4C36-B016-8E0A45C3144C")>
+2022-05-02 22:03:40.683631 : <selenium.webdriver.remote.webelement.WebElement (session="277a457158f6ff37bb9db03fc6704209e477b1ef", element="node-B08B2551-416F-482D-B15E-A9B2B9B63EA2")>
+2022-05-02 22:04:11.287493 : nenasle se exponea banner
+2022-05-02 22:04:37.553360 : Razeni od nejlevnejsiho je OK
+2022-05-02 22:04:37.553360 : [156, 157, 158, 163, 164, 165, 166, 167, 169, 171, 171, 171, 172, 173, 174, 175, 175, 175, 176, 177]
+2022-05-02 22:04:37.553360 : [156, 157, 158, 163, 164, 165, 166, 167, 169, 171, 171, 171, 172, 173, 174, 175, 175, 175, 176, 177]
+2022-05-02 22:05:05.172698 : <selenium.webdriver.remote.webelement.WebElement (session="8882f8fecfea6e16bb768c21466ac8c6948202dd", element="node-3A5ADA0F-89D9-4BC6-A1E6-F2821781D865")>
+2022-05-02 22:05:35.703704 : nenasle se exponea banner

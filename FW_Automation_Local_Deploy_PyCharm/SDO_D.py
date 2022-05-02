@@ -1,5 +1,5 @@
 from selenium.common.exceptions import NoSuchElementException
-from to_import import acceptConsent, sendEmail, URL_stat, setUp, tearDown
+from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, sendEmail, URL_stat, setUp, tearDown
 import time
 import unittest
 
