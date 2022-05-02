@@ -1,1 +1,0 @@
-comandExecutor = 'https://alexandrhavlicek1:srQ2pcqFrkx2JFpXMLBX@hub-cloud.browserstack.com/wd/hub'
