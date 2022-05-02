@@ -3,16 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 09-48-52_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 09-48-52_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/CovidInfo_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/CovidInfo_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/Detail_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/Detail_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/Detail_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/Detail_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/DetskeKluby_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/DetskeKluby_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 09-48-34_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 09-48-34_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm/report/FISCHER SK WEB Suite Report_02-05-22 09-48-02_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm/report/FISCHER SK WEB Suite Report_02-05-22 09-48-02_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/KARTAGOSK Web Suite test/KARTAGOSK Web Suite test_02-05-22 09-47-29_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/KARTAGOSK Web Suite test/KARTAGOSK Web Suite test_02-05-22 09-47-29_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_master_browserstack.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_master_browserstack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/FM_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/FM_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/HP_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/HP_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/HP_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/HP_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/LM_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/LM_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/fulltext_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/fulltext_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/groupsearch_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/groupsearch_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/pobocky.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/pobocky.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
