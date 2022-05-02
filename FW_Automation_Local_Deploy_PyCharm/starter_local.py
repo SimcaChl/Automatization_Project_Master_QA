@@ -17,7 +17,7 @@ from FW_Automation_Local_Deploy_PyCharm.HP_C import *
 import HtmlTestRunner
 #import HTMLTestRunner      ##at office PC gotta be set up like that (???)
 
-def suite():
+def suite_FW_full():
     suite = unittest.TestSuite()
     suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
     suite.addTest(TestDetailHotelu_D("test_detail_D"))

@@ -21,7 +21,7 @@ def FW_full_suite():
                             open_in_browser=True, description="FISCHER WEB Suite Report")
     #runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER WEB Suite Report', report_name='FISCHER WEB Suite Report', open_in_browser=True, description="FISCHER WEB Suite Report")
     ##at office PC gotta be set up like that (???)
-    runner.run(suite())
+    runner.run(suite_FW_full())
 def EW_full_suite():
 #if __name__ == '__main__':
     runner = unittest.TextTestRunner()
@@ -34,7 +34,12 @@ def EW_full_suite():
     ##at office PC gotta be set up like that (???)
     runner.run(suite_EW_full())
 
+def running_suites_over_and_over():
+    while True:
+        EW_full_suite()
+        time.sleep(900)
+        FW_full_suite()
+        time.sleep(426)
 
-
-EW_full_suite()
+#EW_full_suite()
 #FW_full_suite()
