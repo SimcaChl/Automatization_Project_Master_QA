@@ -1,0 +1,400 @@
+2022-05-02 17:49:46.992463 : <selenium.webdriver.remote.webelement.WebElement (session="b66d5867937d9c7140f17f4136cd100093c5c508", element="node-9ADF4777-7777-44F2-8D4C-0448DC59198E")>
+2022-05-02 17:50:16.862236 : nenasle se exponea banner
+2022-05-02 17:50:19.061390 : gridy jdou videt
+2022-05-02 17:50:19.680983 : gridy jdou videt
+2022-05-02 17:50:20.749215 : gridy jdou videt
+2022-05-02 17:50:21.500850 : gridy jdou videt
+2022-05-02 17:50:22.229245 : gridy jdou videt
+2022-05-02 17:50:22.846844 : gridy jdou videt
+2022-05-02 17:50:24.034215 : gridy jdou videt
+2022-05-02 17:50:25.292938 : gridy jdou videt
+2022-05-02 17:50:26.486944 : gridy jdou videt
+2022-05-02 17:50:26.852348 : gridy jdou videt
+2022-05-02 17:50:27.533228 : gridy jdou videt
+2022-05-02 17:50:28.153962 : gridy jdou videt
+2022-05-02 17:50:28.533619 : gridy jdou videt
+2022-05-02 17:50:29.130419 : gridy jdou videt
+2022-05-02 17:50:29.643706 : gridy jdou videt
+2022-05-02 17:50:30.784740 : gridy jdou videt
+2022-05-02 17:50:31.912937 : gridy jdou videt
+2022-05-02 17:50:32.907879 : gridy jdou videt
+2022-05-02 17:50:33.708740 : gridy jdou videt
+2022-05-02 17:50:34.450661 : gridy jdou videt
+2022-05-02 17:50:36.091946 : gridy jdou videt
+2022-05-02 17:50:37.416154 : gridy jdou videt
+2022-05-02 17:50:38.489059 : gridy jdou videt
+2022-05-02 17:50:41.911954 : content jdou videt
+2022-05-02 17:50:42.712420 : content jdou videt
+2022-05-02 17:50:43.698865 : content jdou videt
+2022-05-02 17:50:44.545952 : content jdou videt
+2022-05-02 17:50:45.250712 : content jdou videt
+2022-05-02 17:50:46.128768 : content jdou videt
+2022-05-02 17:50:47.047611 : content jdou videt
+2022-05-02 17:50:48.000987 : content jdou videt
+2022-05-02 17:50:49.048906 : content jdou videt
+2022-05-02 17:50:50.089461 : content jdou videt
+2022-05-02 17:50:50.803100 : content jdou videt
+2022-05-02 17:50:51.594935 : content jdou videt
+2022-05-02 17:50:52.324032 : content jdou videt
+2022-05-02 17:50:53.243345 : content jdou videt
+2022-05-02 17:50:54.190173 : content jdou videt
+2022-05-02 17:50:55.319737 : content jdou videt
+2022-05-02 17:50:56.131462 : content jdou videt
+2022-05-02 17:50:57.121815 : content jdou videt
+2022-05-02 17:50:58.606025 : content jdou videt
+2022-05-02 17:50:59.696098 : content jdou videt
+2022-05-02 17:51:01.590487 : content jdou videt
+2022-05-02 17:51:02.360878 : content jdou videt
+2022-05-02 17:51:02.774983 : content jdou videt
+2022-05-02 17:51:29.380441 : <selenium.webdriver.remote.webelement.WebElement (session="26514dc44ad741c2b2fd61bdab0ded3db61fd3f9", element="node-874E450B-C171-4C3C-8B93-9DAFD2A2CA2E")>
+2022-05-02 17:51:31.934718 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="26514dc44ad741c2b2fd61bdab0ded3db61fd3f9", element="node-21F0A80A-2546-4593-8B4E-9A3FFA29380E")>>
+2022-05-02 17:52:17.129008 : <selenium.webdriver.remote.webelement.WebElement (session="157672d3541e0633d99d2de1471b2d74fbd7e26c", element="node-54D27D83-7D51-47D6-B7CC-64D638E83D89")>
+2022-05-02 17:52:46.860083 : nenasle se exponea banner
+2022-05-02 17:52:57.809923 : its ok
+2022-05-02 17:53:21.025985 : <selenium.webdriver.remote.webelement.WebElement (session="872ddb5f325ae47d27e3f7e1fd0bdd27e39b4429", element="node-EB68C6CD-2B74-4B30-94F6-A2921FF0B905")>
+2022-05-02 17:53:50.825988 : nenasle se exponea banner
+2022-05-02 17:53:58.648961 : All inclusive
+2022-05-02 17:54:10.025036 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025036 : ok
+2022-05-02 17:54:10.025987 : ok
+2022-05-02 17:54:10.025987 : ok
+2022-05-02 17:54:10.025987 : ok
+2022-05-02 17:54:10.025987 : ok
+2022-05-02 17:54:10.025987 : ok
+2022-05-02 17:54:10.025987 : ok
+2022-05-02 17:54:10.025987 : ok
+2022-05-02 17:54:10.025987 : ok
+2022-05-02 17:54:46.189495 : <selenium.webdriver.remote.webelement.WebElement (session="06d7289454fa4abef561784f38214104c46543ff", element="node-CB559FF4-D414-4C4A-B091-F9AE18F2A184")>
+2022-05-02 17:55:16.168131 : nenasle se exponea banner
+2022-05-02 17:56:17.371058 : <selenium.webdriver.remote.webelement.WebElement (session="180bb8789cb66b97c0347ce734246b5b7f496efe", element="node-D3ECE8C0-A0EC-4449-8E7D-45B8E89472E2")>
+2022-05-02 17:56:21.002638 : benefit item
+2022-05-02 17:56:21.767949 : benefit item
+2022-05-02 17:56:22.602476 : benefit item
+2022-05-02 17:56:25.324687 : grind container
+2022-05-02 17:56:25.902891 : grind container
+2022-05-02 17:56:26.357366 : grind container
+2022-05-02 17:56:26.705469 : grind container
+2022-05-02 17:56:27.211179 : grind container
+2022-05-02 17:56:28.090347 : grind container
+2022-05-02 17:56:29.113674 : grind container
+2022-05-02 17:56:30.041712 : grind container
+2022-05-02 17:56:30.983384 : grind container
+2022-05-02 17:56:31.661133 : grind container
+2022-05-02 17:56:32.416947 : grind container
+2022-05-02 17:56:33.306498 : grind container
+2022-05-02 17:56:34.647436 : grind container
+2022-05-02 17:56:35.692474 : grind container
+2022-05-02 17:56:36.868832 : grind container
+2022-05-02 17:56:37.458529 : grind container
+2022-05-02 17:56:38.881266 : tile img
+2022-05-02 17:56:39.746786 : tile img
+2022-05-02 17:56:40.739875 : tile img
+2022-05-02 17:56:41.514835 : tile img
+2022-05-02 17:56:42.232664 : tile img
+2022-05-02 17:56:43.045935 : tile img
+2022-05-02 17:56:43.647103 : tile img
+2022-05-02 17:56:44.198196 : tile img
+2022-05-02 17:56:45.145234 : tile img
+2022-05-02 17:56:45.982886 : tile img
+2022-05-02 17:56:46.950301 : tile img
+2022-05-02 17:56:48.001328 : tile img
+2022-05-02 17:56:49.071632 : tile img
+2022-05-02 17:57:17.792255 : <selenium.webdriver.remote.webelement.WebElement (session="b593606f9ffa5e23386670f5e477146a4f3a02b5", element="node-9B776F89-A104-40FB-B3BB-245C39962B7D")>
+2022-05-02 17:57:40.554410 : gridy jdou videt
+2022-05-02 17:57:41.128430 : gridy jdou videt
+2022-05-02 17:57:42.141492 : gridy jdou videt
+2022-05-02 17:57:43.198896 : gridy jdou videt
+2022-05-02 17:57:43.917182 : gridy jdou videt
+2022-05-02 17:57:44.593008 : gridy jdou videt
+2022-05-02 17:57:48.228344 : content jdou videt
+2022-05-02 17:57:49.229946 : content jdou videt
+2022-05-02 17:57:50.069198 : content jdou videt
+2022-05-02 17:57:50.809488 : content jdou videt
+2022-05-02 17:57:51.575663 : content jdou videt
+2022-05-02 17:57:52.787511 : content jdou videt
+2022-05-02 17:58:12.756268 : gridy jdou videt
+2022-05-02 17:58:13.317089 : gridy jdou videt
+2022-05-02 17:58:13.994713 : gridy jdou videt
+2022-05-02 17:58:15.100249 : gridy jdou videt
+2022-05-02 17:58:16.299690 : gridy jdou videt
+2022-05-02 17:58:17.512116 : gridy jdou videt
+2022-05-02 17:58:21.562385 : content jdou videt
+2022-05-02 17:58:22.568487 : content jdou videt
+2022-05-02 17:58:23.451554 : content jdou videt
+2022-05-02 17:58:23.834699 : content jdou videt
+2022-05-02 17:58:24.261038 : content jdou videt
+2022-05-02 17:58:25.080223 : content jdou videt
+2022-05-02 17:58:45.346004 : <selenium.webdriver.remote.webelement.WebElement (session="7ae34a89470d5a473b1956a927856e199352211a", element="node-615E7E94-FDF0-4594-AC75-C218B47393B7")>
+2022-05-02 17:59:37.738213 : <selenium.webdriver.remote.webelement.WebElement (session="121ecf3d8eaf4d45080c491ad40e9fa139ded78c", element="node-4180B7E8-102F-4C6C-A0A2-01022DE36693")>
+2022-05-02 18:00:39.930095 : <selenium.webdriver.remote.webelement.WebElement (session="61d31234932cb31a76a18d9c4998c88488e43902", element="node-CBCCB97B-AF23-4D87-86A8-12C111879FD2")>
+2022-05-02 18:01:37.446013 : <selenium.webdriver.remote.webelement.WebElement (session="04ad251c0c58c9c956238006ba513dab448e0539", element="node-AEFD2006-5610-467F-B9FA-C7777E5A63C9")>
+2022-05-02 18:02:12.908802 : basic info 
+2022-05-02 18:02:13.392648 : basic info 
+2022-05-02 18:02:14.370253 : basic info 
+2022-05-02 18:02:15.537977 : basic info 
+2022-05-02 18:02:16.675398 : basic info 
+2022-05-02 18:02:17.319513 : basic info 
+2022-05-02 18:02:17.845519 : basic info 
+2022-05-02 18:02:18.394736 : basic info 
+2022-05-02 18:02:19.055177 : basic info 
+2022-05-02 18:02:20.223126 : basic info 
+2022-05-02 18:02:21.103334 : basic info 
+2022-05-02 18:02:22.506234 : basic info 
+2022-05-02 18:02:23.349029 : basic info 
+2022-05-02 18:02:23.813099 : basic info 
+2022-05-02 18:02:24.263230 : basic info 
+2022-05-02 18:02:27.515654 : boxiky
+2022-05-02 18:02:28.623291 : boxiky
+2022-05-02 18:02:29.623129 : boxiky
+2022-05-02 18:02:30.447010 : boxiky
+2022-05-02 18:02:31.576911 : boxiky
+2022-05-02 18:02:32.795218 : boxiky
+2022-05-02 18:02:33.774640 : boxiky
+2022-05-02 18:02:34.496884 : boxiky
+2022-05-02 18:02:35.207730 : boxiky
+2022-05-02 18:02:36.249290 : boxiky
+2022-05-02 18:02:37.771076 : boxiky
+2022-05-02 18:02:38.893350 : boxiky
+2022-05-02 18:02:39.638335 : boxiky
+2022-05-02 18:02:40.749843 : boxiky
+2022-05-02 18:02:41.929319 : boxiky
+2022-05-02 18:02:43.134193 : boxiky
+2022-05-02 18:02:44.221267 : boxiky
+2022-05-02 18:02:45.088035 : boxiky
+2022-05-02 18:02:45.717317 : boxiky
+2022-05-02 18:02:46.296668 : boxiky
+2022-05-02 18:02:47.170115 : boxiky
+2022-05-02 18:02:48.355243 : boxiky
+2022-05-02 18:02:49.560200 : boxiky
+2022-05-02 18:02:50.423078 : boxiky
+2022-05-02 18:02:51.180023 : boxiky
+2022-05-02 18:02:51.857367 : boxiky
+2022-05-02 18:02:52.678815 : boxiky
+2022-05-02 18:02:53.391717 : boxiky
+2022-05-02 18:02:54.080089 : boxiky
+2022-05-02 18:02:54.808630 : boxiky
+2022-05-02 18:03:32.710432 : <selenium.webdriver.remote.webelement.WebElement (session="4f966651f53027af7caae1f70ec38a8ef44b1338", element="node-FAD82556-CE95-4B00-AD0B-82EE7CAB4C34")>
+2022-05-02 18:05:23.043297 : <selenium.webdriver.remote.webelement.WebElement (session="45aedc099400609c77d7e2d0908bbf0e59121f08", element="node-7E671EC2-4E24-44E6-99EC-FA7CC75CB08F")>
+2022-05-02 18:05:54.167752 : nenasle se exponea banner
+2022-05-02 18:06:24.529160 : Razeni od nejlevnejsiho je OK
+2022-05-02 18:06:24.529160 : [120, 120, 123, 123, 123, 123, 123, 123, 127, 127, 129, 129, 135, 135, 135, 135, 140, 140, 143, 143]
+2022-05-02 18:06:24.529160 : [120, 120, 123, 123, 123, 123, 123, 123, 127, 127, 129, 129, 135, 135, 135, 135, 140, 140, 143, 143]
+2022-05-02 18:07:02.044620 : <selenium.webdriver.remote.webelement.WebElement (session="64c6021f2bab461de31eb258e24a67f50de326fd", element="node-CB3EE0B4-6FC9-4254-8549-1B1B459FC185")>
+2022-05-02 18:07:31.158489 : Razeni od nejdrazshio je OK
+2022-05-02 18:07:31.158489 : [393, 393, 361, 361, 353, 353, 337, 337, 331, 331, 327, 327, 325, 325, 307, 307, 287, 287, 286, 286]
+2022-05-02 18:07:31.158489 : [393, 393, 361, 361, 353, 353, 337, 337, 331, 331, 327, 327, 325, 325, 307, 307, 287, 287, 286, 286]
+2022-05-02 18:08:05.130239 : <selenium.webdriver.remote.webelement.WebElement (session="ee0460b6ceb7bc5d1cd7969481b872c6a80a995d", element="node-7E24BE6C-26AF-4585-9CF3-BFE89CE1BF66")>
+2022-05-02 18:08:35.843549 : nenasle se exponea banner
+2022-05-02 18:09:37.562612 : nenasel se large kolecko
+2022-05-02 18:10:03.664361 : nenasel se large kolecko
+2022-05-02 18:10:08.452669 : nenasel se small kolecko ElementNotInteractableException
+2022-05-02 18:11:02.497953 : <selenium.webdriver.remote.webelement.WebElement (session="7fdde072603782a1b4efa8f324ed45a2fe1c5cc2", element="node-2C4C86A9-B93A-4674-89BE-909FBC6A37F3")>
+2022-05-02 18:11:33.054499 : nenasle se exponea banner
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ok
+2022-05-02 18:11:52.259227 : ['All inclusive', 'All inclusive', 'Soft all inclusive', 'Soft all inclusive', 'Soft all inclusive', 'Soft all inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'Soft all inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'Soft all inclusive']
+2022-05-02 18:12:27.190473 : <selenium.webdriver.remote.webelement.WebElement (session="10741f22893a71c9c53cc430c339373f2937339f", element="node-759BCF09-08FC-451E-AA78-E2FF4B142E21")>
+2022-05-02 18:12:57.036845 : nenasle se exponea banner
+2022-05-02 18:12:58.229430 : |||||HOTEL CISLO|||||||
+2022-05-02 18:12:58.229430 : 1
+2022-05-02 18:12:58.229430 : 1
+2022-05-02 18:12:58.229430 : 1
+2022-05-02 18:13:05.479413 : 713 €
+2022-05-02 18:13:43.205795 : nenasle se exponea banner
+2022-05-02 18:13:49.069671 :   713 €
+2022-05-02 18:14:24.130578 : <selenium.webdriver.remote.webelement.WebElement (session="bec30e383d274e2314a7db14afea4359eb87e5f4", element="node-F4F62B4D-0E1F-42E7-B355-0755EEA92750")>
+2022-05-02 18:14:31.381048 : True
+2022-05-02 18:14:31.770337 : True
+2022-05-02 18:14:32.501683 : True
+2022-05-02 18:14:32.889928 : True
+2022-05-02 18:14:33.266366 : True
+2022-05-02 18:14:33.752927 : True
+2022-05-02 18:14:34.378706 : True
+2022-05-02 18:14:35.186707 : True
+2022-05-02 18:14:35.752639 : True
+2022-05-02 18:14:36.076697 : True
+2022-05-02 18:14:36.474587 : True
+2022-05-02 18:14:36.852596 : True
+2022-05-02 18:14:37.326179 : True
+2022-05-02 18:14:37.676904 : True
+2022-05-02 18:14:38.015185 : True
+2022-05-02 18:14:38.439872 : True
+2022-05-02 18:14:38.945613 : True
+2022-05-02 18:14:39.897160 : True
+2022-05-02 18:14:40.664072 : True
+2022-05-02 18:14:41.175999 : True
+2022-05-02 18:14:45.620694 : True
+2022-05-02 18:14:47.532454 : True
+2022-05-02 18:14:48.926671 : True
+2022-05-02 18:14:49.976243 : True
+2022-05-02 18:14:51.177840 : True
+2022-05-02 18:14:51.881301 : True
+2022-05-02 18:14:52.337806 : True
+2022-05-02 18:14:53.052345 : True
+2022-05-02 18:14:53.470182 : True
+2022-05-02 18:14:54.010592 : True
+2022-05-02 18:14:54.640798 : True
+2022-05-02 18:14:55.207495 : True
+2022-05-02 18:14:55.812113 : True
+2022-05-02 18:14:56.200139 : True
+2022-05-02 18:14:56.561018 : True
+2022-05-02 18:14:57.129858 : True
+2022-05-02 18:14:58.171861 : True
+2022-05-02 18:14:58.982064 : True
+2022-05-02 18:14:59.610995 : True
+2022-05-02 18:15:00.296059 : True
+2022-05-02 18:15:02.667114 : ceny
+2022-05-02 18:15:03.219918 : ceny
+2022-05-02 18:15:04.431466 : ceny
+2022-05-02 18:15:05.001293 : ceny
+2022-05-02 18:15:05.432342 : ceny
+2022-05-02 18:15:05.837149 : ceny
+2022-05-02 18:15:06.525850 : ceny
+2022-05-02 18:15:06.881339 : ceny
+2022-05-02 18:15:07.454767 : ceny
+2022-05-02 18:15:07.999899 : ceny
+2022-05-02 18:15:08.655938 : ceny
+2022-05-02 18:15:09.284751 : ceny
+2022-05-02 18:15:10.415405 : ceny
+2022-05-02 18:15:11.033840 : ceny
+2022-05-02 18:15:11.715837 : ceny
+2022-05-02 18:15:12.518937 : ceny
+2022-05-02 18:15:12.964701 : ceny
+2022-05-02 18:15:13.594365 : ceny
+2022-05-02 18:15:14.154229 : ceny
+2022-05-02 18:15:14.826325 : ceny
+2022-05-02 18:15:15.446053 : ceny
+2022-05-02 18:15:16.135266 : ceny
+2022-05-02 18:15:16.629263 : ceny
+2022-05-02 18:15:17.352922 : ceny
+2022-05-02 18:15:17.798676 : ceny
+2022-05-02 18:15:18.242761 : ceny
+2022-05-02 18:15:18.741882 : ceny
+2022-05-02 18:15:19.270390 : ceny
+2022-05-02 18:15:20.030403 : ceny
+2022-05-02 18:15:20.714380 : ceny
+2022-05-02 18:15:21.398462 : ceny
+2022-05-02 18:15:22.077170 : ceny
+2022-05-02 18:15:22.818118 : ceny
+2022-05-02 18:15:23.225134 : ceny
+2022-05-02 18:15:23.771893 : ceny
+2022-05-02 18:15:24.177847 : ceny
+2022-05-02 18:15:24.992725 : ceny
+2022-05-02 18:15:25.699290 : ceny
+2022-05-02 18:15:26.192206 : ceny
+2022-05-02 18:15:26.770496 : ceny
+2022-05-02 18:15:59.603354 : <selenium.webdriver.remote.webelement.WebElement (session="195f3686377cab0b6f3473ab5c458a94436479b8", element="node-8BE68E5E-5CAF-4665-A41E-BB046DC89F77")>
+2022-05-02 18:16:26.642917 : True
+2022-05-02 18:16:27.745544 : True
+2022-05-02 18:16:28.523118 : True
+2022-05-02 18:16:29.308368 : True
+2022-05-02 18:16:29.968873 : True
+2022-05-02 18:16:30.516554 : True
+2022-05-02 18:16:31.147341 : True
+2022-05-02 18:16:31.745480 : True
+2022-05-02 18:16:32.070032 : True
+2022-05-02 18:16:32.408968 : True
+2022-05-02 18:16:33.459300 : True
+2022-05-02 18:16:34.139152 : True
+2022-05-02 18:16:34.978256 : True
+2022-05-02 18:16:35.656450 : True
+2022-05-02 18:16:36.286361 : True
+2022-05-02 18:16:37.064499 : True
+2022-05-02 18:16:37.576393 : True
+2022-05-02 18:16:38.004157 : True
+2022-05-02 18:16:38.506559 : True
+2022-05-02 18:16:39.053366 : True
+2022-05-02 18:16:42.054300 : True
+2022-05-02 18:16:42.674515 : True
+2022-05-02 18:16:43.150808 : True
+2022-05-02 18:16:43.814153 : True
+2022-05-02 18:16:44.254204 : True
+2022-05-02 18:16:44.642967 : True
+2022-05-02 18:16:45.142341 : True
+2022-05-02 18:16:45.644635 : True
+2022-05-02 18:16:46.209752 : True
+2022-05-02 18:16:46.770666 : True
+2022-05-02 18:16:47.457325 : True
+2022-05-02 18:16:48.165478 : True
+2022-05-02 18:16:48.783324 : True
+2022-05-02 18:16:49.389726 : True
+2022-05-02 18:16:50.082305 : True
+2022-05-02 18:16:50.843313 : True
+2022-05-02 18:16:51.529087 : True
+2022-05-02 18:16:52.525074 : True
+2022-05-02 18:16:53.413973 : True
+2022-05-02 18:16:54.045367 : True
+2022-05-02 18:16:57.321450 : ceny
+2022-05-02 18:16:58.425655 : ceny
+2022-05-02 18:16:59.207813 : ceny
+2022-05-02 18:16:59.777249 : ceny
+2022-05-02 18:17:00.437053 : ceny
+2022-05-02 18:17:01.093376 : ceny
+2022-05-02 18:17:01.856106 : ceny
+2022-05-02 18:17:02.649535 : ceny
+2022-05-02 18:17:03.358742 : ceny
+2022-05-02 18:17:04.191807 : ceny
+2022-05-02 18:17:04.752349 : ceny
+2022-05-02 18:17:05.219600 : ceny
+2022-05-02 18:17:05.751564 : ceny
+2022-05-02 18:17:06.162998 : ceny
+2022-05-02 18:17:06.597138 : ceny
+2022-05-02 18:17:07.094758 : ceny
+2022-05-02 18:17:08.041605 : ceny
+2022-05-02 18:17:08.900731 : ceny
+2022-05-02 18:17:09.665091 : ceny
+2022-05-02 18:17:10.545145 : ceny
+2022-05-02 18:17:11.042894 : ceny
+2022-05-02 18:17:11.421581 : ceny
+2022-05-02 18:17:11.815806 : ceny
+2022-05-02 18:17:12.267789 : ceny
+2022-05-02 18:17:12.782886 : ceny
+2022-05-02 18:17:13.120996 : ceny
+2022-05-02 18:17:13.706315 : ceny
+2022-05-02 18:17:14.251160 : ceny
+2022-05-02 18:17:14.743441 : ceny
+2022-05-02 18:17:15.275136 : ceny
+2022-05-02 18:17:15.958387 : ceny
+2022-05-02 18:17:16.314066 : ceny
+2022-05-02 18:17:16.617012 : ceny
+2022-05-02 18:17:17.073255 : ceny
+2022-05-02 18:17:17.527880 : ceny
+2022-05-02 18:17:18.176293 : ceny
+2022-05-02 18:17:19.080947 : ceny
+2022-05-02 18:17:20.007640 : ceny
+2022-05-02 18:17:20.777083 : ceny
+2022-05-02 18:17:21.097055 : ceny
+2022-05-02 18:17:53.276739 : <selenium.webdriver.remote.webelement.WebElement (session="91df44497c01f2f1bfe4c05084e1a09ea30989b5", element="node-24B8F51B-A80B-485C-9234-C40CC60171AD")>
+2022-05-02 18:18:45.183808 : <selenium.webdriver.remote.webelement.WebElement (session="333517dfef6d03a80c7aec07d3d3ab459be32a70", element="node-AA028076-E4D8-4834-965C-1D09871EA932")>
+2022-05-02 18:19:05.535690 : ['\n                        15.5. (Ne)  / 7 nocí\n                        \nArabské emiráty  (Arabské emiráty)                        \n                        Bratislava\n                        \n                            723 €\n\n                        \n                    ', '\n                        19.5. (Št)  / 7 nocí\n                        \nHurghada  (Egypt)                        \n                        Bratislava\n                        \n                            574 €\n\n                        \n                    ', '\n                        1.6. (St)  / 7 nocí\n                        \nMarsa Alam  (Egypt)                        \n                        Bratislava\n                        \n                            607 €\n\n                        \n                    ', '\n                        7.6. (Út)  / 7 nocí\n                        \nTunisko (pevnina)  (Tunisko)                        \n                        Bratislava\n                        \n                            442 €\n\n                        \n                    ', '\n                        8.6. (St)  / 7 nocí\n                        \nMallorca  (Španielsko)                        \n                        Bratislava\n                        \n                            651 €\n\n                        \n                    ', '\n                        13.6. (Po)  / 7 nocí\n                        \nCosta Almeria (Španielsko)                        \n                        Bratislava\n                        \n                            607 €\n                             \n                        \n                    ', '\n                        16.6. (Št)  / 7 nocí\n                        \nSeverné pobrežie (Senegal)                        \n                        Bratislava\n                        \n                            1 131 €\n                             \n                        \n                    ', '\n                        16.6. (Št)  / 7 nocí\n                        \nDjerba (Tunisko)                        \n                        Bratislava\n                        \n                            474 €\n                             \n                        \n                    ', '\n                        24.6. (Pi)  / 7 nocí\n                        \nBurgas (Bulharsko)                        \n                        Košice\n                        \n                            456 €\n                             \n                        \n                    ', '\n                        28.6. (Út)  / 7 nocí\n                        \nBurgas (Bulharsko)                        \n                        Bratislava\n                        \n                            566 €\n                             \n                        \n                    ']
+2022-05-02 18:19:05.535690 : ['\n                        7.6. (Út)  / 7 nocí\n                        \nRhodos  (Grécko)                        \n                        Bratislava\n                        \n                            442 €\n\n                        \n                    ', '\n                        7.6. (Út)  / 7 nocí\n                        \nTurecká riviéra  (Turecko)                        \n                        Bratislava\n                        \n                            443 €\n\n                        \n                    ', '\n                        8.6. (St)  / 7 nocí\n                        \nMallorca  (Španielsko)                        \n                        Bratislava\n                        \n                            651 €\n\n                        \n                    ', '\n                        9.6. (Št)  / 7 nocí\n                        \nZakynthos  (Grécko)                        \n                        Bratislava\n                        \n                            687 €\n\n                        \n                    ', '\n                        11.6. (So)  / 7 nocí\n                        \nKréta  (Grécko)                        \n                        Bratislava\n                        \n                            472 €\n\n                        \n                    ', '\n                        12.6. (Ne)  / 7 nocí\n                        \nKos  (Grécko)                        \n                        Bratislava\n                        \n                            551 €\n\n                        \n                    ', '\n                        13.6. (Po)  / 7 nocí\n                        \nBoa Vista (Kapverdské ostrovy)                        \n                        Bratislava\n                        \n                            930 €\n                             \n                        \n                    ', '\n                        13.6. (Po)  / 7 nocí\n                        \nCosta Almeria (Španielsko)                        \n                        Bratislava\n                        \n                            607 €\n                             \n                        \n                    ', '\n                        13.6. (Po)  / 7 nocí\n                        \nSal (Kapverdské ostrovy)                        \n                        Bratislava\n                        \n                            981 €\n                             \n                        \n                    ', '\n                        13.6. (Po)  / 7 nocí\n                        \nKorfu (Grécko)                        \n                        Bratislava\n                        \n                            486 €\n                             \n                        \n                    ', '\n                        16.6. (Št)  / 7 nocí\n                        \nSeverné pobrežie (Senegal)                        \n                        Bratislava\n                        \n                            1 131 €\n                             \n                        \n                    ']
+2022-05-02 18:19:26.276651 : <selenium.webdriver.remote.webelement.WebElement (session="41c5037b9860b9550350b7089edc1a8743ac2338", element="node-73697643-07F0-49DA-A51B-B1B96148833A")>

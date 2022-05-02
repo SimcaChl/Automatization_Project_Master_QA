@@ -1,0 +1,1623 @@
+2022-03-29 19:34:10.101952 : 
+                             
+                             
+2022-03-29 19:34:10.101952 : ====== WebDriver manager ======
+                             
+2022-03-29 19:34:10.125957 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:34:10.125957 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:34:10.479017 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:34:17.259999 : <selenium.webdriver.remote.webelement.WebElement (session="89a62568e9472fa0bc246caf8601e70c", element="043d8d4e-0b1a-4c4f-96be-4cabb45ebc24")>
+2022-03-29 19:34:45.174656 : nenasle se exponea banner
+2022-03-29 19:34:45.242104 : gridy jdou videt
+2022-03-29 19:34:45.251116 : gridy jdou videt
+2022-03-29 19:34:45.258098 : gridy jdou videt
+2022-03-29 19:34:45.266105 : gridy jdou videt
+2022-03-29 19:34:45.274103 : gridy jdou videt
+2022-03-29 19:34:45.281101 : gridy jdou videt
+2022-03-29 19:34:45.289099 : gridy jdou videt
+2022-03-29 19:34:45.296215 : gridy jdou videt
+2022-03-29 19:34:45.304212 : gridy jdou videt
+2022-03-29 19:34:45.311209 : gridy jdou videt
+2022-03-29 19:34:45.318210 : gridy jdou videt
+2022-03-29 19:34:45.325205 : gridy jdou videt
+2022-03-29 19:34:45.333203 : gridy jdou videt
+2022-03-29 19:34:45.340201 : gridy jdou videt
+2022-03-29 19:34:45.347198 : gridy jdou videt
+2022-03-29 19:34:45.354196 : gridy jdou videt
+2022-03-29 19:34:45.361615 : gridy jdou videt
+2022-03-29 19:34:45.368614 : gridy jdou videt
+2022-03-29 19:34:45.375612 : gridy jdou videt
+2022-03-29 19:34:45.383619 : gridy jdou videt
+2022-03-29 19:34:45.390617 : gridy jdou videt
+2022-03-29 19:34:45.397614 : gridy jdou videt
+2022-03-29 19:34:45.404248 : gridy jdou videt
+2022-03-29 19:34:45.412248 : gridy jdou videt
+2022-03-29 19:34:45.419246 : gridy jdou videt
+2022-03-29 19:34:45.426243 : gridy jdou videt
+2022-03-29 19:34:45.433241 : gridy jdou videt
+2022-03-29 19:34:45.440245 : gridy jdou videt
+2022-03-29 19:34:45.447236 : gridy jdou videt
+2022-03-29 19:34:45.454235 : gridy jdou videt
+2022-03-29 19:34:45.462651 : gridy jdou videt
+2022-03-29 19:34:45.469634 : gridy jdou videt
+2022-03-29 19:34:45.476634 : gridy jdou videt
+2022-03-29 19:34:45.484630 : gridy jdou videt
+2022-03-29 19:34:45.492626 : gridy jdou videt
+2022-03-29 19:34:45.501640 : gridy jdou videt
+2022-03-29 19:34:45.509630 : gridy jdou videt
+2022-03-29 19:34:45.516628 : gridy jdou videt
+2022-03-29 19:34:45.523626 : gridy jdou videt
+2022-03-29 19:34:45.530614 : gridy jdou videt
+2022-03-29 19:34:45.537630 : gridy jdou videt
+2022-03-29 19:34:45.544860 : gridy jdou videt
+2022-03-29 19:34:45.552860 : gridy jdou videt
+2022-03-29 19:34:45.560857 : gridy jdou videt
+2022-03-29 19:34:45.567865 : gridy jdou videt
+2022-03-29 19:34:45.574859 : gridy jdou videt
+2022-03-29 19:34:45.582865 : gridy jdou videt
+2022-03-29 19:34:45.590857 : gridy jdou videt
+2022-03-29 19:34:45.597845 : gridy jdou videt
+2022-03-29 19:34:45.605842 : gridy jdou videt
+2022-03-29 19:34:45.722789 : content jdou videt
+2022-03-29 19:34:45.729772 : content jdou videt
+2022-03-29 19:34:45.737770 : content jdou videt
+2022-03-29 19:34:45.745776 : content jdou videt
+2022-03-29 19:34:45.752994 : content jdou videt
+2022-03-29 19:34:45.760982 : content jdou videt
+2022-03-29 19:34:45.768988 : content jdou videt
+2022-03-29 19:34:45.775969 : content jdou videt
+2022-03-29 19:34:45.783974 : content jdou videt
+2022-03-29 19:34:45.791964 : content jdou videt
+2022-03-29 19:34:45.799961 : content jdou videt
+2022-03-29 19:34:45.806958 : content jdou videt
+2022-03-29 19:34:45.813957 : content jdou videt
+2022-03-29 19:34:45.821954 : content jdou videt
+2022-03-29 19:34:45.828952 : content jdou videt
+2022-03-29 19:34:45.836950 : content jdou videt
+2022-03-29 19:34:45.844786 : content jdou videt
+2022-03-29 19:34:45.851771 : content jdou videt
+2022-03-29 19:34:45.860768 : content jdou videt
+2022-03-29 19:34:45.867766 : content jdou videt
+2022-03-29 19:34:45.875671 : content jdou videt
+2022-03-29 19:34:45.882666 : content jdou videt
+2022-03-29 19:34:45.890657 : content jdou videt
+2022-03-29 19:34:45.898654 : content jdou videt
+2022-03-29 19:34:45.906655 : content jdou videt
+2022-03-29 19:34:45.914649 : content jdou videt
+2022-03-29 19:34:45.921647 : content jdou videt
+2022-03-29 19:34:45.929415 : content jdou videt
+2022-03-29 19:34:45.937425 : content jdou videt
+2022-03-29 19:34:45.945423 : content jdou videt
+2022-03-29 19:34:45.952411 : content jdou videt
+2022-03-29 19:34:45.961192 : content jdou videt
+2022-03-29 19:34:45.991184 : content jdou videt
+2022-03-29 19:34:46.003179 : content jdou videt
+2022-03-29 19:34:46.013175 : content jdou videt
+2022-03-29 19:34:46.021173 : content jdou videt
+2022-03-29 19:34:46.029171 : content jdou videt
+2022-03-29 19:34:46.038168 : content jdou videt
+2022-03-29 19:34:46.046165 : content jdou videt
+2022-03-29 19:34:46.062161 : content jdou videt
+2022-03-29 19:34:46.078154 : content jdou videt
+2022-03-29 19:34:46.086153 : content jdou videt
+2022-03-29 19:34:46.096149 : content jdou videt
+2022-03-29 19:34:46.103147 : content jdou videt
+2022-03-29 19:34:46.116143 : content jdou videt
+2022-03-29 19:34:46.129156 : content jdou videt
+2022-03-29 19:34:46.137136 : content jdou videt
+2022-03-29 19:34:46.150133 : content jdou videt
+2022-03-29 19:34:46.164127 : content jdou videt
+2022-03-29 19:34:46.172125 : content jdou videt
+2022-03-29 19:34:48.344339 : 
+                             
+                             
+2022-03-29 19:34:48.344339 : ====== WebDriver manager ======
+                             
+2022-03-29 19:34:48.375328 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:34:48.375328 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:34:48.478426 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:34:54.853781 : <selenium.webdriver.remote.webelement.WebElement (session="5efd9856b23bd10ebd0fe27e6c238fb6", element="39ac66ee-ee97-47e3-918d-d738b6e8c725")>
+2022-03-29 19:34:55.440388 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="5efd9856b23bd10ebd0fe27e6c238fb6", element="37ffde35-0e8f-4c14-ae78-b7a5f89dd586")>>
+2022-03-29 19:34:58.733284 : 
+                             
+                             
+2022-03-29 19:34:58.733284 : ====== WebDriver manager ======
+                             
+2022-03-29 19:34:58.752297 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:34:58.752297 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:34:58.855827 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:35:04.474940 : <selenium.webdriver.remote.webelement.WebElement (session="9ca1ab5c5c6906b0e9471cf189c614b4", element="c7011a0c-73b0-4399-aa43-6390e6b5558b")>
+2022-03-29 19:35:32.314735 : nenasle se exponea banner
+2022-03-29 19:35:32.443692 : its ok
+2022-03-29 19:35:34.617360 : 
+                             
+                             
+2022-03-29 19:35:34.617360 : ====== WebDriver manager ======
+                             
+2022-03-29 19:35:34.657050 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:35:34.657050 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:35:35.223185 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:35:44.642019 : <selenium.webdriver.remote.webelement.WebElement (session="5ba6772676ef4320e319415755f24181", element="f3a63a16-9fcd-44ba-97bb-57cd3ca2e7c1")>
+2022-03-29 19:36:12.506782 : nenasle se exponea banner
+2022-03-29 19:36:13.035162 : Snídanì
+2022-03-29 19:36:14.200354 : ['Snídanì', 'Snídanì', 'Snídanì', 'Snídanì']
+2022-03-29 19:36:14.200354 : ok
+2022-03-29 19:36:14.200354 : ok
+2022-03-29 19:36:14.200354 : ok
+2022-03-29 19:36:14.200354 : ok
+2022-03-29 19:36:17.446835 : 
+                             
+                             
+2022-03-29 19:36:17.446835 : ====== WebDriver manager ======
+                             
+2022-03-29 19:36:17.465509 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:36:17.465509 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:36:17.839045 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:36:24.876567 : <selenium.webdriver.remote.webelement.WebElement (session="6cb226cc7029aa433b38f0f793cfb1e1", element="b8d0e3b0-2e06-44bb-aac6-13468eb33712")>
+2022-03-29 19:36:52.830650 : nenasle se exponea banner
+2022-03-29 19:36:58.764868 : 
+                             
+                             
+2022-03-29 19:36:58.764868 : ====== WebDriver manager ======
+                             
+2022-03-29 19:36:58.809601 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:36:58.810600 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:36:59.120492 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:37:09.120509 : <selenium.webdriver.remote.webelement.WebElement (session="79edd122084f784fa918264ecfc4f5bd", element="5713b009-4082-46fa-bffa-93effc7a73d0")>
+2022-03-29 19:37:09.424472 : benefit item
+2022-03-29 19:37:09.432470 : benefit item
+2022-03-29 19:37:09.443467 : benefit item
+2022-03-29 19:37:09.451465 : benefit item
+2022-03-29 19:37:09.746370 : benefit item
+2022-03-29 19:37:09.754368 : benefit item
+2022-03-29 19:37:09.762367 : benefit item
+2022-03-29 19:37:09.949713 : grind container
+2022-03-29 19:37:09.956711 : grind container
+2022-03-29 19:37:09.963709 : grind container
+2022-03-29 19:37:09.969706 : grind container
+2022-03-29 19:37:09.976703 : grind container
+2022-03-29 19:37:09.991700 : grind container
+2022-03-29 19:37:09.999696 : grind container
+2022-03-29 19:37:10.006694 : grind container
+2022-03-29 19:37:10.013692 : grind container
+2022-03-29 19:37:10.020689 : grind container
+2022-03-29 19:37:10.027687 : grind container
+2022-03-29 19:37:10.035685 : grind container
+2022-03-29 19:37:10.043683 : grind container
+2022-03-29 19:37:10.051681 : grind container
+2022-03-29 19:37:10.058678 : grind container
+2022-03-29 19:37:10.065675 : grind container
+2022-03-29 19:37:10.078673 : grind container
+2022-03-29 19:37:10.085669 : grind container
+2022-03-29 19:37:10.091667 : grind container
+2022-03-29 19:37:10.098664 : grind container
+2022-03-29 19:37:10.106662 : grind container
+2022-03-29 19:37:10.619208 : tile img
+2022-03-29 19:37:10.632208 : tile img
+2022-03-29 19:37:10.640201 : tile img
+2022-03-29 19:37:10.647203 : tile img
+2022-03-29 19:37:10.654196 : tile img
+2022-03-29 19:37:10.662194 : tile img
+2022-03-29 19:37:10.670193 : tile img
+2022-03-29 19:37:10.677189 : tile img
+2022-03-29 19:37:10.685186 : tile img
+2022-03-29 19:37:10.692184 : tile img
+2022-03-29 19:37:10.700182 : tile img
+2022-03-29 19:37:10.707180 : tile img
+2022-03-29 19:37:10.714177 : tile img
+2022-03-29 19:37:10.721175 : tile img
+2022-03-29 19:37:10.728173 : tile img
+2022-03-29 19:37:12.911529 : 
+                             
+                             
+2022-03-29 19:37:12.911529 : ====== WebDriver manager ======
+                             
+2022-03-29 19:37:12.944514 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:37:12.944514 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:37:13.039725 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:37:21.469325 : <selenium.webdriver.remote.webelement.WebElement (session="1a79d65305d5017ef237df0d7ac2cd80", element="3d6329f9-34e3-4f3c-ae65-a65e96839c53")>
+2022-03-29 19:37:21.623263 : Položka menu existuje
+2022-03-29 19:37:23.467111 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:24.558542 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:25.231167 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:25.474043 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:25.968885 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:26.441734 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:26.890590 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:27.223503 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:28.015249 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:28.557058 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:28.747997 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:28.919942 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:29.131012 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:29.273966 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:29.458924 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:29.627763 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:29.987068 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:30.332277 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:30.615270 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:31.093539 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:31.326077 : https://www.fischer.cz/first-minute 200
+2022-03-29 19:37:34.586060 : 
+                             
+                             
+2022-03-29 19:37:34.586060 : ====== WebDriver manager ======
+                             
+2022-03-29 19:37:34.637896 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:37:34.637896 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:37:34.792380 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:37:42.565186 : <selenium.webdriver.remote.webelement.WebElement (session="60ff918b366eec5ecafd355a95cad01b", element="96c475be-421e-42b3-a4a2-48eedfc86cc9")>
+2022-03-29 19:37:48.867281 : 
+                             
+                             
+2022-03-29 19:37:48.867281 : ====== WebDriver manager ======
+                             
+2022-03-29 19:37:48.915215 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:37:48.915215 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:37:49.009719 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:37:58.704541 : <selenium.webdriver.remote.webelement.WebElement (session="4ffda50f5d9ad235b3a754e7e60db5ca", element="09609fc9-5f5b-4dcc-95c0-d92eef1db096")>
+2022-03-29 19:38:02.200524 : ZANZIBAR
+2022-03-29 19:38:04.691605 : hote dlazdice klik
+2022-03-29 19:38:08.308963 : ØECKO
+2022-03-29 19:38:34.765907 : last no such ele except
+2022-03-29 19:38:40.091405 : TURECKO
+2022-03-29 19:38:41.955086 : hote dlazdice klik
+2022-03-29 19:38:45.552603 : EGYPT
+2022-03-29 19:39:12.021972 : last no such ele except
+2022-03-29 19:39:16.102496 : KAPVERDY
+2022-03-29 19:39:18.762706 : hote dlazdice klik
+2022-03-29 19:39:22.653655 : OMAN
+2022-03-29 19:39:24.337345 : hote dlazdice klik
+2022-03-29 19:39:27.892492 : MALEDIVY
+2022-03-29 19:39:30.535174 : hote dlazdice klik
+2022-03-29 19:39:34.269338 : DUBAJ
+2022-03-29 19:39:36.839638 : hote dlazdice klik
+2022-03-29 19:39:40.423062 : MALLORCA
+2022-03-29 19:39:42.703457 : hote dlazdice klik
+2022-03-29 19:39:46.278783 : BULHARSKO
+2022-03-29 19:39:48.433777 : hote dlazdice klik
+2022-03-29 19:39:52.175390 : CHORVATSKO
+2022-03-29 19:40:20.609078 : last no such ele except
+2022-03-29 19:40:26.187274 : KEFALONIA
+2022-03-29 19:40:28.222234 : hote dlazdice klik
+2022-03-29 19:40:32.449799 : ATTIKA
+2022-03-29 19:40:59.000498 : last no such ele except
+2022-03-29 19:41:03.520347 : POJIŠTÌNÍ
+2022-03-29 19:41:05.244605 : hote dlazdice klik
+2022-03-29 19:41:09.091218 : PARKOVÁNÍ
+2022-03-29 19:41:12.065191 : hote dlazdice klik
+2022-03-29 19:41:17.843075 : COVID
+2022-03-29 19:41:45.636494 : last no such ele except
+2022-03-29 19:41:50.115485 : FUNTAZIE
+2022-03-29 19:41:52.338203 : hote dlazdice klik
+2022-03-29 19:41:56.637608 : MIRAGE BAY
+2022-03-29 19:41:59.006283 : hote dlazdice klik
+2022-03-29 19:42:02.938577 : MITSIS
+2022-03-29 19:42:05.581163 : hote dlazdice klik
+2022-03-29 19:42:09.632915 : PRIMA LIFE
+2022-03-29 19:42:12.544934 : hote dlazdice klik
+2022-03-29 19:42:16.692534 : PRIMA LIFE MAKADI
+2022-03-29 19:42:19.699689 : hote dlazdice klik
+2022-03-29 19:42:24.036647 : PEGASOS
+2022-03-29 19:42:26.245457 : hote dlazdice klik
+2022-03-29 19:42:30.683239 : PICKALBATROS
+2022-03-29 19:42:33.431536 : hote dlazdice klik
+2022-03-29 19:42:37.253964 : TITANIC
+2022-03-29 19:42:39.652820 : hote dlazdice klik
+2022-03-29 19:42:43.766596 : MIRAGE
+2022-03-29 19:42:46.835006 : hote dlazdice klik
+2022-03-29 19:42:50.977486 : DOMES AULÜS
+2022-03-29 19:42:54.063510 : hote dlazdice klik
+2022-03-29 19:42:58.305485 : BAY & MARE
+2022-03-29 19:43:00.650006 : hote dlazdice klik
+2022-03-29 19:43:04.901532 : A FOR ART
+2022-03-29 19:43:07.575964 : hote dlazdice klik
+2022-03-29 19:43:11.913148 : PORTO SKALA 7
+2022-03-29 19:43:14.372717 : hote dlazdice klik
+2022-03-29 19:43:18.416651 : COSTA AZZURRA
+2022-03-29 19:43:21.996369 : hote dlazdice klik
+2022-03-29 19:43:26.261994 : LA CITE
+2022-03-29 19:43:28.718525 : hote dlazdice klik
+2022-03-29 19:43:33.111399 : NAFTILOS
+2022-03-29 19:43:35.531714 : hote dlazdice klik
+2022-03-29 19:43:40.005677 : STEFANOS
+2022-03-29 19:43:42.321893 : hote dlazdice klik
+2022-03-29 19:43:46.284471 : MAGNOLIA
+2022-03-29 19:43:48.561796 : hote dlazdice klik
+2022-03-29 19:43:52.583305 : WHITE GOLD
+2022-03-29 19:43:54.272520 : hote dlazdice klik
+2022-03-29 19:43:58.111052 : KING TUT RESORT
+2022-03-29 19:44:00.716607 : hote dlazdice klik
+2022-03-29 19:44:04.369467 : BLUE WATERS
+2022-03-29 19:44:06.943330 : hote dlazdice klik
+2022-03-29 19:44:10.832052 : PRIMASOL
+2022-03-29 19:44:13.517571 : hote dlazdice klik
+2022-03-29 19:44:17.656211 : DOUBLETREE
+2022-03-29 19:44:19.963453 : hote dlazdice klik
+2022-03-29 19:44:22.221565 : 
+                             
+                             
+2022-03-29 19:44:22.221565 : ====== WebDriver manager ======
+                             
+2022-03-29 19:44:22.262536 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:44:22.262536 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:44:22.483781 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:44:27.464542 : <selenium.webdriver.remote.webelement.WebElement (session="ee49081d4860f97cf6e455ab139e3998", element="f6864695-cd26-41d1-94c4-4a469e9aa19e")>
+2022-03-29 19:44:27.815430 : ZANZIBAR
+2022-03-29 19:44:32.262714 : ØECKO
+2022-03-29 19:45:03.353202 : TURECKO
+2022-03-29 19:45:06.333323 : EGYPT
+2022-03-29 19:45:39.167849 : KAPVERDY
+2022-03-29 19:45:44.517266 : OMAN
+2022-03-29 19:45:49.935377 : MALEDIVY
+2022-03-29 19:45:58.354331 : DUBAJ
+2022-03-29 19:46:01.392213 : MALLORCA
+2022-03-29 19:46:06.593107 : BULHARSKO
+2022-03-29 19:46:10.919805 : CHORVATSKO
+2022-03-29 19:46:41.438037 : KEFALONIA
+2022-03-29 19:46:47.602601 : ATTIKA
+2022-03-29 19:47:14.359601 : POJIŠTÌNÍ
+2022-03-29 19:47:18.446919 : PARKOVÁNÍ
+2022-03-29 19:47:21.947688 : COVID
+2022-03-29 19:47:50.937973 : FUNTAZIE
+2022-03-29 19:47:54.320293 : MIRAGE BAY
+2022-03-29 19:47:59.955273 : MITSIS
+2022-03-29 19:48:04.246018 : PRIMA LIFE
+2022-03-29 19:48:08.322518 : PRIMA LIFE MAKADI
+2022-03-29 19:48:11.789347 : PEGASOS
+2022-03-29 19:48:13.039144 : PICKALBATROS
+2022-03-29 19:48:16.400289 : TITANIC
+2022-03-29 19:48:20.262142 : MIRAGE
+2022-03-29 19:48:23.448240 : DOMES AULÜS
+2022-03-29 19:48:26.750999 : BAY & MARE
+2022-03-29 19:48:30.312733 : A FOR ART
+2022-03-29 19:48:33.750046 : PORTO SKALA 7
+2022-03-29 19:48:38.577364 : COSTA AZZURRA
+2022-03-29 19:48:42.584306 : LA CITE
+2022-03-29 19:48:46.309096 : NAFTILOS
+2022-03-29 19:48:50.143211 : STEFANOS
+2022-03-29 19:48:53.878093 : MAGNOLIA
+2022-03-29 19:48:56.958070 : WHITE GOLD
+2022-03-29 19:49:00.581959 : KING TUT RESORT
+2022-03-29 19:49:05.585715 : BLUE WATERS
+2022-03-29 19:49:10.052095 : PRIMASOL
+2022-03-29 19:49:13.741544 : DOUBLETREE
+2022-03-29 19:49:18.450572 : 
+                             
+                             
+2022-03-29 19:49:18.450572 : ====== WebDriver manager ======
+                             
+2022-03-29 19:49:18.476564 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:49:18.477564 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:49:18.584359 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:49:22.973717 : <selenium.webdriver.remote.webelement.WebElement (session="f3bc4c29f4da4052275740249c8d366c", element="9c8fc89c-c9e7-4b6b-b329-855498430a65")>
+2022-03-29 19:49:31.354171 : 
+                             
+                             
+2022-03-29 19:49:31.354171 : ====== WebDriver manager ======
+                             
+2022-03-29 19:49:31.411143 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:49:31.412143 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:49:31.788338 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:49:40.133900 : <selenium.webdriver.remote.webelement.WebElement (session="1a495d423abe97aa17a7d8103023eebe", element="5e1d15d0-1129-4e18-b015-ee377892e359")>
+2022-03-29 19:49:45.776806 : 
+                             
+                             
+2022-03-29 19:49:45.776806 : ====== WebDriver manager ======
+                             
+2022-03-29 19:49:45.833754 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:49:45.833754 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:49:46.136329 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:49:53.261667 : <selenium.webdriver.remote.webelement.WebElement (session="ff83774434f5d0d83bfd3f57259fc9ee", element="cec283f0-6836-4130-ae62-704162b3bbc4")>
+2022-03-29 19:49:58.729474 : 
+                             
+                             
+2022-03-29 19:49:58.729474 : ====== WebDriver manager ======
+                             
+2022-03-29 19:49:58.785827 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:49:58.786808 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:49:58.986171 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:50:04.828749 : <selenium.webdriver.remote.webelement.WebElement (session="e80b134ae9091b452759dd7f46ebf5ec", element="b7c4ce40-d586-428e-92f7-23573f31b325")>
+2022-03-29 19:50:08.499860 : mapa kolecka
+2022-03-29 19:50:08.506857 : mapa kolecka
+2022-03-29 19:50:08.515855 : mapa kolecka
+2022-03-29 19:50:08.522852 : mapa kolecka
+2022-03-29 19:50:08.530850 : mapa kolecka
+2022-03-29 19:50:08.541847 : mapa kolecka
+2022-03-29 19:50:08.551843 : mapa kolecka
+2022-03-29 19:50:08.560841 : mapa kolecka
+2022-03-29 19:50:08.621821 : boxiky
+2022-03-29 19:50:08.630818 : boxiky
+2022-03-29 19:50:08.656810 : boxiky
+2022-03-29 19:50:08.665806 : boxiky
+2022-03-29 19:50:08.678803 : boxiky
+2022-03-29 19:50:08.728786 : boxiky
+2022-03-29 19:50:08.741782 : boxiky
+2022-03-29 19:50:08.752779 : boxiky
+2022-03-29 19:50:08.763775 : boxiky
+2022-03-29 19:50:08.772772 : boxiky
+2022-03-29 19:50:08.782770 : boxiky
+2022-03-29 19:50:08.790767 : boxiky
+2022-03-29 19:50:08.805762 : boxiky
+2022-03-29 19:50:08.816758 : boxiky
+2022-03-29 19:50:08.833754 : boxiky
+2022-03-29 19:50:08.841750 : boxiky
+2022-03-29 19:50:08.854746 : boxiky
+2022-03-29 19:50:08.902732 : boxiky
+2022-03-29 19:50:09.108665 : boxiky
+2022-03-29 19:50:09.117662 : boxiky
+2022-03-29 19:50:09.128659 : boxiky
+2022-03-29 19:50:09.135657 : boxiky
+2022-03-29 19:50:09.147654 : boxiky
+2022-03-29 19:50:09.157650 : boxiky
+2022-03-29 19:50:09.170646 : boxiky
+2022-03-29 19:50:09.182643 : boxiky
+2022-03-29 19:50:09.190639 : boxiky
+2022-03-29 19:50:09.200636 : boxiky
+2022-03-29 19:50:09.209633 : boxiky
+2022-03-29 19:50:09.224628 : boxiky
+2022-03-29 19:50:09.233626 : boxiky
+2022-03-29 19:50:09.242622 : boxiky
+2022-03-29 19:50:09.252619 : boxiky
+2022-03-29 19:50:09.259616 : boxiky
+2022-03-29 19:50:09.268614 : boxiky
+2022-03-29 19:50:09.276612 : boxiky
+2022-03-29 19:50:09.285609 : boxiky
+2022-03-29 19:50:09.293606 : boxiky
+2022-03-29 19:50:09.301604 : boxiky
+2022-03-29 19:50:09.308601 : boxiky
+2022-03-29 19:50:09.316599 : boxiky
+2022-03-29 19:50:09.325596 : boxiky
+2022-03-29 19:50:09.333594 : boxiky
+2022-03-29 19:50:09.340591 : boxiky
+2022-03-29 19:50:09.349589 : boxiky
+2022-03-29 19:50:09.357587 : boxiky
+2022-03-29 19:50:09.366583 : boxiky
+2022-03-29 19:50:09.374580 : boxiky
+2022-03-29 19:50:09.386577 : boxiky
+2022-03-29 19:50:09.396573 : boxiky
+2022-03-29 19:50:09.404570 : boxiky
+2022-03-29 19:50:09.413567 : boxiky
+2022-03-29 19:50:09.420565 : boxiky
+2022-03-29 19:50:09.429564 : boxiky
+2022-03-29 19:50:09.437560 : boxiky
+2022-03-29 19:50:09.445557 : boxiky
+2022-03-29 19:50:09.453554 : boxiky
+2022-03-29 19:50:09.460553 : boxiky
+2022-03-29 19:50:09.469550 : boxiky
+2022-03-29 19:50:09.477548 : boxiky
+2022-03-29 19:50:09.485545 : boxiky
+2022-03-29 19:50:09.493542 : boxiky
+2022-03-29 19:50:09.501540 : boxiky
+2022-03-29 19:50:09.509537 : boxiky
+2022-03-29 19:50:09.519533 : boxiky
+2022-03-29 19:50:09.527531 : boxiky
+2022-03-29 19:50:09.538528 : boxiky
+2022-03-29 19:50:09.546525 : boxiky
+2022-03-29 19:50:09.554522 : boxiky
+2022-03-29 19:50:09.561521 : boxiky
+2022-03-29 19:50:09.569517 : boxiky
+2022-03-29 19:50:09.576516 : boxiky
+2022-03-29 19:50:09.584513 : boxiky
+2022-03-29 19:50:09.591511 : boxiky
+2022-03-29 19:50:09.599509 : boxiky
+2022-03-29 19:50:09.606506 : boxiky
+2022-03-29 19:50:09.614503 : boxiky
+2022-03-29 19:50:09.621501 : boxiky
+2022-03-29 19:50:09.629499 : boxiky
+2022-03-29 19:50:09.637496 : boxiky
+2022-03-29 19:50:09.645493 : boxiky
+2022-03-29 19:50:09.653491 : boxiky
+2022-03-29 19:50:09.660489 : boxiky
+2022-03-29 19:50:09.668486 : boxiky
+2022-03-29 19:50:09.676483 : boxiky
+2022-03-29 19:50:09.683481 : boxiky
+2022-03-29 19:50:09.691478 : boxiky
+2022-03-29 19:50:09.698476 : boxiky
+2022-03-29 19:50:09.706474 : boxiky
+2022-03-29 19:50:09.714472 : boxiky
+2022-03-29 19:50:09.722469 : boxiky
+2022-03-29 19:50:09.730466 : boxiky
+2022-03-29 19:50:09.737464 : boxiky
+2022-03-29 19:50:09.746461 : boxiky
+2022-03-29 19:50:09.754458 : boxiky
+2022-03-29 19:50:09.762456 : boxiky
+2022-03-29 19:50:09.769453 : boxiky
+2022-03-29 19:50:09.777452 : boxiky
+2022-03-29 19:50:09.784449 : boxiky
+2022-03-29 19:50:09.792446 : boxiky
+2022-03-29 19:50:09.800444 : boxiky
+2022-03-29 19:50:09.808441 : boxiky
+2022-03-29 19:50:09.816439 : boxiky
+2022-03-29 19:50:09.824437 : boxiky
+2022-03-29 19:50:09.832434 : boxiky
+2022-03-29 19:50:09.839431 : boxiky
+2022-03-29 19:50:09.847429 : boxiky
+2022-03-29 19:50:09.855426 : boxiky
+2022-03-29 19:50:09.863423 : boxiky
+2022-03-29 19:50:09.871421 : boxiky
+2022-03-29 19:50:09.879419 : boxiky
+2022-03-29 19:50:09.887417 : boxiky
+2022-03-29 19:50:09.894414 : boxiky
+2022-03-29 19:50:10.039368 : boxiky
+2022-03-29 19:50:10.047365 : boxiky
+2022-03-29 19:50:10.054363 : boxiky
+2022-03-29 19:50:10.063360 : boxiky
+2022-03-29 19:50:10.070357 : boxiky
+2022-03-29 19:50:10.094350 : boxiky
+2022-03-29 19:50:10.103347 : boxiky
+2022-03-29 19:50:10.112345 : boxiky
+2022-03-29 19:50:10.121342 : boxiky
+2022-03-29 19:50:10.129339 : boxiky
+2022-03-29 19:50:10.137336 : boxiky
+2022-03-29 19:50:10.145334 : boxiky
+2022-03-29 19:50:10.153331 : boxiky
+2022-03-29 19:50:10.160329 : boxiky
+2022-03-29 19:50:10.168326 : boxiky
+2022-03-29 19:50:10.176324 : boxiky
+2022-03-29 19:50:10.183321 : boxiky
+2022-03-29 19:50:10.191320 : boxiky
+2022-03-29 19:50:10.200316 : boxiky
+2022-03-29 19:50:10.209313 : boxiky
+2022-03-29 19:50:10.217311 : boxiky
+2022-03-29 19:50:10.225308 : boxiky
+2022-03-29 19:50:10.234306 : boxiky
+2022-03-29 19:50:10.242302 : boxiky
+2022-03-29 19:50:10.250300 : boxiky
+2022-03-29 19:50:10.258298 : boxiky
+2022-03-29 19:50:10.266295 : boxiky
+2022-03-29 19:50:10.273292 : boxiky
+2022-03-29 19:50:10.281290 : boxiky
+2022-03-29 19:50:10.289288 : boxiky
+2022-03-29 19:50:10.297285 : boxiky
+2022-03-29 19:50:10.307282 : boxiky
+2022-03-29 19:50:10.315280 : boxiky
+2022-03-29 19:50:10.323277 : boxiky
+2022-03-29 19:50:10.332274 : boxiky
+2022-03-29 19:50:10.339272 : boxiky
+2022-03-29 19:50:10.347269 : boxiky
+2022-03-29 19:50:10.355266 : boxiky
+2022-03-29 19:50:10.363264 : boxiky
+2022-03-29 19:50:10.371262 : boxiky
+2022-03-29 19:50:10.379259 : boxiky
+2022-03-29 19:50:10.387256 : boxiky
+2022-03-29 19:50:10.395254 : boxiky
+2022-03-29 19:50:10.404251 : boxiky
+2022-03-29 19:50:10.412248 : boxiky
+2022-03-29 19:50:10.420246 : boxiky
+2022-03-29 19:50:10.429244 : boxiky
+2022-03-29 19:50:10.437240 : boxiky
+2022-03-29 19:50:10.445238 : boxiky
+2022-03-29 19:50:10.453235 : boxiky
+2022-03-29 19:50:10.461232 : boxiky
+2022-03-29 19:50:10.469230 : boxiky
+2022-03-29 19:50:10.477228 : boxiky
+2022-03-29 19:50:10.486225 : boxiky
+2022-03-29 19:50:10.494222 : boxiky
+2022-03-29 19:50:10.504220 : boxiky
+2022-03-29 19:50:10.513216 : boxiky
+2022-03-29 19:50:10.522213 : boxiky
+2022-03-29 19:50:10.531211 : boxiky
+2022-03-29 19:50:10.540208 : boxiky
+2022-03-29 19:50:10.549205 : boxiky
+2022-03-29 19:50:10.557202 : boxiky
+2022-03-29 19:50:10.565199 : boxiky
+2022-03-29 19:50:10.573197 : boxiky
+2022-03-29 19:50:10.581194 : boxiky
+2022-03-29 19:50:10.589192 : boxiky
+2022-03-29 19:50:10.597189 : boxiky
+2022-03-29 19:50:10.605187 : boxiky
+2022-03-29 19:50:10.613185 : boxiky
+2022-03-29 19:50:10.621181 : boxiky
+2022-03-29 19:50:10.629179 : boxiky
+2022-03-29 19:50:10.638176 : boxiky
+2022-03-29 19:50:10.646176 : boxiky
+2022-03-29 19:50:10.654171 : boxiky
+2022-03-29 19:50:10.664168 : boxiky
+2022-03-29 19:50:10.673165 : boxiky
+2022-03-29 19:50:10.681162 : boxiky
+2022-03-29 19:50:10.689159 : boxiky
+2022-03-29 19:50:10.697157 : boxiky
+2022-03-29 19:50:10.705155 : boxiky
+2022-03-29 19:50:10.713153 : boxiky
+2022-03-29 19:50:10.721149 : boxiky
+2022-03-29 19:50:10.730147 : boxiky
+2022-03-29 19:50:10.740144 : boxiky
+2022-03-29 19:50:10.748141 : boxiky
+2022-03-29 19:50:10.756139 : boxiky
+2022-03-29 19:50:10.764136 : boxiky
+2022-03-29 19:50:10.772133 : boxiky
+2022-03-29 19:50:10.782130 : boxiky
+2022-03-29 19:50:10.790128 : boxiky
+2022-03-29 19:50:10.798125 : boxiky
+2022-03-29 19:50:10.806122 : boxiky
+2022-03-29 19:50:10.815119 : boxiky
+2022-03-29 19:50:10.823117 : boxiky
+2022-03-29 19:50:10.832114 : boxiky
+2022-03-29 19:50:10.840111 : boxiky
+2022-03-29 19:50:10.849109 : boxiky
+2022-03-29 19:50:10.858106 : boxiky
+2022-03-29 19:50:10.866103 : boxiky
+2022-03-29 19:50:10.874100 : boxiky
+2022-03-29 19:50:10.882098 : boxiky
+2022-03-29 19:50:10.890096 : boxiky
+2022-03-29 19:50:11.035049 : boxiky
+2022-03-29 19:50:11.062041 : boxiky
+2022-03-29 19:50:11.239984 : boxiky
+2022-03-29 19:50:11.269975 : boxiky
+2022-03-29 19:50:11.282970 : boxiky
+2022-03-29 19:50:11.371943 : basic info 
+2022-03-29 19:50:11.384939 : basic info 
+2022-03-29 19:50:11.394935 : basic info 
+2022-03-29 19:50:11.407930 : basic info 
+2022-03-29 19:50:11.420927 : basic info 
+2022-03-29 19:50:11.437921 : basic info 
+2022-03-29 19:50:11.451917 : basic info 
+2022-03-29 19:50:11.461913 : basic info 
+2022-03-29 19:50:11.473909 : basic info 
+2022-03-29 19:50:11.486906 : basic info 
+2022-03-29 19:50:11.499902 : basic info 
+2022-03-29 19:50:11.508898 : basic info 
+2022-03-29 19:50:11.520895 : basic info 
+2022-03-29 19:50:11.530894 : basic info 
+2022-03-29 19:50:11.541888 : basic info 
+2022-03-29 19:50:11.554884 : basic info 
+2022-03-29 19:50:11.563881 : basic info 
+2022-03-29 19:50:11.576876 : basic info 
+2022-03-29 19:50:11.587873 : basic info 
+2022-03-29 19:50:11.597871 : basic info 
+2022-03-29 19:50:11.607867 : basic info 
+2022-03-29 19:50:11.619863 : basic info 
+2022-03-29 19:50:11.627860 : basic info 
+2022-03-29 19:50:11.640855 : basic info 
+2022-03-29 19:50:11.653853 : basic info 
+2022-03-29 19:50:11.661849 : basic info 
+2022-03-29 19:50:11.673845 : basic info 
+2022-03-29 19:50:11.685843 : basic info 
+2022-03-29 19:50:11.694839 : basic info 
+2022-03-29 19:50:11.707834 : basic info 
+2022-03-29 19:50:11.721830 : basic info 
+2022-03-29 19:50:11.733827 : basic info 
+2022-03-29 19:50:11.743824 : basic info 
+2022-03-29 19:50:11.754819 : basic info 
+2022-03-29 19:50:11.764816 : basic info 
+2022-03-29 19:50:11.773813 : basic info 
+2022-03-29 19:50:11.785810 : basic info 
+2022-03-29 19:50:11.793807 : basic info 
+2022-03-29 19:50:11.804807 : basic info 
+2022-03-29 19:50:11.817801 : basic info 
+2022-03-29 19:50:11.826797 : basic info 
+2022-03-29 19:50:11.838793 : basic info 
+2022-03-29 19:50:11.851790 : basic info 
+2022-03-29 19:50:11.860785 : basic info 
+2022-03-29 19:50:11.871782 : basic info 
+2022-03-29 19:50:11.887778 : basic info 
+2022-03-29 19:50:11.896774 : basic info 
+2022-03-29 19:50:12.037728 : basic info 
+2022-03-29 19:50:12.045727 : basic info 
+2022-03-29 19:50:12.054724 : basic info 
+2022-03-29 19:50:12.063721 : basic info 
+2022-03-29 19:50:12.071718 : basic info 
+2022-03-29 19:50:12.089712 : basic info 
+2022-03-29 19:50:12.098709 : basic info 
+2022-03-29 19:50:12.107706 : basic info 
+2022-03-29 19:50:12.116703 : basic info 
+2022-03-29 19:50:12.125700 : basic info 
+2022-03-29 19:50:12.134698 : basic info 
+2022-03-29 19:50:12.142695 : basic info 
+2022-03-29 19:50:12.151693 : basic info 
+2022-03-29 19:50:12.160690 : basic info 
+2022-03-29 19:50:12.168687 : basic info 
+2022-03-29 19:50:12.177684 : basic info 
+2022-03-29 19:50:12.185681 : basic info 
+2022-03-29 19:50:12.194679 : basic info 
+2022-03-29 19:50:12.203675 : basic info 
+2022-03-29 19:50:12.212673 : basic info 
+2022-03-29 19:50:12.221670 : basic info 
+2022-03-29 19:50:12.230668 : basic info 
+2022-03-29 19:50:12.238665 : basic info 
+2022-03-29 19:50:12.247663 : basic info 
+2022-03-29 19:50:12.256659 : basic info 
+2022-03-29 19:50:12.264657 : basic info 
+2022-03-29 19:50:12.273653 : basic info 
+2022-03-29 19:50:12.282651 : basic info 
+2022-03-29 19:50:12.290648 : basic info 
+2022-03-29 19:50:12.300647 : basic info 
+2022-03-29 19:50:12.309642 : basic info 
+2022-03-29 19:50:12.317640 : basic info 
+2022-03-29 19:50:12.326637 : basic info 
+2022-03-29 19:50:12.335634 : basic info 
+2022-03-29 19:50:12.343631 : basic info 
+2022-03-29 19:50:12.353628 : basic info 
+2022-03-29 19:50:12.362625 : basic info 
+2022-03-29 19:50:12.371622 : basic info 
+2022-03-29 19:50:12.380619 : basic info 
+2022-03-29 19:50:12.389616 : basic info 
+2022-03-29 19:50:12.398614 : basic info 
+2022-03-29 19:50:12.407611 : basic info 
+2022-03-29 19:50:12.416608 : basic info 
+2022-03-29 19:50:12.425607 : basic info 
+2022-03-29 19:50:12.435606 : basic info 
+2022-03-29 19:50:12.444599 : basic info 
+2022-03-29 19:50:12.453596 : basic info 
+2022-03-29 19:50:12.462593 : basic info 
+2022-03-29 19:50:12.472590 : basic info 
+2022-03-29 19:50:12.482586 : basic info 
+2022-03-29 19:50:12.491584 : basic info 
+2022-03-29 19:50:12.500581 : basic info 
+2022-03-29 19:50:12.509578 : basic info 
+2022-03-29 19:50:12.518575 : basic info 
+2022-03-29 19:50:12.527573 : basic info 
+2022-03-29 19:50:12.536570 : basic info 
+2022-03-29 19:50:12.545566 : basic info 
+2022-03-29 19:50:12.556563 : basic info 
+2022-03-29 19:50:12.566559 : basic info 
+2022-03-29 19:50:12.574558 : basic info 
+2022-03-29 19:50:12.583554 : basic info 
+2022-03-29 19:50:12.592552 : basic info 
+2022-03-29 19:50:12.602548 : basic info 
+2022-03-29 19:50:12.611545 : basic info 
+2022-03-29 19:50:12.620543 : basic info 
+2022-03-29 19:50:12.629540 : basic info 
+2022-03-29 19:50:12.639536 : basic info 
+2022-03-29 19:50:12.649533 : basic info 
+2022-03-29 19:50:12.659530 : basic info 
+2022-03-29 19:50:12.668527 : basic info 
+2022-03-29 19:50:12.677524 : basic info 
+2022-03-29 19:50:12.687522 : basic info 
+2022-03-29 19:50:12.696518 : basic info 
+2022-03-29 19:50:12.706515 : basic info 
+2022-03-29 19:50:12.716512 : basic info 
+2022-03-29 19:50:12.725509 : basic info 
+2022-03-29 19:50:12.735506 : basic info 
+2022-03-29 19:50:12.745503 : basic info 
+2022-03-29 19:50:12.755499 : basic info 
+2022-03-29 19:50:12.764496 : basic info 
+2022-03-29 19:50:12.773493 : basic info 
+2022-03-29 19:50:12.782491 : basic info 
+2022-03-29 19:50:12.791488 : basic info 
+2022-03-29 19:50:12.801486 : basic info 
+2022-03-29 19:50:12.811485 : basic info 
+2022-03-29 19:50:12.821489 : basic info 
+2022-03-29 19:50:12.830484 : basic info 
+2022-03-29 19:50:12.840472 : basic info 
+2022-03-29 19:50:12.849469 : basic info 
+2022-03-29 19:50:12.858467 : basic info 
+2022-03-29 19:50:12.868464 : basic info 
+2022-03-29 19:50:12.877461 : basic info 
+2022-03-29 19:50:12.886458 : basic info 
+2022-03-29 19:50:12.896454 : basic info 
+2022-03-29 19:50:13.030412 : basic info 
+2022-03-29 19:50:13.039408 : basic info 
+2022-03-29 19:50:13.049406 : basic info 
+2022-03-29 19:50:13.057403 : basic info 
+2022-03-29 19:50:13.066400 : basic info 
+2022-03-29 19:50:13.075397 : basic info 
+2022-03-29 19:50:13.085394 : basic info 
+2022-03-29 19:50:13.094392 : basic info 
+2022-03-29 19:50:13.103388 : basic info 
+2022-03-29 19:50:13.113386 : basic info 
+2022-03-29 19:50:13.122382 : basic info 
+2022-03-29 19:50:13.132380 : basic info 
+2022-03-29 19:50:13.140376 : basic info 
+2022-03-29 19:50:13.149373 : basic info 
+2022-03-29 19:50:13.159370 : basic info 
+2022-03-29 19:50:13.169367 : basic info 
+2022-03-29 19:50:13.178364 : basic info 
+2022-03-29 19:50:13.188361 : basic info 
+2022-03-29 19:50:13.199358 : basic info 
+2022-03-29 19:50:13.209354 : basic info 
+2022-03-29 19:50:13.219351 : basic info 
+2022-03-29 19:50:13.228348 : basic info 
+2022-03-29 19:50:13.238345 : basic info 
+2022-03-29 19:50:13.247342 : basic info 
+2022-03-29 19:50:13.256339 : basic info 
+2022-03-29 19:50:13.266337 : basic info 
+2022-03-29 19:50:13.275333 : basic info 
+2022-03-29 19:50:13.284331 : basic info 
+2022-03-29 19:50:13.294327 : basic info 
+2022-03-29 19:50:13.304324 : basic info 
+2022-03-29 19:50:13.313321 : basic info 
+2022-03-29 19:50:13.323318 : basic info 
+2022-03-29 19:50:13.333315 : basic info 
+2022-03-29 19:50:13.342312 : basic info 
+2022-03-29 19:50:13.352309 : basic info 
+2022-03-29 19:50:13.362311 : basic info 
+2022-03-29 19:50:13.372302 : basic info 
+2022-03-29 19:50:13.382300 : basic info 
+2022-03-29 19:50:13.392296 : basic info 
+2022-03-29 19:50:13.402300 : basic info 
+2022-03-29 19:50:13.412289 : basic info 
+2022-03-29 19:50:13.422286 : basic info 
+2022-03-29 19:50:13.434282 : basic info 
+2022-03-29 19:50:13.444279 : basic info 
+2022-03-29 19:50:13.454277 : basic info 
+2022-03-29 19:50:13.464274 : basic info 
+2022-03-29 19:50:13.475270 : basic info 
+2022-03-29 19:50:13.485266 : basic info 
+2022-03-29 19:50:13.494263 : basic info 
+2022-03-29 19:50:13.505260 : basic info 
+2022-03-29 19:50:13.514258 : basic info 
+2022-03-29 19:50:13.523254 : basic info 
+2022-03-29 19:50:13.533255 : basic info 
+2022-03-29 19:50:13.542248 : basic info 
+2022-03-29 19:50:13.552245 : basic info 
+2022-03-29 19:50:13.562241 : basic info 
+2022-03-29 19:50:13.572238 : basic info 
+2022-03-29 19:50:13.582236 : basic info 
+2022-03-29 19:50:13.591232 : basic info 
+2022-03-29 19:50:13.601230 : basic info 
+2022-03-29 19:50:13.611226 : basic info 
+2022-03-29 19:50:13.621222 : basic info 
+2022-03-29 19:50:13.631219 : basic info 
+2022-03-29 19:50:13.641216 : basic info 
+2022-03-29 19:50:13.650213 : basic info 
+2022-03-29 19:50:13.661210 : basic info 
+2022-03-29 19:50:13.672206 : basic info 
+2022-03-29 19:50:13.682204 : basic info 
+2022-03-29 19:50:13.691200 : basic info 
+2022-03-29 19:50:13.701197 : basic info 
+2022-03-29 19:50:13.711194 : basic info 
+2022-03-29 19:50:13.720191 : basic info 
+2022-03-29 19:50:13.730188 : basic info 
+2022-03-29 19:50:13.741184 : basic info 
+2022-03-29 19:50:13.751182 : basic info 
+2022-03-29 19:50:13.761178 : basic info 
+2022-03-29 19:50:13.771175 : basic info 
+2022-03-29 19:50:13.781171 : basic info 
+2022-03-29 19:50:13.792168 : basic info 
+2022-03-29 19:50:16.100503 : 
+                             
+                             
+2022-03-29 19:50:16.101534 : ====== WebDriver manager ======
+                             
+2022-03-29 19:50:16.156506 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:50:16.157506 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:50:16.241615 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:50:25.359204 : <selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="7915c1d1-3a56-42c6-a141-b2110498934b")>
+2022-03-29 19:50:31.680788 : [<selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="fcbc3db6-7a84-4e0b-9671-9627c5d4be40")>, <selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="52de320b-4e43-43ed-bb55-f339ff6e5e2f")>, <selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="7e18bfec-8304-450a-aae3-8982835605b1")>, <selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="f21fe9b9-e7f5-463c-b6d3-08f64ec97078")>, <selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="4e4596cd-09bc-4a93-93a4-1adad2134c68")>, <selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="bf37f66f-93fe-4b60-8616-aa327406f640")>, <selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="f63aad0f-d55b-42c8-8487-3333b780df81")>, <selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="bec5942b-b8f4-4cff-8f3f-db84732cf66f")>, <selenium.webdriver.remote.webelement.WebElement (session="b6514d412462fc1f5638ae2e133a9c73", element="969ed781-84b3-4138-9f0a-878e876109e3")>]
+2022-03-29 19:50:31.702781 : true imgdisplay
+2022-03-29 19:50:31.709779 : true imgdisplay
+2022-03-29 19:50:31.717777 : true imgdisplay
+2022-03-29 19:50:31.724774 : true imgdisplay
+2022-03-29 19:50:31.731772 : true imgdisplay
+2022-03-29 19:50:31.739769 : true imgdisplay
+2022-03-29 19:50:31.746767 : true imgdisplay
+2022-03-29 19:50:31.754765 : true imgdisplay
+2022-03-29 19:50:31.762762 : true imgdisplay
+2022-03-29 19:50:31.791753 : grid true
+2022-03-29 19:50:31.798750 : grid true
+2022-03-29 19:50:31.806748 : grid true
+2022-03-29 19:50:31.813746 : grid true
+2022-03-29 19:50:31.819744 : grid true
+2022-03-29 19:50:31.826741 : grid true
+2022-03-29 19:50:31.833739 : grid true
+2022-03-29 19:50:31.840737 : grid true
+2022-03-29 19:50:31.847735 : grid true
+2022-03-29 19:50:31.854732 : grid true
+2022-03-29 19:50:31.861731 : grid true
+2022-03-29 19:50:31.869728 : grid true
+2022-03-29 19:50:31.876727 : grid true
+2022-03-29 19:50:31.884724 : grid true
+2022-03-29 19:50:31.892721 : grid true
+2022-03-29 19:50:31.899719 : grid true
+2022-03-29 19:50:31.906717 : grid true
+2022-03-29 19:50:31.935707 : big grid ture
+2022-03-29 19:50:31.942705 : big grid ture
+2022-03-29 19:50:34.638340 : 
+                             
+                             
+2022-03-29 19:50:34.638340 : ====== WebDriver manager ======
+                             
+2022-03-29 19:50:34.659576 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:50:34.659576 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:50:34.884814 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:50:39.042719 : <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="24b518df-1265-46ca-a9c0-27579b856fbc")>
+2022-03-29 19:50:45.491078 : [<selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="1d7ada54-3ec1-4022-9933-91d1e13d4e67")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="ceaf396c-9a0a-4851-9216-4d06028902e7")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="bdcf6129-2760-4722-b278-dcf5a58b0e0c")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="bfae82e6-6f72-4139-b7c3-8b16e7a9ac1b")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="068df494-73b3-4add-803b-9addf31204ac")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="52702f08-bce6-4bb5-bf10-704fed8e0ea4")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="b21ef47f-0aae-43e9-bf95-3e4f86255149")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="ba6cec9f-bbdd-4b5d-b75f-303324ee1fb5")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="3938068f-235f-41d4-9981-b29fce074fac")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="a58c0308-2ba2-43b2-a7b6-031715997414")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="b86b249f-e357-4888-8c82-7f0b92ce7ef2")>, <selenium.webdriver.remote.webelement.WebElement (session="8103577044e7330682900844cf42a3c3", element="8ab48793-348b-4514-86d3-fe23130da82a")>]
+2022-03-29 19:50:45.514071 : true imgdisplay
+2022-03-29 19:50:45.522069 : true imgdisplay
+2022-03-29 19:50:45.529067 : true imgdisplay
+2022-03-29 19:50:45.537064 : true imgdisplay
+2022-03-29 19:50:45.545062 : true imgdisplay
+2022-03-29 19:50:45.553059 : true imgdisplay
+2022-03-29 19:50:45.561056 : true imgdisplay
+2022-03-29 19:50:45.569054 : true imgdisplay
+2022-03-29 19:50:45.577051 : true imgdisplay
+2022-03-29 19:50:45.584050 : true imgdisplay
+2022-03-29 19:50:45.592047 : true imgdisplay
+2022-03-29 19:50:45.599044 : true imgdisplay
+2022-03-29 19:50:45.629034 : grid true
+2022-03-29 19:50:45.636033 : grid true
+2022-03-29 19:50:45.644030 : grid true
+2022-03-29 19:50:45.651034 : grid true
+2022-03-29 19:50:45.659025 : grid true
+2022-03-29 19:50:45.666340 : grid true
+2022-03-29 19:50:45.674337 : grid true
+2022-03-29 19:50:45.682334 : grid true
+2022-03-29 19:50:45.689332 : grid true
+2022-03-29 19:50:45.719322 : big grid ture
+2022-03-29 19:50:47.967649 : 
+                             
+                             
+2022-03-29 19:50:47.967649 : ====== WebDriver manager ======
+                             
+2022-03-29 19:50:48.017630 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:50:48.017630 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:50:48.380611 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:50:53.673125 : <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="8f079ff3-cea2-48d1-a482-5b967e19e35c")>
+2022-03-29 19:51:00.083399 : [<selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="864112ee-a2c0-4afa-8167-68f20ca6bbde")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="b851d97f-aabe-4c00-b276-76bf529be2be")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="0542bfe7-4f56-45a0-95d0-b9a4188d9cd7")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="19cb4b3d-6476-4074-abe2-dd9c7e587820")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="d3f8dbab-2208-41b2-af77-7f3dccc797b7")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="e1e82997-4dfa-43b6-a3f1-24a6ea931d4c")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="7c1c43b4-1ad1-4509-ac31-01bf972a2aa0")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="e751ba23-3dc5-423a-9f9f-11d695c20363")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="1d117e1c-30d1-40bd-8bac-008d5f0c1705")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="b6afdb74-ef52-42fa-bd5a-37d6919a01a3")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="31868aef-c1e9-4598-ab56-ea9a7e235e6c")>, <selenium.webdriver.remote.webelement.WebElement (session="0aad9b3f09dde69728f6a4ce4ac83712", element="85a173af-d7e3-4203-b0e8-e23c643af36f")>]
+2022-03-29 19:51:00.094396 : true imgdisplay
+2022-03-29 19:51:00.101394 : true imgdisplay
+2022-03-29 19:51:00.109391 : true imgdisplay
+2022-03-29 19:51:00.116389 : true imgdisplay
+2022-03-29 19:51:00.123387 : true imgdisplay
+2022-03-29 19:51:00.131384 : true imgdisplay
+2022-03-29 19:51:00.138382 : true imgdisplay
+2022-03-29 19:51:00.146380 : true imgdisplay
+2022-03-29 19:51:00.153377 : true imgdisplay
+2022-03-29 19:51:00.160374 : true imgdisplay
+2022-03-29 19:51:00.167373 : true imgdisplay
+2022-03-29 19:51:00.174370 : true imgdisplay
+2022-03-29 19:51:00.202361 : grid true
+2022-03-29 19:51:00.209359 : grid true
+2022-03-29 19:51:00.216357 : grid true
+2022-03-29 19:51:00.223354 : grid true
+2022-03-29 19:51:00.231352 : grid true
+2022-03-29 19:51:00.238350 : grid true
+2022-03-29 19:51:00.246349 : grid true
+2022-03-29 19:51:00.254345 : grid true
+2022-03-29 19:51:00.261348 : grid true
+2022-03-29 19:51:00.290333 : big grid ture
+2022-03-29 19:51:02.664025 : 
+                             
+                             
+2022-03-29 19:51:02.664025 : ====== WebDriver manager ======
+                             
+2022-03-29 19:51:02.701012 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:51:02.701012 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:51:02.816233 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:51:07.811173 : <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="9fb9a4ca-14f2-44c6-a828-495962482bc7")>
+2022-03-29 19:51:14.188321 : [<selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="77b9b4a6-bb22-4f1b-8701-d8c479db7860")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="d6339c2d-cb77-4273-b734-7a2df8ba4988")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="6fb55c04-6816-41c8-a7ed-b05d3ce5a47b")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="c8066abe-afd5-4105-b589-aeedb7a10807")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="7546db1b-73a0-4aff-bd92-cc7661255366")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="8214a44e-f2a9-4c89-92c9-f506f6c6373e")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="6f26539f-efd4-4783-abac-36462318ce17")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="d521708b-3c14-4dd9-b408-8815fa41cc13")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="4189d9d8-a0fb-4bba-9e31-7dd35f152c52")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="47cb2a44-2d88-407a-987f-e9f8c9e41f1f")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="c19dd1ca-2ce7-4fcd-bce7-158b29f88018")>, <selenium.webdriver.remote.webelement.WebElement (session="5cc8058680cda7d9bf6f699a5fc4059a", element="ec6fe848-6a91-489f-8f47-dbd65e8aa1b6")>]
+2022-03-29 19:51:14.199308 : true imgdisplay
+2022-03-29 19:51:14.207304 : true imgdisplay
+2022-03-29 19:51:14.215302 : true imgdisplay
+2022-03-29 19:51:14.223299 : true imgdisplay
+2022-03-29 19:51:14.232297 : true imgdisplay
+2022-03-29 19:51:14.240295 : true imgdisplay
+2022-03-29 19:51:14.248317 : true imgdisplay
+2022-03-29 19:51:14.256290 : true imgdisplay
+2022-03-29 19:51:14.265286 : true imgdisplay
+2022-03-29 19:51:14.273284 : true imgdisplay
+2022-03-29 19:51:14.281281 : true imgdisplay
+2022-03-29 19:51:14.288279 : true imgdisplay
+2022-03-29 19:51:14.319269 : grid true
+2022-03-29 19:51:14.326267 : grid true
+2022-03-29 19:51:14.333264 : grid true
+2022-03-29 19:51:14.340263 : grid true
+2022-03-29 19:51:14.348260 : grid true
+2022-03-29 19:51:14.355257 : grid true
+2022-03-29 19:51:14.363255 : grid true
+2022-03-29 19:51:14.370253 : grid true
+2022-03-29 19:51:14.377251 : grid true
+2022-03-29 19:51:14.406242 : big grid ture
+2022-03-29 19:51:16.662321 : 
+                             
+                             
+2022-03-29 19:51:16.662321 : ====== WebDriver manager ======
+                             
+2022-03-29 19:51:16.691325 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:51:16.691325 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:51:16.779521 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:51:28.658369 : <selenium.webdriver.remote.webelement.WebElement (session="46180a70f0ac46d62dee88c51276ed65", element="29e52897-f32c-4f16-adee-0e83b86895fd")>
+2022-03-29 19:51:32.193221 : 
+                             
+                             
+2022-03-29 19:51:32.193221 : ====== WebDriver manager ======
+                             
+2022-03-29 19:51:32.244241 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:51:32.244241 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:51:32.434414 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:51:39.710366 : <selenium.webdriver.remote.webelement.WebElement (session="823814b24bf9f12bf179e1d9d9b29314", element="363a1bce-b891-4b2d-a0c7-3c80ba528862")>
+2022-03-29 19:52:08.631226 : nenasle se exponea banner
+2022-03-29 19:52:21.243433 : Razeni od nejlevnejsiho je OK
+2022-03-29 19:52:21.243433 : [28918, 33206, 33359, 33598, 34559, 34909, 34915, 35249, 35270, 35530, 35637, 35642, 35870, 36350, 36619, 36784, 36910, 36970, 37470, 37717]
+2022-03-29 19:52:21.244415 : [28918, 33206, 33359, 33598, 34559, 34909, 34915, 35249, 35270, 35530, 35637, 35642, 35870, 36350, 36619, 36784, 36910, 36970, 37470, 37717]
+2022-03-29 19:52:23.475836 : 
+                             
+                             
+2022-03-29 19:52:23.475836 : ====== WebDriver manager ======
+                             
+2022-03-29 19:52:23.511815 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:52:23.511815 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:52:23.936320 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:52:30.311947 : <selenium.webdriver.remote.webelement.WebElement (session="7d56e815ce977e68dab40ea8017a5b4f", element="37114f71-954e-4939-9d8a-50476a1c7da6")>
+2022-03-29 19:52:59.275924 : nenasle se exponea banner
+2022-03-29 19:53:09.879933 : Razeni od nejdrazshio je spatne
+2022-03-29 19:53:09.879933 : [225444, 222917, 195679, 191607, 188627, 172070, 169871, 161592, 123860, 136410, 125227, 124320, 122305, 115850, 115000, 113354, 112523, 111808, 111560, 111418]
+2022-03-29 19:53:09.879933 : [225444, 222917, 195679, 191607, 188627, 172070, 169871, 161592, 136410, 125227, 124320, 123860, 122305, 115850, 115000, 113354, 112523, 111808, 111560, 111418]
+2022-03-29 19:53:12.124856 : 
+                             
+                             
+2022-03-29 19:53:12.124856 : ====== WebDriver manager ======
+                             
+2022-03-29 19:53:12.174833 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:53:12.174833 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:53:12.274106 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:53:21.249238 : <selenium.webdriver.remote.webelement.WebElement (session="6cc29da176b0e9f03b1b7dd0ded06aae", element="47f8a681-58a6-417e-b516-1f8f031f2b0c")>
+2022-03-29 19:53:50.128368 : nenasle se exponea banner
+2022-03-29 19:54:01.999989 : 
+                             
+                             
+2022-03-29 19:54:01.999989 : ====== WebDriver manager ======
+                             
+2022-03-29 19:54:02.055964 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:54:02.055964 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:54:02.212538 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:54:08.226841 : <selenium.webdriver.remote.webelement.WebElement (session="08392a1381d8a334c020c3cac3031870", element="1a203947-ef1b-40b2-a328-ce288cddba22")>
+2022-03-29 19:54:37.169537 : nenasle se exponea banner
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ok
+2022-03-29 19:54:46.503660 : ['All inclusive', 'All inclusive', 'All inclusive Plus', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-03-29 19:54:56.918793 : 
+                             
+                             
+2022-03-29 19:54:56.918793 : ====== WebDriver manager ======
+                             
+2022-03-29 19:54:56.938769 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 19:54:56.938769 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 19:54:57.047423 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 19:55:03.664442 : <selenium.webdriver.remote.webelement.WebElement (session="8a03604f6e3330d0c8304b485d68d50b", element="d47e02bb-9611-405c-bc83-92845337ae66")>
+2022-03-29 19:55:32.595002 : nenasle se exponea banner
+2022-03-29 19:55:32.623008 : |||||HOTEL CISLO|||||||
+2022-03-29 19:55:32.623008 : 1
+2022-03-29 19:55:32.623008 : 1
+2022-03-29 19:55:32.623008 : 1
+2022-03-29 19:56:04.573325 : nenasle se exponea banner
+2022-03-29 19:56:05.738388 : 14 990 Kè
+2022-03-29 19:56:05.738388 : pokoje sedi srl vs detail
+2022-03-29 19:56:05.738388 : stravy sedi srl vs detail
+2022-03-29 19:56:05.738388 : ceny all sedi srl vs detail
+2022-03-29 19:56:05.738388 :  cena adult sedi srl vs detail
+2022-03-29 19:56:05.752383 : 1
+2022-03-29 19:56:05.752383 : 2
+2022-03-29 19:56:05.752383 : |||||HOTEL CISLO|||||||
+2022-03-29 19:56:05.752383 : 2
+2022-03-29 19:56:05.752383 : 2
+2022-03-29 19:56:05.752383 : 2
+2022-03-29 19:56:35.399354 : nenasle se exponea banner
+2022-03-29 19:56:36.607576 : 15 890 Kè
+2022-03-29 19:56:36.607576 : pokoje sedi srl vs detail
+2022-03-29 19:56:36.607576 : stravy sedi srl vs detail
+2022-03-29 19:56:36.607576 : ceny all sedi srl vs detail
+2022-03-29 19:56:36.607576 :  cena adult sedi srl vs detail
+2022-03-29 19:56:36.620572 : 2
+2022-03-29 19:56:36.620572 : 3
+2022-03-29 19:56:36.620572 : |||||HOTEL CISLO|||||||
+2022-03-29 19:56:36.620572 : 3
+2022-03-29 19:56:36.620572 : 3
+2022-03-29 19:56:36.620572 : 3
+2022-03-29 19:57:05.856737 : nenasle se exponea banner
+2022-03-29 19:57:06.988626 : 15 690 Kè
+2022-03-29 19:57:06.988626 : pokoje sedi srl vs detail
+2022-03-29 19:57:06.988626 : stravy sedi srl vs detail
+2022-03-29 19:57:06.988626 : ceny all sedi srl vs detail
+2022-03-29 19:57:06.988626 :  cena adult sedi srl vs detail
+2022-03-29 19:57:07.002635 : 3
+2022-03-29 19:57:07.002635 : 4
+2022-03-29 19:57:07.002635 : |||||HOTEL CISLO|||||||
+2022-03-29 19:57:07.002635 : 4
+2022-03-29 19:57:07.002635 : 4
+2022-03-29 19:57:07.002635 : 4
+2022-03-29 19:57:36.441634 : nenasle se exponea banner
+2022-03-29 19:57:37.600095 : 18 290 Kè
+2022-03-29 19:57:37.600095 : pokoje sedi srl vs detail
+2022-03-29 19:57:37.600095 : stravy sedi srl vs detail
+2022-03-29 19:57:37.600095 : ceny all sedi srl vs detail
+2022-03-29 19:57:37.600095 :  cena adult sedi srl vs detail
+2022-03-29 19:57:37.614083 : 4
+2022-03-29 19:57:37.614083 : 5
+2022-03-29 19:57:37.614083 : |||||HOTEL CISLO|||||||
+2022-03-29 19:57:37.614083 : 5
+2022-03-29 19:57:37.614083 : 5
+2022-03-29 19:57:37.614083 : 5
+2022-03-29 19:58:06.786125 : nenasle se exponea banner
+2022-03-29 19:58:07.959854 : 19 090 Kè
+2022-03-29 19:58:07.959854 : pokoje sedi srl vs detail
+2022-03-29 19:58:07.959854 : stravy sedi srl vs detail
+2022-03-29 19:58:07.959854 : ceny all sedi srl vs detail
+2022-03-29 19:58:07.959854 :  cena adult sedi srl vs detail
+2022-03-29 19:58:07.974851 : 5
+2022-03-29 19:58:07.974851 : 6
+2022-03-29 19:58:07.974851 : |||||HOTEL CISLO|||||||
+2022-03-29 19:58:07.974851 : 6
+2022-03-29 19:58:07.974851 : 6
+2022-03-29 19:58:07.974851 : 6
+2022-03-29 19:58:37.318380 : nenasle se exponea banner
+2022-03-29 19:58:38.451841 : 18 490 Kè
+2022-03-29 19:58:38.451841 : pokoje sedi srl vs detail
+2022-03-29 19:58:38.451841 : stravy sedi srl vs detail
+2022-03-29 19:58:38.451841 : ceny all sedi srl vs detail
+2022-03-29 19:58:38.451841 :  cena adult sedi srl vs detail
+2022-03-29 19:58:38.499826 : 6
+2022-03-29 19:58:38.499826 : 7
+2022-03-29 19:58:38.499826 : |||||HOTEL CISLO|||||||
+2022-03-29 19:58:38.499826 : 7
+2022-03-29 19:58:38.499826 : 7
+2022-03-29 19:58:38.499826 : 7
+2022-03-29 19:59:08.517901 : nenasle se exponea banner
+2022-03-29 19:59:09.739460 : 19 890 Kè
+2022-03-29 19:59:09.739460 : pokoje sedi srl vs detail
+2022-03-29 19:59:09.739460 : stravy sedi srl vs detail
+2022-03-29 19:59:09.739460 : ceny all sedi srl vs detail
+2022-03-29 19:59:09.739460 :  cena adult sedi srl vs detail
+2022-03-29 19:59:09.761440 : 7
+2022-03-29 19:59:09.761440 : 8
+2022-03-29 19:59:09.761440 : |||||HOTEL CISLO|||||||
+2022-03-29 19:59:09.761440 : 8
+2022-03-29 19:59:09.761440 : 8
+2022-03-29 19:59:09.761440 : 8
+2022-03-29 19:59:38.569855 : nenasle se exponea banner
+2022-03-29 19:59:39.740333 : 33 790 Kè
+2022-03-29 19:59:39.740333 : pokoje sedi srl vs detail
+2022-03-29 19:59:39.740333 : stravy sedi srl vs detail
+2022-03-29 19:59:39.740333 : ceny all sedi srl vs detail
+2022-03-29 19:59:39.740333 :  cena adult sedi srl vs detail
+2022-03-29 19:59:39.759319 : 8
+2022-03-29 19:59:39.759319 : 9
+2022-03-29 19:59:39.759319 : |||||HOTEL CISLO|||||||
+2022-03-29 19:59:39.759319 : 9
+2022-03-29 19:59:39.759319 : 9
+2022-03-29 19:59:39.759319 : 9
+2022-03-29 20:00:08.940659 : nenasle se exponea banner
+2022-03-29 20:00:10.104257 : 15 890 Kè
+2022-03-29 20:00:10.104257 : pokoje sedi srl vs detail
+2022-03-29 20:00:10.104257 : stravy sedi srl vs detail
+2022-03-29 20:00:10.104257 : ceny all sedi srl vs detail
+2022-03-29 20:00:10.104257 :  cena adult sedi srl vs detail
+2022-03-29 20:00:10.123251 : 9
+2022-03-29 20:00:10.123251 : 10
+2022-03-29 20:00:10.123251 : |||||HOTEL CISLO|||||||
+2022-03-29 20:00:10.123251 : 10
+2022-03-29 20:00:10.123251 : 10
+2022-03-29 20:00:10.123251 : 10
+2022-03-29 20:00:39.251134 : nenasle se exponea banner
+2022-03-29 20:00:40.406968 : 17 390 Kè
+2022-03-29 20:00:40.406968 : pokoje sedi srl vs detail
+2022-03-29 20:00:40.406968 : stravy sedi srl vs detail
+2022-03-29 20:00:40.406968 : ceny all sedi srl vs detail
+2022-03-29 20:00:40.406968 :  cena adult sedi srl vs detail
+2022-03-29 20:00:40.426952 : 10
+2022-03-29 20:00:40.426952 : 11
+2022-03-29 20:00:40.426952 : |||||HOTEL CISLO|||||||
+2022-03-29 20:00:40.426952 : 11
+2022-03-29 20:00:40.426952 : 11
+2022-03-29 20:00:40.426952 : 11
+2022-03-29 20:01:10.301527 : nenasle se exponea banner
+2022-03-29 20:01:11.454588 : 20 390 Kè
+2022-03-29 20:01:11.454588 : pokoje sedi srl vs detail
+2022-03-29 20:01:11.454588 : stravy sedi srl vs detail
+2022-03-29 20:01:11.454588 : ceny all sedi srl vs detail
+2022-03-29 20:01:11.454588 :  cena adult sedi srl vs detail
+2022-03-29 20:01:11.473583 : 11
+2022-03-29 20:01:11.473583 : 12
+2022-03-29 20:01:11.473583 : |||||HOTEL CISLO|||||||
+2022-03-29 20:01:11.473583 : 12
+2022-03-29 20:01:11.473583 : 12
+2022-03-29 20:01:11.473583 : 12
+2022-03-29 20:01:40.246915 : nenasle se exponea banner
+2022-03-29 20:01:41.433195 : 21 490 Kè
+2022-03-29 20:01:41.433195 : pokoje sedi srl vs detail
+2022-03-29 20:01:41.433195 : stravy sedi srl vs detail
+2022-03-29 20:01:41.433195 : ceny all sedi srl vs detail
+2022-03-29 20:01:41.433195 :  cena adult sedi srl vs detail
+2022-03-29 20:01:41.454190 : 12
+2022-03-29 20:01:41.454190 : 13
+2022-03-29 20:01:41.454190 : |||||HOTEL CISLO|||||||
+2022-03-29 20:01:41.454190 : 13
+2022-03-29 20:01:41.454190 : 13
+2022-03-29 20:01:41.454190 : 13
+2022-03-29 20:02:13.159263 : nenasle se exponea banner
+2022-03-29 20:02:14.325321 : 21 390 Kè
+2022-03-29 20:02:14.325321 : pokoje sedi srl vs detail
+2022-03-29 20:02:14.325321 : stravy sedi srl vs detail
+2022-03-29 20:02:14.325321 : ceny all sedi srl vs detail
+2022-03-29 20:02:14.325321 :  cena adult sedi srl vs detail
+2022-03-29 20:02:14.346314 : 13
+2022-03-29 20:02:14.346314 : 14
+2022-03-29 20:02:14.346314 : |||||HOTEL CISLO|||||||
+2022-03-29 20:02:14.346314 : 14
+2022-03-29 20:02:14.346314 : 14
+2022-03-29 20:02:14.346314 : 14
+2022-03-29 20:02:43.988038 : nenasle se exponea banner
+2022-03-29 20:02:45.167201 : 25 890 Kè
+2022-03-29 20:02:45.167201 : pokoje sedi srl vs detail
+2022-03-29 20:02:45.167201 : stravy sedi srl vs detail
+2022-03-29 20:02:45.167201 : ceny all sedi srl vs detail
+2022-03-29 20:02:45.167201 :  cena adult sedi srl vs detail
+2022-03-29 20:02:45.196192 : 14
+2022-03-29 20:02:45.196192 : 15
+2022-03-29 20:02:45.196192 : |||||HOTEL CISLO|||||||
+2022-03-29 20:02:45.196192 : 15
+2022-03-29 20:02:45.196192 : 15
+2022-03-29 20:02:45.196192 : 15
+2022-03-29 20:03:14.798814 : nenasle se exponea banner
+2022-03-29 20:03:15.966592 : 23 890 Kè
+2022-03-29 20:03:15.966592 : pokoje sedi srl vs detail
+2022-03-29 20:03:15.966592 : stravy sedi srl vs detail
+2022-03-29 20:03:15.966592 : ceny all sedi srl vs detail
+2022-03-29 20:03:15.966592 :  cena adult sedi srl vs detail
+2022-03-29 20:03:15.988586 : 15
+2022-03-29 20:03:15.988586 : 16
+2022-03-29 20:03:15.988586 : |||||HOTEL CISLO|||||||
+2022-03-29 20:03:15.988586 : 16
+2022-03-29 20:03:15.988586 : 16
+2022-03-29 20:03:15.988586 : 16
+2022-03-29 20:03:45.687313 : nenasle se exponea banner
+2022-03-29 20:03:46.854265 : 24 890 Kè
+2022-03-29 20:03:46.854265 : pokoje sedi srl vs detail
+2022-03-29 20:03:46.854265 : stravy sedi srl vs detail
+2022-03-29 20:03:46.854265 : ceny all sedi srl vs detail
+2022-03-29 20:03:46.855264 :  cena adult sedi srl vs detail
+2022-03-29 20:03:46.876258 : 16
+2022-03-29 20:03:46.876258 : 17
+2022-03-29 20:03:46.876258 : |||||HOTEL CISLO|||||||
+2022-03-29 20:03:46.876258 : 17
+2022-03-29 20:03:46.876258 : 17
+2022-03-29 20:03:46.876258 : 17
+2022-03-29 20:04:15.956448 : nenasle se exponea banner
+2022-03-29 20:04:17.146705 : 22 790 Kè
+2022-03-29 20:04:17.146705 : pokoje sedi srl vs detail
+2022-03-29 20:04:17.146705 : stravy sedi srl vs detail
+2022-03-29 20:04:17.146705 : ceny all sedi srl vs detail
+2022-03-29 20:04:17.146705 :  cena adult sedi srl vs detail
+2022-03-29 20:04:17.168698 : 17
+2022-03-29 20:04:17.168698 : 18
+2022-03-29 20:04:17.168698 : |||||HOTEL CISLO|||||||
+2022-03-29 20:04:17.168698 : 18
+2022-03-29 20:04:17.168698 : 18
+2022-03-29 20:04:17.168698 : 18
+2022-03-29 20:04:46.601661 : nenasle se exponea banner
+2022-03-29 20:04:47.727664 : 24 290 Kè
+2022-03-29 20:04:47.727664 : pokoje sedi srl vs detail
+2022-03-29 20:04:47.727664 : stravy sedi srl vs detail
+2022-03-29 20:04:47.727664 : ceny all sedi srl vs detail
+2022-03-29 20:04:47.727664 :  cena adult sedi srl vs detail
+2022-03-29 20:04:47.750658 : 18
+2022-03-29 20:04:47.750658 : 19
+2022-03-29 20:04:47.750658 : |||||HOTEL CISLO|||||||
+2022-03-29 20:04:47.750658 : 19
+2022-03-29 20:04:47.750658 : 19
+2022-03-29 20:04:47.750658 : 19
+2022-03-29 20:05:17.230336 : nenasle se exponea banner
+2022-03-29 20:05:18.414364 : 31 230 Kè
+2022-03-29 20:05:18.414364 : pokoje sedi srl vs detail
+2022-03-29 20:05:18.414364 : stravy sedi srl vs detail
+2022-03-29 20:05:18.414364 : ceny all sedi srl vs detail
+2022-03-29 20:05:18.414364 :  cena adult sedi srl vs detail
+2022-03-29 20:05:18.437357 : 19
+2022-03-29 20:05:18.437357 : 20
+2022-03-29 20:05:18.437357 : |||||HOTEL CISLO|||||||
+2022-03-29 20:05:18.437357 : 20
+2022-03-29 20:05:18.437357 : 20
+2022-03-29 20:05:18.437357 : 20
+2022-03-29 20:05:47.513326 : nenasle se exponea banner
+2022-03-29 20:05:48.655153 : 29 800 Kè
+2022-03-29 20:05:48.655153 : pokoje sedi srl vs detail
+2022-03-29 20:05:48.655153 : stravy sedi srl vs detail
+2022-03-29 20:05:48.655153 : ceny all sedi srl vs detail
+2022-03-29 20:05:48.655153 :  cena adult sedi srl vs detail
+2022-03-29 20:05:48.680143 : 20
+2022-03-29 20:05:48.680143 : 21
+2022-03-29 20:05:51.312845 : 
+                             
+                             
+2022-03-29 20:05:51.312845 : ====== WebDriver manager ======
+                             
+2022-03-29 20:05:51.334839 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 20:05:51.334839 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 20:05:51.533115 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 20:05:57.636035 : <selenium.webdriver.remote.webelement.WebElement (session="3c9f639460bc69e9bf4f4dc35ca1d9da", element="28f36141-fb15-44cb-adc5-b5dc23786c28")>
+2022-03-29 20:05:59.491443 : True
+2022-03-29 20:05:59.510435 : True
+2022-03-29 20:05:59.525432 : True
+2022-03-29 20:05:59.543425 : True
+2022-03-29 20:05:59.571417 : True
+2022-03-29 20:05:59.589411 : True
+2022-03-29 20:05:59.606405 : True
+2022-03-29 20:05:59.622400 : True
+2022-03-29 20:05:59.639395 : True
+2022-03-29 20:05:59.656390 : True
+2022-03-29 20:05:59.673399 : True
+2022-03-29 20:05:59.691396 : True
+2022-03-29 20:05:59.708374 : True
+2022-03-29 20:05:59.724367 : True
+2022-03-29 20:05:59.741380 : True
+2022-03-29 20:05:59.758375 : True
+2022-03-29 20:05:59.771367 : True
+2022-03-29 20:05:59.786363 : True
+2022-03-29 20:05:59.802343 : True
+2022-03-29 20:05:59.809341 : True
+2022-03-29 20:05:59.957293 : True
+2022-03-29 20:05:59.966290 : True
+2022-03-29 20:05:59.975294 : True
+2022-03-29 20:05:59.982285 : True
+2022-03-29 20:05:59.990282 : True
+2022-03-29 20:05:59.998280 : True
+2022-03-29 20:06:00.005279 : True
+2022-03-29 20:06:00.014275 : True
+2022-03-29 20:06:00.022273 : True
+2022-03-29 20:06:00.030270 : True
+2022-03-29 20:06:00.038267 : True
+2022-03-29 20:06:00.047264 : True
+2022-03-29 20:06:00.054262 : True
+2022-03-29 20:06:00.061260 : True
+2022-03-29 20:06:00.069257 : True
+2022-03-29 20:06:00.076261 : True
+2022-03-29 20:06:00.085252 : True
+2022-03-29 20:06:00.092250 : True
+2022-03-29 20:06:00.100247 : True
+2022-03-29 20:06:00.108245 : True
+2022-03-29 20:06:15.252102 : ceny
+2022-03-29 20:06:15.261099 : ceny
+2022-03-29 20:06:15.268097 : ceny
+2022-03-29 20:06:15.275095 : ceny
+2022-03-29 20:06:15.283092 : ceny
+2022-03-29 20:06:15.290090 : ceny
+2022-03-29 20:06:15.298088 : ceny
+2022-03-29 20:06:15.306088 : ceny
+2022-03-29 20:06:15.314082 : ceny
+2022-03-29 20:06:15.322080 : ceny
+2022-03-29 20:06:15.330077 : ceny
+2022-03-29 20:06:15.338075 : ceny
+2022-03-29 20:06:15.346072 : ceny
+2022-03-29 20:06:15.354070 : ceny
+2022-03-29 20:06:15.362067 : ceny
+2022-03-29 20:06:15.370064 : ceny
+2022-03-29 20:06:15.377072 : ceny
+2022-03-29 20:06:15.385059 : ceny
+2022-03-29 20:06:15.392057 : ceny
+2022-03-29 20:06:15.400062 : ceny
+2022-03-29 20:06:15.408052 : ceny
+2022-03-29 20:06:15.431045 : ceny
+2022-03-29 20:06:15.444043 : ceny
+2022-03-29 20:06:15.457037 : ceny
+2022-03-29 20:06:15.466047 : ceny
+2022-03-29 20:06:15.476031 : ceny
+2022-03-29 20:06:15.485028 : ceny
+2022-03-29 20:06:15.496025 : ceny
+2022-03-29 20:06:15.504023 : ceny
+2022-03-29 20:06:15.515019 : ceny
+2022-03-29 20:06:15.523016 : ceny
+2022-03-29 20:06:15.533014 : ceny
+2022-03-29 20:06:15.542009 : ceny
+2022-03-29 20:06:15.551007 : ceny
+2022-03-29 20:06:15.559005 : ceny
+2022-03-29 20:06:15.568002 : ceny
+2022-03-29 20:06:15.579000 : ceny
+2022-03-29 20:06:15.591994 : ceny
+2022-03-29 20:06:15.611989 : ceny
+2022-03-29 20:06:15.628983 : ceny
+2022-03-29 20:06:17.802760 : 
+                             
+                             
+2022-03-29 20:06:17.802760 : ====== WebDriver manager ======
+                             
+2022-03-29 20:06:17.826771 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 20:06:17.826771 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 20:06:17.988907 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 20:06:24.864334 : <selenium.webdriver.remote.webelement.WebElement (session="438f720aa999a9f43144496aa9c972d4", element="13dced6c-92b9-4e3f-82f3-efd0928868b4")>
+2022-03-29 20:06:37.764977 : True
+2022-03-29 20:06:37.780972 : True
+2022-03-29 20:06:37.811963 : True
+2022-03-29 20:06:37.927925 : True
+2022-03-29 20:06:37.960915 : True
+2022-03-29 20:06:37.975910 : True
+2022-03-29 20:06:37.990905 : True
+2022-03-29 20:06:37.997903 : True
+2022-03-29 20:06:38.013897 : True
+2022-03-29 20:06:38.029892 : True
+2022-03-29 20:06:38.041889 : True
+2022-03-29 20:06:38.055884 : True
+2022-03-29 20:06:38.063882 : True
+2022-03-29 20:06:38.080876 : True
+2022-03-29 20:06:38.097878 : True
+2022-03-29 20:06:38.113874 : True
+2022-03-29 20:06:38.127861 : True
+2022-03-29 20:06:38.141857 : True
+2022-03-29 20:06:38.150856 : True
+2022-03-29 20:06:38.176846 : True
+2022-03-29 20:06:38.298807 : True
+2022-03-29 20:06:38.313802 : True
+2022-03-29 20:06:38.327797 : True
+2022-03-29 20:06:38.342792 : True
+2022-03-29 20:06:38.361786 : True
+2022-03-29 20:06:38.376781 : True
+2022-03-29 20:06:38.393776 : True
+2022-03-29 20:06:38.410771 : True
+2022-03-29 20:06:38.424767 : True
+2022-03-29 20:06:38.431764 : True
+2022-03-29 20:06:38.446759 : True
+2022-03-29 20:06:38.459755 : True
+2022-03-29 20:06:38.475750 : True
+2022-03-29 20:06:38.492745 : True
+2022-03-29 20:06:38.510739 : True
+2022-03-29 20:06:38.526734 : True
+2022-03-29 20:06:38.543728 : True
+2022-03-29 20:06:38.561723 : True
+2022-03-29 20:06:38.577718 : True
+2022-03-29 20:06:38.595711 : True
+2022-03-29 20:06:53.671863 : ceny
+2022-03-29 20:06:53.678860 : ceny
+2022-03-29 20:06:53.686858 : ceny
+2022-03-29 20:06:53.694856 : ceny
+2022-03-29 20:06:53.702853 : ceny
+2022-03-29 20:06:53.709850 : ceny
+2022-03-29 20:06:53.717848 : ceny
+2022-03-29 20:06:53.725845 : ceny
+2022-03-29 20:06:53.733843 : ceny
+2022-03-29 20:06:53.740841 : ceny
+2022-03-29 20:06:53.748839 : ceny
+2022-03-29 20:06:53.756836 : ceny
+2022-03-29 20:06:53.764833 : ceny
+2022-03-29 20:06:53.772831 : ceny
+2022-03-29 20:06:53.780828 : ceny
+2022-03-29 20:06:53.787826 : ceny
+2022-03-29 20:06:53.795823 : ceny
+2022-03-29 20:06:53.803820 : ceny
+2022-03-29 20:06:53.811818 : ceny
+2022-03-29 20:06:53.818816 : ceny
+2022-03-29 20:06:53.826814 : ceny
+2022-03-29 20:06:53.834811 : ceny
+2022-03-29 20:06:53.841809 : ceny
+2022-03-29 20:06:53.849806 : ceny
+2022-03-29 20:06:53.857804 : ceny
+2022-03-29 20:06:53.864801 : ceny
+2022-03-29 20:06:53.872799 : ceny
+2022-03-29 20:06:53.879796 : ceny
+2022-03-29 20:06:53.886794 : ceny
+2022-03-29 20:06:53.893792 : ceny
+2022-03-29 20:06:53.900790 : ceny
+2022-03-29 20:06:53.907787 : ceny
+2022-03-29 20:06:53.914785 : ceny
+2022-03-29 20:06:53.922800 : ceny
+2022-03-29 20:06:53.929781 : ceny
+2022-03-29 20:06:53.937885 : ceny
+2022-03-29 20:06:53.944865 : ceny
+2022-03-29 20:06:53.952872 : ceny
+2022-03-29 20:06:53.959860 : ceny
+2022-03-29 20:06:53.967867 : ceny
+2022-03-29 20:06:56.160240 : 
+                             
+                             
+2022-03-29 20:06:56.160240 : ====== WebDriver manager ======
+                             
+2022-03-29 20:06:56.211240 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 20:06:56.211240 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 20:06:56.470965 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 20:07:02.068184 : <selenium.webdriver.remote.webelement.WebElement (session="a56d181ebf24bfc4fb58e9c1b04b5af0", element="3fe9c1c2-350d-4711-a03e-3499b2a05ba2")>
+2022-03-29 20:07:12.419597 : 
+                             
+                             
+2022-03-29 20:07:12.419597 : ====== WebDriver manager ======
+                             
+2022-03-29 20:07:12.468599 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 20:07:12.468599 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 20:07:12.531593 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 20:07:18.921632 : <selenium.webdriver.remote.webelement.WebElement (session="905c54b772e53aa866b5ce5dc61f21b5", element="b72af81f-8385-4334-b41d-a3442fee4c3e")>
+2022-03-29 20:07:21.945590 : ['30.3. (St)\nLanzarote (Španìlsko)\nPraha\n7 nocí\n10 990 Kè', '30.3. (St)\nGran Canaria (Španìlsko)\nPraha\n7 nocí\n10 390 Kè', '30.3. (St)\nArabské emiráty\nPraha\n7 nocí\n17 490 Kè', '31.3. (Èt)\nEgypt - Hurghada (Egypt)\nPraha\n7 nocí\n5 090 Kè', '31.3. (Èt)\nEgypt - Marsa Alam (Egypt)\nPraha\n7 nocí\n6 790 Kè', '1.4. (Pá)\nKapverdy\nPraha\n7 nocí\n16 990 Kè', '3.4. (Ne)\nFuerteventura (Španìlsko)\nPraha\n7 nocí\n14 356 Kè', '4.4. (Po)\nTenerife (Španìlsko)\nPraha\n7 nocí\n10 990 Kè', '5.4. (Út)\nEgypt - Hurghada (Egypt)\nPraha\n7 nocí\n7 340 Kè', '5.4. (Út)\nEgypt - Marsa Alam (Egypt)\nPraha\n7 nocí\n9 490 Kè', '6.4. (St)\nLanzarote (Španìlsko)\nPraha\n7 nocí\n12 990 Kè', '16.4. (So)\nDjerba (Tunisko)\nPraha\n7 nocí\n7 490 Kè', '7.4. (Èt) / 7 nocí\nBin Majid Beach Resort\n****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 16 990 Kè', '7.4. (Èt) / 7 nocí\nRadisson Resort Ras Al Khaimah\n****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 17 190 Kè', '7.4. (Èt) / 7 nocí\nHampton by Hilton Marjan Island\n****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 18 490 Kè', '6.5. (Pá) / 7 nocí\nHampton by Hilton Marjan Island léto\n****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 19 690 Kè', '22.4. (Pá) / 7 nocí\nRiu Hotel Dubai\n****\nDubaj (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 27 590 Kè', '7.4. (Èt) / 7 nocí\nFujairah Rotana Resort & Spa\n*****\nFujeirah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 20 390 Kè', '6.5. (Pá) / 7 nocí\nDoubleTree by Hilton Resort & Spa Marjan Island léto\n*****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 20 690 Kè', '7.4. (Èt) / 7 nocí\nThe Cove Rotana Resort\n*****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 21 090 Kè', '7.4. (Èt) / 7 nocí\nDoubleTree by Hilton Resort & Spa Marjan Island\n*****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 23 290 Kè', '3.4. (Ne) / 7 nocí\nFanar Hotel & Residences\n*****\nSalalah Wadi Khasbar (Omán)\nPraha\nAll inclusive\ndospìlý od 23 490 Kè']
+2022-03-29 20:07:21.945590 : ['30.3. (St)\nLanzarote (Španìlsko)\nPraha\n7 nocí\n10 990 Kè', '30.3. (St)\nGran Canaria (Španìlsko)\nPraha\n7 nocí\n10 390 Kè', '30.3. (St)\nArabské emiráty\nPraha\n7 nocí\n17 490 Kè', '31.3. (Èt)\nEgypt - Hurghada (Egypt)\nPraha\n7 nocí\n5 090 Kè', '31.3. (Èt)\nEgypt - Marsa Alam (Egypt)\nPraha\n7 nocí\n6 790 Kè', '1.4. (Pá)\nKapverdy\nPraha\n7 nocí\n16 990 Kè', '3.4. (Ne)\nFuerteventura (Španìlsko)\nPraha\n7 nocí\n14 356 Kè', '4.4. (Po)\nTenerife (Španìlsko)\nPraha\n7 nocí\n10 990 Kè', '5.4. (Út)\nEgypt - Hurghada (Egypt)\nPraha\n7 nocí\n7 340 Kè', '5.4. (Út)\nEgypt - Marsa Alam (Egypt)\nPraha\n7 nocí\n9 490 Kè', '6.4. (St)\nLanzarote (Španìlsko)\nPraha\n7 nocí\n12 990 Kè', '16.4. (So)\nDjerba (Tunisko)\nPraha\n7 nocí\n7 490 Kè', '7.4. (Èt) / 7 nocí\nBin Majid Beach Resort\n****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 16 990 Kè', '7.4. (Èt) / 7 nocí\nRadisson Resort Ras Al Khaimah\n****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 17 190 Kè', '7.4. (Èt) / 7 nocí\nHampton by Hilton Marjan Island\n****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 18 490 Kè', '6.5. (Pá) / 7 nocí\nHampton by Hilton Marjan Island léto\n****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 19 690 Kè', '22.4. (Pá) / 7 nocí\nRiu Hotel Dubai\n****\nDubaj (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 27 590 Kè', '7.4. (Èt) / 7 nocí\nFujairah Rotana Resort & Spa\n*****\nFujeirah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 20 390 Kè', '6.5. (Pá) / 7 nocí\nDoubleTree by Hilton Resort & Spa Marjan Island léto\n*****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 20 690 Kè', '7.4. (Èt) / 7 nocí\nThe Cove Rotana Resort\n*****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 21 090 Kè', '7.4. (Èt) / 7 nocí\nDoubleTree by Hilton Resort & Spa Marjan Island\n*****\nRas Al Khaimah (Arabské emiráty)\nPraha\nAll inclusive\ndospìlý od 23 290 Kè', '3.4. (Ne) / 7 nocí\nFanar Hotel & Residences\n*****\nSalalah Wadi Khasbar (Omán)\nPraha\nAll inclusive\ndospìlý od 23 490 Kè']
+2022-03-29 20:07:24.222701 : 
+                             
+                             
+2022-03-29 20:07:24.223701 : ====== WebDriver manager ======
+                             
+2022-03-29 20:07:24.279668 : Current google-chrome version is 99.0.4844
+                             
+2022-03-29 20:07:24.279668 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-29 20:07:24.366852 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-29 20:07:29.599525 : <selenium.webdriver.remote.webelement.WebElement (session="eb621f5b8070f7d50547ba037191af40", element="4f6fcb1b-4f5b-43e5-ad09-40fd0873455b")>
+2022-03-29 20:07:46.276540 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="eb621f5b8070f7d50547ba037191af40", element="41a48070-b0f2-4914-b729-0ab5c5e48f2b")>>

@@ -1,0 +1,284 @@
+2022-04-10 09:59:40.615227 : 
+                             
+                             
+2022-04-10 09:59:40.615227 : ====== WebDriver manager ======
+                             
+2022-04-10 09:59:40.639219 : Current google-chrome version is 100.0.4896
+                             
+2022-04-10 09:59:40.639219 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-10 09:59:41.650679 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-10 09:59:59.271632 : <selenium.webdriver.remote.webelement.WebElement (session="474d284fa78dd72e4704e6e676b0b755", element="924a51cd-9817-42ef-88c6-7b0974cf1a82")>
+2022-04-10 10:00:27.318750 : nenasle se exponea banner
+2022-04-10 10:00:27.385728 : gridy jdou videt
+2022-04-10 10:00:27.395726 : gridy jdou videt
+2022-04-10 10:00:27.404722 : gridy jdou videt
+2022-04-10 10:00:27.413720 : gridy jdou videt
+2022-04-10 10:00:27.421717 : gridy jdou videt
+2022-04-10 10:00:27.431715 : gridy jdou videt
+2022-04-10 10:00:27.440713 : gridy jdou videt
+2022-04-10 10:00:27.450708 : gridy jdou videt
+2022-04-10 10:00:27.460704 : gridy jdou videt
+2022-04-10 10:00:27.469702 : gridy jdou videt
+2022-04-10 10:00:27.479701 : gridy jdou videt
+2022-04-10 10:00:27.487701 : gridy jdou videt
+2022-04-10 10:00:27.497693 : gridy jdou videt
+2022-04-10 10:00:27.505690 : gridy jdou videt
+2022-04-10 10:00:27.515687 : gridy jdou videt
+2022-04-10 10:00:27.523684 : gridy jdou videt
+2022-04-10 10:00:27.532682 : gridy jdou videt
+2022-04-10 10:00:27.541679 : gridy jdou videt
+2022-04-10 10:00:27.553676 : gridy jdou videt
+2022-04-10 10:00:27.562672 : gridy jdou videt
+2022-04-10 10:00:27.570669 : gridy jdou videt
+2022-04-10 10:00:27.579666 : gridy jdou videt
+2022-04-10 10:00:27.587664 : gridy jdou videt
+2022-04-10 10:00:27.597661 : gridy jdou videt
+2022-04-10 10:00:27.605658 : gridy jdou videt
+2022-04-10 10:00:27.613656 : gridy jdou videt
+2022-04-10 10:00:27.621653 : gridy jdou videt
+2022-04-10 10:00:27.630650 : gridy jdou videt
+2022-04-10 10:00:27.637648 : gridy jdou videt
+2022-04-10 10:00:27.646645 : gridy jdou videt
+2022-04-10 10:00:27.653643 : gridy jdou videt
+2022-04-10 10:00:27.662640 : gridy jdou videt
+2022-04-10 10:00:27.669637 : gridy jdou videt
+2022-04-10 10:00:27.678635 : gridy jdou videt
+2022-04-10 10:00:27.686638 : gridy jdou videt
+2022-04-10 10:00:27.696629 : gridy jdou videt
+2022-04-10 10:00:27.703627 : gridy jdou videt
+2022-04-10 10:00:27.713624 : gridy jdou videt
+2022-04-10 10:00:27.721621 : gridy jdou videt
+2022-04-10 10:00:27.730618 : gridy jdou videt
+2022-04-10 10:00:27.739616 : gridy jdou videt
+2022-04-10 10:00:27.749612 : gridy jdou videt
+2022-04-10 10:00:27.760610 : gridy jdou videt
+2022-04-10 10:00:27.768606 : gridy jdou videt
+2022-04-10 10:00:27.778605 : gridy jdou videt
+2022-04-10 10:00:27.786600 : gridy jdou videt
+2022-04-10 10:00:27.796599 : gridy jdou videt
+2022-04-10 10:00:27.807594 : gridy jdou videt
+2022-04-10 10:00:27.817591 : gridy jdou videt
+2022-04-10 10:00:27.825588 : gridy jdou videt
+2022-04-10 10:00:27.834589 : gridy jdou videt
+2022-04-10 10:00:27.892569 : content jdou videt
+2022-04-10 10:00:27.901564 : content jdou videt
+2022-04-10 10:00:27.909561 : content jdou videt
+2022-04-10 10:00:27.919558 : content jdou videt
+2022-04-10 10:00:27.929555 : content jdou videt
+2022-04-10 10:00:27.938552 : content jdou videt
+2022-04-10 10:00:27.951548 : content jdou videt
+2022-04-10 10:00:27.961544 : content jdou videt
+2022-04-10 10:00:27.971541 : content jdou videt
+2022-04-10 10:00:27.982538 : content jdou videt
+2022-04-10 10:00:27.990535 : content jdou videt
+2022-04-10 10:00:28.002531 : content jdou videt
+2022-04-10 10:00:28.013528 : content jdou videt
+2022-04-10 10:00:28.022525 : content jdou videt
+2022-04-10 10:00:28.032590 : content jdou videt
+2022-04-10 10:00:28.041521 : content jdou videt
+2022-04-10 10:00:28.054515 : content jdou videt
+2022-04-10 10:00:28.063512 : content jdou videt
+2022-04-10 10:00:28.072510 : content jdou videt
+2022-04-10 10:00:28.082506 : content jdou videt
+2022-04-10 10:00:28.089503 : content jdou videt
+2022-04-10 10:00:28.098501 : content jdou videt
+2022-04-10 10:00:28.107498 : content jdou videt
+2022-04-10 10:00:28.116496 : content jdou videt
+2022-04-10 10:00:28.124493 : content jdou videt
+2022-04-10 10:00:28.132490 : content jdou videt
+2022-04-10 10:00:28.140488 : content jdou videt
+2022-04-10 10:00:28.149484 : content jdou videt
+2022-04-10 10:00:28.156482 : content jdou videt
+2022-04-10 10:00:28.166479 : content jdou videt
+2022-04-10 10:00:28.173477 : content jdou videt
+2022-04-10 10:00:28.183474 : content jdou videt
+2022-04-10 10:00:28.190472 : content jdou videt
+2022-04-10 10:00:28.200468 : content jdou videt
+2022-04-10 10:00:28.207466 : content jdou videt
+2022-04-10 10:00:28.216463 : content jdou videt
+2022-04-10 10:00:28.223461 : content jdou videt
+2022-04-10 10:00:28.232458 : content jdou videt
+2022-04-10 10:00:28.240456 : content jdou videt
+2022-04-10 10:00:28.249453 : content jdou videt
+2022-04-10 10:00:28.256451 : content jdou videt
+2022-04-10 10:00:28.266448 : content jdou videt
+2022-04-10 10:00:28.274445 : content jdou videt
+2022-04-10 10:00:28.283442 : content jdou videt
+2022-04-10 10:00:28.290440 : content jdou videt
+2022-04-10 10:00:28.299436 : content jdou videt
+2022-04-10 10:00:28.313433 : content jdou videt
+2022-04-10 10:00:28.320430 : content jdou videt
+2022-04-10 10:00:28.330427 : content jdou videt
+2022-04-10 10:00:28.339424 : content jdou videt
+2022-04-10 10:00:28.387410 : content jdou videt
+2022-04-10 10:00:30.654384 : 
+                             
+                             
+2022-04-10 10:00:30.654384 : ====== WebDriver manager ======
+                             
+2022-04-10 10:00:30.676376 : Current google-chrome version is 100.0.4896
+                             
+2022-04-10 10:00:30.676376 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-10 10:00:32.576201 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-10 10:01:13.928465 : <selenium.webdriver.remote.webelement.WebElement (session="7d2e07f1f59669f0a5277e7b1dbd52c8", element="0cf6b1c6-8baf-49cd-8698-483e904e524a")>
+2022-04-10 10:01:14.515277 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="7d2e07f1f59669f0a5277e7b1dbd52c8", element="8cd2ac5c-e77a-449d-96e8-8230eec80a54")>>
+2022-04-10 10:01:17.014354 : 
+                             
+                             
+2022-04-10 10:01:17.014354 : ====== WebDriver manager ======
+                             
+2022-04-10 10:01:17.046363 : Current google-chrome version is 100.0.4896
+                             
+2022-04-10 10:01:17.046363 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-10 10:01:18.355378 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-10 10:01:49.491172 : <selenium.webdriver.remote.webelement.WebElement (session="681928dbd3508ab69ccb8c7136b1ca06", element="e02cebc1-ee76-45ee-9763-41b2c7562c1f")>
+2022-04-10 10:02:17.476778 : nenasle se exponea banner
+2022-04-10 10:02:17.642723 : its ok
+2022-04-10 10:02:19.811428 : 
+                             
+                             
+2022-04-10 10:02:19.811428 : ====== WebDriver manager ======
+                             
+2022-04-10 10:02:19.855381 : Current google-chrome version is 100.0.4896
+                             
+2022-04-10 10:02:19.855381 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-10 10:02:20.239332 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-10 10:02:32.312073 : <selenium.webdriver.remote.webelement.WebElement (session="d9b434ff306b28d9cb0a415a52e74487", element="4f8b4426-762d-4128-9507-f2c3ad3d2fb9")>
+2022-04-10 10:02:37.849177 : All inclusive
+2022-04-10 10:02:43.095315 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:43.095315 : ok
+2022-04-10 10:02:46.337272 : 
+                             
+                             
+2022-04-10 10:02:46.337272 : ====== WebDriver manager ======
+                             
+2022-04-10 10:02:46.357266 : Current google-chrome version is 100.0.4896
+                             
+2022-04-10 10:02:46.357266 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-10 10:02:46.750191 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-10 10:03:05.612922 : <selenium.webdriver.remote.webelement.WebElement (session="663e9cb43b1bd9dddfde0fde975e9f78", element="b19acd4d-9428-48a7-91cb-399a1d4e55fd")>
+2022-04-10 10:03:32.338064 : nenasle se exponea banner
+2022-04-10 10:03:39.186451 : 
+                             
+                             
+2022-04-10 10:03:39.187450 : ====== WebDriver manager ======
+                             
+2022-04-10 10:03:39.209472 : Current google-chrome version is 100.0.4896
+                             
+2022-04-10 10:03:39.209472 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-10 10:03:40.052617 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-10 10:03:54.612402 : <selenium.webdriver.remote.webelement.WebElement (session="bc9067cfdb4656de61aebdec47152c6a", element="25613ba6-fb72-4bca-84b5-d3aac096b762")>
+2022-04-10 10:03:55.072256 : benefit item
+2022-04-10 10:03:55.089250 : benefit item
+2022-04-10 10:03:55.097248 : benefit item
+2022-04-10 10:03:55.108243 : benefit item
+2022-04-10 10:03:55.457489 : benefit item
+2022-04-10 10:03:55.484478 : benefit item
+2022-04-10 10:03:55.491476 : benefit item
+2022-04-10 10:03:55.538461 : grind container
+2022-04-10 10:03:55.545460 : grind container
+2022-04-10 10:03:55.563455 : grind container
+2022-04-10 10:03:55.578448 : grind container
+2022-04-10 10:03:55.589446 : grind container
+2022-04-10 10:03:55.597442 : grind container
+2022-04-10 10:03:55.609439 : grind container
+2022-04-10 10:03:55.621436 : grind container
+2022-04-10 10:03:55.629432 : grind container
+2022-04-10 10:03:55.648426 : grind container
+2022-04-10 10:03:55.663422 : grind container
+2022-04-10 10:03:55.677418 : grind container
+2022-04-10 10:03:55.690414 : grind container
+2022-04-10 10:03:55.704410 : grind container
+2022-04-10 10:03:55.726403 : grind container
+2022-04-10 10:03:55.738419 : grind container
+2022-04-10 10:03:55.746415 : grind container
+2022-04-10 10:03:55.757415 : grind container
+2022-04-10 10:03:55.764410 : grind container
+2022-04-10 10:03:55.774407 : grind container
+2022-04-10 10:03:55.784404 : grind container
+2022-04-10 10:04:05.283323 : tile img
+2022-04-10 10:04:05.299325 : tile img
+2022-04-10 10:04:05.308315 : tile img
+2022-04-10 10:04:05.317543 : tile img
+2022-04-10 10:04:05.328397 : tile img
+2022-04-10 10:04:05.337234 : tile img
+2022-04-10 10:04:05.348087 : tile img
+2022-04-10 10:04:05.355457 : tile img
+2022-04-10 10:04:05.364443 : tile img
+2022-04-10 10:04:07.595219 : 
+                             
+                             
+2022-04-10 10:04:07.595219 : ====== WebDriver manager ======
+                             
+2022-04-10 10:04:07.651369 : Current google-chrome version is 100.0.4896
+                             
+2022-04-10 10:04:07.651369 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-10 10:04:08.644040 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-10 10:04:23.474407 : <selenium.webdriver.remote.webelement.WebElement (session="449404ed0edada218e2e676232f43b07", element="8b44c523-7173-4c6c-88ef-d11c05b086a9")>
+2022-04-10 10:04:23.725327 : Položka menu existuje
+2022-04-10 10:04:26.662457 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:27.037499 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:27.694883 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:29.858984 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:31.873041 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:33.307473 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:34.591654 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:37.094028 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:38.313620 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:40.051620 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:42.228445 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:44.191218 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:46.343465 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:48.171039 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:49.713143 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:51.911511 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:54.239314 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:56.261353 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:59.394858 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:04:59.988588 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:05:00.832616 : https://www.fischer.cz/first-minute 200
+2022-04-10 10:05:04.139397 : 
+                             
+                             
+2022-04-10 10:05:04.139397 : ====== WebDriver manager ======
+                             
+2022-04-10 10:05:04.158390 : Current google-chrome version is 100.0.4896
+                             
+2022-04-10 10:05:04.158390 : Get LATEST chromedriver version for 100.0.4896 google-chrome
+                             
+2022-04-10 10:05:05.196060 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+                             
+2022-04-10 10:05:24.630823 : <selenium.webdriver.remote.webelement.WebElement (session="d577aceaf7ef21b9a9464334c7f2871d", element="64d92847-2dd8-4452-a7a6-7e7439bc8d8c")>

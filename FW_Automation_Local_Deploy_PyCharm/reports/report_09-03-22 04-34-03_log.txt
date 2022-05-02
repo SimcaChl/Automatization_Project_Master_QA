@@ -1,0 +1,11 @@
+2022-03-09 16:34:03.414322 : 
+                             
+                             
+2022-03-09 16:34:03.414322 : ====== WebDriver manager ======
+                             
+2022-03-09 16:34:03.443312 : Current google-chrome version is 99.0.4844
+                             
+2022-03-09 16:34:03.443312 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-09 16:34:03.536282 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             

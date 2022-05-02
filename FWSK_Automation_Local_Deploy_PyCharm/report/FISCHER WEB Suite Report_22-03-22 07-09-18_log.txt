@@ -1,0 +1,622 @@
+2022-03-22 19:09:18.024894 : 
+                             
+                             
+2022-03-22 19:09:18.024894 : ====== WebDriver manager ======
+                             
+2022-03-22 19:09:18.065881 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:09:18.065881 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:09:18.375782 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:09:31.500859 : nenasle se exponea banner
+2022-03-22 19:09:31.606983 : gridy jdou videt
+2022-03-22 19:09:31.614981 : gridy jdou videt
+2022-03-22 19:09:31.627977 : gridy jdou videt
+2022-03-22 19:09:31.635974 : gridy jdou videt
+2022-03-22 19:09:31.644971 : gridy jdou videt
+2022-03-22 19:09:31.652969 : gridy jdou videt
+2022-03-22 19:09:31.660966 : gridy jdou videt
+2022-03-22 19:09:31.668964 : gridy jdou videt
+2022-03-22 19:09:31.677961 : gridy jdou videt
+2022-03-22 19:09:31.685958 : gridy jdou videt
+2022-03-22 19:09:31.694955 : gridy jdou videt
+2022-03-22 19:09:31.701953 : gridy jdou videt
+2022-03-22 19:09:31.710950 : gridy jdou videt
+2022-03-22 19:09:31.717948 : gridy jdou videt
+2022-03-22 19:09:31.726946 : gridy jdou videt
+2022-03-22 19:09:31.733943 : gridy jdou videt
+2022-03-22 19:09:31.744939 : gridy jdou videt
+2022-03-22 19:09:31.751938 : gridy jdou videt
+2022-03-22 19:09:31.760934 : gridy jdou videt
+2022-03-22 19:09:31.767931 : gridy jdou videt
+2022-03-22 19:09:31.775930 : gridy jdou videt
+2022-03-22 19:09:31.783927 : gridy jdou videt
+2022-03-22 19:09:31.790925 : gridy jdou videt
+2022-03-22 19:09:31.798922 : gridy jdou videt
+2022-03-22 19:09:31.806921 : gridy jdou videt
+2022-03-22 19:09:31.857903 : content jdou videt
+2022-03-22 19:09:31.865900 : content jdou videt
+2022-03-22 19:09:31.872899 : content jdou videt
+2022-03-22 19:09:31.881896 : content jdou videt
+2022-03-22 19:09:31.888893 : content jdou videt
+2022-03-22 19:09:31.897891 : content jdou videt
+2022-03-22 19:09:31.905888 : content jdou videt
+2022-03-22 19:09:31.914885 : content jdou videt
+2022-03-22 19:09:31.923882 : content jdou videt
+2022-03-22 19:09:31.932879 : content jdou videt
+2022-03-22 19:09:31.940877 : content jdou videt
+2022-03-22 19:09:31.949874 : content jdou videt
+2022-03-22 19:09:31.956872 : content jdou videt
+2022-03-22 19:09:31.965869 : content jdou videt
+2022-03-22 19:09:31.972867 : content jdou videt
+2022-03-22 19:09:31.983863 : content jdou videt
+2022-03-22 19:09:31.990861 : content jdou videt
+2022-03-22 19:09:31.999857 : content jdou videt
+2022-03-22 19:09:32.007855 : content jdou videt
+2022-03-22 19:09:32.016852 : content jdou videt
+2022-03-22 19:09:32.024850 : content jdou videt
+2022-03-22 19:09:32.033848 : content jdou videt
+2022-03-22 19:09:32.045843 : content jdou videt
+2022-03-22 19:09:32.053840 : content jdou videt
+2022-03-22 19:09:32.061838 : content jdou videt
+2022-03-22 19:09:34.412657 : 
+                             
+                             
+2022-03-22 19:09:34.412657 : ====== WebDriver manager ======
+                             
+2022-03-22 19:09:34.445676 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:09:34.445676 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:09:34.580620 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:11:26.780084 : 
+                             
+                             
+2022-03-22 19:11:26.780084 : ====== WebDriver manager ======
+                             
+2022-03-22 19:11:26.807076 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:11:26.807076 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:11:26.899046 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:11:38.160058 : nenasle se exponea banner
+2022-03-22 19:11:40.513242 : 
+                             
+                             
+2022-03-22 19:11:40.513242 : ====== WebDriver manager ======
+                             
+2022-03-22 19:11:40.536234 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:11:40.536234 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:11:40.640202 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:11:51.154319 : nenasle se exponea banner
+2022-03-22 19:11:57.042351 : 
+                             
+                             
+2022-03-22 19:11:57.042351 : ====== WebDriver manager ======
+                             
+2022-03-22 19:11:57.065341 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:11:57.065341 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:11:57.145317 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:12:06.743646 : nenasle se exponea banner
+2022-03-22 19:12:14.834486 : 
+                             
+                             
+2022-03-22 19:12:14.834486 : ====== WebDriver manager ======
+                             
+2022-03-22 19:12:14.859476 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:12:14.859476 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:12:14.983438 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:12:25.375445 : benefit item
+2022-03-22 19:12:25.385442 : benefit item
+2022-03-22 19:12:25.397439 : benefit item
+2022-03-22 19:12:25.407435 : benefit item
+2022-03-22 19:12:25.416435 : benefit item
+2022-03-22 19:12:25.426429 : benefit item
+2022-03-22 19:12:25.436427 : benefit item
+2022-03-22 19:12:25.677350 : grind container
+2022-03-22 19:12:25.691344 : grind container
+2022-03-22 19:12:25.705339 : grind container
+2022-03-22 19:12:25.714337 : grind container
+2022-03-22 19:12:25.724334 : grind container
+2022-03-22 19:12:25.733331 : grind container
+2022-03-22 19:12:25.742327 : grind container
+2022-03-22 19:12:25.751327 : grind container
+2022-03-22 19:12:25.761321 : grind container
+2022-03-22 19:12:25.772318 : grind container
+2022-03-22 19:12:25.780316 : grind container
+2022-03-22 19:12:25.789313 : grind container
+2022-03-22 19:12:25.797310 : grind container
+2022-03-22 19:12:25.809306 : grind container
+2022-03-22 19:12:25.817305 : grind container
+2022-03-22 19:12:25.827300 : grind container
+2022-03-22 19:12:25.840297 : grind container
+2022-03-22 19:12:25.848294 : grind container
+2022-03-22 19:12:26.023799 : tile img
+2022-03-22 19:12:26.042790 : tile img
+2022-03-22 19:12:26.053788 : tile img
+2022-03-22 19:12:26.061784 : tile img
+2022-03-22 19:12:26.070781 : tile img
+2022-03-22 19:12:26.078779 : tile img
+2022-03-22 19:12:26.087776 : tile img
+2022-03-22 19:12:26.095773 : tile img
+2022-03-22 19:12:26.107770 : tile img
+2022-03-22 19:12:28.630192 : 
+                             
+                             
+2022-03-22 19:12:28.630192 : ====== WebDriver manager ======
+                             
+2022-03-22 19:12:28.656188 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:12:28.656188 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:12:28.774150 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:12:42.196152 : 
+                             
+                             
+2022-03-22 19:12:42.196152 : ====== WebDriver manager ======
+                             
+2022-03-22 19:12:42.222162 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:12:42.222162 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:12:42.430076 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:13:00.357512 : 
+                             
+                             
+2022-03-22 19:13:00.357512 : ====== WebDriver manager ======
+                             
+2022-03-22 19:13:00.382477 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:13:00.382477 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:13:00.456599 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:13:15.188063 : ZANZIBAR
+2022-03-22 19:13:20.417028 : hote dlazdice klik
+2022-03-22 19:13:24.738206 : ØECKO
+2022-03-22 19:13:26.716089 : last no such ele except
+2022-03-22 19:13:30.685148 : TURECKO
+2022-03-22 19:13:33.179717 : hote dlazdice klik
+2022-03-22 19:13:37.796798 : EGYPT
+2022-03-22 19:13:42.227939 : hote dlazdice klik
+2022-03-22 19:13:46.411051 : KAPVERDY
+2022-03-22 19:13:49.681053 : hote dlazdice klik
+2022-03-22 19:13:53.737041 : OMAN
+2022-03-22 19:13:57.123186 : hote dlazdice klik
+2022-03-22 19:14:01.448215 : MALEDIVY
+2022-03-22 19:14:04.175385 : hote dlazdice klik
+2022-03-22 19:14:08.661031 : DUBAJ
+2022-03-22 19:14:12.371488 : hote dlazdice klik
+2022-03-22 19:14:16.480999 : MALLORCA
+2022-03-22 19:14:19.364442 : hote dlazdice klik
+2022-03-22 19:14:23.201124 : BULHARSKO
+2022-03-22 19:14:26.306979 : hote dlazdice klik
+2022-03-22 19:14:29.907620 : CHORVATSKO
+2022-03-22 19:14:31.772058 : last no such ele except
+2022-03-22 19:14:35.908235 : KEFALONIA
+2022-03-22 19:14:37.775141 : hote dlazdice klik
+2022-03-22 19:14:41.487291 : ATTIKA
+2022-03-22 19:14:43.228928 : last no such ele except
+2022-03-22 19:14:47.106370 : POJIŠTÌNÍ
+2022-03-22 19:14:48.966307 : hote dlazdice klik
+2022-03-22 19:14:52.837672 : PARKOVÁNÍ
+2022-03-22 19:14:55.142442 : 
+                             
+                             
+2022-03-22 19:14:55.142442 : ====== WebDriver manager ======
+                             
+2022-03-22 19:14:55.169433 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:14:55.169433 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:14:55.301439 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:15:04.207370 : ZANZIBAR
+2022-03-22 19:15:07.850058 : 
+                             
+                             
+2022-03-22 19:15:07.850058 : ====== WebDriver manager ======
+                             
+2022-03-22 19:15:07.880047 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:15:07.880047 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:15:07.966023 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:15:20.968884 : 
+                             
+                             
+2022-03-22 19:15:20.968884 : ====== WebDriver manager ======
+                             
+2022-03-22 19:15:20.991876 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:15:20.991876 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:15:21.095900 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:15:35.355539 : 
+                             
+                             
+2022-03-22 19:15:35.355539 : ====== WebDriver manager ======
+                             
+2022-03-22 19:15:35.380520 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:15:35.380520 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:15:35.483514 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:15:49.728555 : 
+                             
+                             
+2022-03-22 19:15:49.728555 : ====== WebDriver manager ======
+                             
+2022-03-22 19:15:49.753534 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:15:49.753534 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:15:49.858500 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:15:58.732374 : boxiky
+2022-03-22 19:15:58.740370 : boxiky
+2022-03-22 19:15:58.748368 : boxiky
+2022-03-22 19:15:58.756366 : boxiky
+2022-03-22 19:15:58.764363 : boxiky
+2022-03-22 19:15:58.772361 : boxiky
+2022-03-22 19:15:58.933309 : basic info 
+2022-03-22 19:15:58.940307 : basic info 
+2022-03-22 19:15:58.951304 : basic info 
+2022-03-22 19:15:58.959301 : basic info 
+2022-03-22 19:15:58.968298 : basic info 
+2022-03-22 19:15:58.976296 : basic info 
+2022-03-22 19:16:02.088769 : 
+                             
+                             
+2022-03-22 19:16:02.088769 : ====== WebDriver manager ======
+                             
+2022-03-22 19:16:02.111743 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:16:02.111743 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:16:02.243754 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:16:15.283024 : []
+2022-03-22 19:16:17.588250 : 
+                             
+                             
+2022-03-22 19:16:17.588250 : ====== WebDriver manager ======
+                             
+2022-03-22 19:16:17.611241 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:16:17.611241 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:16:17.726263 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:16:31.975484 : []
+2022-03-22 19:16:34.289839 : 
+                             
+                             
+2022-03-22 19:16:34.289839 : ====== WebDriver manager ======
+                             
+2022-03-22 19:16:34.313831 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:16:34.313831 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:16:34.396811 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:16:50.021885 : 
+                             
+                             
+2022-03-22 19:16:50.021885 : ====== WebDriver manager ======
+                             
+2022-03-22 19:16:50.042878 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:16:50.042878 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:16:50.124852 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:17:04.243794 : 
+                             
+                             
+2022-03-22 19:17:04.243794 : ====== WebDriver manager ======
+                             
+2022-03-22 19:17:04.267800 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:17:04.267800 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:17:04.331808 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:17:19.688753 : 
+                             
+                             
+2022-03-22 19:17:19.688753 : ====== WebDriver manager ======
+                             
+2022-03-22 19:17:19.710746 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:17:19.710746 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:17:19.872802 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:17:32.436729 : nenasle se exponea banner
+2022-03-22 19:17:36.852463 : 
+                             
+                             
+2022-03-22 19:17:36.852463 : ====== WebDriver manager ======
+                             
+2022-03-22 19:17:36.875455 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:17:36.876456 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:17:36.941434 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:17:49.553079 : nenasle se exponea banner
+2022-03-22 19:17:51.979050 : 
+                             
+                             
+2022-03-22 19:17:51.979050 : ====== WebDriver manager ======
+                             
+2022-03-22 19:17:52.001043 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:17:52.001043 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:17:52.098012 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:18:08.174372 : nenasle se exponea banner
+2022-03-22 19:18:22.185892 : actually OK
+2022-03-22 19:18:34.630507 : 
+                             
+                             
+2022-03-22 19:18:34.630507 : ====== WebDriver manager ======
+                             
+2022-03-22 19:18:34.654497 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:18:34.654497 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:18:34.726493 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:18:47.265145 : nenasle se exponea banner
+2022-03-22 19:18:53.712991 : []
+2022-03-22 19:19:04.185199 : 
+                             
+                             
+2022-03-22 19:19:04.185199 : ====== WebDriver manager ======
+                             
+2022-03-22 19:19:04.206192 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:19:04.206192 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:19:04.270171 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:19:17.136390 : nenasle se exponea banner
+2022-03-22 19:19:17.176761 : |||||HOTEL CISLO|||||||
+2022-03-22 19:19:17.176761 : 1
+2022-03-22 19:19:17.176761 : 1
+2022-03-22 19:19:17.176761 : 1
+2022-03-22 19:19:24.163737 : nenasle se exponea banner
+2022-03-22 19:19:25.308930 : 574 €
+2022-03-22 19:19:25.308930 : pokoje sedi srl vs detail
+2022-03-22 19:19:25.308930 : stravy sedi srl vs detail
+2022-03-22 19:19:25.308930 : ceny all sedi srl vs detail
+2022-03-22 19:19:25.308930 :  cena adult sedi srl vs detail
+2022-03-22 19:19:25.326926 : 1
+2022-03-22 19:19:25.326926 : 2
+2022-03-22 19:19:25.326926 : |||||HOTEL CISLO|||||||
+2022-03-22 19:19:25.326926 : 2
+2022-03-22 19:19:25.326926 : 2
+2022-03-22 19:19:25.326926 : 2
+2022-03-22 19:19:29.673944 : nenasle se exponea banner
+2022-03-22 19:19:30.806712 : 636 €
+2022-03-22 19:19:30.806712 : pokoje sedi srl vs detail
+2022-03-22 19:19:30.806712 : stravy sedi srl vs detail
+2022-03-22 19:19:30.806712 : ceny all sedi srl vs detail
+2022-03-22 19:19:30.806712 :  cena adult sedi srl vs detail
+2022-03-22 19:19:30.832704 : 2
+2022-03-22 19:19:30.832704 : 3
+2022-03-22 19:19:30.832704 : |||||HOTEL CISLO|||||||
+2022-03-22 19:19:30.832704 : 3
+2022-03-22 19:19:30.832704 : 3
+2022-03-22 19:19:30.832704 : 3
+2022-03-22 19:19:35.620451 : nenasle se exponea banner
+2022-03-22 19:19:36.744949 : 628 €
+2022-03-22 19:19:36.744949 : pokoje sedi srl vs detail
+2022-03-22 19:19:36.744949 : stravy sedi srl vs detail
+2022-03-22 19:19:36.744949 : ceny all sedi srl vs detail
+2022-03-22 19:19:36.744949 :  cena adult sedi srl vs detail
+2022-03-22 19:19:36.777938 : 3
+2022-03-22 19:19:36.777938 : 4
+2022-03-22 19:19:36.777938 : |||||HOTEL CISLO|||||||
+2022-03-22 19:19:36.777938 : 4
+2022-03-22 19:19:36.777938 : 4
+2022-03-22 19:19:36.777938 : 4
+2022-03-22 19:19:41.712412 : nenasle se exponea banner
+2022-03-22 19:19:42.846002 : 732 €
+2022-03-22 19:19:42.846002 : pokoje sedi srl vs detail
+2022-03-22 19:19:42.846002 : stravy sedi srl vs detail
+2022-03-22 19:19:42.846002 : ceny all sedi srl vs detail
+2022-03-22 19:19:42.846002 :  cena adult sedi srl vs detail
+2022-03-22 19:19:42.862997 : 4
+2022-03-22 19:19:42.862997 : 5
+2022-03-22 19:19:42.862997 : |||||HOTEL CISLO|||||||
+2022-03-22 19:19:42.862997 : 5
+2022-03-22 19:19:42.862997 : 5
+2022-03-22 19:19:42.862997 : 5
+2022-03-22 19:19:47.509706 : nenasle se exponea banner
+2022-03-22 19:19:48.647204 : 764 €
+2022-03-22 19:19:48.647204 : pokoje sedi srl vs detail
+2022-03-22 19:19:48.647204 : stravy sedi srl vs detail
+2022-03-22 19:19:48.647204 : ceny all sedi srl vs detail
+2022-03-22 19:19:48.647204 :  cena adult sedi srl vs detail
+2022-03-22 19:19:48.666199 : 5
+2022-03-22 19:19:48.666199 : 6
+2022-03-22 19:19:48.666199 : |||||HOTEL CISLO|||||||
+2022-03-22 19:19:48.666199 : 6
+2022-03-22 19:19:48.666199 : 6
+2022-03-22 19:19:48.666199 : 6
+2022-03-22 19:19:52.982300 : nenasle se exponea banner
+2022-03-22 19:19:54.114442 : 740 €
+2022-03-22 19:19:54.114442 : pokoje sedi srl vs detail
+2022-03-22 19:19:54.114442 : stravy sedi srl vs detail
+2022-03-22 19:19:54.114442 : ceny all sedi srl vs detail
+2022-03-22 19:19:54.114442 :  cena adult sedi srl vs detail
+2022-03-22 19:19:54.131437 : 6
+2022-03-22 19:19:54.132436 : 7
+2022-03-22 19:19:54.132436 : |||||HOTEL CISLO|||||||
+2022-03-22 19:19:54.132436 : 7
+2022-03-22 19:19:54.132436 : 7
+2022-03-22 19:19:54.132436 : 7
+2022-03-22 19:19:59.134802 : nenasle se exponea banner
+2022-03-22 19:20:00.278165 : 808 €
+2022-03-22 19:20:00.278165 : pokoje sedi srl vs detail
+2022-03-22 19:20:00.278165 : stravy sedi srl vs detail
+2022-03-22 19:20:00.278165 : ceny all sedi srl vs detail
+2022-03-22 19:20:00.278165 :  cena adult sedi srl vs detail
+2022-03-22 19:20:00.295160 : 7
+2022-03-22 19:20:00.295160 : 8
+2022-03-22 19:20:00.295160 : |||||HOTEL CISLO|||||||
+2022-03-22 19:20:00.295160 : 8
+2022-03-22 19:20:00.295160 : 8
+2022-03-22 19:20:00.295160 : 8
+2022-03-22 19:20:04.369278 : nenasle se exponea banner
+2022-03-22 19:20:05.503315 : 1 352 €
+2022-03-22 19:20:05.503315 : pokoje sedi srl vs detail
+2022-03-22 19:20:05.503315 : stravy sedi srl vs detail
+2022-03-22 19:20:05.503315 : ceny all sedi srl vs detail
+2022-03-22 19:20:05.503315 :  cena adult sedi srl vs detail
+2022-03-22 19:20:05.521309 : 8
+2022-03-22 19:20:05.521309 : 9
+2022-03-22 19:20:05.521309 : |||||HOTEL CISLO|||||||
+2022-03-22 19:20:05.521309 : 9
+2022-03-22 19:20:05.521309 : 9
+2022-03-22 19:20:05.521309 : 9
+2022-03-22 19:20:10.524777 : nenasle se exponea banner
+2022-03-22 19:20:11.668710 : 610 €
+2022-03-22 19:20:11.668710 : pokoje sedi srl vs detail
+2022-03-22 19:20:11.668710 : stravy sedi srl vs detail
+2022-03-22 19:20:11.668710 : ceny all sedi srl vs detail
+2022-03-22 19:20:11.668710 :  cena adult sedi srl vs detail
+2022-03-22 19:20:11.685705 : 9
+2022-03-22 19:20:11.685705 : 10
+2022-03-22 19:20:11.685705 : |||||HOTEL CISLO|||||||
+2022-03-22 19:20:11.685705 : 10
+2022-03-22 19:20:11.685705 : 10
+2022-03-22 19:20:11.685705 : 10
+2022-03-22 19:20:16.152367 : nenasle se exponea banner
+2022-03-22 19:20:17.275465 : 636 €
+2022-03-22 19:20:17.275465 : pokoje sedi srl vs detail
+2022-03-22 19:20:17.275465 : stravy sedi srl vs detail
+2022-03-22 19:20:17.275465 : ceny all sedi srl vs detail
+2022-03-22 19:20:17.275465 :  cena adult sedi srl vs detail
+2022-03-22 19:20:17.293447 : 10
+2022-03-22 19:20:17.293447 : 11
+2022-03-22 19:20:17.293447 : |||||HOTEL CISLO|||||||
+2022-03-22 19:20:17.293447 : 11
+2022-03-22 19:20:17.293447 : 11
+2022-03-22 19:20:17.293447 : 11
+2022-03-22 19:20:22.266156 : nenasle se exponea banner
+2022-03-22 19:20:23.395106 : 
+2022-03-22 19:20:23.395106 : pokoje sedi srl vs detail
+2022-03-22 19:20:23.395106 : stravy sedi srl vs detail
+2022-03-22 19:20:26.096011 : 
+                             
+                             
+2022-03-22 19:20:26.096011 : ====== WebDriver manager ======
+                             
+2022-03-22 19:20:26.123002 : Current google-chrome version is 99.0.4844
+                             
+2022-03-22 19:20:26.123002 : Get LATEST chromedriver version for 99.0.4844 google-chrome
+                             
+2022-03-22 19:20:26.320939 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\99.0.4844.51\chromedriver.exe] found in cache
+                             
+2022-03-22 19:20:32.884195 : True
+2022-03-22 19:20:32.892192 : True
+2022-03-22 19:20:32.900190 : True
+2022-03-22 19:20:32.910186 : True
+2022-03-22 19:20:32.918184 : True
+2022-03-22 19:20:32.927180 : True
+2022-03-22 19:20:32.935178 : True
+2022-03-22 19:20:32.943176 : True
+2022-03-22 19:20:32.991161 : True
+2022-03-22 19:20:33.000158 : True
+2022-03-22 19:20:33.106124 : True
+2022-03-22 19:20:33.114121 : True
+2022-03-22 19:20:33.122118 : True
+2022-03-22 19:20:33.130116 : True
+2022-03-22 19:20:33.137114 : True
+2022-03-22 19:20:33.145113 : True
+2022-03-22 19:20:33.152109 : True
+2022-03-22 19:20:33.159107 : True
+2022-03-22 19:20:33.166104 : True
+2022-03-22 19:20:33.174103 : True
+2022-03-22 19:20:33.240080 : True
+2022-03-22 19:20:33.249077 : True
+2022-03-22 19:20:33.258076 : True
+2022-03-22 19:20:33.266072 : True
+2022-03-22 19:20:33.274070 : True
+2022-03-22 19:20:33.284068 : True
+2022-03-22 19:20:33.293064 : True
+2022-03-22 19:20:33.301071 : True
+2022-03-22 19:20:33.311073 : True
+2022-03-22 19:20:33.319055 : True
+2022-03-22 19:20:33.328063 : True
+2022-03-22 19:20:33.336050 : True
+2022-03-22 19:20:33.345064 : True
+2022-03-22 19:20:33.353044 : True
+2022-03-22 19:20:33.362042 : True
+2022-03-22 19:20:33.370041 : True
+2022-03-22 19:20:33.379039 : True
+2022-03-22 19:20:33.387034 : True
+2022-03-22 19:20:33.395031 : True
+2022-03-22 19:20:33.404029 : True
+2022-03-22 19:20:48.497477 : ceny
+2022-03-22 19:20:48.506474 : ceny
+2022-03-22 19:20:48.513472 : ceny
+2022-03-22 19:20:48.522479 : ceny
+2022-03-22 19:20:48.529467 : ceny
+2022-03-22 19:20:48.538463 : ceny
+2022-03-22 19:20:48.545462 : ceny
+2022-03-22 19:20:48.554461 : ceny
+2022-03-22 19:20:48.562457 : ceny
+2022-03-22 19:20:48.570454 : ceny
+2022-03-22 19:20:48.578451 : ceny
+2022-03-22 19:20:48.586448 : ceny
+2022-03-22 19:20:48.594446 : ceny
+2022-03-22 19:20:48.601444 : ceny
+2022-03-22 19:20:48.609441 : ceny
+2022-03-22 19:20:48.616439 : ceny
+2022-03-22 19:20:48.625437 : ceny
+2022-03-22 19:20:48.633435 : ceny
+2022-03-22 19:20:48.641431 : ceny
+2022-03-22 19:20:48.649429 : ceny
+2022-03-22 19:20:48.657426 : ceny
+2022-03-22 19:20:48.664424 : ceny
+2022-03-22 19:20:48.672421 : ceny
+2022-03-22 19:20:48.679418 : ceny
+2022-03-22 19:20:48.687416 : ceny
+2022-03-22 19:20:48.694413 : ceny
+2022-03-22 19:20:48.702412 : ceny
+2022-03-22 19:20:48.709409 : ceny
+2022-03-22 19:20:48.717407 : ceny
+2022-03-22 19:20:48.726403 : ceny
+2022-03-22 19:20:48.733402 : ceny
+2022-03-22 19:20:48.743398 : ceny
+2022-03-22 19:20:48.750396 : ceny
+2022-03-22 19:20:48.759393 : ceny
+2022-03-22 19:20:48.767391 : ceny
+2022-03-22 19:20:48.776388 : ceny
+2022-03-22 19:20:48.783386 : ceny
+2022-03-22 19:20:48.793382 : ceny
+2022-03-22 19:20:48.801380 : ceny
+2022-03-22 19:20:48.810376 : ceny
