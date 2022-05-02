@@ -1,4 +1,4 @@
-from to_import import acceptConsent, URL_kluby, setUp, tearDown, generalDriverWaitImplicit
+from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_kluby, setUp, tearDown, generalDriverWaitImplicit
 import unittest
 import pyautogui as p
 import time

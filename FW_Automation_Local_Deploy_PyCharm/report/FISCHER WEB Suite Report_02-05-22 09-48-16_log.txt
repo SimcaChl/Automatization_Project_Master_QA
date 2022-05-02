@@ -1,0 +1,202 @@
+2022-05-02 21:48:47.249912 : <selenium.webdriver.remote.webelement.WebElement (session="f9e756754adca60e792edce765fa3314f36cf0ae", element="node-57DB086F-900D-4A63-B9C6-EDE4BD2D0369")>
+2022-05-02 21:49:17.042601 : nenasle se exponea banner
+2022-05-02 21:49:18.385242 : gridy jdou videt
+2022-05-02 21:49:19.046539 : gridy jdou videt
+2022-05-02 21:49:20.453932 : gridy jdou videt
+2022-05-02 21:49:21.027432 : gridy jdou videt
+2022-05-02 21:49:21.972130 : gridy jdou videt
+2022-05-02 21:49:22.509958 : gridy jdou videt
+2022-05-02 21:49:22.775873 : gridy jdou videt
+2022-05-02 21:49:23.062782 : gridy jdou videt
+2022-05-02 21:49:23.369684 : gridy jdou videt
+2022-05-02 21:49:23.740565 : gridy jdou videt
+2022-05-02 21:49:24.214414 : gridy jdou videt
+2022-05-02 21:49:24.691492 : gridy jdou videt
+2022-05-02 21:49:25.043380 : gridy jdou videt
+2022-05-02 21:49:26.138475 : gridy jdou videt
+2022-05-02 21:49:28.390336 : gridy jdou videt
+2022-05-02 21:49:28.928163 : gridy jdou videt
+2022-05-02 21:49:29.442004 : gridy jdou videt
+2022-05-02 21:49:29.923849 : gridy jdou videt
+2022-05-02 21:49:30.374705 : gridy jdou videt
+2022-05-02 21:49:30.758582 : gridy jdou videt
+2022-05-02 21:49:31.256426 : gridy jdou videt
+2022-05-02 21:49:32.283095 : gridy jdou videt
+2022-05-02 21:49:32.748946 : gridy jdou videt
+2022-05-02 21:49:33.142821 : gridy jdou videt
+2022-05-02 21:49:33.811607 : gridy jdou videt
+2022-05-02 21:49:34.567367 : gridy jdou videt
+2022-05-02 21:49:35.173172 : gridy jdou videt
+2022-05-02 21:49:35.665015 : gridy jdou videt
+2022-05-02 21:49:36.104938 : gridy jdou videt
+2022-05-02 21:49:36.448764 : gridy jdou videt
+2022-05-02 21:49:37.042747 : gridy jdou videt
+2022-05-02 21:49:37.733526 : gridy jdou videt
+2022-05-02 21:49:38.170386 : gridy jdou videt
+2022-05-02 21:49:38.816180 : gridy jdou videt
+2022-05-02 21:49:39.636429 : gridy jdou videt
+2022-05-02 21:49:40.367195 : gridy jdou videt
+2022-05-02 21:49:40.997500 : gridy jdou videt
+2022-05-02 21:49:41.602307 : gridy jdou videt
+2022-05-02 21:49:42.021681 : gridy jdou videt
+2022-05-02 21:49:42.706461 : gridy jdou videt
+2022-05-02 21:49:43.691148 : gridy jdou videt
+2022-05-02 21:49:44.593365 : gridy jdou videt
+2022-05-02 21:49:45.501074 : gridy jdou videt
+2022-05-02 21:49:45.984427 : gridy jdou videt
+2022-05-02 21:49:46.390299 : gridy jdou videt
+2022-05-02 21:49:46.758180 : gridy jdou videt
+2022-05-02 21:49:47.100580 : gridy jdou videt
+2022-05-02 21:49:47.455467 : gridy jdou videt
+2022-05-02 21:49:47.879331 : gridy jdou videt
+2022-05-02 21:49:48.447150 : gridy jdou videt
+2022-05-02 21:49:49.383357 : gridy jdou videt
+2022-05-02 21:49:52.034021 : content jdou videt
+2022-05-02 21:49:52.394906 : content jdou videt
+2022-05-02 21:49:52.722801 : content jdou videt
+2022-05-02 21:49:53.092683 : content jdou videt
+2022-05-02 21:49:53.472561 : content jdou videt
+2022-05-02 21:49:53.941412 : content jdou videt
+2022-05-02 21:49:54.982585 : content jdou videt
+2022-05-02 21:49:56.262176 : content jdou videt
+2022-05-02 21:49:57.090912 : content jdou videt
+2022-05-02 21:49:57.591764 : content jdou videt
+2022-05-02 21:49:58.151959 : content jdou videt
+2022-05-02 21:49:58.544286 : content jdou videt
+2022-05-02 21:49:58.879179 : content jdou videt
+2022-05-02 21:49:59.306042 : content jdou videt
+2022-05-02 21:49:59.806883 : content jdou videt
+2022-05-02 21:50:00.857829 : content jdou videt
+2022-05-02 21:50:01.708556 : content jdou videt
+2022-05-02 21:50:02.670249 : content jdou videt
+2022-05-02 21:50:03.359029 : content jdou videt
+2022-05-02 21:50:03.774896 : content jdou videt
+2022-05-02 21:50:04.252677 : content jdou videt
+2022-05-02 21:50:04.610563 : content jdou videt
+2022-05-02 21:50:05.018436 : content jdou videt
+2022-05-02 21:50:05.473794 : content jdou videt
+2022-05-02 21:50:05.969635 : content jdou videt
+2022-05-02 21:50:06.879745 : content jdou videt
+2022-05-02 21:50:07.437313 : content jdou videt
+2022-05-02 21:50:08.079430 : content jdou videt
+2022-05-02 21:50:08.644052 : content jdou videt
+2022-05-02 21:50:09.347016 : content jdou videt
+2022-05-02 21:50:09.691906 : content jdou videt
+2022-05-02 21:50:10.070627 : content jdou videt
+2022-05-02 21:50:10.456083 : content jdou videt
+2022-05-02 21:50:10.880033 : content jdou videt
+2022-05-02 21:50:11.405234 : content jdou videt
+2022-05-02 21:50:12.147813 : content jdou videt
+2022-05-02 21:50:12.588331 : content jdou videt
+2022-05-02 21:50:13.086838 : content jdou videt
+2022-05-02 21:50:13.645941 : content jdou videt
+2022-05-02 21:50:14.334229 : content jdou videt
+2022-05-02 21:50:15.042018 : content jdou videt
+2022-05-02 21:50:15.777784 : content jdou videt
+2022-05-02 21:50:16.135669 : content jdou videt
+2022-05-02 21:50:16.750161 : content jdou videt
+2022-05-02 21:50:17.241002 : content jdou videt
+2022-05-02 21:50:17.687860 : content jdou videt
+2022-05-02 21:50:18.198696 : content jdou videt
+2022-05-02 21:50:18.514595 : content jdou videt
+2022-05-02 21:50:19.345696 : content jdou videt
+2022-05-02 21:50:21.493011 : content jdou videt
+2022-05-02 21:50:22.065357 : content jdou videt
+2022-05-02 21:50:54.135250 : <selenium.webdriver.remote.webelement.WebElement (session="2a58ddc231215b3c992111d108ec0fed1811a206", element="node-66D159D8-2CA5-44D0-9812-A833DB8E18A9")>
+2022-05-02 21:50:56.763543 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="2a58ddc231215b3c992111d108ec0fed1811a206", element="node-23A96D34-D607-4100-B3C9-C79D23F524FB")>>
+2022-05-02 21:51:37.117990 : <selenium.webdriver.remote.webelement.WebElement (session="7d4250da2367b9c81d3727bf343599fa8860354d", element="node-CE4D693B-7F66-4E8F-A249-FCDC84780D8D")>
+2022-05-02 21:52:06.400670 : nenasle se exponea banner
+2022-05-02 21:52:15.192724 : its ok
+2022-05-02 21:52:49.423296 : <selenium.webdriver.remote.webelement.WebElement (session="8eee1312353ba17fb9d5bcda6d3a54cb7c799764", element="node-6ED064C0-4B25-400B-BD74-0BC16349C9E7")>
+2022-05-02 21:52:58.757852 : All inclusive
+2022-05-02 21:53:09.433969 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:09.433969 : ok
+2022-05-02 21:53:42.991650 : <selenium.webdriver.remote.webelement.WebElement (session="1277d3d93704cc994e6a696291b65b11fdb0ac32", element="node-0B454A05-B9FC-421D-B4B2-935E7EBEED98")>
+2022-05-02 21:54:11.253302 : nenasle se exponea banner
+2022-05-02 21:55:06.291595 : <selenium.webdriver.remote.webelement.WebElement (session="c6418ee7f045040f8b3646788e9721998027ed76", element="node-30B6CB38-1228-4ACA-A78F-8CFFE364A61F")>
+2022-05-02 21:55:09.710098 : benefit item
+2022-05-02 21:55:10.625805 : benefit item
+2022-05-02 21:55:11.290592 : benefit item
+2022-05-02 21:55:12.010362 : benefit item
+2022-05-02 21:55:12.656156 : benefit item
+2022-05-02 21:55:12.980960 : benefit item
+2022-05-02 21:55:13.339394 : benefit item
+2022-05-02 21:55:14.817833 : grind container
+2022-05-02 21:55:15.148727 : grind container
+2022-05-02 21:55:15.534578 : grind container
+2022-05-02 21:55:16.072406 : grind container
+2022-05-02 21:55:16.954945 : grind container
+2022-05-02 21:55:17.566422 : grind container
+2022-05-02 21:55:17.996912 : grind container
+2022-05-02 21:55:18.509193 : grind container
+2022-05-02 21:55:19.178990 : grind container
+2022-05-02 21:55:19.517883 : grind container
+2022-05-02 21:55:20.068032 : grind container
+2022-05-02 21:55:20.436987 : grind container
+2022-05-02 21:55:20.810166 : grind container
+2022-05-02 21:55:21.268020 : grind container
+2022-05-02 21:55:21.818844 : grind container
+2022-05-02 21:55:22.776538 : grind container
+2022-05-02 21:55:23.703241 : grind container
+2022-05-02 21:55:24.822765 : grind container
+2022-05-02 21:55:25.404792 : grind container
+2022-05-02 21:55:25.763074 : grind container
+2022-05-02 21:55:26.184616 : grind container
+2022-05-02 21:55:28.749949 : tile img
+2022-05-02 21:55:29.698646 : tile img
+2022-05-02 21:55:30.432802 : tile img
+2022-05-02 21:55:30.936646 : tile img
+2022-05-02 21:55:31.304505 : tile img
+2022-05-02 21:55:31.644029 : tile img
+2022-05-02 21:55:32.057090 : tile img
+2022-05-02 21:55:32.568927 : tile img
+2022-05-02 21:55:33.102756 : tile img
+2022-05-02 21:55:34.122087 : tile img
+2022-05-02 21:55:34.721195 : tile img
+2022-05-02 21:55:35.402329 : tile img
+2022-05-02 21:55:36.165087 : tile img
+2022-05-02 21:55:36.693892 : tile img
+2022-05-02 21:55:38.279668 : tile img
+2022-05-02 21:56:06.013249 : <selenium.webdriver.remote.webelement.WebElement (session="3395e391a9cc61c58ecffacdba8edcdee096afa8", element="node-BD433A13-AE68-470D-9B22-ADC7BD1DEC75")>
+2022-05-02 21:56:09.767929 : Položka menu existuje
+2022-05-02 21:56:13.160199 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:13.871976 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:14.578953 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:15.485857 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:16.397114 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:16.930182 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:17.512072 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:18.005259 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:19.012802 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:20.086677 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:20.894656 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:21.914853 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:22.465677 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:22.955907 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:23.583969 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:24.887918 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:26.549448 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:27.519581 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:27.870470 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:28.665216 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:29.087081 : https://www.fischer.cz/first-minute 200
+2022-05-02 21:56:59.277229 : <selenium.webdriver.remote.webelement.WebElement (session="d90ea3848a29f712941423dd0ebcb4f73e27e13e", element="node-48ADD89F-706F-41CD-8B8C-C9B69BA171C8")>

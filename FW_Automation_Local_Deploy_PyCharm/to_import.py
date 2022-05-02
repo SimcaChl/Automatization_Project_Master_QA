@@ -33,9 +33,9 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
 from email.mime.text import MIMEText
-from to_import_secret import emailPass
+from FW_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass, comandExecutor
 from selenium import webdriver
-from to_import_secret import comandExecutor
+
 from webdriver_manager.chrome import ChromeDriverManager
 
 def tearDown(self):

@@ -1,6 +1,6 @@
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent,  URL,  setUp, tearDown
+from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent,  URL,  setUp, tearDown
 import time
 import unittest
 from selenium.webdriver import ActionChains

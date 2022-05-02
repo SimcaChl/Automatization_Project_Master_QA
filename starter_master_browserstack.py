@@ -1,8 +1,11 @@
 #from FW_Automation_Local_Deploy_PyCharm.starter_local import suite
-from Automatization_Project_Master.FW_Automation_Local_Deploy_PyCharm import *
-from Automatization_Project_Master.FW_Automation_Local_Deploy_PyCharm import *
+#from Automatization_Project_Master.FW_Automation_Local_Deploy_PyCharm import *
 
+from os import path
+import sys
+sys.path.append(path.abspath('/FW_Automation_Local_Deploy_PyCharm'))
 
+from FW_Automation_Local_Deploy_PyCharm.starter_local import *
 import unittest
 
 import HtmlTestRunner

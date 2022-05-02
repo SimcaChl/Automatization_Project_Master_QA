@@ -1,23 +1,23 @@
-from CovidInfo_D import *
-from pobocky import *
-from Detail_D import *
-from Detail_C import *
-from DetskeKluby_D import *
-from dovolena_D import *
-from FM_D import *
-from fulltext_C import *
-from groupsearch_D import *
-from HP_D import *
-from LM_D import *
-from poznavacky import *
-from SDO_D import *
-from SRL_C import *
-from SRL_D import *
-from HP_C import *
+from FW_Automation_Local_Deploy_PyCharm.CovidInfo_D import *
+from FW_Automation_Local_Deploy_PyCharm.pobocky import *
+from FW_Automation_Local_Deploy_PyCharm.Detail_D import *
+from FW_Automation_Local_Deploy_PyCharm.Detail_C import *
+from FW_Automation_Local_Deploy_PyCharm.DetskeKluby_D import *
+from FW_Automation_Local_Deploy_PyCharm.dovolena_D import *
+from FW_Automation_Local_Deploy_PyCharm.FM_D import *
+from FW_Automation_Local_Deploy_PyCharm.fulltext_C import *
+from FW_Automation_Local_Deploy_PyCharm.groupsearch_D import *
+from FW_Automation_Local_Deploy_PyCharm.HP_D import *
+from FW_Automation_Local_Deploy_PyCharm.LM_D import *
+from FW_Automation_Local_Deploy_PyCharm.poznavacky import *
+from FW_Automation_Local_Deploy_PyCharm.SDO_D import *
+from FW_Automation_Local_Deploy_PyCharm.SRL_C import *
+from FW_Automation_Local_Deploy_PyCharm.SRL_D import *
+from FW_Automation_Local_Deploy_PyCharm.HP_C import *
 import HtmlTestRunner
 #import HTMLTestRunner      ##at office PC gotta be set up like that (???)
 
-def suite():
+def suite2():
     suite = unittest.TestSuite()
     suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
     suite.addTest(TestDetailHotelu_D("test_detail_D"))
@@ -50,7 +50,7 @@ def suite():
     suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
     return suite
 
-def suite2():
+def suite():
     suite = unittest.TestSuite()
     suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
     return suite
