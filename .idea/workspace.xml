@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 09-48-52_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 09-48-52_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 09-48-34_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 09-48-34_log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/report/FISCHER WEB Suite Report_02-05-22 09-48-16_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/report/FISCHER WEB Suite Report_02-05-22 09-48-16_log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter_master_browserstack.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_master_browserstack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/to_import_master.py" beforeDir="false" afterPath="$PROJECT_DIR$/to_import_master.py" afterDir="false" />

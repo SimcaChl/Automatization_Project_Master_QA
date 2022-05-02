@@ -47,17 +47,7 @@ desired_cap = {
 "browserstack.networkLogs" : "true"
 }
 
-desired_cap = {
-"os" : "OS X",
-"os_version" : "Monterey",
-"browser" : "Safari",
-"browser_version" : "15.0",
-"resolution" : "1600x1200",
-"project" : "ET-full_suite",
-"browserstack.local" : "false",
-"browserstack.networkLogs" : "true",
-"browserstack.selenium_version" : "3.14.0"
-}
+
 
 
 def setUp(self):

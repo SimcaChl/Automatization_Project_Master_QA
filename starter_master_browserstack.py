@@ -28,11 +28,11 @@ def EW_full_suite():
     #outfile = open("C:\Users\KDK\Desktop\HTML_TEST_REPORTS\sest_results.html", "w")
     outfile = open("results.html", "w")
 
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER WEB Suite Report', report_name='FISCHER WEB Suite Report',
-                            open_in_browser=True, description="FISCHER WEB Suite Report")
+    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='EXIM WEB Suite Report', report_name='EXIM WEB Suite Report',
+                            open_in_browser=True, description="EXIM WEB Suite Report")
     #runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER WEB Suite Report', report_name='FISCHER WEB Suite Report', open_in_browser=True, description="FISCHER WEB Suite Report")
     ##at office PC gotta be set up like that (???)
-    runner.run(EW_full_suite())
+    runner.run(suite_EW_full())
 
 
 

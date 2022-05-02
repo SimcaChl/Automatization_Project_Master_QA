@@ -15,7 +15,7 @@ from EW_Automation_Local_Deploy_PyCharm.SRL_D import *
 import HtmlTestRunner
 from EW_Automation_Local_Deploy_PyCharm.HP_C import *
 
-def EW_full_suite():
+def suite_EW_full():
     suite = unittest.TestSuite()
     suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
     suite.addTest(TestDetailHotelu_D("test_detail_D"))

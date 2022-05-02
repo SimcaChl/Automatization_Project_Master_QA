@@ -808,3 +808,40 @@
 2022-05-02 22:43:07.275251 : Razeni od nejlevnejsiho je OK
 2022-05-02 22:43:07.275251 : [29602, 34137, 34460, 35055, 35482, 35702, 35826, 36855, 36914, 37079, 37242, 37681, 38021, 38536, 38953, 39070, 39196, 39319, 39390, 39483]
 2022-05-02 22:43:07.275251 : [29602, 34137, 34460, 35055, 35482, 35702, 35826, 36855, 36914, 37079, 37242, 37681, 38021, 38536, 38953, 39070, 39196, 39319, 39390, 39483]
+2022-05-02 22:43:28.515656 : <selenium.webdriver.remote.webelement.WebElement (session="24045c46b0fa4e354328a6115df0ca045fcabe48", element="node-163C3485-EFD7-4FAB-B7AC-284DA165A3C2")>
+2022-05-02 22:43:58.248101 : nenasle se exponea banner
+2022-05-02 22:44:35.471111 : <selenium.webdriver.remote.webelement.WebElement (session="e6ae4d2b4aa5d210e714494b995e880ac54597c4", element="node-85F933DB-EC08-430D-9409-832A61BBF361")>
+2022-05-02 22:45:05.572502 : nenasle se exponea banner
+2022-05-02 22:45:47.181865 : nenasel se small kolecko
+2022-05-02 22:46:16.511862 : actually OK
+2022-05-02 22:47:20.646820 : <selenium.webdriver.remote.webelement.WebElement (session="28f1c1563ec125f50e0cc9bad156d478c06b921c", element="node-EA644622-96DC-489E-B140-285501D8E415")>
+2022-05-02 22:47:50.924119 : nenasle se exponea banner
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ok
+2022-05-02 22:48:12.414189 : ['All inclusive', 'All inclusive', 'All inclusive Plus', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-05-02 22:48:35.691813 : <selenium.webdriver.remote.webelement.WebElement (session="08027e49df390e028371e596f9f9b3af0e695b3f", element="node-E6D476B5-2914-4D52-B759-1DD82EAE2A2C")>
+2022-05-02 22:49:05.446814 : nenasle se exponea banner
+2022-05-02 22:49:06.039624 : |||||HOTEL CISLO|||||||
+2022-05-02 22:49:06.039624 : 1
+2022-05-02 22:49:06.039624 : 1
+2022-05-02 22:49:06.039624 : 1
+2022-05-02 22:49:48.081737 : nenasle se exponea banner
+2022-05-02 22:49:51.825365 : 15 890 Kè
