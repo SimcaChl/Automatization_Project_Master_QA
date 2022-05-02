@@ -237,3 +237,31 @@
 2022-05-02 22:04:37.553360 : [156, 157, 158, 163, 164, 165, 166, 167, 169, 171, 171, 171, 172, 173, 174, 175, 175, 175, 176, 177]
 2022-05-02 22:05:05.172698 : <selenium.webdriver.remote.webelement.WebElement (session="8882f8fecfea6e16bb768c21466ac8c6948202dd", element="node-3A5ADA0F-89D9-4BC6-A1E6-F2821781D865")>
 2022-05-02 22:05:35.703704 : nenasle se exponea banner
+2022-05-02 22:06:05.177699 : <selenium.webdriver.remote.webelement.WebElement (session="07c4b09c650693bd6bc6bf6344ec3e05da3f5725", element="node-35FF340C-7A0A-44F4-BB11-C0703C1CBEB8")>
+2022-05-02 22:06:34.931009 : nenasle se exponea banner
+2022-05-02 22:07:22.832798 : nenasel se large kolecko
+2022-05-02 22:07:54.262037 : nenasel se small kolecko
+2022-05-02 22:08:24.055763 : actually OK
+2022-05-02 22:09:26.954712 : <selenium.webdriver.remote.webelement.WebElement (session="198ecbed16e2b0ad13eaffd31127fd91e762d8d8", element="node-404D1828-E1F2-44AE-8A8D-A41C35254A7A")>
+2022-05-02 22:09:57.139642 : nenasle se exponea banner
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ok
+2022-05-02 22:10:22.678189 : ['All inclusive', 'All inclusive', 'All inclusive Plus', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']

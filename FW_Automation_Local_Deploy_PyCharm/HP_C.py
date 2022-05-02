@@ -1,11 +1,11 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, URL, setUp, tearDown, generalDriverWaitImplicit
+from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL, setUp, tearDown, generalDriverWaitImplicit
 import unittest
 from selenium.webdriver.support import expected_conditions as EC
-from groupsearch_D import groupSearch_D
-from Detail_D import detail_D
-from SRL_D import SRL_D
+from FW_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
+from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
+from FW_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
 import time
 from selenium.webdriver.common.action_chains import ActionChains
 
