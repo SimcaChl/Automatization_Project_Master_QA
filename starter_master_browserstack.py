@@ -10,7 +10,7 @@ from EW_Automation_Local_Deploy_PyCharm.starter_local import *
 import unittest
 
 import HtmlTestRunner
-
+#import HTMLTestRunner
 def FW_full_suite():
 #if __name__ == '__main__':
     runner = unittest.TextTestRunner()
@@ -36,10 +36,14 @@ def EW_full_suite():
 
 def running_suites_over_and_over():
     while True:
+        print("EW suite")
         EW_full_suite()
+
         time.sleep(900)
+        print("FW suite")
         FW_full_suite()
+
         time.sleep(426)
-running_suites_over_and_over()
+#running_suites_over_and_over()
 #EW_full_suite()
-#FW_full_suite()
+FW_full_suite()

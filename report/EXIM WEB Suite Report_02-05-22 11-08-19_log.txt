@@ -77,3 +77,33 @@
 2022-05-02 23:11:19.128754 : <selenium.webdriver.remote.webelement.WebElement (session="021092802faf5ad34c47c0b6f783a5813b25d66c", element="node-DDF0319D-D483-4BAB-9D75-2A3B7A07D9F0")>
 2022-05-02 23:11:48.853937 : nenasle se exponea banner
 2022-05-02 23:11:57.916804 : its ok
+2022-05-02 23:12:23.852149 : <selenium.webdriver.remote.webelement.WebElement (session="afc66a17cc6a9a983cbc2a5ef218e8aa2642135b", element="node-93084630-BED1-4999-8347-F9EB71D7D6F4")>
+2022-05-02 23:12:53.611037 : nenasle se exponea banner
+2022-05-02 23:13:02.155202 : All inclusive
+2022-05-02 23:13:12.973430 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:12.973430 : ok
+2022-05-02 23:13:52.739262 : <selenium.webdriver.remote.webelement.WebElement (session="ae9e727a43a41552f0284f49b77ed15bee77fd25", element="node-24E380DB-8004-4352-B0E2-7F78524C08D5")>
+2022-05-02 23:14:22.993533 : nenasle se exponea banner
+2022-05-02 23:15:46.863482 : <selenium.webdriver.remote.webelement.WebElement (session="88ab4dfcd630a06c1a392beb6483b484490b799f", element="node-9A41E8A0-7B3E-468F-906A-CA41FCC05590")>
+2022-05-02 23:15:51.105478 : benefit item
+2022-05-02 23:15:51.822957 : benefit item
+2022-05-02 23:15:52.692679 : benefit item
