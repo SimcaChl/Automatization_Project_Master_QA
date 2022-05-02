@@ -39,12 +39,15 @@ from to_import_secret_master import comandExecutor
 from webdriver_manager.chrome import ChromeDriverManager
 
 desired_cap = {
-"os_version" : "14",
-"device" : "iPhone 12",
-"real_mobile" : "true",
+"os" : "OS X",
+"os_version" : "Monterey",
+"browser" : "Safari",
+"browser_version" : "15.3",
 "project" : "FW-full_suite",
 "browserstack.local" : "false",
-"browserstack.networkLogs" : "true"
+"browserstack.debug" : "true",
+"browserstack.networkLogs" : "true",
+"browserstack.selenium_version" : "3.14.0"
 }
 
 
