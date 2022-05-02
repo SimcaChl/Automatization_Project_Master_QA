@@ -39,6 +39,15 @@ from to_import_secret_master import comandExecutor
 from webdriver_manager.chrome import ChromeDriverManager
 
 desired_cap = {
+"os_version" : "14",
+"device" : "iPhone 12",
+"real_mobile" : "true",
+"project" : "FW-full_suite",
+"browserstack.local" : "false",
+"browserstack.networkLogs" : "true"
+}
+
+desired_cap = {
 "os" : "OS X",
 "os_version" : "Monterey",
 "browser" : "Safari",
@@ -49,6 +58,7 @@ desired_cap = {
 "browserstack.networkLogs" : "true",
 "browserstack.selenium_version" : "3.14.0"
 }
+
 
 def setUp(self):
   #self.driver = webdriver.Chrome(ChromeDriverManager().install())
