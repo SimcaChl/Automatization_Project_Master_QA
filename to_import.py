@@ -34,11 +34,14 @@ from email.mime.text import MIMEText
 from to_import_secret import emailPass
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-
+from to_import_secret import comandExecutor
 
 
 def setUp(self):
-  self.driver = webdriver.Chrome(ChromeDriverManager().install())
+  #self.driver = webdriver.Chrome(ChromeDriverManager().install())
+  self.driver = webdriver.Remote(
+    command_executor=comandExecutor,
+    desired_capabilities=desired_cap)
   generalDriverWaitImplicit(self.driver)
   #self.driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
   #self.driver = webdriver.Opera(executable_path=OperaDriverManager().install())
