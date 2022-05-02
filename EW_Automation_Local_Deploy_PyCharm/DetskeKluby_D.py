@@ -1,4 +1,4 @@
-from to_import import acceptConsent, URL_kluby, setUp, tearDown
+from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_kluby, setUp, tearDown
 import unittest
 import pyautogui as p
 p.FAILSAFE = False
