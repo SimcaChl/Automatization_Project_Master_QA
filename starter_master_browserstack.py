@@ -40,6 +40,6 @@ def running_suites_over_and_over():
         time.sleep(900)
         FW_full_suite()
         time.sleep(426)
-
+running_suites_over_and_over()
 #EW_full_suite()
 #FW_full_suite()
