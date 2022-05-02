@@ -6,11 +6,12 @@ import sys
 sys.path.append(path.abspath('/FW_Automation_Local_Deploy_PyCharm'))
 
 from FW_Automation_Local_Deploy_PyCharm.starter_local import *
+from EW_Automation_Local_Deploy_PyCharm.starter_local import *
 import unittest
 
 import HtmlTestRunner
 
-def call_asas():
+def FW_full_suite():
 #if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     #outfile = open("C:\Users\KDK\Desktop\HTML_TEST_REPORTS\sest_results.html", "w")

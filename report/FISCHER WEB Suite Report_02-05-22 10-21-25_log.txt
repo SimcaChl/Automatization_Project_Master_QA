@@ -104,3 +104,31 @@
 2022-05-02 22:23:31.259311 : content jdou videt
 2022-05-02 22:24:01.866239 : <selenium.webdriver.remote.webelement.WebElement (session="5e82c82e2c359a43ddd3d1bd2f51f4f33f6457a8", element="node-3EF89027-4E93-4BBD-AA7C-7628DD11FF69")>
 2022-05-02 22:24:04.316897 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="5e82c82e2c359a43ddd3d1bd2f51f4f33f6457a8", element="node-A6E22D34-B437-42D9-A1A7-E562821CD518")>>
+2022-05-02 22:24:42.254673 : <selenium.webdriver.remote.webelement.WebElement (session="f0c7998054d3ed53256d031b772fb5a9010538ce", element="node-7E34E348-62B8-4F87-92BD-A9410B47FB50")>
+2022-05-02 22:25:11.307822 : nenasle se exponea banner
+2022-05-02 22:25:20.810161 : its ok
+2022-05-02 22:25:53.268054 : <selenium.webdriver.remote.webelement.WebElement (session="715e49f3d2e956886f16eba430b7fe2341ff7804", element="node-7D4C66BE-4D12-43CE-90DC-F430CDECCC75")>
+2022-05-02 22:26:02.185095 : All inclusive
+2022-05-02 22:26:13.635127 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:13.635127 : ok
+2022-05-02 22:26:46.219721 : <selenium.webdriver.remote.webelement.WebElement (session="efe987761c6fa1967c6ddbc57a44d8e419fc20e3", element="node-1BF927F1-BABC-44CE-AF7F-B118C081A7AB")>
+2022-05-02 22:27:15.858993 : nenasle se exponea banner
