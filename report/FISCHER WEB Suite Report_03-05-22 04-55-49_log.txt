@@ -102,3 +102,9 @@
 2022-05-03 16:57:26.217653 : content jdou videt
 2022-05-03 16:57:26.467573 : content jdou videt
 2022-05-03 16:57:26.734488 : content jdou videt
+2022-05-03 16:58:05.684902 : <selenium.webdriver.remote.webelement.WebElement (session="8651e80f05cbc87bdcecd917c5608ebb49c6afc7", element="ad8993e7-17e8-4ed7-8014-d1a95a97e19f")>
+2022-05-03 16:58:08.083136 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="8651e80f05cbc87bdcecd917c5608ebb49c6afc7", element="3e8a7c7a-45aa-4833-8b56-89269792df60")>>
+2022-05-03 16:58:51.276330 : <selenium.webdriver.remote.webelement.WebElement (session="d734400e04ff98a214dc2b2ab7b50a45aa191e3b", element="b280fb97-3129-482d-83c3-e9063d7824aa")>
+2022-05-03 16:59:21.352704 : nenasle se exponea banner
+2022-05-03 16:59:23.401674 : its ok
+2022-05-03 16:59:57.980424 : <selenium.webdriver.remote.webelement.WebElement (session="126d291a463fe75d0ed47403646f96c41fc9378c", element="a611b398-4df8-4710-b73a-075f09ef101f")>
