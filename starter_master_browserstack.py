@@ -10,7 +10,7 @@ from EW_Automation_Local_Deploy_PyCharm.starter_local import *
 import unittest
 
 import HtmlTestRunner
-#import HTMLTestRunner
+#import HTMLTestRunner as HtmlTestRunner        ##setting for office pc since the packaga installed with diff name (i guess?)
 def FW_full_suite():
 #if __name__ == '__main__':
     runner = unittest.TextTestRunner()

@@ -1,0 +1,227 @@
+2022-05-03 11:26:39.044672 : <selenium.webdriver.remote.webelement.WebElement (session="580e4bb609e98062f0f6f43747a696d1d647abc2", element="9df2754c-94fa-44f1-a6d7-5cd147ca798d")>
+2022-05-03 11:27:08.497764 : nenasle se exponea banner
+2022-05-03 11:27:09.752345 : gridy jdou videt
+2022-05-03 11:27:10.035263 : gridy jdou videt
+2022-05-03 11:27:10.430661 : gridy jdou videt
+2022-05-03 11:27:10.731566 : gridy jdou videt
+2022-05-03 11:27:11.032470 : gridy jdou videt
+2022-05-03 11:27:11.314380 : gridy jdou videt
+2022-05-03 11:27:11.576955 : gridy jdou videt
+2022-05-03 11:27:11.898853 : gridy jdou videt
+2022-05-03 11:27:12.245742 : gridy jdou videt
+2022-05-03 11:27:12.672605 : gridy jdou videt
+2022-05-03 11:27:13.092471 : gridy jdou videt
+2022-05-03 11:27:13.861936 : gridy jdou videt
+2022-05-03 11:27:14.201828 : gridy jdou videt
+2022-05-03 11:27:14.479739 : gridy jdou videt
+2022-05-03 11:27:15.846247 : gridy jdou videt
+2022-05-03 11:27:16.234126 : gridy jdou videt
+2022-05-03 11:27:16.511949 : gridy jdou videt
+2022-05-03 11:27:16.796865 : gridy jdou videt
+2022-05-03 11:27:17.103771 : gridy jdou videt
+2022-05-03 11:27:17.415356 : gridy jdou videt
+2022-05-03 11:27:17.687270 : gridy jdou videt
+2022-05-03 11:27:17.975619 : gridy jdou videt
+2022-05-03 11:27:18.285519 : gridy jdou videt
+2022-05-03 11:27:18.641406 : gridy jdou videt
+2022-05-03 11:27:18.905118 : gridy jdou videt
+2022-05-03 11:27:19.262004 : gridy jdou videt
+2022-05-03 11:27:19.550912 : gridy jdou videt
+2022-05-03 11:27:20.891484 : content jdou videt
+2022-05-03 11:27:21.195386 : content jdou videt
+2022-05-03 11:27:21.502288 : content jdou videt
+2022-05-03 11:27:21.787197 : content jdou videt
+2022-05-03 11:27:22.142190 : content jdou videt
+2022-05-03 11:27:22.560938 : content jdou videt
+2022-05-03 11:27:22.837792 : content jdou videt
+2022-05-03 11:27:23.151964 : content jdou videt
+2022-05-03 11:27:23.447336 : content jdou videt
+2022-05-03 11:27:23.740636 : content jdou videt
+2022-05-03 11:27:24.054536 : content jdou videt
+2022-05-03 11:27:24.357439 : content jdou videt
+2022-05-03 11:27:24.810300 : content jdou videt
+2022-05-03 11:27:25.112880 : content jdou videt
+2022-05-03 11:27:25.411785 : content jdou videt
+2022-05-03 11:27:25.670703 : content jdou videt
+2022-05-03 11:27:25.985603 : content jdou videt
+2022-05-03 11:27:26.301501 : content jdou videt
+2022-05-03 11:27:26.634395 : content jdou videt
+2022-05-03 11:27:27.013278 : content jdou videt
+2022-05-03 11:27:27.438797 : content jdou videt
+2022-05-03 11:27:27.803680 : content jdou videt
+2022-05-03 11:27:28.148569 : content jdou videt
+2022-05-03 11:27:28.447474 : content jdou videt
+2022-05-03 11:27:28.718387 : content jdou videt
+2022-05-03 11:27:29.039285 : content jdou videt
+2022-05-03 11:27:29.530866 : content jdou videt
+2022-05-03 11:28:09.832764 : <selenium.webdriver.remote.webelement.WebElement (session="2ed292b36b89941095298634e697ef94bbb9c1a9", element="63a89e16-960e-4674-9398-6d9d7c33ed51")>
+2022-05-03 11:28:12.778177 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="2ed292b36b89941095298634e697ef94bbb9c1a9", element="b86edb4e-21e2-4948-8ebc-2f9b2f57ac08")>>
+2022-05-03 11:29:00.616476 : <selenium.webdriver.remote.webelement.WebElement (session="3ad9ad76be50e36d758ae1f67ef74875cbfffb73", element="107eda13-854f-45f8-94e7-f96b6a5d53f7")>
+2022-05-03 11:29:05.183735 : its ok
+2022-05-03 11:29:43.669873 : <selenium.webdriver.remote.webelement.WebElement (session="8db07d92140dd97596b04dedb857d01926df4a8f", element="ee8b02b7-0bee-49f1-abb8-8ecda8684064")>
+2022-05-03 13:42:54.236325 : <selenium.webdriver.remote.webelement.WebElement (session="ba511427d9884c6ae094b6c43bd7be0ca831b394", element="dd09cecb-adb1-407c-bc7e-1eb0477b7102")>
+2022-05-03 13:44:07.660287 : <selenium.webdriver.remote.webelement.WebElement (session="c084c7d8335b8a060f3f047049097cc0909f3f3f", element="7eed5f52-7496-4a99-a40c-d8a3a6042d22")>
+2022-05-03 13:44:11.734102 : benefit item
+2022-05-03 13:44:12.530847 : benefit item
+2022-05-03 13:44:13.650864 : benefit item
+2022-05-03 13:44:14.435614 : benefit item
+2022-05-03 13:44:15.212914 : benefit item
+2022-05-03 13:44:16.021656 : benefit item
+2022-05-03 13:44:16.994160 : benefit item
+2022-05-03 13:44:20.103378 : grind container
+2022-05-03 13:44:20.964826 : grind container
+2022-05-03 13:44:21.939514 : grind container
+2022-05-03 13:44:22.604302 : grind container
+2022-05-03 13:44:23.473472 : grind container
+2022-05-03 13:44:24.324532 : grind container
+2022-05-03 13:44:25.066703 : grind container
+2022-05-03 13:44:25.753483 : grind container
+2022-05-03 13:44:26.570501 : grind container
+2022-05-03 13:44:27.378244 : grind container
+2022-05-03 13:44:28.294918 : grind container
+2022-05-03 13:44:29.221620 : grind container
+2022-05-03 13:44:30.397137 : grind container
+2022-05-03 13:44:30.909778 : grind container
+2022-05-03 13:44:31.727286 : grind container
+2022-05-03 13:44:32.418822 : grind container
+2022-05-03 13:44:33.468808 : grind container
+2022-05-03 13:44:34.254558 : grind container
+2022-05-03 13:44:36.581675 : tile img
+2022-05-03 13:44:37.404412 : tile img
+2022-05-03 13:44:38.408215 : tile img
+2022-05-03 13:44:39.277436 : tile img
+2022-05-03 13:44:40.194907 : tile img
+2022-05-03 13:44:41.119782 : tile img
+2022-05-03 13:44:41.775578 : tile img
+2022-05-03 13:44:42.252293 : tile img
+2022-05-03 13:44:43.153449 : tile img
+2022-05-03 13:44:43.922724 : tile img
+2022-05-03 13:44:44.692480 : tile img
+2022-05-03 13:44:45.599865 : tile img
+2022-05-03 13:44:46.419604 : tile img
+2022-05-03 13:44:47.369699 : tile img
+2022-05-03 13:44:48.315396 : tile img
+2022-05-03 13:44:48.875633 : tile img
+2022-05-03 13:44:49.665429 : tile img
+2022-05-03 13:44:50.449566 : tile img
+2022-05-03 13:44:51.123591 : tile img
+2022-05-03 13:44:51.830298 : tile img
+2022-05-03 13:44:52.644419 : tile img
+2022-05-03 13:45:39.498163 : <selenium.webdriver.remote.webelement.WebElement (session="92c37522b86854da77eaccc149bcfa061ac68a09", element="2f79c706-6308-4e92-bc05-ae66674fc562")>
+2022-05-03 13:45:42.451628 : Položka menu existuje
+2022-05-03 13:45:47.514699 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:48.628684 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:49.654078 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:50.791715 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:52.161779 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:53.474125 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:54.718727 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:55.971754 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:57.352984 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:58.541609 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:45:59.949735 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:46:01.526449 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:46:03.742771 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:46:04.702464 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:46:05.898589 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:46:07.084211 : https://www.fischer.sk/first-minute 200
+2022-05-03 13:46:47.421721 : <selenium.webdriver.remote.webelement.WebElement (session="97a4e80a5343dcf5333e8800f4e5d78c4574fe7f", element="f0f28dc4-0a29-4217-bae4-0f9e1ae0a8f3")>
+2022-05-03 13:47:56.234270 : <selenium.webdriver.remote.webelement.WebElement (session="a46f4f8c6bcc469adc75f1618d26b79edc5921b1", element="26548564-2a9f-4979-a578-bb6fe41a3d4c")>
+2022-05-03 13:49:20.954236 : <selenium.webdriver.remote.webelement.WebElement (session="304041cff2563114b5085ba650a33269a49fdb8e", element="b915b840-5a83-425e-87fc-48ec2a395e0f")>
+2022-05-03 13:50:28.450634 : <selenium.webdriver.remote.webelement.WebElement (session="b9cf1ad50fbfe8c2b5b02da42bef7a2a0d718c37", element="894c66a4-2af0-4149-a9cf-ec714784dc8b")>
+2022-05-03 13:51:39.491858 : <selenium.webdriver.remote.webelement.WebElement (session="6028bdd040c5d93050074ff194714a6824d71092", element="3dda35f8-1799-44b1-9634-e89954e7bae3")>
+2022-05-03 13:52:10.174943 : boxiky
+2022-05-03 13:52:11.080654 : boxiky
+2022-05-03 13:52:11.938084 : boxiky
+2022-05-03 13:52:12.732723 : boxiky
+2022-05-03 13:52:13.610897 : boxiky
+2022-05-03 13:52:14.420638 : boxiky
+2022-05-03 13:52:17.671372 : basic info 
+2022-05-03 13:52:18.570746 : basic info 
+2022-05-03 13:52:19.387969 : basic info 
+2022-05-03 13:52:20.229700 : basic info 
+2022-05-03 13:52:20.962988 : basic info 
+2022-05-03 13:52:21.753735 : basic info 
+2022-05-03 13:53:03.574283 : <selenium.webdriver.remote.webelement.WebElement (session="f97f62305c014a54af2d78036574cd34fc40e2af", element="fe2bb422-3b91-4c85-82c0-13954ee8c0da")>
+2022-05-03 13:53:08.062653 : [<selenium.webdriver.remote.webelement.WebElement (session="f97f62305c014a54af2d78036574cd34fc40e2af", element="03bbde77-b758-4828-aa9e-a0d0e276d12b")>, <selenium.webdriver.remote.webelement.WebElement (session="f97f62305c014a54af2d78036574cd34fc40e2af", element="038cd33b-fca1-43ad-acf7-8aa3c5283f54")>, <selenium.webdriver.remote.webelement.WebElement (session="f97f62305c014a54af2d78036574cd34fc40e2af", element="0348152a-ec08-4a6b-8ec0-c2d0d45e3f54")>]
+2022-05-03 13:53:10.148315 : true imgdisplay
+2022-05-03 13:53:10.965936 : true imgdisplay
+2022-05-03 13:53:12.185546 : true imgdisplay
+2022-05-03 13:54:11.246424 : <selenium.webdriver.remote.webelement.WebElement (session="13cce50836248eec4b30210832eb8eef511cfead", element="f0c6770f-6b0b-43bd-b773-21da7188f756")>
+2022-05-03 13:54:14.964426 : [<selenium.webdriver.remote.webelement.WebElement (session="13cce50836248eec4b30210832eb8eef511cfead", element="49021e27-33b2-4c03-a62b-3c2ab9a0ff46")>, <selenium.webdriver.remote.webelement.WebElement (session="13cce50836248eec4b30210832eb8eef511cfead", element="98274d44-ae1d-4c01-a72f-4d39d5a6ff37")>, <selenium.webdriver.remote.webelement.WebElement (session="13cce50836248eec4b30210832eb8eef511cfead", element="2ac94e98-cc72-4ebf-a67e-bb81511fde35")>, <selenium.webdriver.remote.webelement.WebElement (session="13cce50836248eec4b30210832eb8eef511cfead", element="7c7ce2e6-65e2-42ab-b741-e534e60e619b")>, <selenium.webdriver.remote.webelement.WebElement (session="13cce50836248eec4b30210832eb8eef511cfead", element="6cadd7d7-7e55-40e3-9b1c-431d592772f9")>, <selenium.webdriver.remote.webelement.WebElement (session="13cce50836248eec4b30210832eb8eef511cfead", element="0dc8d659-1081-4162-9232-4dc0a2a3e049")>]
+2022-05-03 13:54:16.157534 : true imgdisplay
+2022-05-03 13:54:16.721354 : true imgdisplay
+2022-05-03 13:54:17.500892 : true imgdisplay
+2022-05-03 13:54:18.484583 : true imgdisplay
+2022-05-03 13:54:19.411281 : true imgdisplay
+2022-05-03 13:54:20.335513 : true imgdisplay
+2022-05-03 13:54:23.429499 : grid true
+2022-05-03 13:54:24.164265 : grid true
+2022-05-03 13:54:24.957529 : grid true
+2022-05-03 13:54:25.769270 : grid true
+2022-05-03 13:54:26.580731 : grid true
+2022-05-03 13:54:27.446454 : grid true
+2022-05-03 13:54:28.747439 : grid true
+2022-05-03 13:54:30.095647 : grid true
+2022-05-03 13:54:30.824415 : grid true
+2022-05-03 13:54:32.696760 : big grid ture
+2022-05-03 13:55:04.891088 : <selenium.webdriver.remote.webelement.WebElement (session="5cbb8a1ea2f7850d8b8ec0c46e7115959a6daeca", element="153aad99-8e90-42ee-9ea7-4444eeacee13")>
+2022-05-03 13:55:08.794538 : [<selenium.webdriver.remote.webelement.WebElement (session="5cbb8a1ea2f7850d8b8ec0c46e7115959a6daeca", element="ec7c5e27-8b41-4ac4-8dd9-fa97d53b4884")>, <selenium.webdriver.remote.webelement.WebElement (session="5cbb8a1ea2f7850d8b8ec0c46e7115959a6daeca", element="c00e32dc-87b5-4e6b-be86-3012589934f2")>, <selenium.webdriver.remote.webelement.WebElement (session="5cbb8a1ea2f7850d8b8ec0c46e7115959a6daeca", element="22766470-69e0-404b-879e-b55924a042ca")>]
+2022-05-03 13:55:10.449771 : true imgdisplay
+2022-05-03 13:55:11.267509 : true imgdisplay
+2022-05-03 13:55:11.923300 : true imgdisplay
+2022-05-03 13:56:09.996535 : <selenium.webdriver.remote.webelement.WebElement (session="abf8117e353232cb2be046190b16322badac8f63", element="772dfb1c-22b0-498d-b637-49257908341b")>
+2022-05-03 13:56:14.560195 : [<selenium.webdriver.remote.webelement.WebElement (session="abf8117e353232cb2be046190b16322badac8f63", element="47710aff-d485-41cb-ba10-e6bab2b17485")>, <selenium.webdriver.remote.webelement.WebElement (session="abf8117e353232cb2be046190b16322badac8f63", element="0b729ee9-77de-4eb8-849a-78bc2f2f5d65")>, <selenium.webdriver.remote.webelement.WebElement (session="abf8117e353232cb2be046190b16322badac8f63", element="55fc9d45-0e85-45c7-b66a-104e47b804cd")>, <selenium.webdriver.remote.webelement.WebElement (session="abf8117e353232cb2be046190b16322badac8f63", element="7422de7c-302b-417f-8fb3-b62ac6d86e54")>, <selenium.webdriver.remote.webelement.WebElement (session="abf8117e353232cb2be046190b16322badac8f63", element="483a63e6-5898-43d6-87a0-ecea7ab9d124")>, <selenium.webdriver.remote.webelement.WebElement (session="abf8117e353232cb2be046190b16322badac8f63", element="1331035b-2750-44c4-b145-a55d0b24345c")>]
+2022-05-03 13:56:16.326346 : true imgdisplay
+2022-05-03 13:56:17.321552 : true imgdisplay
+2022-05-03 13:56:18.160230 : true imgdisplay
+2022-05-03 13:56:18.856739 : true imgdisplay
+2022-05-03 13:56:19.698469 : true imgdisplay
+2022-05-03 13:56:20.510696 : true imgdisplay
+2022-05-03 13:56:23.026592 : grid true
+2022-05-03 13:56:23.561421 : grid true
+2022-05-03 13:56:24.251338 : grid true
+2022-05-03 13:56:24.926505 : grid true
+2022-05-03 13:56:25.491324 : grid true
+2022-05-03 13:56:26.218284 : grid true
+2022-05-03 13:56:27.206440 : grid true
+2022-05-03 13:56:27.992180 : grid true
+2022-05-03 13:56:28.893893 : grid true
+2022-05-03 13:56:31.057073 : big grid ture
+2022-05-03 13:57:24.767470 : <selenium.webdriver.remote.webelement.WebElement (session="ed3a62b867a7a9326e791c439ff3095e19ee2e48", element="595efd40-241e-4214-b615-858fed54665a")>
+2022-05-03 13:59:16.542416 : <selenium.webdriver.remote.webelement.WebElement (session="4dcb58e3795f3f7a315cbcbd893d947a7263cfef", element="7f3fa16c-524d-4ebe-a2b4-c397ecbfa2e4")>
+2022-05-03 13:59:48.160292 : nenasle se exponea banner
+2022-05-03 14:01:18.458252 : <selenium.webdriver.remote.webelement.WebElement (session="74f59997a7bfc4c6962dad5fc3cbe492457cca6f", element="6690d076-21b4-48ee-815c-e04a6efaf8c9")>
+2022-05-03 14:01:49.991243 : nenasle se exponea banner
+2022-05-03 14:02:29.262915 : Razeni od nejdrazshio je OK
+2022-05-03 14:02:29.262915 : []
+2022-05-03 14:02:29.262915 : []
+2022-05-03 14:03:06.587492 : <selenium.webdriver.remote.webelement.WebElement (session="486c1d8be74b79fac3f494af8285edd7f2da293d", element="b1e7a197-46d3-4ae9-953c-ea727384f83a")>
+2022-05-03 14:03:38.104379 : nenasle se exponea banner
+2022-05-03 14:04:13.068582 : nenasel se large kolecko
+2022-05-03 14:04:39.188285 : nenasel se large kolecko
+2022-05-03 14:05:31.125984 : nenasel se medium kolecko - TimeoutExceptio
+2022-05-03 14:05:56.804870 : nenasel se small kolecko
+2022-05-03 14:06:57.758368 : <selenium.webdriver.remote.webelement.WebElement (session="5988e07ac48852b6da60f16a8ba6cff4deb46f4b", element="fc450796-1abb-4588-a33b-c253a4cd6c62")>
+2022-05-03 14:07:28.521325 : nenasle se exponea banner
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ok
+2022-05-03 14:07:52.116109 : ['All inclusive', 'All inclusive', 'All inclusive Plus', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
