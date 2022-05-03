@@ -1,7 +1,4 @@
-from FW_Automation_Local_Deploy_PyCharm.starter_local import *
-from EW_Automation_Local_Deploy_PyCharm.starter_local import *
-from ET_Automation_Local_Deploy_PyCharm.starter_local import *
-from FW_Automation_Local_Deploy_PyCharm.starter_local import *
+from KTGSK_Automation_Local_Deploy_PyCharm import *
 import unittest
 
 import HtmlTestRunner
@@ -13,13 +10,5 @@ def runner_tests_generalized(suite_general):
                                            report_name='FISCHER WEB Suite Report',
                                            open_in_browser=True, description="FISCHER WEB Suite Report")
     runner.run(suite_general())
-import threading
-import runpy
-
-thread1 = threading.Thread(target=runpy.run_path(path_name='starter_FW.py'))
-thread1.start()
-
-thread2 = threading.Thread(target=runpy.run_path(path_name='starter_EW.py'))
-thread2.start()
 
 
