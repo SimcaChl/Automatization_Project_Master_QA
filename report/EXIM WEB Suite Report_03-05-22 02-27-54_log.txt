@@ -391,3 +391,28 @@
 2022-05-03 14:54:50.351056 : ceny
 2022-05-03 14:54:51.075829 : ceny
 2022-05-03 14:54:51.563055 : ceny
+2022-05-03 14:55:23.554811 : <selenium.webdriver.remote.webelement.WebElement (session="b50d462ed7066e3ede854f3f8be71ebda5c1212d", element="0e3c6617-4a27-4ebe-8148-96f786bfb257")>
+2022-05-03 14:56:26.233512 : Senegal
+                             2 hotely od 19 990 Kè / osoba
+2022-05-03 14:56:27.021172 : Japonsko
+                             1 hotel od 84 990 Kè / osoba
+2022-05-03 14:56:27.807428 : Aruba
+                             8 hotelù od 54 490 Kè / osoba
+2022-05-03 14:56:28.554234 : Senegal
+                             2 hotely od 19 990 Kè / osoba
+2022-05-03 14:56:29.103058 : Franc. Polynésie
+                             4 hotely od 193 470 Kè / osoba
+2022-05-03 14:56:29.104058 : následující destinace mají prázdný teaser obrazek
+2022-05-03 14:56:29.104058 : ['Senegal\n2 hotely od 19 990 Kè / osoba', 'Japonsko\n1 hotel od 84 990 Kè / osoba', 'Aruba\n8 hotelù od 54 490 Kè / osoba', 'Senegal\n2 hotely od 19 990 Kè / osoba', 'Franc. Polynésie\n4 hotely od 193 470 Kè / osoba']
+2022-05-03 14:56:58.988646 : <selenium.webdriver.remote.webelement.WebElement (session="6e2860f72e3f6aa5cb012ce93718648ceaacd99e", element="09c00ed9-6605-4edc-a247-ff19b5cbdeb5")>
+2022-05-03 14:57:20.640561 : wait done
+2022-05-03 14:57:20.640561 : TRY block start
+2022-05-03 14:57:23.083399 : JDOU VIDET
+2022-05-03 14:57:23.826616 : JDOU VIDET
+2022-05-03 14:57:25.148546 : wait done
+2022-05-03 14:57:25.148546 : TRY block start
+2022-05-03 14:57:26.838661 : JDOU VIDET
+2022-05-03 14:57:27.245540 : JDOU VIDET
+2022-05-03 14:57:27.661482 : JDOU VIDET
+2022-05-03 14:57:28.052356 : JDOU VIDET
+2022-05-03 14:57:29.059274 : sdo section visible true :  True
