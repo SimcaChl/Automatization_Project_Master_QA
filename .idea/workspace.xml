@@ -36,7 +36,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.starter_master_browserstack">
+  <component name="RunManager" selected="Python.starter_EW">
     <configuration name="starter_EW" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,8 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.starter_master_browserstack" />
         <item itemvalue="Python.starter_EW" />
+        <item itemvalue="Python.starter_master_browserstack" />
         <item itemvalue="Python.starter_local (1)" />
         <item itemvalue="Python.starter_FW" />
         <item itemvalue="Python.starter_local (4)" />
