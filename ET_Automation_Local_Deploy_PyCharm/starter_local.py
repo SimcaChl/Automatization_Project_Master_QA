@@ -12,7 +12,7 @@ from ET_Automation_Local_Deploy_PyCharm.SRL_D import *
 from ET_Automation_Local_Deploy_PyCharm.HP_C import *
 import HtmlTestRunner
 
-def suite():
+def suite_ET_full():
     suite = unittest.TestSuite()
     #suite.addTest(TestDetailHotelu_D("test_detail_D"))
     suite.addTest(TestDetailHotelu_C("test_detail_fotka"))
@@ -54,4 +54,4 @@ if __name__ == '__main__':
     runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='ETRAVEL-Web Suite test', title='ETRAVEL-Web Suite test'+URL, report_name='ETRAVEL-Web Suite test',
                             open_in_browser=True, description="ETRAVEL-Web Suite test")
 
-    runner.run(suite())
+    runner.run(suite_ET_full())

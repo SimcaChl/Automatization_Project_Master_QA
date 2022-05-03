@@ -1,0 +1,68 @@
+2022-05-03 14:28:34.035944 : <selenium.webdriver.remote.webelement.WebElement (session="3bb4743f140b82918917aa4bd2662f34024e6330", element="0ca2017d-d5d1-4c5a-8b3e-07aa18b7a837")>
+2022-05-03 14:28:35.468992 : https://img.fischer.cz/hotels/egypt/oblast-hurghada/hurghada/mirage-bay-resort-a-aqua-park/166173.jpeg
+2022-05-03 14:28:37.126970 : its ok
+2022-05-03 14:29:37.251269 : <selenium.webdriver.remote.webelement.WebElement (session="d19eafaab0907b51a62ca4ba24351d1d5580ef4e", element="45ab9312-7d6f-47ed-a57c-3d22ef0d03d7")>
+2022-05-03 14:30:05.407038 : nenasle se exponea banner
+2022-05-03 14:30:13.716332 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:13.716332 : ok
+2022-05-03 14:30:52.579803 : <selenium.webdriver.remote.webelement.WebElement (session="d5c95fe81b53518481992413e62fc9f9b89f932e", element="136e384d-c67a-4339-84bf-81c7f0f7880c")>
+2022-05-03 14:31:00.460104 : ['Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha', 'Praha']
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:00.460104 : ok
+2022-05-03 14:31:40.522408 : <selenium.webdriver.remote.webelement.WebElement (session="29bd24ebe2176f5ee99403c8908c8bd7cfe55c1e", element="9d6ae2a9-e4cb-4887-bece-35f58e66579d")>
+2022-05-03 14:31:43.847629 : wait done
+2022-05-03 14:31:43.847629 : TRY block start
+2022-05-03 14:31:45.335770 : JDOU VIDET
+2022-05-03 14:31:45.766958 : JDOU VIDET
+2022-05-03 14:31:46.229903 : JDOU VIDET
+2022-05-03 14:31:46.507000 : JDOU VIDET
+2022-05-03 14:31:46.849041 : JDOU VIDET
+2022-05-03 14:31:48.238835 : wait done
+2022-05-03 14:31:48.238835 : TRY block start
+2022-05-03 14:31:49.651384 : JDOU VIDET
+2022-05-03 14:31:50.049256 : JDOU VIDET
+2022-05-03 14:31:50.385150 : JDOU VIDET
+2022-05-03 14:31:50.720042 : JDOU VIDET
+2022-05-03 14:31:51.363836 : JDOU VIDET
+2022-05-03 14:31:51.677736 : JDOU VIDET
+2022-05-03 14:31:52.044618 : JDOU VIDET
+2022-05-03 14:31:52.565452 : JDOU VIDET
+2022-05-03 14:31:52.879351 : JDOU VIDET
+2022-05-03 14:31:53.197250 : JDOU VIDET
