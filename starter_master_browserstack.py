@@ -1,48 +1,36 @@
-#from FW_Automation_Local_Deploy_PyCharm.starter_local import suite
-#from Automatization_Project_Master.FW_Automation_Local_Deploy_PyCharm import *
-
-from os import path
-import sys
-sys.path.append(path.abspath('/FW_Automation_Local_Deploy_PyCharm'))
-#sys.path.append(path.abspath('/EW_Automation_Local_Deploy_PyCharm'))
 from FW_Automation_Local_Deploy_PyCharm.starter_local import *
 from EW_Automation_Local_Deploy_PyCharm.starter_local import *
 from ET_Automation_Local_Deploy_PyCharm.starter_local import *
+from FW_Automation_Local_Deploy_PyCharm.starter_local import *
 import unittest
 
 import HtmlTestRunner
 #import HTMLTestRunner as HtmlTestRunner        ##setting for office pc since the packaga installed with diff name (i guess?)
-def FW_full_suite():
+def runner_tests_generalized(suite_general):
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER WEB Suite Report', report_name='FISCHER WEB Suite Report',
-                            open_in_browser=True, description="FISCHER WEB Suite Report")
-    runner.run(suite_FW_full())
-def EW_full_suite():
-    runner = unittest.TextTestRunner()
-    outfile = open("results.html", "w")
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='EXIM WEB Suite Report', report_name='EXIM WEB Suite Report',
-                            open_in_browser=True, description="EXIM WEB Suite Report")
-    runner.run(suite_EW_full())
+    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title=suite_general,
+                                           report_name=suite_general,
+def running_suites_over_and_over_EW():
 
-def ET_full_suite():
-    runner = unittest.TextTestRunner()
-    outfile = open("results.html", "w")
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='EXIM WEB Suite Report', report_name='EXIM WEB Suite Report',
-                            open_in_browser=True, description="EXIM WEB Suite Report")
-    runner.run(suite_ET_full())
-
-def running_suites_over_and_over():
-    while True:
         print("EW suite")
-        EW_full_suite()
+        runner_tests_generalized(EW_full_suite)
+        print("EW suite should be done")
+        time.sleep(20)
 
-        time.sleep(900)
+def running_suites_over_and_over_FW():
+
         print("FW suite")
-        FW_full_suite()
+        runner_tests_generalized(FW_full_suite)
+        print("FW suite should be done")
+        time.sleep(20)
 
-        time.sleep(426)
-#running_suites_over_and_over()
+
+def running_suites_over_and_over_BIG():
+    runner_tests_generalized(FW_full_suite), runner_tests_generalized(EW_full_suite)
+
+running_suites_over_and_over_BIG()
 #EW_full_suite()
 #FW_full_suite()
-ET_full_suite()
+#ET_full_suite()
+#runner_tests_generalized(ET_full_suite)

@@ -1,0 +1,13 @@
+2022-05-03 16:12:57.156497 : None
+2022-05-03 16:12:57.156497 : consent pass
+2022-05-03 16:13:25.660836 : nenasle se exponea banner
+2022-05-03 16:13:27.353998 : gridy jdou videt
+2022-05-03 16:13:27.720144 : gridy jdou videt
+2022-05-03 16:13:28.037043 : gridy jdou videt
+2022-05-03 16:13:28.339878 : gridy jdou videt
+2022-05-03 16:13:28.621019 : gridy jdou videt
+2022-05-03 16:13:28.887072 : gridy jdou videt
+2022-05-03 16:14:08.515547 : <selenium.webdriver.remote.webelement.WebElement (session="cfba3d16306dd0b8c9afc5777f7a2eece0258659", element="86c9e14a-6ab1-404e-aec9-07f2fbcfb81b")>
+2022-05-03 16:14:10.471930 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="cfba3d16306dd0b8c9afc5777f7a2eece0258659", element="beeef9ba-70d8-48ad-a2d9-66d72898c8ba")>>
+2022-05-03 16:14:53.531969 : <selenium.webdriver.remote.webelement.WebElement (session="307d617eee8b2732e90c0e7ea510f96c0f898808", element="b69b4e05-c80b-42f2-840d-5d8e474748f8")>
+2022-05-03 16:15:24.218435 : nenasle se exponea banner
