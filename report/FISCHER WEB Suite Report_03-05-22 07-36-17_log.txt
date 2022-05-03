@@ -130,3 +130,11 @@
 2022-05-03 19:40:09.967598 : ok
 2022-05-03 19:40:09.967598 : ok
 2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:38.632862 : <selenium.webdriver.remote.webelement.WebElement (session="267f22c9c5c25b8f55a2579ee219869a7f09602b", element="0.5119296219320153-1")>
+2022-05-03 19:41:09.219051 : nenasle se exponea banner
+2022-05-03 19:42:02.269815 : <selenium.webdriver.remote.webelement.WebElement (session="a2a3dd65823c0052ba61f1f71a6a8ae7544b8e95", element="0.853038388518518-1")>
+2022-05-03 19:42:10.624045 : benefit item
+2022-05-03 19:42:11.495767 : benefit item
+2022-05-03 19:42:12.371532 : benefit item
+2022-05-03 19:42:12.727418 : benefit item
+2022-05-03 19:42:13.042318 : benefit item

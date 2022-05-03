@@ -200,3 +200,7 @@
 2022-05-03 19:39:21.464606 : https://www.fischer.cz/first-minute 200
 2022-05-03 19:39:22.950131 : https://www.fischer.cz/first-minute 200
 2022-05-03 19:39:51.950115 : <selenium.webdriver.remote.webelement.WebElement (session="aa3069954315ed1f901f8f89040d71da2da68026", element="0.21874975997983537-1")>
+2022-05-03 19:40:56.056927 : <selenium.webdriver.remote.webelement.WebElement (session="723f113500c86ab5e2e94e5c183304328049d6bd", element="0.11264590986592204-1")>
+2022-05-03 19:41:05.538770 : ZANZIBAR
+2022-05-03 19:41:39.043003 : last no such ele except
+2022-05-03 19:41:50.693137 : ØECKO

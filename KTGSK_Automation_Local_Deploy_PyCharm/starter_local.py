@@ -16,7 +16,7 @@ from HP_C import *
 
 import HtmlTestRunner
 
-def suite():
+def suite_KTGSK_full():
     suite = unittest.TestSuite()
     suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
     suite.addTest(TestDetailHotelu_D("test_detail_D"))
