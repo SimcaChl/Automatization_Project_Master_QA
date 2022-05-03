@@ -13,6 +13,10 @@ def runner_tests_generalized(suite_general):
                                            report_name='FISCHER WEB Suite Report',
                                            open_in_browser=True, description="FISCHER WEB Suite Report")
     runner.run(suite_general())
+from threading import Thread
 import runpy
+Thread(target=runpy.run_path(path_name='starter_FW.py'), args=(cap,)).start()
+print("thread")
+time.sleep(2)
 
-runpy.run_path(path_name='starter_FW.py')
+Thread2(target=runpy.run_path(path_name='starter_EW.py'), args=(cap,)).start()

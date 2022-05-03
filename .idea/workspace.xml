@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/FISCHER WEB Suite Report_03-05-22 04-55-49_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/FISCHER WEB Suite Report_03-05-22 04-55-49_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/FISCHER WEB Suite Report_03-05-22 04-55-58_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/FISCHER WEB Suite Report_03-05-22 04-55-58_log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter_EW.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_EW.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter_FW.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_FW.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter_master_browserstack.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_master_browserstack.py" afterDir="false" />
@@ -39,7 +36,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.starter_FW">
+  <component name="RunManager" selected="Python.starter_master_browserstack">
     <configuration name="starter_EW" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,10 +144,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.starter_FW" />
         <item itemvalue="Python.starter_master_browserstack" />
-        <item itemvalue="Python.starter_local (1)" />
         <item itemvalue="Python.starter_EW" />
+        <item itemvalue="Python.starter_local (1)" />
+        <item itemvalue="Python.starter_FW" />
         <item itemvalue="Python.starter_local (4)" />
       </list>
     </recent_temporary>
