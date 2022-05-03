@@ -9,9 +9,9 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
 from email.mime.text import MIMEText
-from to_import_secret import emailPass
+from ET_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass
 from selenium import webdriver
-from to_import_secret import comandExecutor
+from ET_Automation_Local_Deploy_PyCharm.to_import_secret import comandExecutor
 from webdriver_manager.chrome import ChromeDriverManager
 from to_import_master import setUp
 URL = "https://www.etravel.cz/"

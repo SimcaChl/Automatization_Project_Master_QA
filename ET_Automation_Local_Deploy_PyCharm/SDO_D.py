@@ -1,11 +1,11 @@
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, closeExponeaBanner, URL_SDO, setUp, tearDown, generalDriverWaitImplicit
+from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SDO, setUp, tearDown, generalDriverWaitImplicit
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 import requests
-from import_test_units_Xpaths import rowKarty_imgHoteluKarty_D
+from ET_Automation_Local_Deploy_PyCharm.import_test_units_Xpaths import rowKarty_imgHoteluKarty_D
 
 SDOsectionXpath = "//*[@class='sdo-section']"
 

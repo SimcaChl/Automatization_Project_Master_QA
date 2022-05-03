@@ -1,12 +1,12 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, URL, setUp, tearDown, generalDriverWaitImplicit
+from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL, setUp, tearDown, generalDriverWaitImplicit
 import unittest
 from selenium.webdriver.support import expected_conditions as EC
-from groupsearch_D import groupSearch_D
+from ET_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
 import time
-from SRL_D import SRL_D
-from SDO_D import SDO_D
+from ET_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
+from ET_Automation_Local_Deploy_PyCharm.SDO_D import SDO_D
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_filterMainSearch'] //*[contains(text(), 'Vyhledat dovolenou')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam se chystáte?')]"
 HPzlutakEgyptDestinaceXpath = "//*[@class='f_filterMainSearch']//*[@class='flex flex-row overflow-hidden']//*[@class='flex flex-col pb-2']//*[contains(text(), 'Egypt')]"

@@ -1,6 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, URL_groupsearch, setUp, tearDown
+from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_groupsearch, setUp, tearDown
 import unittest
 from selenium.webdriver.support import expected_conditions as EC
 emptyImgInTeaserDestinationXpath = """//*[@style='background-image: url("https://cdn.fischer.cz/Images/000000/1200x0.jpg");']"""
