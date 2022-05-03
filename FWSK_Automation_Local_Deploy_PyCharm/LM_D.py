@@ -1,10 +1,10 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, sendEmail,URL_lm, setUp, tearDown
+from FWSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, sendEmail,URL_lm, setUp, tearDown
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from FM_D import LM_FM_vypis_rozbalit_zajezd_check
+from FWSK_Automation_Local_Deploy_PyCharm.FM_D import LM_FM_vypis_rozbalit_zajezd_check
 
 
 class TestLM_D(unittest.TestCase):

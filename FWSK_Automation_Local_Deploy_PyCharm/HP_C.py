@@ -1,10 +1,10 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, URL, setUp, tearDown
+from FWSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL, setUp, tearDown
 import unittest
 from selenium.webdriver.support import expected_conditions as EC
-from groupsearch_D import groupSearch_D
-from SRL_D import SRL_D
+from FWSK_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
+from FWSK_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
 import time
 
 HPvyhledatZajezdyButtonXpath = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[@class='f_filterMainSearch-content']/div[@class='f_filterMainSearch-content-item'][5]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
