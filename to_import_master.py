@@ -16,13 +16,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 desired_cap = {
 "os" : "Windows",
 "os_version" : "11",
-"browser" : "Firefox",
+"browser" : "Edge",
 "browser_version" : "latest",
-"resolution" : "1600x1200",
+"resolution" : "1680x1050",
 "browserstack.local" : "false",
 "browserstack.debug" : "true",
-"browserstack.networkLogs" : "true",
-"browserstack.selenium_version" : "3.10.0"
+"browserstack.selenium_version" : "3.5.2"
 }
 
 def setUp(self):

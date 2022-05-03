@@ -1,0 +1,132 @@
+2022-05-03 19:36:43.443825 : <selenium.webdriver.remote.webelement.WebElement (session="07f8b7bc9134a37763056771367da509f3d5b67f", element="0.09004921821925338-1")>
+2022-05-03 19:37:16.927120 : nenasle se exponea banner
+2022-05-03 19:37:19.474306 : gridy jdou videt
+2022-05-03 19:37:19.935158 : gridy jdou videt
+2022-05-03 19:37:20.180080 : gridy jdou videt
+2022-05-03 19:37:20.522971 : gridy jdou videt
+2022-05-03 19:37:20.748898 : gridy jdou videt
+2022-05-03 19:37:21.033808 : gridy jdou videt
+2022-05-03 19:37:21.367701 : gridy jdou videt
+2022-05-03 19:37:21.657608 : gridy jdou videt
+2022-05-03 19:37:21.942517 : gridy jdou videt
+2022-05-03 19:37:22.240421 : gridy jdou videt
+2022-05-03 19:37:22.693277 : gridy jdou videt
+2022-05-03 19:37:22.993181 : gridy jdou videt
+2022-05-03 19:37:23.277090 : gridy jdou videt
+2022-05-03 19:37:23.600987 : gridy jdou videt
+2022-05-03 19:37:23.887895 : gridy jdou videt
+2022-05-03 19:37:24.232786 : gridy jdou videt
+2022-05-03 19:37:24.650652 : gridy jdou videt
+2022-05-03 19:37:25.001539 : gridy jdou videt
+2022-05-03 19:37:25.310440 : gridy jdou videt
+2022-05-03 19:37:25.649333 : gridy jdou videt
+2022-05-03 19:37:25.940238 : gridy jdou videt
+2022-05-03 19:37:26.132177 : gridy jdou videt
+2022-05-03 19:37:26.376100 : gridy jdou videt
+2022-05-03 19:37:26.654010 : gridy jdou videt
+2022-05-03 19:37:26.978907 : gridy jdou videt
+2022-05-03 19:37:27.267817 : gridy jdou videt
+2022-05-03 19:37:27.564720 : gridy jdou videt
+2022-05-03 19:37:27.846629 : gridy jdou videt
+2022-05-03 19:37:28.294486 : gridy jdou videt
+2022-05-03 19:37:28.714351 : gridy jdou videt
+2022-05-03 19:37:29.117224 : gridy jdou videt
+2022-05-03 19:37:29.400133 : gridy jdou videt
+2022-05-03 19:37:29.695039 : gridy jdou videt
+2022-05-03 19:37:30.033930 : gridy jdou videt
+2022-05-03 19:37:30.407811 : gridy jdou videt
+2022-05-03 19:37:30.895654 : gridy jdou videt
+2022-05-03 19:37:31.341512 : gridy jdou videt
+2022-05-03 19:37:31.641417 : gridy jdou videt
+2022-05-03 19:37:31.875341 : gridy jdou videt
+2022-05-03 19:37:32.332195 : gridy jdou videt
+2022-05-03 19:37:32.584114 : gridy jdou videt
+2022-05-03 19:37:32.985987 : gridy jdou videt
+2022-05-03 19:37:33.276893 : gridy jdou videt
+2022-05-03 19:37:33.656772 : gridy jdou videt
+2022-05-03 19:37:34.028653 : gridy jdou videt
+2022-05-03 19:37:34.523495 : gridy jdou videt
+2022-05-03 19:37:35.193281 : gridy jdou videt
+2022-05-03 19:37:35.490185 : gridy jdou videt
+2022-05-03 19:37:35.701118 : gridy jdou videt
+2022-05-03 19:37:36.042009 : gridy jdou videt
+2022-05-03 19:37:36.313922 : gridy jdou videt
+2022-05-03 19:37:37.421568 : content jdou videt
+2022-05-03 19:37:37.710475 : content jdou videt
+2022-05-03 19:37:37.911413 : content jdou videt
+2022-05-03 19:37:38.125343 : content jdou videt
+2022-05-03 19:37:38.526215 : content jdou videt
+2022-05-03 19:37:38.842114 : content jdou videt
+2022-05-03 19:37:39.342953 : content jdou videt
+2022-05-03 19:37:39.922768 : content jdou videt
+2022-05-03 19:37:40.161692 : content jdou videt
+2022-05-03 19:37:40.467594 : content jdou videt
+2022-05-03 19:37:40.793490 : content jdou videt
+2022-05-03 19:37:41.036413 : content jdou videt
+2022-05-03 19:37:41.500265 : content jdou videt
+2022-05-03 19:37:41.854151 : content jdou videt
+2022-05-03 19:37:42.153055 : content jdou videt
+2022-05-03 19:37:42.398978 : content jdou videt
+2022-05-03 19:37:42.640899 : content jdou videt
+2022-05-03 19:37:42.868826 : content jdou videt
+2022-05-03 19:37:43.126744 : content jdou videt
+2022-05-03 19:37:43.397657 : content jdou videt
+2022-05-03 19:37:43.713556 : content jdou videt
+2022-05-03 19:37:44.137420 : content jdou videt
+2022-05-03 19:37:44.376344 : content jdou videt
+2022-05-03 19:37:44.962157 : content jdou videt
+2022-05-03 19:37:45.561966 : content jdou videt
+2022-05-03 19:37:45.898858 : content jdou videt
+2022-05-03 19:37:46.237749 : content jdou videt
+2022-05-03 19:37:46.541653 : content jdou videt
+2022-05-03 19:37:47.033495 : content jdou videt
+2022-05-03 19:37:47.320404 : content jdou videt
+2022-05-03 19:37:47.562326 : content jdou videt
+2022-05-03 19:37:47.820243 : content jdou videt
+2022-05-03 19:37:48.001185 : content jdou videt
+2022-05-03 19:37:48.245108 : content jdou videt
+2022-05-03 19:37:48.554009 : content jdou videt
+2022-05-03 19:37:48.811926 : content jdou videt
+2022-05-03 19:37:49.039856 : content jdou videt
+2022-05-03 19:37:49.276778 : content jdou videt
+2022-05-03 19:37:49.660655 : content jdou videt
+2022-05-03 19:37:50.067525 : content jdou videt
+2022-05-03 19:37:50.615351 : content jdou videt
+2022-05-03 19:37:50.982232 : content jdou videt
+2022-05-03 19:37:51.350115 : content jdou videt
+2022-05-03 19:37:51.672012 : content jdou videt
+2022-05-03 19:37:51.907936 : content jdou videt
+2022-05-03 19:37:52.340798 : content jdou videt
+2022-05-03 19:37:52.684688 : content jdou videt
+2022-05-03 19:37:52.987591 : content jdou videt
+2022-05-03 19:37:53.323484 : content jdou videt
+2022-05-03 19:37:53.551411 : content jdou videt
+2022-05-03 19:37:53.752347 : content jdou videt
+2022-05-03 19:38:19.318173 : <selenium.webdriver.remote.webelement.WebElement (session="6cf071ca4b94617555c260571ca9901ada7faaeb", element="0.1384889085399812-1")>
+2022-05-03 19:38:21.607441 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="6cf071ca4b94617555c260571ca9901ada7faaeb", element="0.1384889085399812-2")>>
+2022-05-03 19:38:54.714428 : <selenium.webdriver.remote.webelement.WebElement (session="d7860bcbeb06d7400a8e6319022c3eb68cc92621", element="0.11094716799024895-1")>
+2022-05-03 19:39:27.654628 : nenasle se exponea banner
+2022-05-03 19:39:30.221708 : its ok
+2022-05-03 19:39:52.578914 : <selenium.webdriver.remote.webelement.WebElement (session="027d174b29e8a0120370839e63cf8ae192047263", element="0.829418910786671-1")>
+2022-05-03 19:40:00.352569 : All inclusive
+2022-05-03 19:40:09.967598 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok
+2022-05-03 19:40:09.967598 : ok

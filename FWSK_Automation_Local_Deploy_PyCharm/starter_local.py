@@ -16,7 +16,7 @@ from FWSK_Automation_Local_Deploy_PyCharm.SRL_D import *
 import HtmlTestRunner
 #import HTMLTestRunner      ##at office PC gotta be set up like that (???)
 
-def suite():
+def suite_FWSK_full():
     suite = unittest.TestSuite()
     suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
     suite.addTest(TestDetailHotelu_D("test_detail_D"))
