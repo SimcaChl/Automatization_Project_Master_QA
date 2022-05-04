@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.opera import OperaDriverManager
-from to_import_master import setUp
+
 URL = "https://www.kartago.sk/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"
@@ -31,7 +31,26 @@ from email.mime.text import MIMEText
 from to_import_secret import emailPass
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+brand_name_project = "KARTAGOSK"
+desired_cap = {
+"os" : "Windows",
+"os_version" : "11",
+"browser" : "Edge",
+"browser_version" : "latest",
+"resolution" : "1680x1050",
+"project" : brand_name_project,
+"build" : "FULL Suite",
+"name" : "test",
+"browserstack.local" : "false",
+"browserstack.debug" : "true",
+"browserstack.networkLogs" : "true",
+"browserstack.selenium_version" : "3.5.2"
 
+}
+def setUp(self):
+  self.driver = webdriver.Remote(
+      command_executor=comandExecutor,
+      desired_capabilities=desired_cap)
 
 def tearDown(self):
   self.driver.quit()
@@ -120,12 +139,3 @@ def acceptConsent3(driver):
   else:
       element.click()
 
-
-desired_cap = {
-"os" : "Windows",
-"os_version" : "11",
-"browser" : "Edge",
-"browser_version" : "latest",
-"browserstack.local" : "false",
-"browserstack.selenium_version" : "3.5.2"
-}

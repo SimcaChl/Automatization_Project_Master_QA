@@ -1,0 +1,105 @@
+2022-05-04 15:37:56.775105 : <selenium.webdriver.remote.webelement.WebElement (session="e104e2532e636163703522525a4f879f70e1278e", element="0.8248155707552689-1")>
+2022-05-04 15:38:27.029046 : nenasle se exponea banner
+2022-05-04 15:38:29.085357 : gridy jdou videt
+2022-05-04 15:38:30.219266 : gridy jdou videt
+2022-05-04 15:38:30.779005 : gridy jdou videt
+2022-05-04 15:38:31.056093 : gridy jdou videt
+2022-05-04 15:38:31.282061 : gridy jdou videt
+2022-05-04 15:38:31.511042 : gridy jdou videt
+2022-05-04 15:38:31.699982 : gridy jdou videt
+2022-05-04 15:38:31.918912 : gridy jdou videt
+2022-05-04 15:38:32.132843 : gridy jdou videt
+2022-05-04 15:38:32.323796 : gridy jdou videt
+2022-05-04 15:38:32.675683 : gridy jdou videt
+2022-05-04 15:38:33.063560 : gridy jdou videt
+2022-05-04 15:38:33.506417 : gridy jdou videt
+2022-05-04 15:38:34.232185 : gridy jdou videt
+2022-05-04 15:38:34.631058 : gridy jdou videt
+2022-05-04 15:38:34.820997 : gridy jdou videt
+2022-05-04 15:38:35.062920 : gridy jdou videt
+2022-05-04 15:38:35.344854 : gridy jdou videt
+2022-05-04 15:38:35.632825 : gridy jdou videt
+2022-05-04 15:38:36.195806 : gridy jdou videt
+2022-05-04 15:38:36.752833 : gridy jdou videt
+2022-05-04 15:38:37.019879 : gridy jdou videt
+2022-05-04 15:38:37.370873 : gridy jdou videt
+2022-05-04 15:38:37.841899 : gridy jdou videt
+2022-05-04 15:38:38.136953 : gridy jdou videt
+2022-05-04 15:38:38.566969 : gridy jdou videt
+2022-05-04 15:38:38.950960 : gridy jdou videt
+2022-05-04 15:38:39.779942 : gridy jdou videt
+2022-05-04 15:38:40.679936 : gridy jdou videt
+2022-05-04 15:38:41.432944 : gridy jdou videt
+2022-05-04 15:38:42.035936 : gridy jdou videt
+2022-05-04 15:38:42.444923 : gridy jdou videt
+2022-05-04 15:38:42.659947 : gridy jdou videt
+2022-05-04 15:38:42.964938 : gridy jdou videt
+2022-05-04 15:38:43.215957 : gridy jdou videt
+2022-05-04 15:38:43.566962 : gridy jdou videt
+2022-05-04 15:38:45.319849 : content jdou videt
+2022-05-04 15:38:45.881818 : content jdou videt
+2022-05-04 15:38:46.133822 : content jdou videt
+2022-05-04 15:38:46.342872 : content jdou videt
+2022-05-04 15:38:46.736879 : content jdou videt
+2022-05-04 15:38:47.336944 : content jdou videt
+2022-05-04 15:38:47.840977 : content jdou videt
+2022-05-04 15:38:48.130079 : content jdou videt
+2022-05-04 15:38:48.464023 : content jdou videt
+2022-05-04 15:38:48.832015 : content jdou videt
+2022-05-04 15:38:49.201066 : content jdou videt
+2022-05-04 15:38:49.398005 : content jdou videt
+2022-05-04 15:38:49.665977 : content jdou videt
+2022-05-04 15:38:49.972024 : content jdou videt
+2022-05-04 15:38:50.637946 : content jdou videt
+2022-05-04 15:38:51.170008 : content jdou videt
+2022-05-04 15:38:51.597872 : content jdou videt
+2022-05-04 15:38:52.239795 : content jdou videt
+2022-05-04 15:38:52.923195 : content jdou videt
+2022-05-04 15:38:53.403414 : content jdou videt
+2022-05-04 15:38:53.886544 : content jdou videt
+2022-05-04 15:38:54.252374 : content jdou videt
+2022-05-04 15:38:54.534883 : content jdou videt
+2022-05-04 15:38:54.776806 : content jdou videt
+2022-05-04 15:38:55.182676 : content jdou videt
+2022-05-04 15:38:55.612419 : content jdou videt
+2022-05-04 15:38:56.276779 : content jdou videt
+2022-05-04 15:38:57.020541 : content jdou videt
+2022-05-04 15:38:57.835139 : content jdou videt
+2022-05-04 15:38:58.804776 : content jdou videt
+2022-05-04 15:38:59.108681 : content jdou videt
+2022-05-04 15:38:59.335511 : content jdou videt
+2022-05-04 15:38:59.588610 : content jdou videt
+2022-05-04 15:38:59.963975 : content jdou videt
+2022-05-04 15:39:00.337854 : content jdou videt
+2022-05-04 15:39:00.631760 : content jdou videt
+2022-05-04 15:40:36.088176 : <selenium.webdriver.remote.webelement.WebElement (session="b6e632c5859a4f1ffbee31876794b35f4db6c701", element="0.744348261526204-1")>
+2022-05-04 15:40:37.843855 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="b6e632c5859a4f1ffbee31876794b35f4db6c701", element="0.744348261526204-2")>>
+2022-05-04 15:42:18.480027 : <selenium.webdriver.remote.webelement.WebElement (session="e2c07dfea96ef639be4aacaa36eb109e72f1bffc", element="0.08473787664845167-1")>
+2022-05-04 15:42:48.667989 : nenasle se exponea banner
+2022-05-04 15:42:52.316086 : its ok
+2022-05-04 15:43:15.387386 : <selenium.webdriver.remote.webelement.WebElement (session="e37f8d7dbc165128d29729c1b35433f3b414af58", element="0.5414785354461886-1")>
+2022-05-04 15:43:45.308845 : nenasle se exponea banner
+2022-05-04 15:43:52.381087 : All inclusive
+2022-05-04 15:44:03.974207 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:03.974207 : ok
+2022-05-04 15:44:23.724556 : <selenium.webdriver.remote.webelement.WebElement (session="8ed41a6b5f91abf16f38c93a9f13dc1f2a647063", element="0.7722046991627829-1")>
+2022-05-04 15:44:54.430287 : nenasle se exponea banner

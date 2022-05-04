@@ -1,4 +1,3 @@
-#from starter_ET import setUp
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -14,10 +13,9 @@ from ET_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass
 from selenium import webdriver
 from ET_Automation_Local_Deploy_PyCharm.to_import_secret import comandExecutor
 from webdriver_manager.chrome import ChromeDriverManager
+import unittest
 
-#from to_import_master import setUp
 brand_name_project = "ETRAVEL"
-
 desired_cap = {
 "os" : "Windows",
 "os_version" : "11",
@@ -25,12 +23,13 @@ desired_cap = {
 "browser_version" : "latest",
 "resolution" : "1680x1050",
 "project" : brand_name_project,
-"build" : "buid",
-"name" : "name",
+"build" : "FULL Suite",
+"name" : "test",
 "browserstack.local" : "false",
 "browserstack.debug" : "true",
 "browserstack.networkLogs" : "true",
 "browserstack.selenium_version" : "3.5.2"
+
 }
 def setUp(self):
   self.driver = webdriver.Remote(
@@ -107,49 +106,5 @@ def sendEmail(msg):
   server.sendmail(fromx, to, msg.as_string())
   server.quit()
 
-def acceptConsent5(driver):
-  time.sleep(2)
-  try:
-    element = driver.execute_script(
-      """return document.querySelector('#usercentrics-root').shadowRoot.querySelector("button[data-testid='uc-accept-all-button']")""")
-  except NoSuchElementException:
-    return
-
-  except TimeoutException:
+def closeExponeaBanner():
     pass
-  try:
-    element.click()
-  except TimeoutException:
-    pass
-  except NoSuchElementException:
-    return
-
-def closeExponeaBanner(driver):
-    time.sleep(1.5)
-    wait = WebDriverWait(driver, 150000)
-    driver.maximize_window()
-    try:
-      exponeaBanner = driver.find_element_by_xpath("//*[@class='exponea-popup-banner']")
-      if exponeaBanner.is_displayed():
-        wait.until(EC.visibility_of(exponeaBanner))
-        exponeaCrossAndBanner = driver.find_element_by_xpath(
-          "//*[@class='exponea-popup-banner']//*[@class='exponea-close']")
-        exponeaCrossAndBanner.click()
-        time.sleep(2)
-
-    except NoSuchElementException:
-      print("nenasle se exponea banner")
-
-def acceptConsent3(driver):
-  time.sleep(2)
-
-  element = driver.execute_script(
-      """return document.querySelector('#usercentrics-root').shadowRoot.querySelector("button[data-testid='uc-accept-all-button']")""")
-  if element !=0:
-
-      pass
-
-  else:
-      element.click()
-
-

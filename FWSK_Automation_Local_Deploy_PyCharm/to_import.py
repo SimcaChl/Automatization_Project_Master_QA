@@ -4,7 +4,35 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.opera import OperaDriverManager
-from to_import_master import setUp
+import time
+from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import NoSuchElementException
+import smtplib, ssl
+from email.mime.text import MIMEText
+from FWSK_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass, comandExecutor
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
+brand_name_project = "FISCHERSK"
+desired_cap = {
+"os" : "Windows",
+"os_version" : "11",
+"browser" : "Edge",
+"browser_version" : "latest",
+"resolution" : "1680x1050",
+"project" : brand_name_project,
+"build" : "FULL Suite",
+"name" : "test",
+"browserstack.local" : "false",
+"browserstack.debug" : "true",
+"browserstack.networkLogs" : "true",
+"browserstack.selenium_version" : "3.5.2"
+
+}
+def setUp(self):
+  self.driver = webdriver.Remote(
+      command_executor=comandExecutor,
+      desired_capabilities=desired_cap)
 
 URL = "https://www.fischer.sk/"
 URL_poznavacky = URL+"poznavacie-zajazdy/okruhy-a-kombinovane"
@@ -27,14 +55,7 @@ URL_lm = URL+"last-minute"
 URL_stat = URL+"spanelsko"
 URL_groupsearch = URL+"vysledky-vyhledavani?tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9|10|11|12|13&ic1=1&ac1=2"
 URL_FT_results = URL+"hladanie-vysledky?q="
-import time
-from selenium.common.exceptions import TimeoutException
-from selenium.common.exceptions import NoSuchElementException
-import smtplib, ssl
-from email.mime.text import MIMEText
-from to_import_secret import emailPass
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+
 
 def tearDown(self):
   self.driver.quit()
@@ -107,12 +128,3 @@ def acceptConsent3(driver):
   else:
       element.click()
 
-
-desired_cap = {
-"os" : "Windows",
-"os_version" : "11",
-"browser" : "Edge",
-"browser_version" : "latest",
-"browserstack.local" : "false",
-"browserstack.selenium_version" : "3.5.2"
-}

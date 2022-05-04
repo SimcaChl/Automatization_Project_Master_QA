@@ -1,0 +1,7 @@
+2022-05-04 14:10:52.542634 : test_detail_fotka
+2022-05-04 14:11:10.574193 : <selenium.webdriver.remote.webelement.WebElement (session="5fce62185f0b065190fdcc8d0c7b3e6f72918bbe", element="0.21235644101071083-1")>
+2022-05-04 14:11:12.205178 : https://img.fischer.cz/hotels/egypt/oblast-hurghada/hurghada/mirage-bay-resort-a-aqua-park/166173.jpeg
+2022-05-04 14:11:16.544806 : its ok
+2022-05-04 14:11:28.634045 : test_detail_terminy_filtr_meal
+2022-05-04 14:11:45.281863 : <selenium.webdriver.remote.webelement.WebElement (session="30cd81fda9270ca4decadb415f3b311b0ee07bce", element="0.4382710888853165-1")>
+2022-05-04 14:12:14.833576 : nenasle se exponea banner

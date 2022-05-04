@@ -1,0 +1,115 @@
+2022-05-04 16:49:53.818319 : <selenium.webdriver.remote.webelement.WebElement (session="3a953f81b4cbad93d4c845bf15722bbccc54160b", element="0.4467586042640117-1")>
+2022-05-04 16:50:26.381917 : nenasle se exponea banner
+2022-05-04 16:50:29.481732 : gridy jdou videt
+2022-05-04 16:50:30.184508 : gridy jdou videt
+2022-05-04 16:50:30.591378 : gridy jdou videt
+2022-05-04 16:50:31.053230 : gridy jdou videt
+2022-05-04 16:50:31.553070 : gridy jdou videt
+2022-05-04 16:50:32.614732 : gridy jdou videt
+2022-05-04 16:50:33.735373 : gridy jdou videt
+2022-05-04 16:50:34.403160 : gridy jdou videt
+2022-05-04 16:50:36.054649 : gridy jdou videt
+2022-05-04 16:50:36.255584 : gridy jdou videt
+2022-05-04 16:50:36.472515 : gridy jdou videt
+2022-05-04 16:50:36.746427 : gridy jdou videt
+2022-05-04 16:50:37.217277 : gridy jdou videt
+2022-05-04 16:50:37.434208 : gridy jdou videt
+2022-05-04 16:50:37.733113 : gridy jdou videt
+2022-05-04 16:50:38.062007 : gridy jdou videt
+2022-05-04 16:50:38.324923 : gridy jdou videt
+2022-05-04 16:50:38.570845 : gridy jdou videt
+2022-05-04 16:50:38.823272 : gridy jdou videt
+2022-05-04 16:50:39.081190 : gridy jdou videt
+2022-05-04 16:50:39.423081 : gridy jdou videt
+2022-05-04 16:50:40.184838 : gridy jdou videt
+2022-05-04 16:50:41.153513 : gridy jdou videt
+2022-05-04 16:50:42.023638 : gridy jdou videt
+2022-05-04 16:50:42.841376 : gridy jdou videt
+2022-05-04 16:50:43.083392 : gridy jdou videt
+2022-05-04 16:50:43.598134 : gridy jdou videt
+2022-05-04 16:50:44.928711 : content jdou videt
+2022-05-04 16:50:45.352978 : content jdou videt
+2022-05-04 16:50:45.713862 : content jdou videt
+2022-05-04 16:50:46.036970 : content jdou videt
+2022-05-04 16:50:46.342877 : content jdou videt
+2022-05-04 16:50:46.707762 : content jdou videt
+2022-05-04 16:50:47.069647 : content jdou videt
+2022-05-04 16:50:47.491393 : content jdou videt
+2022-05-04 16:50:47.927254 : content jdou videt
+2022-05-04 16:50:48.615035 : content jdou videt
+2022-05-04 16:50:49.438771 : content jdou videt
+2022-05-04 16:50:50.225520 : content jdou videt
+2022-05-04 16:50:50.941434 : content jdou videt
+2022-05-04 16:50:51.580562 : content jdou videt
+2022-05-04 16:50:52.010981 : content jdou videt
+2022-05-04 16:50:52.329879 : content jdou videt
+2022-05-04 16:50:52.653775 : content jdou videt
+2022-05-04 16:50:53.177609 : content jdou videt
+2022-05-04 16:50:53.572482 : content jdou videt
+2022-05-04 16:50:54.042123 : content jdou videt
+2022-05-04 16:50:54.703913 : content jdou videt
+2022-05-04 16:50:55.373697 : content jdou videt
+2022-05-04 16:50:56.062478 : content jdou videt
+2022-05-04 16:50:56.744461 : content jdou videt
+2022-05-04 16:50:57.474043 : content jdou videt
+2022-05-04 16:50:57.754952 : content jdou videt
+2022-05-04 16:50:57.978882 : content jdou videt
+2022-05-04 16:51:22.817057 : <selenium.webdriver.remote.webelement.WebElement (session="b297dd0f84c321c00ae7887e231a14a8f4dfc12f", element="0.8544199424998722-1")>
+2022-05-04 16:51:24.540504 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="b297dd0f84c321c00ae7887e231a14a8f4dfc12f", element="0.8544199424998722-2")>>
+2022-05-04 16:52:12.980906 : <selenium.webdriver.remote.webelement.WebElement (session="b278f9a18eff49f943982913bd1bd447a722471b", element="0.33155953607561117-1")>
+2022-05-04 16:52:17.273828 : its ok
+2022-05-04 16:52:51.497507 : <selenium.webdriver.remote.webelement.WebElement (session="a266305ac3c3c4109353ce4fb3ed0b264982fbd7", element="0.3033612000464152-1")>
+2022-05-04 16:52:59.890886 : All inclusive
+2022-05-04 16:53:09.106906 : ['All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive', 'All inclusive']
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:09.106906 : ok
+2022-05-04 16:53:51.829049 : <selenium.webdriver.remote.webelement.WebElement (session="0f9ca7b2e1763b809a80f4117a62924dc8c99317", element="0.48694472266704825-1")>
+2022-05-04 16:54:38.916834 : <selenium.webdriver.remote.webelement.WebElement (session="c86393b0cb571bd9d471ca725d559dd0e45661af", element="0.4189602373084287-1")>
+2022-05-04 16:54:45.558545 : benefit item
+2022-05-04 16:54:46.059370 : benefit item
+2022-05-04 16:54:46.655629 : benefit item
+2022-05-04 16:54:47.406388 : benefit item
+2022-05-04 16:54:47.891232 : benefit item
+2022-05-04 16:54:48.386267 : benefit item
+2022-05-04 16:54:48.790051 : benefit item
+2022-05-04 16:54:52.121787 : grind container
+2022-05-04 16:54:52.787578 : grind container
+2022-05-04 16:54:53.037498 : grind container
+2022-05-04 16:54:53.265087 : grind container
+2022-05-04 16:54:53.593983 : grind container
+2022-05-04 16:54:53.921878 : grind container
+2022-05-04 16:54:54.292759 : grind container
+2022-05-04 16:54:54.899565 : grind container
+2022-05-04 16:54:55.573710 : grind container
+2022-05-04 16:54:56.019568 : grind container
+2022-05-04 16:54:56.402451 : grind container
+2022-05-04 16:54:56.697495 : grind container
+2022-05-04 16:54:57.496642 : grind container
+2022-05-04 16:54:58.131438 : grind container
+2022-05-04 16:54:58.565300 : grind container
+2022-05-04 16:54:59.614073 : grind container
+2022-05-04 16:55:00.285973 : grind container
+2022-05-04 16:55:00.525174 : grind container
+2022-05-04 16:55:02.233795 : tile img
+2022-05-04 16:55:03.276461 : tile img
+2022-05-04 16:55:04.260147 : tile img
+2022-05-04 16:55:05.217107 : tile img
+2022-05-04 16:55:05.639010 : tile img
+2022-05-04 16:55:06.013890 : tile img
+2022-05-04 16:55:06.254813 : tile img
+2022-05-04 16:55:06.571712 : tile img
+2022-05-04 16:55:07.245495 : tile img
