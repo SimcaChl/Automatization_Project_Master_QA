@@ -12,7 +12,7 @@ from email.mime.text import MIMEText
 from selenium import webdriver
 from to_import_secret_master import comandExecutor
 from webdriver_manager.chrome import ChromeDriverManager
-from trying import desired_cap_Branded
+from desired_cap_generator import desired_cap_Branded
 
 
 def setUp(self):

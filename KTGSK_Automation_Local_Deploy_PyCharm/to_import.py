@@ -32,7 +32,8 @@ from KTGSK_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass, co
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 brand_name_project = "KARTAGOSK"
-desired_cap = {
+from desired_cap_generator import desired_cap_Branded
+desired_cap2 = {
 "os" : "Windows",
 "os_version" : "11",
 "browser" : "Edge",
@@ -47,6 +48,8 @@ desired_cap = {
 "browserstack.selenium_version" : "3.5.2"
 
 }
+
+desired_cap = desired_cap_Branded("KTGSk", "Custom build")
 def setUp(self):
   self.driver = webdriver.Remote(
       command_executor=comandExecutor,

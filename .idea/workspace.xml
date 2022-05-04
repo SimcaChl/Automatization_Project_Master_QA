@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/desired_cap_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/to_import_master.py" beforeDir="false" afterPath="$PROJECT_DIR$/to_import_master.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trying.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +38,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.starter_KTGSK">
-    <configuration name="starter_ET" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.desired_cap_generator">
+    <configuration name="desired_cap_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -47,7 +51,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/starter_ET.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\KDK\Desktop\Automatization_Project_Master\desired_cap_generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.desired_cap_generator" />
         <item itemvalue="Python.starter_KTGSK" />
         <item itemvalue="Python.starter_FWSK" />
         <item itemvalue="Python.starter_FW" />
         <item itemvalue="Python.starter_EW" />
-        <item itemvalue="Python.starter_ET" />
       </list>
     </recent_temporary>
   </component>
