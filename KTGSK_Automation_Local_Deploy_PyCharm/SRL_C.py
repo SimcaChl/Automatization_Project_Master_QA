@@ -2,7 +2,7 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException,
     StaleElementReferenceException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, generalDriverWaitImplicit
+from KTGSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, generalDriverWaitImplicit
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest

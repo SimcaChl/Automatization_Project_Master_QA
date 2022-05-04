@@ -3,8 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_ET.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_ET.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_EW.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_EW.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/CovidInfo_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/CovidInfo_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/Detail_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/Detail_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/Detail_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/Detail_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/DetskeKluby_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/DetskeKluby_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/FM_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/FM_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/HP_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/HP_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/HP_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/HP_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/LM_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/LM_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/SDO_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/SDO_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/SRL_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/SRL_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/SRL_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/SRL_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/fulltext_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/fulltext_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/groupsearch_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/groupsearch_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/hp_fw_checking.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/pobocky.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/pobocky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/poznavacky.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/poznavacky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/starter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
