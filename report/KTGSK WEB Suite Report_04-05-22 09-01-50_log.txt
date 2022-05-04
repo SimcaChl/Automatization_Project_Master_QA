@@ -48,3 +48,4 @@
 2022-05-04 21:02:53.384582 : content jdou videt
 2022-05-04 21:03:23.559700 : <selenium.webdriver.remote.webelement.WebElement (session="00bb2a3db4205ede076191620e6e7acdac9b0bb9", element="0.2063475845495688-1")>
 2022-05-04 21:03:24.844573 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="00bb2a3db4205ede076191620e6e7acdac9b0bb9", element="0.2063475845495688-2")>>
+2022-05-04 21:03:49.082607 : <selenium.webdriver.remote.webelement.WebElement (session="ed3e112745063b87b9015387a6266a4a6a7f04a4", element="0.34479407409242757-1")>
