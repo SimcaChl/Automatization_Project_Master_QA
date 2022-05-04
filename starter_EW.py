@@ -6,4 +6,4 @@ from EW_Automation_Local_Deploy_PyCharm import *
 #C:\Users\KDK\Desktop\Automatization_Project_Master\starter_FW.py
 
 while True:
-    runner_tests_generalized(suite_EW_full)
+    runner_tests_generalized(suite_EW_full, "EW")

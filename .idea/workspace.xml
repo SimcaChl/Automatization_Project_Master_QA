@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_ET.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_ET.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_EW.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_EW.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_FW.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_FW.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_FWSK.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_FWSK.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter_KTGSK.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_KTGSK.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter_master_browserstack.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_master_browserstack.py" afterDir="false" />
     </list>
@@ -35,7 +39,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.starter_KTGSK">
+  <component name="RunManager" selected="Python.starter_EW">
     <configuration name="starter_ET" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.starter_EW" />
         <item itemvalue="Python.starter_KTGSK" />
         <item itemvalue="Python.starter_local" />
         <item itemvalue="Python.starter_FWSK" />
         <item itemvalue="Python.starter_ET" />
-        <item itemvalue="Python.starter_EW" />
       </list>
     </recent_temporary>
   </component>

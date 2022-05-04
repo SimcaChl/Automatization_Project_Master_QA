@@ -5,4 +5,4 @@ from starter_master_browserstack import *
 
 
 while True:
-    runner_tests_generalized(suite_KTGSK_full)
+    runner_tests_generalized(suite_KTGSK_full, "KTGSK")
