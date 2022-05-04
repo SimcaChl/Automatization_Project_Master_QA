@@ -1,14 +1,15 @@
-from ET_Automation_Local_Deploy_PyCharm.Detail_C import *
-from ET_Automation_Local_Deploy_PyCharm.FM_Exotika_D import *
-from ET_Automation_Local_Deploy_PyCharm.fulltext_C import *
-from ET_Automation_Local_Deploy_PyCharm.groupsearch_D import *
-from ET_Automation_Local_Deploy_PyCharm.HP_D import *
-from ET_Automation_Local_Deploy_PyCharm.LM_D import *
-from ET_Automation_Local_Deploy_PyCharm.SDO_D import *
-from ET_Automation_Local_Deploy_PyCharm.SRL_C import *
-from ET_Automation_Local_Deploy_PyCharm.SRL_D import *
-from ET_Automation_Local_Deploy_PyCharm.HP_C import *
+from ET_Automation_Local_Deploy_PyCharm.Detail_C import TestDetailHotelu_C
+from ET_Automation_Local_Deploy_PyCharm.FM_Exotika_D import Test_FM_Exotika_D
+from ET_Automation_Local_Deploy_PyCharm.fulltext_C import Test_Fulltext_C
+from ET_Automation_Local_Deploy_PyCharm.groupsearch_D import Test_Groupsearch_D
+from ET_Automation_Local_Deploy_PyCharm.HP_D import Test_HP_D
+from ET_Automation_Local_Deploy_PyCharm.LM_D import Test_LM_D
+from ET_Automation_Local_Deploy_PyCharm.SDO_D import TestSDO_D
+from ET_Automation_Local_Deploy_PyCharm.SRL_C import Test_SRL_C
+from ET_Automation_Local_Deploy_PyCharm.SRL_D import TestSRL_D
+from ET_Automation_Local_Deploy_PyCharm.HP_C import Test_HP_C
 import HtmlTestRunner
+import unittest
 
 def suite_ET_full():
     suite = unittest.TestSuite()

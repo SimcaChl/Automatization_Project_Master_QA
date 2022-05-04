@@ -1,10 +1,11 @@
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, setUp, tearDown, URL_detail_all_inclusive, URL_detail_airport_praha
+from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, tearDown, setUp, URL_detail_all_inclusive, URL_detail_airport_praha
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 import requests
+
 imageDetailFirstXpath = "//*[@id='splide01-slide01']/img"
 terminyAcenyScrollMenuXpath = "/html/body/div[@id='app']/div/div[@class='c_hotel-anchor-nav']/div[@class='c_container']/ul[@class='c_customScroll']/li[2]/a"
 stravovaniBoxTerminyAcenyXpath = "//*[contains(text(), 'Stravování')][1]"

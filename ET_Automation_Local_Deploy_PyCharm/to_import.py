@@ -1,3 +1,4 @@
+#from starter_ET import setUp
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -13,8 +14,30 @@ from ET_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass
 from selenium import webdriver
 from ET_Automation_Local_Deploy_PyCharm.to_import_secret import comandExecutor
 from webdriver_manager.chrome import ChromeDriverManager
-from starter_ET import setUp
+
 #from to_import_master import setUp
+brand_name_project = "ETRAVEL"
+
+desired_cap = {
+"os" : "Windows",
+"os_version" : "11",
+"browser" : "Edge",
+"browser_version" : "latest",
+"resolution" : "1680x1050",
+"project" : brand_name_project,
+"build" : "buid",
+"name" : "name",
+"browserstack.local" : "false",
+"browserstack.debug" : "true",
+"browserstack.networkLogs" : "true",
+"browserstack.selenium_version" : "3.5.2"
+}
+def setUp(self):
+  self.driver = webdriver.Remote(
+      command_executor=comandExecutor,
+      desired_capabilities=desired_cap)
+
+
 
 URL = "https://www.etravel.cz/"
 URL_FM = URL+"first-minute"
