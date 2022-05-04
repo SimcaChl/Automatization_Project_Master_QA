@@ -1,11 +1,9 @@
-#from Detail_D import *
 from ET_Automation_Local_Deploy_PyCharm.Detail_C import *
 from ET_Automation_Local_Deploy_PyCharm.FM_Exotika_D import *
 from ET_Automation_Local_Deploy_PyCharm.fulltext_C import *
 from ET_Automation_Local_Deploy_PyCharm.groupsearch_D import *
 from ET_Automation_Local_Deploy_PyCharm.HP_D import *
 from ET_Automation_Local_Deploy_PyCharm.LM_D import *
-
 from ET_Automation_Local_Deploy_PyCharm.SDO_D import *
 from ET_Automation_Local_Deploy_PyCharm.SRL_C import *
 from ET_Automation_Local_Deploy_PyCharm.SRL_D import *

@@ -124,12 +124,3 @@ def acceptConsent3(driver):
   else:
       element.click()
 
-
-desired_cap = {
-"os" : "Windows",
-"os_version" : "11",
-"browser" : "Edge",
-"browser_version" : "latest",
-"browserstack.local" : "false",
-"browserstack.selenium_version" : "3.5.2"
-}

@@ -12,17 +12,8 @@ from email.mime.text import MIMEText
 from selenium import webdriver
 from to_import_secret_master import comandExecutor
 from webdriver_manager.chrome import ChromeDriverManager
+from trying import desired_cap_Branded
 
-desired_cap = {
-"os" : "Windows",
-"os_version" : "11",
-"browser" : "Edge",
-"browser_version" : "latest",
-"resolution" : "1680x1050",
-"browserstack.local" : "false",
-"browserstack.debug" : "true",
-"browserstack.selenium_version" : "3.5.2"
-}
 
 def setUp(self):
   #self.driver = webdriver.Chrome(ChromeDriverManager().install())

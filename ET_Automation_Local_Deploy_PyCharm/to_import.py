@@ -13,7 +13,9 @@ from ET_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass
 from selenium import webdriver
 from ET_Automation_Local_Deploy_PyCharm.to_import_secret import comandExecutor
 from webdriver_manager.chrome import ChromeDriverManager
-from to_import_master import setUp
+from starter_ET import setUp
+#from to_import_master import setUp
+
 URL = "https://www.etravel.cz/"
 URL_FM = URL+"first-minute"
 URL_exotika = URL + "exoticka-dovolena"
@@ -128,11 +130,3 @@ def acceptConsent3(driver):
       element.click()
 
 
-desired_cap = {
-"os" : "Windows",
-"os_version" : "11",
-"browser" : "Edge",
-"browser_version" : "latest",
-"browserstack.local" : "false",
-"browserstack.selenium_version" : "3.5.2"
-}
