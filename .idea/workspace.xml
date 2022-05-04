@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/ET WEB Suite Report_04-05-22 01-43-43_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/ET WEB Suite Report_04-05-22 01-43-43_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_ET.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_ET.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter_EW.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_EW.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_FWSK.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_FWSK.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_KTGSK.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_KTGSK.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
