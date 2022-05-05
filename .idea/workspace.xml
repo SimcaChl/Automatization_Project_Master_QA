@@ -3,7 +3,120 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/Detail_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/Detail_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-04-22 02-29-25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-04-22 02-29-25_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 01-56-34.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 01-56-34_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 05-32-20.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 05-32-20_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 09-48-52.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_02-05-22 09-48-52_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_03-05-22 02-26-29_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_03-05-22 09-57-48.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_03-05-22 09-57-48_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_03-05-22 10-41-17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_03-05-22 10-41-17_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_03-05-22 11-25-52.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_03-05-22 11-25-52_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_09-04-22 08-19-48.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_09-04-22 08-19-48_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_09-04-22 09-16-25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_09-04-22 09-16-25_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_09-04-22 09-54-55.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_09-04-22 09-54-55_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_12-04-22 04-21-40.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_12-04-22 04-21-40_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_13-04-22 11-30-44.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_13-04-22 11-30-44_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_18-03-22 03-48-23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_18-03-22 03-48-23_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_23-03-22 06-58-33.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_23-03-22 06-58-33_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_23-04-22 10-26-00.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_23-04-22 10-26-00_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_28-03-22 10-52-50.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_28-03-22 10-52-50_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_28-03-22 11-00-19.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_28-03-22 11-00-19_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_30-03-22 06-58-26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/ETRAVEL-Web Suite test_30-03-22 06-58-26_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ET_Automation_Local_Deploy_PyCharm/ETRAVEL-Web Suite test/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-04-22 01-21-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-04-22 01-21-12_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-04-22 10-40-27.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-04-22 10-40-27_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-04-22 12-06-45.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-04-22 12-06-45_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 01-53-46.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 01-53-46_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 05-40-28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 05-40-28_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 09-48-34.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_02-05-22 09-48-34_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_04-04-22 10-46-15_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_05-04-22 03-35-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_05-04-22 03-35-12_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_06-04-22 09-42-19.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_06-04-22 09-42-19_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_07-04-22 01-20-31.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_07-04-22 01-20-31_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_07-04-22 02-50-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_07-04-22 02-50-12_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_07-04-22 08-32-43.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_07-04-22 08-32-43_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_08-04-22 10-52-35.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_08-04-22 10-52-35_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_09-03-22 01-48-32_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_09-03-22 09-50-24_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_10-04-22 11-01-47.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_10-04-22 11-01-47_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_12-04-22 01-11-00.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_12-04-22 01-11-00_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_12-04-22 03-12-04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_12-04-22 03-12-04_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_13-04-22 11-53-45.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_13-04-22 11-53-45_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_14-03-22 09-46-52.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_14-03-22 09-46-52_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_14-04-22 09-55-40.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_14-04-22 09-55-40_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_17-03-22 08-54-41.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_17-03-22 08-54-41_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_18-03-22 03-32-46.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_18-03-22 03-32-46_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_18-03-22 10-32-25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_18-03-22 10-32-25_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_18-04-22 10-53-25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_18-04-22 10-53-25_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_20-04-22 07-08-51.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_20-04-22 07-08-51_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_21-04-22 06-21-39.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_21-04-22 06-21-39_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_22-04-22 03-12-59.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_22-04-22 03-12-59_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_22-04-22 06-56-33.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_22-04-22 06-56-33_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_23-03-22 05-24-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_23-03-22 05-24-11_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_23-03-22 11-58-25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_23-03-22 11-58-25_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_23-04-22 11-21-11_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_28-03-22 10-25-07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_28-03-22 10-25-07_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_29-03-22 05-29-38.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_29-03-22 05-29-38_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_30-03-22 12-19-33.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_30-03-22 12-19-33_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_31-03-22 09-24-44.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/EXIM Web Suite test_31-03-22 09-24-44_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/EXIM Web Suite test/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/SRL_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/SRL_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_FW.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_FW.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_master_browserstack.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_master_browserstack.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +148,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.desired_cap_generator">
+  <component name="RunManager" selected="Python.starter_FW">
+    <configuration name="SRL_C" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Automatization_Project_Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\KDK\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/SRL_C.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="desired_cap_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,27 +183,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\KDK\Desktop\Automatization_Project_Master\desired_cap_generator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="starter_EW" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Automatization_Project_Master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\KDK\anaconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/starter_EW.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,11 +256,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.starter_FW" />
+        <item itemvalue="Python.SRL_C" />
         <item itemvalue="Python.desired_cap_generator" />
         <item itemvalue="Python.starter_KTGSK" />
         <item itemvalue="Python.starter_FWSK" />
-        <item itemvalue="Python.starter_FW" />
-        <item itemvalue="Python.starter_EW" />
       </list>
     </recent_temporary>
   </component>

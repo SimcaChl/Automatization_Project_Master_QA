@@ -50,9 +50,9 @@ def suite_FW_full():
     suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
     return suite
 
-def suite2():
+def suite_map():
     suite = unittest.TestSuite()
-    suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
+    suite.addTest(Test_SRL_C('test_SRL_map'))
     return suite
 
 if __name__ == '__main__':

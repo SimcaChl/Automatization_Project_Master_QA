@@ -1,0 +1,2 @@
+2022-05-05 19:43:29.240689 : <selenium.webdriver.remote.webelement.WebElement (session="aadc55ef9970986a6867e23de69cffd73a9f0126", element="0.7879271938187142-1")>
+2022-05-05 19:44:03.085297 : nenasle se exponea banner
