@@ -18,7 +18,7 @@ chatCrossXpath = "//*[@id='daktela-web-greeting-close']"
 #SDO_Strava_row_karta_hotelu_Xpath = "//*[@class='c_row'][2]"
 SDO_Strava_row_karta_hotelu_Xpath = "//*[@class='c_row']/span/i"
 
-from generalized_test_functions import generalized_map_test_click_through_circles
+from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble
 
 returnLocatorForMealHotelKarty(1)
 class Test_SRL_C(unittest.TestCase):
@@ -105,26 +105,7 @@ class Test_SRL_C(unittest.TestCase):
         generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath)
         time.sleep(3)
 
-        actualHotelPin = driver.find_element_by_xpath(
-            "//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
-        driver.execute_script("arguments[0].click();", actualHotelPin)  ##at this point im at detail hotelu na mapě
-
-        try:
-            imgMissing = driver.find_element_by_xpath(
-                "//*[@class='f_image f_image--missing']")  ##when theres no photo on the detail on map theres actually class that says it is missing
-            if imgMissing.is_displayed():  ##so if I dont find this class = good
-                hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
-                msg = "V mape v bublibně hotelu se nezobrazuje fotka hotelu " + hotelBubble.text
-                sendEmail(msg)
-
-        except NoSuchElementException:
-            print("actually OK")
-
-
-        hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
-        hotelBubble.click()
-
-        time.sleep(5)
+        generalized_map_test_click_on_pin_and_hotel_bubble(self.driver)
 
 
         #assert (self.driver.current_url) != URL_SRL

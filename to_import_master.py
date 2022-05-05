@@ -10,10 +10,22 @@ from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
 from email.mime.text import MIMEText
 from selenium import webdriver
-from to_import_secret_master import comandExecutor
-from webdriver_manager.chrome import ChromeDriverManager
-from desired_cap_generator import desired_cap_Branded
+from to_import_secret_master import comandExecutor, emailPass
 
+def sendEmail(msg):
+  fromx = 'alertserverproblem@gmail.com'
+  to = 'ooo.kadoun@gmail.com'
+  msg = MIMEText(msg)
+  msg['Subject'] = "SRWEB1"
+  msg['From'] = fromx
+  msg['To'] = to
+
+  server = smtplib.SMTP('smtp.gmail.com:587')
+  server.starttls()
+  server.ehlo()
+  server.login("alertserverproblem@gmail.com", emailPass)
+  server.sendmail(fromx, to, msg.as_string())
+  server.quit()
 
 def setUp(self):
   #self.driver = webdriver.Chrome(ChromeDriverManager().install())

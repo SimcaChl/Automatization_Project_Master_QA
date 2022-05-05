@@ -5,7 +5,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExp
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from generalized_test_functions import generalized_map_test_click_through_circles
+from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble
 from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
@@ -120,18 +120,8 @@ class Test_SRL_C(unittest.TestCase):
         #zobrazitNaMape.click()
         zobrazitNaMapeXpath = "//*[@class='f_bar-item f_bar-map']"
         generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath)
-
         time.sleep(2)
-
-        actualHotelPin = driver.find_element_by_xpath(
-            "//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
-        driver.execute_script("arguments[0].click();", actualHotelPin)  ##at this point im at detail hotelu na mapě
-
-
-
-        hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
-        hotelBubble.click()
-
+        generalized_map_test_click_on_pin_and_hotel_bubble(driver)
         time.sleep(2)
 
         ###EXECUTION DISPLAY TEST NA DETAIL HOTELU -> pokud se vyassertuje že jsem na detailu a vše je ok můžu předpokládat že mapka je OK
