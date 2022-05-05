@@ -6,7 +6,7 @@ import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 from generalized_test_functions import generalized_map_test
-
+from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -121,23 +121,21 @@ class Test_SRL_C(unittest.TestCase):
         #zobrazitNaMape.click()
         zobrazitNaMapeXpath = "//*[@class='f_bar-item f_bar-map']"
         generalized_map_test(driver, zobrazitNaMapeXpath)
-        time.sleep(7)  ##try except na kolecko, pokud ok tak click, nenajde tak pokracovat dal
-        ##kolecka jsou definovany podle velikosti - small, medium, large; vzdy se meni v class name
 
-        ##2x vyvolani na large kolecko (jsou destinace kde se musim kliknout na large vickrat
-        ##ve vsech except je pass aby to nespadlo kdyby se large nenasel, goal toho testu je se pres mapu proklikat na detail hotelu
-        try:
-            wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']"))).click()
+        actualHotelPin = driver.find_element_by_xpath(
+            "//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
+        driver.execute_script("arguments[0].click();", actualHotelPin)  ##at this point im at detail hotelu na mapě
 
-        except NoSuchElementException:
-            print("nenasel se large kolecko")
-            pass
-        except TimeoutException:
-            print("nenasel se large kolecko")
-            pass
-        except ElementNotInteractableException:
-            print("nenasel se medium kolecko ElementNotInteractableException")
-            pass
+        time.sleep(2)
+
+        hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
+        hotelBubble.click()
+
+        time.sleep(2)
+
+        ###EXECUTION DISPLAY TEST NA DETAIL HOTELU -> pokud se vyassertuje že jsem na detailu a vše je ok můžu předpokládat že mapka je OK
+
+        detail_D(self, driver)
 
 
 

@@ -9,26 +9,26 @@ import unittest
 ##there is new SRL rn so gotta prepare that, for now I created this test just for the detail of hotel it self, hard url
 
 def detail_D(self, driver):
-    wait = WebDriverWait(self.driver, 150000)
-    driver.implicitly_wait(100)
+    wait = WebDriverWait(self.driver, 12)
+    driver.implicitly_wait(10)
+    detailWrapperXpath = "//*[@class='grd-row']"
     try:
-        detailFotka = self.driver.find_element_by_xpath("//*[@id='gallery01Trigger']")
-        # detailFotka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-content grd-col grd-col--9 grd-col--lg-8 grd-col--slg-12']")
-        # detailFotka = self.driver.find_element_by_xpath("//*[@id='divHotelDetailWrapper']")
-
-        wait.until(EC.visibility_of(detailFotka))
-        print(detailFotka.is_displayed)
-
-        if detailFotka.is_displayed():
+        detailWrapper = self.driver.find_element_by_xpath(detailWrapperXpath)
+        wait.until(EC.visibility_of(detailWrapper))
+        if detailWrapper.is_displayed():
             pass
+
+
     except NoSuchElementException:
         url = self.driver.current_url
-        msg = "Problem s fotkami na detailu hotelu " + url
+        msg = "Problem se sedivkou na detailu hotelu " + url
         sendEmail(msg)
-    # detailFotka = self.driver.find_element_by_xpath("//*[@id='gallery01Trigger']")
+    detailWrapper = self.driver.find_element_by_xpath(detailWrapperXpath)
+    assert detailWrapper.is_displayed() == True
 
-    assert detailFotka.is_displayed() == True
-
+def detail_D2(self, driver):
+    wait = WebDriverWait(self.driver, 150)
+    driver.implicitly_wait(50)
     try:
         sedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary js-detailSummary']")
         wait.until(EC.visibility_of(sedivka))
@@ -75,6 +75,7 @@ def detail_D(self, driver):
         msg = "Problem s terminy a ceny na detailu hotelu " + url
         sendEmail(msg)
 
+    terminySingle = self.driver.find_element_by_xpath("//*[@data-hotel]")
     assert terminySingle.is_displayed() == True
 
 class TestDetailHotelu_D(unittest.TestCase):

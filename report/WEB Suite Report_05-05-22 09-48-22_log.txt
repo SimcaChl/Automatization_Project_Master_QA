@@ -1,0 +1,16 @@
+2022-05-05 21:48:22.610253 : 
+                             
+                             
+2022-05-05 21:48:22.610253 : ====== WebDriver manager ======
+                             
+2022-05-05 21:48:22.641243 : Current google-chrome version is 101.0.4951
+                             
+2022-05-05 21:48:22.641243 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-05 21:48:22.867171 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-05 21:48:40.038745 : <selenium.webdriver.remote.webelement.WebElement (session="d2de1ee1566eb7df47396f51b30f2033", element="f293750e-8f85-4e52-bd12-99abf517b3ed")>
+2022-05-05 21:49:09.046226 : nenasle se exponea banner
+2022-05-05 21:49:47.150816 : nenasel se kolecko//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']
+2022-05-05 21:50:14.791284 : nenasel se kolecko//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']
+2022-05-05 21:50:42.462641 : nenasel se kolecko//*[@class='leaflet-marker-icon marker-cluster marker-cluster-small leaflet-zoom-animated leaflet-interactive']
