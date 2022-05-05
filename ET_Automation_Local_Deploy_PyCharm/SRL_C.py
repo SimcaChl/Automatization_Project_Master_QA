@@ -18,7 +18,7 @@ chatCrossXpath = "//*[@id='daktela-web-greeting-close']"
 #SDO_Strava_row_karta_hotelu_Xpath = "//*[@class='c_row'][2]"
 SDO_Strava_row_karta_hotelu_Xpath = "//*[@class='c_row']/span/i"
 
-
+from generalized_test_functions import generalized_map_test
 
 returnLocatorForMealHotelKarty(1)
 class Test_SRL_C(unittest.TestCase):
@@ -102,79 +102,7 @@ class Test_SRL_C(unittest.TestCase):
         acceptConsent(driver)
         #time.sleep(10)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(zobrazitNaMapeXpath))).click()
-
-
-
-        time.sleep(4)  ##try except na kolecko, pokud ok tak click, nenajde tak pokracovat dal
-        ##kolecka jsou definovany podle velikosti - small, medium, large; vzdy se meni v class name
-
-        ##2x vyvolani na large kolecko (jsou destinace kde se musim kliknout na large vickrat
-        ##ve vsech except je pass aby to nespadlo kdyby se large nenasel, goal toho testu je se pres mapu proklikat na detail hotelu
-        try:
-            wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                   "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']"))).click()
-
-        except NoSuchElementException:
-            print("nenasel se large kolecko")
-            pass
-        except TimeoutException:
-            print("nenasel se large kolecko")
-            pass
-        except ElementNotInteractableException:
-            print("nenasel se medium kolecko ElementNotInteractableException")
-            pass
-
-        try:
-            wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                   "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']"))).click()
-
-        except NoSuchElementException:
-            print("nenasel se large kolecko")
-            pass
-        except TimeoutException:
-            print("nenasel se large kolecko")
-            pass
-        except ElementNotInteractableException:
-            print("nenasel se medium kolecko ElementNotInteractableException")
-            pass
-
-        ##Medium kolecko
-
-        try:
-            mediumKolecko = driver.find_elements_by_xpath(
-                "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']")
-            wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                   "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']"))).click()
-            # wait.until(EC.element_to_be_clickable((By.XPATH,
-            # "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']"))).execute_script("arguments[0].click();", mediumKolecko[1])
-        except NoSuchElementException:
-            print("nenasel se medium kolecko-NoSuchElementException")
-            pass
-        except TimeoutException:
-            print("nenasel se medium kolecko - TimeoutExceptio")
-            pass
-        except ElementNotInteractableException:
-            print("nenasel se medium kolecko ElementNotInteractableException")
-            pass
-
-        ##small kolecko
-
-        try:
-            koleckoCisloSmall = driver.find_element_by_xpath(
-                "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-small leaflet-zoom-animated leaflet-interactive']")
-            koleckoCisloSmall.click()
-            wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                   "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-small leaflet-zoom-animated leaflet-interactive']"))).click()
-        except NoSuchElementException:
-            print("nenasel se small kolecko")
-            pass
-        except TimeoutException:
-            print("nenasel se small kolecko")
-            pass
-        except ElementNotInteractableException:
-            print("nenasel se small kolecko ElementNotInteractableException")
-            pass
-
+        generalized_map_test(driver, zobrazitNaMapeXpath)
         time.sleep(3)
 
         actualHotelPin = driver.find_element_by_xpath(
