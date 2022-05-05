@@ -6,7 +6,7 @@ from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExp
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from generalized_test_functions import generalized_map_test_click_through_circles
+from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble
 hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
@@ -124,60 +124,14 @@ class Test_SRL_C(unittest.TestCase):
         generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath)
         time.sleep(2.5)
 
-        actualHotelPin = driver.find_element_by_xpath(
-            "//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
-        driver.execute_script("arguments[0].click();", actualHotelPin)  ##at this point im at detail hotelu na mapě
+        generalized_map_test_click_on_pin_and_hotel_bubble(driver)
+        time.sleep(3)
 
-        try:
-            imgMissing = driver.find_element_by_xpath(
-                "//*[@class='f_image f_image--missing']")  ##when theres no photo on the detail on map theres actually class that says it is missing
-            if imgMissing.is_displayed():  ##so if I dont find this class = good
-                hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
-                msg = "V mape v bublibně hotelu se nezobrazuje fotka hotelu " + hotelBubble.text
-                sendEmail(msg)
-
-        except NoSuchElementException:
-            print("actually OK")
-
-        time.sleep(2)
-
-        hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
-        hotelBubble.click()
-
-        time.sleep(5)
-
-        ###EXECUTION DISPLAY TEST NA DETAIL HOTELU -> pokud se vyassertuje že jsem na detailu a vše je ok můžu předpokládat že mapka je OK
-
-        try:
-            sedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary js-detailSummary']")
-            wait.until(EC.visibility_of(sedivka))
-            assert sedivka == True
-
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "Problem se sedivkou na detailu hotelu " + url
-            sendEmail(msg)
-
-
-        try:
-            terminSedivkaSingle = self.driver.find_element_by_xpath("//*[@data-hotel]")
-            wait.until(EC.visibility_of(terminSedivkaSingle))
-
-            assert terminSedivkaSingle.is_displayed() == True
-
-            if terminSedivkaSingle.is_displayed():
-                pass
-            else:
-                url = self.driver.current_url
-                msg = "Problem s terminy a ceny na detailu hotelu " + url
-                sendEmail(msg)
-
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "Problem s terminSedivkaSingle " + url
-            sendEmail(msg)
+        self.driver.switch_to.window(self.driver.window_handles[1])  ##gotta switch to new window
+        currentUrl = self.driver.current_url
+        print(currentUrl)
+        print(URL_SRL)
+        assert currentUrl != URL_SRL
 
     def test_SRL_filtr_strava(self):
         driver = self.driver
