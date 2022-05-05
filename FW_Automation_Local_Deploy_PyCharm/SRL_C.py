@@ -5,7 +5,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExp
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from generalized_test_functions import generalized_map_test
+from generalized_test_functions import generalized_map_test_click_through_circles
 from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
@@ -112,21 +112,22 @@ class Test_SRL_C(unittest.TestCase):
         driver = self.driver
         driver.get(URL_SRL)
         wait = WebDriverWait(driver, 15)
-        time.sleep(5)
+        time.sleep(2.3)
         acceptConsent(driver)
         time.sleep(2)
-        closeExponeaBanner(driver)
         generalDriverWaitImplicit(self.driver)
         #zobrazitNaMape = driver.find_element_by_xpath("//*[@class='f_bar-item f_bar-map']")
         #zobrazitNaMape.click()
         zobrazitNaMapeXpath = "//*[@class='f_bar-item f_bar-map']"
-        generalized_map_test(driver, zobrazitNaMapeXpath)
+        generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath)
+
+        time.sleep(2)
 
         actualHotelPin = driver.find_element_by_xpath(
             "//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
         driver.execute_script("arguments[0].click();", actualHotelPin)  ##at this point im at detail hotelu na mapě
 
-        time.sleep(2)
+
 
         hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
         hotelBubble.click()

@@ -18,7 +18,7 @@ chatCrossXpath = "//*[@id='daktela-web-greeting-close']"
 #SDO_Strava_row_karta_hotelu_Xpath = "//*[@class='c_row'][2]"
 SDO_Strava_row_karta_hotelu_Xpath = "//*[@class='c_row']/span/i"
 
-from generalized_test_functions import generalized_map_test
+from generalized_test_functions import generalized_map_test_click_through_circles
 
 returnLocatorForMealHotelKarty(1)
 class Test_SRL_C(unittest.TestCase):
@@ -100,9 +100,9 @@ class Test_SRL_C(unittest.TestCase):
         time.sleep(5)
         self.driver.maximize_window()
         acceptConsent(driver)
-        #time.sleep(10)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(zobrazitNaMapeXpath))).click()
-        generalized_map_test(driver, zobrazitNaMapeXpath)
+        time.sleep(10)
+        #wait.until(EC.visibility_of(self.driver.find_element_by_xpath(zobrazitNaMapeXpath))).click()
+        generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath)
         time.sleep(3)
 
         actualHotelPin = driver.find_element_by_xpath(

@@ -2,7 +2,7 @@ import time
 
 #zobrazitNaMapeXpath = "//*[@class='f_bar-item f_bar-map']"
 
-def generalized_map_test(driver, zobrazitNaMapeXpath):
+def generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath):
     def click_on_map_circle(driver, circlexpath):
         try:
             driver.find_element_by_xpath(circlexpath).click()
