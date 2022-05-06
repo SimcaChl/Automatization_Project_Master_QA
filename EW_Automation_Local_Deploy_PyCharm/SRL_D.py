@@ -117,3 +117,5 @@ class TestSRL_D(unittest.TestCase):
 
         self.driver.implicitly_wait(100)
         SRL_D(self, self.driver)
+
+        self.test_passed = True

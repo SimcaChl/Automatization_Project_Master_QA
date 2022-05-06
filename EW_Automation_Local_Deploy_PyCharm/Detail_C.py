@@ -53,6 +53,8 @@ class TestDetailHotelu_C(unittest.TestCase):
             msg = "Problem s fotkou src, detailhotelu,  NoSuchElementException " + url
             sendEmail(msg)
 
+        self.test_passed = True
+
     def test_detail_terminy_filtr_meal(self):
 
         def omlouvamese_paragraph(self):
@@ -67,7 +69,7 @@ class TestDetailHotelu_C(unittest.TestCase):
                 pass
 
         self.driver.get(URL_detail)
-        wait = WebDriverWait(self.driver, 150000)
+        wait = WebDriverWait(self.driver, 25)
         acceptConsent(self.driver)
 
         time.sleep(1)
@@ -172,6 +174,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         time.sleep(1)
         ##print(stravaVterminech)
         ##print(stravaVterminechString)
+        self.test_passed = True
 
     def test_detail_terminy_filtr_airport(self):
 
@@ -193,7 +196,7 @@ class TestDetailHotelu_C(unittest.TestCase):
 
         time.sleep(1)
         closeExponeaBanner(self.driver)
-        wait = WebDriverWait(self.driver, 150000)
+        wait = WebDriverWait(self.driver, 60)
 
         try:
             generalDriverWaitImplicit(self.driver)
@@ -308,3 +311,4 @@ class TestDetailHotelu_C(unittest.TestCase):
                 sendEmail(msg)
                 y = y + 2
 
+        self.test_passed = True

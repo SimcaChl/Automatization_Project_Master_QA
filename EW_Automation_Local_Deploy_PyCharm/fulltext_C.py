@@ -89,7 +89,7 @@ class Test_Fulltext_C(unittest.TestCase):
             else:
                 pass
 
-            #else:
+        self.test_passed = True
 
     def test_fulltext_results_status_check(self):
         wait = WebDriverWait(self.driver, 13)
@@ -142,3 +142,5 @@ class Test_Fulltext_C(unittest.TestCase):
                     #print(response.status_code == 200)
                     assert response.status_code == 200
                     y = y + 1
+
+            self.test_passed = True

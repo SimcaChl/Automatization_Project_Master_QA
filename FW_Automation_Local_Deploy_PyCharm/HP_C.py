@@ -43,6 +43,8 @@ class Test_HP_C(unittest.TestCase):
         time.sleep(2.5)     ##time sleep not the best not pog but it works =)
         groupSearch_D(self, self.driver)
 
+        self.test_passed = True
+
     def test_HP_zlutak_to_SRL(self):
         self.driver.get(URL)
         wait = WebDriverWait(self.driver, 300)
@@ -68,6 +70,8 @@ class Test_HP_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
         time.sleep(1)
         SRL_D(self, self.driver)
+
+        self.test_passed = True
 
     def test_HP_nejlepsi_nabidky_vypis_btn_switch(self):
         self.driver.get(URL)
@@ -105,6 +109,8 @@ class Test_HP_C(unittest.TestCase):
         print(nejlepsiNabidkyTextList2)
         assert nejlepsiNabidkyTextList != nejlepsiNabidkyTextList2
 
+        self.test_passed = True
+
     def test_HP_slider_click_detail_hotelu(self):
         self.driver.get(URL)
         wait = WebDriverWait(self.driver, 300)
@@ -139,5 +145,7 @@ class Test_HP_C(unittest.TestCase):
         HPkartaHoteluSliderElement.click()
         self.driver.switch_to.window(self.driver.window_handles[1])
         detail_D(self, self.driver)
+
+        self.test_passed = True
 
 
