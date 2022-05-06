@@ -11,7 +11,7 @@ def poznavacky_check_D(self, driver):
     self.driver.maximize_window()
     generalDriverWaitImplicit(self.driver)
     generalDriverWaitImplicit(self.driver)
-
+    time.sleep(7)
     imgs = self.driver.find_elements_by_xpath("//*[@class='f_tile-image-content']")
     #self.driver.execute_script("arguments[0].scrollIntoView();", kartyHoteluBottom)
     print(imgs)
