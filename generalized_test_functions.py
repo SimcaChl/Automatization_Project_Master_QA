@@ -57,6 +57,16 @@ def generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath):
     stravaMenu.click()
     time.sleep(2)
 
+def generalized_SRL_choose_meal_filter_FW_like(driver, stravaMenuXpath, stravaMenuAllInclusiveXpath, potvrditMenuXpath):
+    #stravaMenu = driver.find_element_by_xpath("//*[@class='f_menu-item']//*[contains(text(), 'Strava')]")
+    stravaMenuBox = driver.find_element_by_xpath(stravaMenuXpath)
+
+    stravaMenuBox.click()
+    generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuAllInclusiveXpath)
+
+    potvrditMenu = driver.find_element_by_xpath(potvrditMenuXpath)
+    potvrditMenu.click()
+
 ##variable_to_assert_to == .lower should be on default
 def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_assert_to):
     time.sleep(2)
