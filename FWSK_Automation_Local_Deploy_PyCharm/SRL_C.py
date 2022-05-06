@@ -1,11 +1,12 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
-from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from FWSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown
+from FW_Automation_Local_Deploy_PyCharm.to_import import generalDriverWaitImplicit
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-
+from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
+from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble
 
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
@@ -110,138 +111,24 @@ class Test_SRL_C(unittest.TestCase):
 
     def test_SRL_map(self):
         driver = self.driver
+        driver.maximize_window()
         driver.get(URL_SRL)
         wait = WebDriverWait(driver, 15)
-        time.sleep(5)
+        time.sleep(2.3)
         acceptConsent(driver)
+        time.sleep(8)
+        generalDriverWaitImplicit(self.driver)
+        # zobrazitNaMape = driver.find_element_by_xpath("//*[@class='f_bar-item f_bar-map']")
+        # zobrazitNaMape.click()
+        zobrazitNaMapeXpath = "//*[@class='f_bar-item f_bar-map']"
+        generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath)
         time.sleep(2)
-        closeExponeaBanner(driver)
-        zobrazitNaMape = driver.find_element_by_xpath("//*[@class='f_bar-item f_bar-map']")
-        zobrazitNaMape.click()
-
-        time.sleep(7)  ##try except na kolecko, pokud ok tak click, nenajde tak pokracovat dal
-        ##kolecka jsou definovany podle velikosti - small, medium, large; vzdy se meni v class name
-
-        ##2x vyvolani na large kolecko (jsou destinace kde se musim kliknout na large vickrat
-        ##ve vsech except je pass aby to nespadlo kdyby se large nenasel, goal toho testu je se pres mapu proklikat na detail hotelu
-        try:
-            wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']"))).click()
-
-        except NoSuchElementException:
-            print("nenasel se large kolecko")
-            pass
-        except TimeoutException:
-            print("nenasel se large kolecko")
-            pass
-        except ElementNotInteractableException:
-            print("nenasel se medium kolecko ElementNotInteractableException")
-            pass
-
-        try:
-            wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']"))).click()
-
-        except NoSuchElementException:
-            print("nenasel se large kolecko")
-            pass
-        except TimeoutException:
-            print("nenasel se large kolecko")
-            pass
-        except ElementNotInteractableException:
-            print("nenasel se medium kolecko ElementNotInteractableException")
-            pass
-
-        ##Medium kolecko
-
-        try:
-            mediumKolecko = driver.find_elements_by_xpath("//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']")
-            wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                   "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']"))).click()
-            #wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                  # "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']"))).execute_script("arguments[0].click();", mediumKolecko[1])
-        except NoSuchElementException:
-            print("nenasel se medium kolecko-NoSuchElementException")
-            pass
-        except TimeoutException:
-            print("nenasel se medium kolecko - TimeoutExceptio")
-            pass
-        except ElementNotInteractableException:
-            print("nenasel se medium kolecko ElementNotInteractableException")
-            pass
-
-        ##small kolecko
-
-        try:
-            koleckoCisloSmall = driver.find_element_by_xpath(
-                "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-small leaflet-zoom-animated leaflet-interactive']")
-            koleckoCisloSmall.click()
-            wait.until(EC.element_to_be_clickable((By.XPATH,
-                                                   "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-small leaflet-zoom-animated leaflet-interactive']"))).click()
-        except NoSuchElementException:
-            print("nenasel se small kolecko")
-            pass
-        except TimeoutException:
-            print("nenasel se small kolecko")
-            pass
-        except ElementNotInteractableException:
-            print("nenasel se small kolecko ElementNotInteractableException")
-            pass
-
-        time.sleep(3)
-
-        actualHotelPin = driver.find_element_by_xpath(
-            "//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
-        driver.execute_script("arguments[0].click();", actualHotelPin)  ##at this point im at detail hotelu na mapě
-
-        try:
-            imgMissing = driver.find_element_by_xpath(
-                "//*[@class='f_image f_image--missing']")  ##when theres no photo on the detail on map theres actually class that says it is missing
-            if imgMissing.is_displayed():  ##so if I dont find this class = good
-                hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
-                msg = "V mape v bublibně hotelu se nezobrazuje fotka hotelu " + hotelBubble.text
-                sendEmail(msg)
-
-        except NoSuchElementException:
-            print("actually OK")
-
+        generalized_map_test_click_on_pin_and_hotel_bubble(driver)
         time.sleep(2)
-
-        hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
-        hotelBubble.click()
-
-        time.sleep(5)
 
         ###EXECUTION DISPLAY TEST NA DETAIL HOTELU -> pokud se vyassertuje že jsem na detailu a vše je ok můžu předpokládat že mapka je OK
 
-        try:
-            sedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary js-detailSummary']")
-            wait.until(EC.visibility_of(sedivka))
-            assert sedivka == True
-
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "Problem se sedivkou na detailu hotelu " + url
-            sendEmail(msg)
-
-
-        try:
-            terminSedivkaSingle = self.driver.find_element_by_xpath("//*[@data-hotel]")
-            wait.until(EC.visibility_of(terminSedivkaSingle))
-
-            assert terminSedivkaSingle.is_displayed() == True
-
-            if terminSedivkaSingle.is_displayed():
-                pass
-            else:
-                url = self.driver.current_url
-                msg = "Problem s terminy a ceny na detailu hotelu " + url
-                sendEmail(msg)
-
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "Problem s terminSedivkaSingle " + url
-            sendEmail(msg)
+        detail_D(self, driver)
 
     def test_SRL_filtr_strava(self):
         driver = self.driver
