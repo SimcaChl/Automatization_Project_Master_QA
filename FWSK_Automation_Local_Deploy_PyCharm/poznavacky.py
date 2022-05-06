@@ -55,19 +55,22 @@ class TestPoznavacky_D(unittest.TestCase):
 
             acceptConsent(self.driver)
             poznavacky_check_D(self, self.driver)
+            self.test_passed = True
 
     def test_poznavacky_zazitky_D(self):
         self.driver.get(URL_poznavacky_zazitky)
 
         acceptConsent(self.driver)
         poznavacky_check_D(self, self.driver)
-
+        self.test_passed = True
     def test_poznavacky_vikendy_D(self):
         self.driver.get(URL_poznavacky_vikendy)
         acceptConsent(self.driver)
         poznavacky_check_D(self, self.driver)
+        self.test_passed = True
 
     def test_poznavacky_rodiny_D(self):
         self.driver.get(URL_poznavacky_rodiny)
         acceptConsent(self.driver)
         poznavacky_check_D(self, self.driver)
+        self.test_passed = True

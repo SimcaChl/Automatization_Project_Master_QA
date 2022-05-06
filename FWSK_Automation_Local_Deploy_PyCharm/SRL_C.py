@@ -63,6 +63,7 @@ class Test_SRL_C(unittest.TestCase):
         print(cenaZajezduAllListSorted)
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
+        self.test_passed = True
 
     def test_SRL_sort_expensive(self):
         driver = self.driver
@@ -108,6 +109,7 @@ class Test_SRL_C(unittest.TestCase):
         print(cenaZajezduAllListSorted)
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
+        self.test_passed = True
 
     def test_SRL_map(self):
         driver = self.driver
@@ -130,6 +132,8 @@ class Test_SRL_C(unittest.TestCase):
 
         detail_D(self, driver)
 
+        self.test_passed = True
+
     def test_SRL_filtr_strava(self):
         driver = self.driver
         driver.maximize_window()
@@ -141,6 +145,8 @@ class Test_SRL_C(unittest.TestCase):
         stravaMenuAllInclusiveXpath = "//*[@class='f_menu-item-content f_menu-item-content--sub'] //*[@class='f_input-label'] //*[contains(text(), 'All inclusive')]"
         potvrditMenuXpath = "//*[@class='f_menu-item']//*[@class='f_button f_button--common f_button_set--smallest']"
         generalized_SRL_choose_meal_filter_FW_like(driver, stravaMenuXpath, stravaMenuAllInclusiveXpath, potvrditMenuXpath)
+
+        self.test_passed = True
 
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
@@ -270,3 +276,5 @@ class Test_SRL_C(unittest.TestCase):
             print(x)
             windowHandle = windowHandle + 1
             print(windowHandle)
+
+            self.test_passed = True

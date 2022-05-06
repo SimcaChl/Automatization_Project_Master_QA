@@ -54,6 +54,8 @@ class TestDetailHotelu_C(unittest.TestCase):
             msg = "Problem s fotkou src, detailhotelu,  NoSuchElementException " + url
             sendEmail(msg)
 
+        self.test_passed = True
+
     def test_detail_terminy_filtr_meal(self):
 
         def omlouvamese_paragraph(self):
@@ -171,6 +173,8 @@ class TestDetailHotelu_C(unittest.TestCase):
         time.sleep(1)
         ##print(stravaVterminech)
         ##print(stravaVterminechString)
+
+        self.test_passed = True
 
     def test_detail_terminy_filtr_airport(self):
 
@@ -305,3 +309,4 @@ class TestDetailHotelu_C(unittest.TestCase):
                 sendEmail(msg)
                 y = y + 2
 
+        self.test_passed = True

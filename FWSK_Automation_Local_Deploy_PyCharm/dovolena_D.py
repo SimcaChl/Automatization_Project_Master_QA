@@ -54,3 +54,4 @@ class TestDovolena_D(unittest.TestCase):
         else:
             print("Položka menu neexistuje")
 
+        self.test_passed = True

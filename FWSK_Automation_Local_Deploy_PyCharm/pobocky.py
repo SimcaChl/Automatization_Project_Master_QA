@@ -53,4 +53,4 @@ class TestPobocky_D(unittest.TestCase):
             print("basic info ")
             assert basicInfoDisplay == True
             a=a+1
-
+        self.test_passed = True

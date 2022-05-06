@@ -110,3 +110,5 @@ class TestDetailHotelu_D(unittest.TestCase):
         self.driver.maximize_window()
         acceptConsent(self.driver)
         detail_D(self, self.driver)
+
+        self.test_passed = True

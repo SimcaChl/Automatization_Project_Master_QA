@@ -113,3 +113,5 @@ class TestSRL_D(unittest.TestCase):
         self.driver.maximize_window()
         acceptConsent(self.driver)
         SRL_D(self, self.driver)
+
+        self.test_passed = True

@@ -45,4 +45,4 @@ class TestLM_D(unittest.TestCase):
         assert zajezdyLMsingle.is_displayed() == True
 
         LM_FM_vypis_rozbalit_zajezd_check(self, self.driver)
-
+        self.test_passed = True
