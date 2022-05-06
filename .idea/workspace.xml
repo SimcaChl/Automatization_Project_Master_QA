@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/SRL_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/SRL_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generalized_test_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/generalized_test_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/SRL_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/SRL_C.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_filtr_strava">
+  <component name="RunManager" selected="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_filtr_strava (1)">
     <configuration name="Python tests for SRL_C.Test_SRL_C.test_SRL_filtr_strava (1)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,8 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_filtr_strava" />
         <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_filtr_strava (1)" />
+        <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_filtr_strava" />
         <item itemvalue="Python tests.Python tests in SRL_C.py" />
         <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_map (4)" />
         <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_map (3)" />
