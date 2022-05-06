@@ -53,6 +53,7 @@ class TestDetailHotelu_C(unittest.TestCase):
             msg = "Problem s fotkou src, detailhotelu,  NoSuchElementException " + url
             sendEmail(msg)
 
+        self.test_passed = True
     def test_detail_terminy_filtr_meal(self):
 
         def omlouvamese_paragraph(self):
@@ -173,6 +174,8 @@ class TestDetailHotelu_C(unittest.TestCase):
         assert stravaVterminechString[0] == zvolenaStravaVboxuString
         ##print(stravaVterminech)
         ##print(stravaVterminechString)
+
+        self.test_passed = True
 
     def test_detail_terminy_filtr_airport(self):
 
@@ -307,4 +310,6 @@ class TestDetailHotelu_C(unittest.TestCase):
                 msg = "na detailu jsem vyfiltroval odlet na brno ale pry to nesedi říká python " + url
                 sendEmail(msg)
                 y = y + 2
+
+        self.test_passed = True
 

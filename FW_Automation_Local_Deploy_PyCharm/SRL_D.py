@@ -116,3 +116,4 @@ class TestSRL_D(unittest.TestCase):
         time.sleep(0.4)
         acceptConsent(self.driver)
         SRL_D(self, self.driver)
+        self.test_passed = True

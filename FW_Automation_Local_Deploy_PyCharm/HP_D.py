@@ -65,3 +65,5 @@ class TestHP_D(unittest.TestCase):
 
         assert nejnabidkyLMsingle.is_displayed() == True
 
+        self.test_passed = True
+

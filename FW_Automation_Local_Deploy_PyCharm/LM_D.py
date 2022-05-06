@@ -46,3 +46,5 @@ class TestLM_D(unittest.TestCase):
 
         LM_FM_vypis_rozbalit_zajezd_check(self, self.driver)
 
+        self.test_passed = True
+

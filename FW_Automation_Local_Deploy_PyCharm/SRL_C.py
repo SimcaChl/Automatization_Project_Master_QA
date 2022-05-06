@@ -62,6 +62,8 @@ class Test_SRL_C(unittest.TestCase):
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
 
+        self.test_passed = True
+
     def test_SRL_sort_expensive(self):
         driver = self.driver
         driver.get(URL_SRL)
@@ -106,6 +108,7 @@ class Test_SRL_C(unittest.TestCase):
         print(cenaZajezduAllListSorted)
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
+        self.test_passed = True
 
     def test_SRL_map(self):
         driver = self.driver
@@ -127,6 +130,8 @@ class Test_SRL_C(unittest.TestCase):
 
         detail_D(self, driver)
 
+        self.test_passed = True
+
     def test_SRL_filtr_strava(self):
         driver = self.driver
         driver.maximize_window()
@@ -144,6 +149,8 @@ class Test_SRL_C(unittest.TestCase):
         stravaZajezduSrlXpath = "//*[@class='f_list-item f_icon f_icon--cutlery']"
         assertion_strava = "all inclusive"
         generalized_list_string_sorter(driver, stravaZajezduSrlXpath, assertion_strava)
+
+        self.test_passed = True
 
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
@@ -271,3 +278,5 @@ class Test_SRL_C(unittest.TestCase):
             print(x)
             windowHandle = windowHandle + 1
             print(windowHandle)
+
+            self.test_passed = True

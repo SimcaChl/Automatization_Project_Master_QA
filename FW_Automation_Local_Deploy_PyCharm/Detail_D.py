@@ -26,6 +26,8 @@ def detail_D(self, driver):
     detailWrapper = self.driver.find_element_by_xpath(detailWrapperXpath)
     assert detailWrapper.is_displayed() == True
 
+
+
 def detail_D2(self, driver):
     wait = WebDriverWait(self.driver, 150)
     driver.implicitly_wait(50)
@@ -92,3 +94,4 @@ class TestDetailHotelu_D(unittest.TestCase):
         self.driver.maximize_window()
         acceptConsent(self.driver)
         detail_D(self, self.driver)
+        self.test_passed = True

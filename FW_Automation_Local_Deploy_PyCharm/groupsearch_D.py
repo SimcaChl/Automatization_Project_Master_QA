@@ -76,3 +76,5 @@ class Test_Groupsearch_D(unittest.TestCase):
 
 
         groupSearch_D(self, driver)
+
+        self.test_passed = True

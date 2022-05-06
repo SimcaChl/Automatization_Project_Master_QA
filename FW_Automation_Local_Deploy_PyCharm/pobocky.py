@@ -54,3 +54,5 @@ class TestPobocky_D(unittest.TestCase):
             x = x + 1
 
         assert pobockaBoxiky[0].is_displayed() == True
+
+        self.test_passed = True
