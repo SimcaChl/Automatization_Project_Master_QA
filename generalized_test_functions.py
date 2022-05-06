@@ -49,6 +49,6 @@ def generalized_map_test_click_on_pin_and_hotel_bubble(driver):
     hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
     hotelBubble.click()
 
-
+def generalized_SRL_choose
 
 

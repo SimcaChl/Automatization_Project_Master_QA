@@ -11,7 +11,6 @@ hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
-
     def tearDown(self):
         tearDown(self)
 
@@ -136,11 +135,9 @@ class Test_SRL_C(unittest.TestCase):
     def test_SRL_filtr_strava(self):
         driver = self.driver
         driver.get(URL_SRL)
+        driver.maximize_window()
         time.sleep(2)
         acceptConsent(driver)
-        time.sleep(2)
-        driver.maximize_window()
-        closeExponeaBanner(driver)
         time.sleep(2)
         wait = WebDriverWait(driver, 30)
         stravaMenu = driver.find_element_by_xpath("//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]")
