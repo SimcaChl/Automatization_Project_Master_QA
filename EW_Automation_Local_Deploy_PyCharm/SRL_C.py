@@ -1,13 +1,12 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException, \
-    StaleElementReferenceException
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, generalDriverWaitImplicit
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble, generalized_SRL_choose_meal_filter_EW_like
+from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble, generalized_SRL_choose_meal_filter_EW_like, generalized_list_string_sorter
+
 hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
+
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -141,31 +140,9 @@ class Test_SRL_C(unittest.TestCase):
         time.sleep(2)
         stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]"
         generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath)
-
-
-        #stravaZajezdu = driver.find_elements_by_xpath("//*[@class='f_list-item f_icon f_icon--cutlery']")
-
         stravaZajezduSrlXpath = "//*[@class='f_list-item f_icon f_icon--cutlery']"
-        x = 0
-        stravaZajezduList = []
-        for WebElement in stravaZajezdu:
-            stravaZajezduString = stravaZajezdu[x].text.lower()
-            stravaZajezduList.append(stravaZajezduString)
-            x = x + 1
-
-        y = 0
-        stringInclusve = "All inclusive"
-        for _ in stravaZajezduList:
-            ##if stravaZajezduList[y] == "All inclusive":
-            assert "All inclusive" in stravaZajezduList[y]
-            if "All inclusive" in stravaZajezduList[y]:
-                print("ok")
-                y = y + 1
-
-            else:
-                print("stravy nesedi k filtru")
-                y = y + 1
-        print(stravaZajezduList)
+        assertion_strava = "all inclusive"
+        generalized_list_string_sorter(driver, stravaZajezduSrlXpath, assertion_strava)
 
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
