@@ -69,5 +69,5 @@ class TestLM_D(unittest.TestCase):
             sendEmail(msg)
 
         assert rozbalenyZajezd.is_displayed() == True
-
+        self.test_passed = True
 

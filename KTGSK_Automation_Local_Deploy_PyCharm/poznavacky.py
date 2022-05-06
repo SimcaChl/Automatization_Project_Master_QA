@@ -48,6 +48,8 @@ class TestPoznavacky_D(unittest.TestCase):
                 a=a+1
                 print("big grid ture")
 
+            self.test_passed = True
+
     def test_poznavacky_vikendy_D(self):
         self.driver.get(URL_poznavacky_vikendy)
 
@@ -86,6 +88,9 @@ class TestPoznavacky_D(unittest.TestCase):
             a = a + 1
             print("big grid ture")
 
+        self.test_passed = True
+
+
     def test_poznavacky_rodiny_D(self):
         self.driver.get(URL_poznavacky_rodiny)
 
@@ -122,6 +127,8 @@ class TestPoznavacky_D(unittest.TestCase):
             assert gridBigDisplayed == True
             a = a + 1
             print("big grid ture")
+
+        self.test_passed = True
 
     def test_poznavacky_zazitky_D(self):
         self.driver.get(URL_poznavacky_zazitky)
@@ -160,3 +167,5 @@ class TestPoznavacky_D(unittest.TestCase):
             assert gridBigDisplayed == True
             a = a + 1
             print("big grid ture")
+
+        self.test_passed = True

@@ -66,3 +66,5 @@ class TestHP_D(unittest.TestCase):
 
         nejnabidkyLMsingle = self.driver.find_element_by_xpath("//*[@class='f_tourTable-tour']")
         assert nejnabidkyLMsingle.is_displayed() == True
+
+        self.test_passed = True

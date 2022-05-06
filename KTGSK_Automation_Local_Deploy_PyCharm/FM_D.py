@@ -197,3 +197,4 @@ class TestFM_D(unittest.TestCase):
             url = self.driver.current_url
             msg = "Problem s content covid info contentItemsAll " + url
             sendEmail(msg)
+        self.test_passed = True

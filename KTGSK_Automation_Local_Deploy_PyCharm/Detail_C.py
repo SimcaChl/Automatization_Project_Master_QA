@@ -52,6 +52,8 @@ class TestDetailHotelu_C(unittest.TestCase):
             url = self.driver.current_url
             msg = "Problem s fotkou src, detailhotelu,  NoSuchElementException " + url
             sendEmail(msg)
+        self.test_passed = True
+
 
     def test_detail_terminy_filtr_meal(self):
 
@@ -172,6 +174,8 @@ class TestDetailHotelu_C(unittest.TestCase):
         time.sleep(1)
         ##print(stravaVterminech)
         ##print(stravaVterminechString)
+
+        self.test_passed = True
 
     def test_detail_terminy_filtr_airport(self):
 
@@ -307,4 +311,4 @@ class TestDetailHotelu_C(unittest.TestCase):
                 msg = "na detailu jsem vyfiltroval odlet na Košice ale pry to nesedi říká python " + url
                 sendEmail(msg)
                 y = y + 2
-
+        self.test_passed = True

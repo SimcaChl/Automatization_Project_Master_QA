@@ -70,3 +70,4 @@ class Test_Groupsearch_D(unittest.TestCase):
         #teaserItems = driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
         self.driver.maximize_window()
         groupSearch_D(self, driver)
+        self.test_passed = True
