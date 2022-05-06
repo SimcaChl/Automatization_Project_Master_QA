@@ -91,6 +91,8 @@ def SRL_D(self, driver):
 
     assert cenaAll[0].is_displayed() == True
 
+
+
 class TestSRL_D(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -107,3 +109,4 @@ class TestSRL_D(unittest.TestCase):
         acceptConsent(self.driver)
 
         SRL_D(self, self.driver)
+        self.test_passed = True

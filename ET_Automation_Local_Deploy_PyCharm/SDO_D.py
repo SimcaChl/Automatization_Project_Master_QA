@@ -1,10 +1,6 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
-from selenium.webdriver.support.wait import WebDriverWait
-from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SDO, setUp, tearDown, generalDriverWaitImplicit
+from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent,URL_SDO, setUp, tearDown, generalDriverWaitImplicit
 import time
-from selenium.webdriver.support import expected_conditions as EC
 import unittest
-import requests
 from ET_Automation_Local_Deploy_PyCharm.import_test_units_Xpaths import rowKarty_imgHoteluKarty_D
 
 SDOsectionXpath = "//*[@class='sdo-section']"
@@ -29,3 +25,6 @@ class TestSDO_D(unittest.TestCase):
         time.sleep(0.3)
         acceptConsent(self.driver)
         SDO_D(self, self.driver)
+
+        self.test_passed = True
+

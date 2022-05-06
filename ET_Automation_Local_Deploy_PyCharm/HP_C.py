@@ -39,6 +39,8 @@ class Test_HP_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
         time.sleep(2.5)     ##time sleep not the best not pog but it works =)
         groupSearch_D(self, self.driver)
+        self.test_passed = True
+
 
     def test_HP_zlutak_to_SRL(self):
         self.driver.maximize_window()
@@ -65,6 +67,9 @@ class Test_HP_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
         SRL_D(self, self.driver)
 
+        self.test_passed = True
+
+
     def test_HP_banner_destination_to_SDO(self):
         self.driver.maximize_window()
         self.driver.get(URL)
@@ -79,3 +84,5 @@ class Test_HP_C(unittest.TestCase):
         HPstatyKartyElement.click()
         time.sleep(6.666)
         SDO_D(self, self.driver)
+
+        self.test_passed = True

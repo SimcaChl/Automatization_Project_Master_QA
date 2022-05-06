@@ -59,6 +59,9 @@ URL_FT_results = URL+"hledani-vysledky?q="
 
 def tearDown(self):
   self.driver.quit()
+  if not self.test_passed:
+    self.driver.execute_script(
+      'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": "general error"}}')
 
 def sendEmail(msg):
   fromx = 'alertserverproblem@gmail.com'

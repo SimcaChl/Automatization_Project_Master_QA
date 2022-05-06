@@ -1,10 +1,3 @@
-from selenium.webdriver.edge.service import Service
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.firefox import GeckoDriverManager
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
-from webdriver_manager.opera import OperaDriverManager
-import time
 from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
@@ -12,8 +5,14 @@ from email.mime.text import MIMEText
 from ET_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass
 from selenium import webdriver
 from ET_Automation_Local_Deploy_PyCharm.to_import_secret import comandExecutor
-from webdriver_manager.chrome import ChromeDriverManager
-import unittest
+
+
+
+def tearDown(self):
+  self.driver.quit()
+  if not self.test_passed:
+    self.driver.execute_script(
+      'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": "general error"}}')
 
 brand_name_project = "ETRAVEL"
 desired_cap = {
@@ -56,8 +55,7 @@ URL_SDO = URL + "turecko"
 
 
 
-def tearDown(self):
-  self.driver.quit()
+
 
 def generalDriverWaitImplicit(driver):
   driver.implicitly_wait(25)

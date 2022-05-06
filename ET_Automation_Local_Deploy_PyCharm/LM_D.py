@@ -20,3 +20,4 @@ class Test_LM_D(unittest.TestCase):
         rowKarty_imgHoteluKarty_D(self, self.driver)
         generalDriverWaitImplicit(self.driver)
         assert (self.driver.find_element_by_xpath(destinationXpath)).is_displayed() == True
+        self.test_passed = True

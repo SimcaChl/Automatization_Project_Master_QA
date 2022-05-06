@@ -58,6 +58,8 @@ class TestDetailHotelu_C(unittest.TestCase):
         response = requests.get(imageDetailSrc)
         assert response.status_code == 200
 
+        self.test_passed = True
+
     def test_detail_terminy_filtr_meal(self):
         self.driver.get(URL_detail_all_inclusive)
         wait = WebDriverWait(self.driver, 150000)
@@ -110,6 +112,9 @@ class TestDetailHotelu_C(unittest.TestCase):
         #time.sleep(100)
         ##print(stravaVterminech)
 
+        self.test_passed = True
+
+
     def test_detail_terminy_filtr_airport(self):
             self.driver.get(URL_detail_airport_praha)
             wait = WebDriverWait(self.driver, 150000)
@@ -161,3 +166,5 @@ class TestDetailHotelu_C(unittest.TestCase):
                     y = y + 1
             #time.sleep(100)
             ##print(stravaVterminech)
+
+            self.test_passed = True

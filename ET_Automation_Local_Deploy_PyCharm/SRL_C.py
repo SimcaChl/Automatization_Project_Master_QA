@@ -57,6 +57,9 @@ class Test_SRL_C(unittest.TestCase):
         print(cenaZajezduAllListSorted)
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
+
+        self.test_passed = True
+
     def test_SRL_sort_expensive(self):
         self.driver.get(URL_SRL)
         wait = WebDriverWait(self.driver, 1500)
@@ -93,6 +96,9 @@ class Test_SRL_C(unittest.TestCase):
         print(cenaZajezduAllListSorted)
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
+
+        self.test_passed = True
+
     def test_SRL_map(self):
         driver = self.driver
         driver.get(URL_SRL)
@@ -114,6 +120,9 @@ class Test_SRL_C(unittest.TestCase):
         print(currentUrl)
         print(URL_SRL)
         assert currentUrl != URL_SRL
+
+        self.test_passed = True
+
     def test_SRL_filtr_strava(self):
         driver = self.driver
         driver.get(URL_SRL)
@@ -136,6 +145,9 @@ class Test_SRL_C(unittest.TestCase):
             #print(stravaHoteluVkarte[0])
             #print(SDOstravaRowKartaElement[x].text)
             x=x+1
+
+
+        self.test_passed = True
 
     def test_srl_C(self):
         self.driver.maximize_window()
@@ -274,3 +286,5 @@ class Test_SRL_C(unittest.TestCase):
             wait.until(EC.visibility_of(self.driver.find_element_by_xpath(detailHoteluCross))).click()
             x = x + 1
             print(x)
+
+        self.test_passed = True

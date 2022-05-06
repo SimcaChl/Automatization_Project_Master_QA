@@ -19,9 +19,8 @@ class Test_HP_D(unittest.TestCase):
         self.test_passed = False
 
     def tearDown(self):
-        if not self.test_passed:
-            self.driver.execute_script('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": "Title not matched"}}')
         tearDown(self)
+
     def test_HP_D(self):
         self.driver.get(URL)
         self.driver.maximize_window()
@@ -33,5 +32,5 @@ class Test_HP_D(unittest.TestCase):
         assert (self.driver.find_element_by_xpath(teaserFotkaMainXpath)).is_displayed() == True
         assert (self.driver.find_element_by_xpath(itemsHPXpath)).is_displayed() == True
         assert (self.driver.find_element_by_xpath(footerXpath)).is_displayed() == True
-        assert(1==2)
+        #assert(1==2)
         self.test_passed = True

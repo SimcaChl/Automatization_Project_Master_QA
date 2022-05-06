@@ -5,8 +5,10 @@ from to_import_secret_master import comandExecutor, emailPass
 
 queryListOptimizedMonitor = ["Zanzibar", "Řecko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Kefalonia", "Mirage bay", "Porto Skala 7", "Doubletree", "Magnolia", "Pegasos"]
 
-def tearDown(self):
-  self.driver.quit()
+
+
+
+
 
 def sendEmail(msg):
   fromx = 'alertserverproblem@gmail.com'
@@ -27,7 +29,7 @@ def setUp(self):
   #self.driver = webdriver.Chrome(ChromeDriverManager().install())
   self.driver = webdriver.Remote(
       command_executor=comandExecutor,
-      desired_capabilities=desired_cap)
+      desired_capabilities="desired_cap")
   #self.driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
   #self.driver = webdriver.Opera(executable_path=OperaDriverManager().install())
   #self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())

@@ -94,3 +94,5 @@ class Test_Groupsearch_D(unittest.TestCase):
         acceptConsent(self.driver)
 
         groupSearch_D(self, driver)
+
+        self.test_passed = True
