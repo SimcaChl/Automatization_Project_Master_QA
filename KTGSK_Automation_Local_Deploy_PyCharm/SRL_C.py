@@ -1,6 +1,3 @@
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException, \
-    StaleElementReferenceException
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from KTGSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, generalDriverWaitImplicit
 import time
@@ -19,7 +16,7 @@ class Test_SRL_C(unittest.TestCase):
     def test_SRL_sort_cheapest(self):
 
         self.driver.get(URL_SRL)
-        wait = WebDriverWait(self.driver, 150000)
+        wait = WebDriverWait(self.driver, 25)
         time.sleep(2)
         acceptConsent(self.driver)
         time.sleep(2)
@@ -67,12 +64,12 @@ class Test_SRL_C(unittest.TestCase):
     def test_SRL_sort_expensive(self):
         driver = self.driver
         driver.get(URL_SRL)
-        wait = WebDriverWait(driver, 150000)
+        wait = WebDriverWait(driver, 25)
         time.sleep(2)
         driver.maximize_window()
         acceptConsent(driver)
         time.sleep(2)
-        #closeExponeaBanner(driver)
+
 
         cenaZajezduAllList = []  ##one list that takes prices from the srl
         cenaZajezduAllListSorted = []  ##second list takes the values too, then sorts it low to high
@@ -153,10 +150,8 @@ class Test_SRL_C(unittest.TestCase):
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
         windowHandle = 1  ##variable for handling windows, gotta start on 1
-
-        #URL_SRL = "https://fischer.web2.dtweb.cz/vysledky-vyhledavani?d=1009|953|1108|592|611|610|612|1010|590|726|609|621|680|622|669|1086|1194|670|978|594|675|683&tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9&ka1=8&kc1=1&ac1=2"
         self.driver.get(URL_SRL)
-        wait = WebDriverWait(self.driver, 150000)
+        wait = WebDriverWait(self.driver, 35)
         self.driver.maximize_window()
         time.sleep(2)
         acceptConsent(self.driver)
@@ -164,7 +159,7 @@ class Test_SRL_C(unittest.TestCase):
         closeExponeaBanner(self.driver)
         hotelyAllKarty = self.driver.find_elements_by_xpath(hotelyKartyXpath)
         wait.until(EC.visibility_of(hotelyAllKarty[1]))
-        for WebElement in hotelyAllKarty:
+        for _ in range(9):
 
             print("|||||HOTEL CISLO|||||||" )
             print(x+1)

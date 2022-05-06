@@ -149,10 +149,8 @@ class Test_SRL_C(unittest.TestCase):
         x = 0  ##variable for taking the first hotel, starting at 0
         windowHandle = 1  ##variable for handling windows, gotta start on 1
 
-        #URL_SRL = "https://fischer.web2.dtweb.cz/vysledky-vyhledavani?d=1009|953|1108|592|611|610|612|1010|590|726|609|621|680|622|669|1086|1194|670|978|594|675|683&tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9&ka1=8&kc1=1&ac1=2"
         self.driver.get(URL_SRL)
-        wait = WebDriverWait(self.driver, 150000)
-        wait = WebDriverWait(self.driver, 15)
+        wait = WebDriverWait(self.driver, 25)
 
         time.sleep(2)
         acceptConsent(self.driver)

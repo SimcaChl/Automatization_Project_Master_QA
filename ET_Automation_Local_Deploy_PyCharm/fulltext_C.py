@@ -5,6 +5,7 @@ import unittest
 import requests
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from to_import_master import queryListOptimizedMonitor
 query = "Mirage bay"
 
 
@@ -13,10 +14,10 @@ queryCommon = ["pojištění",  "parkování", "covid", "Funtazie" ]
 queryHotely = ["Mirage bay",  "Prima life", "Prima life makadi", "Pegasos", "Pickalbatros", "Titanic", "mirage", "Bay & Mare",  "A for Art",
                "Porto Skala 7", "Costa Azzurra", "La Cite",  "Stefanos", "Magnolia",  "White Gold", "King Tut Resort", "Blue Waters",
                "Primasol", "Doubletree"]
-queryList = querySDO+queryCommon+queryHotely
+#queryList = querySDO+queryCommon+queryHotely
 #queryList = queryHotely
 failed_query = ["mitsis","Domes Aulüs","Naftilos", ]
-
+queryList = queryListOptimizedMonitor
 HPLupaFullTextXpath = "//*[@class='f_icon f_icon--magnifier']"
 #HPinputBoxFullTextXpath = "//*[@class='flex-grow outline-none px-2 py-2 bg-transparent']"
 HPinputBoxFullTextXpath = "//*[@class='grow outline-none px-2 py-2 bg-transparent']"
