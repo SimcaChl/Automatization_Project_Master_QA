@@ -127,8 +127,6 @@ class Test_SRL_C(unittest.TestCase):
 
         detail_D(self, driver)
 
-
-
     def test_SRL_filtr_strava(self):
         driver = self.driver
         driver.get(URL_SRL)

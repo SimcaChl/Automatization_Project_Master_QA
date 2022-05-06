@@ -6,7 +6,7 @@ from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExp
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble
+from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble, generalized_SRL_choose_meal_filter_EW_like
 hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
@@ -139,13 +139,10 @@ class Test_SRL_C(unittest.TestCase):
         time.sleep(2)
         acceptConsent(driver)
         time.sleep(2)
-        wait = WebDriverWait(driver, 30)
-        stravaMenu = driver.find_element_by_xpath("//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]")
-        stravaMenu.click()
-        time.sleep(2)
+        stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]"
 
-        wait.until(EC.visibility_of(
-            driver.find_element_by_xpath(hotelyKartyXpath))).click()
+
+        generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath, hotelyKartyXpath)
 
         stravaZajezdu = driver.find_elements_by_xpath("//*[@class='f_list-item f_icon f_icon--cutlery']")
         x = 0
@@ -168,7 +165,6 @@ class Test_SRL_C(unittest.TestCase):
                 print("stravy nesedi k filtru")
                 y = y + 1
         print(stravaZajezduList)
-        driver.quit()
 
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
