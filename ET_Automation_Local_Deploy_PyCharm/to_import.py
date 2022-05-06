@@ -36,6 +36,7 @@ def setUp(self):
       command_executor=comandExecutor,
       desired_capabilities=desired_cap)
 
+  self.test_passed = False
 
 
 URL = "https://www.etravel.cz/"

@@ -30,6 +30,7 @@ def setUp(self):
   self.driver = webdriver.Remote(
       command_executor=comandExecutor,
       desired_capabilities=desired_cap)
+  self.test_passed = False
 URL = "https://www.eximtours.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"

@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
     #runner = HtmlTestRunner(title='My unit test', open_in_browser=True)
     #runner = HtmlTestRunner.HTMLTestRunner(output='example_dir')        ## this is ??
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='ETRAVEL-Web Suite test', title='ETRAVEL-Web Suite test'+URL, report_name='ETRAVEL-Web Suite test',
+    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='ETRAVEL-Web Suite test', title='ETRAVEL-Web Suite test', report_name='ETRAVEL-Web Suite test',
                             open_in_browser=True, description="ETRAVEL-Web Suite test")
 
     runner.run(suite_ET_full())

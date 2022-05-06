@@ -26,6 +26,8 @@ def setUp(self):
    #   command_executor=comandExecutor,
     #  desired_capabilities=desired_cap)
   self.driver = webdriver.Chrome(ChromeDriverManager().install())
+  self.test_passed = False
+
 URL = "https://www.fischer.cz/"
 #URL = "https://www.fischer.sk/"
 #URL = "https://www.eximtours.cz/"

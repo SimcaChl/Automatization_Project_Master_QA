@@ -54,6 +54,8 @@ def setUp(self):
   self.driver = webdriver.Remote(
       command_executor=comandExecutor,
       desired_capabilities=desired_cap)
+  self.test_passed = False
+
 
 def tearDown(self):
   self.driver.quit()
