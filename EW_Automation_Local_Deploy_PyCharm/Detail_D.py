@@ -87,4 +87,5 @@ class TestDetailHotelu_D(unittest.TestCase):
             sendEmail(msg)
 
         assert terminySingle.is_displayed() == True
+        assert(1==2)
         self.test_passed = True
