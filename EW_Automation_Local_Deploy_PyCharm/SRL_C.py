@@ -140,15 +140,16 @@ class Test_SRL_C(unittest.TestCase):
         acceptConsent(driver)
         time.sleep(2)
         stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]"
+        generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath)
 
 
-        generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath, hotelyKartyXpath)
+        #stravaZajezdu = driver.find_elements_by_xpath("//*[@class='f_list-item f_icon f_icon--cutlery']")
 
-        stravaZajezdu = driver.find_elements_by_xpath("//*[@class='f_list-item f_icon f_icon--cutlery']")
+        stravaZajezduSrlXpath = "//*[@class='f_list-item f_icon f_icon--cutlery']"
         x = 0
         stravaZajezduList = []
         for WebElement in stravaZajezdu:
-            stravaZajezduString = stravaZajezdu[x].text
+            stravaZajezduString = stravaZajezdu[x].text.lower()
             stravaZajezduList.append(stravaZajezduString)
             x = x + 1
 

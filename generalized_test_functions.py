@@ -58,3 +58,25 @@ def generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath):
     time.sleep(2)
 
 
+def generalized_list_string_sorter(driver, web_elements_Xpath):
+    web_elements = driver.find_elements_by_xpath(web_elements_Xpath)
+
+    list_web_elements_Position = 0
+    list_web_elements = []
+
+    for _ in web_elements:
+        list_web_elements_String = list_web_elements[list_web_elements_Position].text.lower()
+        list_web_elements.append(list_web_elements_String)
+
+        list_web_elements_Position = list_web_elements_Position + 1
+
+    for _ in list_web_elements:
+        assert "All inclusive" in stravaZajezduList[y]
+        if "All inclusive" in stravaZajezduList[y]:
+            print("ok")
+            y = y + 1
+
+        else:
+            print("stravy nesedi k filtru")
+            y = y + 1
+    print(stravaZajezduList)

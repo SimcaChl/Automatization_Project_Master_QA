@@ -4,7 +4,6 @@
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/SRL_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/SRL_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/SRL_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/SRL_C.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generalized_test_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/generalized_test_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
