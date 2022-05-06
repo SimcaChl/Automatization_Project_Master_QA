@@ -88,3 +88,68 @@
 2022-05-06 23:16:05.129095 : JDOU VIDET
 2022-05-06 23:16:05.888019 : JDOU VIDET
 2022-05-06 23:16:06.243906 : JDOU VIDET
+2022-05-06 23:16:28.789836 : <selenium.webdriver.remote.webelement.WebElement (session="5167c77ec65d989aee9f8834e78c13fd44871daf", element="0.5921423303075448-1")>
+2022-05-06 23:16:34.154056 : ZANZIBAR
+2022-05-06 23:16:46.326388 : hote dlazdice klik
+2022-05-06 23:16:56.811758 : ØECKO
+2022-05-06 23:17:04.745087 : hote dlazdice klik
+2022-05-06 23:17:13.519634 : TURECKO
+2022-05-06 23:17:22.840065 : hote dlazdice klik
+2022-05-06 23:17:31.456118 : EGYPT
+2022-05-06 23:17:43.857662 : hote dlazdice klik
+2022-05-06 23:17:53.522430 : KAPVERDY
+2022-05-06 23:18:03.677751 : hote dlazdice klik
+2022-05-06 23:18:12.014463 : OMAN
+2022-05-06 23:18:24.617185 : hote dlazdice klik
+2022-05-06 23:18:32.489172 : KEFALONIA
+2022-05-06 23:18:43.819168 : hote dlazdice klik
+2022-05-06 23:18:53.571965 : MIRAGE BAY
+2022-05-06 23:19:05.192752 : hote dlazdice klik
+2022-05-06 23:19:14.194423 : PORTO SKALA 7
+2022-05-06 23:19:24.119062 : hote dlazdice klik
+2022-05-06 23:19:32.403916 : DOUBLETREE
+2022-05-06 23:19:46.308522 : hote dlazdice klik
+2022-05-06 23:19:55.415460 : MAGNOLIA
+2022-05-06 23:20:03.697478 : hote dlazdice klik
+2022-05-06 23:20:12.935965 : PEGASOS
+2022-05-06 23:20:22.771055 : hote dlazdice klik
+2022-05-06 23:20:42.527503 : <selenium.webdriver.remote.webelement.WebElement (session="d68333967f130d0d7c9ed01b1d3d33b71e20e655", element="0.08149526343002167-1")>
+2022-05-06 23:20:45.181795 : ZANZIBAR
+2022-05-06 23:21:06.947176 : ØECKO
+2022-05-06 23:21:26.023638 : TURECKO
+2022-05-06 23:21:48.781139 : EGYPT
+2022-05-06 23:22:09.412805 : KAPVERDY
+2022-05-06 23:22:35.437086 : OMAN
+2022-05-06 23:22:55.655026 : KEFALONIA
+2022-05-06 23:23:14.754324 : MIRAGE BAY
+2022-05-06 23:23:32.722100 : PORTO SKALA 7
+2022-05-06 23:23:55.407167 : DOUBLETREE
+2022-05-06 23:24:10.711130 : MAGNOLIA
+2022-05-06 23:24:28.767320 : PEGASOS
+2022-05-06 23:24:55.665309 : <selenium.webdriver.remote.webelement.WebElement (session="a68867c0b9d9859a4f6d61de7464eb1fc31612c0", element="0.08183234360820557-1")>
+2022-05-06 23:25:38.946857 : Senegal
+                             2 hotely od 30 388 Kè / osoba
+2022-05-06 23:25:40.112024 : Estonsko
+                             1 hotel od 33 588 Kè / osoba
+2022-05-06 23:25:40.812453 : Gruzie
+                             1 hotel od 39 588 Kè / osoba
+2022-05-06 23:25:41.357028 : Jižní Korea
+                             2 hotely od 71 760 Kè / osoba
+2022-05-06 23:25:41.800428 : Aruba
+                             7 hotelù od 58 868 Kè / osoba
+2022-05-06 23:25:43.267484 : Portoriko
+                             3 hotely od 58 988 Kè / osoba
+2022-05-06 23:25:44.009521 : Trinidad a Tobago
+                             3 hotely od 60 988 Kè / osoba
+2022-05-06 23:25:45.019839 : Sv. Vincent a Grenadiny
+                             1 hotel od 197 388 Kè / osoba
+2022-05-06 23:25:45.682927 : Dominika
+                             1 hotel od 62 788 Kè / osoba
+2022-05-06 23:25:46.134335 : Komory
+                             1 hotel od 97 388 Kè / osoba
+2022-05-06 23:25:46.699734 : Senegal
+                             2 hotely od 30 388 Kè / osoba
+2022-05-06 23:25:47.158997 : Franc. Polynésie
+                             4 hotely od 237 724 Kè / osoba
+2022-05-06 23:25:47.158997 : následující destinace mají prázdný teaser obrazek
+2022-05-06 23:25:47.158997 : ['Senegal\n2 hotely od 30 388 Kè / osoba', 'Estonsko\n1 hotel od 33 588 Kè / osoba', 'Gruzie\n1 hotel od 39 588 Kè / osoba', 'Jižní Korea\n2 hotely od 71 760 Kè / osoba', 'Aruba\n7 hotelù od 58 868 Kè / osoba', 'Portoriko\n3 hotely od 58 988 Kè / osoba', 'Trinidad a Tobago\n3 hotely od 60 988 Kè / osoba', 'Sv. Vincent a Grenadiny\n1 hotel od 197 388 Kè / osoba', 'Dominika\n1 hotel od 62 788 Kè / osoba', 'Komory\n1 hotel od 97 388 Kè / osoba', 'Senegal\n2 hotely od 30 388 Kè / osoba', 'Franc. Polynésie\n4 hotely od 237 724 Kè / osoba']
