@@ -66,8 +66,7 @@ def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_asser
     list_web_elements = []
 
     for _ in web_elements:
-        list_web_elements_String = web_elements[list_web_elements_Position].text
-        list_web_elements_String = list_web_elements_String.lower()
+        list_web_elements_String = web_elements[list_web_elements_Position].text.lower()
         list_web_elements.append(list_web_elements_String)
 
         list_web_elements_Position = list_web_elements_Position + 1
