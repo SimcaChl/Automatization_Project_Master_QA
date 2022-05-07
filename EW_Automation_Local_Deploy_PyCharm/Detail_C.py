@@ -68,11 +68,14 @@ class TestDetailHotelu_C(unittest.TestCase):
             except NoSuchElementException:
                 pass
 
+        self.driver.maximize_window()
+
         self.driver.get(URL_detail)
+
         wait = WebDriverWait(self.driver, 25)
         acceptConsent(self.driver)
 
-        time.sleep(1)
+        time.sleep(3)
         closeExponeaBanner(self.driver)
 
         try:
@@ -82,7 +85,6 @@ class TestDetailHotelu_C(unittest.TestCase):
             self.driver.execute_script("arguments[0].click();", terminyCeny)
             time.sleep(4)
             try:
-               time.sleep(4)
                 generalDriverWaitImplicit(self.driver)
                 potvrdit = self.driver.find_element_by_xpath("//*[@data-testid='popup-closeButton']")
 
@@ -191,7 +193,7 @@ class TestDetailHotelu_C(unittest.TestCase):
             except NoSuchElementException:
                 pass
 
-
+        self.driver.maximize_window()
         self.driver.get(URL_detail)
 
         acceptConsent(self.driver)

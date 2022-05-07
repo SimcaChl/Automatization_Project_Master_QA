@@ -130,7 +130,7 @@ class Test_SRL_C(unittest.TestCase):
         time.sleep(5)
         self.driver.maximize_window()
         acceptConsent(driver)
-
+        time.sleep(2)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(SDO_Strava_row_karta_hotelu_Xpath)))
         SDOstravaRowKartaElement = self.driver.find_elements_by_xpath(SDO_Strava_row_karta_hotelu_Xpath)
         x=1
@@ -156,7 +156,7 @@ class Test_SRL_C(unittest.TestCase):
         wait = WebDriverWait(self.driver, 15)
 
 
-        time.sleep(1)
+        time.sleep(3)
 
         acceptConsent(self.driver)
 
