@@ -80,7 +80,9 @@ class TestDetailHotelu_C(unittest.TestCase):
             wait.until(EC.visibility_of(terminyCeny))
             ##terminyCeny.click()
             self.driver.execute_script("arguments[0].click();", terminyCeny)
+            time.sleep(4)
             try:
+               time.sleep(4)
                 generalDriverWaitImplicit(self.driver)
                 potvrdit = self.driver.find_element_by_xpath("//*[@data-testid='popup-closeButton']")
 

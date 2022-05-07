@@ -113,6 +113,7 @@ class Test_SRL_C(unittest.TestCase):
     def test_SRL_map(self):
         driver = self.driver
         driver.get(URL_SRL)
+        driver.maximize_window()
         wait = WebDriverWait(driver, 15)
         time.sleep(2.3)
         acceptConsent(driver)
