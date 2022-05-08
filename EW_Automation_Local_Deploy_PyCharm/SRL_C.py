@@ -81,10 +81,10 @@ class Test_SRL_C(unittest.TestCase):
         generalDriverWaitImplicit(self.driver)
         wait.until(EC.visibility_of(driver.find_element_by_xpath("//*[@class='f_tabBar-text' and contains(text(), 'od nejdražšího')]"))).click()
         #sortByMostExpensive.click()
-
+        time.sleep(5.5)
         hotelyKarty = driver.find_element_by_xpath(hotelyKartyXpath)
         wait.until(EC.visibility_of(hotelyKarty))
-        time.sleep(3)
+        #time.sleep(4)
         x = 0
         cenaZajezduAll = driver.find_elements_by_xpath("//*[@class='f_tile-priceDetail-content']//*[@class='f_price']")
 

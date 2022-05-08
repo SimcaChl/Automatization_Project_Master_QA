@@ -59,8 +59,8 @@ class TestFMexotika_D(unittest.TestCase):
         acceptConsent(self.driver)
         time.sleep(1.5)
         try:
-            zajezdyFMsingle = self.driver.find_element_by_xpath("//*[@class='page-tour']")
-            zajezdyFMall = self.driver.find_elements_by_xpath("//*[@class='page-tour']")
+            zajezdyFMsingle = self.driver.find_element_by_xpath("//*[@class='f_tile-cover']")
+            zajezdyFMall = self.driver.find_elements_by_xpath("//*[@class='f_tile-cover']")
             wait.until(EC.visibility_of(zajezdyFMsingle))
             if zajezdyFMsingle.is_displayed():
                 for WebElement in zajezdyFMall:
@@ -79,7 +79,5 @@ class TestFMexotika_D(unittest.TestCase):
             msg = "Problem s FM - zajezdy se neukazuji " + url
             sendEmail(msg)
 
-        assert zajezdyFMsingle.is_displayed() == True
-        LM_FM_vypis_rozbalit_zajezd_check(self, self.driver)
+        assert zajezdyFMsingle.is_displayed == True
         self.test_passed = True
-        #LM_FM_vypis_rozbalit_zajezd_check(self, self.driver)

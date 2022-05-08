@@ -115,6 +115,7 @@ class TestDetailHotelu_C(unittest.TestCase):
                 stravyBox = self.driver.find_elements_by_xpath("//*[@name='detailFilterCatering']")
 
                 self.driver.execute_script("arguments[0].click();", stravyBox[1])
+                time.sleep(1.5)
 
                 try:
                     ##potvrditButtonBox =

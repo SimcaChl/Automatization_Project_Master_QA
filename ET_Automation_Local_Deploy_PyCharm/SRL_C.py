@@ -201,7 +201,7 @@ class Test_SRL_C(unittest.TestCase):
         detailHoteluButtonElement = self.driver.find_elements_by_xpath(detailHoteluButtonXpath)
         self.driver.execute_script("arguments[0].scrollIntoView();", detailHoteluButtonElement[x])
 
-        time.sleep(1)
+        time.sleep(3.5)
         x=5
         for i in range(5):
             print("|||||HOTEL CISLO|||||||")

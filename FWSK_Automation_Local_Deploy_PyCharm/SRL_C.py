@@ -82,8 +82,8 @@ class Test_SRL_C(unittest.TestCase):
 
         hotelyKarty = driver.find_element_by_xpath(
             "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
-        wait.until(EC.visibility_of(hotelyKarty))
         time.sleep(10)
+        wait.until(EC.visibility_of(hotelyKarty))
         x = 0
         cenaZajezduAll = driver.find_elements_by_xpath("//*[@class='f_tile-priceDetail-content']//*[@class='f_price']")
 
