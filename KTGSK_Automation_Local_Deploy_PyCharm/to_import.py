@@ -49,7 +49,7 @@ desired_cap2 = {
 
 }
 
-desired_cap = desired_cap_Branded("KTGSk", "Custom build")
+desired_cap = desired_cap_Branded("KTGSK", "Optimized - Web Monitor V2")
 def setUp(self):
   self.driver = webdriver.Remote(
       command_executor=comandExecutor,

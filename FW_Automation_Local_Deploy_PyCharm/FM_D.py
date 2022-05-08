@@ -5,6 +5,7 @@ import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
+
 def LM_FM_vypis_rozbalit_zajezd_check(self, driver):
     wait = WebDriverWait(self.driver, 150000)
     driver.implicitly_wait(100)
@@ -59,8 +60,8 @@ class TestFMexotika_D(unittest.TestCase):
         acceptConsent(self.driver)
         time.sleep(1.5)
         try:
-            zajezdyFMsingle = self.driver.find_element_by_xpath("//*[@class='f_tile-cover']")
-            zajezdyFMall = self.driver.find_elements_by_xpath("//*[@class='f_tile-cover']")
+            zajezdyFMsingle = self.driver.find_element_by_xpath("//*[@class='f_teaser-item']")
+            zajezdyFMall = self.driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
             wait.until(EC.visibility_of(zajezdyFMsingle))
             if zajezdyFMsingle.is_displayed():
                 for WebElement in zajezdyFMall:
@@ -79,5 +80,5 @@ class TestFMexotika_D(unittest.TestCase):
             msg = "Problem s FM - zajezdy se neukazuji " + url
             sendEmail(msg)
 
-        assert zajezdyFMsingle.is_displayed == True
+        assert zajezdyFMsingle.is_displayed() == True
         self.test_passed = True

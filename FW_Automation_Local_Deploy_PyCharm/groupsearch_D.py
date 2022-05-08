@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 def groupSearch_D(self, driver):
-    wait = WebDriverWait(self.driver, 150000)
+    wait = WebDriverWait(self.driver, 150)
     #driver.implicitly_wait(100)
     generalDriverWaitImplicit(driver)
     wait.until(EC.visibility_of(driver.find_element_by_xpath("//*[@class='f_teaser-item']")))

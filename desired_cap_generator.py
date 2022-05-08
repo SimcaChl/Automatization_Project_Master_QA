@@ -20,11 +20,11 @@ desired_cap2 = {
 
 def desired_cap_Branded(brand_name, build_name):
     desired_cap = {
-        "os": "OS X",
-        "os_version": "Monterey",
-        "browser": "Safari",
-        "browser_version": "15.3",
-        "resolution": "1600x1200",
+        "os" : "Windows",
+        "os_version" : "11",
+        "browser" : "Edge",
+        "browser_version" : "latest",
+        "resolution" : "1680x1050",
         "project": brand_name,
         "build": build_name,
         "name": "Name",

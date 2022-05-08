@@ -21,7 +21,7 @@ desired_cap = {
 "browser_version" : "latest",
 "resolution" : "1680x1050",
 "project" : brand_name_project,
-"build" : "Optimized Suite For Web Monitoring",
+"build" : "Optimized - Web Monitor V2",
 "name" : "Faster tests",
 "browserstack.local" : "false",
 "browserstack.debug" : "true",
