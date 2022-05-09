@@ -153,7 +153,7 @@ class Test_SRL_C(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get(URL_SRL)
         #wait = WebDriverWait(self.driver, 150000)
-        wait = WebDriverWait(self.driver, 15)
+        wait = WebDriverWait(self.driver, 20)
 
 
         time.sleep(3)
@@ -172,7 +172,7 @@ class Test_SRL_C(unittest.TestCase):
             sendEmail(msg)
         x = 0
         #for WebElement in self.driver.find_elements_by_xpath(totalPriceXpath):
-        for i in range(5):
+        for i in range(4):
             print("|||||HOTEL CISLO|||||||")
             print(x + 1)
             print(x + 1)
@@ -232,7 +232,7 @@ class Test_SRL_C(unittest.TestCase):
 
         time.sleep(1)
         x = 10
-        for i in range(5):
+        for i in range(4):
             print("|||||HOTEL CISLO|||||||")
             print(x + 1)
             print(x + 1)
@@ -262,7 +262,7 @@ class Test_SRL_C(unittest.TestCase):
         self.driver.execute_script("arguments[0].scrollIntoView();", detailHoteluButtonElement[x])
         time.sleep(1)
         x = 15
-        for i in range(5):
+        for i in range(4):
             print("|||||HOTEL CISLO|||||||")
             print(x + 1)
             print(x + 1)
