@@ -51,9 +51,8 @@ desired_cap2 = {
 
 desired_cap = desired_cap_Branded("KTGSK", "Optimized - Web Monitor V2")
 def setUp(self):
-  self.driver = webdriver.Remote(
-      command_executor=comandExecutor,
-      desired_capabilities=desired_cap)
+  #self.driver = webdriver.Remote(command_executor=comandExecutor, desired_capabilities=desired_cap)
+  self.driver = webdriver.Chrome(ChromeDriverManager().install())
   self.test_passed = False
 
 
