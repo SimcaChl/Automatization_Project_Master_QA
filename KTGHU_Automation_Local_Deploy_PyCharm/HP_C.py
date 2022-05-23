@@ -1,11 +1,13 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from KTGSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL, setUp, tearDown, generalDriverWaitImplicit
+from KTGHU_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL, setUp, tearDown, generalDriverWaitImplicit
 import unittest
 from selenium.webdriver.support import expected_conditions as EC
-from KTGSK_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
+from KTGHU_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
 import time
-from KTGSK_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
+from KTGHU_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
+
+
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--highlighted']//*[contains(text(), 'Vyhľadať zájazdy')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam cestujete?')]"
 HPzlutakReckoDestinaceXpath = "//*[@class='f_input-content'] //*[contains(text(), 'Grécko')]"
@@ -20,6 +22,8 @@ HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Rodina 2+1')]"
 HPzlutakPotvrditAvyhledatXpath = "//*[@class='f_button f_button--common'] //*[contains(text(), 'Potvrdiť a vyhľadať')]"
 HPnejlepsiZajezdySwitchButtonXpath = "//*[@class='f_switch-button']"
 HPnejlepsiZajezdyVypisXpath = "//*[@class='f_tourTable-tour']"
+
+
 class Test_HP_C(unittest.TestCase):
     def setUp(self):
         setUp(self)

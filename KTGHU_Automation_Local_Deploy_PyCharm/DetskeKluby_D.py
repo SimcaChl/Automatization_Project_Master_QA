@@ -1,4 +1,4 @@
-from KTGSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_kluby, setUp, tearDown
+from KTGHU_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_kluby, setUp, tearDown
 import unittest
 import pyautogui as p
 p.FAILSAFE = False

@@ -1,18 +1,18 @@
-from KTGSK_Automation_Local_Deploy_PyCharm.CovidInfo_D import *
-from KTGSK_Automation_Local_Deploy_PyCharm.pobocky import *
-from KTGSK_Automation_Local_Deploy_PyCharm.Detail_D import *
-from KTGSK_Automation_Local_Deploy_PyCharm.Detail_C import *
-from KTGSK_Automation_Local_Deploy_PyCharm.DetskeKluby_D import *
-from KTGSK_Automation_Local_Deploy_PyCharm.FM_D import *
-from KTGSK_Automation_Local_Deploy_PyCharm.fulltext_C import *
-from KTGSK_Automation_Local_Deploy_PyCharm.groupsearch_D import *
-from KTGSK_Automation_Local_Deploy_PyCharm.HP_D import *
-from KTGSK_Automation_Local_Deploy_PyCharm.LM_D import *
-from KTGSK_Automation_Local_Deploy_PyCharm.poznavacky import *
-from KTGSK_Automation_Local_Deploy_PyCharm.SDO_D import *
-from KTGSK_Automation_Local_Deploy_PyCharm.SRL_C import *
-from KTGSK_Automation_Local_Deploy_PyCharm.SRL_D import *
-from KTGSK_Automation_Local_Deploy_PyCharm.HP_C import *
+from KTGHU_Automation_Local_Deploy_PyCharm.CovidInfo_D import *
+from KTGHU_Automation_Local_Deploy_PyCharm.pobocky import *
+from KTGHU_Automation_Local_Deploy_PyCharm.Detail_D import *
+from KTGHU_Automation_Local_Deploy_PyCharm.Detail_C import *
+from KTGHU_Automation_Local_Deploy_PyCharm.DetskeKluby_D import *
+from KTGHU_Automation_Local_Deploy_PyCharm.FM_D import *
+from KTGHU_Automation_Local_Deploy_PyCharm.fulltext_C import *
+from KTGHU_Automation_Local_Deploy_PyCharm.groupsearch_D import *
+from KTGHU_Automation_Local_Deploy_PyCharm.HP_D import *
+from KTGHU_Automation_Local_Deploy_PyCharm.LM_D import *
+from KTGHU_Automation_Local_Deploy_PyCharm.poznavacky import *
+from KTGHU_Automation_Local_Deploy_PyCharm.SDO_D import *
+from KTGHU_Automation_Local_Deploy_PyCharm.SRL_C import *
+from KTGHU_Automation_Local_Deploy_PyCharm.SRL_D import *
+from KTGHU_Automation_Local_Deploy_PyCharm.HP_C import *
 
 #import HTMLTestRunner
 import HtmlTestRunner
@@ -65,7 +65,8 @@ if __name__ == '__main__':
 
     #runner = HtmlTestRunner(title='My unit test', open_in_browser=True)
     #runner = HtmlTestRunner.HTMLTestRunner(output='example_dir')        ## this is ??
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='KARTAGOSK Web Suite test', title='KARTAGOSK Web Suite test', report_name='KARTAGOSK Web Suite test',
-                            open_in_browser=True, description="KARTAGOSK Web Suite testt")
+    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='KARTAGOHU Web Suite test',
+                                           title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
+                                           open_in_browser=True, description="KARTAGOHU Web Suite testt")
     ####  pip install HTMLTestRunner-rv
     runner.run(suite_KTGSK_full())

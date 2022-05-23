@@ -1,6 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from KTGSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_covidInfo, sendEmail, setUp, tearDown
+from KTGHU_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_covidInfo, sendEmail, setUp, tearDown
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest

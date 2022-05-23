@@ -28,7 +28,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
 from email.mime.text import MIMEText
-from KTGSK_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass, comandExecutor
+from KTGHU_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass, comandExecutor
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 brand_name_project = "KARTAGOSK"
@@ -49,7 +49,7 @@ desired_cap2 = {
 
 }
 
-desired_cap = desired_cap_Branded("KTGSK", "Optimized - Web Monitor V2")
+desired_cap = desired_cap_Branded("KTGHU", "Optimized - Web Monitor V2")
 def setUp(self):
   #self.driver = webdriver.Remote(command_executor=comandExecutor, desired_capabilities=desired_cap)
   self.driver = webdriver.Chrome(ChromeDriverManager().install())
