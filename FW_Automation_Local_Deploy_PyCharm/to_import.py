@@ -22,10 +22,8 @@ desired_cap = {
 
 }
 def setUp(self):
-  self.driver = webdriver.Remote(
-      command_executor=comandExecutor,
-      desired_capabilities=desired_cap)
-  #self.driver = webdriver.Chrome(ChromeDriverManager().install())
+  #self.driver = webdriver.Remote(command_executor=comandExecutor,desired_capabilities=desired_cap)
+  self.driver = webdriver.Chrome(ChromeDriverManager().install())
   self.test_passed = False
 
 URL = "https://www.fischer.cz/"

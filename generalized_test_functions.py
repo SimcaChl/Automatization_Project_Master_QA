@@ -94,3 +94,51 @@ def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_asser
             list_web_elements_Position = list_web_elements_Position + 1
 
     print(list_web_elements)
+
+#predisposition:
+#loaded SRL -> clicks on sorter (expensive VS cheap)
+#gets all prices
+
+##typeOfSort = cheap or expensive
+def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZajezduXpath,  typeOfSort):
+        wait = WebDriverWait(driver, 25)
+
+        cenaZajezduAllList = []                     ##one list that takes prices from the srl
+        cenaZajezduAllListSorted = []               ##second list takes the values too, then sorts it low to high
+        time.sleep(2)
+        sorter_Element = driver.find_element_by_xpath(sorter_Xpath)
+        wait.until(EC.visibility_of(sorter_Element))
+        sorter_Element.click()
+
+        hotelyKarty = driver.find_element_by_xpath(hotelyKartyXpath)
+        wait.until(EC.visibility_of(hotelyKarty))
+        time.sleep(4)
+        list_web_elements_Position = 0
+        cenaZajezduAll = driver.find_elements_by_xpath(cenaZajezduXpath)
+        wait.until(EC.visibility_of(cenaZajezduAll[0]))
+
+        for WebElement in cenaZajezduAll:
+            cenaZajezduAllString = cenaZajezduAll[list_web_elements_Position].text
+            cenaZajezduAllString = cenaZajezduAllString[:-3]
+            cenaZajezduAllString = ''.join(cenaZajezduAllString.split())        ##delete spaces
+            cenaZajezduAllString = int(cenaZajezduAllString)        ##convert to int to do sort easily
+            list_web_elements_Position = list_web_elements_Position + 1
+            cenaZajezduAllList.append(cenaZajezduAllString)
+            cenaZajezduAllListSorted.append(cenaZajezduAllString)
+
+
+        if typeOfSort == "cheap":
+            cenaZajezduAllListSorted.sort()  ##sorting second list low to high
+
+
+
+
+        if cenaZajezduAllListSorted == cenaZajezduAllList:          ##compare first list to second list, if is equal = good
+            print("Razeni od nejlevnejsiho je OK")
+
+        else:
+            print("Razeni od nejlevnejsiho je spatne")
+        print(cenaZajezduAllList)
+        print(cenaZajezduAllListSorted)
+
+        assert cenaZajezduAllListSorted == cenaZajezduAllList
