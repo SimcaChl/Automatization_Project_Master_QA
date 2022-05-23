@@ -7,8 +7,9 @@ from generalized_test_functions import *
 
 hotelyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']"
 cenaZajezduXpath = "//*[@class='f_tile-priceDetail-content']//*[@class='f_price']"
-sorterExpensiveXpath = "//*[contains(text(), 'od najdrahšieho')]"
 sorterCheapXpath = "//*[contains(text(), 'od najlacnejšieho')]"
+sorterExpensiveXpath = "//*[contains(text(), 'od najdrahšieho')]"
+
 
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
