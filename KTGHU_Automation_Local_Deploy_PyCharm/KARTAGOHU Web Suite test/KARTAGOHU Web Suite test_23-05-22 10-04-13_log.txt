@@ -1,0 +1,161 @@
+2022-05-23 22:04:13.038278 : 
+                             
+                             
+2022-05-23 22:04:13.038278 : ====== WebDriver manager ======
+                             
+2022-05-23 22:04:13.060271 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:04:13.060271 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:04:13.899015 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:04:22.382263 : <selenium.webdriver.remote.webelement.WebElement (session="cd9c30b98b6fec91e987bee745e686c9", element="47d71dc8-f19e-4a0b-b3f2-43ca534e1102")>
+2022-05-23 22:04:50.171727 : nenasle se exponea banner
+2022-05-23 22:05:50.595715 : 
+                             
+                             
+2022-05-23 22:05:50.595715 : ====== WebDriver manager ======
+                             
+2022-05-23 22:05:50.636700 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:05:50.637700 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:05:50.807272 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:06:05.575004 : <selenium.webdriver.remote.webelement.WebElement (session="5a3c7ed1f008fb734d9e3958ca9d2880", element="146f20d7-5f25-43a7-bc64-324aaee26d0e")>
+2022-05-23 22:06:05.781938 : <bound method WebElement.is_displayed of <selenium.webdriver.remote.webelement.WebElement (session="5a3c7ed1f008fb734d9e3958ca9d2880", element="66b8fdfe-a7d7-4ede-ae29-96055bcca4ea")>>
+2022-05-23 22:06:44.102270 : 
+                             
+                             
+2022-05-23 22:06:44.102270 : ====== WebDriver manager ======
+                             
+2022-05-23 22:06:44.154251 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:06:44.154251 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:06:44.289290 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:06:52.183597 : <selenium.webdriver.remote.webelement.WebElement (session="47b5b84ba0dc95285f6a6d3f22a5fef5", element="330ba861-78b9-4173-81f6-d90dd9a09919")>
+2022-05-23 22:07:19.985250 : nenasle se exponea banner
+2022-05-23 22:07:20.284225 : its ok
+2022-05-23 22:07:22.420482 : 
+                             
+                             
+2022-05-23 22:07:22.420482 : ====== WebDriver manager ======
+                             
+2022-05-23 22:07:22.463486 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:07:22.463486 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:07:22.674096 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:07:34.585975 : <selenium.webdriver.remote.webelement.WebElement (session="fdcbca0f068e808c6957c62bb12527c3", element="b681d369-9e7f-45dd-a79c-21e08e615c92")>
+2022-05-23 22:08:02.349554 : nenasle se exponea banner
+2022-05-23 22:10:42.407831 : All Inclusive
+2022-05-23 22:11:08.454604 : []
+2022-05-23 22:11:11.617974 : 
+                             
+                             
+2022-05-23 22:11:11.617974 : ====== WebDriver manager ======
+                             
+2022-05-23 22:11:11.680921 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:11:11.680921 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:11:11.844047 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:11:21.137060 : <selenium.webdriver.remote.webelement.WebElement (session="75ec5336c46524bfe851fdfc1264c004", element="9a9435e9-2ddf-4f90-a726-2bc9f30d9507")>
+2022-05-23 22:11:48.905674 : nenasle se exponea banner
+2022-05-23 22:12:48.262535 : 
+                             
+                             
+2022-05-23 22:12:48.262535 : ====== WebDriver manager ======
+                             
+2022-05-23 22:12:48.283528 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:12:48.283528 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:12:48.562667 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:13:00.520869 : <selenium.webdriver.remote.webelement.WebElement (session="7df67383becb932ffa7c37d2f4c874da", element="31187168-b94c-41c4-9e36-d1731a15f91d")>
+2022-05-23 22:14:10.690549 : 
+                             
+                             
+2022-05-23 22:14:10.690549 : ====== WebDriver manager ======
+                             
+2022-05-23 22:14:10.728544 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:14:10.728544 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:14:10.987551 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:14:25.030246 : <selenium.webdriver.remote.webelement.WebElement (session="07be85552a2d58a145fc9f31a15c63a1", element="22d14410-4e46-498e-8a72-8b91e3abe8b0")>
+2022-05-23 22:14:28.254114 : 
+                             
+                             
+2022-05-23 22:14:28.254114 : ====== WebDriver manager ======
+                             
+2022-05-23 22:14:28.281105 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:14:28.281105 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:14:28.557016 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:14:44.140616 : <selenium.webdriver.remote.webelement.WebElement (session="3c402eddc975742ee722b5ad1718c09d", element="d1d6d507-2084-459c-a8fc-a7a65b78b704")>
+2022-05-23 22:14:48.339192 : 
+                             
+                             
+2022-05-23 22:14:48.339192 : ====== WebDriver manager ======
+                             
+2022-05-23 22:14:48.359185 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:14:48.359185 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:14:48.590761 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:15:02.065324 : <selenium.webdriver.remote.webelement.WebElement (session="165bd23bc7df62a87b04f8013f62c5f5", element="3777bae4-1a04-4763-90a5-272fc07dd73b")>
+2022-05-23 22:15:06.887933 : 
+                             
+                             
+2022-05-23 22:15:06.887933 : ====== WebDriver manager ======
+                             
+2022-05-23 22:15:06.948577 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:15:06.948577 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:15:07.138449 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:15:17.032954 : <selenium.webdriver.remote.webelement.WebElement (session="cf8b4e7a12b3ec69a8b0a5e37eb86ef3", element="208a99a0-cfc1-424b-aaae-385cebbf9330")>
+2022-05-23 22:15:44.414085 : basic info 
+2022-05-23 22:15:44.435077 : basic info 
+2022-05-23 22:15:44.446072 : basic info 
+2022-05-23 22:15:44.457069 : basic info 
+2022-05-23 22:15:44.466066 : basic info 
+2022-05-23 22:15:44.474063 : basic info 
+2022-05-23 22:15:44.481068 : basic info 
+2022-05-23 22:15:44.503054 : boxiky
+2022-05-23 22:15:44.512052 : boxiky
+2022-05-23 22:15:44.522049 : boxiky
+2022-05-23 22:15:44.531045 : boxiky
+2022-05-23 22:15:44.541042 : boxiky
+2022-05-23 22:15:44.549039 : boxiky
+2022-05-23 22:15:44.558048 : boxiky
+2022-05-23 22:15:44.566034 : boxiky
+2022-05-23 22:15:44.575040 : boxiky
+2022-05-23 22:15:44.582028 : boxiky
+2022-05-23 22:15:44.591026 : boxiky
+2022-05-23 22:15:44.599023 : boxiky
+2022-05-23 22:15:44.607021 : boxiky
+2022-05-23 22:15:44.615019 : boxiky
+2022-05-23 22:15:46.818190 : 
+                             
+                             
+2022-05-23 22:15:46.818190 : ====== WebDriver manager ======
+                             
+2022-05-23 22:15:46.863153 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:15:46.863153 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:15:47.245258 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:16:03.125939 : <selenium.webdriver.remote.webelement.WebElement (session="4619654c7e2018d3108ade8b9432afc8", element="dabc5453-7312-44ec-bfab-de8992e7a6ee")>
