@@ -131,19 +131,19 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
             cenaZajezduAllListSorted.sort()  ##sorting second list low to high
 
             if cenaZajezduAllListSorted == cenaZajezduAllList:  ##compare first list to second list, if is equal = good
-                print("Razeni od nejlevnejsiho je OK")
+                print("Cheap sorter is OK")
 
             else:
-                print("Razeni od nejlevnejsiho je spatne")
+                print("Cheap sorter is NOT OK")
 
         if typeOfSort == "expensive":
             cenaZajezduAllListSorted.sort(reverse=True)
 
             if cenaZajezduAllListSorted == cenaZajezduAllList:
-                print("Razeni expensive je OK")
+                print("Expensive sorter is OK")
 
             else:
-                print("Razeni expensive je OK")
+                print("Expensive sorter is NOT OK")
 
 
         print(cenaZajezduAllList)
