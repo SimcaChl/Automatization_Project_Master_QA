@@ -7,6 +7,8 @@ from generalized_test_functions import generalized_map_test_click_through_circle
 
 hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
 cenaZajezduXpath = "//*[@class='f_tile-priceDetail-content']//*[@class='f_price']"
+sorterExpensiveXpath = "//*[@class='f_tabBar-text' and contains(text(), 'od nejdražšího')]"
+sorterCheapXpath = "//*[@class='f_tabBar-text' and contains(text(), 'od nejlevnějšího')]"
 
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
@@ -24,10 +26,9 @@ class Test_SRL_C(unittest.TestCase):
         acceptConsent(self.driver)
         time.sleep(1.5)
 
-        sorter_Xpath = "//*[@class='f_tabBar-text' and contains(text(), 'od nejlevnějšího')]"
         typeOfSort = "cheap"
 
-        generalized_SRL_price_sorter(self.driver, sorter_Xpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
+        generalized_SRL_price_sorter(self.driver, sorterCheapXpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
 
 
         self.test_passed = True
@@ -44,8 +45,8 @@ class Test_SRL_C(unittest.TestCase):
 
 
         typeOfSort = "expensive"
-        sorter_Xpath = "//*[@class='f_tabBar-text' and contains(text(), 'od nejdražšího')]"
-        generalized_SRL_price_sorter(self.driver, sorter_Xpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
+
+        generalized_SRL_price_sorter(self.driver, sorterExpensiveXpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
 
         self.test_passed = True
 

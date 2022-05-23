@@ -100,6 +100,7 @@ def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_asser
 #gets all prices
 
 ##typeOfSort = cheap or expensive
+
 def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZajezduXpath,  typeOfSort):
         wait = WebDriverWait(driver, 25)
 
