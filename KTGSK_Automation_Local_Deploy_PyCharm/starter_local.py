@@ -14,6 +14,7 @@ from KTGSK_Automation_Local_Deploy_PyCharm.SRL_C import *
 from KTGSK_Automation_Local_Deploy_PyCharm.SRL_D import *
 from KTGSK_Automation_Local_Deploy_PyCharm.HP_C import *
 
+#import HTMLTestRunner
 import HtmlTestRunner
 
 def suite_KTGSK_full():
