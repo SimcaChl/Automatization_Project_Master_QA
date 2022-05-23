@@ -22,6 +22,7 @@ class Test_SRL_C(unittest.TestCase):
 
     def test_SRL_sort_cheapest(self):
 
+        self.driver.maximize_window()
         self.driver.get(URL_SRL)
         time.sleep(2)
         acceptConsent(self.driver)
@@ -35,48 +36,15 @@ class Test_SRL_C(unittest.TestCase):
 
     def test_SRL_sort_expensive(self):
         driver = self.driver
+        driver.maximize_window()
         driver.get(URL_SRL)
-        wait = WebDriverWait(driver, 25)
         time.sleep(2)
         acceptConsent(driver)
         time.sleep(2)
-        closeExponeaBanner(driver)
 
-        cenaZajezduAllList = []  ##one list that takes prices from the srl
-        cenaZajezduAllListSorted = []  ##second list takes the values too, then sorts it low to high
+        typeOfSort = "expensive"
 
-        sortByMostExpensive = driver.find_element_by_xpath("//*[contains(text(), 'od nejdražšího')]")
-        sortByMostExpensive.click()
-
-        hotelyKarty = driver.find_element_by_xpath(
-            "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
-        wait.until(EC.visibility_of(hotelyKarty))
-        time.sleep(10)
-        x = 0
-        cenaZajezduAll = driver.find_elements_by_xpath("//*[@class='f_tile-priceDetail-content']//*[@class='f_price']")
-
-        for WebElement in cenaZajezduAll:
-            cenaZajezduAllString = cenaZajezduAll[x].text
-            cenaZajezduAllString = cenaZajezduAllString[:-3]
-            cenaZajezduAllString = ''.join(cenaZajezduAllString.split())
-            cenaZajezduAllString = int(cenaZajezduAllString)
-            ##print(type(cenaZajezduAllString))
-            x = x + 1
-            cenaZajezduAllList.append(cenaZajezduAllString)
-            cenaZajezduAllListSorted.append(cenaZajezduAllString)
-
-        cenaZajezduAllListSorted.sort(reverse=True)
-
-        if cenaZajezduAllListSorted == cenaZajezduAllList:
-            print("Razeni od nejdrazshio je OK")
-
-        else:
-            print("Razeni od nejdrazshio je spatne")
-
-        print(cenaZajezduAllList)
-        print(cenaZajezduAllListSorted)
-
-        assert cenaZajezduAllListSorted == cenaZajezduAllList
+        generalized_SRL_price_sorter(self.driver, sorterExpensiveXpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
         self.test_passed = True
 
     def test_SRL_map(self):
