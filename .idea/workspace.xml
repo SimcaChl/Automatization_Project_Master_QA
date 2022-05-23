@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +35,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.starter_local">
+  <component name="RunManager" selected="Python tests.Python tests in Detail_D.py">
     <configuration name="starter_local" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,17 +85,17 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in Detail_C.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in Detail_D.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/Detail_C.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/Detail_D.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -116,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in Detail_D.py" />
         <item itemvalue="Python.starter_local" />
         <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_srl_C" />
         <item itemvalue="Python tests.Python tests for FM_D.TestFMexotika_D.test_FM_exotika_D" />
         <item itemvalue="Python tests.Python tests in FM_D.py" />
-        <item itemvalue="Python tests.Python tests in Detail_C.py" />
       </list>
     </recent_temporary>
   </component>
