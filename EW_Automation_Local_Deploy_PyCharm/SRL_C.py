@@ -41,8 +41,10 @@ class Test_SRL_C(unittest.TestCase):
         driver.maximize_window()
         acceptConsent(driver)
         time.sleep(2)
-        #closeExponeaBanner(driver)
 
+
+        typeOfSort = "expensive"
+        sorter_Xpath = "//*[@class='f_tabBar-text' and contains(text(), 'od nejdražšího')]"
         generalized_SRL_price_sorter(self.driver, sorter_Xpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
 
         self.test_passed = True
