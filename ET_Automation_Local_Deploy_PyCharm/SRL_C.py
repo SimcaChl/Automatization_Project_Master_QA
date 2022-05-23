@@ -38,7 +38,7 @@ class Test_SRL_C(unittest.TestCase):
         poziceHotelu =0
         for WebElement in cenaZajezduAll:
             cenaZajezduAllString = cenaZajezduAll[poziceHotelu].text
-            #enaZajezduAllString = cenaZajezduAllString[:-3]
+            #cenaZajezduAllString = cenaZajezduAllString[:-3]
             cenaZajezduAllString = ''.join(cenaZajezduAllString.split())  ##delete spaces
             cenaZajezduAllString = int(cenaZajezduAllString)  ##convert to int to do sort easily
             poziceHotelu = poziceHotelu + 1

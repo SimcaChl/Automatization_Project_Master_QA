@@ -1,12 +1,14 @@
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.wait import WebDriverWait
 from FWSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown
 from FW_Automation_Local_Deploy_PyCharm.to_import import generalDriverWaitImplicit
 import time
-from selenium.webdriver.support import expected_conditions as EC
 import unittest
 from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
 from generalized_test_functions import *
+
+hotelyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']"
+cenaZajezduXpath = "//*[@class='f_tile-priceDetail-content']//*[@class='f_price']"
+sorterExpensiveXpath = "//*[contains(text(), 'od najdrahšieho')]"
+sorterCheapXpath = "//*[contains(text(), 'od najlacnejšieho')]"
 
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
@@ -18,97 +20,29 @@ class Test_SRL_C(unittest.TestCase):
 
     def test_SRL_sort_cheapest(self):
 
+        self.driver.maximize_window()
         self.driver.get(URL_SRL)
-        wait = WebDriverWait(self.driver, 25)
         time.sleep(2)
         acceptConsent(self.driver)
         time.sleep(2)
-        closeExponeaBanner(self.driver)
 
-        cenaZajezduAllList = []                     ##one list that takes prices from the srl
-        cenaZajezduAllListSorted = []               ##second list takes the values too, then sorts it low to high
-        time.sleep(2)
-        sortByCheapest = self.driver.find_element_by_xpath("//*[contains(text(), 'od najlacnejšieho')]")
-        wait.until(EC.visibility_of(sortByCheapest))
-        sortByCheapest.click()
+        typeOfSort = "cheap"
 
-        hotelyKarty = self.driver.find_element_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
-        wait.until(EC.visibility_of(hotelyKarty))
-        time.sleep(10)
-        x=0
-        cenaZajezduAll = self.driver.find_elements_by_xpath("//*[@class='f_tile-priceDetail-content']//*[@class='f_price']")
-        wait.until(EC.visibility_of(cenaZajezduAll[0]))
+        generalized_SRL_price_sorter(self.driver, sorterCheapXpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
 
-        for WebElement in cenaZajezduAll:
-            cenaZajezduAllString = cenaZajezduAll[x].text
-            cenaZajezduAllString = cenaZajezduAllString[:-3]
-            cenaZajezduAllString = ''.join(cenaZajezduAllString.split())        ##delete spaces
-            cenaZajezduAllString = int(cenaZajezduAllString)        ##convert to int to do sort easily
-            x=x+1
-            cenaZajezduAllList.append(cenaZajezduAllString)
-            cenaZajezduAllListSorted.append(cenaZajezduAllString)
-
-        cenaZajezduAllListSorted.sort()     ##sorting second list low to high
-
-
-        if cenaZajezduAllListSorted == cenaZajezduAllList:          ##compare first list to second list, if is equal = good
-            print("Razeni od nejlevnejsiho je OK")
-
-        else:
-            print("Razeni od nejlevnejsiho je spatne")
-
-
-
-        print(cenaZajezduAllList)
-        print(cenaZajezduAllListSorted)
-
-        assert cenaZajezduAllListSorted == cenaZajezduAllList
         self.test_passed = True
 
     def test_SRL_sort_expensive(self):
         driver = self.driver
+        driver.maximize_window()
         driver.get(URL_SRL)
-        wait = WebDriverWait(driver, 25)
         time.sleep(2)
         acceptConsent(driver)
         time.sleep(2)
-        closeExponeaBanner(driver)
 
-        cenaZajezduAllList = []  ##one list that takes prices from the srl
-        cenaZajezduAllListSorted = []  ##second list takes the values too, then sorts it low to high
+        typeOfSort = "expensive"
 
-        sortByMostExpensive = driver.find_element_by_xpath("//*[contains(text(), 'od najdrahšieho')]")
-        sortByMostExpensive.click()
-
-        hotelyKarty = driver.find_element_by_xpath(
-            "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
-        time.sleep(10)
-        wait.until(EC.visibility_of(hotelyKarty))
-        x = 0
-        cenaZajezduAll = driver.find_elements_by_xpath("//*[@class='f_tile-priceDetail-content']//*[@class='f_price']")
-
-        for WebElement in cenaZajezduAll:
-            cenaZajezduAllString = cenaZajezduAll[x].text
-            cenaZajezduAllString = cenaZajezduAllString[:-3]
-            cenaZajezduAllString = ''.join(cenaZajezduAllString.split())
-            cenaZajezduAllString = int(cenaZajezduAllString)
-            ##print(type(cenaZajezduAllString))
-            x = x + 1
-            cenaZajezduAllList.append(cenaZajezduAllString)
-            cenaZajezduAllListSorted.append(cenaZajezduAllString)
-
-        cenaZajezduAllListSorted.sort(reverse=True)
-
-        if cenaZajezduAllListSorted == cenaZajezduAllList:
-            print("Razeni od nejdrazshio je OK")
-
-        else:
-            print("Razeni od nejdrazshio je spatne")
-
-        print(cenaZajezduAllList)
-        print(cenaZajezduAllListSorted)
-
-        assert cenaZajezduAllListSorted == cenaZajezduAllList
+        generalized_SRL_price_sorter(self.driver, sorterExpensiveXpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
         self.test_passed = True
 
     def test_SRL_map(self):
