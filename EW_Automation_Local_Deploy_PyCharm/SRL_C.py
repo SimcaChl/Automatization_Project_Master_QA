@@ -22,7 +22,6 @@ class Test_SRL_C(unittest.TestCase):
 
         self.driver.get(URL_SRL)
         self.driver.maximize_window()
-        wait = WebDriverWait(self.driver, 25)
         time.sleep(2)
         acceptConsent(self.driver)
         time.sleep(1.5)
