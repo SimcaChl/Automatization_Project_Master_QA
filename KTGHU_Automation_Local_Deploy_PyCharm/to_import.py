@@ -6,12 +6,12 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.opera import OperaDriverManager
 
 URL = "https://kartagohu.web13.dtweb.cz/"
+URL = "https://www.kartagotours.hu/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"
 URL_poznavacky_rodiny = URL+"poznavaci-zajezdy#rodiny"
 URL_poznavacky_zazitky = URL+"poznavaci-zajezdy#rodiny"
-URL_pobocky = URL+"kontakty/nase-predajne"
-URL_kluby = URL+"uzitocne-informacie/mango-club"
+URL_pobocky = URL+"irodaink"
 #URL_detail = URL+"spanielsko/costa-almeria/roquetas-de-mar/ar-almerimar?KEY=2207812211&DS=32768&GIATA=0&D=63350|211764&HID=142164&MT=2&RT=15&NN=7&RD=2022-08-01&DD=2022-07-25&DP=483&TO=483|1837|2933|3437&MNN=7&TT=1&PID=359709&DPR=KARTAGO-SK&TTM=1&DF=2022-07-25|2022-08-25&ERM=0&NNM=7|8|9|10|11|12|13&ac1=2&kc1=1&ka1=6&ic1=0#/prehled"
 URL_detail = URL+"egyiptom/hurghada/hurghada/hawaii-dreams?KEY=2213358709&DS=32768&GIATA=978047&D=64089|64091|64419|64420|64087|64094|64095|64090|64086|64092|64425&HID=9188&MT=5&RT=15&NN=7&RD=2022-09-11&DD=2022-09-04&DP=489&TO=489&MNN=7&TT=1&PID=335867&DPR=KARTAGO-HU&TTM=1&TOM=489&DF=2022-09-04|2022-10-05&ERM=0&NNM=7&ac1=2&kc1=1&ka1=6&ic1=0"
 URL_SRL = URL + "keresesi-eredmenyek?qf=108_1_0|386_1_0|108_1_0&d=64089|64091|64419|64420|64087|64094|64095|64090|64086|64092|64425&tt=1&to=489&dd=2022-09-01&rd=2022-10-31&ka1=6&kc1=1&ac1=2"
@@ -20,7 +20,7 @@ URL_covidInfo = URL+"covid-info"
 URL_FM = URL+"first-minute"
 URL_faq = URL+"faq"
 URL_lm = URL+"last-minute"
-URL_stat = URL+"grecko"
+URL_stat = URL+"egyiptom"
 URL_groupsearch = URL+"keresesi-eredmenyek?tt=1&to=489&dd=2022-09-01&rd=2022-10-31"
 URL_FT_results = URL+"hledani-vysledky?q="
 import time

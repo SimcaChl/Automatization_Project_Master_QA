@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/CovidInfo_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/CovidInfo_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/Detail_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/Detail_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/Detail_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/Detail_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/DetskeKluby_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/DetskeKluby_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/FM_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/FM_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/HP_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/HP_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/HP_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/HP_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/LM_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/LM_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/SDO_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/SDO_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/SRL_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/SRL_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/SRL_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/SRL_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/fulltext_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/fulltext_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/groupsearch_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/groupsearch_D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/pobocky.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/pobocky.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/poznavacky.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/poznavacky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/DetskeKluby_D.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/poznavacky.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
     </list>
@@ -51,7 +38,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_airport">
+  <component name="RunManager" selected="Python.starter_local">
+    <configuration name="starter_local" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Automatization_Project_Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/starter_local.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_airport" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,20 +71,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_airport&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for SRL_C.Test_SRL_C" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Automatization_Project_Master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;SRL_C.Test_SRL_C&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -124,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.starter_local" />
         <item itemvalue="Python tests.Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_airport" />
         <item itemvalue="Python tests.Python tests in SRL_C.py" />
         <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_sort_expensive (1)" />
         <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_sort_cheapest" />
-        <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C" />
       </list>
     </recent_temporary>
   </component>

@@ -2,13 +2,11 @@ from KTGHU_Automation_Local_Deploy_PyCharm.CovidInfo_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.pobocky import *
 from KTGHU_Automation_Local_Deploy_PyCharm.Detail_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.Detail_C import *
-from KTGHU_Automation_Local_Deploy_PyCharm.DetskeKluby_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.FM_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.fulltext_C import *
 from KTGHU_Automation_Local_Deploy_PyCharm.groupsearch_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.HP_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.LM_D import *
-from KTGHU_Automation_Local_Deploy_PyCharm.poznavacky import *
 from KTGHU_Automation_Local_Deploy_PyCharm.SDO_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.SRL_C import *
 from KTGHU_Automation_Local_Deploy_PyCharm.SRL_D import *
@@ -17,14 +15,13 @@ from KTGHU_Automation_Local_Deploy_PyCharm.HP_C import *
 #import HTMLTestRunner
 import HtmlTestRunner
 
-def suite_KTGSK_full():
+def suite_KTGHU_full():
     suite = unittest.TestSuite()
     suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
     suite.addTest(TestDetailHotelu_D("test_detail_D"))
     suite.addTest(TestDetailHotelu_C("test_detail_fotka"))
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_meal"))
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_airport"))
-    suite.addTest(TestDetskeKluby_D("test_kluby_D"))
     suite.addTest(TestFM_D("test_FM_D"))
     #suite.addTest(Test_Fulltext_C("test_fulltext_naseptavac"))
     #suite.addTest(Test_Fulltext_C("test_fulltext_results_status_check"))
@@ -32,10 +29,6 @@ def suite_KTGSK_full():
     suite.addTest(TestHP_D("test_homePage_D"))
     suite.addTest(TestLM_D("test_lM_isDisplayed"))
     suite.addTest(TestPobocky_D('test_pobocky_D'))
-    #suite.addTest(TestPoznavacky_D('test_poznavacky_okruzni_D'))
-    #suite.addTest(TestPoznavacky_D('test_poznavacky_vikendy_D'))
-    #suite.addTest(TestPoznavacky_D('test_poznavacky_rodiny_D'))
-    #suite.addTest(TestPoznavacky_D('test_poznavacky_zazitky_D'))
     suite.addTest(TestSDO_D('test_SDO_D'))
     suite.addTest(Test_SRL_C('test_SRL_sort_cheapest'))
     suite.addTest(Test_SRL_C('test_SRL_sort_expensive'))
@@ -69,4 +62,4 @@ if __name__ == '__main__':
                                            title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
                                            open_in_browser=True, description="KARTAGOHU Web Suite testt")
     ####  pip install HTMLTestRunner-rv
-    runner.run(suite_KTGSK_full())
+    runner.run(suite_KTGHU_full())
