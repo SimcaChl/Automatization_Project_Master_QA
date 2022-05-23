@@ -7,7 +7,7 @@ from generalized_test_functions import generalized_map_test_click_through_circle
 
 hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
 cenaZajezduXpath = "//*[@class='f_tile-priceDetail-content']//*[@class='f_price']"
-sorterCheapXpath = "//*[@class='f_tabBar-text' and contains(text(), 'od najlacnejšieho')]"
+sorterCheapXpath = "//*[@class='f_tabBar-text' and contains(text(), 'Rendezés - a legolcsóbb elöl')]"
 sorterExpensiveXpath = "//*[@class='f_tabBar-text' and contains(text(), 'od najdrahšieho')]"
 
 class Test_SRL_C(unittest.TestCase):

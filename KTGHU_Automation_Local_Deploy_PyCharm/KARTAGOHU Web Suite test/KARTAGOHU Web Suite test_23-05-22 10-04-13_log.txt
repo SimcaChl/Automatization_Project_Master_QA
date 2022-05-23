@@ -159,3 +159,60 @@
 2022-05-23 22:15:47.245258 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
                              
 2022-05-23 22:16:03.125939 : <selenium.webdriver.remote.webelement.WebElement (session="4619654c7e2018d3108ade8b9432afc8", element="dabc5453-7312-44ec-bfab-de8992e7a6ee")>
+2022-05-23 22:16:06.017664 : 
+                             
+                             
+2022-05-23 22:16:06.017664 : ====== WebDriver manager ======
+                             
+2022-05-23 22:16:06.050651 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:16:06.050651 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:16:06.232216 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:16:17.611457 : <selenium.webdriver.remote.webelement.WebElement (session="c2106407ce9ae7bd8821db881405381d", element="f87f5da6-f407-43b3-b8dc-81017b15dc13")>
+2022-05-23 22:16:56.672218 : 
+                             
+                             
+2022-05-23 22:16:56.673218 : ====== WebDriver manager ======
+                             
+2022-05-23 22:16:56.702209 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:16:56.702209 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:16:57.558373 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:17:10.346313 : <selenium.webdriver.remote.webelement.WebElement (session="ddd0526a67be9a51b07bbec69c98dcdc", element="56a98bd6-5989-4248-8a4e-7ea00a693844")>
+2022-05-23 22:17:49.975403 : 
+                             
+                             
+2022-05-23 22:17:49.975403 : ====== WebDriver manager ======
+                             
+2022-05-23 22:17:49.998382 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:17:49.998382 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:17:50.179706 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:17:58.267475 : <selenium.webdriver.remote.webelement.WebElement (session="4e3cd87d1369b194d7b6608a185ae126", element="3ceaffc2-16d2-49f4-8d59-df28b05c8ccb")>
+2022-05-23 22:18:35.530516 : nenasel se kolecko//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']
+2022-05-23 22:19:01.757646 : nenasel se kolecko//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']
+2022-05-23 22:19:27.997595 : nenasel se kolecko//*[@class='leaflet-marker-icon marker-cluster marker-cluster-large leaflet-zoom-animated leaflet-interactive']
+2022-05-23 22:19:37.710245 : nenasel se kolecko//*[@class='leaflet-marker-icon marker-cluster marker-cluster-medium leaflet-zoom-animated leaflet-interactive']
+2022-05-23 22:20:03.981769 : nenasel se kolecko//*[@class='leaflet-marker-icon marker-cluster marker-cluster-small leaflet-zoom-animated leaflet-interactive']
+2022-05-23 22:20:30.243123 : nenasel se kolecko//*[@class='leaflet-marker-icon marker-cluster marker-cluster-small leaflet-zoom-animated leaflet-interactive']
+2022-05-23 22:20:59.136409 : actually OK
+2022-05-23 22:21:04.537699 : https://www.kartagotours.hu/egyiptom/marsa-alam/marsa-alam/gemma-beach-resort?KEY=2259975698&DS=32768&GIATA=250075&D=64089|64091|64419|64420|64087|64094|64095|64090|64086|64092|64425&HID=141273&MT=5&RT=15&NN=7&RD=2022-09-21&DD=2022-09-14&DP=489&TO=489&MNN=7&TT=1&PID=350968&DPR=KARTAGO-HU&TTM=1&TOM=489&DF=2022-09-14|2022-10-15&ERM=0&NNM=7&ac1=2&kc1=1&ka1=6&ic1=0
+2022-05-23 22:21:04.537699 : https://www.kartagotours.hu/keresesi-eredmenyek?qf=108_1_0|386_1_0|108_1_0&d=64089|64091|64419|64420|64087|64094|64095|64090|64086|64092|64425&tt=1&to=489&dd=2022-09-01&rd=2022-10-31&ka1=6&kc1=1&ac1=2
+2022-05-23 22:21:06.896403 : 
+                             
+                             
+2022-05-23 22:21:06.896403 : ====== WebDriver manager ======
+                             
+2022-05-23 22:21:06.920395 : Current google-chrome version is 101.0.4951
+                             
+2022-05-23 22:21:06.921396 : Get LATEST chromedriver version for 101.0.4951 google-chrome
+                             
+2022-05-23 22:21:07.034534 : Driver [C:\Users\KDK\.wdm\drivers\chromedriver\win32\101.0.4951.41\chromedriver.exe] found in cache
+                             
+2022-05-23 22:21:20.610039 : <selenium.webdriver.remote.webelement.WebElement (session="b2541182cdb9168a9f9a73f3c2ab4e8d", element="b1e5b51f-cc35-440c-9cdd-673c2dee33fb")>
