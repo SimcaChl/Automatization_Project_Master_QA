@@ -57,29 +57,21 @@ class TestDetailHotelu_C(unittest.TestCase):
 
     def test_detail_terminy_filtr_meal(self):
 
-        def omlouvamese_paragraph(self):
-            time.sleep(1)
-            try:
-                omlouvameParagraph = self.driver.find_element_by_xpath(
-                    "//*[@class='fshr-paragraph fshr-paragraph--centered']")
-                if omlouvameParagraph.is_displayed():
-                    return
-
-            except NoSuchElementException:
-                pass
 
         self.driver.get(URL_detail)
-        wait = WebDriverWait(self.driver, 150000)
+        wait = WebDriverWait(self.driver, 150)
         acceptConsent(self.driver)
 
         time.sleep(1)
         closeExponeaBanner(self.driver)
+
 
         try:
             terminyCeny = self.driver.find_element_by_xpath("//*[@id='terminyaceny-tab']")
             wait.until(EC.visibility_of(terminyCeny))
             ##terminyCeny.click()
             self.driver.execute_script("arguments[0].click();", terminyCeny)
+            time.sleep(3)
             try:
                 generalDriverWaitImplicit(self.driver)
                 potvrdit = self.driver.find_element_by_xpath("//*[@data-testid='popup-closeButton']")
@@ -177,6 +169,8 @@ class TestDetailHotelu_C(unittest.TestCase):
 
         self.test_passed = True
 
+        time.sleep(20)
+
     def test_detail_terminy_filtr_airport(self):
 
         def omlouvamese_paragraph(self, driver):
@@ -208,6 +202,7 @@ class TestDetailHotelu_C(unittest.TestCase):
             time.sleep(0.5)
             try:
                 generalDriverWaitImplicit(self.driver)
+                time.sleep(2)
                 potvrdit = self.driver.find_element_by_xpath("//*[@data-testid='popup-closeButton']")
                 ##wait.until(EC.visibility_of(potvrdit))
                 self.driver.execute_script("arguments[0].click();", potvrdit)
@@ -312,3 +307,5 @@ class TestDetailHotelu_C(unittest.TestCase):
                 sendEmail(msg)
                 y = y + 2
         self.test_passed = True
+
+        time.sleep(100)
