@@ -8,7 +8,7 @@ from generalized_test_functions import generalized_map_test_click_through_circle
 hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
 cenaZajezduXpath = "//*[@class='f_tile-priceDetail-content']//*[@class='f_price']"
 sorterCheapXpath = "//*[@class='f_tabBar-text' and contains(text(), 'Rendezés - a legolcsóbb elöl')]"
-sorterExpensiveXpath = "//*[@class='f_tabBar-text' and contains(text(), 'od najdrahšieho')]"
+sorterExpensiveXpath = "//*[@class='f_tabBar-text' and contains(text(), 'Rendezés - a legdrágább elöl')]"
 
 class Test_SRL_C(unittest.TestCase):
     def setUp(self):
@@ -80,7 +80,7 @@ class Test_SRL_C(unittest.TestCase):
         time.sleep(2)
 
         wait = WebDriverWait(driver, 30)
-        stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]"
+        stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All Inclusive')]"
         generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath)
 
         stravaZajezduSrlXpath = "//*[@class='f_list-item f_icon f_icon--cutlery']"

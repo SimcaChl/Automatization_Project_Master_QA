@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/KARTAGOHU Web Suite test_23-05-22 10-04-13_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/KARTAGOHU Web Suite test_23-05-22 10-04-13_log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/SRL_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/SRL_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.starter_local">
+  <component name="RunManager" selected="Python tests.Python tests for SRL_C.Test_SRL_C">
     <configuration name="starter_local" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,17 +72,17 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for SRL_C.Test_SRL_C.test_SRL_sort_cheapest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for SRL_C.Test_SRL_C" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;SRL_C.Test_SRL_C.test_SRL_sort_cheapest&quot;" />
+      <option name="_new_target" value="&quot;SRL_C.Test_SRL_C&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -117,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C" />
         <item itemvalue="Python.starter_local" />
         <item itemvalue="Python tests.Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_airport" />
         <item itemvalue="Python tests.Python tests in SRL_C.py" />
         <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_sort_expensive (1)" />
-        <item itemvalue="Python tests.Python tests for SRL_C.Test_SRL_C.test_SRL_sort_cheapest" />
       </list>
     </recent_temporary>
   </component>
