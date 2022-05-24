@@ -191,7 +191,7 @@ class TestDetailHotelu_C(unittest.TestCase):
 
         time.sleep(1)
         closeExponeaBanner(self.driver)
-        wait = WebDriverWait(self.driver, 150000)
+        wait = WebDriverWait(self.driver, 150)
 
         try:
             generalDriverWaitImplicit(self.driver)
@@ -224,28 +224,12 @@ class TestDetailHotelu_C(unittest.TestCase):
             self.driver.execute_script("arguments[0].click();", dopravaBox)
             try:
                 dopravaKosice = self.driver.find_element_by_xpath(
-                    "//*[@data-value='1837']")  ##natvrdo brno, no list shenanigans
+                    "//*[@data-value='489']")  ##natvrdo brno, no list shenanigans
                 self.driver.execute_script("arguments[0].click();", dopravaKosice)
 
                 time.sleep(0.5)
                 try:
-                    ##potvrditButtonBox =
-                    ##driver.find_element_by_xpath("//*[@class='fshr-filter-footer']
-                    ##//*[contains(text(), 'Potvrdit')]")
-                    ##potvrditButtonBox =
-                    ##driver.find_element_by_xpath("//*[@class='fshr-button
-                    ##fshr-button--commonImportance fshr-button--big
-                    ##js-filterClose']")
-                    ##potvrditButtonBox =
-                    ##driver.find_element_by_xpath("//*[@class='js-filter
-                    ##js-filter--detail fshr-filter fshr-filter--travel
-                    ##js-change-detection
-                    ##fshr-filter--active']//*[@class='fshr-filter-wrapper
-                    ##js-filter-window']//*[@class='fshr-filter-footer']//*[@class='fshr-button
-                    ##fshr-button--commonImportance fshr-button--big
-                    ##js-filterClose']")
-                    ##wait.until(EC.visibility_of(potvrditButtonBox))
-                    # potvrditButtonBox.click()
+
                     self.driver.execute_script("arguments[0].click();",
                                                dopravaBox)  ##workaround, proste klikne znova na doprava box aby se to propsalo, potvrdit
                     ##button mi nejak blbnul
@@ -295,17 +279,17 @@ class TestDetailHotelu_C(unittest.TestCase):
             sendEmail(msg)
         y = 1
         for _ in pocetZobrazenychTerminu:
-            assert odletyTerminy[y].text == "Košice"
-            if odletyTerminy[y].text == "Košice":  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
+            assert odletyTerminy[y].text == "Budapest"
+            if odletyTerminy[y].text == "Budapest":  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
                 ##je "odlet"), kazdy sudy cislo je mezera/blank space for some reason
                 ##print(odletyTerminy[y].text)
                 y = y + 2
             else:
                 url = self.driver.current_url
                 ##print(odletyTerminy[y].text)
-                msg = "na detailu jsem vyfiltroval odlet na Košice ale pry to nesedi říká python " + url
+                msg = "na detailu jsem vyfiltroval odlet na Budapest ale pry to nesedi říká python " + url
                 sendEmail(msg)
                 y = y + 2
         self.test_passed = True
 
-        time.sleep(100)
+
