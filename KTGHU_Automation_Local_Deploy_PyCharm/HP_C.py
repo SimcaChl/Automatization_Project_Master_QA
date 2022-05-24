@@ -123,7 +123,7 @@ class Test_HP_C(unittest.TestCase):
         # self.driver.execute_script("arguments[0].scrollIntoView();", HPkartaHoteluSliderElement)
         # action.move_to_element(HPkartaHoteluSliderElement).click().perform()
         self.driver.implicitly_wait(100)
-        time.sleep(6)
+        time.sleep(8)
         topNabidkaBigHotelCardElement.click()
         time.sleep(2)
         curURL = self.driver.current_url

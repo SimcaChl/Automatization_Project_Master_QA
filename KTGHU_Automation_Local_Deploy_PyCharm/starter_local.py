@@ -17,7 +17,6 @@ import HtmlTestRunner
 
 def suite_KTGHU_full():
     suite = unittest.TestSuite()
-    #suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
     suite.addTest(TestDetailHotelu_D("test_detail_D"))
     suite.addTest(TestDetailHotelu_C("test_detail_fotka"))
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_meal"))
