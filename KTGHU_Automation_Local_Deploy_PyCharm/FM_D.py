@@ -25,5 +25,27 @@ class TestFM_D(unittest.TestCase):
         acceptConsent(self.driver)
         time.sleep(1.5)
 
-        groupSearch_D(self, self.driver)
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath("//*[@class='f_teaser-item']")))
+        teaserItems = self.driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
+        try:
+            for WebElement in teaserItems:
+                ##print(len(teaserItems))
+                jdouvidet = WebElement.is_displayed()
+                ##print(jdouvidet)
+                if jdouvidet == True:
+                    ##print(jdouvidet)
+                    ##print(WebElement)
+                    pass
+
+                else:
+                    pass
+                    ##print("Else")
+                    ##emailfunciton
+
+        except NoSuchElementException:
+            pass
+            ##print("no such")
+            ##email fnction
+
+        assert teaserItems[0].is_displayed() == True
         self.test_passed = True
