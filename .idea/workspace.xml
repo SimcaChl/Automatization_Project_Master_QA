@@ -34,7 +34,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for FM_D.TestFM_D.test_FM_D">
+  <component name="RunManager" selected="Python tests.Python tests for HP_C.Test_HP_C.test_HP_slider_click_detail_hotelu">
     <configuration name="starter_local" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,20 +84,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_meal" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Automatization_Project_Master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_meal&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for FM_D.TestFM_D.test_FM_D" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,13 +98,27 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for HP_C.Test_HP_C.test_HP_slider_click_detail_hotelu" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Automatization_Project_Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;HP_C.Test_HP_C.test_HP_slider_click_detail_hotelu&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for HP_C.Test_HP_C.test_HP_slider_click_detail_hotelu" />
         <item itemvalue="Python tests.Python tests for FM_D.TestFM_D.test_FM_D" />
         <item itemvalue="Python.starter_local" />
         <item itemvalue="Python tests.Python tests for Detail_C.TestDetailHotelu_C" />
         <item itemvalue="Python tests.Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_airport" />
-        <item itemvalue="Python tests.Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_meal" />
       </list>
     </recent_temporary>
   </component>
