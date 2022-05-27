@@ -4,7 +4,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExp
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_chooseFiltr, generalized_list_string_sorter
+from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_chooseFiltr, generalized_list_string_sorter, generalized_detail_departure_check
 
 ##global
 terminyAcenyTabXpath = "//*[@id='terminyaceny-tab']"
@@ -130,38 +130,14 @@ class TestDetailHotelu_C(unittest.TestCase):
 
         time.sleep(5)
 
-        #pocetZobrazenychTerminuXpath = "//*[@class='fshr-termins-table-item-header js-toggleSlide']"
-        pocetZobrazenychTerminuXpath= "//*[@class='fshr-termin-departure-from']"
+        pocetZobrazenychTerminuXpath = "//*[@class='fshr-termins-table-item-header js-toggleSlide']"
+        odletyTerminyXpath = "//*[@class='fshr-termin-departure-from']"
+        departureToCompareTo = "brno"
 
-        try:
-            pocetZobrazenychTerminu = self.driver.find_elements_by_xpath(
-                "//*[@class='fshr-termins-table-item-header js-toggleSlide']")  ##locator jen na pocet odletu alokuje vic veci nez je actual terminu tak
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "pocetZobrazenychTerminu, filtrovani dle letu detail hotelu, mozna jen nema odlety na X, NoSuchElementException " + url
-            sendEmail(msg)
 
-        try:
-            odletyTerminy = self.driver.find_elements_by_xpath(
-                "//*[@class='fshr-termin-departure-from']")  ##prvni locator je "odlet" takze zacnu na pozici jedna, vyloopuje se to podle
-            ##poctu terminu, should be ok
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "odletyTerminy, nejsou odlety na brno, most likely not a bad thing, NoSuchElementException " + url
-            sendEmail(msg)
-        y = 1
-        for _ in pocetZobrazenychTerminu:
-            assert odletyTerminy[y].text == "Brno"
-            if odletyTerminy[y].text == "Brno":  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
-                ##je "odlet"), kazdy sudy cislo je mezera/blank space for some reason
-                print(odletyTerminy[y].text)
-                y = y + 2
-            else:
-                url = self.driver.current_url
-                print(odletyTerminy[y].text)
-                msg = "na detailu jsem vyfiltroval odlet na brno ale pry to nesedi říká python " + url
-                sendEmail(msg)
-                y = y + 2
+
+
+        generalized_detail_departure_check(self.driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath, departureToCompareTo)
 
         time.sleep(0.2)
         self.test_passed = True

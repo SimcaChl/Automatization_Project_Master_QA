@@ -115,6 +115,8 @@ def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_asser
 
     print(list_web_elements)
 
+
+
 #predisposition:
 #loaded SRL -> clicks on sorter (expensive VS cheap)
 #gets all prices
@@ -202,4 +204,33 @@ def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTab
 
     time.sleep(1)
 
+def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath, departureToCompareTo ):
+
+            try:
+                pocetZobrazenychTerminu = driver.find_elements_by_xpath(pocetZobrazenychTerminuXpath)  ##locator jen na pocet odletu alokuje vic veci nez je actual terminu tak
+            except NoSuchElementException:
+                url = driver.current_url
+                msg = "pocetZobrazenychTerminu, filtrovani dle letu detail hotelu, mozna jen nema odlety na X, NoSuchElementException " + url
+                sendEmail(msg)
+
+            try:
+                odletyTerminy = driver.find_elements_by_xpath(odletyTerminyXpath)  ##prvni locator je "odlet" takze zacnu na pozici jedna, vyloopuje se to podle
+                ##poctu terminu, should be ok
+            except NoSuchElementException:
+                url = driver.current_url
+                msg = "odletyTerminy, nejsou odlety na brno, most likely not a bad thing, NoSuchElementException " + url
+                sendEmail(msg)
+            y = 1
+            for _ in pocetZobrazenychTerminu:
+                assert odletyTerminy[y].text.lower() == departureToCompareTo
+                if odletyTerminy[y].text.lower() == departureToCompareTo:  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
+                    ##je "odlet"), kazdy sudy cislo je mezera/blank space for some reason
+                    print(odletyTerminy[y].text.lower())
+                    y = y + 2
+                else:
+                    url = driver.current_url
+                    print(odletyTerminy[y].text.lower())
+                    msg = "na detailu jsem vyfiltroval odlet na brno ale pry to nesedi říká python " + url
+                    sendEmail(msg)
+                    y = y + 2
 
