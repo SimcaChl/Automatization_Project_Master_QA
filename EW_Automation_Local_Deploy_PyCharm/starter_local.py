@@ -12,7 +12,8 @@ from EW_Automation_Local_Deploy_PyCharm.poznavacky import *
 from EW_Automation_Local_Deploy_PyCharm.SDO_D import *
 from EW_Automation_Local_Deploy_PyCharm.SRL_C import *
 from EW_Automation_Local_Deploy_PyCharm.SRL_D import *
-import HtmlTestRunner
+#import HtmlTestRunner
+import HTMLTestRunner
 from EW_Automation_Local_Deploy_PyCharm.HP_C import *
 
 def suite_EW_full():
@@ -55,7 +56,7 @@ def suite2():
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='EXIM Web Suite test', title='EXIM Web Suite test', report_name='EXIM Web Suite test',
-                            open_in_browser=True, description="EXIM Web Suite testt")
+    runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='EXIM Web Suite test', title='EXIM Web Suite test', report_name='EXIM Web Suite test',
+                            open_in_browser=True, description="EXIM Web Suite WEB1 - new suite")
     #runner.run(suite_EW_full())
-    runner.run(suite2())
+    runner.run(suite_EW_full())
