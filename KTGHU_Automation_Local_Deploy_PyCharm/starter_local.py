@@ -48,17 +48,7 @@ def suite2():
 
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
-    #outfile = open("C:\Users\KDK\Desktop\HTML_TEST_REPORTS\sest_results.html", "w")
     outfile = open("results.html", "w")
-    #runner = HTMLTestRunner.HTMLTestRunner(
-     #   stream=outfile,
-      #  title='Test Report',
-       # description='This demonstrates the report output by Prasanna.Yelsangikar.')
-
-    #runner = HtmlTestRunner(title='My unit test', open_in_browser=True)
-    #runner = HtmlTestRunner.HTMLTestRunner(output='example_dir')        ## this is ??
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='KARTAGOHU Web Suite test',
-                                           title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
+    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='KARTAGOHU Web Suite test',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
                                            open_in_browser=True, description="KARTAGOHU Web Suite testt")
-    ####  pip install HTMLTestRunner-rv
     runner.run(suite_KTGHU_full())

@@ -52,11 +52,6 @@ def suite2():
 
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
-    #outfile = open("C:\Users\KDK\Desktop\HTML_TEST_REPORTS\sest_results.html", "w")
     outfile = open("results.html", "w")
-
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER SK WEB Suite Report', report_name='FISCHER SK WEB Suite Report',
-                            open_in_browser=True, description="FISCHER SK WEB Suite Report")
-    #runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER WEB Suite Report', report_name='FISCHER WEB Suite Report', open_in_browser=True, description="FISCHER WEB Suite Report")
-    ##at office PC gotta be set up like that (???)
-    runner.run(suite())
+    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER SK WEB Suite Report', report_name='FISCHER SK WEB Suite Report',                                           open_in_browser=True, description="FISCHER SK WEB Suite Report")
+    runner.run(suite_FWSK_full())

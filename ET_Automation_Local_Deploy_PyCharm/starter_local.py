@@ -41,15 +41,7 @@ def suite_ET_full():
 
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
-    #outfile = open("C:\Users\KDK\Desktop\HTML_TEST_REPORTS\sest_results.html", "w")
     outfile = open("results.html", "w")
-    #runner = HTMLTestRunner.HTMLTestRunner(
-     #   stream=outfile,
-      #  title='Test Report',
-       # description='This demonstrates the report output by Prasanna.Yelsangikar.')
-
-    #runner = HtmlTestRunner(title='My unit test', open_in_browser=True)
-    #runner = HtmlTestRunner.HTMLTestRunner(output='example_dir')        ## this is ??
     runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='ETRAVEL-Web Suite test', title='ETRAVEL-Web Suite test', report_name='ETRAVEL-Web Suite test',
                             open_in_browser=True, description="ETRAVEL-Web Suite test")
 
