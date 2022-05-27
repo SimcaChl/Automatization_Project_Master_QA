@@ -57,6 +57,6 @@ if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='EXIM Web Suite test', title='EXIM Web Suite test', report_name='EXIM Web Suite test',
-                            open_in_browser=True, description="EXIM Web Suite WEB1 - new suite")
+                            open_in_browser=True, description="EXIM Web Suite WEB11 - new suite")
     #runner.run(suite_EW_full())
     runner.run(suite_EW_full())

@@ -46,7 +46,7 @@ def suite_FW_full():
     suite.addTest(TestSRL_D('test_SRL_D'))
     suite.addTest(Test_HP_C('test_HP_zlutak_to_SRL'))
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch'))
-    suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
+    #suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
     suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
     return suite
 
@@ -59,6 +59,6 @@ if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER WEB Suite Report', report_name='FISCHER WEB Suite Report',
-                            open_in_browser=True, description="FISCHER WEB Suite Report- WEB1 - new suite")
+                            open_in_browser=True, description="FISCHER WEB Suite Report- WEB3 - new suite")
     runner.run(suite_FW_full())
     #runner.run(suite_map())
