@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
-    </list>
+    <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
