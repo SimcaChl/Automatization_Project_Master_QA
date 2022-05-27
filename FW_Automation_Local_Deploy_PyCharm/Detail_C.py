@@ -4,7 +4,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExp
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-
+from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_chooseFiltr
 
 class TestDetailHotelu_C(unittest.TestCase):
     def setUp(self):
@@ -72,69 +72,15 @@ class TestDetailHotelu_C(unittest.TestCase):
         self.driver.maximize_window()
         time.sleep(1)
         acceptConsent(self.driver)
-        try:
-            terminyCeny = self.driver.find_element_by_xpath("//*[@id='terminyaceny-tab']")
-            wait.until(EC.visibility_of(terminyCeny))
-            ##terminyCeny.click()
-            self.driver.execute_script("arguments[0].click();", terminyCeny)
-            try:
-                time.sleep(0.3)
-                generalDriverWaitImplicit(self.driver)
-                potvrdit = self.driver.find_element_by_xpath("//*[@data-testid='popup-closeButton']")
 
-                self.driver.execute_script("arguments[0].click();", potvrdit)
+        terminyAcenyTabXpath = "//*[@id='terminyaceny-tab']"
+        potvrditPopupXpath = "//*[@data-testid='popup-closeButton']"
+        #stravovaniBoxXpath = "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']"
+        stravovaniBoxXpath= "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']"
+        valueToFilterXpath = "//*[@id='filtr-stravy-detail']//*[contains(text(),'All inclusive')]"
 
-            except NoSuchElementException:
-                url = self.driver.current_url
-                msg = "Problem prepnuti na terminy a ceny na detailu hotelu,potvrdit,  NoSuchElementException " + url
-                sendEmail(msg)
-
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "Problem prepnuti na terminy a ceny na detailu hotelu, NoSuchElementException " + url
-            sendEmail(msg)
-
-        try:
-            stravovaniBox = self.driver.find_element_by_xpath(
-                "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']")
-            wait.until(EC.visibility_of(stravovaniBox))
-            self.driver.execute_script("arguments[0].click();", stravovaniBox)
-            try:
-                # allInclusiveBox =
-                # driver.find_element_by_xpath("//*[contains(text(), 'All
-                # inclusive')]")
-                # wait.until(EC.visibility_of(allInclusiveBox))
-                ##allInclusiveBox.click()
-                stravyBox = self.driver.find_elements_by_xpath("//*[@name='detailFilterCatering']")
-
-                self.driver.execute_script("arguments[0].click();", stravyBox[1])
-
-                try:
-                    ##potvrditButtonBox =
-                    ##driver.find_element_by_xpath("//*[@class='fshr-filter-footer']
-                    ##//*[contains(text(), 'Potvrdit')]")
-
-                    # potvrditButtonBox.click()
-                    self.driver.execute_script("arguments[0].click();",
-                                               stravovaniBox)  ##workaround, klikni na box to confirm the choice
-
-                except NoSuchElementException:
-                    url = self.driver.current_url
-                    msg = "stravaBox, potvrzeni stravy na detailu hotelu problém, NoSuchElementException " + url
-                    sendEmail(msg)
-
-            except NoSuchElementException:
-                url = self.driver.current_url
-                msg = "allInclusiveBox, zvolení stravy na detailu hotelu problém, NoSuchElementException " + url
-                sendEmail(msg)
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "stravovaniBox, otevření filtru stravování detail hotelu, NoSuchElementException " + url
-            sendEmail(msg)
-
-        #omlouvamese_paragraph(self)
+        generalized_Detail_terminyAceny_potvrdit_chooseFiltr(self.driver, terminyAcenyTabXpath, potvrditPopupXpath,
+                                                             stravovaniBoxXpath, valueToFilterXpath)
 
         zvolenaStravaVboxu = self.driver.find_element_by_xpath("//*[@class='js-subvalue f_text--highlighted']")
         zvolenaStravaVboxuString = zvolenaStravaVboxu.text

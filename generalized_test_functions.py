@@ -98,7 +98,6 @@ def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_asser
 #predisposition:
 #loaded SRL -> clicks on sorter (expensive VS cheap)
 #gets all prices
-
 ##typeOfSort = cheap or expensive
 
 def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZajezduXpath,  typeOfSort):
@@ -151,3 +150,36 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
         print(cenaZajezduAllListSorted)
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
+
+
+def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTabXpath, potvrditPopupXpath, boxFiltrXpath, valueToFilterXpath):
+
+
+    terminyAcenyTabElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
+    driver.execute_script("arguments[0].click();", terminyAcenyTabElement)
+
+
+    time.sleep(1.5)
+
+    potvrditPopupElement = driver.find_element_by_xpath(potvrditPopupXpath)
+    driver.execute_script("arguments[0].click();", potvrditPopupElement)
+
+    time.sleep(1)
+
+    boxElement = driver.find_element_by_xpath(boxFiltrXpath)
+    driver.execute_script("arguments[0].click();", boxElement)
+    time.sleep(10)
+
+    valueToFilterElement = driver.find_element_by_xpath(valueToFilterXpath)
+    driver.execute_script("arguments[0].scrollIntoView();", valueToFilterElement)
+
+    time.sleep(2)
+
+    valueToFilterElement.click()
+    time.sleep(2)
+
+    driver.execute_script("arguments[0].click();", boxElement)
+
+    time.sleep(100)
+
+
