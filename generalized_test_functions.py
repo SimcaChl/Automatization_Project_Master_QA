@@ -168,18 +168,18 @@ def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTab
 
     boxElement = driver.find_element_by_xpath(boxFiltrXpath)
     driver.execute_script("arguments[0].click();", boxElement)
-    time.sleep(10)
+    time.sleep(1.5)
 
     valueToFilterElement = driver.find_element_by_xpath(valueToFilterXpath)
     driver.execute_script("arguments[0].scrollIntoView();", valueToFilterElement)
 
-    time.sleep(2)
+    time.sleep(0.5)
 
     valueToFilterElement.click()
-    time.sleep(2)
+    time.sleep(0.5)
 
     driver.execute_script("arguments[0].click();", boxElement)
 
-    time.sleep(100)
+    time.sleep(1)
 
 
