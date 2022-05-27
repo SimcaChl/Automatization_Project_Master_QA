@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm/Detail_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm/Detail_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/HP_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/HP_C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/poznavacky.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/poznavacky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +40,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.starter_local">
+  <component name="RunManager" selected="Python tests.Python tests in SRL_D.py">
     <configuration name="starter_local (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,55 +83,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Detail_C.TestDetailHotelu_C" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for HP_C.Test_HP_C.test_HP_nejlepsi_nabidky_vypis_btn_switch" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Detail_C.TestDetailHotelu_C&quot;" />
+      <option name="_new_target" value="&quot;HP_C.Test_HP_C.test_HP_nejlepsi_nabidky_vypis_btn_switch&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_airport" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for poznavacky.TestPoznavacky_D.test_poznavacky_zazitky_D" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_airport&quot;" />
+      <option name="_new_target" value="&quot;poznavacky.TestPoznavacky_D.test_poznavacky_zazitky_D&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_meal (1)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in SRL_D.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FWSK_Automation_Local_Deploy_PyCharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_meal&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/SRL_D.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in SRL_D.py" />
+        <item itemvalue="Python tests.Python tests for poznavacky.TestPoznavacky_D.test_poznavacky_zazitky_D" />
+        <item itemvalue="Python tests.Python tests for HP_C.Test_HP_C.test_HP_nejlepsi_nabidky_vypis_btn_switch" />
         <item itemvalue="Python.starter_local" />
         <item itemvalue="Python.starter_local (1)" />
-        <item itemvalue="Python tests.Python tests for Detail_C.TestDetailHotelu_C" />
-        <item itemvalue="Python tests.Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_meal (1)" />
-        <item itemvalue="Python tests.Python tests for Detail_C.TestDetailHotelu_C.test_detail_terminy_filtr_airport" />
       </list>
     </recent_temporary>
   </component>

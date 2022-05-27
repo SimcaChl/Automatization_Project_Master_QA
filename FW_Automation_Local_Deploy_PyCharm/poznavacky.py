@@ -66,9 +66,10 @@ class TestPoznavacky_D(unittest.TestCase):
         self.test_passed = True
 
     def test_poznavacky_zazitky_D(self):
+        self.driver.maximize_window()
         self.driver.get(URL_poznavacky_zazitky)
 
         acceptConsent(self.driver)
-        self.driver.maximize_window()
+        time.sleep(3)
         poznavacky_check_D(self, self.driver)
         self.test_passed = True

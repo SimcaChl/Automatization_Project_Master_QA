@@ -75,7 +75,7 @@ class Test_HP_C(unittest.TestCase):
 
     def test_HP_nejlepsi_nabidky_vypis_btn_switch(self):
         self.driver.get(URL)
-        wait = WebDriverWait(self.driver, 300)
+        wait = WebDriverWait(self.driver, 500)
         self.driver.maximize_window()
         time.sleep(
             0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
