@@ -43,12 +43,13 @@ def suite_KTGHU_full():
 
 def suite2():
     suite = unittest.TestSuite()
-    suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
+    suite.addTest(TestDetailHotelu_D("test_detail_D"))
     return suite
 
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='KARTAGOHU Web Suite test',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
+    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
                                            open_in_browser=True, description="KARTAGOHU Web Suite testt")
     runner.run(suite_KTGHU_full())
+    #runner.run(suite2())
