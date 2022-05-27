@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/groupsearch_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/groupsearch_D.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/pobocky.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/pobocky.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/poznavacky.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/poznavacky.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
+=======
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +44,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager" selected="Python tests.Python tests in groupsearch_D.py">
     <configuration name="Python tests for poznavacky.TestPoznavacky_D.test_poznavacky_zazitky_D" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="Python.starter_local (1)">
+    <configuration name="starter_local (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+>>>>>>> Stashed changes
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,11 +124,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< Updated upstream
         <item itemvalue="Python tests.Python tests in groupsearch_D.py" />
         <item itemvalue="Python tests.Python tests in pobocky.py" />
         <item itemvalue="Python tests.pytest for pobocky.TestPobocky_D.test_pobocky_D" />
         <item itemvalue="Python tests.Python tests in SRL_D.py" />
         <item itemvalue="Python tests.Python tests for poznavacky.TestPoznavacky_D.test_poznavacky_zazitky_D" />
+=======
+        <item itemvalue="Python.starter_local (1)" />
+        <item itemvalue="Python tests.Python tests in SRL_D.py" />
+        <item itemvalue="Python tests.Python tests for poznavacky.TestPoznavacky_D.test_poznavacky_zazitky_D" />
+        <item itemvalue="Python tests.Python tests for HP_C.Test_HP_C.test_HP_nejlepsi_nabidky_vypis_btn_switch" />
+        <item itemvalue="Python.starter_local" />
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
