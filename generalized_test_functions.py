@@ -68,18 +68,38 @@ def generalized_SRL_choose_meal_filter_FW_like(driver, stravaMenuXpath, stravaMe
     potvrditMenu.click()
 
 ##variable_to_assert_to == .lower should be on default
-def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_assert_to):
+def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_assert_to, plusPozice=None, list_web_element_starter=None):
     time.sleep(2)
+    if plusPozice==None:
+        plusPozice=1
+
+    if plusPozice==2:
+        plusPozice = 2
+
+    else:
+        plusPozice=1
+
+    if list_web_element_starter==None:
+        list_web_elements_Position = 0
+
+    if list_web_element_starter==1:
+        list_web_elements_Position = 1
+
+    else:
+        list_web_elements_Position = 0
+
+
+    print(list_web_elements_Position)
     web_elements = driver.find_elements_by_xpath(web_elements_Xpath)
 
-    list_web_elements_Position = 0
+
     list_web_elements = []
 
     for _ in web_elements:
         list_web_elements_String = web_elements[list_web_elements_Position].text.lower()
         list_web_elements.append(list_web_elements_String)
 
-        list_web_elements_Position = list_web_elements_Position + 1
+        list_web_elements_Position = list_web_elements_Position + plusPozice
 
     list_web_elements_Position = 0
 
@@ -87,11 +107,11 @@ def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_asser
         assert variable_to_assert_to in list_web_elements[list_web_elements_Position]
         if variable_to_assert_to in list_web_elements[list_web_elements_Position]:
             print("ok")
-            list_web_elements_Position = list_web_elements_Position + 1
+            list_web_elements_Position = list_web_elements_Position + plusPozice
 
         else:
-            print("stravy nesedi k filtru")
-            list_web_elements_Position = list_web_elements_Position + 1
+            print("výsledky nesedi k filtru")
+            list_web_elements_Position = list_web_elements_Position + plusPozice
 
     print(list_web_elements)
 
