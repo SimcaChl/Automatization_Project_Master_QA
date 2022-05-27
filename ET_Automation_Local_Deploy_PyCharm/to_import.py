@@ -2,6 +2,9 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
 from email.mime.text import MIMEText
+
+from webdriver_manager.chrome import ChromeDriverManager
+
 from ET_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass
 from selenium import webdriver
 from ET_Automation_Local_Deploy_PyCharm.to_import_secret import comandExecutor
@@ -31,10 +34,8 @@ desired_cap = {
 
 }
 def setUp(self):
-  self.driver = webdriver.Remote(
-      command_executor=comandExecutor,
-      desired_capabilities=desired_cap)
-
+ # self.driver = webdriver.Remote(command_executor=comandExecutor,desired_capabilities=desired_cap)
+  self.driver = webdriver.Chrome(ChromeDriverManager().install())
   self.test_passed = False
 
 
