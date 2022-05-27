@@ -12,10 +12,10 @@ class TestPobocky_D(unittest.TestCase):
 
 
     def test_pobocky_D(self):
-
+        self.driver.maximize_window()
         self.driver.get(URL_pobocky)
         acceptConsent(self.driver)
-        self.driver.maximize_window()
+
         time.sleep(2)
         mapa = self.driver.find_element_by_xpath("//*[@class='leaflet-pane leaflet-tile-pane']")    ## jen jeden element, no need to call find_elementS
 
@@ -36,6 +36,7 @@ class TestPobocky_D(unittest.TestCase):
 
 
         generalDriverWaitImplicit(self.driver)
+        time.sleep(3.5)
         basicInfo = self.driver.find_elements_by_xpath("//*[@class='f_branch-basicInfo']")
         a=0
         assert basicInfo[0].is_displayed() == True

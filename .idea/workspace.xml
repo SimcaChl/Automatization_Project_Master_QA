@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/HP_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/HP_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/poznavacky.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/poznavacky.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/groupsearch_D.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/groupsearch_D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/pobocky.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/pobocky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/poznavacky.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/poznavacky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/to_import.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,63 +41,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in SRL_D.py">
-    <configuration name="starter_local (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Automatization_Project_Master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm/starter_local.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="starter_local" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Automatization_Project_Master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/starter_local.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for HP_C.Test_HP_C.test_HP_nejlepsi_nabidky_vypis_btn_switch" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Automatization_Project_Master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FW_Automation_Local_Deploy_PyCharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;HP_C.Test_HP_C.test_HP_nejlepsi_nabidky_vypis_btn_switch&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests in groupsearch_D.py">
     <configuration name="Python tests for poznavacky.TestPoznavacky_D.test_poznavacky_zazitky_D" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Automatization_Project_Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,13 +70,57 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in groupsearch_D.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Automatization_Project_Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/groupsearch_D.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in pobocky.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Automatization_Project_Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm/pobocky.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for pobocky.TestPobocky_D.test_pobocky_D" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Automatization_Project_Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\KDK\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EW_Automation_Local_Deploy_PyCharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pobocky.TestPobocky_D.test_pobocky_D&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in groupsearch_D.py" />
+        <item itemvalue="Python tests.Python tests in pobocky.py" />
+        <item itemvalue="Python tests.pytest for pobocky.TestPobocky_D.test_pobocky_D" />
         <item itemvalue="Python tests.Python tests in SRL_D.py" />
         <item itemvalue="Python tests.Python tests for poznavacky.TestPoznavacky_D.test_poznavacky_zazitky_D" />
-        <item itemvalue="Python tests.Python tests for HP_C.Test_HP_C.test_HP_nejlepsi_nabidky_vypis_btn_switch" />
-        <item itemvalue="Python.starter_local" />
-        <item itemvalue="Python.starter_local (1)" />
       </list>
     </recent_temporary>
   </component>
