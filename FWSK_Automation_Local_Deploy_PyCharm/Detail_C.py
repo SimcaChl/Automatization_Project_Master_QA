@@ -17,6 +17,7 @@ stravaVterminechXpath = "//*[@class='fshr-termin-catering js-tooltip js-tooltip-
 #airport filter
 dopravaBoxXpath = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
 dopravaKosiceXpath = "//*[@data-value='1837']"
+testss=0
 
 class TestDetailHotelu_C(unittest.TestCase):
     def setUp(self):
