@@ -4,7 +4,7 @@ import unittest
 
 
 def poznavacky_check_D(self, driver):
-    self.driver.maximize_window()
+
     generalDriverWaitImplicit(self.driver)
     generalDriverWaitImplicit(self.driver)
 
@@ -48,18 +48,21 @@ class TestPoznavacky_D(unittest.TestCase):
         tearDown(self)
 
     def test_poznavacky_okruzni_D(self):
+        self.driver.maximize_window()
         self.driver.get(URL_poznavacky)
         acceptConsent(self.driver)
         poznavacky_check_D(self, self.driver)
         self.test_passed = True
 
     def test_poznavacky_vikendy_D(self):
+        self.driver.maximize_window()
         self.driver.get(URL_poznavacky_vikendy)
         acceptConsent(self.driver)
         poznavacky_check_D(self, self.driver)
         self.test_passed = True
 
     def test_poznavacky_rodiny_D(self):
+        self.driver.maximize_window()
         self.driver.get(URL_poznavacky_rodiny)
         acceptConsent(self.driver)
         poznavacky_check_D(self, self.driver)
