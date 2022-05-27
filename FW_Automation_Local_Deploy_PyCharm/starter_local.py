@@ -60,4 +60,5 @@ if __name__ == '__main__':
     outfile = open("results.html", "w")
     runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER WEB Suite Report', report_name='FISCHER WEB Suite Report',
                             open_in_browser=True, description="FISCHER WEB Suite Report")
-    runner.run(suite_FW_full())
+    #runner.run(suite_FW_full())
+    runner.run(suite_map())
