@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0478eae3-f7a5-4274-8ff3-8c9c171a7679" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/starter_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/starter_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/.idea/Automation_Local_Deploy_PyCharm.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/KARTAGOHU Web Suite test_23-05-22 10-04-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/KARTAGOHU Web Suite test_23-05-22 10-04-13_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/KARTAGOHU Web Suite test_24-05-22 08-13-29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/KARTAGOHU Web Suite test_24-05-22 08-13-29_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/KARTAGOHU Web Suite test_24-05-22 09-29-00.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/KARTAGOHU Web Suite test_24-05-22 09-29-00_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/KARTAGOHU Web Suite test/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/example_dir/report_02-03-22 12-22-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/example_dir/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/example_dir/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGHU_Automation_Local_Deploy_PyCharm/results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/.idea/Automation_Local_Deploy_PyCharm.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/example_dir/report_02-03-22 12-22-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/example_dir/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KTGSK_Automation_Local_Deploy_PyCharm/example_dir/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
