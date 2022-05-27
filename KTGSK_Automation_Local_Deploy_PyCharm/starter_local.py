@@ -59,4 +59,5 @@ if __name__ == '__main__':
     outfile = open("results.html", "w")
     runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='KARTAGOSK Web Suite test', title='KARTAGOSK Web Suite test', report_name='KARTAGOSK Web Suite test',
                             open_in_browser=True, description="KARTAGOSK Web Suite testt")
-    runner.run(suite_KTGSK_full())
+    #runner.run(suite_KTGSK_full())
+    runner.run(suite2())
