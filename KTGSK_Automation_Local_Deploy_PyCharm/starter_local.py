@@ -16,7 +16,7 @@ from KTGSK_Automation_Local_Deploy_PyCharm.HP_C import *
 
 #import HTMLTestRunner
 import HtmlTestRunner
-
+import HTMLTestRunner   as   HtmlTestRunner
 def suite_KTGSK_full():
     suite = unittest.TestSuite()
     suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
@@ -58,6 +58,6 @@ if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='KARTAGOSK Web Suite test', report_name='KARTAGOSK Web Suite test',
-                            open_in_browser=True, description="KARTAGOSK Web Suite testt")
-    #runner.run(suite_KTGSK_full())
-    runner.run(suite2())
+                            open_in_browser=True, description="KARTAGOSK Web Suite public www")
+    runner.run(suite_KTGSK_full())
+    #runner.run(suite2())
