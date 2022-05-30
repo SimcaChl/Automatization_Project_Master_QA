@@ -12,8 +12,8 @@ from KTGHU_Automation_Local_Deploy_PyCharm.SRL_C import *
 from KTGHU_Automation_Local_Deploy_PyCharm.SRL_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.HP_C import *
 
-#import HTMLTestRunner
-import HtmlTestRunner
+import HTMLTestRunner
+#import HtmlTestRunner
 
 def suite_KTGHU_full():
     suite = unittest.TestSuite()
@@ -49,7 +49,7 @@ def suite2():
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
-                                           open_in_browser=True, description="KARTAGOHU Web Suite testt")
+    runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
+                                           open_in_browser=True, description="KARTAGOHU Web Suite- STG")
     runner.run(suite_KTGHU_full())
     #runner.run(suite2())

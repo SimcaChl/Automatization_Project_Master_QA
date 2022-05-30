@@ -5,8 +5,8 @@ from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.opera import OperaDriverManager
 
-URL = "https://kartagohu.web13.dtweb.cz/"
-URL = "https://www.kartagotours.hu/"
+URL = "https://kartagohu.stg.dtweb.cz/"
+#URL = "https://www.kartagotours.hu/"
 URL_pobocky = URL+"irodaink"
 #URL_detail = URL+"spanielsko/costa-almeria/roquetas-de-mar/ar-almerimar?KEY=2207812211&DS=32768&GIATA=0&D=63350|211764&HID=142164&MT=2&RT=15&NN=7&RD=2022-08-01&DD=2022-07-25&DP=483&TO=483|1837|2933|3437&MNN=7&TT=1&PID=359709&DPR=KARTAGO-SK&TTM=1&DF=2022-07-25|2022-08-25&ERM=0&NNM=7|8|9|10|11|12|13&ac1=2&kc1=1&ka1=6&ic1=0#/prehled"
 #URL_detail = URL+"torokorszag/torok-riviera/tekirova/pirates-beach?KEY=2263569953&DS=32768&GIATA=4818&D=64089|64091|64419|64420|64425|63324|63402|63471|63448|211801|211814|63260|63281|63311|63314|63316|63319|63333|63362|63373|63390|63409|63442|63431|64087|64094|64095|64090|64086|64092|63288&HID=8542&MT=-1&RT=15&NN=7&DF=2022-10-01|2022-10-16&RD=2022-10-14&DD=2022-10-07&AC1=2&KC1=0&IC1=0&DP=489&TO=489|4371&TOM=489|4371&MNN=7&NNM=7&TT=1&TTM=1&PID=28962&DPR=KARTAGO-HU"
