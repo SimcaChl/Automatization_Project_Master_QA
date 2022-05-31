@@ -9,6 +9,7 @@ from generalized_banners_compare_to_deploy_web import banner_check_public_prod_V
 
 URL_deploying_web = URL
 URL_prod_public = "https://www.eximtours.cz/"
+banneryXpath_EW = "//*[@class='f_teaser-item js-priceUpdated']/a"
 
 HPvyhledatZajezdyButtonXpath = "//*[contains(text(), 'Vyhledat zájezdy')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam se chystáte?')]"
@@ -21,7 +22,7 @@ HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Rodina 2+1')]"
 HPzlutakPotvrditAvyhledatXpath = "//*[@class='f_button f_button--common'] //*[contains(text(), 'Potvrdit a vyhledat')]"
 HPnejlepsiZajezdySwitchButtonXpath = "//*[@class='f_switch-button']"
 HPnejlepsiZajezdyVypisXpath = "//*[@class='f_tourTable-tour']"
-banneryXpath_EW = "//*[@class='f_teaser-item js-priceUpdated']/a"
+
 
 
 class Test_HP_C(unittest.TestCase):

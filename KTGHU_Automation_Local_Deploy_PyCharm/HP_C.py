@@ -6,7 +6,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from KTGHU_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
 import time
 from KTGHU_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
+from generalized_banners_compare_to_deploy_web import banner_check_public_prod_VS_deployed_web
 
+URL_deploying_web = URL
+URL_prod_public = "https://www.kartagotours.hu/"
+banneryXpath_EW = "//*[@class='f_teaser-item js-priceUpdated']/a"
 
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--highlighted']//*[contains(text(), 'Ajánlatok keresése')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Hova?')]"
@@ -66,7 +70,6 @@ class Test_HP_C(unittest.TestCase):
         SRL_D(self, self.driver)
 
         self.test_passed = True
-
 
     def test_HP_nejlepsi_nabidky_vypis_btn_switch(self):
         self.driver.get(URL)
@@ -129,5 +132,10 @@ class Test_HP_C(unittest.TestCase):
         curURL = self.driver.current_url
 
         assert curURL != URL
+
+        self.test_passed = True
+
+    def test_HP_bannery_check(self):
+        banner_check_public_prod_VS_deployed_web(self.driver, URL_prod_public, URL_deploying_web, banneryXpath_EW)
 
         self.test_passed = True
