@@ -6,7 +6,7 @@ from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 import unittest
 URL_prod_public = "https://www.fischer.cz/"
 
-URL_deploying_web = "https://www.fischer.cz/"
+URL_deploying_web = "https://fischer.web3.dtweb.cz/"
 SRL_H1textPocetNalezenychZajezduXpath = "//h1"
 
 
@@ -65,10 +65,10 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
         time.sleep(0.5)
 
 
-    print("LIST FROM PUBLIC WWW PRODUCTION ")
+    print("LIST FROM PUBLIC WWW PRODUCTION " + URL_prod_public)
     print( pocetNalezenychZajezduElementList_PROD)
     print("------------------------------------------")
-    print("LIST FROM DEPLOYING WEB ")
+    print("LIST FROM DEPLOYING WEB " + URL_deploying_web)
     print(pocetNalezenychZajezduElementList_DEPLOY)
 
     assert pocetNalezenychZajezduElementList_DEPLOY == pocetNalezenychZajezduElementList_PROD
