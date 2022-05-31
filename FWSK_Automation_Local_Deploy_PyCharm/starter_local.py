@@ -13,8 +13,9 @@ from FWSK_Automation_Local_Deploy_PyCharm.poznavacky import *
 from FWSK_Automation_Local_Deploy_PyCharm.SDO_D import *
 from FWSK_Automation_Local_Deploy_PyCharm.SRL_C import *
 from FWSK_Automation_Local_Deploy_PyCharm.SRL_D import *
+from FWSK_Automation_Local_Deploy_PyCharm.HP_C import *
 import HtmlTestRunner
-#import HTMLTestRunner      ##at office PC gotta be set up like that (???)
+import HTMLTestRunner   as   HtmlTestRunner  ##at office PC gotta be set up like that (???)
 
 def suite_FWSK_full():
     suite = unittest.TestSuite()
@@ -43,15 +44,21 @@ def suite_FWSK_full():
     suite.addTest(Test_SRL_C('test_SRL_filtr_strava'))
     suite.addTest(Test_SRL_C('test_srl_C'))
     suite.addTest(TestSRL_D('test_SRL_D'))
+    suite.addTest(Test_HP_C('test_HP_zlutak_to_SRL'))
+    suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch'))
+    # suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
+    suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
+    suite.addTest(Test_HP_C('test_HP_bannery_check'))
     return suite
 
 def suite2():
     suite = unittest.TestSuite()
-    suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
+    suite.addTest(Test_HP_C('test_HP_bannery_check'))
     return suite
 
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER SK WEB Suite Report', report_name='FISCHER SK WEB Suite Report',                                           open_in_browser=True, description="FISCHER SK WEB Suite Report")
-    runner.run(suite_FWSK_full())
+    runner.run(suite2())
+    #runner.run(suite_FWSK_full())

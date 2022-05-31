@@ -1,4 +1,3 @@
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from FWSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL, setUp, tearDown
 import unittest
@@ -6,6 +5,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from FWSK_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
 from FWSK_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
 import time
+from generalized_banners_compare_to_deploy_web import banner_check_public_prod_VS_deployed_web
+
+banneryXpath_FWSK = "//*[@class='f_teaser-item js-priceLoading']/a"
+URL_prod_public = "https://www.fischer.sk/"
+URL_deploying_web = URL
 
 HPvyhledatZajezdyButtonXpath = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[@class='f_filterMainSearch-content']/div[@class='f_filterMainSearch-content-item'][5]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam pojedete?')]"
@@ -59,5 +63,10 @@ class Test_HP_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
         time.sleep(1)
         SRL_D(self, self.driver)
+
+        self.test_passed = True
+
+    def test_HP_bannery_check(self):
+        banner_check_public_prod_VS_deployed_web(self.driver, URL_prod_public, URL_deploying_web, banneryXpath_FWSK)
 
         self.test_passed = True
