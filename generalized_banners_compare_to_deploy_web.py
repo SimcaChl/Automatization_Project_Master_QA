@@ -4,20 +4,28 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 import unittest
-URL_prod_public = "https://www.fischer.cz/"
+#URL_prod_public = "https://www.fischer.cz/"
+#URL_deploying_web = "https://fischer.web1.dtweb.cz/"
 
-URL_deploying_web = "https://fischer.web3.dtweb.cz/"
-SRL_H1textPocetNalezenychZajezduXpath = "//h1"
+URL_prod_public = "https://www.eximtours.cz/"
+URL_deploying_web = "https://exim.web12.dtweb.cz/"
+
+banneryXpath_FW = "//*[@class='f_teaser-item']/a"
+banneryXpath_EW = "//*[@class='f_teaser-item js-priceUpdated']/a"
+#SRL_H1textPocetNalezenychZajezduXpath = "//h1"
 
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
-def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploying_web):
+def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploying_web, banneryXpath):
+    SRL_H1textPocetNalezenychZajezduXpath = "//h1"
+
+
     driver.maximize_window()
     driver.get(URL_prod_public)
     time.sleep(2)
     acceptConsent(driver)
 
-    banneryAll = driver.find_elements_by_xpath("//*[@class='f_teaser-item']/a")
+    banneryAll = driver.find_elements_by_xpath(banneryXpath)
 
     x=0
     pocetNalezenychZajezduElementList_PROD = []
@@ -49,7 +57,7 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
     x = 0
     pocetNalezenychZajezduElementList_DEPLOY = []
     bannerLinksList_DEPLOY = []
-    banneryAll = driver.find_elements_by_xpath("//*[@class='f_teaser-item']/a")
+    banneryAll = driver.find_elements_by_xpath(banneryXpath)
     for _ in banneryAll:
         bannerHref = banneryAll[x].get_attribute("href")
         #print(bannerHref)
@@ -85,7 +93,7 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
         driver.switch_to.window(driver.window_handles[0])
         time.sleep(0.5)
 
-
+    print("------------------------------------------")
     print("LIST FROM PUBLIC WWW PRODUCTION " + URL_prod_public)
     print( pocetNalezenychZajezduElementList_PROD)
     print("------------------------------------------")
@@ -93,7 +101,10 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
     print(pocetNalezenychZajezduElementList_DEPLOY)
 
     assert pocetNalezenychZajezduElementList_DEPLOY == pocetNalezenychZajezduElementList_PROD
+    print("------------------------------------------")
+    print("Banners are GOOD, TEST OK " + URL_prod_public + " VS " + URL_deploying_web )
 
     driver.quit()
 
-banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploying_web)
+
+#banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploying_web, banneryXpath_EW)

@@ -50,7 +50,8 @@ def suite_EW_full():
 
 def suite2():
     suite = unittest.TestSuite()
-    suite.addTest(TestCovidInfo_D('test_covidInfo_D'))
+    suite.addTest(Test_HP_C('test_HP_bannery_check'))
+
     return suite
 
 if __name__ == '__main__':
@@ -58,5 +59,5 @@ if __name__ == '__main__':
     outfile = open("results.html", "w")
     runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='EXIM Web Suite test', title='EXIM Web Suite test', report_name='EXIM Web Suite test',
                             open_in_browser=True, description="EXIM Web Suite PUBLIC - new suite")
+    runner.run(suite2())
     #runner.run(suite_EW_full())
-    runner.run(suite_EW_full())
