@@ -8,12 +8,15 @@ from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
 from FW_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
 import time
 from selenium.webdriver.common.action_chains import ActionChains
+from generalized_banners_compare_to_deploy_web import banner_check_public_prod_VS_deployed_web
 
+banneryXpath_FW = "//*[@class='f_teaser-item']/a"
+URL_prod_public = "https://www.fischer.cz/"
+URL_deploying_web = URL
 
 HPvyhledatZajezdyButtonXpath = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[@class='f_filterMainSearch-content']/div[@class='f_filterMainSearch-content-item'][5]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam pojedete?')]"
 HPzlutakReckoDestinaceXpath = "//*[@class='f_input-content'] //*[contains(text(), 'Řecko')]"
-#HPzlutakReckoDestinaceXpath = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header f_set--filterOpened']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[2]/span/div[@class='f_filterHolder f_set--active']/div[@class='f_filterHolder-content']/div[@class='f_filter f_filter--destination']/div[@class='f_customScroll js_destinationsContent']/div[1]/div[@class='f_column']/div[@class='f_column-item'][1]/div[@class='f_list']/div[@class='f_list-item'][1]/div[@class='f_input-wrapper']/label[@class='f_input f_input--checkbox']/span[@class='f_input-content']"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovat')]"
 HPzlutakPokracovatButtonXpathStep2 = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header f_set--filterOpened']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[2]/span/div[@class='f_filterHolder f_set--active']/div[@class='f_filterHolder-footer js_filter-footer']/div[@class='f_filterHolder-footer-item'][2]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
 HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Letní prázdniny 2022')]"
@@ -148,4 +151,7 @@ class Test_HP_C(unittest.TestCase):
 
         self.test_passed = True
 
+    def test_HP_bannery_check(self):
+        banner_check_public_prod_VS_deployed_web(self.driver, URL_prod_public, URL_deploying_web, banneryXpath_FW)
 
+        self.test_passed = True

@@ -3,19 +3,16 @@ from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
-import unittest
 #URL_prod_public = "https://www.fischer.cz/"
 #URL_deploying_web = "https://fischer.web1.dtweb.cz/"
 
-URL_prod_public = "https://www.eximtours.cz/"
-URL_deploying_web = "https://exim.web12.dtweb.cz/"
+#URL_prod_public = "https://www.eximtours.cz/"
+#URL_deploying_web = "https://exim.web12.dtweb.cz/"
 
-banneryXpath_FW = "//*[@class='f_teaser-item']/a"
-banneryXpath_EW = "//*[@class='f_teaser-item js-priceUpdated']/a"
 #SRL_H1textPocetNalezenychZajezduXpath = "//h1"
 
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+#driver = webdriver.Chrome(ChromeDriverManager().install())
 def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploying_web, banneryXpath):
     SRL_H1textPocetNalezenychZajezduXpath = "//h1"
 
