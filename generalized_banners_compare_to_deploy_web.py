@@ -21,6 +21,7 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
 
     x=0
     pocetNalezenychZajezduElementList_PROD = []
+    bannerLinksList_PROD = []
     for _ in banneryAll:
         bannerHref = banneryAll[x].get_attribute("href")
         #print(bannerHref)
@@ -32,24 +33,27 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
         try:
             pocetNalezenychZajezduElement_PROD = driver.find_element_by_xpath(SRL_H1textPocetNalezenychZajezduXpath).text.lower()
             pocetNalezenychZajezduElementList_PROD.append(pocetNalezenychZajezduElement_PROD)
-            #print (pocetNalezenychZajezduElement_PROD)
+            bannerLinks_PROD = driver.current_url
+            bannerLinksList_PROD.append(bannerLinks_PROD)
+            #print (bannerLinks_PROD)
         except NoSuchElementException:
             pass
         driver.close()
         driver.switch_to.window(driver.window_handles[0])
         time.sleep(0.5)
 
-
+    ###deploy web start
 
     driver.get(URL_deploying_web)
     time.sleep(5)
     x = 0
     pocetNalezenychZajezduElementList_DEPLOY = []
+    bannerLinksList_DEPLOY = []
     banneryAll = driver.find_elements_by_xpath("//*[@class='f_teaser-item']/a")
     for _ in banneryAll:
         bannerHref = banneryAll[x].get_attribute("href")
         #print(bannerHref)
-        x = x + 1
+
         #print(x)
         driver.execute_script("window.open("");")
         driver.switch_to.window(driver.window_handles[1])
@@ -57,10 +61,27 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
         try:
             pocetNalezenychZajezduElement_DEPLOY = driver.find_element_by_xpath(SRL_H1textPocetNalezenychZajezduXpath).text.lower()
             pocetNalezenychZajezduElementList_DEPLOY.append(pocetNalezenychZajezduElement_DEPLOY)
+            bannerLinks_DEPLOY = driver.current_url
+            bannerLinksList_DEPLOY.append(bannerLinks_DEPLOY)
+
             #print(pocetNalezenychZajezduElement_DEPLOY)
         except NoSuchElementException:
             pass
         driver.close()
+
+        if pocetNalezenychZajezduElementList_PROD[x]==pocetNalezenychZajezduElementList_DEPLOY[x]:
+
+            #print(bannerLinksList_PROD[x])
+            #print(bannerLinksList_DEPLOY[x])
+            pass
+        else:
+            print("PROBLEM BANNERS")
+            print( pocetNalezenychZajezduElementList_PROD[x] + "  ||| VS |||  " + pocetNalezenychZajezduElementList_DEPLOY[x])
+            print(bannerLinksList_PROD[x])
+            print(bannerLinksList_DEPLOY[x])
+            print("----------------------------------------")
+
+        x = x + 1
         driver.switch_to.window(driver.window_handles[0])
         time.sleep(0.5)
 
@@ -73,5 +94,6 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
 
     assert pocetNalezenychZajezduElementList_DEPLOY == pocetNalezenychZajezduElementList_PROD
 
+    driver.quit()
 
 banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploying_web)
