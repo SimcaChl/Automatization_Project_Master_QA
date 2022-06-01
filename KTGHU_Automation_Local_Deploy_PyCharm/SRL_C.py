@@ -23,6 +23,7 @@ class Test_SRL_C(unittest.TestCase):
         self.driver.get(URL_SRL)
         self.driver.maximize_window()
         time.sleep(2)
+
         acceptConsent(self.driver)
         time.sleep(1.5)
 
@@ -35,10 +36,11 @@ class Test_SRL_C(unittest.TestCase):
     def test_SRL_sort_expensive(self):
         driver = self.driver
         self.driver.maximize_window()
+
         driver.get(URL_SRL)
         time.sleep(2)
         acceptConsent(driver)
-        time.sleep(2)
+        time.sleep(4)
 
         typeOfSort = "expensive"
 
@@ -48,9 +50,7 @@ class Test_SRL_C(unittest.TestCase):
 
     def test_SRL_map(self):
         driver = self.driver
-        driver = self.driver
         driver.get(URL_SRL)
-        wait = WebDriverWait(driver, 30)
         driver.maximize_window()
         acceptConsent(driver)
         time.sleep(2)

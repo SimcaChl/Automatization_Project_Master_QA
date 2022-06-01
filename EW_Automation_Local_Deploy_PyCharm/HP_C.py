@@ -95,6 +95,7 @@ class Test_HP_C(unittest.TestCase):
         HPnejlepsiZajezdySwitchButtonElement = self.driver.find_element_by_xpath(HPnejlepsiZajezdySwitchButtonXpath)
         self.driver.execute_script("arguments[0].click();", HPnejlepsiZajezdySwitchButtonElement)
         time.sleep(6)
+        time.sleep(6)
         self.driver.implicitly_wait(10)
         nejlepsiNabidkyElement = self.driver.find_elements_by_xpath(HPnejlepsiZajezdyVypisXpath)
         positionOfCurrentElement2 = 0

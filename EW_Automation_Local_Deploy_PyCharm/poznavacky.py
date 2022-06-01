@@ -16,7 +16,7 @@ class TestPoznavacky_D(unittest.TestCase):
             self.driver.maximize_window()
             self.driver.execute_script("window.scrollTo(0, 1080);")
 
-            #time.sleep(6)
+            time.sleep(6)
             self.driver.implicitly_wait(100)
             imgs = self.driver.find_elements_by_xpath("//*[@class='f_tile-image-content']")
             print(imgs)
@@ -97,7 +97,7 @@ class TestPoznavacky_D(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.execute_script("window.scrollTo(0, 1080);")
 
-        time.sleep(6)
+        time.sleep(13)
         imgs = self.driver.find_elements_by_xpath("//*[@class='f_tile-image-content']")
         assert imgs[0].is_displayed() == True
         print(imgs)
@@ -136,7 +136,7 @@ class TestPoznavacky_D(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.execute_script("window.scrollTo(0, 1080);")
 
-        #time.sleep(6)
+        time.sleep(13)
         self.driver.implicitly_wait(100)
         imgs = self.driver.find_elements_by_xpath("//*[@class='f_tile-image-content']")
         assert imgs[0].is_displayed() == True

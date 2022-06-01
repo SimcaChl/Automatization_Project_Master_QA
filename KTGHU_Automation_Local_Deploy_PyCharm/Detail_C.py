@@ -5,6 +5,9 @@ import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
+##global
+terminyAcenyTabXpath = "//*[@id='terminyaceny-tab']"
+potvrditPopupXpath = "//*[@data-testid='popup-closeButton']"
 
 class TestDetailHotelu_C(unittest.TestCase):
     def setUp(self):
@@ -131,7 +134,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         #omlouvamese_paragraph(self)
 
         zvolenaStravaVboxu = self.driver.find_element_by_xpath("//*[@class='js-subvalue f_text--highlighted']")
-        zvolenaStravaVboxuString = zvolenaStravaVboxu.text
+        zvolenaStravaVboxuString = zvolenaStravaVboxu.text.lower()
 
         print(zvolenaStravaVboxuString)
 
@@ -144,7 +147,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         ##stravy, ne jen ty available
         x = 0
         for _ in stravaVterminech:
-            stringos = stravaVterminech[x].text
+            stringos = stravaVterminech[x].text.lower()
             stravaVterminechString.append(stringos)
             x = x + 1
 
@@ -153,8 +156,8 @@ class TestDetailHotelu_C(unittest.TestCase):
         print(stravaVterminechString)
         y = 0
         for _ in stravaVterminechString:
-            assert stravaVterminechString[y] == zvolenaStravaVboxuString
-            if stravaVterminechString[y] == zvolenaStravaVboxuString:
+            assert zvolenaStravaVboxuString in stravaVterminechString[y]
+            if zvolenaStravaVboxuString in stravaVterminechString[y]:
                 print("ok")
                 ##print(y)
                 y = y + 1

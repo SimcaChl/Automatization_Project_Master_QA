@@ -22,13 +22,17 @@ def generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath):
     smallCircleXpath = "//*[@class='leaflet-marker-icon marker-cluster marker-cluster-small leaflet-zoom-animated leaflet-interactive']"
     time.sleep(10)##loading time
     click_on_map_circle(driver, largeCircleXpath)
+    time.sleep(2)
     click_on_map_circle(driver, largeCircleXpath)
+    time.sleep(2)
     click_on_map_circle(driver, largeCircleXpath)
 
     click_on_map_circle(driver, mediumCircleXpath)
+    time.sleep(2)
     click_on_map_circle(driver, mediumCircleXpath)
 
     click_on_map_circle(driver, smallCircleXpath)
+    time.sleep(2)
     click_on_map_circle(driver, smallCircleXpath)
 
 def generalized_map_test_click_on_pin_and_hotel_bubble(driver):
@@ -127,14 +131,14 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
 
         cenaZajezduAllList = []                     ##one list that takes prices from the srl
         cenaZajezduAllListSorted = []               ##second list takes the values too, then sorts it low to high
-        time.sleep(2)
+        time.sleep(3)
         sorter_Element = driver.find_element_by_xpath(sorter_Xpath)
         wait.until(EC.visibility_of(sorter_Element))
         sorter_Element.click()
-
+        time.sleep(6)
         hotelyKarty = driver.find_element_by_xpath(hotelyKartyXpath)
         wait.until(EC.visibility_of(hotelyKarty))
-        time.sleep(4)
+        #time.sleep(4)
         list_web_elements_Position = 0
         cenaZajezduAll = driver.find_elements_by_xpath(cenaZajezduXpath)
         wait.until(EC.visibility_of(cenaZajezduAll[0]))
