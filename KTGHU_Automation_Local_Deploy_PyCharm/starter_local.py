@@ -51,6 +51,6 @@ if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
-                                           open_in_browser=True, description="KARTAGOHU Web Suite- PUBLIC WWW")
-    #runner.run(suite_KTGHU_full())
-    runner.run(suite2())
+                                           open_in_browser=True, description="KARTAGOHU Web Suite- STG")
+    runner.run(suite_KTGHU_full())
+    #runner.run(suite2())

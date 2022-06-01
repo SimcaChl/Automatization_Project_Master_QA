@@ -48,11 +48,11 @@ class Test_HP_C(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get(URL)
         wait = WebDriverWait(self.driver, 300)
-
+        time.sleep(2.5)
         acceptConsent(self.driver)
-        time.sleep(1)
+        time.sleep(2)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPkamPojedeteButtonXpath))).click()
-        time.sleep(0.3)
+        time.sleep(1.3)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath))).click()
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
@@ -62,7 +62,7 @@ class Test_HP_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
         time.sleep(1.5)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
-        time.sleep(0.4)
+        time.sleep(1.4)
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus1Xpath))).click()
 
