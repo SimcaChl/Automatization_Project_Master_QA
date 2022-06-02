@@ -128,7 +128,7 @@ class Test_HP_C(unittest.TestCase):
         self.driver.implicitly_wait(100)
         time.sleep(8)
         topNabidkaBigHotelCardElement.click()
-        time.sleep(2)
+        time.sleep(4)
         curURL = self.driver.current_url
 
         assert curURL != URL

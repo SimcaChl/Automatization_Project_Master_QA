@@ -1,4 +1,3 @@
-from KTGHU_Automation_Local_Deploy_PyCharm.CovidInfo_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.pobocky import *
 from KTGHU_Automation_Local_Deploy_PyCharm.Detail_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.Detail_C import *
@@ -51,6 +50,6 @@ if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
-                                           open_in_browser=True, description="KARTAGOHU Web Suite- STG V4")
+                                           open_in_browser=True, description="KARTAGOHU Web Suite- WEB2")
     runner.run(suite_KTGHU_full())
     #runner.run(suite2())
