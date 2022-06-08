@@ -12,6 +12,8 @@ SRLfotkaHoteluXpath = "//*[@class='f_tileGallery']"
 def SRL_D(self, driver):
     wait = WebDriverWait(self.driver, 150)
     generalDriverWaitImplicit(self.driver)
+    time.sleep(6)
+    acceptConsent(self.driver)
     hotelySingle = self.driver.find_element_by_xpath(SRLhotelyKartyXpath)
     try:
         hotelySingle = self.driver.find_element_by_xpath(SRLhotelyKartyXpath)  ##

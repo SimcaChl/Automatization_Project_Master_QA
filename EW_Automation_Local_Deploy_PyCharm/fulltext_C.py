@@ -29,6 +29,7 @@ class Test_Fulltext_C(unittest.TestCase):
             self.driver.get(URL)
 
             if poziceQueryItem==0:
+                time.sleep(5)
                 acceptConsent(self.driver)
                 self.driver.maximize_window()
             else:
@@ -98,6 +99,7 @@ class Test_Fulltext_C(unittest.TestCase):
             driver = self.driver
             driver.get(URL_FT_results+queryList[poziceQueryItem])
             if poziceQueryItem==0:
+                time.sleep(5)
                 acceptConsent(driver)
                 self.driver.maximize_window()
             else:

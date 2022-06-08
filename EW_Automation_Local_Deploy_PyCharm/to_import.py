@@ -36,7 +36,7 @@ def setUp(self):
 
 
 #URL = "https://www.eximtours.cz/"
-URL = "https://exim.stg.dtweb.cz/"
+URL = "https://exim.web13.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"
 URL_poznavacky_rodiny = URL+"poznavaci-zajezdy#rodiny"
@@ -50,7 +50,8 @@ URL_detail = URL+"egypt/hurghada/hurghada/mirage-bay-resort-a-aqua-park-hurghada
 #URL_SRL = URL+"vysledky-vyhledavani?d=1009|680|953|1108|592|611|610|612|1010|590|726|609|621|622|669|1086|1194|670|978|594|675|683&tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9|10|11|12|13&ka1=7&kc1=1&ac1=2"
 #URL_SRL = URL + "vysledky-vyhledavani?d=64419|64420|64425&tt=1&to=4312|4305|2682|4308&dd=2022-09-01&rd=2022-10-19&nn=7|8|9|10|11|12|13&ka1=10&kc1=1&ac1=2"
 #URL_SRL = URL + "vysledky-vyhledavani?d=63213|63226|211764|63241|63360|63267|74459|74460|63284|74464|63349|63350|63354|74465&tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9|10|11|12|13&ka1=10&kc1=1&ac1=2"
-URL_SRL = URL + "vysledky-vyhledavani?d=64419|64420|64425|63213|63226|211764|63241|63360|63267|74459|74460|63284|74464|63349|63350|63354|74465|63484|63483|63485&tt=1&to=4312|4305|2682|4308&dd=2022-08-01&rd=2022-09-30&nn=7|8|9|10|11|12|13&ka1=7&kc1=1&ac1=2"
+#URL_SRL = URL + "vysledky-vyhledavani?d=64419|64420|64425|63213|63226|211764|63241|63360|63267|74459|74460|63284|74464|63349|63350|63354|74465|63484|63483|63485&tt=1&to=4312|4305|2682|4308&dd=2022-08-01&rd=2022-09-30&nn=7|8|9|10|11|12|13&ka1=7&kc1=1&ac1=2"
+URL_SRL = URL + "vysledky-vyhledavani?d=63448|211801|211814|63252|63260|63288|64154|64152|64153|64157&tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9|10|11|12|13&ka1=10&kc1=1&ac1=2"
 URL_covidInfo = URL+"covid-info"
 URL_FM = URL+"first-minute"
 URL_faq = URL+"faq"

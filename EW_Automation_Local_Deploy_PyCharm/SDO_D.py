@@ -16,6 +16,7 @@ class TestSDO_D(unittest.TestCase):
         self.driver.maximize_window()
         time.sleep(2.5)
         acceptConsent(self.driver)
+        time.sleep(5)
 
         try:
             generalDriverWaitImplicit(self.driver)
