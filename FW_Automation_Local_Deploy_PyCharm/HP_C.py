@@ -10,7 +10,7 @@ import time
 from selenium.webdriver.common.action_chains import ActionChains
 from generalized_banners_compare_to_deploy_web import banner_check_public_prod_VS_deployed_web
 
-banneryXpath_FW = "//*[@class='f_teaser-item']/a"
+banneryXpath_FW = "//*[@class='f_teaser-item js-priceLoading']/a"
 URL_prod_public = "https://www.fischer.cz/"
 URL_deploying_web = URL
 
@@ -127,6 +127,7 @@ class Test_HP_C(unittest.TestCase):
 
         HPnextArrowElement = self.driver.find_element_by_xpath(HPnextArrowXpath)
         self.driver.execute_script("arguments[0].scrollIntoView();", HPnextArrowElement)
+        time.sleep(1)
         self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
         time.sleep(0.3)
         self.driver.execute_script("arguments[0].click();", HPnextArrowElement)

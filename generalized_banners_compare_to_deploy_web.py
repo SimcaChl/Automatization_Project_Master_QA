@@ -35,6 +35,7 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
         driver.execute_script("window.open("");")
         driver.switch_to.window(driver.window_handles[1])
         driver.get(bannerHref)
+        #time.sleep(10)
         try:
             pocetNalezenychZajezduElement_PROD = driver.find_element_by_xpath(SRL_H1textPocetNalezenychZajezduXpath).text.lower()
             pocetNalezenychZajezduElementList_PROD.append(pocetNalezenychZajezduElement_PROD)
