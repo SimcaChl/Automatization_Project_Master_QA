@@ -47,7 +47,7 @@ def suite_KTGSK_full():
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch'))
     suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
     suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
-    suite.addTest(Test_HP_C('test_HP_bannery_check'))
+    #suite.addTest(Test_HP_C('test_HP_bannery_check'))
     return suite
 
 def suite2():
@@ -59,6 +59,6 @@ if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='KARTAGOSK Web Suite test', report_name='KARTAGOSK Web Suite test',
-                            open_in_browser=True, description="KARTAGOSK Web Suite- WEB3")
+                            open_in_browser=True, description="KARTAGOSK Web Suite- PUBLIC WWW")
     runner.run(suite_KTGSK_full())
     #runner.run(suite2())

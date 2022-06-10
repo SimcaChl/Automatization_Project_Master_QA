@@ -145,7 +145,8 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
 
         for WebElement in cenaZajezduAll:
             cenaZajezduAllString = cenaZajezduAll[list_web_elements_Position].text
-            cenaZajezduAllString = cenaZajezduAllString[:-3]
+            #cenaZajezduAllString = cenaZajezduAllString[:-3]
+            cenaZajezduAllString = cenaZajezduAllString[:-2]        ##was adjsuted for webs where is euro prices, works on everything else as well
             cenaZajezduAllString = ''.join(cenaZajezduAllString.split())        ##delete spaces
             cenaZajezduAllString = int(cenaZajezduAllString)        ##convert to int to do sort easily
             list_web_elements_Position = list_web_elements_Position + 1
