@@ -10,6 +10,9 @@ from ET_Automation_Local_Deploy_PyCharm.SRL_D import TestSRL_D
 from ET_Automation_Local_Deploy_PyCharm.HP_C import Test_HP_C
 import HtmlTestRunner
 import unittest
+from starter_master_browserstack import  runner_tests_generalized
+from ET_Automation_Local_Deploy_PyCharm.to_import import URL
+
 
 def suite_ET_full():
     suite = unittest.TestSuite()
@@ -39,10 +42,15 @@ def suite_ET_full():
     suite.addTest(Test_HP_C('test_HP_banner_destination_to_SDO'))
     return suite
 
-if __name__ == '__main__':
-    runner = unittest.TextTestRunner()
-    outfile = open("results.html", "w")
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='ETRAVEL-Web Suite test', title='ETRAVEL-Web Suite test', report_name='ETRAVEL-Web Suite test',
-                            open_in_browser=True, description="ETRAVEL-Web Suite test")
+def suite2():
+    suite = unittest.TestSuite()
+    suite.addTest(Test_FM_Exotika_D("test_FM_D"))
+    return suite
 
-    runner.run(suite_ET_full())
+web_brand = "ETRAVEL"
+#runner_tests_generalized(suite_ET_full, web_brand, "123", URL)
+runner_tests_generalized(suite2, web_brand, "123", URL)
+
+
+
+
