@@ -27,11 +27,12 @@ class Test_SRL_C(unittest.TestCase):
     def tearDown(self):
         tearDown(self)
     def test_SRL_sort_cheapest(self):
-
+        self.driver.maximize_window()
         self.driver.get(URL_SRL)
         wait = WebDriverWait(self.driver, 150)
-        self.driver.maximize_window()
+        time.sleep(2)
         acceptConsent(self.driver)
+        time.sleep(4)
         cenaZajezduAllList = []  ##one list that takes prices from the srl
         cenaZajezduAllListSorted = []
         cenaZajezduAll = self.driver.find_elements_by_xpath(totalPriceXpath)
