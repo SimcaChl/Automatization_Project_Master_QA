@@ -7,6 +7,8 @@ from to_import_secret_master import emailPass
 mujMail = 'ooo.kadoun@gmail.com'
 filipMail = 'filip.rytych@seznam.cz'
 FW_list_of_emails_to_notify = ["ooo.kadoun@gmail.com", "Filip.RYTYCH@fischer.cz"]
+justMeList = ["ooo.kadoun@gmail.com"]
+
 
 def sendEmailv2(msg, recipient):
   fromx = 'alertserverproblem@gmail.com'
@@ -38,46 +40,48 @@ def generalized_URL_status_check(brand, email_list_to_notify):
     pocetChecku = 0
     while True:
             cisloNodu=1
-
             for i in range(3):
                 email_list_position = 0
                 try:
-                    response = requests.get(URL_maker(EW_start_of_URL, str(cisloNodu)), timeout=45)
-                    print(response)
-                    print(response.status_code)
+                    requestURL = URL_maker(EW_start_of_URL, str(cisloNodu))
+                    response = requests.get((requestURL), timeout=45)
+                    #print(response)
+                    #print(response.status_code)
 
                 except requests.exceptions.Timeout:
-                        msg = "FW HP, TIME OUT, SRWEB1"
-                        sendEmailv2(msg, mujMail)
-                        sendEmailv2(msg, filipMail)
-                        print("TIME OUT WEB1")
+                        for _ in email_list_to_notify:
+                            msg = brand + " HomePage vrací TIME OUT Exception " + "SRWEB " + str(cisloNodu) + "  " + requestURL
+                            sendEmailv2(msg, email_list_to_notify[email_list_position])
+                            email_list_position = email_list_position + 1
                 except requests.exceptions.ConnectionError:
-                        msg = "FW HP ConnectionError, SRWEB1"
-                        sendEmailv2(msg, mujMail)
-                        sendEmailv2(msg, filipMail)
+                    for _ in email_list_to_notify:
+                        msg = brand + " HomePage vrací ConnectionError Exception " + "SRWEB " + str(cisloNodu) + "  " + requestURL
+                        sendEmailv2(msg, email_list_to_notify[email_list_position])
+                        email_list_position = email_list_position + 1
                 except:
                         pass
 
-                if response.status_code ==500:
+                if response.status_code == 500:
                     for _ in email_list_to_notify:
-                        msg = brand + " HomePage vrací status code 500 " + "SRWEB " + str(cisloNodu) + "  " + URL_maker(FW_start_of_URL, str(cisloNodu))
+                        msg = brand + " HomePage vrací status code 500 " + "SRWEB " + str(cisloNodu) + "  " + requestURL
                         sendEmailv2(msg, email_list_to_notify[email_list_position])
                         email_list_position = email_list_position + 1
 
                 if response.status_code == 404:
                     for _ in email_list_to_notify:
-                        msg = brand + " HomePage vrací status code 500 " + "SRWEB " + str(cisloNodu) + "  " + URL_maker(EW_start_of_URL, str(cisloNodu))
+                        msg = brand + " HomePage vrací status code 500 " + "SRWEB " + str(cisloNodu) + "  " + requestURL
                         sendEmailv2(msg, email_list_to_notify[email_list_position])
                         email_list_position = email_list_position + 1
 
-                print(cisloNodu)
+                print(requestURL)
+                print(response.status_code)
                 cisloNodu = cisloNodu + 1
                 time.sleep(10)
 
             timerToNotify = timerToNotify + 1
             pocetChecku = pocetChecku + 1
             if timerToNotify == 1000:
-                msg = "check byl spusten 1000"
+                msg = "check byl spusten 1000 " + brand
                 sendEmailv2(msg, mujMail)
                 timerToNotify = 0
             print("CHECK NUMERO  " + str(pocetChecku))
@@ -85,4 +89,4 @@ def generalized_URL_status_check(brand, email_list_to_notify):
             print("CHECK NUMERO  " + str(pocetChecku))
             time.sleep(50)
 
-generalized_URL_status_check("Fischer", FW_list_of_emails_to_notify)
+generalized_URL_status_check("Exim Tours", justMeList)
