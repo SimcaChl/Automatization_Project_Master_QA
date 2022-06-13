@@ -35,24 +35,27 @@ def URL_maker(brand_start_of_URL, srweb_number):
     #print(final_URL)
     return(final_URL)
 
-def generalized_URL_status_check(brand, email_list_to_notify):
+def generalized_URL_status_check(brand, email_list_to_notify, start_of_URL):
     timerToNotify = 0
     pocetChecku = 0
     while True:
-            cisloNodu=1
+            if brand == "Exim Tours":
+                cisloNodu=11
+            else:
+                cisloNodu=1
             for i in range(3):
                 email_list_position = 0
                 try:
-                    requestURL = URL_maker(EW_start_of_URL, str(cisloNodu))
+                    requestURL = URL_maker(start_of_URL, str(cisloNodu))
                     response = requests.get((requestURL), timeout=45)
                     #print(response)
                     #print(response.status_code)
 
                 except requests.exceptions.Timeout:
-                        for _ in email_list_to_notify:
-                            msg = brand + " HomePage vrací TIME OUT Exception " + "SRWEB " + str(cisloNodu) + "  " + requestURL
-                            sendEmailv2(msg, email_list_to_notify[email_list_position])
-                            email_list_position = email_list_position + 1
+                    for _ in email_list_to_notify:
+                        msg = brand + " HomePage vrací TIME OUT Exception " + "SRWEB " + str(cisloNodu) + "  " + requestURL
+                        sendEmailv2(msg, email_list_to_notify[email_list_position])
+                        email_list_position = email_list_position + 1
                 except requests.exceptions.ConnectionError:
                     for _ in email_list_to_notify:
                         msg = brand + " HomePage vrací ConnectionError Exception " + "SRWEB " + str(cisloNodu) + "  " + requestURL
@@ -67,7 +70,7 @@ def generalized_URL_status_check(brand, email_list_to_notify):
                         sendEmailv2(msg, email_list_to_notify[email_list_position])
                         email_list_position = email_list_position + 1
 
-                if response.status_code == 404:
+                if response.status_code == 404:     ##404
                     for _ in email_list_to_notify:
                         msg = brand + " HomePage vrací status code 500 " + "SRWEB " + str(cisloNodu) + "  " + requestURL
                         sendEmailv2(msg, email_list_to_notify[email_list_position])
@@ -89,4 +92,4 @@ def generalized_URL_status_check(brand, email_list_to_notify):
             print("CHECK NUMERO  " + str(pocetChecku))
             time.sleep(50)
 
-generalized_URL_status_check("Exim Tours", justMeList)
+#generalized_URL_status_check("Exim Tours", justMeList)
