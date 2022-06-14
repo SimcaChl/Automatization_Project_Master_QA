@@ -47,7 +47,7 @@ def generalized_URL_status_check(brand, email_list_to_notify, start_of_URL):
                 email_list_position = 0
                 try:
                     requestURL = URL_maker(start_of_URL, str(cisloNodu))
-                    response = requests.get((requestURL), timeout=45)
+                    response = requests.get((requestURL), timeout=65)
                     #print(response)
                     #print(response.status_code)
 
@@ -79,7 +79,7 @@ def generalized_URL_status_check(brand, email_list_to_notify, start_of_URL):
                 print(requestURL)
                 print(response.status_code)
                 cisloNodu = cisloNodu + 1
-                time.sleep(10)
+                time.sleep(20)
 
             timerToNotify = timerToNotify + 1
             pocetChecku = pocetChecku + 1
@@ -90,6 +90,6 @@ def generalized_URL_status_check(brand, email_list_to_notify, start_of_URL):
             print("CHECK NUMERO  " + str(pocetChecku))
             print("CHECK NUMERO  " + str(pocetChecku))
             print("CHECK NUMERO  " + str(pocetChecku))
-            time.sleep(50)
+            time.sleep(55)
 
 #generalized_URL_status_check("Exim Tours", justMeList)
