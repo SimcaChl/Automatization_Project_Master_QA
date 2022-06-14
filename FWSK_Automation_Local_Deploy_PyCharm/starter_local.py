@@ -47,7 +47,7 @@ def suite_FWSK_full():
     suite.addTest(Test_HP_C('test_HP_zlutak_to_SRL'))
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch'))
     # suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
-    suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
+    #suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
     return suite
 
@@ -59,6 +59,6 @@ def suite2():
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER SK WEB Suite Report', report_name='FISCHER SK WEB Suite Report',                                           open_in_browser=True, description="FISCHER SK WEB Suite Report")
-    runner.run(suite2())
-    #runner.run(suite_FWSK_full())
+    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER SK WEB Suite Report', report_name='FISCHER SK WEB Suite Report STG',                                           open_in_browser=True, description="FISCHER SK WEB Suite Report")
+    #runner.run(suite2())
+    runner.run(suite_FWSK_full())
