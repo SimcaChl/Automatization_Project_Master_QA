@@ -46,7 +46,7 @@ def suite_EW_full():
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch'))
     suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
     suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
-    #suite.addTest(Test_HP_C('test_HP_bannery_check'))
+    suite.addTest(Test_HP_C('test_HP_bannery_check'))
     return suite
 
 def suite2():
@@ -59,6 +59,6 @@ if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='EXIM Web Suite test', title='EXIM Web Suite test', report_name='EXIM Web Suite test',
-                            open_in_browser=True, description="EXIM Web Suite - WEB13 V1")
+                            open_in_browser=True, description="EXIM Web Suite - WEB13")
     #runner.run(suite2())
     runner.run(suite_EW_full())

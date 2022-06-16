@@ -16,7 +16,7 @@ gridDestinationXpath = "//*[@class='c_grid cols-2']"
 def rowKarty_imgHoteluKarty_D(self, driver):
     self.driver = driver
     wait = WebDriverWait(self.driver, 25)
-
+    time.sleep(10)
     driver.implicitly_wait(150)
     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(rowKartyHoteluXpath)))
     print("wait done")

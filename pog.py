@@ -45,3 +45,5 @@ for _ in links_to_check:
 
         assert response.status_code == 200
         links_list_counter = links_list_counter + 1
+
+        ##TODO: assert na list equal to, printovacka na ten list a list URL z top nabidky
