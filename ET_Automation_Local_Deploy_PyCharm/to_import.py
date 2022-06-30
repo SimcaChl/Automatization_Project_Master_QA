@@ -42,8 +42,8 @@ def setUp(self):
 
 
 #URL = "https://www.etravel.cz/"
-#URL = "https://etravel.web3.dtweb.cz/"
-URL = "https://billa.stg.dtweb.cz/"
+URL = "https://etravel.web3.dtweb.cz/"
+#URL = "https://billa.stg.dtweb.cz/"
 URL_FM = URL+"first-minute"
 URL_exotika = URL + "exoticka-dovolena"
 URL_LM = URL+"last-minute"

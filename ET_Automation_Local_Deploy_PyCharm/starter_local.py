@@ -49,7 +49,7 @@ def suite2():
 
 web_brand = "ETRAVEL"
 #runner_tests_generalized(suite_ET_full, web_brand, "123", URL)
-runner_tests_generalized(suite_ET_full, web_brand, "2", URL)
+runner_tests_generalized(suite_ET_full, web_brand, "0", URL)
 
 
 
