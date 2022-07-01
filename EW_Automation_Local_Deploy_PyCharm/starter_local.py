@@ -54,11 +54,13 @@ def suite2():
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
 
     return suite
-
+from starter_master_browserstack import  runner_tests_generalized
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='EXIM Web Suite test', title='EXIM Web Suite test', report_name='EXIM Web Suite test',
                             open_in_browser=True, description="EXIM Web Suite - WEB13")
     #runner.run(suite2())
-    runner.run(suite_EW_full())
+    #runner.run(suite_EW_full())
+    web_brand = "EXIM"
+    runner_tests_generalized(suite_EW_full, web_brand, "132", URL)
