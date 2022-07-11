@@ -43,7 +43,7 @@ def suite_KTGHU_full():
 
 def suite2():
     suite = unittest.TestSuite()
-    suite.addTest(Test_HP_C('test_HP_bannery_check'))
+    suite.addTest(Test_SRL_C('test_srl_C'))
     return suite
 
 if __name__ == '__main__':
@@ -51,5 +51,5 @@ if __name__ == '__main__':
     outfile = open("results.html", "w")
     runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
                                            open_in_browser=True, description="KARTAGOHU Web Suite- public")
-    runner.run(suite_KTGHU_full())
-    #runner.run(suite2())
+    #runner.run(suite_KTGHU_full())
+    runner.run(suite2())
