@@ -26,8 +26,8 @@ def setUp(self):
   self.driver = webdriver.Chrome(ChromeDriverManager().install())
   self.test_passed = False
 
-URL = "https://www.fischer.cz/"
-#URL = "https://fischer.web1.dtweb.cz/"
+#URL = "https://www.fischer.cz/"
+URL = "https://fischer.web1.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy/okruzni-a-kombinovane"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy/prodlouzene-vikendy"
 URL_poznavacky_rodiny = URL+"poznavaci-zajezdy/pro-rodiny"
