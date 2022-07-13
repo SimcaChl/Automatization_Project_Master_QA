@@ -168,8 +168,9 @@ class Test_SRL_C(unittest.TestCase):
         generalDriverWaitImplicit(self.driver)
         self.driver.find_element_by_xpath(chatCrossXpath).click()
         #wait.until(EC.visibility_of(self.driver.find_element_by_xpath(chatCrossXpath))).click()
+        time.sleep(3)
         try:
-            wait.until(EC.visibility_of(self.driver.find_elements_by_xpath(totalPriceXpath[0])))
+            wait.until(EC.visibility_of(self.driver.find_elements_by_xpath(totalPriceXpath)[1]))
         except NoSuchElementException:
             url = self.driver.current_url
             msg = " Problem SRL hotelyAllKarty" + url
