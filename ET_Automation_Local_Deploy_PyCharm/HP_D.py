@@ -1,13 +1,10 @@
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_FM, sendEmail, setUp, tearDown, URL
-import time
+from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, setUp, tearDown, URL
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from ET_Automation_Local_Deploy_PyCharm.import_test_units_Xpaths import rowKarty_imgHoteluKarty_D, imgHotelKartaXpath, destinationXpath, gridDestinationXpath
 
 hlavickaMenuXpath = "//*[@class='inner']"
-zlutakHPXpath = "//*[@id='c_mainSearchFilter']"
+zlutakHPXpath = "//*[@class='f_filterMainSearch']"
 teaserFotkaMainXpath = "//*[@class='object-cover w-full h-full']"
 destinationKostkyHPXpath = "//*[@class='c_tile-destination']"
 itemsHPXpath ="//*[@class='items']"  ##destination items+3ikony nad patou
