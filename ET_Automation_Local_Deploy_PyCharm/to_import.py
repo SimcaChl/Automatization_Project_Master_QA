@@ -42,7 +42,7 @@ def setUp(self):
 
 
 #URL = "https://www.etravel.cz/"
-URL = "https://etravel.web3.dtweb.cz/"
+URL = "https://etravel.stg.dtweb.cz/"
 #URL = "https://billa.stg.dtweb.cz/"
 URL_FM = URL+"first-minute"
 URL_exotika = URL + "exoticka-dovolena"
@@ -50,10 +50,13 @@ URL_LM = URL+"last-minute"
 #URL_SRL = URL+"vysledky-vyhledavani?d=63220|63281|63373|63442|63311|63314|63316|63319|63324|63333|63390|63402|63408|63409|63471|63219|63341|63428&tt=0&to=4305|4309|2682|4308|4312&dd=2022-09-01&rd=2022-09-25&nn=7|8|9&ka1=5&kc1=1&ac1=2"
 #URL_SRL = URL+"vysledky-vyhledavani?d=64419|64420|64425|64423&tt=0&to=4305|4309|2682|4308|4312&dd=2022-09-01&rd=2022-09-25&nn=7|8|9&ka1=5&kc1=1&ac1=2"
 #URL_SRL = URL + "vysledky-vyhledavani?d=63213|63241|63360|63267|74459|74460|63284|74464|63350|63354|74465|63216|63226|63242|63244|74462|63313|74461|74463|63349|63455&tt=0&to=4305|4309|2682|4308|4312&dd=2022-07-01&rd=2022-08-31&nn=7|8|9&ka1=6&kc1=1&ac1=2"
-URL_SRL = URL + "vysledky-vyhledavani?d=63220|63281|63373|63442|63311|63314|63316|63319|63324|63333|63390|63402|63408|63409|63471|64419|64420|64425|64422|64423|63219|63341|63428|63472&tt=1&dd=2022-07-01&rd=2022-08-31&nn=7|8|9&ka1=7&kc1=1&ac1=2"
+#URL_SRL = URL + "vysledky-vyhledavani?d=63220|63281|63373|63442|63311|63314|63316|63319|63324|63333|63390|63402|63408|63409|63471|64419|64420|64425|64422|64423|63219|63341|63428|63472&tt=1&dd=2022-07-01&rd=2022-08-31&nn=7|8|9&ka1=7&kc1=1&ac1=2"
 #URL_SRL = "https://www.etravel.cz/vysledky-vyhledavani?d=64419&tt=0&to=4312&dd=2022-06-30&rd=2022-07-08&nn=7|8|9&ac1=2"
 #URL_SRL = "https://www.etravel.cz/vysledky-vyhledavani?d=63220|63281|63373|63442|63311|63314|63316|63319|63324|63333|63390|63402|63408|63409|63471|64419|63252|63447|63232|63247|63249|63250|63251|63280|63289|63528|63325|63326|77802|63527|63345|63361|63381|63526|63401|63450|77804|63461|63470|63219|63341|63428|63472&tt=0&to=4312&dd=2022-06-30&rd=2022-07-08&nn=7|8|9&ka1=7&kc1=1&ac1=2"
 #URL_SRL = "https://billa.dev.dtweb.cz/vysledky-vyhledavani?d=63213|63216|63218|63349|63226|63227|63231|64429|63241|63242|63243|63244|63245|74462|63263|63267|74459|63272|74460|63284|63299|63334|63313|74461|78291|74463|63328|74464|63350|64430|63354|63360|63363|74465|63455&tt=1&dd=2022-06-15&rd=2022-06-23&nn=7&ac1=2"
+URL_SRL = URL + "vysledky-vyhledavani?d=63448|63260|63213|63241|63360|63267|74459|74460|63284|74464|63350|63354|74465|63216|63226|63242|63244|74462|63313|74461|74463|63349|63455|63288|64154|64152|64153|64157&tt=0&dd=2022-08-12&rd=2022-09-30&nn=7|8|9&ac1=2"
+URL_SRL_all_inclusive = URL_SRL + "&m=5"
+
 URL_detail = URL + "egypt/hurghada/hurghada/mirage-bay-resort-a-aqua-park-hurghada?DS=1024&GIATA=16351&D=64419|64420|64425|64423&HID=5057&MT=5&RT=15&NN=7&DF=2022-07-01|2022-08-31&RD=2022-07-20&DD=2022-07-13&AC1=2&KC1=1&KA1=5&IC1=0&DP=2682&MNN=7&NNM=7|8|9&TT=1&TTM=1&PID=33040&DPR=EXIM%20TOURS"
 #URL_detail = URL+"recko/lefkada/nidri/delfini-penzion?ds=1024&giata=538958&hid=141090&nn=7&df=2022-07-01|2022-09-01&rd=2022-09-01&dd=2022-08-25&ac1=2&kc1=1&ka1=5&tt=1&pid=335821&d=63220|63281|63373|63442|63311|63314|63316|63319|63324|63333|63390|63402|63408|63409|63471|63219|63341|63428&mt=2&rt=15&dp=4305&mnn=7&nnm=7|8|9&ttm=1&dpr=EXIM%20TOURS&sortby=Price&sortorder=0"
 URL_detail_all_inclusive = URL_detail + "&mmt=5"
@@ -91,10 +94,10 @@ def acceptConsent(driver):
     pass
 
 def returnLocatorForMealHotelKarty(poziceHotelu):
-    string1 = "/ html / body / div[ @ id = 'app'] / div[ @ id = 'c_page-mainSearch'] / div[ @class ='hotel-results-section'] / div[@ class ='hotel-results-content'][1] / div[@ class ='tile-hotel-section'] / div[@ class ='items'] / div[@ class ='flex']["
+    string1 = '//*[@id="app"]/pagemainsearchfilter/div/div[4]/div[2]/div/div['
     stringVariable = poziceHotelu
     stringVariable = str(stringVariable)
-    string2 = "] / a[@ class ='c_tile-hotel'] / div[@ class ='inner'] / div[@ class ='section-border'] / div[@ class ='c_row'][2] / span[1]"
+    string2 = ']/a/div[3]/div[3]/div[2]/span[1]'
     finalString = string1 + stringVariable + string2
     finalString = finalString.replace(" ", "")
     #print(finalString)

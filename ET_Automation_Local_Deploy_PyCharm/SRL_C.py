@@ -1,12 +1,11 @@
-
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
-from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, returnLocatorForMealHotelKarty, generalDriverWaitImplicit
+from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_SRL, sendEmail, setUp, tearDown, returnLocatorForMealHotelKarty, generalDriverWaitImplicit, URL_SRL_all_inclusive
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 import pyautogui as p
+
 p.FAILSAFE = False
 totalPriceXpath = "//*[@class='price-amount']"
 odNejdrazsihoSorterXpath = "//*[contains(text(), 'od nejdražšího')]"
@@ -126,7 +125,8 @@ class Test_SRL_C(unittest.TestCase):
 
     def test_SRL_filtr_strava(self):
         driver = self.driver
-        driver.get(URL_SRL)
+        driver.get(URL_SRL_all_inclusive)
+        #driver.get(URL_SRL)
         wait = WebDriverWait(driver, 12)
         time.sleep(5)
         self.driver.maximize_window()
@@ -135,14 +135,17 @@ class Test_SRL_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(SDO_Strava_row_karta_hotelu_Xpath)))
         SDOstravaRowKartaElement = self.driver.find_elements_by_xpath(SDO_Strava_row_karta_hotelu_Xpath)
         x=1
+        time.sleep(5)
         #for _ in SDOstravaRowKartaElement:
         #for _ in (self.driver.find_elements_by_xpath(detailHoteluCenaAllXpath)):
         for i in range(19):
             stravaHoteluXpathCreator = returnLocatorForMealHotelKarty(x)
             #print(stravaHoteluXpathCreator)
             stravaHoteluVkarte = self.driver.find_elements_by_xpath(stravaHoteluXpathCreator)
-            print(stravaHoteluVkarte[0].text)
-            #assert stravaHoteluVkarte[0].text == "All inclusive"
+
+            stravaHoteluVkarteAssertValue = stravaHoteluVkarte[0].text.lower()
+            #print(stravaHoteluVkarteAssertValue)
+            assert stravaHoteluVkarteAssertValue == "all inclusive"
             #print(stravaHoteluVkarte[0])
             #print(SDOstravaRowKartaElement[x].text)
             x=x+1
