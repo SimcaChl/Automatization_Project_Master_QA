@@ -117,6 +117,7 @@ class TestDetailHotelu_C(unittest.TestCase):
 
     def test_detail_terminy_filtr_airport(self):
             self.driver.get(URL_detail_airport_praha)
+            print(URL_detail_airport_praha)
             wait = WebDriverWait(self.driver, 150000)
             self.driver.maximize_window()
             time.sleep(1)

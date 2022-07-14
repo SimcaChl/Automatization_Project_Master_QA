@@ -41,8 +41,8 @@ def setUp(self):
   self.test_passed = False
 
 
-#URL = "https://www.etravel.cz/"
-URL = "https://etravel.stg.dtweb.cz/"
+URL = "https://www.etravel.cz/"
+#URL = "https://etravel.web3.dtweb.cz/"
 #URL = "https://billa.stg.dtweb.cz/"
 URL_FM = URL+"first-minute"
 URL_exotika = URL + "exoticka-dovolena"
