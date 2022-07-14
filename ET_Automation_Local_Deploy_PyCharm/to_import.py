@@ -92,12 +92,14 @@ def acceptConsent(driver):
   else:
     print("consent pass")
     pass
-
+"x"
 def returnLocatorForMealHotelKarty(poziceHotelu):
-    string1 = '//*[@id="app"]/pagemainsearchfilter/div/div[4]/div[2]/div/div['
+    #string1 = '//*[@id="app"]/pagemainsearchfilter/div/div[4]/div[2]/div/div['
+    string1 = "/html/body/div[1]/div/div[4]/div[2]/div/div["
     stringVariable = poziceHotelu
     stringVariable = str(stringVariable)
-    string2 = ']/a/div[3]/div[3]/div[2]/span[1]'
+    string2 = "]/a/div[3]/div[3]/div[2]/span[1]"
+    #string2 = ']/a/div[3]/div[3]/div[2]/span[1]'
     finalString = string1 + stringVariable + string2
     finalString = finalString.replace(" ", "")
     #print(finalString)
