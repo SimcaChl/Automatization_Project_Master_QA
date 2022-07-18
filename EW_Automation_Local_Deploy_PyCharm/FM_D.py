@@ -76,21 +76,22 @@ class TestFM_D(unittest.TestCase):
         assert teaserItems[0].is_displayed() == True
 
         self.driver.implicitly_wait(100)
-        wholeGridsAll = self.driver.find_elements_by_xpath(
-            "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
-        wholeGridsSingle = self.driver.find_element_by_xpath(
-            "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
+        #not rly benefit items anymore but 2lazy to update var name
+        benefitItemsAll = self.driver.find_elements_by_xpath(
+            "//*[@class='in_doubleCol']")
+        benefitItemsSingle = self.driver.find_element_by_xpath(
+            "//*[@class='in_doubleCol']")
         try:
-            wait.until(EC.visibility_of(wholeGridsSingle))
-            for WebElement in wholeGridsAll:
+            wait.until(EC.visibility_of(benefitItemsSingle))
+            for WebElement in benefitItemsAll:
                 jdouvidet = WebElement.is_displayed()
                 assert jdouvidet == True
                 if jdouvidet == True:
                     pass
-                    print("gridy jdou videt")
+                    print("benefit items jdou videt")
                 else:
                     url = self.driver.current_url
-                    msg = " Problem s gridy cocid info wholeGridsAll " + url
+                    msg = " Problem s benefit items    benefitItemsAll " + url
                     sendEmail(msg)
 
         except NoSuchElementException:
@@ -153,32 +154,11 @@ class TestFM_D(unittest.TestCase):
 
         assert teaserItems[0].is_displayed() == True
 
-        self.driver.implicitly_wait(100)
-        wholeGridsAll = self.driver.find_elements_by_xpath(
-            "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
-        wholeGridsSingle = self.driver.find_element_by_xpath(
-            "//*[@class='flex justify-between shadow-lg box-border text-sm bg-white p-4 flex-col']")
-        try:
-            wait.until(EC.visibility_of(wholeGridsSingle))
-            for WebElement in wholeGridsAll:
-                jdouvidet = WebElement.is_displayed()
-                assert jdouvidet == True
-                if jdouvidet == True:
-                    pass
-                    print("gridy jdou videt")
-                else:
-                    url = self.driver.current_url
-                    msg = " Problem s gridy cocid info wholeGridsAll " + url
-                    sendEmail(msg)
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "Problem s gridy covid info wholeGridsAll " + url
-            sendEmail(msg)
 
         self.driver.implicitly_wait(100)
-        contentItemsAll = self.driver.find_elements_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
-        contentItemsSingle = self.driver.find_element_by_xpath("//*[@class='mt-3 mb-4 -mx-4 h-full']")
+        ##benefit items
+        contentItemsAll = self.driver.find_elements_by_xpath("//*[@class='f_benefit-item']")
+        contentItemsSingle = self.driver.find_element_by_xpath("//*[@class='f_benefit-item']")
 
         try:
             wait.until(EC.visibility_of(contentItemsSingle))
