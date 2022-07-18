@@ -133,7 +133,7 @@ class Test_SRL_C(unittest.TestCase):
 
             cenaZajezduAdult = self.driver.find_elements_by_xpath(
                 "//*[@class='f_tile-priceDetail-item']//*[@class='f_tile-priceDetail-note'] //*[@class='f_price']")
-            cenaZajezduAdultString = cenaZajezduAdult[x].text
+            cenaZajezduAdultString = cenaZajezduAdult[x].text.lower()
             print(cenaZajezduAdultString)
 
             self.driver.execute_script("window.open("");")
@@ -164,7 +164,7 @@ class Test_SRL_C(unittest.TestCase):
 
             detailCenaAdult = self.driver.find_element_by_xpath(
                     '//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
-            detailCenaAdultString = detailCenaAdult.text
+            detailCenaAdultString = detailCenaAdult.text.lower()
             print(detailCenaAdultString)
 
 
@@ -188,7 +188,7 @@ class Test_SRL_C(unittest.TestCase):
             else:
                 print("ceny all NESEDÍ srl vs detail")
 
-            assert detailCenaAdultString.upper() == cenaZajezduAdultString.upper()
+            assert detailCenaAdultString == cenaZajezduAdultString
 
             if detailCenaAdultString == cenaZajezduAdultString:
                 print(" cena adult sedi srl vs detail")
