@@ -35,8 +35,8 @@ def setUp(self):
   self.test_passed = False
 
 
-#URL = "https://www.eximtours.cz/"
-URL = "https://exim.stg.dtweb.cz/"
+URL = "https://www.eximtours.cz/"
+#URL = "https://exim.stg.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"
 URL_poznavacky_rodiny = URL+"poznavaci-zajezdy#rodiny"
@@ -64,6 +64,7 @@ URL_FT_results = URL+"hledani-vysledky?q="
 
 
 def tearDown(self):
+  print(self.driver.current_url)
   self.driver.quit()
   if not self.test_passed:
     self.driver.execute_script(

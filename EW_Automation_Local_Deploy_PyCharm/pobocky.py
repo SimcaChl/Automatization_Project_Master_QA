@@ -1,5 +1,5 @@
 from webdriver_manager.chrome import ChromeDriverManager
-from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_pobocky, setUp, tearDown, generalDriverWaitImplicit
+from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_pobocky, setUp, tearDown, generalDriverWaitImplicit
 import time
 import unittest
 
@@ -15,7 +15,7 @@ class TestPobocky_D(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get(URL_pobocky)
 
-        time.sleep(2)
+        time.sleep(6)
         acceptConsent(self.driver)
 
         time.sleep(2)

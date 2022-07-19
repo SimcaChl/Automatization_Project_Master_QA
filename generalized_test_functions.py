@@ -172,8 +172,9 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
             else:
                 print("Expensive sorter is NOT OK")
 
-
+        print("LIST FROM WEB:")
         print(cenaZajezduAllList)
+        print("CORRECTLY SORTED LIST")
         print(cenaZajezduAllListSorted)
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList

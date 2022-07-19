@@ -56,8 +56,24 @@ def suite2():
     suite.addTest(Test_SRL_C('test_SRL_filtr_strava'))
     suite.addTest(Test_SRL_C('test_srl_C'))
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
+    return suite
+
+def suite3():
+    suite = unittest.TestSuite()
+
+    suite.addTest(Test_Fulltext_C("test_fulltext_naseptavac"))
+    suite.addTest(TestPobocky_D('test_pobocky_D'))
+    suite.addTest(Test_SRL_C('test_SRL_sort_cheapest'))
+    suite.addTest(Test_HP_C('test_HP_bannery_check'))
 
     return suite
+
+def suite4():
+    suite = unittest.TestSuite()
+    suite.addTest(Test_SRL_C('test_SRL_sort_cheapest'))
+    return suite
+
+
 from starter_master_browserstack import  runner_tests_generalized
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
@@ -65,5 +81,5 @@ if __name__ == '__main__':
     runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='EXIM Web Suite test', title='EXIM Web Suite test', report_name='EXIM Web Suite test',
                             open_in_browser=True, description="EXIM Web Suite - WEB13")
     web_brand = "EXIM"
-    #runner_tests_generalized(suite_EW_full, web_brand, "220718.1", URL)
-    runner_tests_generalized(suite2, web_brand, "220718.1", URL)
+    runner_tests_generalized(suite_EW_full, web_brand, "220718.1", URL)
+    #runner_tests_generalized(suite4, web_brand, "220718.1", URL)
