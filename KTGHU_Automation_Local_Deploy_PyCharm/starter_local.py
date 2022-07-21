@@ -46,10 +46,13 @@ def suite2():
     suite.addTest(Test_SRL_C('test_srl_C'))
     return suite
 
+from starter_master_browserstack import  runner_tests_generalized
+
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
-    runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',
-                                           open_in_browser=True, description="KARTAGOHU Web Suite- public")
-    #runner.run(suite_KTGHU_full())
-    runner.run(suite2())
+    #runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',open_in_browser=True, description="KARTAGOHU Web Suite- public")
+    web_brand = "KTGHU"
+    runner_tests_generalized(suite_KTGHU_full, web_brand, "220718.1", URL)
+
+    #runner.run(suite2())

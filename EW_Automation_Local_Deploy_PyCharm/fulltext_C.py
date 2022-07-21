@@ -59,6 +59,7 @@ class Test_Fulltext_C(unittest.TestCase):
                     hotelDlazdice.click()
                     #hotelDlazdice.click()
                     currentUrl = self.driver.current_url
+                    time.sleep(0.5)
                     print("hote dlazdice klik")
                     assert currentUrl != "https://www.eximtours.cz/"
                     testOK_asserted = True
@@ -85,6 +86,7 @@ class Test_Fulltext_C(unittest.TestCase):
                 except NoSuchElementException:
                     print("first no such ele except")
                     pass
+                time.sleep(0.5)
                 currentUrl = self.driver.current_url
                 assert currentUrl != "https://www.eximtours.cz/"
             else:

@@ -21,7 +21,9 @@ PaymentGateway_CSOBczCardPaymentTotalPrice = "//*[@class='total-price']"  ##resu
 #URL = "https://exim.web13.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=b0520f5d-ba3b-418c-8a4a-ffb754baa225"
 #URL = "https://kartagohu.stg.dtweb.cz/megrendeles/megrendeles-reszletei?hash=bf1faa27-c99b-41ec-9969-84150ab0ab44"
 #URL = "https://kartagosk.web1.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=83ca2369-3cb8-462d-8af4-dace48c2c2fc"
-URL = "https://exim.web11.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=2adcc106-e654-4048-9133-4950ad940949"
+#URL = "https://exim.web11.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=2adcc106-e654-4048-9133-4950ad940949"
+#URL = "https://exim.web12.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=e0a556d3-9f16-4cbb-b600-ac6a52641366"
+URL = "https://kartagohu.web3.dtweb.cz/megrendeles/megrendeles-reszletei?hash=91281c63-776f-4a2a-8de2-8c0b91b8fcd1"
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 amountToPay = "965"
