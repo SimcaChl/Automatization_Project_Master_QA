@@ -57,10 +57,18 @@ def suite_map():
     suite.addTest(Test_SRL_C('test_SRL_map'))
     return suite
 
+def suite_HP_bannery():
+    suite = unittest.TestSuite()
+    suite.addTest(Test_HP_C('test_HP_bannery_check'))
+    return suite
+
+from starter_master_browserstack import  runner_tests_generalized
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER WEB Suite Report', report_name='FISCHER WEB Suite Report',
-                            open_in_browser=True, description="FISCHER WEB Suite Report- WEB2")
-    runner.run(suite_FW_full())
-    #runner.run(suite_map())
+                            open_in_browser=True, description="FISCHER WEB Suite Report- WEB1")
+
+    web_brand = "FISCHER"
+    #runner_tests_generalized(suite_FW_full, web_brand, "hotifx", URL)
+    runner_tests_generalized(suite_HP_bannery, web_brand, "hotifx", URL)
