@@ -51,6 +51,7 @@ class TestPoznavacky_D(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get(URL_poznavacky)
         acceptConsent(self.driver)
+        time.sleep(3)
         poznavacky_check_D(self, self.driver)
         self.test_passed = True
 
@@ -58,6 +59,7 @@ class TestPoznavacky_D(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get(URL_poznavacky_vikendy)
         acceptConsent(self.driver)
+        time.sleep(3)
         poznavacky_check_D(self, self.driver)
         self.test_passed = True
 
@@ -65,6 +67,7 @@ class TestPoznavacky_D(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get(URL_poznavacky_rodiny)
         acceptConsent(self.driver)
+        time.sleep(3)
         poznavacky_check_D(self, self.driver)
         self.test_passed = True
 

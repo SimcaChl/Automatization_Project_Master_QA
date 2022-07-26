@@ -70,5 +70,5 @@ if __name__ == '__main__':
                             open_in_browser=True, description="FISCHER WEB Suite Report- WEB1")
 
     web_brand = "FISCHER"
-    #runner_tests_generalized(suite_FW_full, web_brand, "hotifx", URL)
-    runner_tests_generalized(suite_HP_bannery, web_brand, "hotifx", URL)
+    runner_tests_generalized(suite_FW_full, web_brand, "hotifx", URL)
+    #runner_tests_generalized(suite_HP_bannery, web_brand, "hotifx", URL)
