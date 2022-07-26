@@ -62,6 +62,13 @@ def suite_HP_bannery():
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
     return suite
 
+def suite2():
+    suite = unittest.TestSuite()
+    suite.addTest(TestDetskeKluby_D("test_kluby_D"))
+    suite.addTest(TestSDO_D('test_SDO_D'))
+    suite.addTest(Test_SRL_C('test_SRL_filtr_strava'))
+    return suite
+
 from starter_master_browserstack import  runner_tests_generalized
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
@@ -70,5 +77,6 @@ if __name__ == '__main__':
                             open_in_browser=True, description="FISCHER WEB Suite Report- WEB1")
 
     web_brand = "FISCHER"
-    runner_tests_generalized(suite_FW_full, web_brand, "hotifx", URL)
-    #runner_tests_generalized(suite_HP_bannery, web_brand, "hotifx", URL)
+    version = "220726.1"
+    #runner_tests_generalized(suite_FW_full, web_brand, version, URL)
+    runner_tests_generalized(suite2, web_brand, version, URL)
