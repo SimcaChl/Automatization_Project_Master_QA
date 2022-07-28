@@ -20,7 +20,7 @@ def suite_KTGHU_full():
     suite.addTest(TestDetailHotelu_C("test_detail_fotka"))
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_meal"))
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_airport"))
-    suite.addTest(TestFM_D("test_FM_D"))
+    #suite.addTest(TestFM_D("test_FM_D")) ##ATM tam nic neni neni smysl to poustest
     #suite.addTest(Test_Fulltext_C("test_fulltext_naseptavac"))
     #suite.addTest(Test_Fulltext_C("test_fulltext_results_status_check"))
     suite.addTest(Test_Groupsearch_D("test_groupsearch_D"))
@@ -53,6 +53,7 @@ if __name__ == '__main__':
     outfile = open("results.html", "w")
     #runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report',title='KARTAGOHU Web Suite test', report_name='KARTAGOHU Web Suite test',open_in_browser=True, description="KARTAGOHU Web Suite- public")
     web_brand = "KTGHU"
-    runner_tests_generalized(suite_KTGHU_full, web_brand, "220718.1", URL)
+    version = "hotfix"
+    runner_tests_generalized(suite_KTGHU_full, web_brand, version, URL)
 
     #runner.run(suite2())

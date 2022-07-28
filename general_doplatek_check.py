@@ -23,8 +23,8 @@ PaymentGateway_CSOBczCardPaymentTotalPrice = "//*[@class='total-price']"  ##resu
 #URL = "https://kartagosk.web1.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=83ca2369-3cb8-462d-8af4-dace48c2c2fc"
 #URL = "https://exim.web11.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=2adcc106-e654-4048-9133-4950ad940949"
 #URL = "https://exim.web12.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=e0a556d3-9f16-4cbb-b600-ac6a52641366"
-URL = "https://exim.web13.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=a2f3526d-9f2b-4a03-b43c-4f136e59b8a0"
-
+#URL = "https://exim.web13.dtweb.cz/objednavka/objednavka-zajezdu-rekapitulace?hash=a2f3526d-9f2b-4a03-b43c-4f136e59b8a0"
+URL = "https://kartagohu.web3.dtweb.cz/megrendeles/potdij-belepes?hash=fb9b150e-d092-40fe-b7a2-4831b48b45a0"
 driver = webdriver.Chrome(ChromeDriverManager().install())
 amountToPay = "965"
 def rekapitulace_proklik_doplatek(driver, URL_rekapitulace):
