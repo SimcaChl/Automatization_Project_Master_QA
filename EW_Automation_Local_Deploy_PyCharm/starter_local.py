@@ -78,8 +78,6 @@ from starter_master_browserstack import  runner_tests_generalized
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
-    runner = HTMLTestRunner.HTMLTestRunner(log=True, verbosity=2, output='EXIM Web Suite test', title='EXIM Web Suite test', report_name='EXIM Web Suite test',
-                            open_in_browser=True, description="EXIM Web Suite - WEB13")
     web_brand = "EXIM"
     runner_tests_generalized(suite_EW_full, web_brand, "hotifx", URL)
     #runner_tests_generalized(suite4, web_brand, "220718.1", URL)

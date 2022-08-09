@@ -73,10 +73,7 @@ from starter_master_browserstack import  runner_tests_generalized
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
-    runner = HtmlTestRunner.HTMLTestRunner(log=True, verbosity=2, output='report', title='FISCHER WEB Suite Report', report_name='FISCHER WEB Suite Report',
-                            open_in_browser=True, description="FISCHER WEB Suite Report- WEB1")
-
     web_brand = "FISCHER"
-    version = "220726.1"
-    #runner_tests_generalized(suite_FW_full, web_brand, version, URL)
-    runner_tests_generalized(suite2, web_brand, version, URL)
+    version = "220803.2"
+    runner_tests_generalized(suite_FW_full, web_brand, version, URL)
+    #runner_tests_generalized(suite2, web_brand, version, URL)
