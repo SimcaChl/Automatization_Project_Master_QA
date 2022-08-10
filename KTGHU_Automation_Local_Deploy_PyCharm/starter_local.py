@@ -41,8 +41,12 @@ def suite_KTGHU_full():
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
     return suite
 
-def suite2():
+def suite_SRL_C():
     suite = unittest.TestSuite()
+    suite.addTest(Test_SRL_C('test_SRL_sort_cheapest'))
+    suite.addTest(Test_SRL_C('test_SRL_sort_expensive'))
+    suite.addTest(Test_SRL_C('test_SRL_map'))
+    suite.addTest(Test_SRL_C('test_SRL_filtr_strava'))
     suite.addTest(Test_SRL_C('test_srl_C'))
     return suite
 
@@ -55,5 +59,5 @@ if __name__ == '__main__':
     web_brand = "KTGHU"
     version = "hotfix"
     runner_tests_generalized(suite_KTGHU_full, web_brand, version, URL)
-
+    #runner_tests_generalized(suite_SRL_C, web_brand, version, URL)
     #runner.run(suite2())
