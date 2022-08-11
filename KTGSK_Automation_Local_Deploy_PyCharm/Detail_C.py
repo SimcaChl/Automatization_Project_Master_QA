@@ -234,23 +234,7 @@ class TestDetailHotelu_C(unittest.TestCase):
 
                 time.sleep(0.5)
                 try:
-                    ##potvrditButtonBox =
-                    ##driver.find_element_by_xpath("//*[@class='fshr-filter-footer']
-                    ##//*[contains(text(), 'Potvrdit')]")
-                    ##potvrditButtonBox =
-                    ##driver.find_element_by_xpath("//*[@class='fshr-button
-                    ##fshr-button--commonImportance fshr-button--big
-                    ##js-filterClose']")
-                    ##potvrditButtonBox =
-                    ##driver.find_element_by_xpath("//*[@class='js-filter
-                    ##js-filter--detail fshr-filter fshr-filter--travel
-                    ##js-change-detection
-                    ##fshr-filter--active']//*[@class='fshr-filter-wrapper
-                    ##js-filter-window']//*[@class='fshr-filter-footer']//*[@class='fshr-button
-                    ##fshr-button--commonImportance fshr-button--big
-                    ##js-filterClose']")
-                    ##wait.until(EC.visibility_of(potvrditButtonBox))
-                    # potvrditButtonBox.click()
+
                     self.driver.execute_script("arguments[0].click();",
                                                dopravaBox)  ##workaround, proste klikne znova na doprava box aby se to propsalo, potvrdit
                     ##button mi nejak blbnul
@@ -300,6 +284,7 @@ class TestDetailHotelu_C(unittest.TestCase):
             sendEmail(msg)
         y = 1
         for _ in pocetZobrazenychTerminu:
+            print(odletyTerminy[y].text)
             assert odletyTerminy[y].text == "Košice"
             if odletyTerminy[y].text == "Košice":  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
                 ##je "odlet"), kazdy sudy cislo je mezera/blank space for some reason

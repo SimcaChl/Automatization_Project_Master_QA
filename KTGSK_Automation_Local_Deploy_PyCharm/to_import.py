@@ -5,8 +5,8 @@ from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.opera import OperaDriverManager
 
-URL = "https://www.kartago.sk/"
-#URL = "https://kartagosk.web1.dtweb.cz/"
+#URL = "https://www.kartago.sk/"
+URL = "https://kartagosk.web1.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"
 URL_poznavacky_rodiny = URL+"poznavaci-zajezdy#rodiny"
@@ -14,7 +14,8 @@ URL_poznavacky_zazitky = URL+"poznavaci-zajezdy#rodiny"
 URL_pobocky = URL+"kontakty/nase-predajne"
 URL_kluby = URL+"uzitocne-informacie/mango-club"
 #URL_detail = URL+"spanielsko/costa-almeria/roquetas-de-mar/ar-almerimar?KEY=2207812211&DS=32768&GIATA=0&D=63350|211764&HID=142164&MT=2&RT=15&NN=7&RD=2022-08-01&DD=2022-07-25&DP=483&TO=483|1837|2933|3437&MNN=7&TT=1&PID=359709&DPR=KARTAGO-SK&TTM=1&DF=2022-07-25|2022-08-25&ERM=0&NNM=7|8|9|10|11|12|13&ac1=2&kc1=1&ka1=6&ic1=0#/prehled"
-URL_detail = URL+"grecko/rhodos/afanadou/afandou-beach?KEY=2192069684&DS=32768&GIATA=7139&D=63316|63319|63324|63402|63471&HID=3813&MT=5&RT=15&NN=7&RD=2022-09-30&DD=2022-09-23&DP=483&TO=483|1837|2933|3437&MNN=7&TT=1&PID=2821&DPR=KARTAGO-SK&TTM=1&DF=2022-06-04|2022-07-05&ERM=0&NNM=7|8|9&ac1=2&kc1=0&ic1=0#/prehled"
+#URL_detail = URL+"grecko/rhodos/afanadou/afandou-beach?KEY=2192069684&DS=32768&GIATA=7139&D=63316|63319|63324|63402|63471&HID=3813&MT=5&RT=15&NN=7&RD=2022-09-30&DD=2022-09-23&DP=483&TO=483|1837|2933|3437&MNN=7&TT=1&PID=2821&DPR=KARTAGO-SK&TTM=1&DF=2022-06-04|2022-07-05&ERM=0&NNM=7|8|9&ac1=2&kc1=0&ic1=0#/prehled"
+URL_detail = URL + "/egypt/hurghada/safaga/caribbean-world?KEY=2207804139&DS=32768&GIATA=79878&D=64419|64420&HID=5006&MT=5&RT=15&NN=7&RD=2022-09-22&DD=2022-09-15&DP=483&TO=483|1837|2933|3437&MNN=7&TT=1&PID=5598&DPR=KARTAGO-SK&TTM=1&DF=2022-09-02|2022-09-25&ERM=0&NNM=7|8|9|10|11|12|13&ac1=2&kc1=0&ic1=0#/prehled"
 URL_SRL = URL + "vysledky-vyhladavania?d=63316|63319|63324|63402|63471&tt=1&to=483|1837|2933|3437&dd=2022-08-06&rd=2022-09-23&nn=7|8|9|10|11|12|13&ka1=6&kc1=1&ac1=2"
 #URL_SRL = URL + "vysledky-vyhladavania?d=63350|211764&tt=1&to=483|1837|2933|3437&dd=2022-07-01&rd=2022-08-31&nn=7|8|9|10|11|12|13&ka1=6&kc1=1&ac1=2"
 URL_covidInfo = URL+"covid-info"
