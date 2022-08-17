@@ -9,7 +9,7 @@ from to_import_master import queryListOptimizedMonitor
 query = "Mirage bay"
 
 
-querySDO = ["Zanzibar", "Řecko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Maledivy", "Dubaj", "Mallorca", "Bulharsko", "Chorvatsko", "Kefalonia", "Attika" ]
+querySDO = ["Řecko","Zanzibar",  "Turecko", "Egypt", "Kapverdy", "Oman" , "Maledivy", "Dubaj", "Mallorca", "Bulharsko", "Chorvatsko", "Kefalonia", "Attika" ]
 queryCommon = ["pojištění",  "parkování", "covid", "Funtazie" ]
 queryHotely = ["Mirage bay",  "Prima life", "Prima life makadi", "Pegasos", "Pickalbatros", "Titanic", "mirage", "Bay & Mare",  "A for Art",
                "Porto Skala 7", "Costa Azzurra", "La Cite",  "Stefanos", "Magnolia",  "White Gold", "King Tut Resort", "Blue Waters",
@@ -21,10 +21,13 @@ queryList = queryListOptimizedMonitor
 HPLupaFullTextXpath = "//*[@class='f_icon f_icon--magnifier']"
 #HPinputBoxFullTextXpath = "//*[@class='flex-grow outline-none px-2 py-2 bg-transparent']"
 HPinputBoxFullTextXpath = "//*[@class='grow outline-none px-2 py-2 bg-transparent']"
-fullTextNaseptavacKartaHoteluXpath = "//*[@class='aspect-w-16 aspect-h-10']"
+fullTextNaseptavacKartaHoteluXpath = "//*[@class='transition-all no-underline hover:no-underline text-black hover:text-blue-dark flex flex-col grow h-full shadow-xl rounded-lg overflow-hidden']"
 fullTextNaseptavacTextResultsXpath = "//*[@class='text-base']"
-fullTextResultsKartaHoteluXpath = "//*[@class='aspect-w-16 aspect-h-10']"
+#fullTextResultsKartaHoteluXpath = "//*[@class='aspect-w-16 aspect-h-10']"
 fullTextResultsKartaHoteluHrefXpath="//*[@class='my-4 grid gap-4 grid-cols-2 sm:grid-cols-3']/a"
+
+fullTextResultsKartaHoteluXpath  = "//*[@class='c_btn small inline green']"
+
 fullTextResultsTextHrefXpath="//*[@class='space-y-2 py-4']/a"
 class Test_Fulltext_C(unittest.TestCase):
     def setUp(self):
@@ -49,7 +52,7 @@ class Test_Fulltext_C(unittest.TestCase):
             wait.until(EC.visibility_of(FTlupa)).click()
             #inputBox =
             # inputBox.send_keys(queryList[poziceQueryItem])
-            time.sleep(0.7)
+            time.sleep(1.7)
             generalDriverWaitImplicit(self.driver)
             #wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPinputBoxFullTextXpath))).send_keys(queryList[poziceQueryItem])
             self.driver.find_element_by_xpath(HPinputBoxFullTextXpath).send_keys(queryList[poziceQueryItem])
@@ -66,11 +69,10 @@ class Test_Fulltext_C(unittest.TestCase):
                 try:
 
                     # hotelDlazdice = self.driver.find_element_by_xpath("//*[@class='f_tileGrid-item']")
-                    #wait.until(EC.visibility_of(self.driver.find_element_by_xpath("//*[@class='f_tile f_tile--tour']"))).click()
-                    wait.until(EC.visibility_of(
-                        self.driver.find_element_by_xpath(fullTextNaseptavacKartaHoteluXpath))).click()
+
 
                     # hotelDlazdice.click()
+                    self.driver.find_element_by_xpath(fullTextNaseptavacKartaHoteluXpath).click()
                     currentUrl = self.driver.current_url
                     print("hote dlazdice klik")
                     assert currentUrl != URL
