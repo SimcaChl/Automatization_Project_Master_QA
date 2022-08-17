@@ -65,6 +65,7 @@ class Test_SRL_C(unittest.TestCase):
         wait = WebDriverWait(self.driver, 1500)
         self.driver.maximize_window()
         acceptConsent(self.driver)
+        time.sleep(3)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(odNejdrazsihoSorterXpath))).click()
         time.sleep(4.5)   ##waits not working, for now just time sleep
 
@@ -145,7 +146,8 @@ class Test_SRL_C(unittest.TestCase):
 
             stravaHoteluVkarteAssertValue = stravaHoteluVkarte[0].text.lower()
             #print(stravaHoteluVkarteAssertValue)
-            assert stravaHoteluVkarteAssertValue == "all inclusive"
+            #assert stravaHoteluVkarteAssertValue == "all inclusive"
+            assert("all inclusive" in stravaHoteluVkarteAssertValue)
             #print(stravaHoteluVkarte[0])
             #print(SDOstravaRowKartaElement[x].text)
             x=x+1
@@ -168,7 +170,7 @@ class Test_SRL_C(unittest.TestCase):
         generalDriverWaitImplicit(self.driver)
         #self.driver.find_element_by_xpath(chatCrossXpath).click()
         #wait.until(EC.visibility_of(self.driver.find_element_by_xpath(chatCrossXpath))).click()
-        time.sleep(3)
+        time.sleep(6)
         try:
             wait.until(EC.visibility_of(self.driver.find_elements_by_xpath(totalPriceXpath)[1]))
         except NoSuchElementException:
