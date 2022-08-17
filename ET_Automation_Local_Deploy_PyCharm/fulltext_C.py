@@ -52,7 +52,7 @@ class Test_Fulltext_C(unittest.TestCase):
             wait.until(EC.visibility_of(FTlupa)).click()
             #inputBox =
             # inputBox.send_keys(queryList[poziceQueryItem])
-            time.sleep(1.7)
+            time.sleep(0.7)
             generalDriverWaitImplicit(self.driver)
             #wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPinputBoxFullTextXpath))).send_keys(queryList[poziceQueryItem])
             self.driver.find_element_by_xpath(HPinputBoxFullTextXpath).send_keys(queryList[poziceQueryItem])
