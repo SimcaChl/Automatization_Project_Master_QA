@@ -25,10 +25,13 @@ def rowKarty_imgHoteluKarty_D(self, driver):
         generalDriverWaitImplicit(self.driver)
         rowKartyHoteluElement = self.driver.find_elements_by_xpath(rowKartyHoteluXpath)
         #if rowKartyHoteluElement[2].is_displayed():
+        x=0
         if rowKartyHoteluElement[0].is_displayed():
-            for WebElement in rowKartyHoteluElement:
-                jdouvidet = WebElement.is_displayed()
+            #for WebElement in rowKartyHoteluElement:
+            for i in range(4): ##toto jinak neprojde protože to bere elemetny i za scrollem, ktery displayed nejsou ani nemuzou
+                jdouvidet = rowKartyHoteluElement[x].is_displayed()
                 assert jdouvidet == True
+                x=x+1
                 if jdouvidet == True:
                     print("JDOU VIDET")
                     pass
