@@ -7,7 +7,8 @@ import unittest
 from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_chooseFiltr, generalized_list_string_sorter, generalized_detail_departure_check
 
 ##global
-terminyAcenyTabXpath = "//*[@id='terminyaceny-tab']"
+terminyAcenyTabXpath_V1 = "//*[@id='terminyaceny-tab']"
+terminyAcenyTabXpath = "//*[@class='f_bar-item f_tabBar']//*[contains(text(),'Termíny a ceny')]"
 potvrditPopupXpath = "//*[@data-testid='popup-closeButton']"
 
 #meal filter
@@ -17,10 +18,16 @@ zvolenaStravaVboxuXpath = "//*[@class='js-subvalue f_text--highlighted']"
 stravaVterminechXpath = "//*[@class='fshr-termin-catering js-tooltip js-tooltip--onlyDesktop']"
 
 #airport filter
-dopravaBoxXpath = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
+dopravaBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
 dopravaBrnoXpath = "//*[@data-value='4305']"
+doprava
+dopravaBoxXpath ="//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--plane']"
 
+"//*[@class='f_button-content f_icon f_icon--plane']"
+"//*[@class='f_holder']"
 
+"//*[@class='f_filterHolder f_set--active']//*[@class='f_list-item']//*[contains(text(),'Brno')]"
+"//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
 class TestDetailHotelu_C(unittest.TestCase):
     def setUp(self):
         setUp(self)

@@ -181,7 +181,7 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
 
 
 def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTabXpath, potvrditPopupXpath, boxFiltrXpath, valueToFilterXpath):
-
+    V2=True
 
     terminyAcenyTabElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
     driver.execute_script("arguments[0].click();", terminyAcenyTabElement)
@@ -189,8 +189,12 @@ def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTab
 
     time.sleep(1.5)
 
-    potvrditPopupElement = driver.find_element_by_xpath(potvrditPopupXpath)
-    driver.execute_script("arguments[0].click();", potvrditPopupElement)
+    if V2==True:
+        pass
+    else:
+
+        potvrditPopupElement = driver.find_element_by_xpath(potvrditPopupXpath)
+        driver.execute_script("arguments[0].click();", potvrditPopupElement)
 
     time.sleep(1)
 
@@ -198,8 +202,17 @@ def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTab
     driver.execute_script("arguments[0].click();", boxElement)
     time.sleep(1.5)
 
-    valueToFilterElement = driver.find_element_by_xpath(valueToFilterXpath)
-    driver.execute_script("arguments[0].scrollIntoView();", valueToFilterElement)
+    if V2==True:
+        valueToFilterElement = driver.find_elements_by_xpath(valueToFilterXpath)
+        valueToClickElement = valueToFilterElement[2]
+        driver.execute_script("arguments[0].scrollIntoView();", valueToClickElement)
+        pass
+
+    else:
+
+        valueToFilterElement = driver.find_element_by_xpath(valueToFilterXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", valueToFilterElement)
+
 
     time.sleep(0.5)
 
