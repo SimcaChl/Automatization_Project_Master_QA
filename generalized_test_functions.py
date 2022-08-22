@@ -206,18 +206,19 @@ def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTab
         valueToFilterElement = driver.find_elements_by_xpath(valueToFilterXpath)
         valueToClickElement = valueToFilterElement[2]
         driver.execute_script("arguments[0].scrollIntoView();", valueToClickElement)
-        pass
+        time.sleep(0.5)
+
+        valueToClickElement.click()
+        time.sleep(0.5)
 
     else:
 
         valueToFilterElement = driver.find_element_by_xpath(valueToFilterXpath)
         driver.execute_script("arguments[0].scrollIntoView();", valueToFilterElement)
+        time.sleep(0.5)
 
-
-    time.sleep(0.5)
-
-    valueToFilterElement.click()
-    time.sleep(0.5)
+        valueToFilterElement.click()
+        time.sleep(0.5)
 
     driver.execute_script("arguments[0].click();", boxElement)
 
@@ -239,19 +240,60 @@ def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odl
                 url = driver.current_url
                 msg = "odletyTerminy, nejsou odlety na brno, most likely not a bad thing, NoSuchElementException " + url
                 sendEmail(msg)
-            y = 1
-            for _ in pocetZobrazenychTerminu:
-                assert odletyTerminy[y].text.lower() == departureToCompareTo
-                if odletyTerminy[y].text.lower() == departureToCompareTo:  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
-                    ##je "odlet"), kazdy sudy cislo je mezera/blank space for some reason
-                    print(odletyTerminy[y].text.lower())
-                    y = y + 2
-                else:
-                    url = driver.current_url
-                    print(odletyTerminy[y].text.lower())
-                    msg = "na detailu jsem vyfiltroval odlet na brno ale pry to nesedi říká python " + url
-                    sendEmail(msg)
-                    y = y + 2
+
+            #assert odletyTerminy[y].text.lower() == departureToCompareTo
+            v2=True
+
+            time.sleep(5)
+            poziceTerminu = -3
+            if v2==True:
+                print(poziceTerminu)
+                print(odletyTerminy[poziceTerminu].text.lower())
+                #pocetZobrazenychTerminu =
+                #print(pocetZobrazenychTerminu.len())
+                print(len(pocetZobrazenychTerminu))
+                #for _ in pocetZobrazenychTerminu:
+                for _ in range(len(pocetZobrazenychTerminu)):
+                    
+                    print(poziceTerminu)
+                    print(odletyTerminy[poziceTerminu].text.lower())
+                    if odletyTerminy[poziceTerminu].text.lower() == departureToCompareTo:  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
+                        ##je "odlet"), kazdy sudy cislo je mezera/blank space for some reason
+                        print("equalt to " + departureToCompareTo)
+                        poziceTerminu = poziceTerminu+1
+                        assert odletyTerminy[poziceTerminu].text.lower() == departureToCompareTo
+
+                    if odletyTerminy[poziceTerminu].text.lower() == "odlet":
+                        print(odletyTerminy[poziceTerminu].text.lower())
+                        print("odlet if")
+                        poziceTerminu=poziceTerminu+1
+
+
+
+                    else:
+                        url = driver.current_url
+                        msg = "na detailu jsem vyfiltroval odlet na brno ale pry to nesedi říká python " + url
+                        sendEmail(msg)
+                        #poziceTerminu = poziceTerminu + 1
+                        print("else trigger")
+                        assert odletyTerminy[poziceTerminu].text.lower() == departureToCompareTo
+
+
+
+            if not v2==True:
+                y = 1
+                for _ in pocetZobrazenychTerminu:
+                    assert odletyTerminy[y].text.lower() == departureToCompareTo
+                    if odletyTerminy[y].text.lower() == departureToCompareTo:  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
+                        ##je "odlet"), kazdy sudy cislo je mezera/blank space for some reason
+                        print(odletyTerminy[y].text.lower())
+                        y = y + 2
+                    else:
+                        url = driver.current_url
+                        print(odletyTerminy[y].text.lower())
+                        msg = "na detailu jsem vyfiltroval odlet na brno ale pry to nesedi říká python " + url
+                        sendEmail(msg)
+                        y = y + 2
 
 def generalized_EW_like_top_nabidka_URL_status_check(driver, topNabidkaLinkXpath):
 

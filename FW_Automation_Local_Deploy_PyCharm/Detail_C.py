@@ -19,15 +19,15 @@ stravaVterminechXpath = "//*[@class='fshr-termin-catering js-tooltip js-tooltip-
 
 #airport filter
 dopravaBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
-dopravaBrnoXpath = "//*[@data-value='4305']"
-doprava
+dopravaBrnoXpath_V1 = "//*[@data-value='4305']"
+dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
 dopravaBoxXpath ="//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--plane']"
 
 "//*[@class='f_button-content f_icon f_icon--plane']"
 "//*[@class='f_holder']"
 
 "//*[@class='f_filterHolder f_set--active']//*[@class='f_list-item']//*[contains(text(),'Brno')]"
-"//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
+
 class TestDetailHotelu_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -137,13 +137,13 @@ class TestDetailHotelu_C(unittest.TestCase):
 
         time.sleep(5)
 
-        pocetZobrazenychTerminuXpath = "//*[@class='fshr-termins-table-item-header js-toggleSlide']"
-        odletyTerminyXpath = "//*[@class='fshr-termin-departure-from']"
+        pocetZobrazenychTerminuXpath_V1 = "//*[@class='fshr-termins-table-item-header js-toggleSlide']"
+        pocetZobrazenychTerminuXpath="//*[@class='f_termList-header-item f_termList-header-item--dateRange']"
+        odletyTerminyXpath_V1 = "//*[@class='fshr-termin-departure-from']"
+        odletyTerminyXpath = "//*[@class='f_termList-header-item f_termList-header-item--transport']"
         departureToCompareTo = "brno"
 
-
-
-
+        time.sleep(5)
         generalized_detail_departure_check(self.driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath, departureToCompareTo)
 
         time.sleep(0.2)
