@@ -254,7 +254,7 @@ def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odl
                 print(len(pocetZobrazenychTerminu))
                 #for _ in pocetZobrazenychTerminu:
                 for _ in range(len(pocetZobrazenychTerminu)):
-                    
+
                     print(poziceTerminu)
                     print(odletyTerminy[poziceTerminu].text.lower())
                     if odletyTerminy[poziceTerminu].text.lower() == departureToCompareTo:  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
