@@ -245,31 +245,24 @@ def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odl
             v2=True
 
             time.sleep(5)
-            poziceTerminu = -3
+            poziceTerminu = 1
             if v2==True:
-                print(poziceTerminu)
-                print(odletyTerminy[poziceTerminu].text.lower())
+                #print(poziceTerminu)
+                #print(odletyTerminy[poziceTerminu].text.lower())
                 #pocetZobrazenychTerminu =
                 #print(pocetZobrazenychTerminu.len())
-                print(len(pocetZobrazenychTerminu))
+                #print(len(pocetZobrazenychTerminu))
                 #for _ in pocetZobrazenychTerminu:
-                for _ in range(len(pocetZobrazenychTerminu)):
-
-                    print(poziceTerminu)
-                    print(odletyTerminy[poziceTerminu].text.lower())
-                    if odletyTerminy[poziceTerminu].text.lower() == departureToCompareTo:  ##tady je nutny pricitat +2 protoze je tam 41 results (s tim ze jeden
-                        ##je "odlet"), kazdy sudy cislo je mezera/blank space for some reason
-                        print("equalt to " + departureToCompareTo)
+                forInLoopZobrazeneTerminy = len(pocetZobrazenychTerminu)-2
+                #print(forInLoopZobrazeneTerminy )
+                #for _ in range(len(pocetZobrazenychTerminu)):
+                for _ in range(forInLoopZobrazeneTerminy):
+                    #print(poziceTerminu)
+                    #print(odletyTerminy[poziceTerminu].text.lower())
+                    if odletyTerminy[poziceTerminu].text.lower() == departureToCompareTo:
+                        print("equal to " + departureToCompareTo)
                         poziceTerminu = poziceTerminu+1
                         assert odletyTerminy[poziceTerminu].text.lower() == departureToCompareTo
-
-                    if odletyTerminy[poziceTerminu].text.lower() == "odlet":
-                        print(odletyTerminy[poziceTerminu].text.lower())
-                        print("odlet if")
-                        poziceTerminu=poziceTerminu+1
-
-
-
                     else:
                         url = driver.current_url
                         msg = "na detailu jsem vyfiltroval odlet na brno ale pry to nesedi říká python " + url
@@ -277,6 +270,7 @@ def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odl
                         #poziceTerminu = poziceTerminu + 1
                         print("else trigger")
                         assert odletyTerminy[poziceTerminu].text.lower() == departureToCompareTo
+                    assert odletyTerminy[poziceTerminu].text.lower() == departureToCompareTo
 
 
 
