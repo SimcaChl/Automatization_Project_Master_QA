@@ -247,11 +247,6 @@ def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odl
             time.sleep(5)
             poziceTerminu = 1
             if v2==True:
-                #print(poziceTerminu)
-                #print(odletyTerminy[poziceTerminu].text.lower())
-                #pocetZobrazenychTerminu =
-                #print(pocetZobrazenychTerminu.len())
-                #print(len(pocetZobrazenychTerminu))
                 #for _ in pocetZobrazenychTerminu:
                 forInLoopZobrazeneTerminy = len(pocetZobrazenychTerminu)-2
                 #print(forInLoopZobrazeneTerminy )
