@@ -4,7 +4,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExp
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_chooseFiltr, generalized_list_string_sorter, generalized_detail_departure_check
+from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_chooseFiltr, generalized_list_string_sorter, generalized_detail_departure_check, generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail
 
 ##global
 terminyAcenyTabXpath_V1 = "//*[@id='terminyaceny-tab']"
@@ -12,9 +12,15 @@ terminyAcenyTabXpath = "//*[@class='f_bar-item f_tabBar']//*[contains(text(),'Te
 potvrditPopupXpath = "//*[@data-testid='popup-closeButton']"
 
 #meal filter
-stravovaniBoxXpath= "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']"
-valueToFilterStravaAllIncXpath = "//*[@id='filtr-stravy-detail']//*[contains(text(),'All inclusive')]"
+stravovaniBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']"
+stravovaniBoxXpath = "//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--cutlery']"
+
+valueToFilterStravaAllIncXpath_V1 = "//*[@id='filtr-stravy-detail']//*[contains(text(),'All inclusive')]"
+#valueToFilterStravaAllIncXpath = "//*[@class='f_holder']//*[contains(text(),'All inclusive')]"
+valueToFilterStravaAllIncXpath = "//*[@class='f_holder']//*[@class='f_input--checkbox f_input']//*[contains(text(),'All inclusive')]"
+
 zvolenaStravaVboxuXpath = "//*[@class='js-subvalue f_text--highlighted']"
+
 stravaVterminechXpath = "//*[@class='fshr-termin-catering js-tooltip js-tooltip--onlyDesktop']"
 
 #airport filter
@@ -23,10 +29,7 @@ dopravaBrnoXpath_V1 = "//*[@data-value='4305']"
 dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
 dopravaBoxXpath ="//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--plane']"
 
-"//*[@class='f_button-content f_icon f_icon--plane']"
-"//*[@class='f_holder']"
 
-"//*[@class='f_filterHolder f_set--active']//*[@class='f_list-item']//*[contains(text(),'Brno')]"
 
 class TestDetailHotelu_C(unittest.TestCase):
     def setUp(self):
@@ -96,8 +99,8 @@ class TestDetailHotelu_C(unittest.TestCase):
 
 
 
-        generalized_Detail_terminyAceny_potvrdit_chooseFiltr(self.driver, terminyAcenyTabXpath, potvrditPopupXpath,
-                                                             stravovaniBoxXpath, valueToFilterStravaAllIncXpath)
+        #generalized_Detail_terminyAceny_potvrdit_chooseFiltr(self.driver, terminyAcenyTabXpath, potvrditPopupXpath,stravovaniBoxXpath, valueToFilterStravaAllIncXpath)
+        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,stravovaniBoxXpath, valueToFilterStravaAllIncXpath, False)
         time.sleep(1.2)
 
         zvolenaStravaVboxu = self.driver.find_element_by_xpath(zvolenaStravaVboxuXpath)
@@ -129,10 +132,9 @@ class TestDetailHotelu_C(unittest.TestCase):
         time.sleep(1)
         acceptConsent(self.driver)
 
-
-
-        generalized_Detail_terminyAceny_potvrdit_chooseFiltr(self.driver, terminyAcenyTabXpath, potvrditPopupXpath,
-                                                             dopravaBoxXpath, dopravaBrnoXpath)
+        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,
+                                                             dopravaBoxXpath, dopravaBrnoXpath, True)
+        #generalized_Detail_terminyAceny_potvrdit_chooseFiltr(self.driver, terminyAcenyTabXpath, potvrditPopupXpath,dopravaBoxXpath, dopravaBrnoXpath)
 
 
         time.sleep(5)

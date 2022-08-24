@@ -179,51 +179,6 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
 
-
-def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTabXpath, potvrditPopupXpath, boxFiltrXpath, valueToFilterXpath):
-    V2=True
-
-    terminyAcenyTabElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
-    driver.execute_script("arguments[0].click();", terminyAcenyTabElement)
-
-
-    time.sleep(1.5)
-
-    if V2==True:
-        pass
-    else:
-
-        potvrditPopupElement = driver.find_element_by_xpath(potvrditPopupXpath)
-        driver.execute_script("arguments[0].click();", potvrditPopupElement)
-
-    time.sleep(1)
-
-    boxElement = driver.find_element_by_xpath(boxFiltrXpath)
-    driver.execute_script("arguments[0].click();", boxElement)
-    time.sleep(1.5)
-
-    if V2==True:
-        valueToFilterElement = driver.find_elements_by_xpath(valueToFilterXpath)
-        valueToClickElement = valueToFilterElement[2]
-        driver.execute_script("arguments[0].scrollIntoView();", valueToClickElement)
-        time.sleep(0.5)
-
-        valueToClickElement.click()
-        time.sleep(0.5)
-
-    else:
-
-        valueToFilterElement = driver.find_element_by_xpath(valueToFilterXpath)
-        driver.execute_script("arguments[0].scrollIntoView();", valueToFilterElement)
-        time.sleep(0.5)
-
-        valueToFilterElement.click()
-        time.sleep(0.5)
-
-    driver.execute_script("arguments[0].click();", boxElement)
-
-    time.sleep(1)
-
 def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath, departureToCompareTo ):
 
             try:
@@ -295,3 +250,81 @@ def generalized_EW_like_top_nabidka_URL_status_check(driver, topNabidkaLinkXpath
         links_list_counter = links_list_counter+1
         print(topNabidkaElementHref)
         print(links_to_check)
+
+def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTabXpath, potvrditPopupXpath, boxFiltrXpath, valueToFilterXpath):
+    V2=True
+
+    terminyAcenyTabElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
+    driver.execute_script("arguments[0].click();", terminyAcenyTabElement)
+
+
+    time.sleep(1.5)
+
+    if V2==True:
+        pass
+    else:
+
+        potvrditPopupElement = driver.find_element_by_xpath(potvrditPopupXpath)
+        driver.execute_script("arguments[0].click();", potvrditPopupElement)
+
+    time.sleep(1)
+
+    boxElement = driver.find_element_by_xpath(boxFiltrXpath)
+    driver.execute_script("arguments[0].click();", boxElement)
+    time.sleep(1.5)
+
+    if V2==True:
+        valueToFilterElement = driver.find_elements_by_xpath(valueToFilterXpath)
+        valueToClickElement = valueToFilterElement[2]
+        driver.execute_script("arguments[0].scrollIntoView();", valueToClickElement)
+        time.sleep(0.5)
+
+        valueToClickElement.click()
+        time.sleep(0.5)
+
+    else:
+
+        valueToFilterElement = driver.find_element_by_xpath(valueToFilterXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", valueToFilterElement)
+        time.sleep(0.5)
+
+        valueToFilterElement.click()
+        time.sleep(0.5)
+
+    driver.execute_script("arguments[0].click();", boxElement)
+
+    time.sleep(1)
+
+
+def generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(driver, terminyAcenyTabXpath, boxFiltrXpath, valueToFilterXpath, departure):
+
+    terminyAcenyTabElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
+    driver.execute_script("arguments[0].click();", terminyAcenyTabElement)
+    time.sleep(2.5)
+
+    boxElement = driver.find_element_by_xpath(boxFiltrXpath)
+    driver.execute_script("arguments[0].click();", boxElement)
+    time.sleep(3.5)
+
+    if departure==True:
+        print("if departure==True")
+        valueToFilterElement = driver.find_elements_by_xpath(valueToFilterXpath)
+        valueToClickElement = valueToFilterElement[2]
+        driver.execute_script("arguments[0].scrollIntoView();", valueToClickElement)
+        time.sleep(0.5)
+        valueToClickElement.click()
+        time.sleep(0.5)
+    else:
+        print("else departure not true")
+        time.sleep(5)
+        driver.execute_script("arguments[0].scrollIntoView();", boxElement)
+        valueToFilterElement = driver.find_element_by_xpath(valueToFilterXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", valueToFilterElement)
+        time.sleep(0.5)
+
+        valueToFilterElement.click()
+        time.sleep(0.5)
+
+    driver.execute_script("arguments[0].click();", boxElement)
+
+    time.sleep(1)
