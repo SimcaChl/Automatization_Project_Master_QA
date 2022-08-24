@@ -17,11 +17,11 @@ stravovaniBoxXpath = "//*[@class='f_holder']//*[@class='f_button-content f_icon 
 
 valueToFilterStravaAllIncXpath_V1 = "//*[@id='filtr-stravy-detail']//*[contains(text(),'All inclusive')]"
 #valueToFilterStravaAllIncXpath = "//*[@class='f_holder']//*[contains(text(),'All inclusive')]"
-valueToFilterStravaAllIncXpath = "//*[@class='f_holder']//*[@class='f_input--checkbox f_input']//*[contains(text(),'All inclusive')]"
+valueToFilterStravaAllIncXpath = "//*[@class='f_input--checkbox f_input']//*[@value=5]"
 
-zvolenaStravaVboxuXpath = "//*[@class='js-subvalue f_text--highlighted']"
+zvolenaStravaVboxuXpath = "//*[@class='f_button-content f_icon f_icon--cutlery']//*[@class='f_button-text f_text--highlighted']"
 
-stravaVterminechXpath = "//*[@class='fshr-termin-catering js-tooltip js-tooltip--onlyDesktop']"
+stravaVterminechXpath = "//*[@class='f_icon f_icon--cutlery']"
 
 #airport filter
 dopravaBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
