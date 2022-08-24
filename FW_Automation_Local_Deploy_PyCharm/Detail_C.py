@@ -50,15 +50,17 @@ class TestDetailHotelu_C(unittest.TestCase):
             pass
 
     def test_detail_fotka(self):
-
+        self.driver.maximize_window()
         self.driver.get(URL_detail)
 
         acceptConsent(self.driver)
 
-        time.sleep(1)
-        closeExponeaBanner(self.driver)
+        time.sleep(10)
 
-        imageDetail = self.driver.find_element_by_xpath("//*[@id='gallery01Trigger']//img")
+
+        #imageDetail = self.driver.find_element_by_xpath("//*[@id='gallery01Trigger']//img")
+        #imageDetail = self.driver.find_element_by_xpath("//*[@aria-roledescription='carousel']")
+        imageDetail = self.driver.find_element_by_xpath("//*[@aria-roledescription='carousel']//*[@class='splide__slide is-active is-visible']//img")
         imageDetailSrc = imageDetail.get_attribute("src")
         try:
             self.driver.set_page_load_timeout(5)
@@ -69,6 +71,7 @@ class TestDetailHotelu_C(unittest.TestCase):
             sendEmail(msg)
 
         try:
+            #time.sleep(5)
             image = self.driver.find_element_by_xpath("/html/body/img")
             assert image.is_displayed() == True
             if image.is_displayed():
