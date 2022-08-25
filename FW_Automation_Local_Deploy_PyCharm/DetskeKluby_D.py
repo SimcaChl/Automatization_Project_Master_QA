@@ -20,6 +20,7 @@ class TestDetskeKluby_D(unittest.TestCase):
         acceptConsent(self.driver)
         self.driver.maximize_window()
         generalDriverWaitImplicit(self.driver)
+        time.sleep(5)
         benefitItem = self.driver.find_elements_by_xpath("//*[@class='f_benefit-item splide__slide']")
         assert benefitItem[0].is_displayed() == True
         a=0
