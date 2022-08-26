@@ -69,11 +69,22 @@ def suite2():
     suite.addTest(Test_SRL_C('test_SRL_filtr_strava'))
     return suite
 
+def SRL_suite_full():
+    suite = unittest.TestSuite()
+    suite.addTest(Test_SRL_C('test_SRL_sort_cheapest'))
+    suite.addTest(Test_SRL_C('test_SRL_sort_expensive'))
+    suite.addTest(Test_SRL_C('test_SRL_map'))
+    suite.addTest(Test_SRL_C('test_SRL_filtr_strava'))
+    suite.addTest(Test_SRL_C('test_srl_C'))
+    return suite
+
 from starter_master_browserstack import  runner_tests_generalized
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     web_brand = "FISCHER"
     version = "220803.2"
-    runner_tests_generalized(suite_FW_full, web_brand, version, URL)
+    #runner_tests_generalized(suite_FW_full, web_brand, version, URL)
+
+    runner_tests_generalized(SRL_suite_full, web_brand, version, URL)
     #runner_tests_generalized(suite2, web_brand, version, URL)

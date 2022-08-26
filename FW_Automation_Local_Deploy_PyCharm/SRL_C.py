@@ -143,8 +143,7 @@ class Test_SRL_C(unittest.TestCase):
             cenaZajezduAllString = cenaZajezduAll[x].text
             ##print(cenaZajezduAllString)
 
-            cenaZajezduAdult = self.driver.find_elements_by_xpath(
-                "//*[@class='f_tile-priceDetail-item']//*[@class='f_tile-priceDetail-note'] //*[@class='f_price']")
+            cenaZajezduAdult = self.driver.find_elements_by_xpath("//*[@class='f_tile-priceDetail-item']//*[@class='f_tile-priceDetail-note'] //*[@class='f_price']")
             cenaZajezduAdultString = cenaZajezduAdult[x].text
             #print(cenaZajezduAdultString)
 
@@ -156,26 +155,27 @@ class Test_SRL_C(unittest.TestCase):
 
             time.sleep(1)  ##natvrdo aby se to neposralo
 
-            detailTerminSedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary-title']")
+            #detailTerminSedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary-title']")
             ##print(detailTerminSedivka.text)
 
-            detailStravaSedivka = self.driver.find_elements_by_xpath("//*[@class='fshr-detail-summary-paragraph']")
-            detailStravaSedivkaString = detailStravaSedivka[
-                1].text  ##gottaa be 1 cuz thats how its set up (multiple locators are attached to this locator so position 1 is always gonna be strava hopefully
+            detailStravaSedivka = self.driver.find_element_by_xpath("/html/body/div[1]/div/div[1]/div/div[2]/div[2]/div/div[2]/div[2]/span")
+            #detailStravaSedivkaString = detailStravaSedivka[1].text  ##gottaa be 1 cuz thats how its set up (multiple locators are attached to this locator so position 1 is always gonna be strava hopefully
+            detailStravaSedivkaString = detailStravaSedivka.text
+            print(detailStravaSedivkaString)
 
-            detailPokojSedivka = self.driver.find_element_by_xpath(
-                "//*[@class='fshr-detail-summary-title fshr-icon fshr-icon--bed']")
+            #detailPokojSedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary-title fshr-icon fshr-icon--bed']")
+            detailPokojSedivka = self.driver.find_element_by_xpath("//*[@class='f_box-item f_icon f_icon--bed']//strong")
             detailPokojSedivkaString = detailPokojSedivka.text
-            detailPokojSedivkaString = detailPokojSedivkaString[
-                                       :-3]  ##need to be edited cuz there is random spaces and "?" in the element
-            ##print(detailPokojSedivkaString)
+            #detailPokojSedivkaString = detailPokojSedivkaString[:-3]  ##need to be edited cuz there is random spaces and "?" in the element
+            print(detailPokojSedivkaString)
 
-            detailCenaAll = self.driver.find_element_by_xpath("//*[@class='fshr-tooltip-underline js-totalPrice']")
+            #detailCenaAll = self.driver.find_element_by_xpath("//*[@class='fshr-tooltip-underline js-totalPrice']")
+            detailCenaAll = self.driver.find_element_by_xpath("//*[@class='f_column-item']//*[@class='f_price']")
             detailCenaAllString = detailCenaAll.text
-            ##print(detailCenaAllString)
+            print(detailCenaAllString)
             try:
-                detailCenaAdult = self.driver.find_element_by_xpath(
-                    '//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
+                #detailCenaAdult = self.driver.find_element_by_xpath('//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
+                detailCenaAdult = self.driver.find_element_by_xpath("//*[@class='f_text f_text--soft f_text--uppercase f_set--right']/span")
                 detailCenaAdultString = detailCenaAdult.text
                 print(detailCenaAdultString)
 
