@@ -12,8 +12,9 @@ class TestSDO_D(unittest.TestCase):
 
     def test_SDO_D(self):
         driver = self.driver
-        self.driver.get(URL_stat)
         self.driver.maximize_window()
+        self.driver.get(URL_stat)
+
         time.sleep(2.5)
         acceptConsent(self.driver)
 
@@ -62,7 +63,9 @@ class TestSDO_D(unittest.TestCase):
         assert dlazdiceFotoSingle.is_displayed() == True
 
         try:
-            mapa = driver.find_element_by_xpath("//*[@id='google-map']")
+
+            #mapa = driver.find_element_by_xpath("//*[@id='google-map']")
+            mapa = driver.find_element_by_xpath("//*[@class='fshr-map']")
             assert mapa.is_displayed() == True
             if mapa.is_displayed():
                 pass
