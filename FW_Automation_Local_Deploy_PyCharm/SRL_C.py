@@ -114,7 +114,8 @@ class Test_SRL_C(unittest.TestCase):
             sendEmail(msg)
 
         #for WebElement in hotelyAllKarty:
-        for _ in range(9):
+        #for _ in range(9):
+        for _ in range(19):
             print("|||||HOTEL CISLO|||||||" )
             print(x+1)
             print(x + 1)
@@ -181,8 +182,8 @@ class Test_SRL_C(unittest.TestCase):
 
             except NoSuchElementException:
                 pass
-            assert detailPokojSedivkaString == pokojZajezduString
-
+            #assert detailPokojSedivkaString == pokojZajezduString
+            assert pokojZajezduString in detailPokojSedivkaString ##cuz v SRL je kratsi nazev?
             if detailPokojSedivkaString == pokojZajezduString:
                 print("pokoje sedi srl vs detail")
             else:
