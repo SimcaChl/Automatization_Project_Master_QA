@@ -11,7 +11,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from generalized_banners_compare_to_deploy_web import banner_check_public_prod_VS_deployed_web
 
 #banneryXpath_FW = "//*[@class='f_teaser-item js-priceLoading']/a"
-banneryXpath_FW = "//*[@data-pricecheck-type='banner']/a"
+#banneryXpath_FW = "//*[@data-pricecheck-type='banner']/a"
+banneryXpath_FW = "//*[@class='f_teaser-item']/a"
 URL_prod_public = "https://www.fischer.cz/"
 URL_deploying_web = URL
 
