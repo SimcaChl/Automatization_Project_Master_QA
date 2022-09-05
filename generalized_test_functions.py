@@ -179,7 +179,7 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
 
-def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath, departureToCompareTo ):
+def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath, departureToCompareTo, v2 ):
 
             try:
                 pocetZobrazenychTerminu = driver.find_elements_by_xpath(pocetZobrazenychTerminuXpath)  ##locator jen na pocet odletu alokuje vic veci nez je actual terminu tak
@@ -197,7 +197,7 @@ def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odl
                 sendEmail(msg)
 
             #assert odletyTerminy[y].text.lower() == departureToCompareTo
-            v2=True
+            #v2=True
 
             time.sleep(5)
             poziceTerminu = 1
@@ -252,8 +252,8 @@ def generalized_EW_like_top_nabidka_URL_status_check(driver, topNabidkaLinkXpath
         print(links_to_check)
 
 def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTabXpath, potvrditPopupXpath, boxFiltrXpath, valueToFilterXpath):
-    V2=True
 
+    V2 = "test"
     terminyAcenyTabElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
     driver.execute_script("arguments[0].click();", terminyAcenyTabElement)
 

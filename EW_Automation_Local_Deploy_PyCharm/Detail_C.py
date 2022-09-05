@@ -129,7 +129,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         departureToCompareTo = "brno"
 
         generalized_detail_departure_check(self.driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath,
-                                           departureToCompareTo)
+                                           departureToCompareTo, False)
 
         time.sleep(0.2)
         self.test_passed = True
