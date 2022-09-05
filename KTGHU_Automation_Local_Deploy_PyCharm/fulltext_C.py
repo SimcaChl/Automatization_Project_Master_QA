@@ -5,12 +5,13 @@ import unittest
 import requests
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-querySDO = ["Zanzibar", "Řecko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Maledivy", "Dubaj", "Mallorca", "Bulharsko", "Chorvatsko", "Kefalonia", "Attika" ]
 queryCommon = ["pojištění",  "parkování", "covid", "Funtazie" ]
 queryHotely = ["Mirage bay", "mitsis", "Prima life", "Prima life makadi", "Pegasos", "Pickalbatros", "Titanic", "mirage", "Domes Aulüs", "Bay & Mare",  "A for Art",
                "Porto Skala 7", "Costa Azzurra", "La Cite", "Naftilos", "Stefanos", "Magnolia",  "White Gold", "King Tut Resort", "Blue Waters",
                "Primasol", "Doubletree"]
-queryList = querySDO+queryCommon+queryHotely
+
+#queryListCz = ["Řecko", "Turecko", "Egypt", "Bulharsko"]
+queryList = ["Görögország", "Törökország", "Egyiptom", "Bulgária"]
 #queryList = ["covid"]
 class Test_Fulltext_C(unittest.TestCase):
     def setUp(self):
@@ -95,6 +96,7 @@ class Test_Fulltext_C(unittest.TestCase):
         poziceQueryItem=0
         for _ in queryList:
             driver = self.driver
+            URL_FT_results = URL+"/kereses?q="
             driver.get(URL_FT_results+queryList[poziceQueryItem])
             if poziceQueryItem==0:
                 acceptConsent(driver)

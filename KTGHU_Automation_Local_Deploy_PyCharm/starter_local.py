@@ -21,8 +21,8 @@ def suite_KTGHU_full():
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_meal"))
     suite.addTest(TestDetailHotelu_C("test_detail_terminy_filtr_airport"))
     #suite.addTest(TestFM_D("test_FM_D")) ##ATM tam nic neni neni smysl to poustest
-    #suite.addTest(Test_Fulltext_C("test_fulltext_naseptavac"))
-    #suite.addTest(Test_Fulltext_C("test_fulltext_results_status_check"))
+    suite.addTest(Test_Fulltext_C("test_fulltext_naseptavac"))
+    suite.addTest(Test_Fulltext_C("test_fulltext_results_status_check"))
     suite.addTest(Test_Groupsearch_D("test_groupsearch_D"))
     suite.addTest(TestHP_D("test_homePage_D"))
     suite.addTest(TestLM_D("test_lM_isDisplayed"))
