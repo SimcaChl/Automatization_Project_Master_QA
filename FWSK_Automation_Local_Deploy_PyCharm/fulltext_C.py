@@ -13,7 +13,9 @@ queryCommon = ["pojištění",  "parkování", "covid", "Funtazie" ]
 queryHotely = ["Mirage bay", "mitsis", "Prima life", "Prima life makadi", "Pegasos", "Pickalbatros", "Titanic", "mirage", "Domes Aulüs", "Bay & Mare",  "A for Art",
                "Porto Skala 7", "Costa Azzurra", "La Cite", "Naftilos", "Stefanos", "Magnolia",  "White Gold", "King Tut Resort", "Blue Waters",
                "Primasol", "Doubletree"]
-queryList = querySDO+queryCommon+queryHotely
+#queryList = querySDO+queryCommon+queryHotely
+queryList = ["Grécko", "Turecko", "Egypt", "Kapverdy", "White Gold", "poistenie", "parkovanie"]
+
 class Test_Fulltext_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -93,6 +95,7 @@ class Test_Fulltext_C(unittest.TestCase):
         for _ in queryList:
             driver = self.driver
             driver.get(URL_FT_results+queryList[poziceQueryItem])
+
             if poziceQueryItem==0:
                 acceptConsent(driver)
                 self.driver.maximize_window()
