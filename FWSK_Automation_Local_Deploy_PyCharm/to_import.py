@@ -64,6 +64,7 @@ URL_FT_results = URL+"hladanie-vysledky?q="
 
 
 def tearDown(self):
+  print(self.driver.current_url)
   self.driver.quit()
   if not self.test_passed:
     self.driver.execute_script(

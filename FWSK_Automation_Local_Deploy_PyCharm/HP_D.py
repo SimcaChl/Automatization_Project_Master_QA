@@ -5,7 +5,7 @@ import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
-
+bannerXpath = "//*[@data-pricecheck-type='banner']"
 class TestHP_D(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -20,8 +20,8 @@ class TestHP_D(unittest.TestCase):
         time.sleep(2.5)
         acceptConsent(self.driver)
         try:
-            bannerSingle = self.driver.find_element_by_xpath("//*[@class='f_teaser-item']")
-            bannerAll = self.driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
+            bannerSingle = self.driver.find_element_by_xpath(bannerXpath)
+            bannerAll = self.driver.find_elements_by_xpath(bannerXpath)
             wait.until(EC.visibility_of(bannerSingle))
             if bannerSingle.is_displayed():
                 for WebElement in bannerAll:

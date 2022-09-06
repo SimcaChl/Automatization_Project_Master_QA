@@ -5,11 +5,6 @@ from to_import_secret_master import comandExecutor, emailPass
 
 queryListOptimizedMonitor = ["Zanzibar", "Řecko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Kefalonia", "Mirage bay", "Porto Skala 7", "Doubletree"]
 
-
-#, "Pegasos"
-
-
-
 def sendEmail(msg):
   fromx = 'alertserverproblem@gmail.com'
   to = 'ooo.kadoun@gmail.com'
