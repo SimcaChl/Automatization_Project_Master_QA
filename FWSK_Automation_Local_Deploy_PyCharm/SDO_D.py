@@ -16,10 +16,10 @@ class TestSDO_D(unittest.TestCase):
         self.driver.maximize_window()
         time.sleep(2.5)
         acceptConsent(self.driver)
-
+        destinaceXpath = "//*[@class='fshr-tile-wrapper']"
         try:
-            destinaceAll = self.driver.find_elements_by_xpath("//*[@class='fshr-listTable-content-part']")
-            destinaceSingle = self.driver.find_element_by_xpath("//*[@class='fshr-listTable-content-part']")
+            destinaceAll = self.driver.find_elements_by_xpath(destinaceXpath)
+            destinaceSingle = self.driver.find_element_by_xpath(destinaceXpath)
             if destinaceSingle.is_displayed():
                 for WebElement in destinaceAll:
                     jdouvidet = WebElement.is_displayed()
