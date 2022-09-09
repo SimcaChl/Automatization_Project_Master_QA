@@ -22,14 +22,20 @@ time.sleep(4)
 terminyScrollInto.click()
 cestujiciElements = driver.find_elements_by_xpath(cestujiciXpath)
 cestujiciElement = driver.find_element_by_xpath(cestujiciXpath)
-cestujiciElementText = driver.find_element_by_xpath(cestujiciXpath).text
-
-
-print(str(cestujiciElement.text))
-print("priting 1St")
-print(cestujiciElement.text)
-print(cestujiciElementText)
-print(cestujiciElements[0].text)
+cestujiciElementText = driver.find_elements_by_xpath(cestujiciXpath).text
+y=1
+for _ in cestujiciElements:
+    cestujiciSinglePrice = cestujiciElementText[y]
+    print(cestujiciSinglePrice)
+    cestujiciSinglePriceList = []
+    cestujiciSinglePriceList.append(cestujiciSinglePrice)
+    print(cestujiciSinglePriceList)
+    y = y + 2
+# print(str(cestujiciElement.text))
+# print("priting 1St")
+# print(cestujiciElement.text)
+# print(cestujiciElementText)
+# print(cestujiciElements[0].text)
 # print(cestujiciElements[1].text)
 time.sleep(3)
 
