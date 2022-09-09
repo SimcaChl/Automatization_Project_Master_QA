@@ -17,7 +17,9 @@ time.sleep(15)
 terminyXpath = "//*[@class='f_termList-header']"
 terminyScrollInto = driver.find_element_by_xpath(terminyXpath)
 driver.execute_script("arguments[0].scrollIntoView();", terminyScrollInto)
-
+time.sleep(4)
+#driver.click(terminyScrollInto)
+terminyScrollInto.click()
 cestujiciElements = driver.find_elements_by_xpath(cestujiciXpath)
 cestujiciElement = driver.find_element_by_xpath(cestujiciXpath)
 cestujiciElementText = driver.find_element_by_xpath(cestujiciXpath).text
