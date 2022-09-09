@@ -78,10 +78,9 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 def tearDown(self):
+  print(self.driver.current_url)
   self.driver.quit()
-  if not self.test_passed:
-    self.driver.execute_script(
-      'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": "general error"}}')
+  #if not self.test_passed:self.driver.execute_script('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed", "reason": "general error"}}')
 
 def generalDriverWaitImplicit(driver):
   driver.implicitly_wait(25)
