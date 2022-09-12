@@ -1,6 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, setUp, tearDown, generalDriverWaitImplicit
+from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_detail, sendEmail, setUp, tearDown
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
@@ -59,19 +59,30 @@ class TestDetailHotelu_C(unittest.TestCase):
         time.sleep(1)
         acceptConsent(self.driver)
         time.sleep(15)
+        terminyXpath = "//*[@class='f_termList-header']"
+        terminyScrollInto = self.driver.find_element_by_xpath(terminyXpath)
+        self.driver.execute_script("arguments[0].scrollIntoView();", terminyScrollInto)
+
         cestujiciElements = self.driver.find_elements_by_xpath(cestujiciXpath)
-        terminyScrollInto = ""
-        terminyScrollInto = self.driver.find_elements_by_xpath(cestujiciXpath)
-        self.driver.execute_script("arguments[0].scrollIntoView();", cestujiciElements[0])
+        cestujiciElement = self.driver.find_element_by_xpath(cestujiciXpath)
+
+        cestujiciElementText = self.driver.find_element_by_xpath(cestujiciXpath).text
+        print(cestujiciElement.text)
+        print("priting 1St")
+        print(cestujiciElement.text)
+        print(cestujiciElementText)
+        print(cestujiciElements[0].text)
+        #print(cestujiciElements[1].text)
+        time.sleep(15)
         ##cestujici elements = pocet cestujiich,
         y=1
         for _ in cestujiciElements:
             cestujiciSinglePrice = cestujiciElements[y].text()
             print(cestujiciSinglePrice)
-            cestujiciSinglePriceList =[]
+            cestujiciSinglePriceList = []
             cestujiciSinglePriceList.append(cestujiciSinglePrice)
             print(cestujiciSinglePriceList)
-            y=y+2
+            y = y + 2
 
         self.test_passed = True
 
