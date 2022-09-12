@@ -24,13 +24,15 @@ cestujiciElements = driver.find_elements_by_xpath(cestujiciXpath)
 cestujiciElement = driver.find_element_by_xpath(cestujiciXpath)
 # cestujiciElementText = driver.find_elements_by_xpath(cestujiciXpath).text
 y=1
+cestujiciSinglePriceList = []
 for _ in cestujiciElements:
     cestujiciElementText = driver.find_elements_by_xpath(cestujiciXpath)[y].text
     cestujiciSinglePrice = cestujiciElementText[y]
     print(cestujiciSinglePrice)
-    cestujiciSinglePriceList = []
+
     cestujiciSinglePriceList.append(cestujiciSinglePrice)
     print(cestujiciSinglePriceList)
+    print("y je " + str(y))
     y = y + 2
 # print(str(cestujiciElement.text))
 # print("priting 1St")
