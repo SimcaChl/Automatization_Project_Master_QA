@@ -8,6 +8,7 @@ from generalized_test_functions import generalized_map_test_click_through_circle
 from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
 
 hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
+#hotelyKartyXpath ="//*[@class='f_searchResult-content-item relative']"
 cenaZajezduXpath = "//*[@class='f_tile-priceDetail-content']//*[@class='f_price']"
 sorterCheapXpath = "//*[@class='f_tabBar-text' and contains(text(), 'od nejlevnějšího')]"
 sorterExpensiveXpath = "//*[@class='f_tabBar-text' and contains(text(), 'od nejdražšího')]"
@@ -104,10 +105,10 @@ class Test_SRL_C(unittest.TestCase):
         closeExponeaBanner(self.driver)
 
         try:
-            hotelyAllKarty = self.driver.find_elements_by_xpath(
-                "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+            #hotelyAllKarty = self.driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+            hotelyAllKarty =self.driver.find_elements_by_xpath("//*[@class='f_searchResult-content-item relative']")
 
-            wait.until(EC.visibility_of(hotelyAllKarty[1]))
+            wait.until(EC.visibility_of(hotelyAllKarty[0]))
         except NoSuchElementException:
             url = self.driver.current_url
             msg = " Problem SRL hotelyAllKarty" + url
