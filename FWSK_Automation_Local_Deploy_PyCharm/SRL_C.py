@@ -107,7 +107,7 @@ class Test_SRL_C(unittest.TestCase):
             sendEmail(msg)
 
         #for WebElement in hotelyAllKarty:
-        for _ in range(19):
+        for _ in range(6):
 
             print("|||||HOTEL CISLO|||||||" )
             print(x+1)
