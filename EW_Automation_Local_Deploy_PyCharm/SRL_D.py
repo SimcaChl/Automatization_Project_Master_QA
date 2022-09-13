@@ -5,7 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import unittest
 import time
 
-SRLhotelyKartyXpath = "//*[@class='f_searchResult-content-item']"
+#SRLhotelyKartyXpath = "//*[@class='f_searchResult-content-item']"
+SRLhotelyKartyXpath ="//*[@class='f_searchResult-content-item relative']"
 SRLcenyHoteluXpath = "//*[@class='f_price']"
 SRLfotkaHoteluXpath = "//*[@class='f_tileGallery']"
 
