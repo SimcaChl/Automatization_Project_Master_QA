@@ -4,7 +4,8 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, sendEmai
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 import time
-SRLhotelyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']"
+#SRLhotelyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']"
+SRLhotelyKartyXpath= "//*[@class='f_searchResult-content-item relative']"
 SRLfotkyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_tileGallery']"
 #SRLcenaKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_price']"
 
