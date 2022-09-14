@@ -78,7 +78,7 @@ class TestDetailHotelu_C(unittest.TestCase):
             msg = "terminyAcenyScrollMenuXpath faild click " + url
             sendEmail(msg)
 
-        zvolenaStravaVboxu = "All inclusive"
+        zvolenaStravaVboxu = "all inclusive"
 
         stravaVterminech = self.driver.find_elements_by_xpath(stravovaniVysledkyTerminyAcenyXpath)
         stravaVterminechString = []
@@ -88,7 +88,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         ##stravy, ne jen ty available
         x = 0
         for _ in stravaVterminech:
-            stringos = stravaVterminech[x].text
+            stringos = stravaVterminech[x].text.lower()
             stravaVterminechString.append(stringos)
             x = x + 1
 
@@ -98,9 +98,9 @@ class TestDetailHotelu_C(unittest.TestCase):
         y = 0
         for _ in stravaVterminechString:
             #assert  == zvolenaStravaVboxu
-            assert zvolenaStravaVboxu in stravaVterminechString[y]
+            assert zvolenaStravaVboxu.lower() in stravaVterminechString[y].lower()
            # if stravaVterminechString[y] == zvolenaStravaVboxu:
-            if zvolenaStravaVboxu in stravaVterminechString[y]:
+            if zvolenaStravaVboxu.lower() in stravaVterminechString[y].lower():
                 print("ok")
                 ##print(y)
                 y = y + 1

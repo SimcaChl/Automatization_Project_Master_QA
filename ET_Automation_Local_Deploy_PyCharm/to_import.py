@@ -42,7 +42,7 @@ def setUp(self):
 
 
 #URL = "https://www.etravel.cz/"
-URL = "http://etravel.stg.dtweb.cz/"
+URL = "http://etravel.web3.dtweb.cz/"
 #URL = "https://billa.stg.dtweb.cz/"
 URL_FM = URL+"first-minute"
 URL_exotika = URL + "exoticka-dovolena"
@@ -58,8 +58,9 @@ URL_SRL = URL + "vysledky-vyhledavani?d=63448|63260|63213|63241|63360|63267|7445
 #URL_SRL = URL + "vysledky-vyhledavani?d=64419|64420|64425|64422|64423&tt=0&dd=2023-02-01&rd=2023-02-26&nn=7|8|9&ac1=2&ds=8192"
 URL_SRL_all_inclusive = URL_SRL + "&m=5"
 
-URL_detail = URL + "egypt/hurghada/hurghada/mirage-bay-resort-a-aqua-park-hurghada?KEY=2257927099&DS=1024&GIATA=16351&D=64419|64420|64425|64422|64423&HID=5057&MT=5&RT=15&NN=7&DF=2022-07-13|2022-09-12&RD=2022-08-15&DD=2022-08-08&AC1=2&KC1=1&KA1=4&IC1=0&DP=4308&MNN=7&NNM=7|8|9&TT=1&TTM=0&PID=33040&DPR=EXIM%20TOURS"
+#URL_detail = URL + "egypt/hurghada/hurghada/mirage-bay-resort-a-aqua-park-hurghada?KEY=2257927099&DS=1024&GIATA=16351&D=64419|64420|64425|64422|64423&HID=5057&MT=5&RT=15&NN=7&DF=2022-07-13|2022-09-12&RD=2022-08-15&DD=2022-08-08&AC1=2&KC1=1&KA1=4&IC1=0&DP=4308&MNN=7&NNM=7|8|9&TT=1&TTM=0&PID=33040&DPR=EXIM%20TOURS"
 #URL_detail = URL+"recko/lefkada/nidri/delfini-penzion?ds=1024&giata=538958&hid=141090&nn=7&df=2022-07-01|2022-09-01&rd=2022-09-01&dd=2022-08-25&ac1=2&kc1=1&ka1=5&tt=1&pid=335821&d=63220|63281|63373|63442|63311|63314|63316|63319|63324|63333|63390|63402|63408|63409|63471|63219|63341|63428&mt=2&rt=15&dp=4305&mnn=7&nnm=7|8|9&ttm=1&dpr=EXIM%20TOURS&sortby=Price&sortorder=0"
+URL_detail = URL +"/egypt/hurghada/hurghada/la-rosa-waves?DS=256&GIATA=1272734&D=64419|64420|64425|64422|64423&HID=128528&MT=5&NN=7&DF=2023-03-01|2023-03-31&RD=2023-03-25&DD=2023-03-18&ERM=0&AC1=2&KC1=0&IC1=0&DP=4305&MNN=7&NNM=7|8|9&TT=1&TTM=0&PID=HRG90011&DPR=FISCHER%20ATCOM"
 URL_detail_all_inclusive = URL_detail + "&mmt=5"
 URL_detail_airport_praha = URL_detail + "&tom=4312"
 URL_FT_results = URL + "hledani-vysledky?q="
