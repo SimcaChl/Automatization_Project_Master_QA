@@ -22,3 +22,9 @@ celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-i
 celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
 celkovaCenaSorterElement.click()
 time.sleep(20)
+
+##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
+
+celkoveCenaVterminechXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_price pl-1 xlg:pl-0']"
+##elemenet vypada jako "41 276 Kč"
+celkoveCenaVterminechElement = driver.find_element_by_xpath(celkoveCenaVterminechXpath)
