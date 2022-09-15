@@ -28,4 +28,10 @@ time.sleep(20)
 celkoveCenaVterminechXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_price pl-1 xlg:pl-0']"
 ##elemenet vypada jako "41 276 Kč"
 ##odstranit menu na konci (parametr def by culture how long it is) + normalize space = should be int
+"38 764 Kč"
 celkoveCenaVterminechElement = driver.find_element_by_xpath(celkoveCenaVterminechXpath)
+kcIndex = 2
+celkovaCenaVterminechINT = celkoveCenaVterminechElement.text[:-kcIndex]
+
+
+print(celkovaCenaVterminechINT)
