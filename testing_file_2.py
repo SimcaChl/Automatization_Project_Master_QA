@@ -25,13 +25,20 @@ time.sleep(20)
 
 ##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
 
-celkoveCenaVterminechXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_price pl-1 xlg:pl-0']"
 ##elemenet vypada jako "41 276 Kč"
 ##odstranit menu na konci (parametr def by culture how long it is) + normalize space = should be int
 "38 764 Kč"
-celkoveCenaVterminechElement = driver.find_element_by_xpath(celkoveCenaVterminechXpath)
-kcIndex = 2
-celkovaCenaVterminechINT = celkoveCenaVterminechElement.text[:-kcIndex]
 
 
-print(celkovaCenaVterminechINT)
+pocetTerminuXpath = "//*[@class='f_termList-header-item']"
+pocetTerminuElements = driver.find_elements_by_xpath(pocetTerminuXpath)
+poziceTerminu = 0
+for _ in pocetTerminuElements:
+
+    celkoveCenaVterminechXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_price pl-1 xlg:pl-0']"
+    celkoveCenaVterminechElements = driver.find_elements_by_xpath(celkoveCenaVterminechXpath)
+    kcIndex = 2
+    celkovaCenaVterminechINT = celkoveCenaVterminechElements[poziceTerminu].text[:-kcIndex].replace(" ", "")
+    celkovaCenaVterminechINT = int(celkovaCenaVterminechINT)
+    poziceTerminu = poziceTerminu+1
+    print(celkovaCenaVterminechINT)
