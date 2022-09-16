@@ -42,3 +42,30 @@ for _ in pocetTerminuElements:
     celkovaCenaVterminechINT = int(celkovaCenaVterminechINT)
     poziceTerminu = poziceTerminu+1
     print(celkovaCenaVterminechINT)
+
+def price_sorter_expensive_cheap (inputList, typeOfSort):
+
+    if typeOfSort == "cheap":
+        inputListSorted = inputList.sort()  ##sorting second list low to high
+
+        if cenaZajezduAllListSorted == cenaZajezduAllList:  ##compare first list to second list, if is equal = good
+            print("Cheap sorter is OK")
+
+        else:
+            print("Cheap sorter is NOT OK")
+
+    if typeOfSort == "expensive":
+        cenaZajezduAllListSorted.sort(reverse=True)
+
+        if cenaZajezduAllListSorted == cenaZajezduAllList:
+            print("Expensive sorter is OK")
+
+        else:
+            print("Expensive sorter is NOT OK")
+
+    print("LIST FROM WEB:")
+    print(cenaZajezduAllList)
+    print("CORRECTLY SORTED LIST")
+    print(cenaZajezduAllListSorted)
+
+    assert cenaZajezduAllListSorted == cenaZajezduAllList
