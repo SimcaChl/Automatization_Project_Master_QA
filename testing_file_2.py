@@ -5,11 +5,12 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 
 
 def price_sorter_expensive_cheap_assert(inputList, typeOfSort):
-    inputListSorted = inputList
+    #inputListSorted = inputList
     print(inputList)
     if typeOfSort == "cheap":
         #inputListSorted = inputList.sort()  ##sorting second list low to high
-        inputListSorted.sort()
+        inputListSorted = inputList.sort()
+        #inputListSorted
 
         if inputList == inputListSorted:  ##compare first list to second list, if is equal = good
             print("Cheap sorter is OK")
@@ -19,7 +20,7 @@ def price_sorter_expensive_cheap_assert(inputList, typeOfSort):
 
     if typeOfSort == "expensive":
         #inputListSorted = inputList.sort(reverse=True)
-        inputListSorted.sort(reverse=True)
+        inputListSorted = inputList.sort(reverse=True)
         if inputList == inputListSorted:
             print("Expensive sorter is OK")
 
@@ -50,9 +51,12 @@ time.sleep(4)
 
 celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor']"
 celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
+##2x click = od nejrdazshi
+##1x click = od nejlevnejsiho
+
 celkovaCenaSorterElement.click()
 time.sleep(10)
-celkovaCenaSorterElement.click()
+#celkovaCenaSorterElement.click()
 time.sleep(10)
 
 ##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
