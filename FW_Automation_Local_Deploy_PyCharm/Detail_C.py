@@ -54,8 +54,12 @@ class TestDetailHotelu_C(unittest.TestCase):
         self.driver.get(URL_detail)
         driver = self.driver
         acceptConsent(driver)
-        time.sleep(2)
+        time.sleep(4)
 
+        terminyAcenyElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", terminyAcenyElement)
+        time.sleep(2)
+        terminyAcenyElement.click()
         boxTerminyXpath = "//*[@class='f_holder']"
         boxTerminyElement = driver.find_element_by_xpath(boxTerminyXpath)
         driver.execute_script("arguments[0].scrollIntoView();", boxTerminyElement)
