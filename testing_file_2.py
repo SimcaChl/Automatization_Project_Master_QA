@@ -6,6 +6,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 
 def price_sorter_expensive_cheap_assert(inputList, typeOfSort):
     inputListSorted = inputList
+    print(inputList)
     if typeOfSort == "cheap":
         #inputListSorted = inputList.sort()  ##sorting second list low to high
         inputListSorted.sort()
@@ -17,8 +18,8 @@ def price_sorter_expensive_cheap_assert(inputList, typeOfSort):
             print("Cheap sorter is NOT OK")
 
     if typeOfSort == "expensive":
-        inputListSorted = inputList.sort(reverse=True)
-
+        #inputListSorted = inputList.sort(reverse=True)
+        inputListSorted.sort(reverse=True)
         if inputList == inputListSorted:
             print("Expensive sorter is OK")
 
@@ -50,7 +51,9 @@ time.sleep(4)
 celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor']"
 celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
 celkovaCenaSorterElement.click()
-time.sleep(20)
+time.sleep(10)
+celkovaCenaSorterElement.click()
+time.sleep(10)
 
 ##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
 
@@ -72,10 +75,10 @@ for _ in pocetTerminuElements:
     celkovaCenaVterminechINT = int(celkovaCenaVterminechINT)
     celkoveCenyList.append(celkovaCenaVterminechINT)
     poziceTerminu = poziceTerminu+1
-    print(celkoveCenyList)
+print(celkoveCenyList)
 
 time.sleep(3)
-cheap = "cheap"
+cheap = "expensive"
 price_sorter_expensive_cheap_assert(celkoveCenyList, cheap)
 
 
