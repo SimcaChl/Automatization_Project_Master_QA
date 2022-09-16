@@ -4,7 +4,36 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from to_import_master import sendEmail
 
+def generalized_price_sorter_expensive_cheap_assert(inputList, typeOfSort):
+    #print(inputList)
+    if typeOfSort == "cheap":
+        inputListSorted = inputList.copy()
+        inputListSorted.sort()
+        #inputListSorted = inputList  ##sorting second list low to high
+        #inputListSorted = inputList.sort()
+        #inputListSorted
 
+        if inputList == inputListSorted:  ##compare first list to second list, if is equal = good
+            print("Cheap sorter is OK")
+
+        else:
+            print("Cheap sorter is NOT OK")
+
+    if typeOfSort == "expensive":
+        inputListSorted = inputList.copy()
+        inputListSorted.sort(reverse=True)
+        #inputListSorted = inputList.sort(reverse=True)
+        if inputList == inputListSorted:
+            print("Expensive sorter is OK")
+        else:
+            print("Expensive sorter is NOT OK")
+
+    print("LIST FROM WEB:")
+    print(inputList)
+    print("CORRECTLY SORTED LIST")
+    print(inputListSorted)
+
+    assert inputList == inputListSorted
 def generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath):
     def click_on_map_circle(driver, circlexpath):
         try:

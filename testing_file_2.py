@@ -5,8 +5,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 
 
 def price_sorter_expensive_cheap_assert(inputList, typeOfSort):
-
-    print(inputList)
+    #print(inputList)
     if typeOfSort == "cheap":
         inputListSorted = inputList.copy()
         inputListSorted.sort()
@@ -26,7 +25,6 @@ def price_sorter_expensive_cheap_assert(inputList, typeOfSort):
         #inputListSorted = inputList.sort(reverse=True)
         if inputList == inputListSorted:
             print("Expensive sorter is OK")
-
         else:
             print("Expensive sorter is NOT OK")
 
