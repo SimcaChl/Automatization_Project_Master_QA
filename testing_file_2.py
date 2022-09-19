@@ -21,11 +21,31 @@ linksToCheck_List = []
 pozice=0
 for _ in gridItemElements:
     odkazLink = gridItemElements[pozice].get_attribute("href")
-
-    print(odkazLink)
+    linksToCheck_List.append(odkazLink)
+    #print(odkazLink)
     pozice = pozice+1
+print(linksToCheck_List)
+
+
 def generalized_list_of_url_checker(inputListOfURLStoCheck):
     poziceURLvListu = 0
     for _ in inputListOfURLStoCheck:
         requestURL = inputListOfURLStoCheck[poziceURLvListu]
         response = requests.get((requestURL), timeout=5)
+        #print(requestURL)
+        #print(response.status_code)
+        #print("-------------")
+        if response.status_code != 200:
+            print("FAILURE")
+            print(response.status_code)
+            print(requestURL)
+            test_passed = False
+        poziceURLvListu = poziceURLvListu+1
+
+    if test_passed == False:
+        assert 1 == 2
+
+generalized_list_of_url_checker(linksToCheck_List)
+
+
+
