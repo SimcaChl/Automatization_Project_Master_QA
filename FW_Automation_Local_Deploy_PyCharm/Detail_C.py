@@ -49,6 +49,55 @@ class TestDetailHotelu_C(unittest.TestCase):
         except NoSuchElementException:
             pass
 
+    def test_detail_price_sorter_terminy_expensive(self):
+        self.driver.maximize_window()
+        self.driver.get(URL_detail)
+        driver = self.driver
+        acceptConsent(driver)
+        time.sleep(4)
+
+        terminyAcenyElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", terminyAcenyElement)
+        time.sleep(2)
+        terminyAcenyElement.click()
+        boxTerminyXpath = "//*[@class='f_holder']"
+        boxTerminyElement = driver.find_element_by_xpath(boxTerminyXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", boxTerminyElement)
+        time.sleep(3.5)
+
+        celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor']"
+        celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
+        ##2x click = od nejrdazshi
+        ##1x click = od nejlevnejsiho
+
+        celkovaCenaSorterElement.click()
+        time.sleep(5)
+        celkovaCenaSorterElement.click()
+        time.sleep(5)
+        ##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
+
+        ##elemenet vypada jako "41 276 Kč"
+        ##odstranit menu na konci (parametr def by culture how long it is) + normalize space = should be int
+        "38 764 Kč"
+
+        pocetTerminuXpath = "//*[@class='f_termList-header-item']"
+        pocetTerminuElements = driver.find_elements_by_xpath(pocetTerminuXpath)
+        poziceTerminu = 0
+        celkoveCenyList = []
+        for _ in pocetTerminuElements:
+            celkoveCenaVterminechXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_price pl-1 xlg:pl-0']"
+            celkoveCenaVterminechElements = driver.find_elements_by_xpath(celkoveCenaVterminechXpath)
+            kcIndex = 2
+            celkovaCenaVterminechINT = celkoveCenaVterminechElements[poziceTerminu].text[:-kcIndex].replace(" ", "")
+            celkovaCenaVterminechINT = int(celkovaCenaVterminechINT)
+            celkoveCenyList.append(celkovaCenaVterminechINT)
+            poziceTerminu = poziceTerminu + 1
+        print(celkoveCenyList)
+
+        time.sleep(3)
+        #cheap = "expensive"
+        generalized_price_sorter_expensive_cheap_assert(celkoveCenyList, "expensive")
+
     def test_detail_price_sorter_terminy_cheap(self):
         self.driver.maximize_window()
         self.driver.get(URL_detail)
@@ -94,8 +143,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         print(celkoveCenyList)
 
         time.sleep(3)
-        #cheap = "expensive"
-        generalized_price_sorter_expensive_cheap_assert(celkoveCenyList, "expensive")
+        generalized_price_sorter_expensive_cheap_assert(celkoveCenyList, "cheap")
 
     def test_detail_open_terminy_sumUP_equal_to_full_price(self):
         self.driver.maximize_window()
