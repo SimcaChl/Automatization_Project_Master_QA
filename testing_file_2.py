@@ -1,4 +1,6 @@
 import time
+
+import requests
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
@@ -23,3 +25,7 @@ for _ in gridItemElements:
     print(odkazLink)
     pozice = pozice+1
 def generalized_list_of_url_checker(inputListOfURLStoCheck):
+    poziceURLvListu = 0
+    for _ in inputListOfURLStoCheck:
+        requestURL = inputListOfURLStoCheck[poziceURLvListu]
+        response = requests.get((requestURL), timeout=5)
