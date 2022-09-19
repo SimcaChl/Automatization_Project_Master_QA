@@ -71,8 +71,11 @@ class TestDetailHotelu_C(unittest.TestCase):
         ##1x click = od nejlevnejsiho
 
         celkovaCenaSorterElement.click()
-        time.sleep(5)
-        celkovaCenaSorterElement.click()
+        time.sleep(4)
+        celkovaCenaSorterAfterOneClickXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor f_set--active f_icon--sortUp']"
+        celkovaCenaSorterAfterOneClickElement = driver.find_element_by_xpath(celkovaCenaSorterAfterOneClickXpath)
+
+        celkovaCenaSorterAfterOneClickElement.click()
         time.sleep(5)
         ##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
 
