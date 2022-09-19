@@ -1,13 +1,10 @@
 import time
-
 import requests
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 
-
 driver = webdriver.Chrome(ChromeDriverManager().install())
-
 URL = "https://www.eximtours.cz/poznavaci-zajezdy"
 driver.get(URL)
 time.sleep(1)
@@ -24,7 +21,7 @@ for _ in gridItemElements:
     linksToCheck_List.append(odkazLink)
     #print(odkazLink)
     pozice = pozice+1
-print(linksToCheck_List)
+#print(linksToCheck_List)
 
 
 def generalized_list_of_url_checker(inputListOfURLStoCheck):
@@ -36,7 +33,7 @@ def generalized_list_of_url_checker(inputListOfURLStoCheck):
         #print(response.status_code)
         #print("-------------")
         if response.status_code != 200:
-            print("FAILURE")
+            #print("FAILURE")
             print(response.status_code)
             print(requestURL)
             test_passed = False
