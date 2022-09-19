@@ -22,3 +22,4 @@ for _ in gridItemElements:
 
     print(odkazLink)
     pozice = pozice+1
+def generalized_list_of_url_checker(inputListOfURLStoCheck):

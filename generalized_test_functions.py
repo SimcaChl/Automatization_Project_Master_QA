@@ -62,7 +62,6 @@ def generalized_map_test_click_through_circles(driver, zobrazitNaMapeXpath):
     click_on_map_circle(driver, smallCircleXpath)
     time.sleep(2)
     click_on_map_circle(driver, smallCircleXpath)
-
 def generalized_map_test_click_on_pin_and_hotel_bubble(driver):
     actualHotelPin = driver.find_element_by_xpath(
         "//*[@class='leaflet-marker-icon leaflet-zoom-animated leaflet-interactive']")
@@ -83,12 +82,10 @@ def generalized_map_test_click_on_pin_and_hotel_bubble(driver):
 
     hotelBubble = driver.find_element_by_xpath("//*[@class='leaflet-popup-content'] //*[@class='f_bubble']")
     hotelBubble.click()
-
 def generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath):
     stravaMenu = driver.find_element_by_xpath(stravaMenuXpath)
     stravaMenu.click()
     time.sleep(2)
-
 def generalized_SRL_choose_meal_filter_FW_like(driver, stravaMenuXpath, stravaMenuAllInclusiveXpath, potvrditMenuXpath):
     #stravaMenu = driver.find_element_by_xpath("//*[@class='f_menu-item']//*[contains(text(), 'Strava')]")
     stravaMenuBox = driver.find_element_by_xpath(stravaMenuXpath)
@@ -98,7 +95,6 @@ def generalized_SRL_choose_meal_filter_FW_like(driver, stravaMenuXpath, stravaMe
 
     potvrditMenu = driver.find_element_by_xpath(potvrditMenuXpath)
     potvrditMenu.click()
-
 ##variable_to_assert_to == .lower should be on default
 def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_assert_to, plusPozice=None, list_web_element_starter=None):
     time.sleep(2)
@@ -146,14 +142,10 @@ def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_asser
             list_web_elements_Position = list_web_elements_Position + plusPozice
 
     print(list_web_elements)
-
-
-
 #predisposition:
 #loaded SRL -> clicks on sorter (expensive VS cheap)
 #gets all prices
 ##typeOfSort = cheap or expensive
-
 def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZajezduXpath,  typeOfSort):
         wait = WebDriverWait(driver, 25)
 
@@ -206,7 +198,6 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
         print(cenaZajezduAllListSorted)
 
         assert cenaZajezduAllListSorted == cenaZajezduAllList
-
 def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath, departureToCompareTo, v2 ):
 
             try:
@@ -266,7 +257,6 @@ def generalized_detail_departure_check(driver, pocetZobrazenychTerminuXpath, odl
                         msg = "na detailu jsem vyfiltroval odlet na brno ale pry to nesedi říká python " + url
                         sendEmail(msg)
                         y = y + 2
-
 def generalized_EW_like_top_nabidka_URL_status_check(driver, topNabidkaLinkXpath):
 
     links_to_check = []
@@ -278,7 +268,6 @@ def generalized_EW_like_top_nabidka_URL_status_check(driver, topNabidkaLinkXpath
         links_list_counter = links_list_counter+1
         print(topNabidkaElementHref)
         print(links_to_check)
-
 def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTabXpath, potvrditPopupXpath, boxFiltrXpath, valueToFilterXpath):
 
     V2 = "test"
@@ -322,8 +311,6 @@ def generalized_Detail_terminyAceny_potvrdit_chooseFiltr(driver, terminyAcenyTab
     driver.execute_script("arguments[0].click();", boxElement)
 
     time.sleep(1)
-
-
 def generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(driver, terminyAcenyTabXpath, boxFiltrXpath, valueToFilterXpath, departure):
 
     terminyAcenyTabElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
