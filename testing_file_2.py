@@ -19,9 +19,9 @@ pozice=0
 for _ in gridItemElements:
     odkazLink = gridItemElements[pozice].get_attribute("href")
     linksToCheck_List.append(odkazLink)
-    #print(odkazLink)
+    print(odkazLink)
     pozice = pozice+1
-#print(linksToCheck_List)
+print(linksToCheck_List)
 
 
 def generalized_list_of_url_checker(inputListOfURLStoCheck):
@@ -31,7 +31,7 @@ def generalized_list_of_url_checker(inputListOfURLStoCheck):
         requestURL = inputListOfURLStoCheck[poziceURLvListu]
         response = requests.get((requestURL), timeout=5)
         #print(requestURL)
-        #print(response.status_code)
+        print(response.status_code)
         #print("-------------")
         if response.status_code != 200:
             #print("FAILURE")
