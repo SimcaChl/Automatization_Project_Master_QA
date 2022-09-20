@@ -73,11 +73,19 @@ def suite4():
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
     return suite
 
-
+def SRL_suite_full():
+    suite = unittest.TestSuite()
+    suite.addTest(Test_SRL_C('test_SRL_sort_cheapest'))
+    suite.addTest(Test_SRL_C('test_SRL_sort_expensive'))
+    suite.addTest(Test_SRL_C('test_SRL_map'))
+    suite.addTest(Test_SRL_C('test_SRL_filtr_strava'))
+    suite.addTest(Test_SRL_C('test_srl_C'))
+    return suite
 from starter_master_browserstack import  runner_tests_generalized
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     outfile = open("results.html", "w")
     web_brand = "EXIM"
-    runner_tests_generalized(suite_EW_full, web_brand, "hotifx", URL)
+    #runner_tests_generalized(suite_EW_full, web_brand, "hotifx", URL)
+    runner_tests_generalized(SRL_suite_full, web_brand, "atcomcore deploy", URL)
     #runner_tests_generalized(suite4, web_brand, "220718.1", URL)
