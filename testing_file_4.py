@@ -6,7 +6,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 #URL = "https://exim.stg.dtweb.cz/poznavaci-zajezdy"
-URL = "https://fischer.cz/"
+URL = "https://www.fischer.cz/"
 driver.get(URL)
 time.sleep(1)
 driver.maximize_window()
@@ -33,6 +33,8 @@ for _ in URL_List:
     driver.execute_script("window.open("");")
     driver.switch_to.window(driver.window_handles[windowHandle])
     linkActualUrl = URL_List[listPosition]
+    driver.get(URL+"/vysledky-vyhledavani?ac1=2&d=680%7C953%7C1108%7C592%7C611%7C610%7C612%7C590%7C726%7C609%7C621%7C1009%7C622%7C669%7C1086%7C1194%7C670%7C978%7C594%7C675%7C1010%7C683&dd=2023-02-01&nn=7&rd=2023-03-28&to=4312%7C4305%7C2682%7C4308&tt=1")
+    time.sleep(3)
     driver.get(linkActualUrl)
     windowHandle = windowHandle + 1
-    listPosition = listPosition +1
+    listPosition = listPosition + 1
