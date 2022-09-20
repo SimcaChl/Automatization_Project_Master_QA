@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
-URL = "https://www.eximtours.cz/poznavaci-zajezdy"
+URL = "https://exim.stg.dtweb.cz/poznavaci-zajezdy"
 driver.get(URL)
 time.sleep(1)
 driver.maximize_window()
@@ -26,6 +26,7 @@ for _ in gridItemElements:
 
 def generalized_list_of_url_checker(inputListOfURLStoCheck):
     poziceURLvListu = 0
+    test_passed = True
     for _ in inputListOfURLStoCheck:
         requestURL = inputListOfURLStoCheck[poziceURLvListu]
         response = requests.get((requestURL), timeout=5)
