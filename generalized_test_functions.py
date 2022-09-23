@@ -1,9 +1,29 @@
+import requests
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from to_import_master import sendEmail
 
+
+def generalized_list_of_url_checker(inputListOfURLStoCheck):
+    poziceURLvListu = 0
+    test_passed = True
+    for _ in inputListOfURLStoCheck:
+        requestURL = inputListOfURLStoCheck[poziceURLvListu]
+        response = requests.get((requestURL), timeout=5)
+        # print(requestURL)
+        print(response.status_code)
+        # print("-------------")
+        if response.status_code != 200:
+            # print("FAILURE")
+            print(response.status_code)
+            print(requestURL)
+            test_passed = False
+        poziceURLvListu = poziceURLvListu + 1
+
+    if test_passed == False:
+        assert 1 == 2
 def generalized_price_sorter_expensive_cheap_assert(inputList, typeOfSort):
     #print(inputList)
     if typeOfSort == "cheap":

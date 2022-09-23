@@ -1,5 +1,6 @@
 import time
 from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_poznavacky_zazitky, setUp, tearDown
+from generalized_test_functions import generalized_list_of_url_checker
 import unittest
 
 class TestPoznavacky_D(unittest.TestCase):
@@ -8,6 +9,29 @@ class TestPoznavacky_D(unittest.TestCase):
 
     def tearDown(self):
         tearDown(self)
+
+    def test_poznavacky_all_URL_check(self):
+        driver = self.driver
+        driver.get(URL_poznavacky)
+        time.sleep(1)
+        driver.maximize_window()
+        acceptConsent(driver)
+        time.sleep(15)
+        gridItemXpath = "//*[@class='f_tileGrid-item']/a"
+        gridItemElements = driver.find_elements_by_xpath(gridItemXpath)
+        # print(URL_poznavaciho_hotelu)
+        linksToCheck_List = []
+        pozice = 0
+        for _ in gridItemElements:
+            odkazLink = gridItemElements[pozice].get_attribute("href")
+            linksToCheck_List.append(odkazLink)
+            print(odkazLink)
+            pozice = pozice + 1
+        print(linksToCheck_List)
+
+
+
+        generalized_list_of_url_checker(linksToCheck_List)
 
     def test_poznavacky_okruzni_D(self):
             self.driver.maximize_window()

@@ -47,6 +47,10 @@ def suite_EW_full():
     suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
     suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
+    ##############
+    ####################
+    ###########################
+    suite.addTest(TestPoznavacky_D('test_poznavacky_all_URL_check'))
     return suite
 
 def suite2():
