@@ -25,8 +25,8 @@ desired_cap = {
 from selenium.webdriver.edge.service import Service as EdgeService
 def setUp(self):
   #self.driver = webdriver.Remote(command_executor=comandExecutor,desired_capabilities=desired_cap)
-  self.driver = webdriver.Chrome(ChromeDriverManager().install())
-  #self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+  #self.driver = webdriver.Chrome(ChromeDriverManager().install())
+  self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
   #self.driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
   #self.driver = webdriver.Opera(executable_path=OperaDriverManager().install())
   self.test_passed = False
