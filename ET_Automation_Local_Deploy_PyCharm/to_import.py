@@ -42,7 +42,7 @@ def setUp(self):
 
 
 #URL = "https://www.etravel.cz/"
-URL = "http://etravel.web2.dtweb.cz/"
+URL = "http://etravel.web3.dtweb.cz/"
 #URL = "https://billa.stg.dtweb.cz/"
 #URL = "https://billa.stg.dtweb.cz/"
 URL_FM = URL+"first-minute"
