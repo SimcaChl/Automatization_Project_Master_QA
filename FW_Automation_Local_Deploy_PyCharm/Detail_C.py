@@ -238,18 +238,6 @@ class TestDetailHotelu_C(unittest.TestCase):
 
     def test_detail_terminy_filtr_airport(self):
         self.driver.maximize_window()
-        def omlouvamese_paragraph(self, driver):
-            time.sleep(1)
-            try:
-                omlouvameParagraph = self.driver.find_element_by_xpath(
-                    "//*[@class='fshr-paragraph fshr-paragraph--centered']")
-                if omlouvameParagraph.is_displayed():
-                    return
-
-            except NoSuchElementException:
-                pass
-
-
         self.driver.get(URL_detail)
 
         time.sleep(1)
@@ -257,14 +245,8 @@ class TestDetailHotelu_C(unittest.TestCase):
 
         generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,
                                                              dopravaBoxXpath, dopravaBrnoXpath, True)
-        #generalized_Detail_terminyAceny_potvrdit_chooseFiltr(self.driver, terminyAcenyTabXpath, potvrditPopupXpath,dopravaBoxXpath, dopravaBrnoXpath)
-
-
-        time.sleep(5)
-
-        pocetZobrazenychTerminuXpath_V1 = "//*[@class='fshr-termins-table-item-header js-toggleSlide']"
+        time.sleep(4)
         pocetZobrazenychTerminuXpath="//*[@class='f_termList-header-item f_termList-header-item--dateRange']"
-        odletyTerminyXpath_V1 = "//*[@class='fshr-termin-departure-from']"
         odletyTerminyXpath = "//*[@class='f_termList-header-item f_termList-header-item--transport']"
         departureToCompareTo = "brno"
 
