@@ -8,7 +8,8 @@ from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_
 from generalized_test_functions import generalized_price_sorter_expensive_cheap_assert
 ##global
 terminyAcenyTabXpath_V1 = "//*[@id='terminyaceny-tab']"
-terminyAcenyTabXpath = "//*[@class='f_bar-item f_tabBar']//*[contains(text(),'Termíny a ceny')]"
+terminyAcenyTabXpath_old = "//*[@class='f_bar-item f_tabBar']//*[contains(text(),'Termíny a ceny')]"
+terminyAcenyTabXpath = "//*[@class='f_menu f_menu--inline f_menu--sticky']//*[contains(text(),'Termíny a ceny')]"
 potvrditPopupXpath = "//*[@data-testid='popup-closeButton']"
 
 #meal filter

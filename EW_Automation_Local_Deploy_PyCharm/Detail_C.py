@@ -96,7 +96,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         zvolenaStravaVboxuString = zvolenaStravaVboxu.text.lower()
         print(zvolenaStravaVboxuString)
 
-        generalized_list_string_sorter(self.driver, stravaVterminechXpath, zvolenaStravaVboxuString)
+        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,stravovaniBoxXpath, valueToFilterStravaAllIncXpath, False)
 
         self.test_passed = True
 
