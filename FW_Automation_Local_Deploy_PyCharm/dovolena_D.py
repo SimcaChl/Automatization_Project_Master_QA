@@ -24,7 +24,7 @@ class TestDovolena_D(unittest.TestCase):
         time.sleep(1.5)
         acceptConsent(self.driver)
 
-        dovolena_menu_item_anchor = self.driver.find_element_by_xpath('//a[@href="/Dovolena"]')
+        dovolena_menu_item_anchor = self.driver.find_element_by_xpath('//a[@href="/dovolena"]')
 
         if dovolena_menu_item_anchor.is_displayed():
 
@@ -33,7 +33,7 @@ class TestDovolena_D(unittest.TestCase):
             hover.perform()
             time.sleep(1)
 
-            dovolena_popup_div = self.driver.find_element_by_xpath("//a[@href='/Dovolena']/following-sibling::div")
+            dovolena_popup_div = self.driver.find_element_by_xpath("//a[@href='/dovolena']/following-sibling::div")
             all_links_within_popup = dovolena_popup_div.find_elements_by_css_selector('a[data-v-2ce750c8]')
 
             x = 0
