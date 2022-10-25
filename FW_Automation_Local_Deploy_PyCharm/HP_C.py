@@ -70,7 +70,7 @@ class Test_HP_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
-
+        time.sleep(1)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep3))).click()
 
 
@@ -132,18 +132,18 @@ class Test_HP_C(unittest.TestCase):
         #time.sleep(10)
         self.driver.implicitly_wait(100)
 
-        HPnextArrowElement = self.driver.find_element_by_xpath(HPnextArrowXpath)
-        self.driver.execute_script("arguments[0].scrollIntoView();", HPnextArrowElement)
-        time.sleep(1)
-        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
-        time.sleep(0.3)
-        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
-        time.sleep(0.5)
-        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
-        time.sleep(0.5)
-        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
-        time.sleep(0.5)
-        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        # HPnextArrowElement = self.driver.find_element_by_xpath(HPnextArrowXpath)
+        # self.driver.execute_script("arguments[0].scrollIntoView();", HPnextArrowElement)
+        # time.sleep(1)
+        # self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        # time.sleep(0.3)
+        # self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        # time.sleep(0.5)
+        # self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        # time.sleep(0.5)
+        # self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        # time.sleep(0.5)
+        # self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
         #HPnextkartaHoteluSlider = self.driver.find_element_by_xpath(HPkartaHoteluSliderXpath)
         time.sleep(1)
         #self.driver.execute_script("arguments[0].click();", HPnextkartaHoteluSlider)
@@ -154,6 +154,7 @@ class Test_HP_C(unittest.TestCase):
         self.driver.implicitly_wait(100)
         time.sleep(0.3)
         HPkartaHoteluSliderElement.click()
+        time.sleep(1)
         self.driver.switch_to.window(self.driver.window_handles[1])
         detail_D(self, self.driver)
 
