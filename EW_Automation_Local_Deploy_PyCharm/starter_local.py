@@ -51,6 +51,8 @@ def suite_EW_full():
     ####################
     ###########################
     suite.addTest(TestPoznavacky_D('test_poznavacky_all_URL_check'))
+    suite.addTest(TestDetailHotelu_C("test_detail_price_sorter_terminy_cheap"))
+    suite.addTest(TestDetailHotelu_C("test_detail_price_sorter_terminy_expensive"))
     return suite
 
 def suite2():

@@ -7,18 +7,28 @@ import unittest
 from generalized_test_functions import *
 
 ##global
-terminyAcenyTabXpath = "//*[@id='terminyaceny-tab']"
+terminyAcenyTabXpath_V1 = "//*[@id='terminyaceny-tab']"
+terminyAcenyTabXpath_old = "//*[@class='f_bar-item f_tabBar']//*[contains(text(),'Termíny a ceny')]"
+terminyAcenyTabXpath = "//*[@class='f_menu f_menu--inline f_menu--sticky']//*[contains(text(),'Termíny a ceny')]"
 potvrditPopupXpath = "//*[@data-testid='popup-closeButton']"
 
 #meal filter
-stravovaniBoxXpath= "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']"
-valueToFilterStravaAllIncXpath = "//*[@id='filtr-stravy-detail']//*[contains(text(),'All inclusive')]"
-zvolenaStravaVboxuXpath = "//*[@class='js-subvalue f_text--highlighted']"
-stravaVterminechXpath = "//*[@class='fshr-termin-catering js-tooltip js-tooltip--onlyDesktop']"
+stravovaniBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']"
+stravovaniBoxXpath = "//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--cutlery']"
+
+valueToFilterStravaAllIncXpath_V1 = "//*[@id='filtr-stravy-detail']//*[contains(text(),'All inclusive')]"
+#valueToFilterStravaAllIncXpath = "//*[@class='f_holder']//*[contains(text(),'All inclusive')]"
+valueToFilterStravaAllIncXpath = "//*[@class='f_input--checkbox f_input']//*[@value=5]"
+
+zvolenaStravaVboxuXpath = "//*[@class='f_button-content f_icon f_icon--cutlery']//*[@class='f_button-text f_text--highlighted']"
+
+stravaVterminechXpath = "//*[@class='f_icon f_icon--cutlery']"
 
 #airport filter
-dopravaBoxXpath = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
-dopravaBrnoXpath = "//*[@data-value='4305']"
+dopravaBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
+dopravaBrnoXpath_V1 = "//*[@data-value='4305']"
+dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
+dopravaBoxXpath ="//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--plane']"
 
 class TestDetailHotelu_C(unittest.TestCase):
     def setUp(self):
@@ -38,6 +48,105 @@ class TestDetailHotelu_C(unittest.TestCase):
         except NoSuchElementException:
             pass
 
+    def test_detail_price_sorter_terminy_expensive(self):
+        self.driver.maximize_window()
+        self.driver.get(URL_detail)
+        driver = self.driver
+        time.sleep(4)
+        acceptConsent(driver)
+
+
+        terminyAcenyElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", terminyAcenyElement)
+        time.sleep(2)
+        terminyAcenyElement.click()
+        boxTerminyXpath = "//*[@class='f_holder']"
+        boxTerminyElement = driver.find_element_by_xpath(boxTerminyXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", boxTerminyElement)
+        time.sleep(3.5)
+
+        celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor']"
+        celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
+        ##2x click = od nejrdazshi
+        ##1x click = od nejlevnejsiho
+
+        celkovaCenaSorterElement.click()
+        time.sleep(4)
+        celkovaCenaSorterAfterOneClickXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor f_set--active f_icon--sortUp']"
+        celkovaCenaSorterAfterOneClickElement = driver.find_element_by_xpath(celkovaCenaSorterAfterOneClickXpath)
+
+        celkovaCenaSorterAfterOneClickElement.click()
+        time.sleep(5)
+        ##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
+
+        ##elemenet vypada jako "41 276 Kč"
+        ##odstranit menu na konci (parametr def by culture how long it is) + normalize space = should be int
+        "38 764 Kč"
+
+        pocetTerminuXpath = "//*[@class='f_termList-header-item']"
+        pocetTerminuElements = driver.find_elements_by_xpath(pocetTerminuXpath)
+        poziceTerminu = 0
+        celkoveCenyList = []
+        for _ in pocetTerminuElements:
+            celkoveCenaVterminechXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_price pl-1 xlg:pl-0']"
+            celkoveCenaVterminechElements = driver.find_elements_by_xpath(celkoveCenaVterminechXpath)
+            kcIndex = 2
+            celkovaCenaVterminechINT = celkoveCenaVterminechElements[poziceTerminu].text[:-kcIndex].replace(" ", "")
+            celkovaCenaVterminechINT = int(celkovaCenaVterminechINT)
+            celkoveCenyList.append(celkovaCenaVterminechINT)
+            poziceTerminu = poziceTerminu + 1
+        print(celkoveCenyList)
+
+        time.sleep(3)
+        # cheap = "expensive"
+        generalized_price_sorter_expensive_cheap_assert(celkoveCenyList, "expensive")
+
+    def test_detail_price_sorter_terminy_cheap(self):
+        self.driver.maximize_window()
+        self.driver.get(URL_detail)
+        driver = self.driver
+        acceptConsent(driver)
+        time.sleep(4)
+
+        terminyAcenyElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", terminyAcenyElement)
+        time.sleep(2)
+        terminyAcenyElement.click()
+        boxTerminyXpath = "//*[@class='f_holder']"
+        boxTerminyElement = driver.find_element_by_xpath(boxTerminyXpath)
+        driver.execute_script("arguments[0].scrollIntoView();", boxTerminyElement)
+        time.sleep(3.5)
+
+        celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor']"
+        celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
+        ##2x click = od nejrdazshi
+        ##1x click = od nejlevnejsiho
+
+        celkovaCenaSorterElement.click()
+        time.sleep(5)
+
+        ##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
+
+        ##elemenet vypada jako "41 276 Kč"
+        ##odstranit menu na konci (parametr def by culture how long it is) + normalize space = should be int
+        "38 764 Kč"
+
+        pocetTerminuXpath = "//*[@class='f_termList-header-item']"
+        pocetTerminuElements = driver.find_elements_by_xpath(pocetTerminuXpath)
+        poziceTerminu = 0
+        celkoveCenyList = []
+        for _ in pocetTerminuElements:
+            celkoveCenaVterminechXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_price pl-1 xlg:pl-0']"
+            celkoveCenaVterminechElements = driver.find_elements_by_xpath(celkoveCenaVterminechXpath)
+            kcIndex = 2
+            celkovaCenaVterminechINT = celkoveCenaVterminechElements[poziceTerminu].text[:-kcIndex].replace(" ", "")
+            celkovaCenaVterminechINT = int(celkovaCenaVterminechINT)
+            celkoveCenyList.append(celkovaCenaVterminechINT)
+            poziceTerminu = poziceTerminu + 1
+        print(celkoveCenyList)
+
+        time.sleep(3)
+        generalized_price_sorter_expensive_cheap_assert(celkoveCenyList, "cheap")
     def test_detail_fotka(self):
 
         self.driver.get(URL_detail)
