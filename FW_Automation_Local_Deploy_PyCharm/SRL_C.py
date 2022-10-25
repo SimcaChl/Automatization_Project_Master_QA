@@ -4,7 +4,9 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExp
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble, generalized_SRL_choose_meal_filter_FW_like, generalized_list_string_sorter, generalized_SRL_price_sorter
+from generalized_test_functions import generalized_map_test_click_through_circles, \
+    generalized_map_test_click_on_pin_and_hotel_bubble, generalized_SRL_choose_meal_filter_FW_like, \
+    generalized_list_string_sorter, generalized_SRL_price_sorter, generalized_SRL_choose_meal_filter_EW_like
 from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
 
 hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
@@ -79,12 +81,15 @@ class Test_SRL_C(unittest.TestCase):
         time.sleep(2)
         acceptConsent(driver)
         time.sleep(2)
+        ##before vertical filter
+        # stravaMenuXpath = "//*[@class='f_menu-item']//*[contains(text(), 'Strava')]"
+        # stravaMenuAllInclusiveXpath = "//*[@class='f_menu-item-content f_menu-item-content--sub'] //*[@class='f_input-label'] //*[contains(text(), 'All inclusive')]"
+        # potvrditMenuXpath = "//*[@class='f_menu-item']//*[@class='f_button f_button--common f_button_set--smallest']"
+        # generalized_SRL_choose_meal_filter_FW_like(driver, stravaMenuXpath, stravaMenuAllInclusiveXpath, potvrditMenuXpath)
+        # time.sleep(2)  ##potvrzeno chvilak casu na relload
 
-        stravaMenuXpath = "//*[@class='f_menu-item']//*[contains(text(), 'Strava')]"
-        stravaMenuAllInclusiveXpath = "//*[@class='f_menu-item-content f_menu-item-content--sub'] //*[@class='f_input-label'] //*[contains(text(), 'All inclusive')]"
-        potvrditMenuXpath = "//*[@class='f_menu-item']//*[@class='f_button f_button--common f_button_set--smallest']"
-        generalized_SRL_choose_meal_filter_FW_like(driver, stravaMenuXpath, stravaMenuAllInclusiveXpath, potvrditMenuXpath)
-        time.sleep(2)  ##potvrzeno chvilak casu na relload
+        stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]"
+        generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath)
 
         stravaZajezduSrlXpath = "//*[@class='f_list-item f_icon f_icon--cutlery']"
         assertion_strava = "all inclusive"
