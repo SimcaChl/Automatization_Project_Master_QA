@@ -181,33 +181,21 @@ class TestDetailHotelu_C(unittest.TestCase):
 
     def test_detail_terminy_filtr_meal(self):
         self.driver.maximize_window()
-
-        def omlouvamese_paragraph(self):
-            time.sleep(1)
-            try:
-                omlouvameParagraph = self.driver.find_element_by_xpath(
-                    "//*[@class='fshr-paragraph fshr-paragraph--centered']")
-                if omlouvameParagraph.is_displayed():
-                    return
-
-            except NoSuchElementException:
-                pass
-
+        time.sleep(1)
         self.driver.get(URL_detail)
 
         time.sleep(1)
         acceptConsent(self.driver)
-
-        generalized_Detail_terminyAceny_potvrdit_chooseFiltr(self.driver, terminyAcenyTabXpath, potvrditPopupXpath,
-                                                             stravovaniBoxXpath, valueToFilterStravaAllIncXpath)
+        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,
+                                                                        stravovaniBoxXpath,
+                                                                        valueToFilterStravaAllIncXpath, False)
         time.sleep(1.2)
 
         zvolenaStravaVboxu = self.driver.find_element_by_xpath(zvolenaStravaVboxuXpath)
         zvolenaStravaVboxuString = zvolenaStravaVboxu.text.lower()
         print(zvolenaStravaVboxuString)
 
-        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,stravovaniBoxXpath, valueToFilterStravaAllIncXpath, False)
-
+        generalized_list_string_sorter(self.driver, stravaVterminechXpath, zvolenaStravaVboxuString)
         self.test_passed = True
 
     def test_detail_terminy_filtr_airport(self):
