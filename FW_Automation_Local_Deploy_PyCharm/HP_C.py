@@ -16,7 +16,8 @@ banneryXpath_FW = "//*[@class='f_teaser-item']/a"
 URL_prod_public = "https://www.fischer.cz/"
 URL_deploying_web = URL
 
-HPvyhledatZajezdyButtonXpath = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[@class='f_filterMainSearch-content']/div[@class='f_filterMainSearch-content-item'][5]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
+#HPvyhledatZajezdyButtonXpath = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[@class='f_filterMainSearch-content']/div[@class='f_filterMainSearch-content-item'][5]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
+HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--forFilter']"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam pojedete?')]"
 HPzlutakReckoDestinaceXpath = "//*[@class='f_input-content'] //*[contains(text(), 'Řecko')]"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovat')]"
