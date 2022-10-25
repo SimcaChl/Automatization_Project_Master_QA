@@ -43,16 +43,17 @@ class TestDetskeKluby_D(unittest.TestCase):
             print ("grind container")
 
         assert gridContainer[0].is_displayed() == True
-        p.press("pagedown", presses=2)
-        tileImg = self.driver.find_elements_by_xpath("//*[@class='f_tile-image']")
-        c=0
-
-        for _ in tileImg:
-            tileImgDisplay = tileImg[c].is_displayed()
-            assert tileImgDisplay == True
-            c=c+1
-            print("tile img")
-        assert tileImg[0].is_displayed() == True
+        ##aktualne nejsou karty hotelu
+        # p.press("pagedown", presses=2)
+        # tileImg = self.driver.find_elements_by_xpath("//*[@class='f_tile-image']")
+        # c=0
+        #
+        # for _ in tileImg:
+        #     tileImgDisplay = tileImg[c].is_displayed()
+        #     assert tileImgDisplay == True
+        #     c=c+1
+        #     print("tile img")
+        # assert tileImg[0].is_displayed() == True
 
 
         self.test_passed = True
