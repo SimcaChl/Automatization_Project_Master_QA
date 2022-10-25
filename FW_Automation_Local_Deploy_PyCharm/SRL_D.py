@@ -6,7 +6,8 @@ import unittest
 import time
 #SRLhotelyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']"
 SRLhotelyKartyXpath= "//*[@class='f_searchResult-content-item relative']"
-SRLfotkyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_tileGallery']"
+# SRLfotkyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_tileGallery']"
+SRLfotkyKartyXpath = "//*[@class='f_searchResult-content'and not(@style='display: none;')]//*[@class='f_tileGallery']"
 #SRLcenaKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_price']"
 
 #SRLhotelyKartyXpath = "//*[@class='f_searchResult-content-item']"
@@ -92,6 +93,20 @@ def SRL_D(self, driver):
         sendEmail(msg)
 
     assert cenaAll[0].is_displayed() == True
+
+    verticalFilterXpath = "//*[@class='f_additionalFilter']"
+    try:
+        self.driver.implicitly_wait(100)
+        verticalFilterElement = self.driver.find_element_by_xpath(verticalFilterXpath)
+        wait.until(EC.visibility_of(verticalFilterElement))
+        assert verticalFilterElement.is_displayed() == True
+
+
+
+    except NoSuchElementException:
+        url = self.driver.current_url
+        msg = "Problem s cenami hotelu v searchi " + url
+        sendEmail(msg)
 
     try:
         loadingImgSingle = self.driver.find_element_by_xpath(
