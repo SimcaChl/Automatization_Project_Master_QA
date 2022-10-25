@@ -1,3 +1,4 @@
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, generalDriverWaitImplicit
 import time
@@ -92,22 +93,28 @@ class Test_SRL_C(unittest.TestCase):
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
         windowHandle = 1  ##variable for handling windows, gotta start on 1
-
-        #URL_SRL = "https://fischer.web2.dtweb.cz/vysledky-vyhledavani?d=1009|953|1108|592|611|610|612|1010|590|726|609|621|680|622|669|1086|1194|670|978|594|675|683&tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9&ka1=8&kc1=1&ac1=2"
         self.driver.maximize_window()
         self.driver.get(URL_SRL)
         wait = WebDriverWait(self.driver, 25)
-        self.driver.maximize_window()
         time.sleep(2)
         acceptConsent(self.driver)
-        time.sleep(2)
-        closeExponeaBanner(self.driver)
-        hotelyAllKarty = self.driver.find_elements_by_xpath(hotelyKartyXpath)
-        wait.until(EC.visibility_of(hotelyAllKarty[1]))
-        for _ in range(9):
+        time.sleep(1)
 
-            print("|||||HOTEL CISLO|||||||" )
-            print(x+1)
+        try:
+            # hotelyAllKarty = self.driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
+            hotelyAllKarty = self.driver.find_elements_by_xpath("//*[@class='f_searchResult-content-item relative']")
+
+            wait.until(EC.visibility_of(hotelyAllKarty[0]))
+        except NoSuchElementException:
+            url = self.driver.current_url
+            msg = " Problem SRL hotelyAllKarty" + url
+            sendEmail(msg)
+
+        # for WebElement in hotelyAllKarty:
+        # for _ in range(9):
+        for _ in range(6):
+            print("|||||HOTEL CISLO|||||||")
+            print(x + 1)
             print(x + 1)
             print(x + 1)
             terminZajezdu = self.driver.find_elements_by_xpath(
@@ -137,7 +144,7 @@ class Test_SRL_C(unittest.TestCase):
             cenaZajezduAdult = self.driver.find_elements_by_xpath(
                 "//*[@class='f_tile-priceDetail-item']//*[@class='f_tile-priceDetail-note'] //*[@class='f_price']")
             cenaZajezduAdultString = cenaZajezduAdult[x].text
-            print(cenaZajezduAdultString)
+            # print(cenaZajezduAdultString)
 
             self.driver.execute_script("window.open("");")
             self.driver.switch_to.window(self.driver.window_handles[windowHandle])
@@ -145,34 +152,46 @@ class Test_SRL_C(unittest.TestCase):
 
             closeExponeaBanner(self.driver)
 
-            time.sleep(1)  ##natvrdo aby se to neposralo
+            time.sleep(2.5)  ##natvrdo aby se to neposralo
 
-            detailTerminSedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary-title']")
+            # detailTerminSedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary-title']")
             ##print(detailTerminSedivka.text)
+            try:
+                detailStravaSedivka = self.driver.find_element_by_xpath(
+                    "/html/body/section/div/div/div[1]/div/div[2]/div[2]/div/div[3]/div[2]/span")
+            except NoSuchElementException:
+                try:
+                    detailStravaSedivka = self.driver.find_element_by_xpath(
+                        "/html/body/section/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div[2]/span")
+                except NoSuchElementException:
+                    pass
+                
+            # detailStravaSedivkaString = detailStravaSedivka[1].text  ##gottaa be 1 cuz thats how its set up (multiple locators are attached to this locator so position 1 is always gonna be strava hopefully
+            detailStravaSedivkaString = detailStravaSedivka.text
+            print(detailStravaSedivkaString)
 
-            detailStravaSedivka = self.driver.find_elements_by_xpath("//*[@class='fshr-detail-summary-paragraph']")
-            detailStravaSedivkaString = detailStravaSedivka[
-                1].text  ##gottaa be 1 cuz thats how its set up (multiple locators are attached to this locator so position 1 is always gonna be strava hopefully
-
+            # detailPokojSedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary-title fshr-icon fshr-icon--bed']")
             detailPokojSedivka = self.driver.find_element_by_xpath(
-                "//*[@class='fshr-detail-summary-title fshr-icon fshr-icon--bed']")
+                "//*[@class='f_box-item f_icon f_icon--bed']//strong")
             detailPokojSedivkaString = detailPokojSedivka.text
-            detailPokojSedivkaString = detailPokojSedivkaString[
-                                       :-3]  ##need to be edited cuz there is random spaces and "?" in the element
-            ##print(detailPokojSedivkaString)
+            # detailPokojSedivkaString = detailPokojSedivkaString[:-3]  ##need to be edited cuz there is random spaces and "?" in the element
+            print(detailPokojSedivkaString)
 
-            detailCenaAll = self.driver.find_element_by_xpath("//*[@class='fshr-tooltip-underline js-totalPrice']")
+            # detailCenaAll = self.driver.find_element_by_xpath("//*[@class='fshr-tooltip-underline js-totalPrice']")
+            detailCenaAll = self.driver.find_element_by_xpath("//*[@class='f_column-item']//*[@class='f_price']")
             detailCenaAllString = detailCenaAll.text
-            ##print(detailCenaAllString)
+            print(detailCenaAllString)
+            try:
+                # detailCenaAdult = self.driver.find_element_by_xpath('//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
+                detailCenaAdult = self.driver.find_element_by_xpath(
+                    "//*[@class='f_text f_text--soft f_text--uppercase f_set--right']/span")
+                detailCenaAdultString = detailCenaAdult.text
+                print(detailCenaAdultString)
 
-            detailCenaAdult = self.driver.find_element_by_xpath(
-                    '//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
-            detailCenaAdultString = detailCenaAdult.text
-            print(detailCenaAdultString)
-
-
-            assert detailPokojSedivkaString == pokojZajezduString
-
+            except NoSuchElementException:
+                pass
+            # assert detailPokojSedivkaString == pokojZajezduString
+            assert pokojZajezduString in detailPokojSedivkaString  ##cuz v SRL je kratsi nazev?
             if detailPokojSedivkaString == pokojZajezduString:
                 print("pokoje sedi srl vs detail")
             else:
@@ -191,7 +210,7 @@ class Test_SRL_C(unittest.TestCase):
             else:
                 print("ceny all NESEDÍ srl vs detail")
 
-            assert detailCenaAdultString.upper() == cenaZajezduAdultString.upper()
+            assert detailCenaAdultString == cenaZajezduAdultString
 
             if detailCenaAdultString == cenaZajezduAdultString:
                 print(" cena adult sedi srl vs detail")

@@ -100,14 +100,12 @@ class Test_SRL_C(unittest.TestCase):
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
         windowHandle = 1  ##variable for handling windows, gotta start on 1
-
         self.driver.get(URL_SRL)
         wait = WebDriverWait(self.driver, 25)
-
         time.sleep(2)
         acceptConsent(self.driver)
-        time.sleep(2)
-        closeExponeaBanner(self.driver)
+        time.sleep(1)
+
 
         try:
             #hotelyAllKarty = self.driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
