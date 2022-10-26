@@ -10,7 +10,7 @@ from generalized_test_functions import generalized_EW_like_top_nabidka_URL_statu
 
 URL_deploying_web = URL
 URL_prod_public = "https://www.eximtours.cz/"
-banneryXpath_EW = "//*[@class='f_teaser-item js-priceUpdated']/a"
+banneryXpath_EW = "//*[@class='f_teaser-item']/a"
 
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_filterMainSearch']//*[contains(text(), 'Vyhledat dovolenou')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam se chystáte?')]"
