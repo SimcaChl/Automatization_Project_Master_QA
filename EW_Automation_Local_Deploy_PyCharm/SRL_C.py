@@ -165,7 +165,7 @@ class Test_SRL_C(unittest.TestCase):
                         "/html/body/section/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div[2]/span")
                 except NoSuchElementException:
                     pass
-                
+
             # detailStravaSedivkaString = detailStravaSedivka[1].text  ##gottaa be 1 cuz thats how its set up (multiple locators are attached to this locator so position 1 is always gonna be strava hopefully
             detailStravaSedivkaString = detailStravaSedivka.text
             print(detailStravaSedivkaString)

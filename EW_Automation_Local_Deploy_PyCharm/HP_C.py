@@ -12,7 +12,7 @@ URL_deploying_web = URL
 URL_prod_public = "https://www.eximtours.cz/"
 banneryXpath_EW = "//*[@class='f_teaser-item js-priceUpdated']/a"
 
-HPvyhledatZajezdyButtonXpath = "//*[contains(text(), 'Vyhledat zájezdy')]"
+HPvyhledatZajezdyButtonXpath = "//*[@class='f_filterMainSearch']//*[contains(text(), 'Vyhledat dovolenou')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam se chystáte?')]"
 HPzlutakReckoDestinaceXpath = "//*[@class='f_input-content'] //*[contains(text(), 'Řecko')]"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovat')]"
