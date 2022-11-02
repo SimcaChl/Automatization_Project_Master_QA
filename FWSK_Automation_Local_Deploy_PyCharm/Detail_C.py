@@ -27,7 +27,7 @@ stravaVterminechXpath = "//*[@class='f_icon f_icon--cutlery']"
 #airport filter
 dopravaBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
 dopravaBrnoXpath_V1 = "//*[@data-value='4305']"
-dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
+dopravaBratislavaXpath = "//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']//*[contains(text(),'Bratislava')]"
 dopravaBoxXpath ="//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--plane']"
 
 class TestDetailHotelu_C(unittest.TestCase):
@@ -100,24 +100,24 @@ class TestDetailHotelu_C(unittest.TestCase):
 
     def test_detail_terminy_filtr_airport(self):
         self.driver.maximize_window()
-
-
         self.driver.get(URL_detail)
 
         time.sleep(1)
         acceptConsent(self.driver)
-
-        generalized_Detail_terminyAceny_potvrdit_chooseFiltr(self.driver, terminyAcenyTabXpath, potvrditPopupXpath,
-                                                             dopravaBoxXpath, dopravaKosiceXpath)
+        # TODO na box pro filtrace je v generalized test fncs to tam kliká fixně na valu 2 asi k tomu byl nejaky duvod
+        # TODO ale na fwsk ted neni nic z kosic takze to nejde filtrofvat takze tohle nebude fungovat
+        # TODO asi podminka pro sk kde se klikne fixne na xpath te volby jako je ted definovana dopravaBratislavaXpath
+        # TODO pokud nebude vyplneny parametr ve funkci proste se to passne
+        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,
+                                                                        dopravaBoxXpath, dopravaBratislavaXpath, True)
+        time.sleep(4)
+        pocetZobrazenychTerminuXpath = "//*[@class='f_termList-header-item f_termList-header-item--dateRange']"
+        odletyTerminyXpath = "//*[@class='f_termList-header-item f_termList-header-item--transport']"
+        departureToCompareTo = "bratislava"
 
         time.sleep(5)
-
-        pocetZobrazenychTerminuXpath = "//*[@class='fshr-termins-table-item-header js-toggleSlide']"
-        odletyTerminyXpath = "//*[@class='fshr-termin-departure-from']"
-        departureToCompareTo = "košice"
-
         generalized_detail_departure_check(self.driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath,
-                                           departureToCompareTo, False)
+                                           departureToCompareTo, True)
 
         time.sleep(0.2)
         self.test_passed = True
