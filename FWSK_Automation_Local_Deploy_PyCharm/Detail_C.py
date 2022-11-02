@@ -2,22 +2,33 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from FWSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_detail, sendEmail, setUp, tearDown
 import time
 import unittest
-from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_chooseFiltr, generalized_list_string_sorter, generalized_detail_departure_check
+from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_chooseFiltr, \
+    generalized_list_string_sorter, generalized_detail_departure_check, \
+    generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail
 
 ##global
-terminyAcenyTabXpath = "//*[@id='terminyaceny-tab']"
+terminyAcenyTabXpath_V1 = "//*[@id='terminyaceny-tab']"
+terminyAcenyTabXpath_old = "//*[@class='f_bar-item f_tabBar']//*[contains(text(),'Termíny a ceny')]"
+terminyAcenyTabXpath = "//*[@class='f_bar-item f_tabBar']//*[contains(text(),'Termíny a ceny')]"
 potvrditPopupXpath = "//*[@data-testid='popup-closeButton']"
 
 #meal filter
-stravovaniBoxXpath= "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']"
-valueToFilterStravaAllIncXpath = "//*[@id='filtr-stravy-detail']//*[contains(text(),'All inclusive')]"
-zvolenaStravaVboxuXpath = "//*[@class='js-subvalue f_text--highlighted']"
-stravaVterminechXpath = "//*[@class='fshr-termin-catering js-tooltip js-tooltip--onlyDesktop']"
+stravovaniBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']"
+stravovaniBoxXpath = "//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--cutlery']"
+
+valueToFilterStravaAllIncXpath_V1 = "//*[@id='filtr-stravy-detail']//*[contains(text(),'All inclusive')]"
+#valueToFilterStravaAllIncXpath = "//*[@class='f_holder']//*[contains(text(),'All inclusive')]"
+valueToFilterStravaAllIncXpath = "//*[@class='f_input--checkbox f_input']//*[@value=5]"
+
+zvolenaStravaVboxuXpath = "//*[@class='f_button-content f_icon f_icon--cutlery']//*[@class='f_button-text f_text--highlighted']"
+
+stravaVterminechXpath = "//*[@class='f_icon f_icon--cutlery']"
 
 #airport filter
-dopravaBoxXpath = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
-dopravaKosiceXpath = "//*[@data-value='1837']"
-testss=0
+dopravaBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
+dopravaBrnoXpath_V1 = "//*[@data-value='4305']"
+dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
+dopravaBoxXpath ="//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--plane']"
 
 class TestDetailHotelu_C(unittest.TestCase):
     def setUp(self):
@@ -70,25 +81,14 @@ class TestDetailHotelu_C(unittest.TestCase):
 
     def test_detail_terminy_filtr_meal(self):
         self.driver.maximize_window()
-
-        def omlouvamese_paragraph(self):
-            time.sleep(1)
-            try:
-                omlouvameParagraph = self.driver.find_element_by_xpath(
-                    "//*[@class='fshr-paragraph fshr-paragraph--centered']")
-                if omlouvameParagraph.is_displayed():
-                    return
-
-            except NoSuchElementException:
-                pass
-
+        time.sleep(1)
         self.driver.get(URL_detail)
 
         time.sleep(1)
         acceptConsent(self.driver)
-
-        generalized_Detail_terminyAceny_potvrdit_chooseFiltr(self.driver, terminyAcenyTabXpath, potvrditPopupXpath,
-                                                             stravovaniBoxXpath, valueToFilterStravaAllIncXpath)
+        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,
+                                                                        stravovaniBoxXpath,
+                                                                        valueToFilterStravaAllIncXpath, False)
         time.sleep(1.2)
 
         zvolenaStravaVboxu = self.driver.find_element_by_xpath(zvolenaStravaVboxuXpath)
@@ -96,7 +96,6 @@ class TestDetailHotelu_C(unittest.TestCase):
         print(zvolenaStravaVboxuString)
 
         generalized_list_string_sorter(self.driver, stravaVterminechXpath, zvolenaStravaVboxuString)
-
         self.test_passed = True
 
     def test_detail_terminy_filtr_airport(self):
