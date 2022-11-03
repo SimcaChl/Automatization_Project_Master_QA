@@ -181,7 +181,7 @@ class Test_SRL_C(unittest.TestCase):
             print(detailCenaAllString)
             try:
                 #detailCenaAdult = self.driver.find_element_by_xpath('//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
-                detailCenaAdult = self.driver.find_element_by_xpath("//*[@class='f_text f_text--soft f_text--uppercase f_set--right']/span")
+                detailCenaAdult = self.driver.find_element_by_xpath("//*[@class='flex justify-between']//*[@class='text-right bold']")
                 detailCenaAdultString = detailCenaAdult.text
                 print(detailCenaAdultString)
 
