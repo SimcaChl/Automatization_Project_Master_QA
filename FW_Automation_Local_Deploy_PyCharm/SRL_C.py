@@ -100,6 +100,7 @@ class Test_SRL_C(unittest.TestCase):
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
         windowHandle = 1  ##variable for handling windows, gotta start on 1
+        self.driver.maximize_window()
         self.driver.get(URL_SRL)
         wait = WebDriverWait(self.driver, 25)
         time.sleep(2)
