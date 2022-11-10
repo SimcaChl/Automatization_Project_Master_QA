@@ -100,6 +100,7 @@ class Test_SRL_C(unittest.TestCase):
     def test_srl_C(self):
         x = 0  ##variable for taking the first hotel, starting at 0
         windowHandle = 1  ##variable for handling windows, gotta start on 1
+        self.driver.maximize_window()
         self.driver.get(URL_SRL)
         wait = WebDriverWait(self.driver, 25)
         time.sleep(2)
@@ -180,7 +181,7 @@ class Test_SRL_C(unittest.TestCase):
             print(detailCenaAllString)
             try:
                 #detailCenaAdult = self.driver.find_element_by_xpath('//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
-                detailCenaAdult = self.driver.find_element_by_xpath("//*[@class='f_text f_text--soft f_text--uppercase f_set--right']/span")
+                detailCenaAdult = self.driver.find_element_by_xpath("//*[@class='flex justify-between']//*[@class='text-right bold']")
                 detailCenaAdultString = detailCenaAdult.text
                 print(detailCenaAdultString)
 
