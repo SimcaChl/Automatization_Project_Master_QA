@@ -115,7 +115,13 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
             print(pocet_vysledku_list_dev[starterPosition])
             print(checked_URLs_list_default[starterPosition])
             print(checked_URLs_list_dev[starterPosition])
+            print("             ")
             starterPosition = starterPosition + 1
+        else:
+            starterPosition = starterPosition + 1
+        print(starterPosition)
+
+    print(len(pocet_vysledku_list_default))
 
 
 list_SRL_number_of_results(driver, URL_prod, URL_dev ,URL_List)
