@@ -36,8 +36,8 @@ URL11 = "vysledky-vyhledavani?ac1=2&d=631&dd=2023-01-01&ds=0&nn=7|8|9|10|11|12|1
 URL12 ="vysledky-vyhledavani?ac1=2&d=751&dd=2023-01-01&ds=0&nn=7|8|9|10|11|12|13&rd=2023-02-28&to=4312|4305|2682|4308&tt=1"
 URL13 =  "vysledky-vyhledavani?ac1=2&d=638&dd=2023-01-01&ds=0&nn=7|8|9|10|11|12|13&rd=2023-02-28&to=4312|4305|2682|4308&tt=1"
 
-#URL_List = [URL1,URL2, URL3, URL4, URL5,URL6, URL7,URL8,URL9,URL10,URL11,URL12,URL13]
-URL_List = [URL1,URL2]
+URL_List = [URL1,URL2, URL3, URL4, URL5,URL6, URL7,URL8,URL9,URL10,URL11,URL12,URL13]
+#URL_List = [URL1,URL2]
 
 def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list):
     driver.get(URL_default)
@@ -55,10 +55,10 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
 
 
     global checked_URLs_list_default
-    checked_URLs_list_dev = []
+    checked_URLs_list_default = []
 
     global pocet_vysledku_list_dev
-    pocet_vysledku_list_default = []
+    pocet_vysledku_list_dev = []
 
     global checked_URLs_list_dev
     checked_URLs_list_dev = []
@@ -84,6 +84,8 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
         windowHandle = windowHandle + 1
         listPosition = listPosition + 1
 
+    windowHandle = 1
+    listPosition = 0
     for _ in URL_List:
         driver.execute_script("window.open("");")
         driver.switch_to.window(driver.window_handles[windowHandle])
