@@ -39,7 +39,7 @@ URL13 =  "vysledky-vyhledavani?ac1=2&d=638&dd=2023-01-01&ds=0&nn=7|8|9|10|11|12|
 #URL_List = [URL1,URL2, URL3, URL4, URL5,URL6, URL7,URL8,URL9,URL10,URL11,URL12,URL13]
 URL_List = [URL1,URL2]
 
-def list_SRL_number_of_results(driver, URL_default, URL_parameters_list):
+def list_SRL_number_of_results(driver, URL_default, URL_parameters_list, env):
     driver.get(URL_default)
     time.sleep(1)
     driver.maximize_window()
@@ -47,7 +47,14 @@ def list_SRL_number_of_results(driver, URL_default, URL_parameters_list):
     time.sleep(5)
     windowHandle = 1
     listPosition = 0
-    global URL_pocet_vysledku_list = []
+
+    global pocet_vysledku_list
+    pocet_vysledku_list = []
+
+    global checked_URLs_list
+    checked_URLs_list = []
+
+
     for _ in URL_List:
         driver.execute_script("window.open("");")
         driver.switch_to.window(driver.window_handles[windowHandle])
@@ -56,13 +63,66 @@ def list_SRL_number_of_results(driver, URL_default, URL_parameters_list):
         time.sleep(3)
         driver.get(linkActualUrl)
         SRL_H1textPocetNalezenychZajezduXpath = "//h1"
+
         pocetNalezenychZajezduElement = driver.find_element_by_xpath(SRL_H1textPocetNalezenychZajezduXpath).text.lower()
+        pocet_vysledku_list.append(pocetNalezenychZajezduElement)
+
+        checked_URLs_list.append(linkActualUrl)
+
         print(pocetNalezenychZajezduElement)
         print(linkActualUrl)
         windowHandle = windowHandle + 1
         listPosition = listPosition + 1
 
+    return (pocet_vysledku_list, checked_URLs_list )
+
 list_SRL_number_of_results(driver, URL_prod, URL_List)
+print(pocet_vysledku_list)
+print(checked_URLs_list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # windowHandle = 1
 # listPosition = 0
