@@ -105,6 +105,15 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
         windowHandle = windowHandle + 1
         listPosition = listPosition + 1
 
+    starterPosition = 0
+    for _ in pocet_vysledku_list_default:
+        if pocet_vysledku_list_default[starterPosition] == pocet_vysledku_list_dev[starterPosition]:
+            starterPosition=starterPosition+1
+            pass
+        if pocet_vysledku_list_default[starterPosition] != pocet_vysledku_list_dev[starterPosition]:
+            print(pocet_vysledku_list_default[starterPosition])
+            print(pocet_vysledku_list_dev[starterPosition])
+            
 
 
 list_SRL_number_of_results(driver, URL_prod, URL_dev ,URL_List)
