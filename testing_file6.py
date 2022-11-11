@@ -79,8 +79,8 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
 
         checked_URLs_list_default.append(linkActualUrl)
 
-        print(pocetNalezenychZajezduElement)
-        print(linkActualUrl)
+        #print(pocetNalezenychZajezduElement)
+        #print(linkActualUrl)
         windowHandle = windowHandle + 1
         listPosition = listPosition + 1
 
@@ -100,8 +100,8 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
 
         checked_URLs_list_dev.append(linkActualUrl)
 
-        print(pocetNalezenychZajezduElement)
-        print(linkActualUrl)
+        #print(pocetNalezenychZajezduElement)
+        #print(linkActualUrl)
         windowHandle = windowHandle + 1
         listPosition = listPosition + 1
 
@@ -113,12 +113,14 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
         if pocet_vysledku_list_default[starterPosition] != pocet_vysledku_list_dev[starterPosition]:
             print(pocet_vysledku_list_default[starterPosition])
             print(pocet_vysledku_list_dev[starterPosition])
-            
+            print(checked_URLs_list_default[starterPosition])
+            print(checked_URLs_list_dev[starterPosition])
+            starterPosition = starterPosition + 1
 
 
 list_SRL_number_of_results(driver, URL_prod, URL_dev ,URL_List)
-print(pocet_vysledku_list_default)
-print(pocet_vysledku_list_dev)
+#print(pocet_vysledku_list_default)
+#print(pocet_vysledku_list_dev)
 #print(checked_URLs_list)
 
 
