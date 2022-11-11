@@ -29,6 +29,17 @@ URL13 = URL+ "vysledky-vyhledavani?ac1=2&d=638&dd=2023-01-01&ds=0&nn=7|8|9|10|11
 
 #URL_List = [URL1,URL2, URL3, URL4, URL5,URL6, URL7,URL8,URL9,URL10,URL11,URL12,URL13]
 URL_List = [URL1,URL2]
+
+def list_SRL_number_of_results(driver, URL_default, URL_parameters_list):
+    driver.get(URL_default)
+    time.sleep(1)
+    driver.maximize_window()
+    acceptConsent(driver)
+    time.sleep(5)
+
+
+
+
 windowHandle = 1
 listPosition = 0
 for _ in URL_List:
