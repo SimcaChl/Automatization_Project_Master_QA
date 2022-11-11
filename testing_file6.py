@@ -74,9 +74,10 @@ def list_SRL_number_of_results(driver, URL_default, URL_parameters_list, env):
         windowHandle = windowHandle + 1
         listPosition = listPosition + 1
 
+    # pocet_vysledku_list = pocet_vysledku_list+env
     return (pocet_vysledku_list, checked_URLs_list )
 
-list_SRL_number_of_results(driver, URL_prod, URL_List)
+list_SRL_number_of_results(driver, URL_prod, URL_List, "prod")
 print(pocet_vysledku_list)
 print(checked_URLs_list)
 
