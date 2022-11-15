@@ -115,7 +115,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         boxTerminyXpath = "//*[@class='f_holder']"
         boxTerminyElement = driver.find_element_by_xpath(boxTerminyXpath)
         driver.execute_script("arguments[0].scrollIntoView();", boxTerminyElement)
-        time.sleep(3.5)
+        time.sleep(4)
 
         celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor']"
         celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
