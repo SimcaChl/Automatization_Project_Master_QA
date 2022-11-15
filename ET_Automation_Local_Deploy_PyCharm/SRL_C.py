@@ -179,7 +179,7 @@ class Test_SRL_C(unittest.TestCase):
             sendEmail(msg)
         x = 0
         #for WebElement in self.driver.find_elements_by_xpath(totalPriceXpath):
-        for i in range(4):
+        for i in range(3):
             print("|||||HOTEL CISLO|||||||")
             print(x + 1)
             print(x + 1)
@@ -239,7 +239,7 @@ class Test_SRL_C(unittest.TestCase):
 
         time.sleep(1)
         x = 10
-        for i in range(4):
+        for i in range(3):
             print("|||||HOTEL CISLO|||||||")
             print(x + 1)
             print(x + 1)
