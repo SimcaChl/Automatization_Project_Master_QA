@@ -59,7 +59,7 @@ class TestDetailHotelu_C(unittest.TestCase):
 
 
     def test_detail_terminy_filtr_meal(self):
-
+        ##funkčně už je to ok ale musím pak updatnout url na detail, pockam na tcom
 
         self.driver.get(URL_detail)
         wait = WebDriverWait(self.driver, 150)
