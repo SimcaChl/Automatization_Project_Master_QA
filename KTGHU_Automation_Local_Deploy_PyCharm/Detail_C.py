@@ -92,6 +92,7 @@ class TestDetailHotelu_C(unittest.TestCase):
             msg = "Problem prepnuti na terminy a ceny na detailu hotelu, NoSuchElementException " + url
             sendEmail(msg)
 
+        time.sleep(2)
         try:
             stravovaniBox = self.driver.find_element_by_xpath(
                 "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']")
@@ -145,6 +146,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         ##ty for loopy se nezapnou pokud pocet vysledku bude 0
         ##takze treba exim a dx bude casto takto jelikoz se tam nabizi vsechny
         ##stravy, ne jen ty available
+        time.sleep(2)
         x = 0
         for _ in stravaVterminech:
             stringos = stravaVterminech[x].text.lower()
