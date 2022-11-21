@@ -120,7 +120,7 @@ class Test_HP_C(unittest.TestCase):
         # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPnextArrowXpath))).click()
         # time.sleep(10)
         self.driver.implicitly_wait(100)
-        topNabidkaBigHotelCardXpath = "//*[@class='page-widget js-ajaxPlaceholder--widget fshr-widget f_tileGrid-item f_tileGrid-item--double']"
+        topNabidkaBigHotelCardXpath = "//*[@class='f_carousel-item slick-slide slick-active']//*[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
         topNabidkaBigHotelCardElement = self.driver.find_element_by_xpath(topNabidkaBigHotelCardXpath)
 
         self.driver.execute_script("arguments[0].scrollIntoView();", topNabidkaBigHotelCardElement)
@@ -129,7 +129,8 @@ class Test_HP_C(unittest.TestCase):
         self.driver.implicitly_wait(100)
         time.sleep(8)
         topNabidkaBigHotelCardElement.click()
-        time.sleep(4)
+        self.driver.switch_to.window(self.driver.window_handles[1])
+        time.sleep(3)
         curURL = self.driver.current_url
 
         assert curURL != URL
