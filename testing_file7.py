@@ -14,9 +14,19 @@ time.sleep(15)
 ##find cena detail, all
 detailCenaAll = driver.find_element_by_xpath("//*[@class='f_column-item']//*[@class='f_price']")
 detailCenaAllString = detailCenaAll.text
+print("CENA NA DETAILU V SEDIVCE:  ")
 print(detailCenaAllString)
 
+##proklik do kosiku
 time.sleep(15)
 mamZajemDetailXpath = "//*[@class='f_section-content'] //*[@class='f_button f_button--important f_set--fullWidth']"
 mamZajemDetailElement = driver.find_element_by_xpath(mamZajemDetailXpath)
 mamZajemDetailElement.click()
+
+##tento locator alokuje 2x elementy ktere se sami sobe rovnaji
+kosikCenaAllXpath = "//*[@class='f_box f_box--price']//*[@class='f_price']"
+kosikCenaAllElement = driver.find_element_by_xpath(kosikCenaAllXpath)
+kosikCenaAllString = kosikCenaAllElement.text
+print("             ")
+print("CENA V KOSIKU:")
+print(kosikCenaAllString)
