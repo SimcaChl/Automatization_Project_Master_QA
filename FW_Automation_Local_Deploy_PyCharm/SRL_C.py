@@ -110,7 +110,7 @@ class Test_SRL_C(unittest.TestCase):
 
         try:
             #hotelyAllKarty = self.driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']")
-            hotelyAllKarty =self.driver.find_elements_by_xpath("//*[@class='f_searchResult-content-item relative']")
+            hotelyAllKarty =self.driver.find_elements_by_xpath("//*[@class='f_tile f_tile--searchResultTour']")
 
             wait.until(EC.visibility_of(hotelyAllKarty[0]))
         except NoSuchElementException:
@@ -118,9 +118,9 @@ class Test_SRL_C(unittest.TestCase):
             msg = " Problem SRL hotelyAllKarty" + url
             sendEmail(msg)
 
-        #for WebElement in hotelyAllKarty:
+        for WebElement in hotelyAllKarty:
         #for _ in range(9):
-        for _ in range(6):
+        #for _ in range(6):
             print("|||||HOTEL CISLO|||||||" )
             print(x+1)
             print(x + 1)
