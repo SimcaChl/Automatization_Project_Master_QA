@@ -81,12 +81,6 @@ class Test_SRL_C(unittest.TestCase):
         time.sleep(2)
         acceptConsent(driver)
         time.sleep(2)
-        ##before vertical filter
-        # stravaMenuXpath = "//*[@class='f_menu-item']//*[contains(text(), 'Strava')]"
-        # stravaMenuAllInclusiveXpath = "//*[@class='f_menu-item-content f_menu-item-content--sub'] //*[@class='f_input-label'] //*[contains(text(), 'All inclusive')]"
-        # potvrditMenuXpath = "//*[@class='f_menu-item']//*[@class='f_button f_button--common f_button_set--smallest']"
-        # generalized_SRL_choose_meal_filter_FW_like(driver, stravaMenuXpath, stravaMenuAllInclusiveXpath, potvrditMenuXpath)
-        # time.sleep(2)  ##potvrzeno chvilak casu na relload
 
         stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]"
         generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath)

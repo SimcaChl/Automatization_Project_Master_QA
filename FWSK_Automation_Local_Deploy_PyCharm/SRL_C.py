@@ -76,10 +76,13 @@ class Test_SRL_C(unittest.TestCase):
         time.sleep(2)
         acceptConsent(driver)
         time.sleep(2)
-        stravaMenuXpath = "//*[@class='f_menu-item']//*[contains(text(), 'Strava')]"
-        stravaMenuAllInclusiveXpath = "//*[@class='f_menu-item-content f_menu-item-content--sub'] //*[@class='f_input-label'] //*[contains(text(), 'All inclusive')]"
-        potvrditMenuXpath = "//*[@class='f_menu-item']//*[@class='f_button f_button--common f_button_set--smallest']"
-        generalized_SRL_choose_meal_filter_FW_like(driver, stravaMenuXpath, stravaMenuAllInclusiveXpath, potvrditMenuXpath)
+
+        stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]"
+        generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath)
+
+        stravaZajezduSrlXpath = "//*[@class='f_list-item f_icon f_icon--cutlery']"
+        assertion_strava = "all inclusive"
+        generalized_list_string_sorter(driver, stravaZajezduSrlXpath, assertion_strava)
 
         self.test_passed = True
 
