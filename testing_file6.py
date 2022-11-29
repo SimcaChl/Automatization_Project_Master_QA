@@ -4,10 +4,11 @@ from webdriver_manager.chrome import ChromeDriverManager
 from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 
 ##open SRLS , take h1, compare pocet vysledku VS dev ENV
+from random_printer import checked_URLs_list
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 URL_prod = "https://www.fischer.cz/"
-URL_dev = "https://fischer.web1.dtweb.cz/"
+URL_dev = "https://fischer2.stg.dtweb.cz/"
 # URL1 = URL+ "vysledky-vyhledavani?ac1=2&d=653|819|724&dd=2022-12-01&nn=7&rd=2023-01-31&to=4312|4305|2682|4308&tt=1"
 # URL2 = URL+ "vysledky-vyhledavani?ac1=2&d=680|953|1108|592|611|610|612|590|726|609|621|1009|622|669|1086|1194|670|978|594|675|1010|683&dd=2023-02-01&nn=7&rd=2023-03-28&to=4312|4305|2682|4308&tt=1"
 # URL3 = URL+ "vysledky-vyhledavani?ac1=2&d=1006|1007|1008&dd=2023-02-01&ds=0&nn=7&rd=2023-03-28&to=4312|4305|2682|4308&tt=1"
@@ -109,6 +110,11 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
     for _ in pocet_vysledku_list_default:
         if pocet_vysledku_list_default[starterPosition] == pocet_vysledku_list_dev[starterPosition]:
             starterPosition=starterPosition+1
+            # print(pocet_vysledku_list_default[starterPosition])
+            # print(pocet_vysledku_list_dev[starterPosition])
+            # print(checked_URLs_list_default[starterPosition])
+            # print(checked_URLs_list_dev[starterPosition])
+            # print("             ")
             pass
         if pocet_vysledku_list_default[starterPosition] != pocet_vysledku_list_dev[starterPosition]:
             print(pocet_vysledku_list_default[starterPosition])
@@ -117,17 +123,14 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
             print(checked_URLs_list_dev[starterPosition])
             print("             ")
             starterPosition = starterPosition + 1
-        else:
-            starterPosition = starterPosition + 1
+
         print(starterPosition)
 
     print(len(pocet_vysledku_list_default))
 
 
 list_SRL_number_of_results(driver, URL_prod, URL_dev ,URL_List)
-#print(pocet_vysledku_list_default)
-#print(pocet_vysledku_list_dev)
-#print(checked_URLs_list)
+
 
 
 
