@@ -58,7 +58,7 @@ URL_SRL = URL + "/vysledky-vyhledavani?d=664&tt=1&to=483&dd=2022-11-01&rd=2022-1
 URL_detail = URL + "/egypt/egypt-hurghada/hurghada/amc-royal-hotel-a-spa?AC1=1&D=653|819|724&DD=2023-04-18&DP=483&DPR=FISCHER+ATCOM&DS=256&GIATA=228143&HID=139807&IC1=0&KC1=0&MNN=7&MT=5&NN=7&PID=HRG90002&RD=2023-04-26&TO=483|1837|2933|3437&acm1=1&df=2023-04-01|2023-04-30&nnm=7|8|9|10|11|12|13&sortby=Departure&tt=1&ttm=1#/terminy-a-ceny"
 URL_covidInfo = URL+"covid-info"
 URL_kluby = URL+"dovolena-animacni-kluby"
-URL_fmExotika = URL+"first-minute/exotika-zima"
+URL_fmExotika = URL+"first-minute"
 URL_faq = URL+"faq"
 URL_lm = URL+"last-minute"
 URL_stat = URL+"spanelsko"
