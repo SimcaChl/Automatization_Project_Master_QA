@@ -5,7 +5,7 @@ import unittest
 from FW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
 from generalized_test_functions import *
 
-hotelyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_searchResult-content-item']"
+hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
 cenaZajezduXpath = "//*[@class='f_tile-priceDetail-content']//*[@class='f_price']"
 sorterCheapXpath = "//*[contains(text(), 'od najlacnejšieho')]"
 sorterExpensiveXpath = "//*[contains(text(), 'od najdrahšieho')]"

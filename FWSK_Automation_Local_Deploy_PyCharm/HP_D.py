@@ -5,7 +5,7 @@ import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
-bannerXpath = "//*[@data-pricecheck-type='banner']"
+bannerXpath = "//*[@class='f_teaser-item']"
 class TestHP_D(unittest.TestCase):
     def setUp(self):
         setUp(self)
