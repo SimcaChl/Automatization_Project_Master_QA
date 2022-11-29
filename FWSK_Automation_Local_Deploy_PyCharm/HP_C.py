@@ -7,7 +7,7 @@ from FWSK_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
 import time
 from generalized_banners_compare_to_deploy_web import banner_check_public_prod_VS_deployed_web
 
-banneryXpath_FWSK = "//*[@class='f_teaser-item js-priceLoading']/a"
+banneryXpath_FWSK = "//*[@class='f_teaser-item']/a"
 URL_prod_public = "https://www.fischer.sk/"
 URL_deploying_web = URL
 
