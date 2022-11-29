@@ -356,8 +356,13 @@ def generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(driver, term
 
     if departure==True:
         print("if departure==True")
-        valueToFilterElement = driver.find_elements_by_xpath(valueToFilterXpath)
-        valueToClickElement = valueToFilterElement[2]
+        #valueToFilterElement = driver.find_elements_by_xpath(valueToFilterXpath)
+        # valueToClickElement = valueToFilterElement[2]
+        ##na novy filtrovani pouzit to coje podtimto, na stary staci odkomentovat dva radky nad timhle a zakomentovat ty dva dole
+
+        valueToFilterElement = driver.find_element_by_xpath(valueToFilterXpath)
+        valueToClickElement = valueToFilterElement
+
         driver.execute_script("arguments[0].scrollIntoView();", valueToClickElement)
         time.sleep(0.5)
         valueToClickElement.click()

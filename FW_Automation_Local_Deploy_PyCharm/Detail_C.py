@@ -27,7 +27,8 @@ stravaVterminechXpath = "//*[@class='f_icon f_icon--cutlery']"
 #airport filter
 dopravaBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
 dopravaBrnoXpath_V1 = "//*[@data-value='4305']"
-dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
+dopravaBrnoXpath_V12 = "//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
+dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@value='4305']"
 dopravaBoxXpath ="//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--plane']"
 
 
