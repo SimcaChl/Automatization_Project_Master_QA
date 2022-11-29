@@ -29,7 +29,7 @@ class Test_SRL_C(unittest.TestCase):
 
         typeOfSort = "cheap"
 
-        generalized_SRL_price_sorter(self.driver, sorterCheapXpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
+        generalized_SRL_price_sorter(self.driver, sorterCheapXpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort, "SK")
 
         self.test_passed = True
 
@@ -43,7 +43,7 @@ class Test_SRL_C(unittest.TestCase):
 
         typeOfSort = "expensive"
 
-        generalized_SRL_price_sorter(self.driver, sorterExpensiveXpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort)
+        generalized_SRL_price_sorter(self.driver, sorterExpensiveXpath, hotelyKartyXpath, cenaZajezduXpath, typeOfSort, "SK")
         self.test_passed = True
 
     def test_SRL_map(self):

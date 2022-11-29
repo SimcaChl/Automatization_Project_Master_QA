@@ -166,7 +166,13 @@ def generalized_list_string_sorter(driver, web_elements_Xpath, variable_to_asser
 #loaded SRL -> clicks on sorter (expensive VS cheap)
 #gets all prices
 ##typeOfSort = cheap or expensive
-def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZajezduXpath,  typeOfSort):
+
+def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZajezduXpath,  typeOfSort, web_language=None):
+        if web_language == None:
+            pass
+        else:
+            pass
+
         wait = WebDriverWait(driver, 25)
 
         cenaZajezduAllList = []                     ##one list that takes prices from the srl
@@ -185,8 +191,15 @@ def generalized_SRL_price_sorter(driver, sorter_Xpath, hotelyKartyXpath, cenaZaj
 
         for WebElement in cenaZajezduAll:
             cenaZajezduAllString = cenaZajezduAll[list_web_elements_Position].text
+
+
             #cenaZajezduAllString = cenaZajezduAllString[:-3]
-            cenaZajezduAllString = cenaZajezduAllString[:-2]        ##was adjsuted for webs where is euro prices, works on everything else as well
+            #cenaZajezduAllString = cenaZajezduAllString[:-2]        ##was adjsuted for webs where is euro prices, works on everything else as well
+            if web_language == None:
+                cenaZajezduAllString = cenaZajezduAllString[:-2]
+            if web_language == "SK":
+                cenaZajezduAllString = cenaZajezduAllString[:-5]
+
             cenaZajezduAllString = ''.join(cenaZajezduAllString.split())        ##delete spaces
             cenaZajezduAllString = int(cenaZajezduAllString)        ##convert to int to do sort easily
             list_web_elements_Position = list_web_elements_Position + 1
