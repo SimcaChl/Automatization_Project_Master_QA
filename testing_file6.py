@@ -36,8 +36,10 @@ URL10 = "vysledky-vyhledavani?ac1=2&d=634&dd=2023-01-01&nn=7|8|9|10|11|12|13&rd=
 URL11 = "vysledky-vyhledavani?ac1=2&d=631&dd=2023-01-01&ds=0&nn=7|8|9|10|11|12|13&rd=2023-02-28&to=4312|4305|2682|4308&tt=1"
 URL12 ="vysledky-vyhledavani?ac1=2&d=751&dd=2023-01-01&ds=0&nn=7|8|9|10|11|12|13&rd=2023-02-28&to=4312|4305|2682|4308&tt=1"
 URL13 =  "vysledky-vyhledavani?ac1=2&d=638&dd=2023-01-01&ds=0&nn=7|8|9|10|11|12|13&rd=2023-02-28&to=4312|4305|2682|4308&tt=1"
+URL14 = "vysledky-vyhledavani?ac1=2&d=680%7C953%7C1108%7C592%7C611%7C610%7C612%7C590%7C726%7C609%7C621%7C1009%7C622%7C669%7C1086%7C1194%7C670%7C978%7C594%7C675%7C1010%7C683&dd=2023-02-01&nn=7&rd=2023-03-28&to=4312%7C4305%7C2682%7C4308&tt=1"
 
-URL_List = [URL1,URL2, URL3, URL4, URL5,URL6, URL7,URL8,URL9,URL10,URL11,URL12,URL13]
+
+URL_List = [URL1,URL2, URL3, URL4, URL5,URL6, URL7,URL8,URL9,URL10,URL11,URL12,URL13, URL14]
 #URL_List = [URL1,URL2]
 
 def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list):
@@ -110,11 +112,11 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
     for _ in pocet_vysledku_list_default:
         if pocet_vysledku_list_default[starterPosition] == pocet_vysledku_list_dev[starterPosition]:
             starterPosition=starterPosition+1
-            # print(pocet_vysledku_list_default[starterPosition])
-            # print(pocet_vysledku_list_dev[starterPosition])
-            # print(checked_URLs_list_default[starterPosition])
-            # print(checked_URLs_list_dev[starterPosition])
-            # print("             ")
+            print(pocet_vysledku_list_default[starterPosition])
+            print(pocet_vysledku_list_dev[starterPosition])
+            print(checked_URLs_list_default[starterPosition])
+            print(checked_URLs_list_dev[starterPosition])
+            print("             ")
             pass
         if pocet_vysledku_list_default[starterPosition] != pocet_vysledku_list_dev[starterPosition]:
             print(pocet_vysledku_list_default[starterPosition])
