@@ -87,7 +87,7 @@ if __name__ == '__main__':
     outfile = open("results.html", "w")
     web_brand = "FISCHER"
     version = "atcom online sputestni"
-    #runner_tests_generalized(suite_FW_full, web_brand, version, URL)
+    runner_tests_generalized(suite_FW_full, web_brand, version, URL)
 
-    runner_tests_generalized(SRL_suite_full, web_brand, version, URL)
+    #runner_tests_generalized(SRL_suite_full, web_brand, version, URL)
     #runner_tests_generalized(suite2, web_brand, version, URL)
