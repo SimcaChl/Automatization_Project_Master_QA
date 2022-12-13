@@ -36,7 +36,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         time.sleep(1)
         closeExponeaBanner(self.driver)
 
-        imageDetail = self.driver.find_element_by_xpath("//*[@id='gallery01Trigger']//img")
+        imageDetail = self.driver.find_element_by_xpath("//*[@aria-roledescription='carousel']//*[@class='splide__slide is-active is-visible']//img")
         imageDetailSrc = imageDetail.get_attribute("src")
         try:
             self.driver.set_page_load_timeout(5)
