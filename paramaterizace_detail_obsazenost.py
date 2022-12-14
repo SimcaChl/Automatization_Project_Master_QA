@@ -11,11 +11,19 @@ kidscount1 = "&KC1=1"
 kidsAge1 = "&KA1=5"
 
 jedenPokoj1 = "&AC1=1&KC1=3&KA1=8|10|15&IC1=0"
+jedenPokoj2 = "&AC1=2&KC1=2&KA1=8|15&IC1=1"
+jedenPokoj3 = "&AC1=2&KC1=1&KA1=13&IC1=1"
+jedenPokoj4 = "&AC1=3&KC1=0&&IC1=1"
+
+jedenPokojListParameters = [jedenPokoj1, jedenPokoj2, jedenPokoj3, jedenPokoj4]
 
 dvaPokoje1 = "&AC1=2&KC1=1&KA1=10&IC1=1&AC2=2&KC2=2&KA2=13|6&IC2=0"
 dvaPokoje2 = "&AC1=3&KC1=1&KA1=10&IC1=1&AC2=2&KC2=2&KA2=13|6&IC2=0"
 dvaPokoje3 = "&AC1=3&KC1=1&KA1=10&IC1=1&AC2=1&KC2=2&KA2=13|6&IC2=1"
 dvaPokoje4 = "&AC1=1&KC1=3&KA1=8|10|15&IC1=0&AC2=3&KC2=1&KA2=6&IC2=1"
 
+dvaPokojeListParameters = [dvaPokoje1, dvaPokoje2, dvaPokoje3, dvaPokoje4]
 
-print(detail_URL+jedenPokoj1)
+allPokojeListParameters = jedenPokojListParameters + dvaPokojeListParameters
+
+print(detail_URL+jedenPokoj4)

@@ -40,4 +40,6 @@ def prechod_detail_kosik_assert_cenaAllSedvika_equals_cenaAllKosik(URL_detail, s
 
     assert kosikCenaAllString == detailSedivkaCenaAllString
 
+
+
 prechod_detail_kosik_assert_cenaAllSedvika_equals_cenaAllKosik(URL_detail, sedivkaCenaAllXpath, mamZajemDetailXpath)
