@@ -10,7 +10,7 @@ adultcount1="&AC1=1"
 kidscount1 = "&KC1=1"
 kidsAge1 = "&KA1=5"
 
-jedenPokoj1 = ""
+jedenPokoj1 = "&AC1=1&KC1=3&KA1=8|10|15&IC1=0"
 
 dvaPokoje1 = "&AC1=2&KC1=1&KA1=10&IC1=1&AC2=2&KC2=2&KA2=13|6&IC2=0"
 dvaPokoje2 = "&AC1=3&KC1=1&KA1=10&IC1=1&AC2=2&KC2=2&KA2=13|6&IC2=0"
@@ -18,4 +18,4 @@ dvaPokoje3 = "&AC1=3&KC1=1&KA1=10&IC1=1&AC2=1&KC2=2&KA2=13|6&IC2=1"
 dvaPokoje4 = "&AC1=1&KC1=3&KA1=8|10|15&IC1=0&AC2=3&KC2=1&KA2=6&IC2=1"
 
 
-print(detail_URL+dvaPokoje3)
+print(detail_URL+jedenPokoj1)
