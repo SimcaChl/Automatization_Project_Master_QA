@@ -102,7 +102,7 @@ def banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploy
     print("------------------------------------------")
     print("Banners are GOOD, TEST OK " + URL_prod_public + " VS " + URL_deploying_web )
 
-    driver.quit()
+    #driver.quit()
 
 
 #banner_check_public_prod_VS_deployed_web(driver, URL_prod_public, URL_deploying_web, banneryXpath_EW)
