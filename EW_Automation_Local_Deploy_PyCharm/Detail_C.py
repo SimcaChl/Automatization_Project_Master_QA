@@ -106,8 +106,9 @@ class TestDetailHotelu_C(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.get(URL_detail)
         driver = self.driver
-        acceptConsent(driver)
         time.sleep(4)
+        acceptConsent(driver)
+
 
         terminyAcenyElement = driver.find_element_by_xpath(terminyAcenyTabXpath)
         driver.execute_script("arguments[0].scrollIntoView();", terminyAcenyElement)
