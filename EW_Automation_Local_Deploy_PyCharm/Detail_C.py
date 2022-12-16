@@ -205,15 +205,16 @@ class TestDetailHotelu_C(unittest.TestCase):
         time.sleep(1)
         acceptConsent(self.driver)
 
-        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath, dopravaBoxXpath, dopravaBrnoXpath, True)
+        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,
+                                                                        dopravaBoxXpath, dopravaBrnoXpath, True)
         time.sleep(4)
         pocetZobrazenychTerminuXpath = "//*[@class='f_termList-header-item f_termList-header-item--dateRange']"
         odletyTerminyXpath = "//*[@class='f_termList-header-item f_termList-header-item--transport']"
         departureToCompareTo = "brno"
 
         time.sleep(5)
-        generalized_detail_departure_check(self.driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath, departureToCompareTo, True)
+        generalized_detail_departure_check(self.driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath,
+                                           departureToCompareTo, True)
 
         time.sleep(0.2)
         self.test_passed = True
-
