@@ -34,7 +34,7 @@ def setUp(self):
   self.driver = webdriver.Chrome(ChromeDriverManager().install())
   self.test_passed = False
 #URL = "https://www.fischer.sk/"
-URL = "https://fischersk.web1.dtweb.cz/"
+URL = "https://fischersk.stg.dtweb.cz/"
 URL_poznavacky = URL+"poznavacie-zajazdy/okruhy-a-kombinovane"
 URL_poznavacky_vikendy = URL+"poznavacie-zajazdy/predlzene-vikendy"
 URL_poznavacky_rodiny = URL+"poznavacie-zajazdy/pre-rodiny"
@@ -52,7 +52,7 @@ URL_kluby = URL+"dovolena-animacni-kluby"
 
 ##URL ATCOM
 #URL_SRL = URL+"/vysledky-vyhledavani?d=664&tt=1&to=483&dd=2022-11-01&rd=2022-12-31&nn=7|8|9&pf=0&pt=900000&qf=108_1_0|109_1_0|386_1_0&ac1=2&ds=256"
-URL_SRL = URL + "/vysledky-vyhledavani?d=664&tt=1&to=483&dd=2022-11-01&rd=2022-12-31&nn=7|8|9&pf=0&pt=900000&qf=108_1_0|109_1_0|386_1_0&ac1=2"
+URL_SRL = URL + "/vysledky-vyhledavani?ac1=2&d=627|974|712|684|955|596&dd=2023-09-01&ds=0&ic1=1&ka1=10&kc1=1&nn=7|8|9&pf=0&pt=900000&qf=108_1_0|109_1_0|386_1_0&rd=2023-09-30&to=483|1837|2933|3437&tt=1"
 
 #URL_detail = URL + "/arabske-emiraty/arabske-emiraty/dubaj/riu-hotel-dubai?DS=256&GIATA=1226537&D=664&HID=128620&MT=5&NN=7&RD=2022-12-11&DD=2022-12-04&DP=483&TO=483&MNN=7&TT=1&PID=DXB10206&DPR=FISCHER%20ATCOM&TTM=1&DF=2022-12-04|2023-01-04&ERM=0&NNM=7|8|9&ac1=2&kc1=0&ic1=0#/prehled"
 URL_detail = URL + "/egypt/egypt-hurghada/hurghada/amc-royal-hotel-a-spa?AC1=1&D=653|819|724&DD=2023-04-18&DP=483&DPR=FISCHER+ATCOM&DS=256&GIATA=228143&HID=139807&IC1=0&KC1=0&MNN=7&MT=5&NN=7&PID=HRG90002&RD=2023-04-26&TO=483|1837|2933|3437&acm1=1&df=2023-04-01|2023-04-30&nnm=7|8|9|10|11|12|13&sortby=Departure&tt=1&ttm=1#/terminy-a-ceny"
@@ -62,7 +62,7 @@ URL_fmExotika = URL+"first-minute"
 URL_faq = URL+"faq"
 URL_lm = URL+"last-minute"
 URL_stat = URL+"spanelsko"
-URL_groupsearch = URL+"vysledky-vyhledavani?tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9|10|11|12|13&ic1=1&ac1=2"
+URL_groupsearch = URL+"vysledky-vyhladavania?dd=2023-07-01&nn=7|8|9&rd=2023-08-31&to=4312|4305|2682|4308|483|1837|2933|3437&tt=1"
 URL_FT_results = URL+"hladanie-vysledky?q="
 
 
