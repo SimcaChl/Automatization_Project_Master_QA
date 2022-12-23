@@ -52,6 +52,10 @@ def suite_FW_full():
     #############################
     suite.addTest(TestDetailHotelu_C("test_detail_price_sorter_terminy_cheap"))
     suite.addTest(TestDetailHotelu_C("test_detail_price_sorter_terminy_expensive"))
+    suite.addTest(TestPoznavacky_D('test_poznavacky_okruzni_C'))
+    suite.addTest(TestPoznavacky_D('test_poznavacky_vikendy_C'))
+    suite.addTest(TestPoznavacky_D('test_poznavacky_rodiny_C'))
+    suite.addTest(TestPoznavacky_D('test_poznavacky_zazitky_C'))
     return suite
 
 def suite_map():

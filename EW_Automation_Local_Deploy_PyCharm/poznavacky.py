@@ -1,7 +1,11 @@
 import time
 from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_poznavacky, URL_poznavacky_vikendy, URL_poznavacky_rodiny, URL_poznavacky_zazitky, setUp, tearDown
+from FW_Automation_Local_Deploy_PyCharm.poznavacky import proklik_kostkaHotelu_toDetail_check_sedivka
 from generalized_test_functions import generalized_list_of_url_checker
 import unittest
+
+from sedivka_check import sedivka_check_assert
+sedivkaXpathFw = "//*[@class='f_box h-full flex flex-col']"
 
 class TestPoznavacky_D(unittest.TestCase):
     def setUp(self):
@@ -168,4 +172,22 @@ class TestPoznavacky_D(unittest.TestCase):
             print("big grid ture")
 
         assert gridBig[0].is_displayed() == True
+        self.test_passed = True
+
+    def test_poznavacky_C(self):
+        self.driver.get(URL_poznavacky)
+        time.sleep(1)
+        self.driver.maximize_window()
+        acceptConsent(self.driver)
+        time.sleep(10)
+        kostkaPoznavackaXpath = "//*[@class='f_tile f_tile--tour']"
+        element3 = self.driver.find_elements_by_xpath(kostkaPoznavackaXpath)[6]
+        self.driver.execute_script("arguments[0].scrollIntoView();", element3)
+        time.sleep(2)
+        element3.click()
+        self.driver.switch_to.window(
+            self.driver.window_handles[1])
+        time.sleep(1)
+        print(self.driver.current_url)
+        sedivka_check_assert(self.driver, sedivkaXpathFw)
         self.test_passed = True
