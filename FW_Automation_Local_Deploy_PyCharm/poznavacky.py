@@ -3,6 +3,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_pozn
 import unittest
 from sedivka_check import sedivka_check_assert
 sedivkaXpathFw = "//*[@class='f_box h-full flex flex-col']"
+kostkaPoznavackaXpath = "//*[@class='f_tile f_tile--tour']"
 
 def poznavacky_check_D(self, driver):
 
@@ -39,6 +40,16 @@ def poznavacky_check_D(self, driver):
         assert gridBigDisplayed == True
         a = a + 1
         print("big grid ture")
+
+def proklik_kostkaHotelu_toDetail_check_sedivka(driver):
+            element = driver.find_element_by_xpath(kostkaPoznavackaXpath)
+            driver.execute_script("arguments[0].scrollIntoView();", element)
+            time.sleep(2)
+            element.click()
+            driver.switch_to.window(driver.window_handles[1])
+            time.sleep(1)
+            print(driver.current_url)
+            sedivka_check_assert(driver, sedivkaXpathFw)
 
 
 class TestPoznavacky_D(unittest.TestCase):
@@ -105,13 +116,6 @@ class TestPoznavacky_D(unittest.TestCase):
         self.driver.maximize_window()
         acceptConsent(self.driver)
         time.sleep(5)
-        kostkaPoznavackaXpath = "//*[@class='f_tile f_tile--tour']"
-        element = self.driver.find_element_by_xpath(kostkaPoznavackaXpath)
-        self.driver.execute_script("arguments[0].scrollIntoView();", element)
-        time.sleep(2)
-        element.click()
-        self.driver.switch_to.window(self.driver.window_handles[1])
-        time.sleep(1)
-        print(self.driver.current_url)
-        sedivka_check_assert(self.driver, sedivkaXpathFw)
+        proklik_kostkaHotelu_toDetail_check_sedivka(self.driver)
+
         self.test_passed = True
