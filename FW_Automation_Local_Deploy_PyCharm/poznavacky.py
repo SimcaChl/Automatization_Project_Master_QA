@@ -94,7 +94,24 @@ class TestPoznavacky_D(unittest.TestCase):
         element3.click()
         self.driver.switch_to.window(
             self.driver.window_handles[1])
+        time.sleep(1)
+        print(self.driver.current_url)
+        sedivka_check_assert(self.driver, sedivkaXpathFw)
+        self.test_passed = True
+
+    def test_poznavacky_vikendy_C(self):
+        self.driver.get(URL_poznavacky_vikendy)
+        time.sleep(1)
+        self.driver.maximize_window()
+        acceptConsent(self.driver)
         time.sleep(5)
+        kostkaPoznavackaXpath = "//*[@class='f_tile f_tile--tour']"
+        element = self.driver.find_element_by_xpath(kostkaPoznavackaXpath)
+        self.driver.execute_script("arguments[0].scrollIntoView();", element)
+        time.sleep(2)
+        element.click()
+        self.driver.switch_to.window(self.driver.window_handles[1])
+        time.sleep(1)
         print(self.driver.current_url)
         sedivka_check_assert(self.driver, sedivkaXpathFw)
         self.test_passed = True
