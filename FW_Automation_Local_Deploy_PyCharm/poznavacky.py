@@ -119,3 +119,23 @@ class TestPoznavacky_D(unittest.TestCase):
         proklik_kostkaHotelu_toDetail_check_sedivka(self.driver)
 
         self.test_passed = True
+
+    def test_poznavacky_rodiny_C(self):
+        self.driver.get(URL_poznavacky_rodiny)
+        time.sleep(1)
+        self.driver.maximize_window()
+        acceptConsent(self.driver)
+        time.sleep(5)
+        proklik_kostkaHotelu_toDetail_check_sedivka(self.driver)
+
+        self.test_passed = True
+
+    def test_poznavacky_zazitky_C(self):
+        self.driver.get(URL_poznavacky_zazitky)
+        time.sleep(1)
+        self.driver.maximize_window()
+        acceptConsent(self.driver)
+        time.sleep(5)
+        proklik_kostkaHotelu_toDetail_check_sedivka(self.driver)
+
+        self.test_passed = True
