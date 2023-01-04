@@ -23,8 +23,8 @@ def prechod_detail_kosik_assert_cenaAllSedvika_equals_cenaAllKosik(URL_detail, s
 
     detailSedivkaCenaAll = driver.find_element_by_xpath(sedivkaCenaAllXpath)
     detailSedivkaCenaAllString = detailSedivkaCenaAll.text
-    print("CENA NA DETAILU V SEDIVCE:  ")
-    print(detailSedivkaCenaAllString)
+    # print("CENA NA DETAILU V SEDIVCE:  ")
+    # print(detailSedivkaCenaAllString)
 
     ##proklik do kosiku
     time.sleep(15)
@@ -35,12 +35,21 @@ def prechod_detail_kosik_assert_cenaAllSedvika_equals_cenaAllKosik(URL_detail, s
     kosikCenaAllXpath = "//*[@class='f_box f_box--price']//*[@class='f_price']"
     kosikCenaAllElement = driver.find_element_by_xpath(kosikCenaAllXpath)
     kosikCenaAllString = kosikCenaAllElement.text
-    print("             ")
-    print("CENA V KOSIKU:")
-    print(kosikCenaAllString)
+    # print("             ")
+    # print("CENA V KOSIKU:")
+    # print(kosikCenaAllString)
 
     if kosikCenaAllString != detailSedivkaCenaAllString:
         print(URL_detail)
+        print("             ")
+        print("CENA NA DETAILU V SEDIVCE:  ")
+        print(detailSedivkaCenaAllString)
+
+
+        print("             ")
+        print("CENA V KOSIKU:")
+        print(kosikCenaAllString)
+        print ("----------------------------------------------")
 
     #assert kosikCenaAllString == detailSedivkaCenaAllString
 poziceListu = 0

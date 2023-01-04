@@ -26,4 +26,4 @@ dvaPokojeListParameters = [dvaPokoje1, dvaPokoje2, dvaPokoje3, dvaPokoje4]
 
 allPokojeListParameters = jedenPokojListParameters + dvaPokojeListParameters
 
-print(detail_URL+jedenPokoj4)
+# print(detail_URL+jedenPokoj4)
