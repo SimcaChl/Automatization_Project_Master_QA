@@ -38,7 +38,7 @@ HPzlutakPokracovatButtonXpathStep3 ="/html/body/header/div/div[2]/div/div/div/di
 HPzlutakPridatPokojXpath = "//*[contains(text(), 'přidat pokoj')]"
 HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Rodina 2+1')]"
 HPzlutakPotvrditAvyhledatXpath = "//*[@class='f_button f_button--common'] //*[contains(text(), 'Potvrdit a vyhledat')]"
-HPnejlepsiZajezdyVypisXpath = "//*[@class='fshr-lm-table-item-content']"
+HPnejlepsiZajezdyVypisXpath = "//*[@class='f_tourTable-tour']"
 HPnejlepsiZajezdySwitchButtonXpath = "//*[@class='f_switch-button']"
 HPnextArrowXpath = "//*[@class='slick-next slick-arrow']"
 HPkartaHoteluSliderXpath = "//*[@class='f_carousel-item slick-slide slick-active']"
@@ -111,6 +111,7 @@ class Test_HP_C(unittest.TestCase):
             #print (nejlepsiNabidkyTextList)
             positionOfCurrentElement = positionOfCurrentElement+1
 
+        time.sleep(1.5)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPnejlepsiZajezdySwitchButtonXpath)))
         HPnejlepsiZajezdySwitchButtonElement = self.driver.find_element_by_xpath(HPnejlepsiZajezdySwitchButtonXpath)
         self.driver.execute_script("arguments[0].click();", HPnejlepsiZajezdySwitchButtonElement)
