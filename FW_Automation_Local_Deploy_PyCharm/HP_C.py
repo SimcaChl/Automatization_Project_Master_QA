@@ -26,11 +26,14 @@ HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/d
 #HPzlutakReckoDestinaceXpath = " //*[@class='f_filterMainSearch']//*[@class='f_column']//*[@class='f_input f_input--checkbox']//*[@value='st67']"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovat')]"
 #HPzlutakPokracovatButtonXpathStep2 = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header f_set--filterOpened']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[2]/span/div[@class='f_filterHolder f_set--active']/div[@class='f_filterHolder-footer js_filter-footer']/div[@class='f_filterHolder-footer-item'][2]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
-HPzlutakPokracovatButtonXpathStep2 ="/html/body/header/div/div[2]/div/div/div/div[2]/div[2]/div[3]/div[2]/a/span"
+#HPzlutakPokracovatButtonXpathStep2 ="/html/body/header/div/div[2]/div/div/div/div[2]/div[2]/div[3]/div[2]/a/span"
+HPzlutakPokracovatButtonXpathStep2 = "/html/body/header/div/div[2]/div/div/div/div[3]/div[2]/div[3]/div[2]/a/span"
+
 
 HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Jarní prázdniny 2023')]"
 #HPzlutakPokracovatButtonXpathStep3 = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header f_set--filterOpened']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[2]/span/div[@class='f_filterHolder f_set--active']/div[@class='f_filterHolder-footer js_filter-footer']/div[@class='f_filterHolder-footer-item'][2]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
-HPzlutakPokracovatButtonXpathStep3 = "/html/body/header/div/div[2]/div/div/div/div[2]/div[3]/div[3]/div[2]/a/span"
+#HPzlutakPokracovatButtonXpathStep3 = "/html/body/header/div/div[2]/div/div/div/div[2]/div[3]/div[3]/div[2]/a/span"
+HPzlutakPokracovatButtonXpathStep3 ="/html/body/header/div/div[2]/div/div/div/div[3]/div[3]/div[3]/div[2]/a/span"
 
 HPzlutakPridatPokojXpath = "//*[contains(text(), 'přidat pokoj')]"
 HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Rodina 2+1')]"
