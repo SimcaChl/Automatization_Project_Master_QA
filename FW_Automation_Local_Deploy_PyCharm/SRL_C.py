@@ -112,9 +112,9 @@ class Test_SRL_C(unittest.TestCase):
             msg = " Problem SRL hotelyAllKarty" + url
             sendEmail(msg)
 
-        for WebElement in hotelyAllKarty:
+        #for WebElement in hotelyAllKarty:
         #for _ in range(9):
-        #for _ in range(6):
+        for _ in range(6):
             print("|||||HOTEL CISLO|||||||" )
             print(x+1)
             print(x + 1)
