@@ -52,6 +52,12 @@ def prechod_detail_kosik_assert_cenaAllSedvika_equals_cenaAllKosik(URL_detail, s
         print ("----------------------------------------------")
 
     #assert kosikCenaAllString == detailSedivkaCenaAllString
+
+##2 seperat funkce
+##1big fnc
+##list failed asserts -> print obsazenost
+
+
 poziceListu = 0
 for _ in allPokojeListParameters:
 
