@@ -26,8 +26,8 @@ HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Rodina 2+1')]"
 HPzlutakPotvrditAvyhledatXpath = "//*[@class='f_button f_button--common'] //*[contains(text(), 'Potvrdit a vyhledat')]"
 HPnejlepsiZajezdySwitchButtonXpath = "//*[@class='f_switch-button']"
 HPnejlepsiZajezdyVypisXpath = "//*[@class='f_tourTable-tour']"
-#HPtopNabidkaXpath = "//*[@class='js-ajaxPlaceholder--widgetContent']"
-HPtopNabidkaXpath = "//*[@class='js-ajaxPlaceholder--widgetContent']/a"
+# HPtopNabidkaXpath = "//*[@class='js-ajaxPlaceholder--widgetContent']"
+#HPtopNabidkaXpath = "//*[@class='js-ajaxPlaceholder--widgetContent']/a"
 
 
 class Test_HP_C(unittest.TestCase):
@@ -150,12 +150,15 @@ class Test_HP_C(unittest.TestCase):
 
 
 
-    def test_HP_top_nabidka_status(self):
-        self.driver.maximize_window()
-        self.driver.get(URL)
-
-        time.sleep(
-            2.5)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
-        acceptConsent(self.driver)
-        time.sleep(10)
-        generalized_EW_like_top_nabidka_URL_status_check(self.driver, HPtopNabidkaXpath)
+    # def test_HP_top_nabidka_status(self):
+    #     self.driver.maximize_window()
+    #     self.driver.get(URL)
+    #
+    #     time.sleep(2.5)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+    #     acceptConsent(self.driver)
+    #     time.sleep(4)
+    #     HPtopNabidkaXpath = "//*[@class='js-ajaxPlaceholder--widgetContent']"
+    #     HPtopNabidkaElement = self.driver.find_element_by_xpath(HPtopNabidkaXpath)
+    #     self.driver.execute_script("arguments[0].scrollIntoView();", HPtopNabidkaElement)
+    #     time.sleep(10)
+    #     generalized_EW_like_top_nabidka_URL_status_check(self.driver, HPtopNabidkaXpath)

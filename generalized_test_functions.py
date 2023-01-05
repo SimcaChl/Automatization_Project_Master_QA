@@ -294,9 +294,11 @@ def generalized_EW_like_top_nabidka_URL_status_check(driver, topNabidkaLinkXpath
 
     links_to_check = []
     links_list_counter = 0
-    for _ in topNabidkaLinkXpath:
+    topNabidkaElementLists = driver.find_elements_by_xpath(topNabidkaLinkXpath)
+    for _ in topNabidkaElementLists:
         #topNabidkaElementHref = driver.find_elements_by_xpath(topNabidkaLinkXpath[links_list_counter]).get_attribute("href")
-        topNabidkaElementHref = driver.find_elements_by_xpath(topNabidkaLinkXpath[links_list_counter]).text
+        #topNabidkaElementHref = driver.find_elements_by_xpath(topNabidkaLinkXpath[links_list_counter]).text
+        topNabidkaElementHref = driver.find_elements_by_xpath(topNabidkaElementLists[links_list_counter]).text
         links_to_check.append(topNabidkaElementHref)
         links_list_counter = links_list_counter+1
         print(topNabidkaElementHref)
