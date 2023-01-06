@@ -70,7 +70,6 @@ class Test_HP_C(unittest.TestCase):
         time.sleep(3.5)
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath))).click()
-        #self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath).click()
 
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
