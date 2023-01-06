@@ -1,4 +1,7 @@
+from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
+
+from EW_Automation_Local_Deploy_PyCharm.Detail_D import detail_D
 from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL, setUp, tearDown, generalDriverWaitImplicit
 import unittest
 from selenium.webdriver.support import expected_conditions as EC
@@ -28,6 +31,8 @@ HPnejlepsiZajezdySwitchButtonXpath = "//*[@class='f_switch-button']"
 HPnejlepsiZajezdyVypisXpath = "//*[@class='f_tourTable-tour']"
 # HPtopNabidkaXpath = "//*[@class='js-ajaxPlaceholder--widgetContent']"
 #HPtopNabidkaXpath = "//*[@class='js-ajaxPlaceholder--widgetContent']/a"
+HPnextArrowXpath = "//*[@class='slick-next slick-arrow']"
+HPkartaHoteluSliderXpath = "//*[@class='f_carousel-item slick-slide slick-active']"
 
 
 class Test_HP_C(unittest.TestCase):
@@ -118,28 +123,43 @@ class Test_HP_C(unittest.TestCase):
         self.test_passed = True
 
     def test_HP_slider_click_detail_hotelu(self):
-        self.driver.get(URL)
-        wait = WebDriverWait(self.driver, 25)
         self.driver.maximize_window()
+        self.driver.get(URL)
+        wait = WebDriverWait(self.driver, 300)
+
         time.sleep(
-            2.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
         acceptConsent(self.driver)
-        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPnextArrowXpath))).click()
-        # time.sleep(10)
-        self.driver.implicitly_wait(100)
-        topNabidkaBigHotelCardXpath  = "//*[@class='page-widget js-ajaxPlaceholder--widget fshr-widget f_tileGrid-item f_tileGrid-item--double']"
-        topNabidkaBigHotelCardElement = self.driver.find_element_by_xpath(topNabidkaBigHotelCardXpath)
 
-        self.driver.execute_script("arguments[0].scrollIntoView();", topNabidkaBigHotelCardElement )
-        # self.driver.execute_script("arguments[0].scrollIntoView();", HPkartaHoteluSliderElement)
-        # action.move_to_element(HPkartaHoteluSliderElement).click().perform()
-        self.driver.implicitly_wait(100)
-        time.sleep(6)
-        topNabidkaBigHotelCardElement.click()
-        time.sleep(2)
-        curURL = self.driver.current_url
+        #        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPnextArrowXpath))).click()
 
-        assert curURL != URL
+        self.driver.implicitly_wait(100)
+
+        HPnextArrowElement = self.driver.find_element_by_xpath(HPnextArrowXpath)
+        self.driver.execute_script("arguments[0].scrollIntoView();", HPnextArrowElement)
+        time.sleep(3)
+        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        time.sleep(0.3)
+        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        time.sleep(0.5)
+        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        time.sleep(0.5)
+        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        time.sleep(0.5)
+        self.driver.execute_script("arguments[0].click();", HPnextArrowElement)
+        HPnextkartaHoteluSlider = self.driver.find_element_by_xpath(HPkartaHoteluSliderXpath)
+        time.sleep(1)
+        self.driver.execute_script("arguments[0].click();", HPnextkartaHoteluSlider)
+        action = ActionChains(self.driver)
+        HPkartaHoteluSliderElement = self.driver.find_element_by_xpath(HPkartaHoteluSliderXpath)
+        self.driver.execute_script("arguments[0].scrollIntoView();", HPkartaHoteluSliderElement)
+        action.move_to_element(HPkartaHoteluSliderElement).click().perform()
+        self.driver.implicitly_wait(100)
+        time.sleep(0.3)
+        # HPkartaHoteluSliderElement.click()
+        time.sleep(1)
+        self.driver.switch_to.window(self.driver.window_handles[1])
+        detail_D(self, self.driver)
 
         self.test_passed = True
 
