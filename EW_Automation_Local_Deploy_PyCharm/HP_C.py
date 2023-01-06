@@ -6,7 +6,7 @@ from EW_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
 import time
 from EW_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
 from generalized_banners_compare_to_deploy_web import banner_check_public_prod_VS_deployed_web
-from generalized_test_functions import generalized_EW_like_top_nabidka_URL_status_check
+from generalized_test_functions import generalized_EW_like_top_nabidka_URL_status_check, generalized_list_of_url_checker
 
 URL_deploying_web = URL
 URL_prod_public = "https://www.eximtours.cz/"
@@ -150,15 +150,27 @@ class Test_HP_C(unittest.TestCase):
 
 
 
-    # def test_HP_top_nabidka_status(self):
-    #     self.driver.maximize_window()
-    #     self.driver.get(URL)
-    #
-    #     time.sleep(2.5)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
-    #     acceptConsent(self.driver)
-    #     time.sleep(4)
-    #     HPtopNabidkaXpath = "//*[@class='js-ajaxPlaceholder--widgetContent']"
-    #     HPtopNabidkaElement = self.driver.find_element_by_xpath(HPtopNabidkaXpath)
-    #     self.driver.execute_script("arguments[0].scrollIntoView();", HPtopNabidkaElement)
-    #     time.sleep(10)
-    #     generalized_EW_like_top_nabidka_URL_status_check(self.driver, HPtopNabidkaXpath)
+    def test_HP_top_nabidka_status(self):
+        self.driver.maximize_window()
+        self.driver.get(URL)
+
+        time.sleep(2.5)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+        acceptConsent(self.driver)
+        time.sleep(1)
+        #HPtopNabidkaXpath = "//*[@class='page-widget js-ajaxPlaceholder--widget fshr-widget f_tileGrid-item']//*[@class='f_button-text f_icon f_icon_set--right f_icon--chevronRight']"
+        HPtopNabidkaXpath= "//*[@class='js-ajaxPlaceholder--widgetContent']/a"
+        HPtopNabidkaElements = self.driver.find_elements_by_xpath(HPtopNabidkaXpath)
+        HPtopNabidkaElement = HPtopNabidkaElements[0]
+        self.driver.execute_script("arguments[0].scrollIntoView();", HPtopNabidkaElement)
+        time.sleep(4)
+        linksToCheck_List = []
+        pozice = 0
+        for _ in HPtopNabidkaElements:
+            odkazLink = HPtopNabidkaElements[pozice].get_attribute("href")
+            #odkazLink = HPtopNabidkaElements[pozice].get_attribute("a")
+            linksToCheck_List.append(odkazLink)
+            print(odkazLink)
+            pozice = pozice + 1
+
+        generalized_list_of_url_checker(linksToCheck_List)
+
