@@ -54,6 +54,7 @@ def suite_EW_full():
     suite.addTest(TestDetailHotelu_C("test_detail_price_sorter_terminy_cheap"))
     suite.addTest(TestDetailHotelu_C("test_detail_price_sorter_terminy_expensive"))
     suite.addTest(TestPoznavacky_D('test_poznavacky_C'))
+    suite.addTest(Test_HP_C('test_HP_top_nabidka_status'))
 
     return suite
 
