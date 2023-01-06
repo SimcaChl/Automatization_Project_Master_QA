@@ -16,11 +16,12 @@ class TestPoznavacky_D(unittest.TestCase):
 
     def test_poznavacky_all_URL_check(self):
         driver = self.driver
-        driver.get(URL_poznavacky)
-        time.sleep(1)
         driver.maximize_window()
+        driver.get(URL_poznavacky)
+        time.sleep(4)
+
         acceptConsent(driver)
-        time.sleep(15)
+        time.sleep(8)
         gridItemXpath = "//*[@class='f_tileGrid-item']/a"
         gridItemElements = driver.find_elements_by_xpath(gridItemXpath)
         # print(URL_poznavaciho_hotelu)
