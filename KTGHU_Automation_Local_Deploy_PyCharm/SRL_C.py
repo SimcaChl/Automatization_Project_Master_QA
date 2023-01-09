@@ -1,3 +1,4 @@
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from KTGHU_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, generalDriverWaitImplicit
 import time
@@ -101,7 +102,7 @@ class Test_SRL_C(unittest.TestCase):
         closeExponeaBanner(self.driver)
         hotelyAllKarty = self.driver.find_elements_by_xpath(hotelyKartyXpath)
         wait.until(EC.visibility_of(hotelyAllKarty[1]))
-        for _ in range(9):
+        for _ in range(7):
 
             print("|||||HOTEL CISLO|||||||" )
             print(x+1)
@@ -128,7 +129,7 @@ class Test_SRL_C(unittest.TestCase):
 
             cenaZajezduAll = self.driver.find_elements_by_xpath(
                 "//*[@class='f_tile-priceDetail-content']//*[@class='f_price']")
-            cenaZajezduAllString = cenaZajezduAll[x].text
+            cenaZajezduAllString = cenaZajezduAll[x].text.lower()
             ##print(cenaZajezduAllString)
 
             cenaZajezduAdult = self.driver.find_elements_by_xpath(
@@ -144,28 +145,59 @@ class Test_SRL_C(unittest.TestCase):
 
             time.sleep(1)  ##natvrdo aby se to neposralo
 
-            detailTerminSedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary-title']")
+            #detailTerminSedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary-title']")
             ##print(detailTerminSedivka.text)
 
-            detailStravaSedivka = self.driver.find_elements_by_xpath("//*[@class='fshr-detail-summary-paragraph']")
-            detailStravaSedivkaString = detailStravaSedivka[
-                1].text  ##gottaa be 1 cuz thats how its set up (multiple locators are attached to this locator so position 1 is always gonna be strava hopefully
+            # detailStravaSedivka = self.driver.find_elements_by_xpath("//*[@class='fshr-detail-summary-paragraph']")
+            # detailStravaSedivkaString = detailStravaSedivka[
+            #     1].text  ##gottaa be 1 cuz thats how its set up (multiple locators are attached to this locator so position 1 is always gonna be strava hopefully
+
+            try:
+                detailStravaSedivka = self.driver.find_element_by_xpath(
+                    "/html/body/section/div/div/div[1]/div/div[2]/div[2]/div/div[3]/div[2]/span")
+            except NoSuchElementException:
+                try:
+                    detailStravaSedivka = self.driver.find_element_by_xpath(
+                        "/html/body/section/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div[2]/span")
+                except NoSuchElementException:
+                    pass
+
+                # detailStravaSedivkaString = detailStravaSedivka[1].text  ##gottaa be 1 cuz thats how its set up (multiple locators are attached to this locator so position 1 is always gonna be strava hopefully
+            detailStravaSedivkaString = detailStravaSedivka.text
+            print(detailStravaSedivkaString)
 
             detailPokojSedivka = self.driver.find_element_by_xpath(
-                "//*[@class='fshr-detail-summary-title fshr-icon fshr-icon--bed']")
+                "//*[@class='f_box-item f_icon f_icon--bed']//strong")
             detailPokojSedivkaString = detailPokojSedivka.text
-            detailPokojSedivkaString = detailPokojSedivkaString[
-                                       :-3]  ##need to be edited cuz there is random spaces and "?" in the element
-            ##print(detailPokojSedivkaString)
 
-            detailCenaAll = self.driver.find_element_by_xpath("//*[@class='fshr-tooltip-underline js-totalPrice']")
-            detailCenaAllString = detailCenaAll.text
-            ##print(detailCenaAllString)
+            # detailPokojSedivka = self.driver.find_element_by_xpath(
+            #     "//*[@class='fshr-detail-summary-title fshr-icon fshr-icon--bed']")
+            # detailPokojSedivkaString = detailPokojSedivka.text
+            # detailPokojSedivkaString = detailPokojSedivkaString[:-3]  ##need to be edited cuz there is random spaces and "?" in the element
+            # ##print(detailPokojSedivkaString)
 
-            detailCenaAdult = self.driver.find_element_by_xpath(
-                    '//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
-            detailCenaAdultString = detailCenaAdult.text.lower()
-            print(detailCenaAdultString)
+            # detailCenaAll = self.driver.find_element_by_xpath("//*[@class='fshr-tooltip-underline js-totalPrice']")
+            # detailCenaAllString = detailCenaAll.text
+            # ##print(detailCenaAllString)
+
+            detailCenaAll = self.driver.find_element_by_xpath("//*[@class='f_column-item']//*[@class='f_price']")
+            detailCenaAllString = detailCenaAll.text.lower()
+
+            # detailCenaAdult = self.driver.find_element_by_xpath(
+            #         '//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
+            # detailCenaAdultString = detailCenaAdult.text.lower()
+            # print(detailCenaAdultString)
+
+            try:
+                # detailCenaAdult = self.driver.find_element_by_xpath('//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
+                # detailCenaAdult = self.driver.find_element_by_xpath("//*[@class='flex justify-between']//*[@class='text-right bold']")
+                detailCenaAdult = self.driver.find_element_by_xpath(
+                    "//*[@class='flex justify-between mb-2']//*[@class='text-right bold']")
+                detailCenaAdultString = detailCenaAdult.text.lower()
+                print(detailCenaAdultString)
+
+            except NoSuchElementException:
+                pass
 
 
             assert detailPokojSedivkaString == pokojZajezduString
