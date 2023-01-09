@@ -12,7 +12,8 @@ URL_deploying_web = URL
 URL_prod_public = "https://www.kartagotours.hu/"
 banneryXpath_EW = "//*[@class='f_teaser-item']/a"
 
-HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--highlighted']//*[contains(text(), 'Ajánlatok keresése')]"
+#HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--highlighted']//*[contains(text(), 'Ajánlatok keresése')]"
+HPvyhledatZajezdyButtonXpath = "//*[@class='f_filterMainSearch']//*[contains(text(), 'Ajánlatok keresése')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Hova?')]"
 HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/span/label/span/span"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Továbblépés')]"
