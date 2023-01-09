@@ -17,7 +17,7 @@ class TestHP_D(unittest.TestCase):
         wait = WebDriverWait(self.driver, 150)
         self.driver.get(URL)
         self.driver.maximize_window()
-        time.sleep(2.5)
+        time.sleep(4.5)
         acceptConsent(self.driver)
         generalDriverWaitImplicit(self.driver)
         bannerSingle = self.driver.find_element_by_xpath(HPbanneryXpath)
@@ -41,7 +41,7 @@ class TestHP_D(unittest.TestCase):
             msg = "Problem na HP s bannery " + url
             sendEmail(msg)
         assert bannerSingle.is_displayed() == True
-        time.sleep(1.5)
+        time.sleep(3.5)
 
         try:
             nejnabidkyLMsingle = self.driver.find_element_by_xpath("//*[@class='f_tourTable-tour']")
