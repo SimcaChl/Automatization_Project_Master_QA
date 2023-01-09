@@ -10,7 +10,7 @@ from generalized_banners_compare_to_deploy_web import banner_check_public_prod_V
 
 URL_deploying_web = URL
 URL_prod_public = "https://www.kartagotours.hu/"
-banneryXpath_EW = "//*[@class='f_teaser-item js-priceUpdated']/a"
+banneryXpath_EW = "//*[@class='f_teaser-item']/a"
 
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--highlighted']//*[contains(text(), 'Ajánlatok keresése')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Hova?')]"
