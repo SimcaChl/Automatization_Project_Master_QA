@@ -6,7 +6,11 @@ from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
 ##global
-terminyAcenyTabXpath = "//*[@id='terminyaceny-tab']"
+from generalized_test_functions import generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail, \
+    generalized_list_string_sorter
+
+#terminyAcenyTabXpath = "//*[@id='terminyaceny-tab']"
+terminyAcenyTabXpath = "//*[@class='f_menu f_menu--inline f_menu--sticky']//*[contains(text(),'Időpontok és Árak')]"
 potvrditPopupXpath = "//*[@data-testid='popup-closeButton']"
 
 class TestDetailHotelu_C(unittest.TestCase):
@@ -61,118 +65,154 @@ class TestDetailHotelu_C(unittest.TestCase):
     def test_detail_terminy_filtr_meal(self):
         ##funkčně už je to ok ale musím pak updatnout url na detail, pockam na tcom
 
+        self.driver.maximize_window()
+        time.sleep(1)
         self.driver.get(URL_detail)
-        wait = WebDriverWait(self.driver, 150)
-        acceptConsent(self.driver)
+
+        stravovaniBoxXpath = "//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--cutlery']"
+
+        valueToFilterStravaAllIncXpath_V1 = "//*[@id='filtr-stravy-detail']//*[contains(text(),'All inclusive')]"
+        # valueToFilterStravaAllIncXpath = "//*[@class='f_holder']//*[contains(text(),'All inclusive')]"
+        valueToFilterStravaAllIncXpath = "//*[@class='f_input--checkbox f_input']//*[@value=5]"
+
+        zvolenaStravaVboxuXpath = "//*[@class='f_button-content f_icon f_icon--cutlery']//*[@class='f_button-text f_text--highlighted']"
+
+        stravaVterminechXpath = "//*[@class='f_icon f_icon--cutlery']"
 
         time.sleep(1)
-        closeExponeaBanner(self.driver)
+        acceptConsent(self.driver)
+        generalized_Detail_terminyAceny_potvrdit_chooseFiltr_new_detail(self.driver, terminyAcenyTabXpath,
+                                                                        stravovaniBoxXpath,
+                                                                        valueToFilterStravaAllIncXpath, False)
+        time.sleep(1.2)
 
-
-        try:
-            terminyCeny = self.driver.find_element_by_xpath("//*[@id='terminyaceny-tab']")
-            wait.until(EC.visibility_of(terminyCeny))
-            ##terminyCeny.click()
-            self.driver.execute_script("arguments[0].click();", terminyCeny)
-            time.sleep(3)
-            try:
-                generalDriverWaitImplicit(self.driver)
-                potvrdit = self.driver.find_element_by_xpath("//*[@data-testid='popup-closeButton']")
-
-                self.driver.execute_script("arguments[0].click();", potvrdit)
-
-            except NoSuchElementException:
-                url = self.driver.current_url
-                msg = "Problem prepnuti na terminy a ceny na detailu hotelu,potvrdit,  NoSuchElementException " + url
-                sendEmail(msg)
-
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "Problem prepnuti na terminy a ceny na detailu hotelu, NoSuchElementException " + url
-            sendEmail(msg)
-
-        time.sleep(2)
-        try:
-            stravovaniBox = self.driver.find_element_by_xpath(
-                "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']")
-            wait.until(EC.visibility_of(stravovaniBox))
-            self.driver.execute_script("arguments[0].click();", stravovaniBox)
-            try:
-                # allInclusiveBox =
-                # driver.find_element_by_xpath("//*[contains(text(), 'All
-                # inclusive')]")
-                # wait.until(EC.visibility_of(allInclusiveBox))
-                ##allInclusiveBox.click()
-                stravyBox = self.driver.find_elements_by_xpath("//*[@name='detailFilterCatering']")
-
-                self.driver.execute_script("arguments[0].click();", stravyBox[1])
-
-                try:
-                    ##potvrditButtonBox =
-                    ##driver.find_element_by_xpath("//*[@class='fshr-filter-footer']
-                    ##//*[contains(text(), 'Potvrdit')]")
-
-                    # potvrditButtonBox.click()
-                    self.driver.execute_script("arguments[0].click();",
-                                               stravovaniBox)  ##workaround, klikni na box to confirm the choice
-
-                except NoSuchElementException:
-                    url = self.driver.current_url
-                    msg = "stravaBox, potvrzeni stravy na detailu hotelu problém, NoSuchElementException " + url
-                    sendEmail(msg)
-
-            except NoSuchElementException:
-                url = self.driver.current_url
-                msg = "allInclusiveBox, zvolení stravy na detailu hotelu problém, NoSuchElementException " + url
-                sendEmail(msg)
-
-        except NoSuchElementException:
-            url = self.driver.current_url
-            msg = "stravovaniBox, otevření filtru stravování detail hotelu, NoSuchElementException " + url
-            sendEmail(msg)
-
-        #omlouvamese_paragraph(self)
-
-        zvolenaStravaVboxu = self.driver.find_element_by_xpath("//*[@class='js-subvalue f_text--highlighted']")
+        zvolenaStravaVboxu = self.driver.find_element_by_xpath(zvolenaStravaVboxuXpath)
         zvolenaStravaVboxuString = zvolenaStravaVboxu.text.lower()
-
         print(zvolenaStravaVboxuString)
 
-        stravaVterminech = self.driver.find_elements_by_xpath(
-            "//*[@class='fshr-termin-catering js-tooltip js-tooltip--onlyDesktop']")
-        stravaVterminechString = []
-
-        ##ty for loopy se nezapnou pokud pocet vysledku bude 0
-        ##takze treba exim a dx bude casto takto jelikoz se tam nabizi vsechny
-        ##stravy, ne jen ty available
-        time.sleep(2)
-        x = 0
-        for _ in stravaVterminech:
-            stringos = stravaVterminech[x].text.lower()
-            stravaVterminechString.append(stringos)
-            x = x + 1
-
-        time.sleep(1)  ###eroror element is not attached ?  tak chvilku cekacka mozna to solvne
-
-        print(stravaVterminechString)
-        y = 0
-        for _ in stravaVterminechString:
-            assert zvolenaStravaVboxuString in stravaVterminechString[y]
-            if zvolenaStravaVboxuString in stravaVterminechString[y]:
-                print("ok")
-                ##print(y)
-                y = y + 1
-            else:
-                url = self.driver.current_url
-                msg = "na detailu jsem vyfiltroval stravu " + zvolenaStravaVboxuString + "ale pry to nesedi říká python" + url
-                sendEmail(msg)
-                y = y + 1
-        time.sleep(1)
-        ##print(stravaVterminech)
-        ##print(stravaVterminechString)
-
+        generalized_list_string_sorter(self.driver, stravaVterminechXpath, zvolenaStravaVboxuString)
         self.test_passed = True
+
+
+
+
+
+
+
+
+
+        # self.driver.get(URL_detail)
+        # wait = WebDriverWait(self.driver, 150)
+        # acceptConsent(self.driver)
+        #
+        # time.sleep(1)
+        # closeExponeaBanner(self.driver)
+        #
+        #
+        # try:
+        #     terminyCeny = self.driver.find_element_by_xpath("//*[@id='terminyaceny-tab']")
+        #     wait.until(EC.visibility_of(terminyCeny))
+        #     ##terminyCeny.click()
+        #     self.driver.execute_script("arguments[0].click();", terminyCeny)
+        #     time.sleep(3)
+        #     try:
+        #         generalDriverWaitImplicit(self.driver)
+        #         potvrdit = self.driver.find_element_by_xpath("//*[@data-testid='popup-closeButton']")
+        #
+        #         self.driver.execute_script("arguments[0].click();", potvrdit)
+        #
+        #     except NoSuchElementException:
+        #         url = self.driver.current_url
+        #         msg = "Problem prepnuti na terminy a ceny na detailu hotelu,potvrdit,  NoSuchElementException " + url
+        #         sendEmail(msg)
+        #
+        #
+        # except NoSuchElementException:
+        #     url = self.driver.current_url
+        #     msg = "Problem prepnuti na terminy a ceny na detailu hotelu, NoSuchElementException " + url
+        #     sendEmail(msg)
+        #
+        # time.sleep(2)
+        # try:
+        #     stravovaniBox = self.driver.find_element_by_xpath(
+        #         "//*[@class='fshr-button-content fshr-icon fshr-icon--forkSpoon js-selector--catering']")
+        #     wait.until(EC.visibility_of(stravovaniBox))
+        #     self.driver.execute_script("arguments[0].click();", stravovaniBox)
+        #     try:
+        #         # allInclusiveBox =
+        #         # driver.find_element_by_xpath("//*[contains(text(), 'All
+        #         # inclusive')]")
+        #         # wait.until(EC.visibility_of(allInclusiveBox))
+        #         ##allInclusiveBox.click()
+        #         stravyBox = self.driver.find_elements_by_xpath("//*[@name='detailFilterCatering']")
+        #
+        #         self.driver.execute_script("arguments[0].click();", stravyBox[1])
+        #
+        #         try:
+        #             ##potvrditButtonBox =
+        #             ##driver.find_element_by_xpath("//*[@class='fshr-filter-footer']
+        #             ##//*[contains(text(), 'Potvrdit')]")
+        #
+        #             # potvrditButtonBox.click()
+        #             self.driver.execute_script("arguments[0].click();",
+        #                                        stravovaniBox)  ##workaround, klikni na box to confirm the choice
+        #
+        #         except NoSuchElementException:
+        #             url = self.driver.current_url
+        #             msg = "stravaBox, potvrzeni stravy na detailu hotelu problém, NoSuchElementException " + url
+        #             sendEmail(msg)
+        #
+        #     except NoSuchElementException:
+        #         url = self.driver.current_url
+        #         msg = "allInclusiveBox, zvolení stravy na detailu hotelu problém, NoSuchElementException " + url
+        #         sendEmail(msg)
+        #
+        # except NoSuchElementException:
+        #     url = self.driver.current_url
+        #     msg = "stravovaniBox, otevření filtru stravování detail hotelu, NoSuchElementException " + url
+        #     sendEmail(msg)
+        #
+        # #omlouvamese_paragraph(self)
+        #
+        # zvolenaStravaVboxu = self.driver.find_element_by_xpath("//*[@class='js-subvalue f_text--highlighted']")
+        # zvolenaStravaVboxuString = zvolenaStravaVboxu.text.lower()
+        #
+        # print(zvolenaStravaVboxuString)
+        #
+        # stravaVterminech = self.driver.find_elements_by_xpath(
+        #     "//*[@class='fshr-termin-catering js-tooltip js-tooltip--onlyDesktop']")
+        # stravaVterminechString = []
+        #
+        # ##ty for loopy se nezapnou pokud pocet vysledku bude 0
+        # ##takze treba exim a dx bude casto takto jelikoz se tam nabizi vsechny
+        # ##stravy, ne jen ty available
+        # time.sleep(2)
+        # x = 0
+        # for _ in stravaVterminech:
+        #     stringos = stravaVterminech[x].text.lower()
+        #     stravaVterminechString.append(stringos)
+        #     x = x + 1
+        #
+        # time.sleep(1)  ###eroror element is not attached ?  tak chvilku cekacka mozna to solvne
+        #
+        # print(stravaVterminechString)
+        # y = 0
+        # for _ in stravaVterminechString:
+        #     assert zvolenaStravaVboxuString in stravaVterminechString[y]
+        #     if zvolenaStravaVboxuString in stravaVterminechString[y]:
+        #         print("ok")
+        #         ##print(y)
+        #         y = y + 1
+        #     else:
+        #         url = self.driver.current_url
+        #         msg = "na detailu jsem vyfiltroval stravu " + zvolenaStravaVboxuString + "ale pry to nesedi říká python" + url
+        #         sendEmail(msg)
+        #         y = y + 1
+        # time.sleep(1)
+        # ##print(stravaVterminech)
+        # ##print(stravaVterminechString)
+        #
+        # self.test_passed = True
 
         time.sleep(20)
 
