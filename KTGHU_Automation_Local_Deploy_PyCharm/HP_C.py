@@ -14,9 +14,9 @@ banneryXpath_EW = "//*[@class='f_teaser-item']/a"
 
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--highlighted']//*[contains(text(), 'Ajánlatok keresése')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Hova?')]"
-HPzlutakReckoDestinaceXpath = "//*[@class='f_input-content']//*[contains(text(), 'Egyiptom')]"
+HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/span/label/span/span"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Továbblépés')]"
-HPzlutakPokracovatButtonXpathStep2 = "//*[@class='f_filterHolder f_set--active'] //*[@class=('f_button-text f_icon f_icon--chevronRight f_icon_set--right')]"
+HPzlutakPokracovatButtonXpathStep2 ="/html/body/header/div/div[2]/div/div/div/div[2]/div[2]/div[3]/div[2]/a/span"
 #HPzlutakLetniPrazdninyXpath = "//*[contains(text(), '2022 Szeptember / Október')]"
 HPzlutakLetniPrazdninyXpath = "//*[@class='f_filter-item']//*[contains(text(), '2023 Január/ Február')]"
 HPzlutakPridatPokojXpath = "//*[contains(text(), 'přidat pokoj')]"
@@ -24,7 +24,7 @@ HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Családi elhelyezés 2 fe
 HPzlutakPotvrditAvyhledatXpath = "//*[@class='f_button f_button--common'] //*[contains(text(), 'Keresés indítása')]"
 HPnejlepsiZajezdySwitchButtonXpath = "//*[@class='f_switch-button']"
 HPnejlepsiZajezdyVypisXpath = "//*[@class='f_tourTable-tour']"
-
+HPzlutakPokracovatVyberTerminuXpath = "/html/body/header/div/div[2]/div/div/div/div[2]/div[3]/div[3]/div[2]/a/span"
 
 class Test_HP_C(unittest.TestCase):
     def setUp(self):
@@ -56,12 +56,12 @@ class Test_HP_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath))).click()
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
-        time.sleep(1.5)
+        time.sleep(2.5)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
         time.sleep(0.5)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatVyberTerminuXpath))).click()
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus1Xpath))).click()
 
