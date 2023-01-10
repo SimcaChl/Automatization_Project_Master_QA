@@ -48,8 +48,9 @@ class Test_HP_C(unittest.TestCase):
         wait = WebDriverWait(self.driver, 300)
 
         acceptConsent(self.driver)
+        time.sleep(1.5)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
-        time.sleep(2.5)     ##time sleep not the best not pog but it works =)
+        time.sleep(3.5)     ##time sleep not the best not pog but it works =)
         groupSearch_D(self, self.driver)
 
         self.test_passed = True

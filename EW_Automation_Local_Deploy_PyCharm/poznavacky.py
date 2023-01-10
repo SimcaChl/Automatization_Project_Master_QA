@@ -180,7 +180,7 @@ class TestPoznavacky_D(unittest.TestCase):
         time.sleep(1)
         self.driver.maximize_window()
         acceptConsent(self.driver)
-        time.sleep(10)
+        time.sleep(14)
         kostkaPoznavackaXpath = "//*[@class='f_tile f_tile--tour']"
         element3 = self.driver.find_elements_by_xpath(kostkaPoznavackaXpath)[6]
         self.driver.execute_script("arguments[0].scrollIntoView();", element3)
