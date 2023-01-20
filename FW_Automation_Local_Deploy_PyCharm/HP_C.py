@@ -60,7 +60,7 @@ class Test_HP_C(unittest.TestCase):
 
         self.test_passed = True
 
-    def test_HP_zlutak_to_SRL(self):
+    def test_HP_zlutak_to_SRL_pobyt(self):
         self.driver.get(URL)
         wait = WebDriverWait(self.driver, 300)
         self.driver.maximize_window()
