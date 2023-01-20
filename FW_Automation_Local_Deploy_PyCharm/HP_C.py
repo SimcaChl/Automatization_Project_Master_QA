@@ -10,6 +10,29 @@ import time
 from selenium.webdriver.common.action_chains import ActionChains
 from generalized_banners_compare_to_deploy_web import banner_check_public_prod_VS_deployed_web
 
+
+def hp_zlutak_to_SRL(driver, kamPojedete, destinace, pokracovatBtn1, pokracovatBtn2, termin, pokracovatBtn3, obsazenost,
+                     potvrditAvyhledat):
+    wait = WebDriverWait(driver, 300)
+    wait.until(EC.visibility_of(driver.find_element_by_xpath(kamPojedete))).click()
+
+    wait.until(EC.visibility_of(driver.find_element_by_xpath(destinace))).click()
+
+    wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn1))).click()
+    time.sleep(1.5)
+    wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn2))).click()
+
+    wait.until(EC.visibility_of(driver.find_element_by_xpath(termin))).click()
+    time.sleep(1)
+    wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn3))).click()
+
+    wait.until(EC.visibility_of(driver.find_element_by_xpath(obsazenost))).click()
+
+    time.sleep(1)
+    wait.until(EC.visibility_of(driver.find_element_by_xpath(potvrditAvyhledat))).click()
+    time.sleep(3)
+
+
 #banneryXpath_FW = "//*[@class='f_teaser-item js-priceLoading']/a"
 #banneryXpath_FW = "//*[@data-pricecheck-type='banner']/a"
 banneryXpath_FW = "//*[@class='f_teaser-item']/a"
@@ -62,52 +85,13 @@ class Test_HP_C(unittest.TestCase):
 
     def test_HP_zlutak_to_SRL_pobyt(self):
         self.driver.get(URL)
-        wait = WebDriverWait(self.driver, 300)
         self.driver.maximize_window()
         time.sleep(0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
         acceptConsent(self.driver)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPkamPojedeteButtonXpath))).click()
         time.sleep(3.5)
-
-        def hp_zlutak_to_SRL(driver, destinace, pokracovatBtn1, pokracovatBtn2, termin, pokracovatBtn3, obsazenost, potvrditAvyhledat):
-            wait.until(EC.visibility_of(driver.find_element_by_xpath(destinace))).click()
-
-            wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn1))).click()
-            time.sleep(1.5)
-            wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn2))).click()
-
-            wait.until(EC.visibility_of(driver.find_element_by_xpath(termin))).click()
-            time.sleep(1)
-            wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn3))).click()
-
-            wait.until(EC.visibility_of(driver.find_element_by_xpath(obsazenost))).click()
-
-            time.sleep(1)
-            wait.until(EC.visibility_of(driver.find_element_by_xpath(potvrditAvyhledat))).click()
-            time.sleep(3)
-
-        hp_zlutak_to_SRL(self.driver, HPzlutakReckoDestinaceXpath, HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakLetniPrazdninyXpath
+        hp_zlutak_to_SRL(self.driver, HPkamPojedeteButtonXpath, HPzlutakReckoDestinaceXpath, HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakLetniPrazdninyXpath
                          ,HPzlutakPokracovatButtonXpathStep3, HPzlutakObsazenost2plus1Xpath, HPzlutakPotvrditAvyhledatXpath )
-
-        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath))).click()
-        #
-        #
-        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
-        # time.sleep(1.5)
-        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
-        #
-        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
-        # time.sleep(1)
-        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep3))).click()
-        #
-        #
-        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus1Xpath))).click()
-        #
-        # time.sleep(1)
-        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
-        # time.sleep(1)
         SRL_D(self, self.driver)
-
         self.test_passed = True
 
     def test_HP_nejlepsi_nabidky_vypis_btn_switch(self):
