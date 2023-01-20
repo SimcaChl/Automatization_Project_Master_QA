@@ -59,6 +59,7 @@ def suite_FW_full():
     suite.addTest(Test_HP_C('test_HP_zlutak_to_SRL_poznavacky'))
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch_poznavacky'))
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch_lyze'))
+    suite.addTest(Test_HP_C('test_HP_zlutak_to_SRL_lyze'))
     return suite
 
 def suite_map():
