@@ -69,23 +69,43 @@ class Test_HP_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPkamPojedeteButtonXpath))).click()
         time.sleep(3.5)
 
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath))).click()
+        def hp_zlutak_to_SRL(driver, destinace, pokracovatBtn1, pokracovatBtn2, termin, pokracovatBtn3, obsazenost, potvrditAvyhledat):
+            wait.until(EC.visibility_of(driver.find_element_by_xpath(destinace))).click()
 
+            wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn1))).click()
+            time.sleep(1.5)
+            wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn2))).click()
 
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
-        time.sleep(1.5)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
+            wait.until(EC.visibility_of(driver.find_element_by_xpath(termin))).click()
+            time.sleep(1)
+            wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn3))).click()
 
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
-        time.sleep(1)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep3))).click()
+            wait.until(EC.visibility_of(driver.find_element_by_xpath(obsazenost))).click()
 
+            time.sleep(1)
+            wait.until(EC.visibility_of(driver.find_element_by_xpath(potvrditAvyhledat))).click()
+            time.sleep(3)
 
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus1Xpath))).click()
+        hp_zlutak_to_SRL(self.driver, HPzlutakReckoDestinaceXpath, HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakLetniPrazdninyXpath
+                         ,HPzlutakPokracovatButtonXpathStep3, HPzlutakObsazenost2plus1Xpath, HPzlutakPotvrditAvyhledatXpath )
 
-        time.sleep(1)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
-        time.sleep(1)
+        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath))).click()
+        #
+        #
+        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
+        # time.sleep(1.5)
+        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
+        #
+        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
+        # time.sleep(1)
+        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep3))).click()
+        #
+        #
+        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus1Xpath))).click()
+        #
+        # time.sleep(1)
+        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
+        # time.sleep(1)
         SRL_D(self, self.driver)
 
         self.test_passed = True
