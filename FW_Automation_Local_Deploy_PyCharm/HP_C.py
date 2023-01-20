@@ -88,6 +88,23 @@ class Test_HP_C(unittest.TestCase):
         self.driver.maximize_window()
         time.sleep(0.3) ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
         acceptConsent(self.driver)
+        poznavackyVeFiltruSwitchXpath = "//*[@class='f_icon f_icon--pinMap segmentation-list-anchor']"
+        self.driver.find_element_by_xpath(poznavackyVeFiltruSwitchXpath).click()
+        time.sleep(2.5)
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
+        time.sleep(2.5)     ##time sleep not the best not pog but it works =)
+        groupSearch_D(self, self.driver)
+        self.test_passed = True
+
+    def test_HP_zlutak_to_groupsearch_lyze(self):
+        self.driver.get(URL)
+        wait = WebDriverWait(self.driver, 300)
+        self.driver.maximize_window()
+        time.sleep(0.3) ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+        acceptConsent(self.driver)
+        lyzeVeFiltruSwitchXpath = "//*[@class='f_icon f_icon--snowFlake segmentation-list-anchor']"
+        self.driver.find_element_by_xpath(lyzeVeFiltruSwitchXpath).click()
+        time.sleep(2.5)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
         time.sleep(2.5)     ##time sleep not the best not pog but it works =)
         groupSearch_D(self, self.driver)
