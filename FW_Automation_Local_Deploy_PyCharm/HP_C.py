@@ -80,7 +80,17 @@ class Test_HP_C(unittest.TestCase):
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
         time.sleep(2.5)     ##time sleep not the best not pog but it works =)
         groupSearch_D(self, self.driver)
+        self.test_passed = True
 
+    def test_HP_zlutak_to_groupsearch_poznavacky(self):
+        self.driver.get(URL)
+        wait = WebDriverWait(self.driver, 300)
+        self.driver.maximize_window()
+        time.sleep(0.3) ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+        acceptConsent(self.driver)
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
+        time.sleep(2.5)     ##time sleep not the best not pog but it works =)
+        groupSearch_D(self, self.driver)
         self.test_passed = True
 
     def test_HP_zlutak_to_SRL_pobyt(self):
