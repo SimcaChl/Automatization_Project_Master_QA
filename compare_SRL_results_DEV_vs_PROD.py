@@ -8,8 +8,8 @@ from random_printer import checked_URLs_list
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 URL_prod = "https://www.fischer.cz/"
-#URL_dev = "https://fischer.stg.dtweb.cz/"
-URL_dev = "https://fischer.web3.dtweb.cz/"
+URL_dev = "https://fischer.stg.dtweb.cz/"
+#URL_dev = "https://fischer.web3.dtweb.cz/"
 # URL1 = URL+ "vysledky-vyhledavani?ac1=2&d=653|819|724&dd=2022-12-01&nn=7&rd=2023-01-31&to=4312|4305|2682|4308&tt=1"
 # URL2 = URL+ "vysledky-vyhledavani?ac1=2&d=680|953|1108|592|611|610|612|590|726|609|621|1009|622|669|1086|1194|670|978|594|675|1010|683&dd=2023-02-01&nn=7&rd=2023-03-28&to=4312|4305|2682|4308&tt=1"
 # URL3 = URL+ "vysledky-vyhledavani?ac1=2&d=1006|1007|1008&dd=2023-02-01&ds=0&nn=7&rd=2023-03-28&to=4312|4305|2682|4308&tt=1"
