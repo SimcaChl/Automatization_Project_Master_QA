@@ -12,25 +12,25 @@ from generalized_banners_compare_to_deploy_web import banner_check_public_prod_V
 
 
 def hp_zlutak_to_SRL(driver, kamPojedete, destinace, pokracovatBtn1, pokracovatBtn2, termin, pokracovatBtn3, obsazenost,
-                     potvrditAvyhledat):
+                     potvrditAvyhledat, generalTimeSleep=1.5):
     wait = WebDriverWait(driver, 300)
     wait.until(EC.visibility_of(driver.find_element_by_xpath(kamPojedete))).click()
 
     wait.until(EC.visibility_of(driver.find_element_by_xpath(destinace))).click()
 
     wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn1))).click()
-    time.sleep(1.5)
+    time.sleep(generalTimeSleep)
     wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn2))).click()
 
     wait.until(EC.visibility_of(driver.find_element_by_xpath(termin))).click()
-    time.sleep(1)
+    time.sleep(generalTimeSleep)
     wait.until(EC.visibility_of(driver.find_element_by_xpath(pokracovatBtn3))).click()
 
     wait.until(EC.visibility_of(driver.find_element_by_xpath(obsazenost))).click()
 
-    time.sleep(1)
+    time.sleep(generalTimeSleep)
     wait.until(EC.visibility_of(driver.find_element_by_xpath(potvrditAvyhledat))).click()
-    time.sleep(3)
+    time.sleep(4)
 
 
 #banneryXpath_FW = "//*[@class='f_teaser-item js-priceLoading']/a"
@@ -43,7 +43,7 @@ URL_deploying_web = URL
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--forFilter']"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam pojedete?')]"
 #HPzlutakReckoDestinaceXpath = "//*[@class='f_input-wrapper']//*[contains(text(),'Španělsko')]"
-HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[4]/div/div[3]/div[1]/span/label/span"
+HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/div[2]/div[1]/span/label/span/span"
 #HPzlutakReckoDestinaceXpath =  "//*[@class='f_filterMainSearch']//*[@class='f_column']//*[@class='f_input f_input--checkbox']//*[contains(text(),'Španělsko')]"
 #HPzlutakReckoDestinaceXpath ="//*[@class='f_input-wrapper']//*[@value='st67']"
 #HPzlutakReckoDestinaceXpath = " //*[@class='f_filterMainSearch']//*[@class='f_column']//*[@class='f_input f_input--checkbox']//*[@value='st67']"
@@ -53,7 +53,7 @@ HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovat')]"
 HPzlutakPokracovatButtonXpathStep2 = "/html/body/header/div/div[2]/div/div/div/div[3]/div[2]/div[3]/div[2]/a/span"
 
 
-HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Jarní prázdniny 2023')]"
+HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Letní prázdniny 2023')]"
 HPzlutakPokracovatButtonXpathStep3 ="/html/body/header/div/div[2]/div/div/div/div[3]/div[3]/div[3]/div[2]/a/span"
 
 HPzlutakPridatPokojXpath = "//*[contains(text(), 'přidat pokoj')]"
@@ -71,7 +71,7 @@ class Test_HP_C(unittest.TestCase):
     def tearDown(self):
         tearDown(self)
 
-    def test_HP_zlutak_to_groupsearch(self):
+    def test_HP_zlutak_to_groupsearch_pobyt(self):
         self.driver.get(URL)
         wait = WebDriverWait(self.driver, 300)
         self.driver.maximize_window()
@@ -91,6 +91,27 @@ class Test_HP_C(unittest.TestCase):
         time.sleep(3.5)
         hp_zlutak_to_SRL(self.driver, HPkamPojedeteButtonXpath, HPzlutakReckoDestinaceXpath, HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakLetniPrazdninyXpath
                          ,HPzlutakPokracovatButtonXpathStep3, HPzlutakObsazenost2plus1Xpath, HPzlutakPotvrditAvyhledatXpath )
+        SRL_D(self, self.driver)
+        self.test_passed = True
+
+    def test_HP_zlutak_to_SRL_poznavacky(self):
+        self.driver.get(URL)
+        self.driver.maximize_window()
+        time.sleep(
+            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+        acceptConsent(self.driver)
+        time.sleep(3.5)
+        poznavackyVeFiltruSwitchXpath = "//*[@class='f_icon f_icon--pinMap segmentation-list-anchor']"
+        destinaceEgyptXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/div[3]/div/span/label/span/span"
+
+        self.driver.find_element_by_xpath(poznavackyVeFiltruSwitchXpath).click()
+
+        time.sleep(3)
+
+        hp_zlutak_to_SRL(self.driver, HPkamPojedeteButtonXpath, destinaceEgyptXpath,
+                         HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakLetniPrazdninyXpath
+                         , HPzlutakPokracovatButtonXpathStep3, HPzlutakObsazenost2plus1Xpath,
+                         HPzlutakPotvrditAvyhledatXpath)
         SRL_D(self, self.driver)
         self.test_passed = True
 
