@@ -156,7 +156,7 @@ class Test_HP_C(unittest.TestCase):
         acceptConsent(self.driver)
         time.sleep(3.5)
         poznavackyVeFiltruSwitchXpath = "//*[@class='f_icon f_icon--pinMap segmentation-list-anchor']"
-        destinaceEgyptXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/div[3]/div/span/label/span/span"
+        destinaceEgyptXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/div[2]/div/span/label/span/span"
 
         self.driver.find_element_by_xpath(poznavackyVeFiltruSwitchXpath).click()
 
