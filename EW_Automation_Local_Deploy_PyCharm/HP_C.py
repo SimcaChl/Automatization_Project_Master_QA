@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from EW_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
 import time
 from EW_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
+from FW_Automation_Local_Deploy_PyCharm.HP_C import hp_zlutak_to_SRL
 from generalized_banners_compare_to_deploy_web import banner_check_public_prod_VS_deployed_web
 from generalized_test_functions import generalized_EW_like_top_nabidka_URL_status_check, generalized_list_of_url_checker
 
@@ -35,6 +36,10 @@ HPnextArrowXpath = "//*[@class='slick-next slick-arrow']"
 HPkartaHoteluSliderXpath = "//*[@class='f_carousel-item slick-slide slick-active']"
 
 
+HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Letní prázdniny 2023')]"
+HPzlutakPokracovatButtonXpathStep3 ="/html/body/header/div/div[2]/div/div/div/div[3]/div[3]/div[3]/div[2]/a/span"
+
+
 class Test_HP_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -42,46 +47,146 @@ class Test_HP_C(unittest.TestCase):
     def tearDown(self):
         tearDown(self)
 
-    def test_HP_zlutak_to_groupsearch(self):
-        self.driver.maximize_window()
+    # def test_HP_zlutak_to_groupsearch(self):
+    #     self.driver.maximize_window()
+    #     self.driver.get(URL)
+    #     wait = WebDriverWait(self.driver, 300)
+    #
+    #     acceptConsent(self.driver)
+    #     time.sleep(1.5)
+    #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
+    #     time.sleep(3.5)     ##time sleep not the best not pog but it works =)
+    #     groupSearch_D(self, self.driver)
+    #
+    #     self.test_passed = True
+    #
+    # def test_HP_zlutak_to_SRL(self):
+    #     self.driver.maximize_window()
+    #     self.driver.get(URL)
+    #     wait = WebDriverWait(self.driver, 300)
+    #     time.sleep(2.5)
+    #     acceptConsent(self.driver)
+    #     time.sleep(2)
+    #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPkamPojedeteButtonXpath))).click()
+    #     time.sleep(1.3)
+    #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath))).click()
+    #
+    #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
+    #     time.sleep(1.5)
+    #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
+    #
+    #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
+    #     time.sleep(3.5) ##+1
+    #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatVyberTerminuXpath))).click()
+    #     time.sleep(1.4)
+    #
+    #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus1Xpath))).click()
+    #
+    #     time.sleep(1)
+    #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
+    #     time.sleep(2.789)
+    #     SRL_D(self, self.driver)
+    #
+    #     self.test_passed = True
+
+    HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Letní prázdniny 2023')]"
+    HPzlutakPokracovatButtonXpathStep3 = "/html/body/header/div/div[2]/div/div/div/div[3]/div[3]/div[3]/div[2]/a/span"
+
+    def test_HP_zlutak_to_groupsearch_pobyt(self):
         self.driver.get(URL)
         wait = WebDriverWait(self.driver, 300)
-
+        self.driver.maximize_window()
+        time.sleep(
+            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
         acceptConsent(self.driver)
-        time.sleep(1.5)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
-        time.sleep(3.5)     ##time sleep not the best not pog but it works =)
+        time.sleep(2.5)  ##time sleep not the best not pog but it works =)
         groupSearch_D(self, self.driver)
-
         self.test_passed = True
 
-    def test_HP_zlutak_to_SRL(self):
-        self.driver.maximize_window()
+    def test_HP_zlutak_to_groupsearch_poznavacky(self):
         self.driver.get(URL)
         wait = WebDriverWait(self.driver, 300)
-        time.sleep(2.5)
+        self.driver.maximize_window()
+        time.sleep(
+            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
         acceptConsent(self.driver)
-        time.sleep(2)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPkamPojedeteButtonXpath))).click()
-        time.sleep(1.3)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakReckoDestinaceXpath))).click()
+        poznavackyVeFiltruSwitchXpath = "//*[@class='f_icon f_icon--pinMap segmentation-list-anchor']"
+        self.driver.find_element_by_xpath(poznavackyVeFiltruSwitchXpath).click()
+        time.sleep(2.5)
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
+        time.sleep(2.5)  ##time sleep not the best not pog but it works =)
+        groupSearch_D(self, self.driver)
+        self.test_passed = True
 
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
-        time.sleep(1.5)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
+    def test_HP_zlutak_to_groupsearch_lyze(self):
+        self.driver.get(URL)
+        wait = WebDriverWait(self.driver, 300)
+        self.driver.maximize_window()
+        time.sleep(
+            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+        acceptConsent(self.driver)
+        lyzeVeFiltruSwitchXpath = "//*[@class='f_icon f_icon--snowFlake segmentation-list-anchor']"
+        self.driver.find_element_by_xpath(lyzeVeFiltruSwitchXpath).click()
+        time.sleep(2.5)
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
+        time.sleep(2.5)  ##time sleep not the best not pog but it works =)
+        groupSearch_D(self, self.driver)
+        self.test_passed = True
 
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
-        time.sleep(3.5) ##+1
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatVyberTerminuXpath))).click()
-        time.sleep(1.4)
-
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus1Xpath))).click()
-
-        time.sleep(1)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
-        time.sleep(2.789)
+    def test_HP_zlutak_to_SRL_pobyt(self):
+        self.driver.get(URL)
+        self.driver.maximize_window()
+        time.sleep(
+            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+        acceptConsent(self.driver)
+        time.sleep(3.5)
+        hp_zlutak_to_SRL(self.driver, HPkamPojedeteButtonXpath, HPzlutakReckoDestinaceXpath,
+                         HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakLetniPrazdninyXpath
+                         , HPzlutakPokracovatButtonXpathStep3, HPzlutakObsazenost2plus1Xpath,
+                         HPzlutakPotvrditAvyhledatXpath)
         SRL_D(self, self.driver)
+        self.test_passed = True
 
+    def test_HP_zlutak_to_SRL_poznavacky(self):
+        self.driver.get(URL)
+        self.driver.maximize_window()
+        time.sleep(
+            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+        acceptConsent(self.driver)
+        time.sleep(3.5)
+        poznavackyVeFiltruSwitchXpath = "//*[@class='f_icon f_icon--pinMap segmentation-list-anchor']"
+        destinaceEgyptXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/div[3]/div/span/label/span/span"
+
+        self.driver.find_element_by_xpath(poznavackyVeFiltruSwitchXpath).click()
+
+        time.sleep(3)
+
+        hp_zlutak_to_SRL(self.driver, HPkamPojedeteButtonXpath, destinaceEgyptXpath,
+                         HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakLetniPrazdninyXpath
+                         , HPzlutakPokracovatButtonXpathStep3, HPzlutakObsazenost2plus1Xpath,
+                         HPzlutakPotvrditAvyhledatXpath)
+        SRL_D(self, self.driver)
+        self.test_passed = True
+
+    def test_HP_zlutak_to_SRL_lyze(self):
+        self.driver.get(URL)
+        self.driver.maximize_window()
+        time.sleep(
+            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+        acceptConsent(self.driver)
+        time.sleep(3.5)
+        lyzeVeFiltruSwitchXpath = "//*[@class='f_icon f_icon--snowFlake segmentation-list-anchor']"
+        self.driver.find_element_by_xpath(lyzeVeFiltruSwitchXpath).click()
+        HPzlutakJarniPrazdninyXpath = "//*[contains(text(), 'Jarní prázdniny 2023')]"
+        destinaceItalieXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/span/label/span/span"
+        time.sleep(3)
+
+        hp_zlutak_to_SRL(self.driver, HPkamPojedeteButtonXpath, destinaceItalieXpath,
+                         HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakJarniPrazdninyXpath
+                         , HPzlutakPokracovatButtonXpathStep3, HPzlutakObsazenost2plus1Xpath,
+                         HPzlutakPotvrditAvyhledatXpath)
+        SRL_D(self, self.driver)
         self.test_passed = True
 
     def test_HP_nejlepsi_nabidky_vypis_btn_switch(self):
