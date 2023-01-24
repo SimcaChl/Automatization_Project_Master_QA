@@ -76,7 +76,7 @@ class TestSDO_D(unittest.TestCase):
         #     url = driver.current_url
         #     msg = "Nenasli se mapa v /stat " + url
         #     sendEmail(msg)
-        # 
+        #
         # assert mapa.is_displayed() == True
 
         self.test_passed = True
