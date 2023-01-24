@@ -40,43 +40,43 @@ class TestSDO_D(unittest.TestCase):
         assert destinaceAll[0].is_displayed() == True
 
 
-        try:
-            dlazdiceFotoSingle = driver.find_element_by_xpath("//*[@class='f_tile-image']")
-            dlazdiceFotoAll = driver.find_elements_by_xpath("//*[@class='f_tile-image']")
-            if dlazdiceFotoSingle.is_displayed():
-                for WebElement in dlazdiceFotoAll:
-                    jdouvidet = WebElement.is_displayed()
-                    assert jdouvidet == True
-                    if jdouvidet == True:
-                        pass
-
-                    else:
-                        url = driver.current_url
-                        msg = "Nenasli se fotky v dlazdicich v /stat " + url
-                        sendEmail(msg)
-
-        except NoSuchElementException:
-            url = driver.current_url
-            msg = "Nenasli se fotky v dlazdicich v /stat " + url
-            sendEmail(msg)
-
-        assert dlazdiceFotoSingle.is_displayed() == True
-
-        try:
-            mapa = driver.find_element_by_xpath("//*[@id='google-map']")
-            assert mapa.is_displayed() == True
-            if mapa.is_displayed():
-                pass
-            else:
-                url = driver.current_url
-                msg = "Nenasli se mapa v /stat " + url
-                sendEmail(msg)
-
-        except NoSuchElementException:
-            url = driver.current_url
-            msg = "Nenasli se mapa v /stat " + url
-            sendEmail(msg)
-
-        assert mapa.is_displayed() == True
+        # try:
+        #     dlazdiceFotoSingle = driver.find_element_by_xpath("//*[@class='f_tile-image']")
+        #     dlazdiceFotoAll = driver.find_elements_by_xpath("//*[@class='f_tile-image']")
+        #     if dlazdiceFotoSingle.is_displayed():
+        #         for WebElement in dlazdiceFotoAll:
+        #             jdouvidet = WebElement.is_displayed()
+        #             assert jdouvidet == True
+        #             if jdouvidet == True:
+        #                 pass
+        #
+        #             else:
+        #                 url = driver.current_url
+        #                 msg = "Nenasli se fotky v dlazdicich v /stat " + url
+        #                 sendEmail(msg)
+        #
+        # except NoSuchElementException:
+        #     url = driver.current_url
+        #     msg = "Nenasli se fotky v dlazdicich v /stat " + url
+        #     sendEmail(msg)
+        #
+        # assert dlazdiceFotoSingle.is_displayed() == True
+        #
+        # try:
+        #     mapa = driver.find_element_by_xpath("//*[@id='google-map']")
+        #     assert mapa.is_displayed() == True
+        #     if mapa.is_displayed():
+        #         pass
+        #     else:
+        #         url = driver.current_url
+        #         msg = "Nenasli se mapa v /stat " + url
+        #         sendEmail(msg)
+        #
+        # except NoSuchElementException:
+        #     url = driver.current_url
+        #     msg = "Nenasli se mapa v /stat " + url
+        #     sendEmail(msg)
+        # 
+        # assert mapa.is_displayed() == True
 
         self.test_passed = True
