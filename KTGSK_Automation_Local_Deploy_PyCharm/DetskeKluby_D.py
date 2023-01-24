@@ -17,7 +17,7 @@ class TestDetskeKluby_D(unittest.TestCase):
         self.driver.get(URL_kluby)
         acceptConsent(self.driver)
         self.driver.maximize_window()
-        benefitItem = self.driver.find_elements_by_xpath("//*[@class='f_benefit-item splide__slide']")
+        benefitItem = self.driver.find_elements_by_xpath("//*[@class='f_tile-image-content']")
         assert benefitItem[0].is_displayed() == True
         a=0
         for _ in benefitItem:
