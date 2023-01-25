@@ -11,7 +11,7 @@ URL_deploying_web = URL
 URL_prod_public = "https://www.kartago.sk/"
 banneryXpath_KTGSK = "//*[@class='f_teaser-item']/a"
 
-HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--highlighted']//*[contains(text(), 'Vyhľadať zájazdy')]"
+HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--forFilter']//*[contains(text(), 'Vyhľadať zájazdy')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam cestujete?')]"
 HPzlutakReckoDestinaceXpath = "//*[@class='f_input-content'] //*[contains(text(), 'Grécko')]"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovať')]"
