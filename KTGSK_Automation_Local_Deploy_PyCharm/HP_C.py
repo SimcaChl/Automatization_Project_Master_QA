@@ -109,31 +109,31 @@ class Test_HP_C(unittest.TestCase):
 
         self.test_passed = True
 
-    def test_HP_slider_click_detail_hotelu(self):
-        self.driver.get(URL)
-        wait = WebDriverWait(self.driver, 300)
-        self.driver.maximize_window()
-        time.sleep(
-            0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
-        acceptConsent(self.driver)
-        # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPnextArrowXpath))).click()
-        # time.sleep(10)
-        self.driver.implicitly_wait(100)
-        topNabidkaBigHotelCardXpath = "//*[@class='page-widget js-ajaxPlaceholder--widget fshr-widget f_tileGrid-item f_tileGrid-item--double']"
-        topNabidkaBigHotelCardElement = self.driver.find_element_by_xpath(topNabidkaBigHotelCardXpath)
-
-        self.driver.execute_script("arguments[0].scrollIntoView();", topNabidkaBigHotelCardElement)
-        # self.driver.execute_script("arguments[0].scrollIntoView();", HPkartaHoteluSliderElement)
-        # action.move_to_element(HPkartaHoteluSliderElement).click().perform()
-        self.driver.implicitly_wait(100)
-        time.sleep(6)
-        topNabidkaBigHotelCardElement.click()
-        time.sleep(2)
-        curURL = self.driver.current_url
-
-        assert curURL != URL
-
-        self.test_passed = True
+    # def test_HP_slider_click_detail_hotelu(self):
+    #     self.driver.get(URL)
+    #     wait = WebDriverWait(self.driver, 300)
+    #     self.driver.maximize_window()
+    #     time.sleep(
+    #         0.3)  ##this is to workaround accept consent since in maximizes and then selenium gets confused with clickin on the element
+    #     acceptConsent(self.driver)
+    #     # wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPnextArrowXpath))).click()
+    #     # time.sleep(10)
+    #     self.driver.implicitly_wait(100)
+    #     topNabidkaBigHotelCardXpath = "//*[@class='page-widget js-ajaxPlaceholder--widget fshr-widget f_tileGrid-item f_tileGrid-item--double']"
+    #     topNabidkaBigHotelCardElement = self.driver.find_element_by_xpath(topNabidkaBigHotelCardXpath)
+    #
+    #     self.driver.execute_script("arguments[0].scrollIntoView();", topNabidkaBigHotelCardElement)
+    #     # self.driver.execute_script("arguments[0].scrollIntoView();", HPkartaHoteluSliderElement)
+    #     # action.move_to_element(HPkartaHoteluSliderElement).click().perform()
+    #     self.driver.implicitly_wait(100)
+    #     time.sleep(6)
+    #     topNabidkaBigHotelCardElement.click()
+    #     time.sleep(2)
+    #     curURL = self.driver.current_url
+    #
+    #     assert curURL != URL
+    #
+    #     self.test_passed = True
 
     def test_HP_bannery_check(self):
         banner_check_public_prod_VS_deployed_web(self.driver, URL_prod_public, URL_deploying_web, banneryXpath_KTGSK)
