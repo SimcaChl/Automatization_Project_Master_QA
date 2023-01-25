@@ -28,7 +28,7 @@ URL_lm = URL+"last-minute"
 #URL_stat = URL+"grecko"
 URL_stat = URL+"egypt"
 URL_groupsearch = URL+"vysledky-vyhladavania?tt=1&to=483|1837|2933|3437&dd=2022-09-01&rd=2022-09-25&nn=7|8|9|10|11|12|13&ka1=6&kc1=1&ac1=2"
-URL_FT_results = URL+"hledani-vysledky?q="
+URL_FT_results = URL+"hladanie-vysledky?q="
 import time
 from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
