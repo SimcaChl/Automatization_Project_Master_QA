@@ -172,15 +172,14 @@ class Test_SRL_C(unittest.TestCase):
             detailCenaAll = self.driver.find_element_by_xpath("//*[@class='f_column-item']//*[@class='f_price']")
             detailCenaAllString = detailCenaAll.text
             print(detailCenaAllString)
-            try:
-                # detailCenaAdult = self.driver.find_element_by_xpath('//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
-                detailCenaAdult = self.driver.find_element_by_xpath(
-                    "//*[@class='flex justify-between']//*[@class='text-right bold']")
-                detailCenaAdultString = detailCenaAdult.text
-                print(detailCenaAdultString)
 
-            except NoSuchElementException:
-                pass
+                # detailCenaAdult = self.driver.find_element_by_xpath('//*[contains(concat(" ", normalize-space(@class), " "), " fshr-detail-summary-price-header ")]//*[contains(concat(" ", normalize-space(@class), " "), " fshr-price ")]')
+            detailCenaAdult = self.driver.find_element_by_xpath(
+                    "//*[@class='flex justify-between mb-2']//*[@class='text-right bold']")
+            detailCenaAdultString = detailCenaAdult.text
+            print(detailCenaAdultString)
+
+
             assert detailPokojSedivkaString == pokojZajezduString
 
             if detailPokojSedivkaString == pokojZajezduString:
