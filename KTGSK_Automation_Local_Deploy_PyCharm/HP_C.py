@@ -13,15 +13,17 @@ banneryXpath_KTGSK = "//*[@class='f_teaser-item']/a"
 
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--forFilter']//*[contains(text(), 'Vyhľadať zájazdy')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam cestujete?')]"
-HPzlutakReckoDestinaceXpath = "//*[@class='f_input-content'] //*[contains(text(), 'Grécko')]"
+HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/span/label/span"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovať')]"
-HPzlutakPokracovatButtonXpathStep2 = "//*[@class='f_filterHolder f_set--active'] //*[@class=('f_button-text f_icon f_icon--chevronRight f_icon_set--right')]"
-HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Letné prázdniny 2022')]"
+HPzlutakPokracovatButtonXpathStep2 = "/html/body/header/div/div[2]/div/div/div/div[2]/div[2]/div[3]/div[2]/a/span"
+HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Letné prázdniny 2023')]"
 HPzlutakPridatPokojXpath = "//*[contains(text(), 'přidat pokoj')]"
 HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Rodina 2+1')]"
 HPzlutakPotvrditAvyhledatXpath = "//*[@class='f_button f_button--common'] //*[contains(text(), 'Potvrdiť a vyhľadať')]"
 HPnejlepsiZajezdySwitchButtonXpath = "//*[@class='f_switch-button']"
 HPnejlepsiZajezdyVypisXpath = "//*[@class='f_tourTable-tour']"
+
+HPzlutakPokracovatButtonXpathStep3 = "/html/body/header/div/div[2]/div/div/div/div[2]/div[3]/div[3]/div[2]/a/span"
 class Test_HP_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -57,7 +59,7 @@ class Test_HP_C(unittest.TestCase):
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
         time.sleep(0.5)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep3))).click()
 
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus1Xpath))).click()
 
