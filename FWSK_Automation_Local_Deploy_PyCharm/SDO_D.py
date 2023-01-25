@@ -16,7 +16,7 @@ class TestSDO_D(unittest.TestCase):
         self.driver.maximize_window()
         time.sleep(2.5)
         acceptConsent(self.driver)
-        destinaceXpath = "//*[@class='fshr-tile-wrapper']"
+        destinaceXpath = "//*[@class='fshr-listTable-item']"
         try:
             destinaceAll = self.driver.find_elements_by_xpath(destinaceXpath)
             destinaceSingle = self.driver.find_element_by_xpath(destinaceXpath)
@@ -62,7 +62,7 @@ class TestSDO_D(unittest.TestCase):
         assert dlazdiceFotoSingle.is_displayed() == True
 
         try:
-            mapa = driver.find_element_by_xpath("//*[@id='google-map']")
+            mapa = driver.find_element_by_xpath("//*[@class='fshr-map']")
             assert mapa.is_displayed() == True
             if mapa.is_displayed():
                 pass
