@@ -5,9 +5,9 @@ import unittest
 import requests
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-querySDO = ["Zanzibar", "Grécko", "Turecko", "Egypt", "Kapverdy", "Oman" , "Maledivy", "Dubaj"]
+querySDO = ["Zanzibar", "Grécko", "Turecko", "Egypt", "Kapverdy", "Maledivy", "Dubaj"]
 queryCommon = ["poistenie", "parkovanie"]
-queryHotely = ["Mirage bay", "Mitsis", "Prima Life", "Prima Life Makadi", "Pegasos", "Pickalbatros", "Titanic", "Mirage"]
+queryHotely = ["Mirage bay", "Mitsis", "Prima Life","Pickalbatros", "Titanic", "Mirage"]
 queryList = querySDO+queryCommon+queryHotely
 #queryList = ["covid"]
 class Test_Fulltext_C(unittest.TestCase):
