@@ -3,6 +3,37 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_pozn
 import time
 import unittest
 
+brnoAnchorOblibeneVolbyXpath = "//*[@class='f_anchor'and contains(text(), 'Brno')]"
+pobockaBoxXpath = "//*[@data-branch-id='262']"
+detailPobockyXpath = pobockaBoxXpath + "//*[contains(text(), 'Detail pobočky')]"
+objednatSchuzkuBtnXpath = "//*[@class='f_button f_button--important js-popupWindow--show js-gtm-eventClick']"
+popUpObjednavkaNavstevyXpath = "//*[@class='fshr-popupWindow fshr-popupWindow--centered js-form js-popupWindow fshr-icon fshr-icon--man js-sendByAjax js-gtm-trackGoal']"
+
+def open_pobocka_box_to_detail_open_popup_navstevy(driver, AnchorOblibeneVolbyXpath, pobockaBoxXpath, detailPobockyXpath,objednatSchuzkuBtnXpath, popUpObjednavkaNavstevyXpath):
+
+    AnchorOblibeneVolbyElement = driver.find_element_by_xpath(AnchorOblibeneVolbyXpath)
+    AnchorOblibeneVolbyElement.click()
+
+    time.sleep(2)
+
+    pobockaBoxElement = driver.find_element_by_xpath(pobockaBoxXpath)
+    pobockaBoxElement.click()
+
+    detailPobockyElement = driver.find_element_by_xpath(detailPobockyXpath)
+    driver.execute_script("arguments[0].scrollIntoView();", detailPobockyElement)
+    detailPobockyElement.click()
+
+    objednatSchuzkuBtnElement = driver.find_element_by_xpath(objednatSchuzkuBtnXpath)
+    objednatSchuzkuBtnElement.click()
+
+    time.sleep(2)
+
+    popUpObjednavkaNavstevyElement = driver.find_element_by_xpath(popUpObjednavkaNavstevyXpath)
+    print("Popup formulář je zobrazený:    ")
+    print(popUpObjednavkaNavstevyElement.is_displayed())
+    assert popUpObjednavkaNavstevyElement.is_displayed() == True
+
+
 class TestPobocky_D(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -54,5 +85,16 @@ class TestPobocky_D(unittest.TestCase):
             x = x + 1
 
         assert pobockaBoxiky[0].is_displayed() == True
+
+        self.test_passed = True
+
+
+    def test_pobocky_C_click_to_detail_popup_check(self):
+        self.driver.maximize_window()
+        self.driver.get(URL_pobocky)
+        acceptConsent(self.driver)
+
+        time.sleep(3.5)
+        open_pobocka_box_to_detail_open_popup_navstevy(self.driver, brnoAnchorOblibeneVolbyXpath, pobockaBoxXpath, detailPobockyXpath,objednatSchuzkuBtnXpath, popUpObjednavkaNavstevyXpath)
 
         self.test_passed = True
