@@ -79,7 +79,7 @@ def suite_HP_bannery():
 def suite2():
     suite = unittest.TestSuite()
     suite.addTest(TestDetskeKluby_D("test_kluby_D"))
-    suite.addTest(TestSDO_D('test_SDO_D'))
+    suite.addTest(TestSDO_C('test_SDO_D'))
     suite.addTest(Test_SRL_C('test_SRL_filtr_strava'))
     return suite
 
