@@ -10,7 +10,7 @@ from FW_Automation_Local_Deploy_PyCharm.groupsearch_D import *
 from FW_Automation_Local_Deploy_PyCharm.HP_D import *
 from FW_Automation_Local_Deploy_PyCharm.LM_D import *
 from FW_Automation_Local_Deploy_PyCharm.poznavacky import *
-from FW_Automation_Local_Deploy_PyCharm.SDO_D import *
+from FW_Automation_Local_Deploy_PyCharm.SDO_C import *
 from FW_Automation_Local_Deploy_PyCharm.SRL_C import *
 from FW_Automation_Local_Deploy_PyCharm.SRL_D import *
 from FW_Automation_Local_Deploy_PyCharm.HP_C import *
@@ -37,7 +37,7 @@ def suite_FW_full():
     suite.addTest(TestPoznavacky_D('test_poznavacky_vikendy_D'))
     suite.addTest(TestPoznavacky_D('test_poznavacky_rodiny_D'))
     suite.addTest(TestPoznavacky_D('test_poznavacky_zazitky_D'))
-    suite.addTest(TestSDO_D('test_SDO_D'))
+    suite.addTest(TestSDO_C('test_SDO_D'))
     suite.addTest(Test_SRL_C('test_SRL_sort_cheapest'))
     suite.addTest(Test_SRL_C('test_SRL_sort_expensive'))
     suite.addTest(Test_SRL_C('test_SRL_map'))
@@ -60,6 +60,8 @@ def suite_FW_full():
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch_pobyt'))
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch_poznavacky'))
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch_lyze'))
+    suite.addTest(TestSDO_C('test_SDO_zlutak_to_SRL_R'))
+
 
     return suite
 

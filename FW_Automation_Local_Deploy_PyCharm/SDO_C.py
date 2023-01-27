@@ -1,9 +1,11 @@
 from selenium.common.exceptions import NoSuchElementException
+
+from FW_Automation_Local_Deploy_PyCharm.HP_C import *
 from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, sendEmail, URL_stat, setUp, tearDown
 import time
 import unittest
 
-class TestSDO_D(unittest.TestCase):
+class TestSDO_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
 
@@ -83,3 +85,18 @@ class TestSDO_D(unittest.TestCase):
         assert mapa.is_displayed() == True
 
         self.test_passed = True
+
+
+    def test_SDO_zlutak_to_SRL_R(self): ### https://jira.fischer.cz/browse/FW-1689
+        self.driver.maximize_window()
+        self.driver.get(URL_stat)
+
+        time.sleep(2.5)
+        acceptConsent(self.driver)
+        time.sleep(3.5)
+        hp_zlutak_to_SRL(self.driver, HPkamPojedeteButtonXpath, HPzlutakReckoDestinaceXpath,
+                         HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakLetniPrazdninyXpath
+                         , HPzlutakPokracovatButtonXpathStep3, HPzlutakObsazenost2plus1Xpath,
+                         HPzlutakPotvrditAvyhledatXpath, 2, True)
+
+        SRL_D(self, self.driver)
