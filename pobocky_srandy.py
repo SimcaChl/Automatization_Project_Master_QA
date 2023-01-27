@@ -32,14 +32,16 @@ objednatSchuzkuBtnXpath = "//*[@class='f_button f_button--important js-popupWind
 objednatSchuzkuBtnElement = driver.find_element_by_xpath(objednatSchuzkuBtnXpath)
 objednatSchuzkuBtnElement.click()
 
-
 time.sleep(2)
-
 
 popUpObjednavkaNavstevyXpath = "//*[@class='fshr-popupWindow fshr-popupWindow--centered js-form js-popupWindow fshr-icon fshr-icon--man js-sendByAjax js-gtm-trackGoal']"
 popUpObjednavkaNavstevyElement = driver.find_element_by_xpath(popUpObjednavkaNavstevyXpath)
+print("Popup formulář je zobrazený:    " )
 print(popUpObjednavkaNavstevyElement.is_displayed())
 
 
 
-start "//*[@data-branch-id='248']"
+start = "//*[@data-branch-id='248']"
+end = "//*[@data-branch-id='493']"
+
+## https://webadmin-shared.stg.dtweb.cz/OfficeBranchAdmin?fragmentGuid=00000000-0000-0000-0000-000000000000
