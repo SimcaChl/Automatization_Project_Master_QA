@@ -31,7 +31,7 @@ def setUp(self):
   #self.driver = webdriver.Opera(executable_path=OperaDriverManager().install())
   self.test_passed = False
 
-<<<<<<< Updated upstream
+<
 #URL = "https://www.fischer.cz/"
 URL = "https://fischer.web3.dtweb.cz/"
 =======
