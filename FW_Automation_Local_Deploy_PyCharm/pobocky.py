@@ -34,7 +34,7 @@ def open_pobocka_box_to_detail_open_popup_navstevy(driver, AnchorOblibeneVolbyXp
     assert popUpObjednavkaNavstevyElement.is_displayed() == True
 
 
-class TestPobocky_D(unittest.TestCase):
+class TestPobocky_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
 

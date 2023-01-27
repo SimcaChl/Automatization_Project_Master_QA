@@ -32,7 +32,7 @@ def suite_FW_full():
     suite.addTest(Test_Groupsearch_D("test_groupsearch_D"))
     suite.addTest(TestHP_D("test_homePage_D"))
     suite.addTest(TestLM_D("test_lM_isDisplayed"))
-    suite.addTest(TestPobocky_D('test_pobocky_D'))
+    suite.addTest(TestPobocky_C('test_pobocky_D'))
     suite.addTest(TestPoznavacky_D('test_poznavacky_okruzni_D'))
     suite.addTest(TestPoznavacky_D('test_poznavacky_vikendy_D'))
     suite.addTest(TestPoznavacky_D('test_poznavacky_rodiny_D'))
@@ -61,7 +61,7 @@ def suite_FW_full():
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch_poznavacky'))
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch_lyze'))
     suite.addTest(TestSDO_C('test_SDO_zlutak_to_SRL_R'))
-
+    suite.addTest(TestPobocky_C('test_pobocky_C_click_to_detail_popup_check'))
 
     return suite
 
