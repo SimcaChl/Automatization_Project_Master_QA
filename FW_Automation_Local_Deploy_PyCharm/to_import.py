@@ -31,13 +31,11 @@ def setUp(self):
   #self.driver = webdriver.Opera(executable_path=OperaDriverManager().install())
   self.test_passed = False
 
-<<<<<<< Updated upstream
 #URL = "https://www.fischer.cz/"
 URL = "https://fischer.web3.dtweb.cz/"
-=======
-URL = "https://www.fischer.cz/"
+#URL = "https://www.fischer.cz/"
 #URL = "https://fischer.web2.dtweb.cz/"
->>>>>>> Stashed changes
+
 #URL = "https://fischer.stg.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy/okruzni-a-kombinovane"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy/prodlouzene-vikendy"
