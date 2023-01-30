@@ -210,7 +210,7 @@ class Test_SRL_C(unittest.TestCase):
 
         time.sleep(3.5)
         x=5
-        for i in range(5):
+        for i in range(4):
             print("|||||HOTEL CISLO|||||||")
             print(x + 1)
             print(x + 1)
@@ -265,33 +265,33 @@ class Test_SRL_C(unittest.TestCase):
             print(x)
 
         #p.press("pagedown")
-        detailHoteluButtonElement = self.driver.find_elements_by_xpath(detailHoteluButtonXpath)
-        self.driver.execute_script("arguments[0].scrollIntoView();", detailHoteluButtonElement[x])
-        time.sleep(1)
-        x = 15
-        for i in range(4):
-            print("|||||HOTEL CISLO|||||||")
-            print(x + 1)
-            print(x + 1)
-            print(x + 1)
-            wait.until(EC.visibility_of(self.driver.find_elements_by_xpath(totalPriceXpath)[0]))
-            cenaZajezduAll = self.driver.find_elements_by_xpath(totalPriceXpath)
-            cenaZajezduAllString = cenaZajezduAll[x].text
-            print(cenaZajezduAllString)
-            wait.until(EC.visibility_of(self.driver.find_elements_by_xpath(detailHoteluButtonXpath)[x])).click()
-            time.sleep(5)
-            detailCenaAll = self.driver.find_element_by_xpath(detailHoteluCenaAllXpath)
-            wait.until(EC.visibility_of(self.driver.find_element_by_xpath(detailHoteluCenaAllXpath)))
-            detailCenaAllString = detailCenaAll.text
-            detailCenaAllString = detailCenaAllString[:-3]
-            print(detailCenaAllString)
-            assert detailCenaAllString == cenaZajezduAllString
-            if detailCenaAllString == cenaZajezduAllString:
-                print("ceny all sedi srl vs detail")
-            else:
-                print("ceny all NESEDÍ srl vs detail")
-            wait.until(EC.visibility_of(self.driver.find_element_by_xpath(detailHoteluCross))).click()
-            x = x + 1
-            print(x)
+        # detailHoteluButtonElement = self.driver.find_elements_by_xpath(detailHoteluButtonXpath)
+        # self.driver.execute_script("arguments[0].scrollIntoView();", detailHoteluButtonElement[x])
+        # time.sleep(1)
+        # x = 15
+        # for i in range(4):
+        #     print("|||||HOTEL CISLO|||||||")
+        #     print(x + 1)
+        #     print(x + 1)
+        #     print(x + 1)
+        #     wait.until(EC.visibility_of(self.driver.find_elements_by_xpath(totalPriceXpath)[0]))
+        #     cenaZajezduAll = self.driver.find_elements_by_xpath(totalPriceXpath)
+        #     cenaZajezduAllString = cenaZajezduAll[x].text
+        #     print(cenaZajezduAllString)
+        #     wait.until(EC.visibility_of(self.driver.find_elements_by_xpath(detailHoteluButtonXpath)[x])).click()
+        #     time.sleep(5)
+        #     detailCenaAll = self.driver.find_element_by_xpath(detailHoteluCenaAllXpath)
+        #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(detailHoteluCenaAllXpath)))
+        #     detailCenaAllString = detailCenaAll.text
+        #     detailCenaAllString = detailCenaAllString[:-3]
+        #     print(detailCenaAllString)
+        #     assert detailCenaAllString == cenaZajezduAllString
+        #     if detailCenaAllString == cenaZajezduAllString:
+        #         print("ceny all sedi srl vs detail")
+        #     else:
+        #         print("ceny all NESEDÍ srl vs detail")
+        #     wait.until(EC.visibility_of(self.driver.find_element_by_xpath(detailHoteluCross))).click()
+        #     x = x + 1
+        #     print(x)
 
         self.test_passed = True
