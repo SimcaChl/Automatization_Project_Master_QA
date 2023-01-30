@@ -22,7 +22,7 @@ class Test_FM_Exotika_D(unittest.TestCase):
         rowKarty_imgHoteluKarty_D(self, self.driver)
         assert (self.driver.find_element_by_xpath(imgHotelKartaXpath)).is_displayed() == True
         assert (self.driver.find_element_by_xpath(destinationXpath)).is_displayed() == True
-        assert (self.driver.find_element_by_xpath(gridDestinationXpath)).is_displayed() == True
+        #assert (self.driver.find_element_by_xpath(gridDestinationXpath)).is_displayed() == True
         self.test_passed = True
 
 

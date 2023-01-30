@@ -14,6 +14,8 @@ from ET_Automation_Local_Deploy_PyCharm.to_import_secret import comandExecutor
 
 
 def tearDown(self):
+
+  print(self.driver.current_url)
   self.driver.quit()
   if not self.test_passed:
     self.driver.execute_script(
