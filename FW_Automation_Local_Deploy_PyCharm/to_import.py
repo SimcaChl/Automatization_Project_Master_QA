@@ -35,7 +35,7 @@ def setUp(self):
 #URL = "https://www.fischer.cz/"
 URL = "https://fischer.web3.dtweb.cz/"
 
-URL = "https://www.fischer.cz/"
+#URL = "https://www.fischer.cz/"
 #URL = "https://fischer.web2.dtweb.cz/"
 #URL = "https://fischer.stg.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy/okruzni-a-kombinovane"
