@@ -6,10 +6,10 @@ from ET_Automation_Local_Deploy_PyCharm.import_test_units_Xpaths import rowKarty
 SDOsectionXpath = "//*[@class='sdo-section']"
 zobrazitHotelyXpath = "//*[@class='c_title mb-0 center']"
 def SDO_D(self, driver):
-    generalDriverWaitImplicit(self.driver)
-    rowKarty_imgHoteluKarty_D(self, self.driver)
+    generalDriverWaitImplicit(driver)
+    rowKarty_imgHoteluKarty_D(self, driver)
 
-    SDOsectionElement = self.driver.find_element_by_xpath(SDOsectionXpath)
+    SDOsectionElement = driver.find_element_by_xpath(SDOsectionXpath)
 
     assert SDOsectionElement.is_displayed() == True
     print("sdo section visible true :  " + str(SDOsectionElement.is_displayed()))
@@ -27,7 +27,7 @@ class TestSDO_D(unittest.TestCase):
         time.sleep(2)
         zobrazitHotelyElement = self.driver.find_element_by_xpath(zobrazitHotelyXpath)
         self.driver.execute_script("arguments[0].scrollIntoView();", zobrazitHotelyElement)
-        time.sleep(0.7)
+        time.sleep(2.7)
         SDO_D(self, self.driver)
 
         self.test_passed = True
