@@ -6,7 +6,7 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.opera import OperaDriverManager
 
 #URL = "https://www.kartago.sk/"
-URL = "https://kartagosk.web3.dtweb.cz/"
+URL = "https://kartagosk.web1.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"
 URL_poznavacky_rodiny = URL+"poznavaci-zajezdy#rodiny"
@@ -63,6 +63,7 @@ def setUp(self):
 
 
 def tearDown(self):
+  print(self.driver.current_url)
   self.driver.quit()
   if not self.test_passed:
     self.driver.execute_script(
