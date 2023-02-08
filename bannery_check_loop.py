@@ -42,3 +42,20 @@ for _ in banneryAll:
     time.sleep(0.5)
 
 print( pocetNalezenychZajezduElementList_PROD)
+print(bannerLinksList_PROD)
+
+nenasliCoJsteHledaliString = "Nenašli jste, co jste hledali?"
+
+
+y = 0
+for _ in pocetNalezenychZajezduElementList_PROD:
+    if pocetNalezenychZajezduElementList_PROD[y] == nenasliCoJsteHledaliString:
+        print(pocetNalezenychZajezduElementList_PROD[y])
+        print("spatny")
+
+    else:
+        print(pocetNalezenychZajezduElementList_PROD[y])
+        print("OK")
+
+    y=y+1
+    #print(y)
