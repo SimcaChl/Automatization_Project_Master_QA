@@ -1,9 +1,26 @@
 import time
-
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
+import smtplib
+from email.mime.text import MIMEText
+from FW_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass
+
+def sendEmailv2(msg, recipient):
+  fromx = 'alertserverproblem@gmail.com'
+  to = recipient
+  msg = MIMEText(msg)
+  msg['Subject'] = "HP CHECK"
+  msg['From'] = fromx
+  msg['To'] = to
+
+  server = smtplib.SMTP('smtp.gmail.com:587')
+  server.starttls()
+  server.ehlo()
+  server.login("alertserverproblem@gmail.com", emailPass)
+  server.sendmail(fromx, to, msg.as_string())
+  server.quit()
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 #URL = "https://exim.stg.dtweb.cz/poznavaci-zajezdy"
@@ -52,10 +69,16 @@ for _ in pocetNalezenychZajezduElementList_PROD:
     if pocetNalezenychZajezduElementList_PROD[y] == nenasliCoJsteHledaliString:
         print(pocetNalezenychZajezduElementList_PROD[y])
         print("spatny")
+        sendEmailv2(bannerLinksList_PROD[y] , "ondrej.kadoun@fischer.cz")
 
     else:
         print(pocetNalezenychZajezduElementList_PROD[y])
         print("OK")
 
-    y=y+1
+    y = y + 1
+
+sendEmailv2("executed FW CHECK HP bannery", "ondrej.kadoun@fischer.cz")
+    #sendEmailv2(bannerLinksList_PROD[y], "ondrej.kadoun@fischer.cz")
+
+
     #print(y)
