@@ -84,4 +84,5 @@ while True:
 
         #print(y)
 
+    driver.quit()
     time.sleep(3600)
