@@ -17,7 +17,10 @@ time.sleep(15)
 
 start = "//*[@data-branch-id='248']"
 end = "//*[@data-branch-id='493']"
-
+stringToVerify = """Benešov
+>
+Zavřeno
+"""
 ## https://webadmin-shared.stg.dtweb.cz/OfficeBranchAdmin?fragmentGuid=00000000-0000-0000-0000-000000000000
 
 def id_creator_pobocky_xpath(idNumber):
@@ -28,8 +31,12 @@ def id_creator_pobocky_xpath(idNumber):
     return finalIdXpathLocator
 
 print(driver.find_element_by_xpath(id_creator_pobocky_xpath(248)).text)
-
+#print(stringToVerify)
+#print(driver.find_element_by_xpath(id_creator_pobocky_xpath(248)).text==stringToVerify)
 listJmenaPobocek = []
+idCountPobocekStarter = 248
 for i in range(245):
-
+#
     print(2)
+
+    idCountPobocekStarter = idCountPobocekStarter+1
