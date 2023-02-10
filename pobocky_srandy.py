@@ -36,11 +36,11 @@ print(driver.find_element_by_xpath(id_creator_pobocky_xpath(248)).text)
 #print(stringToVerify)
 #print(driver.find_element_by_xpath(id_creator_pobocky_xpath(248)).text==stringToVerify)
 listJmenaPobocek = []
-idCountPobocekStarter = 248
-for i in range(245):
+CountPobocekStarter = 0
+for _ in listIDS:
 #
 
-    listJmenaPobocek.append(driver.find_element_by_xpath(id_creator_pobocky_xpath(idCountPobocekStarter)).text)
-    idCountPobocekStarter = idCountPobocekStarter+1
+    listJmenaPobocek.append(driver.find_element_by_xpath(id_creator_pobocky_xpath(listIDS[CountPobocekStarter])).text)
+    CountPobocekStarter = CountPobocekStarter+1
 
 print(listJmenaPobocek)
