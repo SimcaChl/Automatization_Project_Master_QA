@@ -20,4 +20,16 @@ end = "//*[@data-branch-id='493']"
 
 ## https://webadmin-shared.stg.dtweb.cz/OfficeBranchAdmin?fragmentGuid=00000000-0000-0000-0000-000000000000
 
+def id_creator_pobocky_xpath(idNumber):
+    startXpath = "//*[@data-branch-id='"
+    endXpath = "']"
 
+    finalIdXpathLocator = startXpath + str(idNumber) + endXpath
+    return finalIdXpathLocator
+
+print(driver.find_element_by_xpath(id_creator_pobocky_xpath(248)).text)
+
+listJmenaPobocek = []
+for i in range(245):
+
+    print(2)
