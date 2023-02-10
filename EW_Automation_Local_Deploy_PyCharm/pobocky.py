@@ -2,8 +2,16 @@ from webdriver_manager.chrome import ChromeDriverManager
 from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_pobocky, setUp, tearDown, generalDriverWaitImplicit
 import time
 import unittest
+from FW_Automation_Local_Deploy_PyCharm.pobocky import open_pobocka_box_to_detail_open_popup_navstevy
 
-class TestPobocky_D(unittest.TestCase):
+brnoAnchorOblibeneVolbyXpath = "//*[@class='f_anchor'and contains(text(), 'Brno')]"
+pobockaBoxXpath = "//*[@data-branch-id='262']"
+detailPobockyXpath = pobockaBoxXpath + "//*[contains(text(), 'Detail pobočky')]"
+objednatSchuzkuBtnXpath = "//*[@class='f_button f_button--important js-popupWindow--show js-gtm-eventClick']"
+popUpObjednavkaNavstevyXpath = "//*[@class='fshr-popupWindow fshr-popupWindow--centered js-form js-popupWindow fshr-icon fshr-icon--man js-sendByAjax js-gtm-trackGoal']"
+
+
+class TestPobocky_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
 
@@ -60,5 +68,15 @@ class TestPobocky_D(unittest.TestCase):
             x = x + 1
 
         assert pobockaBoxiky[0].is_displayed() == True
+
+        self.test_passed = True
+
+    def test_pobocky_C_click_to_detail_popup_check(self):
+        self.driver.maximize_window()
+        self.driver.get(URL_pobocky)
+        acceptConsent(self.driver)
+
+        time.sleep(3.5)
+        open_pobocka_box_to_detail_open_popup_navstevy(self.driver, brnoAnchorOblibeneVolbyXpath, pobockaBoxXpath, detailPobockyXpath,objednatSchuzkuBtnXpath, popUpObjednavkaNavstevyXpath)
 
         self.test_passed = True
