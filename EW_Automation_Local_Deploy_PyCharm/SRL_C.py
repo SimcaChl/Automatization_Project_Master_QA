@@ -1,10 +1,12 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, generalDriverWaitImplicit
+from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_SRL, sendEmail, setUp, tearDown, generalDriverWaitImplicit, URL_SRL_kuba_regres
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
 from generalized_test_functions import generalized_map_test_click_through_circles, generalized_map_test_click_on_pin_and_hotel_bubble, generalized_SRL_choose_meal_filter_EW_like, generalized_list_string_sorter, generalized_SRL_price_sorter
+from EW_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
+
 
 hotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
 cenaZajezduXpath = "//*[@class='f_tile-priceDetail-content']//*[@class='f_price']"
@@ -228,3 +230,13 @@ class Test_SRL_C(unittest.TestCase):
             print(windowHandle)
 
             self.test_passed = True
+
+    def test_SRL_kuba_srl_D_R(self):
+        ## https://jira.fischer.cz/browse/FW-1704
+
+        self.driver.maximize_window()
+        self.driver.get(URL_SRL_kuba_regres)
+        time.sleep(2)
+        acceptConsent(self.driver)
+        time.sleep(5)
+        SRL_D(self, self.driver)

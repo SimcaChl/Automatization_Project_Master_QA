@@ -60,6 +60,7 @@ def suite_EW_full():
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch_poznavacky'))
     suite.addTest(Test_HP_C('test_HP_zlutak_to_groupsearch_lyze'))
     suite.addTest(TestPobocky_C('test_pobocky_C_click_to_detail_popup_check'))
+    suite.addTest(Test_SRL_C('test_SRL_kuba_srl_D_R'))
 
     return suite
 
