@@ -90,9 +90,6 @@ def sendEmail(msg):
 def generalDriverWaitImplicit(driver):
   driver.implicitly_wait(25)
 def acceptConsent(driver):
-
-  #generalDriverWaitImplicit(driver)
-
   try:
     generalDriverWaitImplicit(driver)
     element = driver.execute_script(
@@ -109,6 +106,7 @@ def acceptConsent(driver):
   else:
     print("consent pass")
     pass
+
 
 def closeExponeaBanner(driver):
     pass
