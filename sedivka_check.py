@@ -27,8 +27,6 @@ def sedivka_check_assert(driver,sedivkaXpath):
     except NoSuchElementException:
         print("sedivka nenalezena")
         assert 1==2
-
-
     return
 
 # sedivka = driver.find_element_by_xpath(sedivkaXpathFw)

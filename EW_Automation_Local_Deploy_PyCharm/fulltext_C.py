@@ -107,6 +107,7 @@ class Test_Fulltext_C(unittest.TestCase):
             else:
                 pass
             print(queryList[poziceQueryItem].upper())
+            time.sleep(0.6)
             linksToCheckList = []
             try:
                 vysledkyDlazdiceHotelu = driver.find_elements_by_xpath("//*[@class='f_tileGrid-item']/a")
