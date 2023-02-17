@@ -47,7 +47,7 @@ def suite_FW_full():
     suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
     suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
-    #############################
+    ############################
     suite.addTest(TestDetailHotelu_C("test_detail_price_sorter_terminy_cheap"))
     suite.addTest(TestDetailHotelu_C("test_detail_price_sorter_terminy_expensive"))
     suite.addTest(TestPoznavacky_D('test_poznavacky_okruzni_C'))
