@@ -88,8 +88,9 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
 from email.mime.text import MIMEText
-from Automatization_Project_Master_QA.to_import_secret_master import emailPass, comandExecutor
+
 from selenium import webdriver
+from to_import_secret_master import emailPass, comandExecutor
 
 from webdriver_manager.chrome import ChromeDriverManager
 

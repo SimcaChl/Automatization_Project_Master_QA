@@ -1,6 +1,7 @@
 import time
 import requests
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 
@@ -36,11 +37,20 @@ print(driver.find_element_by_xpath(id_creator_pobocky_xpath(248)).text)
 #print(stringToVerify)
 #print(driver.find_element_by_xpath(id_creator_pobocky_xpath(248)).text==stringToVerify)
 listJmenaPobocek = []
+listMissingIDsPobocek = []
 CountPobocekStarter = 0
 for _ in listIDS:
 #
+    try:
+        listJmenaPobocek.append(driver.find_element_by_xpath(id_creator_pobocky_xpath(listIDS[CountPobocekStarter])).text)
+    except NoSuchElementException:
+        listMissingIDsPobocek.append(id_creator_pobocky_xpath(listIDS[CountPobocekStarter]))
 
-    listJmenaPobocek.append(driver.find_element_by_xpath(id_creator_pobocky_xpath(listIDS[CountPobocekStarter])).text)
     CountPobocekStarter = CountPobocekStarter+1
 
+
 print(listJmenaPobocek)
+print(len(listJmenaPobocek))
+
+print("Missing pobocky:::")
+print(listMissingIDsPobocek)

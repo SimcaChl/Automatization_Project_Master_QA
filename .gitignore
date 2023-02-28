@@ -10,3 +10,5 @@ FISCHER WEB Suite Report
 workspace.xml
 .idea/workspace.xml
 .idea/workspace.xml
+__pycache__/
+.idea/
