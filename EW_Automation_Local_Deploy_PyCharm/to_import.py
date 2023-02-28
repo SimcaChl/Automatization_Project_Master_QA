@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 
 from webdriver_manager.chrome import ChromeDriverManager
 
-from EW_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass, comandExecutor
+from to_import_secret_master import emailPass, comandExecutor
 from selenium import webdriver
 
 
@@ -37,7 +37,7 @@ def setUp(self):
 
 #URL = "https://www.eximtours.cz/"
 #URL = "https://exim.stg.dtweb.cz/"
-URL = "https://exim.web11.dtweb.cz/"
+URL = "https://exim.stg.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"
 URL_poznavacky_rodiny = URL+"poznavaci-zajezdy#rodiny"

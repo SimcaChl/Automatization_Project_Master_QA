@@ -7,9 +7,8 @@ from email.mime.text import MIMEText
 
 from webdriver_manager.chrome import ChromeDriverManager
 
-from ET_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass
+from to_import_secret_master import emailPass
 from selenium import webdriver
-from ET_Automation_Local_Deploy_PyCharm.to_import_secret import comandExecutor
 
 
 
