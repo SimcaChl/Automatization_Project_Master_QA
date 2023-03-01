@@ -49,3 +49,5 @@ for _ in driver.find_elements_by_xpath(obrazekZajimavaMistaXpath):
     y=y+1
 
 time.sleep(20)
+
+
