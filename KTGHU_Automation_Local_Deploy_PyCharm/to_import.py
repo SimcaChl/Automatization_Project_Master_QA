@@ -5,7 +5,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.opera import OperaDriverManager
 
-URL = "https://kartagohu.web3.dtweb.cz/"
+URL = "https://kartagohu.web1.dtweb.cz/"
 #URL = "https://www.kartagotours.hu/"
 URL_pobocky = URL+"irodaink"
 #URL_detail = URL + "/egyesult-arab-emirsegek/ras-al-khaimah/ras-al-khaimah/bin-majid-beach-hotel-ai?KEY=2324196473&DS=32768&GIATA=42262&D=64089|64091|64087&HID=128559&MT=5&MMT=5&RT=15&NN=7&RD=2022-08-30&DD=2022-08-23&DP=489&TO=489|4371&MNN=7&TT=1&PID=346971&DPR=KARTAGO-HU&TTM=1&TOM=489|4371&DF=2022-08-23|2022-09-23&ERM=0&NNM=7|8|9&ac1=2&kc1=1&ka1=8&ic1=0"
@@ -42,7 +42,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 import smtplib, ssl
 from email.mime.text import MIMEText
-from KTGHU_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass, comandExecutor
+from to_import_secret_master import emailPass, comandExecutor
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 brand_name_project = "KARTAGOSK"
