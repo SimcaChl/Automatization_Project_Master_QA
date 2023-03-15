@@ -63,7 +63,7 @@ class TestSDO_D(unittest.TestCase):
         assert dlazdiceFotoSingle.is_displayed() == True
 
         try:
-            mapa = driver.find_element_by_xpath("//*[@id='google-map']")
+            mapa = driver.find_element_by_xpath("//*[@class='leaflet-pane leaflet-tile-pane']")
             assert mapa.is_displayed() == True
             if mapa.is_displayed():
                 pass
