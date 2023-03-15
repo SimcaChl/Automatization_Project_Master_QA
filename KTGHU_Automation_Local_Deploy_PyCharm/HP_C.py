@@ -19,7 +19,7 @@ HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[2]/d
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Továbblépés')]"
 HPzlutakPokracovatButtonXpathStep2 ="/html/body/header/div/div[2]/div/div/div/div[2]/div[2]/div[3]/div[2]/a/span"
 #HPzlutakLetniPrazdninyXpath = "//*[contains(text(), '2022 Szeptember / Október')]"
-HPzlutakLetniPrazdninyXpath = "//*[@class='f_filter-item']//*[contains(text(), '2023 Január/ Február')]"
+HPzlutakLetniPrazdninyXpath = "//*[@class='f_filter-item']//*[contains(text(), '2023 Szeptember/ Október')]"
 HPzlutakPridatPokojXpath = "//*[contains(text(), 'přidat pokoj')]"
 HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Családi elhelyezés 2 felnőtt + 1 gyerek')]"
 HPzlutakPotvrditAvyhledatXpath = "//*[@class='f_button f_button--common'] //*[contains(text(), 'Keresés indítása')]"
