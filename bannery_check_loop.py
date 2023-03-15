@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 import smtplib
 from email.mime.text import MIMEText
-from FW_Automation_Local_Deploy_PyCharm.to_import_secret import emailPass
+from to_import_secret_master import emailPass
 
 def sendEmailv2(msg, recipient):
   fromx = 'alertserverproblem@gmail.com'
