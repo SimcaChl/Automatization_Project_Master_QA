@@ -78,9 +78,9 @@ class TestFM_D(unittest.TestCase):
         self.driver.implicitly_wait(100)
         #not rly benefit items anymore but 2lazy to update var name
         benefitItemsAll = self.driver.find_elements_by_xpath(
-            "//*[@class='f_faq-item']")
+            "//*[@class='f_faq-item-answer']")
         benefitItemsSingle = self.driver.find_element_by_xpath(
-            "//*[@class='f_faq-item']")
+            "//*[@class='f_faq-item-answer']")
         try:
             wait.until(EC.visibility_of(benefitItemsSingle))
             for WebElement in benefitItemsAll:
