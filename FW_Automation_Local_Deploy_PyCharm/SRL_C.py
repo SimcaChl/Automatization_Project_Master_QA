@@ -82,7 +82,7 @@ class Test_SRL_C(unittest.TestCase):
         acceptConsent(driver)
         time.sleep(2)
 
-        stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All inclusive')]"
+        stravaMenuXpath = "//*[@class='f_input-label']//*[contains(text(), 'All Inclusive')]"
         generalized_SRL_choose_meal_filter_EW_like(driver, stravaMenuXpath)
 
         stravaZajezduSrlXpath = "//*[@class='f_list-item f_icon f_icon--cutlery']"
