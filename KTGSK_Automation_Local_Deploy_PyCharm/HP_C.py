@@ -13,17 +13,17 @@ banneryXpath_KTGSK = "//*[@class='f_teaser-item']/a"
 
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--forFilter']//*[contains(text(), 'Vyhľadať zájazdy')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam cestujete?')]"
-HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div[1]/span/label/span"
+HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/div[1]/span/label/span"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovať')]"
-HPzlutakPokracovatButtonXpathStep2 = "/html/body/header/div/div[2]/div/div/div/div[2]/div[2]/div[3]/div[2]/a/span"
-HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Letné prázdniny 2023')]"
+HPzlutakPokracovatButtonXpathStep2 = "/html/body/header/div/div[2]/div/div/div/div[3]/div[2]/div[3]/div[2]/a/span"
+HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Letné prázdniny')]"
 HPzlutakPridatPokojXpath = "//*[contains(text(), 'přidat pokoj')]"
 HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Rodina 2+1')]"
 HPzlutakPotvrditAvyhledatXpath = "//*[@class='f_button f_button--common'] //*[contains(text(), 'Potvrdiť a vyhľadať')]"
 HPnejlepsiZajezdySwitchButtonXpath = "//*[@class='f_switch-button']"
 HPnejlepsiZajezdyVypisXpath = "//*[@class='f_tourTable-tour']"
 
-HPzlutakPokracovatButtonXpathStep3 = "/html/body/header/div/div[2]/div/div/div/div[2]/div[3]/div[3]/div[2]/a/span"
+HPzlutakPokracovatButtonXpathStep3 = "/html/body/header/div/div[2]/div/div/div/div[3]/div[3]/div[3]/div[2]/a/span"
 class Test_HP_C(unittest.TestCase):
     def setUp(self):
         setUp(self)
