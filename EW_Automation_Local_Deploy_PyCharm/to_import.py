@@ -35,8 +35,8 @@ def setUp(self):
   self.test_passed = False
 
 
-URL = "https://www.eximtours.cz/"
-#URL = "https://exim.stg.dtweb.cz/"
+#URL = "https://www.eximtours.cz/"
+URL = "https://exim.stg.dtweb.cz/"
 #URL = "http://exim.web11.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"

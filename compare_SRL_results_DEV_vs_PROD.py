@@ -84,7 +84,6 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
         driver.execute_script("window.open("");")
         driver.switch_to.window(driver.window_handles[windowHandle])
         linkActualUrl = URL_default + URL_parameters_list[listPosition]
-        #driver.get(URL_default + "/vysledky-vyhledavani?ac1=2&d=680%7C953%7C1108%7C592%7C611%7C610%7C612%7C590%7C726%7C609%7C621%7C1009%7C622%7C669%7C1086%7C1194%7C670%7C978%7C594%7C675%7C1010%7C683&dd=2023-02-01&nn=7&rd=2023-03-28&to=4312%7C4305%7C2682%7C4308&tt=1")
         time.sleep(3)
         driver.get(linkActualUrl)
         SRL_H1textPocetNalezenychZajezduXpath = "//h1"
@@ -143,7 +142,7 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
     print(len(pocet_vysledku_list_default))
 
 
-list_SRL_number_of_results(driver, URL_prod, URL_dev ,URL_List)
+#list_SRL_number_of_results(driver, URL_prod, URL_dev ,URL_List)
 
 
 
