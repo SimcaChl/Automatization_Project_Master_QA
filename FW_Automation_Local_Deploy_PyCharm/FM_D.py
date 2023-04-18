@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import unittest
 
 ##test
+##test2
 def LM_FM_vypis_rozbalit_zajezd_check(self, driver):
     wait = WebDriverWait(self.driver, 150000)
     driver.implicitly_wait(100)
