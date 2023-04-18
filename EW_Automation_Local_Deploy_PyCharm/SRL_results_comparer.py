@@ -49,7 +49,7 @@ URL_SRL_EW19 = "/vysledky-vyhledavani?ac1=2&d=211801|211814|63260|63448&dd=2023-
 
 URL_SRL_EW20 = "/vysledky-vyhledavani?ac1=2&d=64087|64094|64089|64090|64091|64086|64092&dd=2023-09-01&ka1=4&kc1=1&nn=7|8|9|10|11|12|13&rd=2023-10-31&to=4305|2682|4308|4312&tt=1"
 
-URL_SRLs_List_EW = [URL_SRL_EW1, URL_SRL_EW2, URL_SRL_EW3, URL_SRL_EW4, URL_SRL_EW5, URL_SRL_EW6, URL_SRL_EW7, URL_SRL_EW8, URL_SRL_EW9, URL_SRL_EW10, URL_SRL_EW11, URL_SRL_EW12, URL_SRL_EW13, URL_SRL_EW14, URL_SRL_EW15, URL_SRL_EW16, URL_SRL_EW17, URL_SRL_EW18, URL_SRL_EW19, URL_SRL_EW20]
+URL_SRLs_list_EW = [URL_SRL_EW1, URL_SRL_EW2, URL_SRL_EW3, URL_SRL_EW4, URL_SRL_EW5, URL_SRL_EW6, URL_SRL_EW7, URL_SRL_EW8, URL_SRL_EW9, URL_SRL_EW10, URL_SRL_EW11, URL_SRL_EW12, URL_SRL_EW13, URL_SRL_EW14, URL_SRL_EW15, URL_SRL_EW16, URL_SRL_EW17, URL_SRL_EW18, URL_SRL_EW19, URL_SRL_EW20]
 
 class Test_SRL_C_comparer(unittest.TestCase):
     def setUp(self):
@@ -61,7 +61,7 @@ class Test_SRL_C_comparer(unittest.TestCase):
 
 
     def test_SRL_number_of_results_comparer(self):
-        list_SRL_number_of_results(self.driver, URL, URL_public_prod, URL_SRLs_List_EW)
+        list_SRL_number_of_results(self.driver, URL, URL_public_prod, URL_SRLs_list_EW)
 
 
 
