@@ -6,7 +6,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 ##open SRLS , take h1, compare pocet vysledku VS dev ENV
 from random_printer import checked_URLs_list
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+#driver = webdriver.Chrome(ChromeDriverManager().install())
 URL_prod = "https://www.fischer.cz/"
 URL_dev = "https://fischer.web2.dtweb.cz/"
 #URL_dev = "https://fischer.web3.dtweb.cz/"
@@ -79,12 +79,11 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
     checked_URLs_list_dev = []
 
 
-
-    for _ in URL_List:
-        driver.execute_script("window.open("");")
-        driver.switch_to.window(driver.window_handles[windowHandle])
+    #print(len(URL_parameters_list))
+    for _ in URL_parameters_list:
+        #driver.execute_script("window.open("");")
+        #driver.switch_to.window(driver.window_handles[windowHandle])
         linkActualUrl = URL_default + URL_parameters_list[listPosition]
-        #driver.get(URL_default + "/vysledky-vyhledavani?ac1=2&d=680%7C953%7C1108%7C592%7C611%7C610%7C612%7C590%7C726%7C609%7C621%7C1009%7C622%7C669%7C1086%7C1194%7C670%7C978%7C594%7C675%7C1010%7C683&dd=2023-02-01&nn=7&rd=2023-03-28&to=4312%7C4305%7C2682%7C4308&tt=1")
         time.sleep(3)
         driver.get(linkActualUrl)
         SRL_H1textPocetNalezenychZajezduXpath = "//h1"
@@ -101,9 +100,9 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
 
     windowHandle = 1
     listPosition = 0
-    for _ in URL_List:
-        driver.execute_script("window.open("");")
-        driver.switch_to.window(driver.window_handles[windowHandle])
+    for _ in URL_parameters_list:
+        #driver.execute_script("window.open("");")
+        #driver.switch_to.window(driver.window_handles[windowHandle])
         linkActualUrl = URL_dev + URL_parameters_list[listPosition]
         #driver.get(URL_dev + "/vysledky-vyhledavani?ac1=2&d=680%7C953%7C1108%7C592%7C611%7C610%7C612%7C590%7C726%7C609%7C621%7C1009%7C622%7C669%7C1086%7C1194%7C670%7C978%7C594%7C675%7C1010%7C683&dd=2023-02-01&nn=7&rd=2023-03-28&to=4312%7C4305%7C2682%7C4308&tt=1")
         time.sleep(3)
@@ -121,29 +120,39 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
         listPosition = listPosition + 1
 
     starterPosition = 0
+    print("len(pocet_vysledku_list_default)")
+    print(len(pocet_vysledku_list_default))
+
+    print("             ")
+
+    print("len(pocet_vysledku_list_dev))")
+    print(len(pocet_vysledku_list_dev))
+
     for _ in pocet_vysledku_list_default:
         if pocet_vysledku_list_default[starterPosition] == pocet_vysledku_list_dev[starterPosition]:
-            starterPosition=starterPosition+1
+            #starterPosition=starterPosition+1
             print(pocet_vysledku_list_default[starterPosition])
             print(pocet_vysledku_list_dev[starterPosition])
             print(checked_URLs_list_default[starterPosition])
             print(checked_URLs_list_dev[starterPosition])
             print("             ")
-            pass
+
+
         if pocet_vysledku_list_default[starterPosition] != pocet_vysledku_list_dev[starterPosition]:
             print(pocet_vysledku_list_default[starterPosition])
             print(pocet_vysledku_list_dev[starterPosition])
             print(checked_URLs_list_default[starterPosition])
             print(checked_URLs_list_dev[starterPosition])
             print("             ")
-            starterPosition = starterPosition + 1
+
 
         print(starterPosition)
+        starterPosition = starterPosition + 1
 
     print(len(pocet_vysledku_list_default))
 
 
-list_SRL_number_of_results(driver, URL_prod, URL_dev ,URL_List)
+#list_SRL_number_of_results(driver, URL_prod, URL_dev ,URL_List)
 
 
 
