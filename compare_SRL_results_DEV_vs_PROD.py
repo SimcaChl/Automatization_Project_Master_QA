@@ -6,7 +6,7 @@ from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent
 ##open SRLS , take h1, compare pocet vysledku VS dev ENV
 from random_printer import checked_URLs_list
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+#driver = webdriver.Chrome(ChromeDriverManager().install())
 URL_prod = "https://www.fischer.cz/"
 URL_dev = "https://fischer.web2.dtweb.cz/"
 #URL_dev = "https://fischer.web3.dtweb.cz/"
@@ -120,9 +120,17 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
         listPosition = listPosition + 1
 
     starterPosition = 0
+    print("len(pocet_vysledku_list_default)")
+    print(len(pocet_vysledku_list_default))
+
+    print("             ")
+
+    print("len(pocet_vysledku_list_dev))")
+    print(len(pocet_vysledku_list_dev))
+
     for _ in pocet_vysledku_list_default:
         if pocet_vysledku_list_default[starterPosition] == pocet_vysledku_list_dev[starterPosition]:
-            starterPosition=starterPosition+1
+            #starterPosition=starterPosition+1
             print(pocet_vysledku_list_default[starterPosition])
             print(pocet_vysledku_list_dev[starterPosition])
             print(checked_URLs_list_default[starterPosition])
@@ -136,9 +144,10 @@ def list_SRL_number_of_results(driver, URL_default, URL_dev ,URL_parameters_list
             print(checked_URLs_list_default[starterPosition])
             print(checked_URLs_list_dev[starterPosition])
             print("             ")
-            starterPosition = starterPosition + 1
+
 
         print(starterPosition)
+        starterPosition = starterPosition + 1
 
     print(len(pocet_vysledku_list_default))
 
