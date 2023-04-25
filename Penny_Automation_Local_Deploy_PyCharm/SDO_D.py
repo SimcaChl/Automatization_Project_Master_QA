@@ -1,7 +1,7 @@
-from ET_Automation_Local_Deploy_PyCharm.to_import import acceptConsent,URL_SDO, setUp, tearDown, generalDriverWaitImplicit
+from Penny_Automation_Local_Deploy_PyCharm.to_import import acceptConsent,URL_SDO, setUp, tearDown, generalDriverWaitImplicit
 import time
 import unittest
-from ET_Automation_Local_Deploy_PyCharm.import_test_units_Xpaths import rowKarty_imgHoteluKarty_D
+from Penny_Automation_Local_Deploy_PyCharm.import_test_units_Xpaths import rowKarty_imgHoteluKarty_D
 
 SDOsectionXpath = "//*[@class='sdo-section']"
 zobrazitHotelyXpath = "//*[@class='c_title mb-0 center']"
@@ -35,4 +35,5 @@ class TestSDO_D(unittest.TestCase):
         SDO_D(self, self.driver)
 
         self.test_passed = True
+
 
