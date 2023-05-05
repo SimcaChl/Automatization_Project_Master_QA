@@ -16,6 +16,7 @@ from FWSK_Automation_Local_Deploy_PyCharm.SRL_D import *
 from FWSK_Automation_Local_Deploy_PyCharm.HP_C import *
 import HtmlTestRunner
 import HTMLTestRunner   as   HtmlTestRunner  ##at office PC gotta be set up like that (???)
+from FWSK_Automation_Local_Deploy_PyCharm.SRL_results_comparer import *
 
 def suite_FWSK_full():
     suite = unittest.TestSuite()
@@ -49,6 +50,7 @@ def suite_FWSK_full():
     # suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
     #suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
+    suite.addTest(Test_SRL_C_comparer('test_SRL_number_of_results_comparer'))
     return suite
 
 def suite2():
