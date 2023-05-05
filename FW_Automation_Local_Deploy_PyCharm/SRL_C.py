@@ -114,7 +114,7 @@ class Test_SRL_C(unittest.TestCase):
 
         #for WebElement in hotelyAllKarty:
         #for _ in range(9):
-        for _ in range(6):
+        for _ in range(15):
             print("|||||HOTEL CISLO|||||||" )
             print(x+1)
             print(x + 1)
@@ -158,7 +158,16 @@ class Test_SRL_C(unittest.TestCase):
             #detailTerminSedivka = self.driver.find_element_by_xpath("//*[@class='fshr-detail-summary-title']")
             ##print(detailTerminSedivka.text)
 
-            detailStravaSedivka = self.driver.find_element_by_xpath("/html/body/div[1]/div/div[1]/div/div[2]/div[2]/div/div[2]/div[2]/span")
+
+            try:
+                detailStravaSedivka = self.driver.find_element_by_xpath("/html/body/div[1]/div/div[1]/div/div[2]/div[2]/div/div[2]/div[2]/span")
+            except NoSuchElementException:
+
+                try:
+                    detailStravaSedivka = self.driver.find_element_by_xpath("/html/body/div[1]/div/div[1]/div/div[2]/div[2]/div[1]/div[3]/div[2]/span")
+
+                except NoSuchElementException:
+                    pass
             #detailStravaSedivkaString = detailStravaSedivka[1].text  ##gottaa be 1 cuz thats how its set up (multiple locators are attached to this locator so position 1 is always gonna be strava hopefully
             detailStravaSedivkaString = detailStravaSedivka.text
             print(detailStravaSedivkaString)

@@ -35,8 +35,8 @@ def setUp(self):
 #URL = "https://www.fischer.cz/"
 #URL = "https://fischer.web3.dtweb.cz/"
 
-#URL = "https://www.fischer.cz/"
-URL = "http://fischer.web1.dtweb.cz/"
+URL = "https://www.fischer.cz/"
+#URL = "http://fischer.web1.dtweb.cz/"
 #URL = "https://fischer.stg.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy/okruzni-a-kombinovane"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy/prodlouzene-vikendy"
@@ -68,8 +68,10 @@ URL_detail = URL + "/recko/korfu/roda/angela-beach?D=1126|1129|826|1225|1124|112
 #URL_SRL = URL + "vysledky-vyhledavani?ac1=1&d=644|674|642|616|664|607|591|608|1133|606|860|870|1098|770|1050|1134|823|1039|1109|643|871|1172|805|875|791|815|1040|1041|869|629|1078|859|1079|962|1042|1043|1044|1045|1057&dd=2022-08-30&ka1=8&kc1=1&nn=7|8|9|10|11|12|13&rd=2022-10-30&to=4312|4305|2682|4308&tt=1"
 #URL_SRL = URL + "vysledky-vyhledavani?ac1=2&d=622|1086|590|726|670|680|621|669|1009|1010|1108|611|610|609|953|612&dd=2023-02-01&nn=7|8|9|10|11|12|13&rd=2023-03-31&to=4312|4305|2682|4308&tt=1"
 #URL_SRL = "https://www.fischer.cz/vysledky-vyhledavani?ac1=2&ac2=2&d=664&dd=2023-03-01&ka2=2|6|8&kc2=3&nn=7&rd=2023-03-31&to=4312|4305|2682|4308&tt=1"
-#URL_SRL = URL + "vysledky-vyhledavani?ac1=2&d=680|1108|953|611|610|592|612|590|726|609|621|1009|622|669|1086|1194|670|978|594|675|1010|683&dd=2023-09-01&ka1=8&kc1=1&nn=7|8|9|10|11|12|13&rd=2023-09-30&to=4312|4305|2682|4308&tt=1"
-URL_SRL = URL + "vysledky-vyhledavani?ac1=2&d=664&dd=2023-09-01&ka1=11&kc1=1&nn=7|8|9|10|11|12|13&rd=2023-09-30&to=4312|4305|2682|4308&tt=1"
+URL_SRL = URL + "vysledky-vyhledavani?ac1=2&d=680|1108|953|611|610|592|612|590|726|609|621|1009|622|669|1086|1194|670|978|594|675|1010|683&dd=2023-09-01&ka1=8&kc1=1&nn=7|8|9|10|11|12|13&rd=2023-09-30&to=4312|4305|2682|4308&tt=1"
+#URL_SRL = URL + "vysledky-vyhledavani?ac1=2&d=664&dd=2023-09-01&ka1=11&kc1=1&nn=7|8|9|10|11|12|13&rd=2023-09-30&to=4312|4305|2682|4308&tt=1"
+#URL_SRL = URL + "/vysledky-vyhledavani?ac1=2&dd=2023-04-03&nn=7|8|9|10|11|12|13&rd=2023-06-03&sa=4327&to=4312|4305|2682|4308&tt=1"
+#URL_SRL = URL + "/vysledky-vyhledavani?ac1=2&d=634&dd=2023-07-01&nn=7|8|9|10|11|12|13|14&rd=2023-08-31&to=4312|4305|2682|4308&tt=1"
 
 
 ##lyzovane
