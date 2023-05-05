@@ -43,8 +43,9 @@ class TestHP_D(unittest.TestCase):
         time.sleep(1.5)
 
         try:
-            nejnabidkyLMsingle = self.driver.find_element_by_xpath("//*[@class='fshr-lm-table-item-content']")
-            nejnabidkyLMall = self.driver.find_elements_by_xpath("//*[@class='fshr-lm-table-item-content']")
+            nejnabidkyLMsingleXpath = "//*[@class='f_tourTable-tour']"
+            nejnabidkyLMsingle = self.driver.find_element_by_xpath(nejnabidkyLMsingleXpath)
+            nejnabidkyLMall = self.driver.find_elements_by_xpath(nejnabidkyLMsingleXpath)
             wait.until(EC.visibility_of(nejnabidkyLMsingle))
             if nejnabidkyLMsingle.is_displayed():
                 for WebElement in nejnabidkyLMall:
