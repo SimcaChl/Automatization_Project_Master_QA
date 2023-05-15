@@ -24,6 +24,8 @@ def sendEmailv2(msg, recipient):
 
 
 while True:
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
     driver = webdriver.Chrome(ChromeDriverManager().install())
     URL = "https://www.fischer.cz"
     driver.get(URL)
