@@ -33,8 +33,8 @@ def setUp(self):
   #self.driver = webdriver.Remote(command_executor=comandExecutor,desired_capabilities=desired_cap)
   self.driver = webdriver.Chrome(ChromeDriverManager().install())
   self.test_passed = False
-URL = "https://www.fischer.sk/"
-#URL = "https://fischersk.web1.dtweb.cz/"
+#URL = "https://www.fischer.sk/"
+URL = "https://fischersk.web1.dtweb.cz/"
 URL_poznavacky = URL+"poznavacie-zajazdy/okruhy-a-kombinovane"
 URL_poznavacky_vikendy = URL+"poznavacie-zajazdy/predlzene-vikendy"
 URL_poznavacky_rodiny = URL+"poznavacie-zajazdy/pre-rodiny"
@@ -56,7 +56,9 @@ URL_SRL = URL + "/vysledky-vyhledavani?ac1=2&d=627|974|712|684|955|596&dd=2023-0
 
 #URL_detail = URL + "/arabske-emiraty/arabske-emiraty/dubaj/riu-hotel-dubai?DS=256&GIATA=1226537&D=664&HID=128620&MT=5&NN=7&RD=2022-12-11&DD=2022-12-04&DP=483&TO=483&MNN=7&TT=1&PID=DXB10206&DPR=FISCHER%20ATCOM&TTM=1&DF=2022-12-04|2023-01-04&ERM=0&NNM=7|8|9&ac1=2&kc1=0&ic1=0#/prehled"
 #URL_detail = URL + "/egypt/egypt-hurghada/hurghada/amc-royal-hotel-a-spa?AC1=1&D=653|819|724&DD=2023-04-18&DP=483&DPR=FISCHER+ATCOM&DS=256&GIATA=228143&HID=139807&IC1=0&KC1=0&MNN=7&MT=5&NN=7&PID=HRG90002&RD=2023-04-26&TO=483|1837|2933|3437&acm1=1&df=2023-04-01|2023-04-30&nnm=7|8|9|10|11|12|13&sortby=Departure&tt=1&ttm=1#/terminy-a-ceny"
-URL_detail = URL + "/turecko/turecka-riviera/side-kumkoy/belek/tui-magic-life-belek?D=627|974|712|684|955|596&DD=2023-07-03&DP=1837&DPR=FISCHER+ATCOM&DS=256&GIATA=4717&HID=263&IFM=0&ILM=0&MNN=7&MT=5&NN=7&PID=AYT90031&RD=2023-07-10&TO=1837&df=2023-07-01|2023-08-31&nnm=7|8|9|10|11|12|13|14|15&tt=1&ttm=1#/prehľad"
+#URL_detail = URL + "/turecko/turecka-riviera/side-kumkoy/belek/tui-magic-life-belek?D=627|974|712|684|955|596&DD=2023-07-03&DP=1837&DPR=FISCHER+ATCOM&DS=256&GIATA=4717&HID=263&IFM=0&ILM=0&MNN=7&MT=5&NN=7&PID=AYT90031&RD=2023-07-10&TO=1837&df=2023-07-01|2023-08-31&nnm=7|8|9|10|11|12|13|14|15&tt=1&ttm=1#/prehľad"
+URL_detail = URL + "/egypt/egypt-hurghada/hurghada/sentido-mamlouk-palace?AC1=2&D=653|819|724&DD=2023-10-01&DP=1837&DPR=FISCHER+SK+ATCOM&DS=256&GIATA=78630&HID=145866&IC1=0&IFM=0&ILM=0&KC1=0&MNN=7&MT=5&NN=7&PID=HRG22103&RD=2023-10-08&TO=1837&acm1=2&df=2023-10-01|2023-10-15&nnm=7&tt=1&ttm=1#/prehľad"
+
 URL_covidInfo = URL+"covid-info"
 URL_kluby = URL+"dovolena-animacni-kluby"
 URL_fmExotika = URL+"first-minute"

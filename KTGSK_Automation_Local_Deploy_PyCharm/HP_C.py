@@ -13,7 +13,7 @@ banneryXpath_KTGSK = "//*[@class='f_teaser-item']/a"
 
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_button f_button--forFilter']//*[contains(text(), 'Vyhľadať zájazdy')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam cestujete?')]"
-HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/div[3]/div[1]/span/label/span"
+HPzlutakReckoDestinaceXpath = "/html/body/header/div/div[2]/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div[1]/div[3]/div/div[2]/div[1]/span/label/span[2]/span[2]"
 HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovať')]"
 HPzlutakPokracovatButtonXpathStep2 = "/html/body/header/div/div[2]/div/div/div/div[3]/div[2]/div[3]/div[2]/a/span"
 HPzlutakLetniPrazdninyXpath = "//*[contains(text(), 'Letné prázdniny')]"
