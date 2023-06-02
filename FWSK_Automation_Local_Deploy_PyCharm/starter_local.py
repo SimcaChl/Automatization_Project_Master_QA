@@ -14,8 +14,10 @@ from FWSK_Automation_Local_Deploy_PyCharm.SDO_D import *
 from FWSK_Automation_Local_Deploy_PyCharm.SRL_C import *
 from FWSK_Automation_Local_Deploy_PyCharm.SRL_D import *
 from FWSK_Automation_Local_Deploy_PyCharm.HP_C import *
-import HtmlTestRunner
+#import HtmlTestRunner
+
 import HTMLTestRunner   as   HtmlTestRunner  ##at office PC gotta be set up like that (???)
+from FWSK_Automation_Local_Deploy_PyCharm.SRL_results_comparer import *
 
 def suite_FWSK_full():
     suite = unittest.TestSuite()
@@ -33,10 +35,10 @@ def suite_FWSK_full():
     suite.addTest(TestHP_D("test_homePage_D"))
     suite.addTest(TestLM_D("test_lM_isDisplayed"))
     suite.addTest(TestPobocky_D('test_pobocky_D'))
-    suite.addTest(TestPoznavacky_D('test_poznavacky_okruzni_D'))
-    suite.addTest(TestPoznavacky_D('test_poznavacky_vikendy_D'))
-    suite.addTest(TestPoznavacky_D('test_poznavacky_rodiny_D'))
-    suite.addTest(TestPoznavacky_D('test_poznavacky_zazitky_D'))
+    # suite.addTest(TestPoznavacky_D('test_poznavacky_okruzni_D'))
+    # suite.addTest(TestPoznavacky_D('test_poznavacky_vikendy_D'))
+    # suite.addTest(TestPoznavacky_D('test_poznavacky_rodiny_D'))
+    # suite.addTest(TestPoznavacky_D('test_poznavacky_zazitky_D'))          ## v aktualni fazi nejsou poznavacky na SK takze jen failuji anyway 5.5.23
     suite.addTest(TestSDO_D('test_SDO_D'))
     suite.addTest(Test_SRL_C('test_SRL_sort_cheapest'))
     suite.addTest(Test_SRL_C('test_SRL_sort_expensive'))
@@ -49,6 +51,7 @@ def suite_FWSK_full():
     # suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
     #suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
+    suite.addTest(Test_SRL_C_comparer('test_SRL_number_of_results_comparer'))
     return suite
 
 def suite2():

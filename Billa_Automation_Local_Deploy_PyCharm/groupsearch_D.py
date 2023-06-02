@@ -1,19 +1,18 @@
-import time
-
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_groupsearch, setUp, tearDown,generalDriverWaitImplicit
+from Billa_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_groupsearch, setUp, tearDown
 import unittest
 from selenium.webdriver.support import expected_conditions as EC
-
+emptyImgInTeaserDestinationXpath = """//*[@style='background-image: url("https://cdn.fischer.cz/Images/000000/1200x0.jpg");']"""
+empty1 = ''
+teaserItemsXpath = "//*[@class='c_tile-category']"
+destinationsHighlightXpath = "//*[@class='c_title large center']"
 
 def groupSearch_D(self, driver):
+    driver.implicitly_wait(100)
+    teaserItems = driver.find_elements_by_xpath(teaserItemsXpath)
     wait = WebDriverWait(self.driver, 150)
-    #driver.implicitly_wait(100)
-    generalDriverWaitImplicit(driver)
-    wait.until(EC.visibility_of(driver.find_element_by_xpath("//*[@class='f_teaser-item']")))
-
-    teaserItems = driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
+    wait.until(EC.visibility_of(teaserItems[0]))
     try:
         for WebElement in teaserItems:
             ##print(len(teaserItems))
@@ -39,9 +38,9 @@ def groupSearch_D(self, driver):
     assert teaserItems[0].is_displayed() == True
 
     driver.implicitly_wait(100)
-    srlItems = driver.find_elements_by_xpath("//*[@class='f_searchResult'and not(@style='display: none;')]")
+    destinationsHL = driver.find_elements_by_xpath(destinationsHighlightXpath)
     try:
-        for WebElement in srlItems:
+        for WebElement in destinationsHL:
             ##print(len(srlItems))
             jdouvidet = WebElement.is_displayed()
             ##print(jdouvidet)
@@ -53,13 +52,30 @@ def groupSearch_D(self, driver):
             else:
                 pass
                 print("Else")
-
+    except NoSuchElementException:
+        pass
 
 
     except NoSuchElementException:
         pass
         print("no such")
-    assert srlItems[0].is_displayed() == True
+    assert destinationsHL[0].is_displayed() == True
+
+    emptyImgsList = []
+    emptyImgsListCounter = 0
+    emptyImgs = driver.find_elements_by_xpath(emptyImgInTeaserDestinationXpath)
+    try:
+        emptyImgs = driver.find_elements_by_xpath(emptyImgInTeaserDestinationXpath)
+        for WebElement in emptyImgs:
+            emptyImgsList.append(emptyImgs[emptyImgsListCounter].text)
+            print(emptyImgs[emptyImgsListCounter].text)
+            emptyImgsListCounter = emptyImgsListCounter + 1
+
+    except NoSuchElementException:
+        pass
+
+    print("následující destinace mají prázdný teaser obrazek")
+    print(emptyImgsList)
 
 
 class Test_Groupsearch_D(unittest.TestCase):
@@ -72,11 +88,11 @@ class Test_Groupsearch_D(unittest.TestCase):
     def test_groupsearch_D(self):
         driver = self.driver
         self.driver.maximize_window()
+
         self.driver.get(URL_groupsearch)
-        time.sleep(2)
+
         acceptConsent(self.driver)
-        time.sleep(2)
-        self.driver.find_element_by_xpath('//*[@data-testid="popup-closeButton"]').click()
 
         groupSearch_D(self, driver)
+
         self.test_passed = True

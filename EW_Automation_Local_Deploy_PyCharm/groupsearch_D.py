@@ -67,10 +67,12 @@ class Test_Groupsearch_D(unittest.TestCase):
 
     def test_groupsearch_D(self):
         driver = self.driver
-        self.driver.get(URL_groupsearch)
-        acceptConsent(self.driver)
-        #teaserItems = driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
         self.driver.maximize_window()
-        groupSearch_D(self, driver)
+        self.driver.get(URL_groupsearch)
+        time.sleep(2.5)
+        acceptConsent(self.driver)
+        time.sleep(2.5)
+        self.driver.find_element_by_xpath('//*[@data-testid="popup-closeButton"]').click()
 
+        groupSearch_D(self, driver)
         self.test_passed = True

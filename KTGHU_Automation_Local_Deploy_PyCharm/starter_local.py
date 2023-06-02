@@ -10,6 +10,7 @@ from KTGHU_Automation_Local_Deploy_PyCharm.SDO_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.SRL_C import *
 from KTGHU_Automation_Local_Deploy_PyCharm.SRL_D import *
 from KTGHU_Automation_Local_Deploy_PyCharm.HP_C import *
+from KTGHU_Automation_Local_Deploy_PyCharm.SRL_results_comparer import *
 
 import HTMLTestRunner
 #import HtmlTestRunner
@@ -39,6 +40,7 @@ def suite_KTGHU_full():
     suite.addTest(Test_HP_C('test_HP_nejlepsi_nabidky_vypis_btn_switch'))
     suite.addTest(Test_HP_C('test_HP_slider_click_detail_hotelu'))
     suite.addTest(Test_HP_C('test_HP_bannery_check'))
+    suite.addTest(Test_SRL_C_comparer('test_SRL_number_of_results_comparer'))
     return suite
 
 def suite_SRL_C():

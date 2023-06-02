@@ -1,20 +1,20 @@
-from ET_Automation_Local_Deploy_PyCharm.Detail_C import TestDetailHotelu_C
-from ET_Automation_Local_Deploy_PyCharm.FM_Exotika_D import Test_FM_Exotika_D
-from ET_Automation_Local_Deploy_PyCharm.fulltext_C import Test_Fulltext_C
-from ET_Automation_Local_Deploy_PyCharm.groupsearch_D import Test_Groupsearch_D
-from ET_Automation_Local_Deploy_PyCharm.HP_D import Test_HP_D
-from ET_Automation_Local_Deploy_PyCharm.LM_D import Test_LM_D
-from ET_Automation_Local_Deploy_PyCharm.SDO_D import TestSDO_D
-from ET_Automation_Local_Deploy_PyCharm.SRL_C import Test_SRL_C
-from ET_Automation_Local_Deploy_PyCharm.SRL_D import TestSRL_D
-from ET_Automation_Local_Deploy_PyCharm.HP_C import Test_HP_C
+from Billa_Automation_Local_Deploy_PyCharm.Detail_C import TestDetailHotelu_C
+from Billa_Automation_Local_Deploy_PyCharm.FM_Exotika_D import Test_FM_Exotika_D
+from Billa_Automation_Local_Deploy_PyCharm.fulltext_C import Test_Fulltext_C
+from Billa_Automation_Local_Deploy_PyCharm.groupsearch_D import Test_Groupsearch_D
+from Billa_Automation_Local_Deploy_PyCharm.HP_D import Test_HP_D
+from Billa_Automation_Local_Deploy_PyCharm.LM_D import Test_LM_D
+from Billa_Automation_Local_Deploy_PyCharm.SDO_D import TestSDO_D
+from Billa_Automation_Local_Deploy_PyCharm.SRL_C import Test_SRL_C
+from Billa_Automation_Local_Deploy_PyCharm.SRL_D import TestSRL_D
+from Billa_Automation_Local_Deploy_PyCharm.HP_C import Test_HP_C
 #import HtmlTestRunner
 import unittest
 from starter_master_browserstack import  runner_tests_generalized
-from ET_Automation_Local_Deploy_PyCharm.to_import import URL
+from Billa_Automation_Local_Deploy_PyCharm.to_import import URL
 
 
-def suite_ET_full():
+def suite_Billa_full():
     suite = unittest.TestSuite()
     #suite.addTest(TestDetailHotelu_D("test_detail_D"))
     suite.addTest(TestDetailHotelu_C("test_detail_fotka"))
@@ -44,9 +44,9 @@ def suite2():
     suite.addTest(Test_FM_Exotika_D("test_FM_D"))
     return suite
 
-web_brand = "ETRAVEL"
-#runner_tests_generalized(suite_ET_full, web_brand, "123", URL)
-runner_tests_generalized(suite_ET_full, web_brand, "0", URL)
+web_brand = "Billa"
+#runner_tests_generalized(suite_Billa_full, web_brand, "123", URL)
+runner_tests_generalized(suite_Billa_full, web_brand, "0", URL)
 
 
 
