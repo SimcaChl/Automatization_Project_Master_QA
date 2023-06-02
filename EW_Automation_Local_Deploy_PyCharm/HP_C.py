@@ -106,6 +106,8 @@ class Test_HP_C(unittest.TestCase):
         acceptConsent(self.driver)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
         time.sleep(2.5)  ##time sleep not the best not pog but it works =)
+
+        self.driver.find_element_by_xpath('//*[@data-testid="popup-closeButton"]').click()
         groupSearch_D(self, self.driver)
         self.test_passed = True
 
@@ -121,6 +123,8 @@ class Test_HP_C(unittest.TestCase):
         time.sleep(2.5)
         wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPvyhledatZajezdyButtonXpath))).click()
         time.sleep(2.5)  ##time sleep not the best not pog but it works =)
+
+        self.driver.find_element_by_xpath('//*[@data-testid="popup-closeButton"]').click()
         groupSearch_D(self, self.driver)
         self.test_passed = True
 
@@ -166,7 +170,7 @@ class Test_HP_C(unittest.TestCase):
 
         self.driver.find_element_by_xpath(poznavackyVeFiltruSwitchXpath).click()
 
-        time.sleep(3)
+        time.sleep(5)
 
         hp_zlutak_to_SRL(self.driver, HPkamPojedeteButtonXpath, destinaceEgyptXpath,
                          HPzlutakPokracovatButtonXpath, HPzlutakPokracovatButtonXpathStep2, HPzlutakLetniPrazdninyXpath

@@ -1,3 +1,5 @@
+import time
+
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from FW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_groupsearch, setUp, tearDown,generalDriverWaitImplicit
@@ -69,12 +71,12 @@ class Test_Groupsearch_D(unittest.TestCase):
 
     def test_groupsearch_D(self):
         driver = self.driver
+        self.driver.maximize_window()
         self.driver.get(URL_groupsearch)
+        time.sleep(2)
         acceptConsent(self.driver)
-        # teaserItems = driver.find_elements_by_xpath("//*[@class='f_teaser-item']")
-
-
+        time.sleep(2)
+        self.driver.find_element_by_xpath('//*[@data-testid="popup-closeButton"]').click()
 
         groupSearch_D(self, driver)
-
         self.test_passed = True
