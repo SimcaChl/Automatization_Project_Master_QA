@@ -1,7 +1,3 @@
-#zkouška GITU, blablablalllll
-#asdas
-#safsadas
-
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
 from Billa_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, URL_detail, sendEmail, tearDown, setUp, URL_detail_all_inclusive, URL_detail_airport_praha

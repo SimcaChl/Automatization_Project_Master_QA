@@ -9,7 +9,7 @@ kartaHoteluXpath = "//*[@class='splide__slide splide__slide--clone']"
 rowKartyHoteluXpath = "//*[@class='sdo-tile-section']"
 #imgHotelKartaXpath = "//*[@class='c_tile-hotel-image'and not(@style='display: none;')]"
 imgHotelKartaXpath = "//*[@class='splide__slide is-visible']"
-destinationXpath = "//*[@class='destination-list']"
+destinationXpath = "//div[@class='footer-links']"
 gridDestinationXpath = "//*[@class='c_grid cols-2']"
 
 
