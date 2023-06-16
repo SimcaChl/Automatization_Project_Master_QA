@@ -110,8 +110,9 @@ class TestSRL_D(unittest.TestCase):
         tearDown(self)
 
     def test_SRL_D(self):
-        self.driver.get(URL_SRL)
         self.driver.maximize_window()
+        self.driver.get(URL_SRL)
+
         acceptConsent(self.driver)
         SRL_D(self, self.driver)
 
