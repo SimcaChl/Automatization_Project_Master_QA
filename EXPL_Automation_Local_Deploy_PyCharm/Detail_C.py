@@ -28,7 +28,7 @@ stravaVterminechXpath = "//*[@class='f_icon f_icon--cutlery']"
 dopravaBoxXpath_V1 = "//*[@class='fshr-button-content fshr-icon fshr-icon--plane js-selector--travel']"
 dopravaBrnoXpath_V1 = "//*[@data-value='4305']"
 ##dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@class='f_input--checkbox f_input']"
-dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@value='4305']"
+dopravaBrnoXpath = "//*[@class='f_filterHolder f_set--active']//*[@value='3850']"
 dopravaBoxXpath ="//*[@class='f_holder']//*[@class='f_button-content f_icon f_icon--plane']"
 
 class TestDetailHotelu_C(unittest.TestCase):
@@ -212,7 +212,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         time.sleep(4)
         pocetZobrazenychTerminuXpath = "//*[@class='f_termList-header-item f_termList-header-item--dateRange']"
         odletyTerminyXpath = "//*[@class='f_termList-header-item f_termList-header-item--transport']"
-        departureToCompareTo = "brno"
+        departureToCompareTo = "warsaw"
 
         time.sleep(5)
         generalized_detail_departure_check(self.driver, pocetZobrazenychTerminuXpath, odletyTerminyXpath,
