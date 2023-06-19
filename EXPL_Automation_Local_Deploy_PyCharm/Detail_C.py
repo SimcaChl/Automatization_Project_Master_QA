@@ -1,6 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, setUp, tearDown, generalDriverWaitImplicit
+from EXPL_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, closeExponeaBanner, URL_detail, sendEmail, setUp, tearDown, generalDriverWaitImplicit
 import time
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
@@ -9,7 +9,7 @@ from generalized_test_functions import *
 ##global
 terminyAcenyTabXpath_V1 = "//*[@id='terminyaceny-tab']"
 terminyAcenyTabXpath_old = "//*[@class='f_bar-item f_tabBar']//*[contains(text(),'Termíny a ceny')]"
-terminyAcenyTabXpath = "//*[@class='f_menu f_menu--inline f_menu--sticky']//*[contains(text(),'Termíny a ceny')]"
+terminyAcenyTabXpath = "//*[@class='f_menu f_menu--inline f_menu--sticky']//*[contains(text(),'Warunki i ceny')]"
 potvrditPopupXpath = "//*[@data-testid='popup-closeButton']"
 
 #meal filter
@@ -66,17 +66,17 @@ class TestDetailHotelu_C(unittest.TestCase):
         driver.execute_script("arguments[0].scrollIntoView();", boxTerminyElement)
         time.sleep(3.5)
 
-        celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor']"
+        celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor f_set--active f_icon--sortUp']"
         celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
         ##2x click = od nejrdazshi
         ##1x click = od nejlevnejsiho
 
         celkovaCenaSorterElement.click()
         time.sleep(4)
-        celkovaCenaSorterAfterOneClickXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor f_set--active f_icon--sortUp']"
-        celkovaCenaSorterAfterOneClickElement = driver.find_element_by_xpath(celkovaCenaSorterAfterOneClickXpath)
+       #celkovaCenaSorterAfterOneClickXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor f_set--active f_icon--sortUp']"
+       #celkovaCenaSorterAfterOneClickElement = driver.find_element_by_xpath(celkovaCenaSorterAfterOneClickXpath)
 
-        celkovaCenaSorterAfterOneClickElement.click()
+       #celkovaCenaSorterAfterOneClickElement.click()
         time.sleep(5)
         ##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
 
@@ -91,7 +91,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         for _ in pocetTerminuElements:
             celkoveCenaVterminechXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_price pl-1 xlg:pl-0']"
             celkoveCenaVterminechElements = driver.find_elements_by_xpath(celkoveCenaVterminechXpath)
-            kcIndex = 2
+            kcIndex = 3
             celkovaCenaVterminechINT = celkoveCenaVterminechElements[poziceTerminu].text[:-kcIndex].replace(" ", "")
             celkovaCenaVterminechINT = int(celkovaCenaVterminechINT)
             celkoveCenyList.append(celkovaCenaVterminechINT)
@@ -119,12 +119,12 @@ class TestDetailHotelu_C(unittest.TestCase):
         driver.execute_script("arguments[0].scrollIntoView();", boxTerminyElement)
         time.sleep(4)
 
-        celkovaCenaSorterXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor']"
-        celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
+    #   celkovaCenaSorterXpath ="//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_anchor f_icon f_icon_set--right f_icon_set--inheritColor f_set--active f_icon--sortUp']"
+    #   celkovaCenaSorterElement = driver.find_element_by_xpath(celkovaCenaSorterXpath)
         ##2x click = od nejrdazshi
         ##1x click = od nejlevnejsiho
 
-        celkovaCenaSorterElement.click()
+    #   celkovaCenaSorterElement.click()
         time.sleep(5)
 
         ##at this point kliknuto na sorter, need to take all of them and sort and compare lists / values
@@ -140,7 +140,7 @@ class TestDetailHotelu_C(unittest.TestCase):
         for _ in pocetTerminuElements:
             celkoveCenaVterminechXpath = "//*[@class='f_termList-header-item f_termList-header-item--price']//*[@class='f_price pl-1 xlg:pl-0']"
             celkoveCenaVterminechElements = driver.find_elements_by_xpath(celkoveCenaVterminechXpath)
-            kcIndex = 2
+            kcIndex = 3
             celkovaCenaVterminechINT = celkoveCenaVterminechElements[poziceTerminu].text[:-kcIndex].replace(" ", "")
             celkovaCenaVterminechINT = int(celkovaCenaVterminechINT)
             celkoveCenyList.append(celkovaCenaVterminechINT)
