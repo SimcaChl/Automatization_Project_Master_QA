@@ -23,8 +23,9 @@ class Test_SRL_C(unittest.TestCase):
 
     def test_SRL_sort_cheapest(self):
 
-        self.driver.get(URL_SRL)
         self.driver.maximize_window()
+        self.driver.get(URL_SRL)
+
         time.sleep(2)
         acceptConsent(self.driver)
         time.sleep(1.5)
@@ -79,8 +80,9 @@ class Test_SRL_C(unittest.TestCase):
 
     def test_SRL_filtr_strava(self):
         driver = self.driver
-        driver.get(URL_SRL)
         driver.maximize_window()
+        driver.get(URL_SRL)
+
         time.sleep(2)
         acceptConsent(driver)
         time.sleep(2)
