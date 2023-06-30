@@ -1,22 +1,20 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-from FWSK_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, sendEmail, URL_SRL, setUp, tearDown
+from EW_Automation_Local_Deploy_PyCharm.to_import import acceptConsent, sendEmail, URL_SRL, setUp, tearDown, generalDriverWaitImplicit
 from selenium.webdriver.support import expected_conditions as EC
 import unittest
-
-SRLhotelyKartyXpath = "//*[@class='f_tile-item f_tile-item--content']"
-#SRLfotkyKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_tileGallery']"
-SRLfotkyKartyXpath = "//*[@class='f_searchResult-content'and not(@style='display: none;')]//*[@class='f_tileGallery']"
-#SRLcenaKartyXpath = "//*[@class='f_searchResult'and not(@style='display: none;')]//*[@class='f_price']"
+import time
 
 #SRLhotelyKartyXpath = "//*[@class='f_searchResult-content-item']"
-#SRLfotkyKartyXpath = "//*[@class='f_tileGallery']"
-SRLcenaKartyXpath = "//*[@class='f_price']"
-
+SRLhotelyKartyXpath ="//*[@class='f_searchResult-content-item relative']"
+SRLcenyHoteluXpath = "//*[@class='f_price']"
+SRLfotkaHoteluXpath = "//*[@class='f_tileGallery']"
 
 def SRL_D(self, driver):
-    wait = WebDriverWait(self.driver, 15)
-    driver.implicitly_wait(100)
+    wait = WebDriverWait(self.driver, 150)
+    generalDriverWaitImplicit(self.driver)
+    time.sleep(6)
+    acceptConsent(self.driver)
     hotelySingle = self.driver.find_element_by_xpath(SRLhotelyKartyXpath)
     try:
         hotelySingle = self.driver.find_element_by_xpath(SRLhotelyKartyXpath)  ##
@@ -39,13 +37,13 @@ def SRL_D(self, driver):
         url = self.driver.current_url
         msg = "Problem s hotely v searchi - hotelCard " + url
         sendEmail(msg)
-
+    generalDriverWaitImplicit(self.driver)
     assert hotelySingle.is_displayed() == True
 
     try:
-        self.driver.implicitly_wait(15)
-        fotkyAll = self.driver.find_elements_by_xpath(SRLfotkyKartyXpath)  ##
-        fotkaSingle = self.driver.find_element_by_xpath(SRLfotkyKartyXpath)
+        self.driver.implicitly_wait(100)
+        fotkyAll = self.driver.find_elements_by_xpath(SRLfotkaHoteluXpath)  ##
+        fotkaSingle = self.driver.find_element_by_xpath(SRLfotkaHoteluXpath)
         wait.until(EC.visibility_of(fotkaSingle))
         ##print(fotkaSingle)
         if fotkaSingle.is_displayed():
@@ -66,20 +64,9 @@ def SRL_D(self, driver):
         sendEmail(msg)
 
     try:
-        loadingImgSingle = self.driver.find_element_by_xpath(
-            "//*[@class='splide__spinner']")  ##loading classa obrazku, jestli tam je = not gud
-        if loadingImgSingle.is_displayed():
-            url = self.driver.current_url
-            msg = " Problem s načítáná fotek v SRL  //*[@class='splide__spinner']" + url
-            sendEmail(msg)
-            assert 1 == 2
-    except NoSuchElementException:
-        pass
-
-    try:
         self.driver.implicitly_wait(100)
-        cenaAll = self.driver.find_elements_by_xpath(SRLcenaKartyXpath)  ##
-        cenaSingle = self.driver.find_element_by_xpath(SRLcenaKartyXpath)
+        cenaAll = self.driver.find_elements_by_xpath(SRLcenyHoteluXpath)  ##
+        cenaSingle = self.driver.find_element_by_xpath(SRLcenyHoteluXpath)
         wait.until(EC.visibility_of(cenaSingle))
         if cenaSingle.is_displayed():
             for WebElement in cenaAll:
@@ -102,6 +89,20 @@ def SRL_D(self, driver):
 
     assert cenaAll[0].is_displayed() == True
 
+    try:
+        self.driver.implicitly_wait(
+            5)  ##5 should be enough to get imgs loaded, if this is located = IMGS still loading = bad
+        loadingImgSingle = self.driver.find_element_by_xpath(
+            "//*[@class='splide__spinner']")  ##loading classa obrazku, jestli tam je = not gud
+        if loadingImgSingle.is_displayed():
+            url = self.driver.current_url
+            msg = " Problem s načítáná fotek v SRL  //*[@class='splide__spinner']" + url
+            sendEmail(msg)
+            #assert 1 == 2
+    except NoSuchElementException:
+        pass
+
+
 class TestSRL_D(unittest.TestCase):
     def setUp(self):
         setUp(self)
@@ -110,10 +111,14 @@ class TestSRL_D(unittest.TestCase):
         tearDown(self)
 
     def test_SRL_D(self):
+
         self.driver.maximize_window()
         self.driver.get(URL_SRL)
 
+        time.sleep(0.44)
         acceptConsent(self.driver)
+
+        self.driver.implicitly_wait(100)
         SRL_D(self, self.driver)
 
         self.test_passed = True
