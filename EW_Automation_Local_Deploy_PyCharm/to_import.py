@@ -36,7 +36,7 @@ def setUp(self):
 
 
 #URL = "https://www.eximtours.cz/"
-#URL = "https://exim.stg.dtweb.cz/"
+#RL = "https://exim.stg.dtweb.cz/"
 URL = "http://exim.web11.dtweb.cz/"
 URL_poznavacky = URL+"poznavaci-zajezdy"
 URL_poznavacky_vikendy = URL+"poznavaci-zajezdy#vikendy"
@@ -55,7 +55,7 @@ URL_detail = URL + "/turecko/turecka-riviera/avsallar/incekum-su?D=63260|63288|6
 #URL_SRL = URL + "vysledky-vyhledavani?d=64419|64420|64425|63213|63226|211764|63241|63360|63267|74459|74460|63284|74464|63349|63350|63354|74465|63484|63483|63485&tt=1&to=4312|4305|2682|4308&dd=2022-08-01&rd=2022-09-30&nn=7|8|9|10|11|12|13&ka1=7&kc1=1&ac1=2"
 #URL_SRL = URL + "vysledky-vyhledavani?d=63448|211801|211814|63252|63260|63288|64154|64152|64153|64157&tt=1&to=4312|4305|2682|4308&dd=2022-07-01&rd=2022-08-31&nn=7|8|9|10|11|12|13&ka1=10&kc1=1&ac1=2"
 #URL_SRL = URL + "/vysledky-vyhledavani?d=64419|64420|64425&tt=1&to=4312|4305|2682|4308&dd=2023-03-02&rd=2023-03-26&nn=7&ac1=2"
-URL_SRL = URL + "/vysledky-vyhledavani?ac1=2&d=64087|64094|64095|64089|64090|64091|64086|64092&dd=2023-05-01&nn=7|8|9|10|11|12|13&rd=2023-06-30&to=4312|4305|2682|4308&tt=1 "
+URL_SRL = URL + "/vysledky-vyhledavani?ac1=2&d=64419|64420|64425&dd=2023-09-01&ka1=11&kc1=1&nn=7|8|9|10|11|12|13|14&rd=2023-10-31&to=4312|4305|2682|4308&tt=1"
 URL_covidInfo = URL+"covid-info"
 URL_FM = URL+"first-minute"
 URL_faq = URL+"faq"
