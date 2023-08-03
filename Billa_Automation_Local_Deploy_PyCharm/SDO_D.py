@@ -1,26 +1,14 @@
 from Billa_Automation_Local_Deploy_PyCharm.to_import import acceptConsent,URL_SDO, setUp, tearDown, generalDriverWaitImplicit
 import time
 import unittest
-
+from Billa_Automation_Local_Deploy_PyCharm.import_test_units_Xpaths import rowKarty_imgHoteluKarty_D
 
 SDOsectionXpath = "//*[@class='sdo-section']"
 zobrazitHotelyXpath = "//*[@class='c_title mb-0 center']"
-SDOtlacitkoAndalusie = "//ul[@class='links']//a[normalize-space()='Andalusie']"
-
-def SDO_oblast(self):
-    self.driver.maximize_window()
-    self.driver.get(URL_SDO)
-
-    acceptConsent(self.driver)
-    time.sleep(1)
-
-    SDOtlacitkoElement = driver.find_element_by_xpath(SDOtlacitkoAndalusie).click()
-
-    assert SDOtlacitkoElement.is_displayed() == True
-    print("Andalusie se zobrazila")
-
 def SDO_D(self, driver):
     generalDriverWaitImplicit(driver)
+    rowKarty_imgHoteluKarty_D(self, driver)
+
     SDOsectionElement = driver.find_element_by_xpath(SDOsectionXpath)
 
     assert SDOsectionElement.is_displayed() == True
@@ -47,6 +35,5 @@ class TestSDO_D(unittest.TestCase):
         SDO_D(self, self.driver)
 
         self.test_passed = True
-
 
 

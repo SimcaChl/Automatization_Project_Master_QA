@@ -14,10 +14,6 @@ def SDO_D(self, driver):
     assert SDOsectionElement.is_displayed() == True
     print("sdo section visible true :  " + str(SDOsectionElement.is_displayed()))
 class TestSDO_D(unittest.TestCase):
-    def __init__(self, methodName: str = ...):
-        super().__init__(methodName)
-        self.driver = None
-
     def setUp(self):
         setUp(self)
     def tearDown(self):

@@ -7,19 +7,21 @@ from Billa_Automation_Local_Deploy_PyCharm.groupsearch_D import groupSearch_D
 import time
 from Billa_Automation_Local_Deploy_PyCharm.SRL_D import SRL_D
 from Billa_Automation_Local_Deploy_PyCharm.SDO_D import SDO_D
-
 HPvyhledatZajezdyButtonXpath = "//*[@class='f_filterMainSearch'] //*[contains(text(), 'Vyhledat dovolenou')]"
 HPkamPojedeteButtonXpath = "//*[contains(text(), 'Kam se chystáte?')]"
 HPzlutakEgyptDestinaceXpath = "//*[@class='f_filterMainSearch']//*[@class='flex flex-row overflow-hidden']//*[@class='flex flex-col pb-2']//*[contains(text(), 'Egypt')]"
-HPzlutakPokracovatButtonXpath = "//div[@class='f_filterHolder js_filterHolder f_set--active'] //div//a[@class='c_btn primary'][contains(text(),'Pokračovat')]"
-HPzlutakTypDopravyPokracovat = "//div[@class='f_filterHolder js_filterHolder f_set--active'] //div//a[@class='c_btn primary'][contains(text(),'Pokračovat')]"
-HPzlutakKdyPojedetePokracovat = "//div[@class='f_filterHolder js_filterHolder f_set--active'] //div//a[@class='c_btn primary'][contains(text(),'Pokračovat')]"
-HPzlutakObsazenost2plus2Xpath = "//*[contains(text(), 'Rodina')]"
+#HPzlutakReckoDestinaceXpath = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header f_set--filterOpened']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[2]/span/div[@class='f_filterHolder f_set--active']/div[@class='f_filterHolder-content']/div[@class='f_filter f_filter--destination']/div[@class='f_customScroll js_destinationsContent']/div[1]/div[@class='f_column']/div[@class='f_column-item'][1]/div[@class='f_list']/div[@class='f_list-item'][1]/div[@class='f_input-wrapper']/label[@class='f_input f_input--checkbox']/span[@class='f_input-content']"
+HPzlutakPokracovatButtonXpath = "//*[contains(text(), 'Pokračovat')]"
+#HPzlutakPokracovatButtonXpathStep2 = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header f_set--filterOpened']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[2]/span/div[@class='f_filterHolder f_set--active']/div[@class='f_filterHolder-footer js_filter-footer']/div[@class='f_filterHolder-footer-item'][2]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
+HPzlutakPokracovatButtonXpathStep2 = "//*[@class='f_filterHolder js_filterHolder f_set--active']//*[@class='c_btn blue-dark']"
+HPzlutakLetniPrazdninyXpath = "//*[@class='f_filterHolder js_filterHolder f_set--active']//*[@class='flex flex-col gap-2']//*[contains(text(), 'Letní prázdniny 2023')]"
+#HPzlutakPokracovatButtonXpathStep3 = "/html/body[@id='homepage']/header[@class='f_pageHeader js_header f_set--filterOpened']/div[@class='f_pageHeader-content']/div[@class='f_pageHeader-item f_pageHeader-item--holder']/div/div[@class='f_filterMainSearch']/div/div[2]/span/div[@class='f_filterHolder f_set--active']/div[@class='f_filterHolder-footer js_filter-footer']/div[@class='f_filterHolder-footer-item'][2]/a[@class='f_button f_button--common']/span[@class='f_button-text f_icon f_icon--chevronRight f_icon_set--right']"
+HPzlutakPridatPokojXpath = "//*[contains(text(), 'přidat pokoj')]"
+HPzlutakObsazenost2plus1Xpath = "//*[contains(text(), 'Rodina')]"
 HPzlutakPotvrditAvyhledatXpath = "//*[@class='f_filterHolder js_filterHolder f_set--active']//*[contains(text(), 'Potvrdit a vyhledat')]"
+HPnejlepsiZajezdySwitchButtonXpath = "//*[@class='f_switch-button']"
+HPnejlepsiZajezdyVypisXpath = "//*[@class='f_tourTable-tour']"
 HPstatyKartyXpath = "//*[@class='content']"
-HPdlazdiceRecko = "//h2[contains(text(),'Řecko')]"
-HPdlazdiceChorvatsko = "//h2[contains(text(),'Chorvatsko')]"
-HPdlazdiceItalie = "//h2[normalize-space()='Romantická Itálie']"
 
 class Test_HP_C(unittest.TestCase):
     def setUp(self):
@@ -47,19 +49,22 @@ class Test_HP_C(unittest.TestCase):
 
         acceptConsent(self.driver)
         time.sleep(1)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPkamPojedeteButtonXpath))).click() #kam pojedete
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPkamPojedeteButtonXpath))).click()
         time.sleep(0.3)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakEgyptDestinaceXpath))).click() #kliknu na Egypt
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click() #dam pokracovat
-        time.sleep(1.5)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakTypDopravyPokracovat))).click() #jak cestujete, kliknu na pokracovat
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakEgyptDestinaceXpath))).click()
 
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakKdyPojedetePokracovat))).click() #kdy pojedete, kliknu na pokracovat
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpath))).click()
         time.sleep(1.5)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus2Xpath))).click() #kolik vas bude, kliknu na Rodina
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
+
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakLetniPrazdninyXpath))).click()
+        time.sleep(0.5)
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPokracovatButtonXpathStep2))).click()
+
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakObsazenost2plus1Xpath))).click()
 
         time.sleep(1)
-        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click() #kliknu na potvrdit a vyhledat
+        wait.until(EC.visibility_of(self.driver.find_element_by_xpath(HPzlutakPotvrditAvyhledatXpath))).click()
         SRL_D(self, self.driver)
 
         self.test_passed = True
@@ -81,56 +86,3 @@ class Test_HP_C(unittest.TestCase):
         SDO_D(self, self.driver)
 
         self.test_passed = True
-
-    def test_dlazdice_Recko(self):
-        self.driver.maximize_window()
-        self.driver.get(URL)
-
-        acceptConsent(self.driver)
-        time.sleep(1)
-        self.driver.find_element_by_xpath(HPdlazdiceRecko).click()
-        time.sleep(5)
-        EC.title_contains("Výsledky hledání zájezdů")
-
-        expected_title = "Výsledky hledání zájezdů"
-        actual_title = self.driver.title
-
-        if expected_title in actual_title:
-            print("Jsem na stránce se zájezdy")
-        else:
-            print("Zájezdy se nezobrazily")
-    def test_dlazdice_Chorvatsko(self):
-        self.driver.maximize_window()
-        self.driver.get(URL)
-
-        acceptConsent(self.driver)
-        time.sleep(1)
-        self.driver.find_element_by_xpath(HPdlazdiceChorvatsko).click()
-        time.sleep(5)
-        EC.title_contains("Výsledky hledání zájezdů")
-
-        expected_title = "Výsledky hledání zájezdů"
-        actual_title = self.driver.title
-
-        if expected_title in actual_title:
-            print("Jsem na stránce se zájezdy")
-        else:
-            print("Zájezdy se nezobrazily")
-
-    def test_dlazdice_Italie(self):
-        self.driver.maximize_window()
-        self.driver.get(URL)
-
-        acceptConsent(self.driver)
-        time.sleep(1)
-        self.driver.find_element_by_xpath(HPdlazdiceItalie).click()
-        time.sleep(5)
-        EC.title_contains("Výsledky hledání zájezdů")
-
-        expected_title = "Výsledky hledání zájezdů"
-        actual_title = self.driver.title
-
-        if expected_title in actual_title:
-            print("Jsem na stránce se zájezdy")
-        else:
-            print("Zájezdy se nezobrazily")

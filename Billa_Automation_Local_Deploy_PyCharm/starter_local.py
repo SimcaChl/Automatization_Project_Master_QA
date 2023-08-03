@@ -1,4 +1,5 @@
 from Billa_Automation_Local_Deploy_PyCharm.Detail_C import TestDetailHotelu_C
+from Billa_Automation_Local_Deploy_PyCharm.FM_Exotika_D import Test_FM_Exotika_D
 from Billa_Automation_Local_Deploy_PyCharm.fulltext_C import Test_Fulltext_C
 from Billa_Automation_Local_Deploy_PyCharm.groupsearch_D import Test_Groupsearch_D
 from Billa_Automation_Local_Deploy_PyCharm.HP_D import Test_HP_D
@@ -9,7 +10,7 @@ from Billa_Automation_Local_Deploy_PyCharm.SRL_D import TestSRL_D
 from Billa_Automation_Local_Deploy_PyCharm.HP_C import Test_HP_C
 #import HtmlTestRunner
 import unittest
-from starter_master_browserstack import runner_tests_generalized
+from starter_master_browserstack import  runner_tests_generalized
 from Billa_Automation_Local_Deploy_PyCharm.to_import import URL
 
 

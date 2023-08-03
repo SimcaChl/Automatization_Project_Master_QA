@@ -8,7 +8,7 @@ from ET_Automation_Local_Deploy_PyCharm.SDO_D import TestSDO_D
 from ET_Automation_Local_Deploy_PyCharm.SRL_C import Test_SRL_C
 from ET_Automation_Local_Deploy_PyCharm.SRL_D import TestSRL_D
 from ET_Automation_Local_Deploy_PyCharm.HP_C import Test_HP_C
-#import HtmlTestRunner
+import HtmlTestRunner
 import unittest
 from starter_master_browserstack import  runner_tests_generalized
 from ET_Automation_Local_Deploy_PyCharm.to_import import URL

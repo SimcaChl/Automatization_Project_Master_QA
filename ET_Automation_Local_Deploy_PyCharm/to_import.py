@@ -6,11 +6,9 @@ import smtplib, ssl
 from email.mime.text import MIMEText
 
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 
 from to_import_secret_master import emailPass
-
+from selenium import webdriver
 
 
 
